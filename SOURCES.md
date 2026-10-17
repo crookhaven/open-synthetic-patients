@@ -39,8 +39,8 @@ Kimberly Gonzalez, built on APEX Atlas) and its license allows it.
 - [MedCase-Structured](https://huggingface.co/papers/2605.30295): about 1,400 FHIR R4
   bundles converted by an LLM from published clinical case reports, covering unusual
   diagnoses. The paper reports some invalid codes from the conversion and states no license.
-- **EHR and payer developer sandboxes** (Epic, Oracle Health, Athena, Aetna, Cigna, Humana
-  and others): test patients are often thin, but they show what each vendor's API actually
+- **EHR and payer developer sandboxes** (Oracle Health, Athena, Aetna, Cigna, Humana and
+  others): test patients are often thin, but they show what each vendor's API actually
   returns. [Fasten Health keeps a catalog](https://docs.connect.fastenhealth.com/guides/test-patient-credentials)
   of where each sandbox documents its test accounts.
 
