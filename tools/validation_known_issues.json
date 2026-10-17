@@ -1,0 +1,38 @@
+{
+  "_about": "Read by tools/check_validation.py. The FHIR validation check fails on any validator error that is not listed here. Remove an entry once the problem is fixed.",
+  "skip_patients": {
+    "jordan-rivera": "Built with intentional gaps (no fullUrl, missing subject and intent) to test how apps handle incomplete data."
+  },
+  "known_errors": [
+    {
+      "patient": "maximus-decimus-meridius",
+      "contains": "Unknown code '00093505705' in the CodeSystem 'http://hl7.org/fhir/sid/ndc'",
+      "reason": "Current NDC; the validator's NDC data is from 2021-11-01."
+    },
+    {
+      "patient": "maximus-decimus-meridius",
+      "contains": "Unknown code '00185028201' in the CodeSystem 'http://hl7.org/fhir/sid/ndc'",
+      "reason": "Current NDC; the validator's NDC data is from 2021-11-01."
+    },
+    {
+      "patient": "maximus-decimus-meridius",
+      "contains": "Unknown code '00955172901' in the CodeSystem 'http://hl7.org/fhir/sid/ndc'",
+      "reason": "Current NDC; the validator's NDC data is from 2021-11-01."
+    },
+    {
+      "patient": "maximus-decimus-meridius",
+      "contains": "Unknown code '00064043050' in the CodeSystem 'http://hl7.org/fhir/sid/ndc'",
+      "reason": "Current NDC; the validator's NDC data is from 2021-11-01."
+    },
+    {
+      "patient": "maximus-decimus-meridius",
+      "contains": "No definition could be found for URL value 'http://terminology.hl7.org/CodeSystem/ex-surface'",
+      "reason": "The validator has no definition for the tooth surface code system."
+    },
+    {
+      "patient": "kimberly-gonzalez",
+      "contains": "Wrong Display Name 'Right eye Distance binocular Visual acuity LogMAR' for http://loinc.org#70936-0",
+      "reason": "Comes from the APEX Atlas source record, which uses this code for a visual acuity result."
+    }
+  ]
+}
