@@ -21,3 +21,5 @@ jobs:
         run: python tools/check_safety.py
       - name: Catalog matches the patient cards
         run: python tools/build_catalog.py --check
+      - name: SOURCES.md matches sources.json
+        run: python tools/build_sources.py --check

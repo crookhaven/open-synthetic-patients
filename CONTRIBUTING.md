@@ -37,6 +37,12 @@ card's `variants`. In the card's `notes`, describe what the variant changes, suc
   999 range.
 - **Respect licenses.** Only add data whose license allows redistribution, and state it.
 
+## Suggesting another data source
+
+Add an entry to `sources.json` with its section (for example `us-claims` or `intl-europe`), a
+level (1 Start here, 2 Specific needs, 3 Reference), what it's best for and its license. Then
+run `python tools/build_sources.py` and commit `SOURCES.md` with it.
+
 ## Use case tags
 
 Reuse existing tags in `use_cases` where they fit, so the catalog stays searchable. Current
