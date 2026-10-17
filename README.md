@@ -23,6 +23,8 @@ patients/<slug>/
   patient.json    the patient card: summary, conditions, use cases, source, license
   build.ps1       script that rebuilds the bundle (where one exists)
   NOTICE          attribution, for patients derived from another project
+  piqi/           PIQI messages (clinical, IPS, claims) built from bundle.json, ready to score
+marketplace/      real 2026 Marketplace plans for one ZIP code, for plan comparison testing
 tools/
   check_safety.py     checks that every patient is tagged, documented and synthetic
   build_catalog.py    builds catalog.json and CATALOG.md from the patient cards
@@ -60,6 +62,7 @@ Each patient card lists **variants**. Today every patient has a `clean` variant;
 - **Patient data and documentation:** [CC BY 4.0](LICENSE). Reuse it freely, including
   commercially, as long as you give credit (see [CITATION.cff](CITATION.cff)).
 - **Scripts and tools** (`*.ps1`, `*.py`, `tools/`, `.github/`): [Apache 2.0](LICENSE-CODE).
+- **Marketplace plans** (`marketplace/`) are US government public data from CMS.
 - **Exceptions are stated per patient.** A patient derived from another project keeps that
   project's license; for example, Kimberly Gonzalez is Apache 2.0 because she is built on
   [APEX Atlas](https://github.com/ParkerApex/apex-atlas). Each `patient.json` has a

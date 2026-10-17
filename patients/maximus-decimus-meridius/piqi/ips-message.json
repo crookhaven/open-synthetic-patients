@@ -1,0 +1,4973 @@
+{
+  "FormatID": "M5 Whole Health JSON",
+  "MessageId": "a2f089c3-739b-483d-8055-5379fc08781b",
+  "model": "PAT_CLINICAL_V1",
+  "patient": {
+    "demographics": {
+      "firstName": "Maximus",
+      "lastName": "Meridius",
+      "middleName": "Decimus",
+      "birthDate": "1978-03-15",
+      "birthSex": {
+        "text": "Male",
+        "codings": [
+          {
+            "code": "M",
+            "display": "Male",
+            "system": "http://hl7.org/fhir/us/core/CodeSystem/birthsex"
+          },
+          {
+            "code": "248153007",
+            "display": "Male",
+            "system": "http://snomed.info/sct"
+          }
+        ]
+      },
+      "genderIdentity": {
+        "text": null,
+        "codings": []
+      },
+      "race": {
+        "text": "White",
+        "codings": [
+          {
+            "code": "2106-3",
+            "display": "White",
+            "system": "urn:oid:2.16.840.1.113883.6.238"
+          }
+        ]
+      },
+      "ethnicity": {
+        "text": "Not Hispanic or Latino",
+        "codings": [
+          {
+            "code": "2186-5",
+            "display": "Not Hispanic or Latino",
+            "system": "urn:oid:2.16.840.1.113883.6.238"
+          }
+        ]
+      },
+      "maritalStatus": {
+        "text": "Widowed",
+        "codings": [
+          {
+            "code": "W",
+            "display": "Widowed",
+            "system": "http://terminology.hl7.org/CodeSystem/v3-MaritalStatus"
+          }
+        ]
+      },
+      "primaryLanguage": {
+        "text": "English (United States)",
+        "codings": [
+          {
+            "code": "en-US",
+            "display": "English (United States)",
+            "system": "urn:ietf:bcp:47"
+          }
+        ]
+      },
+      "deathDate": null,
+      "deceased": {
+        "text": null,
+        "codings": []
+      },
+      "patientIdentifier": "MDM-SYN-0000000048-1",
+      "currentAddress": "180 Legion Way, Springfield, IL, 62701",
+      "emailAddress": "maximus.meridius@example.org",
+      "telecom": "555-0148"
+    },
+    "allergies": [
+      {
+        "substance": {
+          "text": "Penicillin",
+          "codings": [
+            {
+              "code": "7980",
+              "display": "penicillin G",
+              "system": "http://www.nlm.nih.gov/research/umls/rxnorm"
+            }
+          ]
+        },
+        "category": {
+          "text": "medication",
+          "codings": []
+        },
+        "reaction": {
+          "text": "Generalized rash",
+          "codings": [
+            {
+              "code": "271807003",
+              "display": "Eruption",
+              "system": "http://snomed.info/sct"
+            }
+          ]
+        },
+        "severity": {
+          "text": "moderate",
+          "codings": []
+        },
+        "effectiveDate": "1996-08-01",
+        "clinicalStatus": {
+          "text": "Active",
+          "codings": [
+            {
+              "code": "active",
+              "display": "Active",
+              "system": "http://terminology.hl7.org/CodeSystem/allergyintolerance-clinical"
+            }
+          ]
+        },
+        "verificationStatus": {
+          "text": "Confirmed",
+          "codings": [
+            {
+              "code": "confirmed",
+              "display": "Confirmed",
+              "system": "http://terminology.hl7.org/CodeSystem/allergyintolerance-verification"
+            }
+          ]
+        }
+      },
+      {
+        "substance": {
+          "text": "Lisinopril (ACE inhibitor)",
+          "codings": [
+            {
+              "code": "29046",
+              "display": "lisinopril",
+              "system": "http://www.nlm.nih.gov/research/umls/rxnorm"
+            }
+          ]
+        },
+        "category": {
+          "text": "medication",
+          "codings": []
+        },
+        "reaction": {
+          "text": "Angioedema of lips and tongue",
+          "codings": [
+            {
+              "code": "41291007",
+              "display": "Angioedema",
+              "system": "http://snomed.info/sct"
+            }
+          ]
+        },
+        "severity": {
+          "text": "severe",
+          "codings": []
+        },
+        "effectiveDate": "2013-04-02",
+        "clinicalStatus": {
+          "text": "Active",
+          "codings": [
+            {
+              "code": "active",
+              "display": "Active",
+              "system": "http://terminology.hl7.org/CodeSystem/allergyintolerance-clinical"
+            }
+          ]
+        },
+        "verificationStatus": {
+          "text": "Confirmed",
+          "codings": [
+            {
+              "code": "confirmed",
+              "display": "Confirmed",
+              "system": "http://terminology.hl7.org/CodeSystem/allergyintolerance-verification"
+            }
+          ]
+        }
+      },
+      {
+        "substance": {
+          "text": "Shellfish",
+          "codings": [
+            {
+              "code": "44027008",
+              "display": "Seafood",
+              "system": "http://snomed.info/sct"
+            }
+          ]
+        },
+        "category": {
+          "text": "food",
+          "codings": []
+        },
+        "reaction": {
+          "text": "Hives",
+          "codings": [
+            {
+              "code": "126485001",
+              "display": "Urticaria",
+              "system": "http://snomed.info/sct"
+            }
+          ]
+        },
+        "severity": {
+          "text": "mild",
+          "codings": []
+        },
+        "effectiveDate": "2005-07-04",
+        "clinicalStatus": {
+          "text": "Active",
+          "codings": [
+            {
+              "code": "active",
+              "display": "Active",
+              "system": "http://terminology.hl7.org/CodeSystem/allergyintolerance-clinical"
+            }
+          ]
+        },
+        "verificationStatus": {
+          "text": "Confirmed",
+          "codings": [
+            {
+              "code": "confirmed",
+              "display": "Confirmed",
+              "system": "http://terminology.hl7.org/CodeSystem/allergyintolerance-verification"
+            }
+          ]
+        }
+      },
+      {
+        "substance": {
+          "text": "Latex",
+          "codings": [
+            {
+              "code": "111088007",
+              "display": "Latex",
+              "system": "http://snomed.info/sct"
+            }
+          ]
+        },
+        "category": {
+          "text": "environment",
+          "codings": []
+        },
+        "reaction": {
+          "text": "Contact hives",
+          "codings": [
+            {
+              "code": "126485001",
+              "display": "Urticaria",
+              "system": "http://snomed.info/sct"
+            }
+          ]
+        },
+        "severity": {
+          "text": "mild",
+          "codings": []
+        },
+        "effectiveDate": "2016-11-02",
+        "clinicalStatus": {
+          "text": "Active",
+          "codings": [
+            {
+              "code": "active",
+              "display": "Active",
+              "system": "http://terminology.hl7.org/CodeSystem/allergyintolerance-clinical"
+            }
+          ]
+        },
+        "verificationStatus": {
+          "text": "Confirmed",
+          "codings": [
+            {
+              "code": "confirmed",
+              "display": "Confirmed",
+              "system": "http://terminology.hl7.org/CodeSystem/allergyintolerance-verification"
+            }
+          ]
+        }
+      }
+    ],
+    "medications": [
+      {
+        "medication": {
+          "text": "metformin hydrochloride 1000 MG Oral Tablet",
+          "codings": [
+            {
+              "code": "861004",
+              "display": "metformin hydrochloride 1000 MG Oral Tablet",
+              "system": "http://www.nlm.nih.gov/research/umls/rxnorm"
+            }
+          ]
+        },
+        "doseAmount": "1000",
+        "doseAmountUnit": {
+          "text": "mg",
+          "codings": []
+        },
+        "doseRoute": {
+          "text": "Oral route",
+          "codings": [
+            {
+              "code": "26643006",
+              "display": "Oral route",
+              "system": "http://snomed.info/sct"
+            }
+          ]
+        },
+        "doseQuantity": "180",
+        "doseQuantityUnit": {
+          "text": "tablet",
+          "codings": []
+        },
+        "instructions": "Take 1 tablet by mouth twice daily with meals.",
+        "indication": {
+          "text": null,
+          "codings": []
+        },
+        "startDate": "2016-01-11",
+        "endDate": null,
+        "statementDate": "2016-01-11",
+        "adherence": {
+          "text": null,
+          "codings": []
+        },
+        "fillStatus": {
+          "text": null,
+          "codings": []
+        },
+        "requestStatus": {
+          "text": "active",
+          "codings": []
+        },
+        "medicationCategory": {
+          "text": "Community",
+          "codings": [
+            {
+              "code": "community",
+              "display": "Community",
+              "system": "http://terminology.hl7.org/CodeSystem/medicationrequest-category"
+            }
+          ]
+        },
+        "medicationIntent": {
+          "text": "order",
+          "codings": []
+        }
+      },
+      {
+        "medication": {
+          "text": "empagliflozin 10 MG Oral Tablet",
+          "codings": [
+            {
+              "code": "1545658",
+              "display": "empagliflozin 10 MG Oral Tablet",
+              "system": "http://www.nlm.nih.gov/research/umls/rxnorm"
+            }
+          ]
+        },
+        "doseAmount": "10",
+        "doseAmountUnit": {
+          "text": "mg",
+          "codings": []
+        },
+        "doseRoute": {
+          "text": "Oral route",
+          "codings": [
+            {
+              "code": "26643006",
+              "display": "Oral route",
+              "system": "http://snomed.info/sct"
+            }
+          ]
+        },
+        "doseQuantity": "90",
+        "doseQuantityUnit": {
+          "text": "tablet",
+          "codings": []
+        },
+        "instructions": "Take 1 tablet by mouth every morning.",
+        "indication": {
+          "text": null,
+          "codings": []
+        },
+        "startDate": "2024-03-05",
+        "endDate": null,
+        "statementDate": "2024-03-05",
+        "adherence": {
+          "text": null,
+          "codings": []
+        },
+        "fillStatus": {
+          "text": null,
+          "codings": []
+        },
+        "requestStatus": {
+          "text": "active",
+          "codings": []
+        },
+        "medicationCategory": {
+          "text": "Community",
+          "codings": [
+            {
+              "code": "community",
+              "display": "Community",
+              "system": "http://terminology.hl7.org/CodeSystem/medicationrequest-category"
+            }
+          ]
+        },
+        "medicationIntent": {
+          "text": "order",
+          "codings": []
+        }
+      },
+      {
+        "medication": {
+          "text": "insulin glargine 100 UNT/ML Injectable Solution",
+          "codings": [
+            {
+              "code": "311041",
+              "display": "insulin glargine 100 UNT/ML Injectable Solution",
+              "system": "http://www.nlm.nih.gov/research/umls/rxnorm"
+            }
+          ]
+        },
+        "doseAmount": "28",
+        "doseAmountUnit": {
+          "text": "units",
+          "codings": []
+        },
+        "doseRoute": {
+          "text": "Subcutaneous route",
+          "codings": [
+            {
+              "code": "34206005",
+              "display": "Subcutaneous route",
+              "system": "http://snomed.info/sct"
+            }
+          ]
+        },
+        "doseQuantity": "15",
+        "doseQuantityUnit": {
+          "text": "mL",
+          "codings": []
+        },
+        "instructions": "Inject 28 units under the skin at bedtime.",
+        "indication": {
+          "text": null,
+          "codings": []
+        },
+        "startDate": "2024-03-05",
+        "endDate": null,
+        "statementDate": "2024-03-05",
+        "adherence": {
+          "text": null,
+          "codings": []
+        },
+        "fillStatus": {
+          "text": null,
+          "codings": []
+        },
+        "requestStatus": {
+          "text": "active",
+          "codings": []
+        },
+        "medicationCategory": {
+          "text": "Community",
+          "codings": [
+            {
+              "code": "community",
+              "display": "Community",
+              "system": "http://terminology.hl7.org/CodeSystem/medicationrequest-category"
+            }
+          ]
+        },
+        "medicationIntent": {
+          "text": "order",
+          "codings": []
+        }
+      },
+      {
+        "medication": {
+          "text": "atorvastatin 80 MG Oral Tablet",
+          "codings": [
+            {
+              "code": "259255",
+              "display": "atorvastatin 80 MG Oral Tablet",
+              "system": "http://www.nlm.nih.gov/research/umls/rxnorm"
+            }
+          ]
+        },
+        "doseAmount": "80",
+        "doseAmountUnit": {
+          "text": "mg",
+          "codings": []
+        },
+        "doseRoute": {
+          "text": "Oral route",
+          "codings": [
+            {
+              "code": "26643006",
+              "display": "Oral route",
+              "system": "http://snomed.info/sct"
+            }
+          ]
+        },
+        "doseQuantity": "90",
+        "doseQuantityUnit": {
+          "text": "tablet",
+          "codings": []
+        },
+        "instructions": "Take 1 tablet by mouth at bedtime.",
+        "indication": {
+          "text": null,
+          "codings": []
+        },
+        "startDate": "2024-03-05",
+        "endDate": null,
+        "statementDate": "2024-03-05",
+        "adherence": {
+          "text": null,
+          "codings": []
+        },
+        "fillStatus": {
+          "text": null,
+          "codings": []
+        },
+        "requestStatus": {
+          "text": "active",
+          "codings": []
+        },
+        "medicationCategory": {
+          "text": "Community",
+          "codings": [
+            {
+              "code": "community",
+              "display": "Community",
+              "system": "http://terminology.hl7.org/CodeSystem/medicationrequest-category"
+            }
+          ]
+        },
+        "medicationIntent": {
+          "text": "order",
+          "codings": []
+        }
+      },
+      {
+        "medication": {
+          "text": "aspirin 81 MG Delayed Release Oral Tablet",
+          "codings": [
+            {
+              "code": "308416",
+              "display": "aspirin 81 MG Delayed Release Oral Tablet",
+              "system": "http://www.nlm.nih.gov/research/umls/rxnorm"
+            }
+          ]
+        },
+        "doseAmount": "81",
+        "doseAmountUnit": {
+          "text": "mg",
+          "codings": []
+        },
+        "doseRoute": {
+          "text": "Oral route",
+          "codings": [
+            {
+              "code": "26643006",
+              "display": "Oral route",
+              "system": "http://snomed.info/sct"
+            }
+          ]
+        },
+        "doseQuantity": "90",
+        "doseQuantityUnit": {
+          "text": "tablet",
+          "codings": []
+        },
+        "instructions": "Take 1 tablet by mouth daily.",
+        "indication": {
+          "text": null,
+          "codings": []
+        },
+        "startDate": "2024-03-02",
+        "endDate": null,
+        "statementDate": "2024-03-02",
+        "adherence": {
+          "text": null,
+          "codings": []
+        },
+        "fillStatus": {
+          "text": null,
+          "codings": []
+        },
+        "requestStatus": {
+          "text": "active",
+          "codings": []
+        },
+        "medicationCategory": {
+          "text": "Community",
+          "codings": [
+            {
+              "code": "community",
+              "display": "Community",
+              "system": "http://terminology.hl7.org/CodeSystem/medicationrequest-category"
+            }
+          ]
+        },
+        "medicationIntent": {
+          "text": "order",
+          "codings": []
+        }
+      },
+      {
+        "medication": {
+          "text": "clopidogrel 75 MG Oral Tablet",
+          "codings": [
+            {
+              "code": "309362",
+              "display": "clopidogrel 75 MG Oral Tablet",
+              "system": "http://www.nlm.nih.gov/research/umls/rxnorm"
+            }
+          ]
+        },
+        "doseAmount": "75",
+        "doseAmountUnit": {
+          "text": "mg",
+          "codings": []
+        },
+        "doseRoute": {
+          "text": "Oral route",
+          "codings": [
+            {
+              "code": "26643006",
+              "display": "Oral route",
+              "system": "http://snomed.info/sct"
+            }
+          ]
+        },
+        "doseQuantity": "90",
+        "doseQuantityUnit": {
+          "text": "tablet",
+          "codings": []
+        },
+        "instructions": "Take 1 tablet by mouth daily for 12 months after stent.",
+        "indication": {
+          "text": null,
+          "codings": []
+        },
+        "startDate": "2024-03-03",
+        "endDate": null,
+        "statementDate": "2024-03-03",
+        "adherence": {
+          "text": null,
+          "codings": []
+        },
+        "fillStatus": {
+          "text": null,
+          "codings": []
+        },
+        "requestStatus": {
+          "text": "completed",
+          "codings": []
+        },
+        "medicationCategory": {
+          "text": "Community",
+          "codings": [
+            {
+              "code": "community",
+              "display": "Community",
+              "system": "http://terminology.hl7.org/CodeSystem/medicationrequest-category"
+            }
+          ]
+        },
+        "medicationIntent": {
+          "text": "order",
+          "codings": []
+        }
+      },
+      {
+        "medication": {
+          "text": "24 HR metoprolol succinate 50 MG Extended Release Oral Tablet",
+          "codings": [
+            {
+              "code": "866436",
+              "display": "24 HR metoprolol succinate 50 MG Extended Release Oral Tablet",
+              "system": "http://www.nlm.nih.gov/research/umls/rxnorm"
+            }
+          ]
+        },
+        "doseAmount": "50",
+        "doseAmountUnit": {
+          "text": "mg",
+          "codings": []
+        },
+        "doseRoute": {
+          "text": "Oral route",
+          "codings": [
+            {
+              "code": "26643006",
+              "display": "Oral route",
+              "system": "http://snomed.info/sct"
+            }
+          ]
+        },
+        "doseQuantity": "90",
+        "doseQuantityUnit": {
+          "text": "tablet",
+          "codings": []
+        },
+        "instructions": "Take 1 tablet by mouth daily.",
+        "indication": {
+          "text": null,
+          "codings": []
+        },
+        "startDate": "2024-03-05",
+        "endDate": null,
+        "statementDate": "2024-03-05",
+        "adherence": {
+          "text": null,
+          "codings": []
+        },
+        "fillStatus": {
+          "text": null,
+          "codings": []
+        },
+        "requestStatus": {
+          "text": "active",
+          "codings": []
+        },
+        "medicationCategory": {
+          "text": "Community",
+          "codings": [
+            {
+              "code": "community",
+              "display": "Community",
+              "system": "http://terminology.hl7.org/CodeSystem/medicationrequest-category"
+            }
+          ]
+        },
+        "medicationIntent": {
+          "text": "order",
+          "codings": []
+        }
+      },
+      {
+        "medication": {
+          "text": "losartan potassium 100 MG Oral Tablet",
+          "codings": [
+            {
+              "code": "979480",
+              "display": "losartan potassium 100 MG Oral Tablet",
+              "system": "http://www.nlm.nih.gov/research/umls/rxnorm"
+            }
+          ]
+        },
+        "doseAmount": "100",
+        "doseAmountUnit": {
+          "text": "mg",
+          "codings": []
+        },
+        "doseRoute": {
+          "text": "Oral route",
+          "codings": [
+            {
+              "code": "26643006",
+              "display": "Oral route",
+              "system": "http://snomed.info/sct"
+            }
+          ]
+        },
+        "doseQuantity": "90",
+        "doseQuantityUnit": {
+          "text": "tablet",
+          "codings": []
+        },
+        "instructions": "Take 1 tablet by mouth daily.",
+        "indication": {
+          "text": null,
+          "codings": []
+        },
+        "startDate": "2013-04-09",
+        "endDate": null,
+        "statementDate": "2013-04-09",
+        "adherence": {
+          "text": null,
+          "codings": []
+        },
+        "fillStatus": {
+          "text": null,
+          "codings": []
+        },
+        "requestStatus": {
+          "text": "active",
+          "codings": []
+        },
+        "medicationCategory": {
+          "text": "Community",
+          "codings": [
+            {
+              "code": "community",
+              "display": "Community",
+              "system": "http://terminology.hl7.org/CodeSystem/medicationrequest-category"
+            }
+          ]
+        },
+        "medicationIntent": {
+          "text": "order",
+          "codings": []
+        }
+      },
+      {
+        "medication": {
+          "text": "nitroglycerin 0.4 MG Sublingual Tablet",
+          "codings": [
+            {
+              "code": "198039",
+              "display": "nitroglycerin 0.4 MG Sublingual Tablet",
+              "system": "http://www.nlm.nih.gov/research/umls/rxnorm"
+            }
+          ]
+        },
+        "doseAmount": "0.4",
+        "doseAmountUnit": {
+          "text": "mg",
+          "codings": []
+        },
+        "doseRoute": {
+          "text": "Sublingual route",
+          "codings": [
+            {
+              "code": "37839007",
+              "display": "Sublingual route",
+              "system": "http://snomed.info/sct"
+            }
+          ]
+        },
+        "doseQuantity": "25",
+        "doseQuantityUnit": {
+          "text": "tablet",
+          "codings": []
+        },
+        "instructions": "Place 1 tablet under the tongue every 5 minutes as needed for chest pain, up to 3 doses. Call 911 if pain persists.",
+        "indication": {
+          "text": null,
+          "codings": []
+        },
+        "startDate": "2024-03-05",
+        "endDate": null,
+        "statementDate": "2024-03-05",
+        "adherence": {
+          "text": null,
+          "codings": []
+        },
+        "fillStatus": {
+          "text": null,
+          "codings": []
+        },
+        "requestStatus": {
+          "text": "active",
+          "codings": []
+        },
+        "medicationCategory": {
+          "text": "Community",
+          "codings": [
+            {
+              "code": "community",
+              "display": "Community",
+              "system": "http://terminology.hl7.org/CodeSystem/medicationrequest-category"
+            }
+          ]
+        },
+        "medicationIntent": {
+          "text": "order",
+          "codings": []
+        }
+      },
+      {
+        "medication": {
+          "text": "allopurinol 300 MG Oral Tablet",
+          "codings": [
+            {
+              "code": "197320",
+              "display": "allopurinol 300 MG Oral Tablet",
+              "system": "http://www.nlm.nih.gov/research/umls/rxnorm"
+            }
+          ]
+        },
+        "doseAmount": "300",
+        "doseAmountUnit": {
+          "text": "mg",
+          "codings": []
+        },
+        "doseRoute": {
+          "text": "Oral route",
+          "codings": [
+            {
+              "code": "26643006",
+              "display": "Oral route",
+              "system": "http://snomed.info/sct"
+            }
+          ]
+        },
+        "doseQuantity": "90",
+        "doseQuantityUnit": {
+          "text": "tablet",
+          "codings": []
+        },
+        "instructions": "Take 1 tablet by mouth daily.",
+        "indication": {
+          "text": null,
+          "codings": []
+        },
+        "startDate": "2023-07-20",
+        "endDate": null,
+        "statementDate": "2023-07-20",
+        "adherence": {
+          "text": null,
+          "codings": []
+        },
+        "fillStatus": {
+          "text": null,
+          "codings": []
+        },
+        "requestStatus": {
+          "text": "active",
+          "codings": []
+        },
+        "medicationCategory": {
+          "text": "Community",
+          "codings": [
+            {
+              "code": "community",
+              "display": "Community",
+              "system": "http://terminology.hl7.org/CodeSystem/medicationrequest-category"
+            }
+          ]
+        },
+        "medicationIntent": {
+          "text": "order",
+          "codings": []
+        }
+      },
+      {
+        "medication": {
+          "text": "sertraline 100 MG Oral Tablet",
+          "codings": [
+            {
+              "code": "312938",
+              "display": "sertraline 100 MG Oral Tablet",
+              "system": "http://www.nlm.nih.gov/research/umls/rxnorm"
+            }
+          ]
+        },
+        "doseAmount": "100",
+        "doseAmountUnit": {
+          "text": "mg",
+          "codings": []
+        },
+        "doseRoute": {
+          "text": "Oral route",
+          "codings": [
+            {
+              "code": "26643006",
+              "display": "Oral route",
+              "system": "http://snomed.info/sct"
+            }
+          ]
+        },
+        "doseQuantity": "90",
+        "doseQuantityUnit": {
+          "text": "tablet",
+          "codings": []
+        },
+        "instructions": "Take 1 tablet by mouth daily.",
+        "indication": {
+          "text": null,
+          "codings": []
+        },
+        "startDate": "2019-01-15",
+        "endDate": null,
+        "statementDate": "2019-01-15",
+        "adherence": {
+          "text": null,
+          "codings": []
+        },
+        "fillStatus": {
+          "text": null,
+          "codings": []
+        },
+        "requestStatus": {
+          "text": "active",
+          "codings": []
+        },
+        "medicationCategory": {
+          "text": "Community",
+          "codings": [
+            {
+              "code": "community",
+              "display": "Community",
+              "system": "http://terminology.hl7.org/CodeSystem/medicationrequest-category"
+            }
+          ]
+        },
+        "medicationIntent": {
+          "text": "order",
+          "codings": []
+        }
+      },
+      {
+        "medication": {
+          "text": "prazosin 1 MG Oral Capsule",
+          "codings": [
+            {
+              "code": "312593",
+              "display": "prazosin 1 MG Oral Capsule",
+              "system": "http://www.nlm.nih.gov/research/umls/rxnorm"
+            }
+          ]
+        },
+        "doseAmount": "1",
+        "doseAmountUnit": {
+          "text": "mg",
+          "codings": []
+        },
+        "doseRoute": {
+          "text": "Oral route",
+          "codings": [
+            {
+              "code": "26643006",
+              "display": "Oral route",
+              "system": "http://snomed.info/sct"
+            }
+          ]
+        },
+        "doseQuantity": "90",
+        "doseQuantityUnit": {
+          "text": "capsule",
+          "codings": []
+        },
+        "instructions": "Take 1 capsule by mouth at bedtime for nightmares.",
+        "indication": {
+          "text": null,
+          "codings": []
+        },
+        "startDate": "2021-09-30",
+        "endDate": null,
+        "statementDate": "2021-09-30",
+        "adherence": {
+          "text": null,
+          "codings": []
+        },
+        "fillStatus": {
+          "text": null,
+          "codings": []
+        },
+        "requestStatus": {
+          "text": "active",
+          "codings": []
+        },
+        "medicationCategory": {
+          "text": "Community",
+          "codings": [
+            {
+              "code": "community",
+              "display": "Community",
+              "system": "http://terminology.hl7.org/CodeSystem/medicationrequest-category"
+            }
+          ]
+        },
+        "medicationIntent": {
+          "text": "order",
+          "codings": []
+        }
+      },
+      {
+        "medication": {
+          "text": "gabapentin 300 MG Oral Capsule",
+          "codings": [
+            {
+              "code": "310431",
+              "display": "gabapentin 300 MG Oral Capsule",
+              "system": "http://www.nlm.nih.gov/research/umls/rxnorm"
+            }
+          ]
+        },
+        "doseAmount": "300",
+        "doseAmountUnit": {
+          "text": "mg",
+          "codings": []
+        },
+        "doseRoute": {
+          "text": "Oral route",
+          "codings": [
+            {
+              "code": "26643006",
+              "display": "Oral route",
+              "system": "http://snomed.info/sct"
+            }
+          ]
+        },
+        "doseQuantity": "270",
+        "doseQuantityUnit": {
+          "text": "capsule",
+          "codings": []
+        },
+        "instructions": "Take 1 capsule by mouth three times daily.",
+        "indication": {
+          "text": null,
+          "codings": []
+        },
+        "startDate": "2022-10-20",
+        "endDate": null,
+        "statementDate": "2022-10-20",
+        "adherence": {
+          "text": null,
+          "codings": []
+        },
+        "fillStatus": {
+          "text": null,
+          "codings": []
+        },
+        "requestStatus": {
+          "text": "active",
+          "codings": []
+        },
+        "medicationCategory": {
+          "text": "Community",
+          "codings": [
+            {
+              "code": "community",
+              "display": "Community",
+              "system": "http://terminology.hl7.org/CodeSystem/medicationrequest-category"
+            }
+          ]
+        },
+        "medicationIntent": {
+          "text": "order",
+          "codings": []
+        }
+      },
+      {
+        "medication": {
+          "text": "tiotropium 0.018 MG Inhalation Powder",
+          "codings": [
+            {
+              "code": "485032",
+              "display": "tiotropium 0.018 MG Inhalation Powder",
+              "system": "http://www.nlm.nih.gov/research/umls/rxnorm"
+            }
+          ]
+        },
+        "doseAmount": "0.018",
+        "doseAmountUnit": {
+          "text": "mg",
+          "codings": []
+        },
+        "doseRoute": {
+          "text": "Respiratory tract route",
+          "codings": [
+            {
+              "code": "447694001",
+              "display": "Respiratory tract route",
+              "system": "http://snomed.info/sct"
+            }
+          ]
+        },
+        "doseQuantity": "90",
+        "doseQuantityUnit": {
+          "text": "capsule",
+          "codings": []
+        },
+        "instructions": "Inhale contents of 1 capsule once daily.",
+        "indication": {
+          "text": null,
+          "codings": []
+        },
+        "startDate": "2023-02-14",
+        "endDate": null,
+        "statementDate": "2023-02-14",
+        "adherence": {
+          "text": null,
+          "codings": []
+        },
+        "fillStatus": {
+          "text": null,
+          "codings": []
+        },
+        "requestStatus": {
+          "text": "active",
+          "codings": []
+        },
+        "medicationCategory": {
+          "text": "Community",
+          "codings": [
+            {
+              "code": "community",
+              "display": "Community",
+              "system": "http://terminology.hl7.org/CodeSystem/medicationrequest-category"
+            }
+          ]
+        },
+        "medicationIntent": {
+          "text": "order",
+          "codings": []
+        }
+      },
+      {
+        "medication": {
+          "text": "NDA020983 60 ACTUAT albuterol 0.09 MG/ACTUAT Metered Dose Inhaler",
+          "codings": [
+            {
+              "code": "801092",
+              "display": "NDA020983 60 ACTUAT albuterol 0.09 MG/ACTUAT Metered Dose Inhaler",
+              "system": "http://www.nlm.nih.gov/research/umls/rxnorm"
+            }
+          ]
+        },
+        "doseAmount": null,
+        "doseAmountUnit": {
+          "text": null,
+          "codings": []
+        },
+        "doseRoute": {
+          "text": "Respiratory tract route",
+          "codings": [
+            {
+              "code": "447694001",
+              "display": "Respiratory tract route",
+              "system": "http://snomed.info/sct"
+            }
+          ]
+        },
+        "doseQuantity": "1",
+        "doseQuantityUnit": {
+          "text": "inhaler",
+          "codings": []
+        },
+        "instructions": "Inhale 2 puffs every 4-6 hours as needed for wheezing.",
+        "indication": {
+          "text": null,
+          "codings": []
+        },
+        "startDate": "2023-02-14",
+        "endDate": null,
+        "statementDate": "2023-02-14",
+        "adherence": {
+          "text": null,
+          "codings": []
+        },
+        "fillStatus": {
+          "text": null,
+          "codings": []
+        },
+        "requestStatus": {
+          "text": "active",
+          "codings": []
+        },
+        "medicationCategory": {
+          "text": "Community",
+          "codings": [
+            {
+              "code": "community",
+              "display": "Community",
+              "system": "http://terminology.hl7.org/CodeSystem/medicationrequest-category"
+            }
+          ]
+        },
+        "medicationIntent": {
+          "text": "order",
+          "codings": []
+        }
+      },
+      {
+        "medication": {
+          "text": "omeprazole 20 MG Delayed Release Oral Capsule",
+          "codings": [
+            {
+              "code": "198051",
+              "display": "omeprazole 20 MG Delayed Release Oral Capsule",
+              "system": "http://www.nlm.nih.gov/research/umls/rxnorm"
+            }
+          ]
+        },
+        "doseAmount": "20",
+        "doseAmountUnit": {
+          "text": "mg",
+          "codings": []
+        },
+        "doseRoute": {
+          "text": "Oral route",
+          "codings": [
+            {
+              "code": "26643006",
+              "display": "Oral route",
+              "system": "http://snomed.info/sct"
+            }
+          ]
+        },
+        "doseQuantity": "90",
+        "doseQuantityUnit": {
+          "text": "capsule",
+          "codings": []
+        },
+        "instructions": "Take 1 capsule by mouth daily before breakfast.",
+        "indication": {
+          "text": null,
+          "codings": []
+        },
+        "startDate": "2020-02-03",
+        "endDate": null,
+        "statementDate": "2020-02-03",
+        "adherence": {
+          "text": null,
+          "codings": []
+        },
+        "fillStatus": {
+          "text": null,
+          "codings": []
+        },
+        "requestStatus": {
+          "text": "active",
+          "codings": []
+        },
+        "medicationCategory": {
+          "text": "Community",
+          "codings": [
+            {
+              "code": "community",
+              "display": "Community",
+              "system": "http://terminology.hl7.org/CodeSystem/medicationrequest-category"
+            }
+          ]
+        },
+        "medicationIntent": {
+          "text": "order",
+          "codings": []
+        }
+      },
+      {
+        "medication": {
+          "text": "latanoprost 0.05 MG/ML Ophthalmic Solution",
+          "codings": [
+            {
+              "code": "314072",
+              "display": "latanoprost 0.05 MG/ML Ophthalmic Solution",
+              "system": "http://www.nlm.nih.gov/research/umls/rxnorm"
+            }
+          ]
+        },
+        "doseAmount": null,
+        "doseAmountUnit": {
+          "text": null,
+          "codings": []
+        },
+        "doseRoute": {
+          "text": "Ophthalmic route",
+          "codings": [
+            {
+              "code": "54485002",
+              "display": "Ophthalmic route",
+              "system": "http://snomed.info/sct"
+            }
+          ]
+        },
+        "doseQuantity": "2.5",
+        "doseQuantityUnit": {
+          "text": "mL",
+          "codings": []
+        },
+        "instructions": "Instill 1 drop in each eye at bedtime.",
+        "indication": {
+          "text": null,
+          "codings": []
+        },
+        "startDate": "2025-01-20",
+        "endDate": null,
+        "statementDate": "2025-01-20",
+        "adherence": {
+          "text": null,
+          "codings": []
+        },
+        "fillStatus": {
+          "text": null,
+          "codings": []
+        },
+        "requestStatus": {
+          "text": "active",
+          "codings": []
+        },
+        "medicationCategory": {
+          "text": "Community",
+          "codings": [
+            {
+              "code": "community",
+              "display": "Community",
+              "system": "http://terminology.hl7.org/CodeSystem/medicationrequest-category"
+            }
+          ]
+        },
+        "medicationIntent": {
+          "text": "order",
+          "codings": []
+        }
+      },
+      {
+        "medication": {
+          "text": "clobetasol propionate 0.5 MG/ML Topical Solution",
+          "codings": [
+            {
+              "code": "861487",
+              "display": "clobetasol propionate 0.5 MG/ML Topical Solution",
+              "system": "http://www.nlm.nih.gov/research/umls/rxnorm"
+            }
+          ]
+        },
+        "doseAmount": null,
+        "doseAmountUnit": {
+          "text": null,
+          "codings": []
+        },
+        "doseRoute": {
+          "text": "Topical route",
+          "codings": [
+            {
+              "code": "6064005",
+              "display": "Topical route",
+              "system": "http://snomed.info/sct"
+            }
+          ]
+        },
+        "doseQuantity": "50",
+        "doseQuantityUnit": {
+          "text": "mL",
+          "codings": []
+        },
+        "instructions": "Apply to scalp plaques twice daily for up to 2 weeks, then weekends only.",
+        "indication": {
+          "text": null,
+          "codings": []
+        },
+        "startDate": "2021-05-11",
+        "endDate": null,
+        "statementDate": "2021-05-11",
+        "adherence": {
+          "text": null,
+          "codings": []
+        },
+        "fillStatus": {
+          "text": null,
+          "codings": []
+        },
+        "requestStatus": {
+          "text": "active",
+          "codings": []
+        },
+        "medicationCategory": {
+          "text": "Community",
+          "codings": [
+            {
+              "code": "community",
+              "display": "Community",
+              "system": "http://terminology.hl7.org/CodeSystem/medicationrequest-category"
+            }
+          ]
+        },
+        "medicationIntent": {
+          "text": "order",
+          "codings": []
+        }
+      },
+      {
+        "medication": {
+          "text": "calcipotriene 0.05 MG/ML Topical Cream",
+          "codings": [
+            {
+              "code": "313921",
+              "display": "calcipotriene 0.05 MG/ML Topical Cream",
+              "system": "http://www.nlm.nih.gov/research/umls/rxnorm"
+            }
+          ]
+        },
+        "doseAmount": null,
+        "doseAmountUnit": {
+          "text": null,
+          "codings": []
+        },
+        "doseRoute": {
+          "text": "Topical route",
+          "codings": [
+            {
+              "code": "6064005",
+              "display": "Topical route",
+              "system": "http://snomed.info/sct"
+            }
+          ]
+        },
+        "doseQuantity": "60",
+        "doseQuantityUnit": {
+          "text": "g",
+          "codings": []
+        },
+        "instructions": "Apply a thin layer to elbow and knee plaques twice daily.",
+        "indication": {
+          "text": null,
+          "codings": []
+        },
+        "startDate": "2021-05-11",
+        "endDate": null,
+        "statementDate": "2021-05-11",
+        "adherence": {
+          "text": null,
+          "codings": []
+        },
+        "fillStatus": {
+          "text": null,
+          "codings": []
+        },
+        "requestStatus": {
+          "text": "active",
+          "codings": []
+        },
+        "medicationCategory": {
+          "text": "Community",
+          "codings": [
+            {
+              "code": "community",
+              "display": "Community",
+              "system": "http://terminology.hl7.org/CodeSystem/medicationrequest-category"
+            }
+          ]
+        },
+        "medicationIntent": {
+          "text": "order",
+          "codings": []
+        }
+      },
+      {
+        "medication": {
+          "text": "fluorouracil 50 MG/ML Topical Cream",
+          "codings": [
+            {
+              "code": "105583",
+              "display": "fluorouracil 50 MG/ML Topical Cream",
+              "system": "http://www.nlm.nih.gov/research/umls/rxnorm"
+            }
+          ]
+        },
+        "doseAmount": null,
+        "doseAmountUnit": {
+          "text": null,
+          "codings": []
+        },
+        "doseRoute": {
+          "text": "Topical route",
+          "codings": [
+            {
+              "code": "6064005",
+              "display": "Topical route",
+              "system": "http://snomed.info/sct"
+            }
+          ]
+        },
+        "doseQuantity": "40",
+        "doseQuantityUnit": {
+          "text": "g",
+          "codings": []
+        },
+        "instructions": "Apply to forehead and scalp actinic keratoses twice daily for 3 weeks.",
+        "indication": {
+          "text": null,
+          "codings": []
+        },
+        "startDate": "2026-04-07",
+        "endDate": null,
+        "statementDate": "2026-04-07",
+        "adherence": {
+          "text": null,
+          "codings": []
+        },
+        "fillStatus": {
+          "text": null,
+          "codings": []
+        },
+        "requestStatus": {
+          "text": "completed",
+          "codings": []
+        },
+        "medicationCategory": {
+          "text": "Community",
+          "codings": [
+            {
+              "code": "community",
+              "display": "Community",
+              "system": "http://terminology.hl7.org/CodeSystem/medicationrequest-category"
+            }
+          ]
+        },
+        "medicationIntent": {
+          "text": "order",
+          "codings": []
+        }
+      },
+      {
+        "medication": {
+          "text": "chlorhexidine gluconate 1.2 MG/ML Mouthwash",
+          "codings": [
+            {
+              "code": "834127",
+              "display": "chlorhexidine gluconate 1.2 MG/ML Mouthwash",
+              "system": "http://www.nlm.nih.gov/research/umls/rxnorm"
+            }
+          ]
+        },
+        "doseAmount": null,
+        "doseAmountUnit": {
+          "text": null,
+          "codings": []
+        },
+        "doseRoute": {
+          "text": "Oral route",
+          "codings": [
+            {
+              "code": "26643006",
+              "display": "Oral route",
+              "system": "http://snomed.info/sct"
+            }
+          ]
+        },
+        "doseQuantity": "473",
+        "doseQuantityUnit": {
+          "text": "mL",
+          "codings": []
+        },
+        "instructions": "Rinse with 15 mL for 30 seconds twice daily after brushing, then spit. Do not swallow.",
+        "indication": {
+          "text": null,
+          "codings": []
+        },
+        "startDate": "2026-02-25",
+        "endDate": null,
+        "statementDate": "2026-02-25",
+        "adherence": {
+          "text": null,
+          "codings": []
+        },
+        "fillStatus": {
+          "text": null,
+          "codings": []
+        },
+        "requestStatus": {
+          "text": "completed",
+          "codings": []
+        },
+        "medicationCategory": {
+          "text": "Community",
+          "codings": [
+            {
+              "code": "community",
+              "display": "Community",
+              "system": "http://terminology.hl7.org/CodeSystem/medicationrequest-category"
+            }
+          ]
+        },
+        "medicationIntent": {
+          "text": "order",
+          "codings": []
+        }
+      },
+      {
+        "medication": {
+          "text": "cholecalciferol 1.25 MG Oral Capsule",
+          "codings": [
+            {
+              "code": "705728",
+              "display": "cholecalciferol 1.25 MG Oral Capsule",
+              "system": "http://www.nlm.nih.gov/research/umls/rxnorm"
+            }
+          ]
+        },
+        "doseAmount": "1.25",
+        "doseAmountUnit": {
+          "text": "mg",
+          "codings": []
+        },
+        "doseRoute": {
+          "text": "Oral route",
+          "codings": [
+            {
+              "code": "26643006",
+              "display": "Oral route",
+              "system": "http://snomed.info/sct"
+            }
+          ]
+        },
+        "doseQuantity": "8",
+        "doseQuantityUnit": {
+          "text": "capsule",
+          "codings": []
+        },
+        "instructions": "Take 1 capsule (50,000 units) by mouth once weekly for 8 weeks.",
+        "indication": {
+          "text": null,
+          "codings": []
+        },
+        "startDate": "2026-08-25",
+        "endDate": null,
+        "statementDate": "2026-08-25",
+        "adherence": {
+          "text": null,
+          "codings": []
+        },
+        "fillStatus": {
+          "text": null,
+          "codings": []
+        },
+        "requestStatus": {
+          "text": "active",
+          "codings": []
+        },
+        "medicationCategory": {
+          "text": "Community",
+          "codings": [
+            {
+              "code": "community",
+              "display": "Community",
+              "system": "http://terminology.hl7.org/CodeSystem/medicationrequest-category"
+            }
+          ]
+        },
+        "medicationIntent": {
+          "text": "order",
+          "codings": []
+        }
+      },
+      {
+        "medication": {
+          "text": "Clopidogrel, 500 TABLET, FILM COATED in 1 BOTTLE (0093-7314-05) (package)",
+          "codings": [
+            {
+              "code": "00093731405",
+              "display": "Clopidogrel, 500 TABLET, FILM COATED in 1 BOTTLE (0093-7314-05) (package)",
+              "system": "http://hl7.org/fhir/sid/ndc"
+            }
+          ]
+        },
+        "doseAmount": null,
+        "doseAmountUnit": {
+          "text": null,
+          "codings": []
+        },
+        "doseRoute": {
+          "text": null,
+          "codings": []
+        },
+        "doseQuantity": null,
+        "doseQuantityUnit": {
+          "text": null,
+          "codings": []
+        },
+        "instructions": null,
+        "indication": {
+          "text": null,
+          "codings": []
+        },
+        "startDate": "2024-03-05",
+        "endDate": null,
+        "statementDate": "2024-03-05",
+        "adherence": {
+          "text": null,
+          "codings": []
+        },
+        "fillStatus": {
+          "text": null,
+          "codings": []
+        },
+        "requestStatus": {
+          "text": null,
+          "codings": []
+        },
+        "medicationCategory": {
+          "text": null,
+          "codings": []
+        },
+        "medicationIntent": {
+          "text": null,
+          "codings": []
+        }
+      },
+      {
+        "medication": {
+          "text": "atorvastatin 80 MG Oral Tablet",
+          "codings": [
+            {
+              "code": "00093505705",
+              "display": "atorvastatin 80 MG Oral Tablet",
+              "system": "http://hl7.org/fhir/sid/ndc"
+            }
+          ]
+        },
+        "doseAmount": null,
+        "doseAmountUnit": {
+          "text": null,
+          "codings": []
+        },
+        "doseRoute": {
+          "text": null,
+          "codings": []
+        },
+        "doseQuantity": null,
+        "doseQuantityUnit": {
+          "text": null,
+          "codings": []
+        },
+        "instructions": null,
+        "indication": {
+          "text": null,
+          "codings": []
+        },
+        "startDate": "2026-07-30",
+        "endDate": null,
+        "statementDate": "2026-07-30",
+        "adherence": {
+          "text": null,
+          "codings": []
+        },
+        "fillStatus": {
+          "text": null,
+          "codings": []
+        },
+        "requestStatus": {
+          "text": null,
+          "codings": []
+        },
+        "medicationCategory": {
+          "text": null,
+          "codings": []
+        },
+        "medicationIntent": {
+          "text": null,
+          "codings": []
+        }
+      },
+      {
+        "medication": {
+          "text": "metformin hydrochloride, 100 TABLET in 1 BOTTLE (0185-0221-01) (package)",
+          "codings": [
+            {
+              "code": "00185022101",
+              "display": "metformin hydrochloride, 100 TABLET in 1 BOTTLE (0185-0221-01) (package)",
+              "system": "http://hl7.org/fhir/sid/ndc"
+            }
+          ]
+        },
+        "doseAmount": null,
+        "doseAmountUnit": {
+          "text": null,
+          "codings": []
+        },
+        "doseRoute": {
+          "text": null,
+          "codings": []
+        },
+        "doseQuantity": null,
+        "doseQuantityUnit": {
+          "text": null,
+          "codings": []
+        },
+        "instructions": null,
+        "indication": {
+          "text": null,
+          "codings": []
+        },
+        "startDate": "2026-07-30",
+        "endDate": null,
+        "statementDate": "2026-07-30",
+        "adherence": {
+          "text": null,
+          "codings": []
+        },
+        "fillStatus": {
+          "text": null,
+          "codings": []
+        },
+        "requestStatus": {
+          "text": null,
+          "codings": []
+        },
+        "medicationCategory": {
+          "text": null,
+          "codings": []
+        },
+        "medicationIntent": {
+          "text": null,
+          "codings": []
+        }
+      },
+      {
+        "medication": {
+          "text": "24 HR metoprolol succinate 50 MG Extended Release Oral Tablet",
+          "codings": [
+            {
+              "code": "00185028201",
+              "display": "24 HR metoprolol succinate 50 MG Extended Release Oral Tablet",
+              "system": "http://hl7.org/fhir/sid/ndc"
+            }
+          ]
+        },
+        "doseAmount": null,
+        "doseAmountUnit": {
+          "text": null,
+          "codings": []
+        },
+        "doseRoute": {
+          "text": null,
+          "codings": []
+        },
+        "doseQuantity": null,
+        "doseQuantityUnit": {
+          "text": null,
+          "codings": []
+        },
+        "instructions": null,
+        "indication": {
+          "text": null,
+          "codings": []
+        },
+        "startDate": "2026-07-30",
+        "endDate": null,
+        "statementDate": "2026-07-30",
+        "adherence": {
+          "text": null,
+          "codings": []
+        },
+        "fillStatus": {
+          "text": null,
+          "codings": []
+        },
+        "requestStatus": {
+          "text": null,
+          "codings": []
+        },
+        "medicationCategory": {
+          "text": null,
+          "codings": []
+        },
+        "medicationIntent": {
+          "text": null,
+          "codings": []
+        }
+      },
+      {
+        "medication": {
+          "text": "Losartan Potassium, 90 TABLET in 1 BOTTLE (0054-0125-22) (package)",
+          "codings": [
+            {
+              "code": "00054012522",
+              "display": "Losartan Potassium, 90 TABLET in 1 BOTTLE (0054-0125-22) (package)",
+              "system": "http://hl7.org/fhir/sid/ndc"
+            }
+          ]
+        },
+        "doseAmount": null,
+        "doseAmountUnit": {
+          "text": null,
+          "codings": []
+        },
+        "doseRoute": {
+          "text": null,
+          "codings": []
+        },
+        "doseQuantity": null,
+        "doseQuantityUnit": {
+          "text": null,
+          "codings": []
+        },
+        "instructions": null,
+        "indication": {
+          "text": null,
+          "codings": []
+        },
+        "startDate": "2026-07-30",
+        "endDate": null,
+        "statementDate": "2026-07-30",
+        "adherence": {
+          "text": null,
+          "codings": []
+        },
+        "fillStatus": {
+          "text": null,
+          "codings": []
+        },
+        "requestStatus": {
+          "text": null,
+          "codings": []
+        },
+        "medicationCategory": {
+          "text": null,
+          "codings": []
+        },
+        "medicationIntent": {
+          "text": null,
+          "codings": []
+        }
+      },
+      {
+        "medication": {
+          "text": "insulin glargine 100 UNT/ML Injectable Solution",
+          "codings": [
+            {
+              "code": "00955172901",
+              "display": "insulin glargine 100 UNT/ML Injectable Solution",
+              "system": "http://hl7.org/fhir/sid/ndc"
+            }
+          ]
+        },
+        "doseAmount": null,
+        "doseAmountUnit": {
+          "text": null,
+          "codings": []
+        },
+        "doseRoute": {
+          "text": null,
+          "codings": []
+        },
+        "doseQuantity": null,
+        "doseQuantityUnit": {
+          "text": null,
+          "codings": []
+        },
+        "instructions": null,
+        "indication": {
+          "text": null,
+          "codings": []
+        },
+        "startDate": "2026-08-02",
+        "endDate": null,
+        "statementDate": "2026-08-02",
+        "adherence": {
+          "text": null,
+          "codings": []
+        },
+        "fillStatus": {
+          "text": null,
+          "codings": []
+        },
+        "requestStatus": {
+          "text": null,
+          "codings": []
+        },
+        "medicationCategory": {
+          "text": null,
+          "codings": []
+        },
+        "medicationIntent": {
+          "text": null,
+          "codings": []
+        }
+      },
+      {
+        "medication": {
+          "text": "Sertraline Hydrochloride, 100 TABLET, FILM COATED in 1 BOTTLE, PLASTIC (0378-4188-01) (package)",
+          "codings": [
+            {
+              "code": "00378418801",
+              "display": "Sertraline Hydrochloride, 100 TABLET, FILM COATED in 1 BOTTLE, PLASTIC (0378-4188-01) (package)",
+              "system": "http://hl7.org/fhir/sid/ndc"
+            }
+          ]
+        },
+        "doseAmount": null,
+        "doseAmountUnit": {
+          "text": null,
+          "codings": []
+        },
+        "doseRoute": {
+          "text": null,
+          "codings": []
+        },
+        "doseQuantity": null,
+        "doseQuantityUnit": {
+          "text": null,
+          "codings": []
+        },
+        "instructions": null,
+        "indication": {
+          "text": null,
+          "codings": []
+        },
+        "startDate": "2026-08-02",
+        "endDate": null,
+        "statementDate": "2026-08-02",
+        "adherence": {
+          "text": null,
+          "codings": []
+        },
+        "fillStatus": {
+          "text": null,
+          "codings": []
+        },
+        "requestStatus": {
+          "text": null,
+          "codings": []
+        },
+        "medicationCategory": {
+          "text": null,
+          "codings": []
+        },
+        "medicationIntent": {
+          "text": null,
+          "codings": []
+        }
+      },
+      {
+        "medication": {
+          "text": "Latanoprost, 1 BOTTLE in 1 CARTON (0378-9645-32) > 2.5 mL in 1 BOTTLE (package)",
+          "codings": [
+            {
+              "code": "00378964532",
+              "display": "Latanoprost, 1 BOTTLE in 1 CARTON (0378-9645-32) > 2.5 mL in 1 BOTTLE (package)",
+              "system": "http://hl7.org/fhir/sid/ndc"
+            }
+          ]
+        },
+        "doseAmount": null,
+        "doseAmountUnit": {
+          "text": null,
+          "codings": []
+        },
+        "doseRoute": {
+          "text": null,
+          "codings": []
+        },
+        "doseQuantity": null,
+        "doseQuantityUnit": {
+          "text": null,
+          "codings": []
+        },
+        "instructions": null,
+        "indication": {
+          "text": null,
+          "codings": []
+        },
+        "startDate": "2026-07-14",
+        "endDate": null,
+        "statementDate": "2026-07-14",
+        "adherence": {
+          "text": null,
+          "codings": []
+        },
+        "fillStatus": {
+          "text": null,
+          "codings": []
+        },
+        "requestStatus": {
+          "text": null,
+          "codings": []
+        },
+        "medicationCategory": {
+          "text": null,
+          "codings": []
+        },
+        "medicationIntent": {
+          "text": null,
+          "codings": []
+        }
+      },
+      {
+        "medication": {
+          "text": "clobetasol propionate 0.5 MG/ML Topical Solution",
+          "codings": [
+            {
+              "code": "00064043050",
+              "display": "clobetasol propionate 0.5 MG/ML Topical Solution",
+              "system": "http://hl7.org/fhir/sid/ndc"
+            }
+          ]
+        },
+        "doseAmount": null,
+        "doseAmountUnit": {
+          "text": null,
+          "codings": []
+        },
+        "doseRoute": {
+          "text": null,
+          "codings": []
+        },
+        "doseQuantity": null,
+        "doseQuantityUnit": {
+          "text": null,
+          "codings": []
+        },
+        "instructions": null,
+        "indication": {
+          "text": null,
+          "codings": []
+        },
+        "startDate": "2026-04-07",
+        "endDate": null,
+        "statementDate": "2026-04-07",
+        "adherence": {
+          "text": null,
+          "codings": []
+        },
+        "fillStatus": {
+          "text": null,
+          "codings": []
+        },
+        "requestStatus": {
+          "text": null,
+          "codings": []
+        },
+        "medicationCategory": {
+          "text": null,
+          "codings": []
+        },
+        "medicationIntent": {
+          "text": null,
+          "codings": []
+        }
+      },
+      {
+        "medication": {
+          "text": "Chlorhexidine Gluconate 0.12% Oral Rinse, 15 mL in 1 BOTTLE (0116-0003-15) (package)",
+          "codings": [
+            {
+              "code": "00116000315",
+              "display": "Chlorhexidine Gluconate 0.12% Oral Rinse, 15 mL in 1 BOTTLE (0116-0003-15) (package)",
+              "system": "http://hl7.org/fhir/sid/ndc"
+            }
+          ]
+        },
+        "doseAmount": null,
+        "doseAmountUnit": {
+          "text": null,
+          "codings": []
+        },
+        "doseRoute": {
+          "text": null,
+          "codings": []
+        },
+        "doseQuantity": null,
+        "doseQuantityUnit": {
+          "text": null,
+          "codings": []
+        },
+        "instructions": null,
+        "indication": {
+          "text": null,
+          "codings": []
+        },
+        "startDate": "2026-02-25",
+        "endDate": null,
+        "statementDate": "2026-02-25",
+        "adherence": {
+          "text": null,
+          "codings": []
+        },
+        "fillStatus": {
+          "text": null,
+          "codings": []
+        },
+        "requestStatus": {
+          "text": null,
+          "codings": []
+        },
+        "medicationCategory": {
+          "text": null,
+          "codings": []
+        },
+        "medicationIntent": {
+          "text": null,
+          "codings": []
+        }
+      }
+    ],
+    "conditions": [
+      {
+        "condition": {
+          "text": "Essential hypertension",
+          "codings": [
+            {
+              "code": "59621000",
+              "display": "Essential hypertension",
+              "system": "http://snomed.info/sct"
+            },
+            {
+              "code": "I10",
+              "display": "Essential (primary) hypertension",
+              "system": "http://hl7.org/fhir/sid/icd-10-cm"
+            }
+          ]
+        },
+        "onsetDate": "2012-06-18",
+        "conditionStatus": {
+          "text": "Active",
+          "codings": [
+            {
+              "code": "active",
+              "display": "Active",
+              "system": "http://terminology.hl7.org/CodeSystem/condition-clinical"
+            }
+          ]
+        },
+        "resolutionDate": null,
+        "clinicalStatus": {
+          "text": "Active",
+          "codings": [
+            {
+              "code": "active",
+              "display": "Active",
+              "system": "http://terminology.hl7.org/CodeSystem/condition-clinical"
+            }
+          ]
+        },
+        "verificationStatus": {
+          "text": "Confirmed",
+          "codings": [
+            {
+              "code": "confirmed",
+              "display": "Confirmed",
+              "system": "http://terminology.hl7.org/CodeSystem/condition-ver-status"
+            }
+          ]
+        },
+        "conditionCategory": {
+          "text": "Problem List Item",
+          "codings": [
+            {
+              "code": "problem-list-item",
+              "display": "Problem List Item",
+              "system": "http://terminology.hl7.org/CodeSystem/condition-category"
+            }
+          ]
+        },
+        "assertedDate": "2012-06-18",
+        "recordedDate": "2012-06-18"
+      },
+      {
+        "condition": {
+          "text": "Type 2 diabetes mellitus with diabetic polyneuropathy",
+          "codings": [
+            {
+              "code": "44054006",
+              "display": "Type 2 diabetes mellitus",
+              "system": "http://snomed.info/sct"
+            },
+            {
+              "code": "E11.42",
+              "display": "Type 2 diabetes mellitus with diabetic polyneuropathy",
+              "system": "http://hl7.org/fhir/sid/icd-10-cm"
+            }
+          ]
+        },
+        "onsetDate": "2015-02-09",
+        "conditionStatus": {
+          "text": "Active",
+          "codings": [
+            {
+              "code": "active",
+              "display": "Active",
+              "system": "http://terminology.hl7.org/CodeSystem/condition-clinical"
+            }
+          ]
+        },
+        "resolutionDate": null,
+        "clinicalStatus": {
+          "text": "Active",
+          "codings": [
+            {
+              "code": "active",
+              "display": "Active",
+              "system": "http://terminology.hl7.org/CodeSystem/condition-clinical"
+            }
+          ]
+        },
+        "verificationStatus": {
+          "text": "Confirmed",
+          "codings": [
+            {
+              "code": "confirmed",
+              "display": "Confirmed",
+              "system": "http://terminology.hl7.org/CodeSystem/condition-ver-status"
+            }
+          ]
+        },
+        "conditionCategory": {
+          "text": "Problem List Item",
+          "codings": [
+            {
+              "code": "problem-list-item",
+              "display": "Problem List Item",
+              "system": "http://terminology.hl7.org/CodeSystem/condition-category"
+            }
+          ]
+        },
+        "assertedDate": "2015-02-09",
+        "recordedDate": "2015-02-09"
+      },
+      {
+        "condition": {
+          "text": "Hyperlipidemia",
+          "codings": [
+            {
+              "code": "55822004",
+              "display": "Hyperlipidemia",
+              "system": "http://snomed.info/sct"
+            },
+            {
+              "code": "E78.5",
+              "display": "Hyperlipidemia, unspecified",
+              "system": "http://hl7.org/fhir/sid/icd-10-cm"
+            }
+          ]
+        },
+        "onsetDate": "2016-03-21",
+        "conditionStatus": {
+          "text": "Active",
+          "codings": [
+            {
+              "code": "active",
+              "display": "Active",
+              "system": "http://terminology.hl7.org/CodeSystem/condition-clinical"
+            }
+          ]
+        },
+        "resolutionDate": null,
+        "clinicalStatus": {
+          "text": "Active",
+          "codings": [
+            {
+              "code": "active",
+              "display": "Active",
+              "system": "http://terminology.hl7.org/CodeSystem/condition-clinical"
+            }
+          ]
+        },
+        "verificationStatus": {
+          "text": "Confirmed",
+          "codings": [
+            {
+              "code": "confirmed",
+              "display": "Confirmed",
+              "system": "http://terminology.hl7.org/CodeSystem/condition-ver-status"
+            }
+          ]
+        },
+        "conditionCategory": {
+          "text": "Problem List Item",
+          "codings": [
+            {
+              "code": "problem-list-item",
+              "display": "Problem List Item",
+              "system": "http://terminology.hl7.org/CodeSystem/condition-category"
+            }
+          ]
+        },
+        "assertedDate": "2016-03-21",
+        "recordedDate": "2016-03-21"
+      },
+      {
+        "condition": {
+          "text": "Post-traumatic stress disorder",
+          "codings": [
+            {
+              "code": "47505003",
+              "display": "Posttraumatic stress disorder",
+              "system": "http://snomed.info/sct"
+            },
+            {
+              "code": "F43.10",
+              "display": "Post-traumatic stress disorder, unspecified",
+              "system": "http://hl7.org/fhir/sid/icd-10-cm"
+            }
+          ]
+        },
+        "onsetDate": "2018-04-10",
+        "conditionStatus": {
+          "text": "Active",
+          "codings": [
+            {
+              "code": "active",
+              "display": "Active",
+              "system": "http://terminology.hl7.org/CodeSystem/condition-clinical"
+            }
+          ]
+        },
+        "resolutionDate": null,
+        "clinicalStatus": {
+          "text": "Active",
+          "codings": [
+            {
+              "code": "active",
+              "display": "Active",
+              "system": "http://terminology.hl7.org/CodeSystem/condition-clinical"
+            }
+          ]
+        },
+        "verificationStatus": {
+          "text": "Confirmed",
+          "codings": [
+            {
+              "code": "confirmed",
+              "display": "Confirmed",
+              "system": "http://terminology.hl7.org/CodeSystem/condition-ver-status"
+            }
+          ]
+        },
+        "conditionCategory": {
+          "text": "Problem List Item",
+          "codings": [
+            {
+              "code": "problem-list-item",
+              "display": "Problem List Item",
+              "system": "http://terminology.hl7.org/CodeSystem/condition-category"
+            }
+          ]
+        },
+        "assertedDate": "2018-04-10",
+        "recordedDate": "2018-04-10"
+      },
+      {
+        "condition": {
+          "text": "Major depressive disorder, recurrent, moderate",
+          "codings": [
+            {
+              "code": "35489007",
+              "display": "Depressive disorder",
+              "system": "http://snomed.info/sct"
+            },
+            {
+              "code": "F33.1",
+              "display": "Major depressive disorder, recurrent, moderate",
+              "system": "http://hl7.org/fhir/sid/icd-10-cm"
+            }
+          ]
+        },
+        "onsetDate": "2019-01-15",
+        "conditionStatus": {
+          "text": "Active",
+          "codings": [
+            {
+              "code": "active",
+              "display": "Active",
+              "system": "http://terminology.hl7.org/CodeSystem/condition-clinical"
+            }
+          ]
+        },
+        "resolutionDate": null,
+        "clinicalStatus": {
+          "text": "Active",
+          "codings": [
+            {
+              "code": "active",
+              "display": "Active",
+              "system": "http://terminology.hl7.org/CodeSystem/condition-clinical"
+            }
+          ]
+        },
+        "verificationStatus": {
+          "text": "Confirmed",
+          "codings": [
+            {
+              "code": "confirmed",
+              "display": "Confirmed",
+              "system": "http://terminology.hl7.org/CodeSystem/condition-ver-status"
+            }
+          ]
+        },
+        "conditionCategory": {
+          "text": "Problem List Item",
+          "codings": [
+            {
+              "code": "problem-list-item",
+              "display": "Problem List Item",
+              "system": "http://terminology.hl7.org/CodeSystem/condition-category"
+            }
+          ]
+        },
+        "assertedDate": "2019-01-15",
+        "recordedDate": "2019-01-15"
+      },
+      {
+        "condition": {
+          "text": "Obstructive sleep apnea",
+          "codings": [
+            {
+              "code": "78275009",
+              "display": "Obstructive sleep apnea syndrome",
+              "system": "http://snomed.info/sct"
+            },
+            {
+              "code": "G47.33",
+              "display": "Obstructive sleep apnea (adult) (pediatric)",
+              "system": "http://hl7.org/fhir/sid/icd-10-cm"
+            }
+          ]
+        },
+        "onsetDate": "2019-05-21",
+        "conditionStatus": {
+          "text": "Active",
+          "codings": [
+            {
+              "code": "active",
+              "display": "Active",
+              "system": "http://terminology.hl7.org/CodeSystem/condition-clinical"
+            }
+          ]
+        },
+        "resolutionDate": null,
+        "clinicalStatus": {
+          "text": "Active",
+          "codings": [
+            {
+              "code": "active",
+              "display": "Active",
+              "system": "http://terminology.hl7.org/CodeSystem/condition-clinical"
+            }
+          ]
+        },
+        "verificationStatus": {
+          "text": "Confirmed",
+          "codings": [
+            {
+              "code": "confirmed",
+              "display": "Confirmed",
+              "system": "http://terminology.hl7.org/CodeSystem/condition-ver-status"
+            }
+          ]
+        },
+        "conditionCategory": {
+          "text": "Problem List Item",
+          "codings": [
+            {
+              "code": "problem-list-item",
+              "display": "Problem List Item",
+              "system": "http://terminology.hl7.org/CodeSystem/condition-category"
+            }
+          ]
+        },
+        "assertedDate": "2019-05-21",
+        "recordedDate": "2019-05-21"
+      },
+      {
+        "condition": {
+          "text": "Gastroesophageal reflux disease",
+          "codings": [
+            {
+              "code": "235595009",
+              "display": "Gastroesophageal reflux disease",
+              "system": "http://snomed.info/sct"
+            },
+            {
+              "code": "K21.9",
+              "display": "Gastro-esophageal reflux disease without esophagitis",
+              "system": "http://hl7.org/fhir/sid/icd-10-cm"
+            }
+          ]
+        },
+        "onsetDate": "2020-02-03",
+        "conditionStatus": {
+          "text": "Active",
+          "codings": [
+            {
+              "code": "active",
+              "display": "Active",
+              "system": "http://terminology.hl7.org/CodeSystem/condition-clinical"
+            }
+          ]
+        },
+        "resolutionDate": null,
+        "clinicalStatus": {
+          "text": "Active",
+          "codings": [
+            {
+              "code": "active",
+              "display": "Active",
+              "system": "http://terminology.hl7.org/CodeSystem/condition-clinical"
+            }
+          ]
+        },
+        "verificationStatus": {
+          "text": "Confirmed",
+          "codings": [
+            {
+              "code": "confirmed",
+              "display": "Confirmed",
+              "system": "http://terminology.hl7.org/CodeSystem/condition-ver-status"
+            }
+          ]
+        },
+        "conditionCategory": {
+          "text": "Problem List Item",
+          "codings": [
+            {
+              "code": "problem-list-item",
+              "display": "Problem List Item",
+              "system": "http://terminology.hl7.org/CodeSystem/condition-category"
+            }
+          ]
+        },
+        "assertedDate": "2020-02-03",
+        "recordedDate": "2020-02-03"
+      },
+      {
+        "condition": {
+          "text": "Psoriasis vulgaris",
+          "codings": [
+            {
+              "code": "9014002",
+              "display": "Psoriasis",
+              "system": "http://snomed.info/sct"
+            },
+            {
+              "code": "L40.0",
+              "display": "Psoriasis vulgaris",
+              "system": "http://hl7.org/fhir/sid/icd-10-cm"
+            }
+          ]
+        },
+        "onsetDate": "2021-05-11",
+        "conditionStatus": {
+          "text": "Active",
+          "codings": [
+            {
+              "code": "active",
+              "display": "Active",
+              "system": "http://terminology.hl7.org/CodeSystem/condition-clinical"
+            }
+          ]
+        },
+        "resolutionDate": null,
+        "clinicalStatus": {
+          "text": "Active",
+          "codings": [
+            {
+              "code": "active",
+              "display": "Active",
+              "system": "http://terminology.hl7.org/CodeSystem/condition-clinical"
+            }
+          ]
+        },
+        "verificationStatus": {
+          "text": "Confirmed",
+          "codings": [
+            {
+              "code": "confirmed",
+              "display": "Confirmed",
+              "system": "http://terminology.hl7.org/CodeSystem/condition-ver-status"
+            }
+          ]
+        },
+        "conditionCategory": {
+          "text": "Problem List Item",
+          "codings": [
+            {
+              "code": "problem-list-item",
+              "display": "Problem List Item",
+              "system": "http://terminology.hl7.org/CodeSystem/condition-category"
+            }
+          ]
+        },
+        "assertedDate": "2021-05-11",
+        "recordedDate": "2021-05-11"
+      },
+      {
+        "condition": {
+          "text": "Lumbar disc herniation with radiculopathy",
+          "codings": [
+            {
+              "code": "128196005",
+              "display": "Lumbar radiculopathy",
+              "system": "http://snomed.info/sct"
+            },
+            {
+              "code": "M51.16",
+              "display": "Intervertebral disc disorders with radiculopathy, lumbar region",
+              "system": "http://hl7.org/fhir/sid/icd-10-cm"
+            }
+          ]
+        },
+        "onsetDate": "2022-08-30",
+        "conditionStatus": {
+          "text": "Active",
+          "codings": [
+            {
+              "code": "active",
+              "display": "Active",
+              "system": "http://terminology.hl7.org/CodeSystem/condition-clinical"
+            }
+          ]
+        },
+        "resolutionDate": null,
+        "clinicalStatus": {
+          "text": "Active",
+          "codings": [
+            {
+              "code": "active",
+              "display": "Active",
+              "system": "http://terminology.hl7.org/CodeSystem/condition-clinical"
+            }
+          ]
+        },
+        "verificationStatus": {
+          "text": "Confirmed",
+          "codings": [
+            {
+              "code": "confirmed",
+              "display": "Confirmed",
+              "system": "http://terminology.hl7.org/CodeSystem/condition-ver-status"
+            }
+          ]
+        },
+        "conditionCategory": {
+          "text": "Problem List Item",
+          "codings": [
+            {
+              "code": "problem-list-item",
+              "display": "Problem List Item",
+              "system": "http://terminology.hl7.org/CodeSystem/condition-category"
+            }
+          ]
+        },
+        "assertedDate": "2022-08-30",
+        "recordedDate": "2022-08-30"
+      },
+      {
+        "condition": {
+          "text": "Chronic obstructive pulmonary disease",
+          "codings": [
+            {
+              "code": "13645005",
+              "display": "Chronic obstructive pulmonary disease",
+              "system": "http://snomed.info/sct"
+            },
+            {
+              "code": "J44.9",
+              "display": "Chronic obstructive pulmonary disease, unspecified",
+              "system": "http://hl7.org/fhir/sid/icd-10-cm"
+            }
+          ]
+        },
+        "onsetDate": "2023-02-14",
+        "conditionStatus": {
+          "text": "Active",
+          "codings": [
+            {
+              "code": "active",
+              "display": "Active",
+              "system": "http://terminology.hl7.org/CodeSystem/condition-clinical"
+            }
+          ]
+        },
+        "resolutionDate": null,
+        "clinicalStatus": {
+          "text": "Active",
+          "codings": [
+            {
+              "code": "active",
+              "display": "Active",
+              "system": "http://terminology.hl7.org/CodeSystem/condition-clinical"
+            }
+          ]
+        },
+        "verificationStatus": {
+          "text": "Confirmed",
+          "codings": [
+            {
+              "code": "confirmed",
+              "display": "Confirmed",
+              "system": "http://terminology.hl7.org/CodeSystem/condition-ver-status"
+            }
+          ]
+        },
+        "conditionCategory": {
+          "text": "Problem List Item",
+          "codings": [
+            {
+              "code": "problem-list-item",
+              "display": "Problem List Item",
+              "system": "http://terminology.hl7.org/CodeSystem/condition-category"
+            }
+          ]
+        },
+        "assertedDate": "2023-02-14",
+        "recordedDate": "2023-02-14"
+      },
+      {
+        "condition": {
+          "text": "Chronic gout without tophus",
+          "codings": [
+            {
+              "code": "90560007",
+              "display": "Gout",
+              "system": "http://snomed.info/sct"
+            },
+            {
+              "code": "M1A.9XX0",
+              "display": "Chronic gout, unspecified, without tophus (tophi)",
+              "system": "http://hl7.org/fhir/sid/icd-10-cm"
+            }
+          ]
+        },
+        "onsetDate": "2023-07-06",
+        "conditionStatus": {
+          "text": "Active",
+          "codings": [
+            {
+              "code": "active",
+              "display": "Active",
+              "system": "http://terminology.hl7.org/CodeSystem/condition-clinical"
+            }
+          ]
+        },
+        "resolutionDate": null,
+        "clinicalStatus": {
+          "text": "Active",
+          "codings": [
+            {
+              "code": "active",
+              "display": "Active",
+              "system": "http://terminology.hl7.org/CodeSystem/condition-clinical"
+            }
+          ]
+        },
+        "verificationStatus": {
+          "text": "Confirmed",
+          "codings": [
+            {
+              "code": "confirmed",
+              "display": "Confirmed",
+              "system": "http://terminology.hl7.org/CodeSystem/condition-ver-status"
+            }
+          ]
+        },
+        "conditionCategory": {
+          "text": "Problem List Item",
+          "codings": [
+            {
+              "code": "problem-list-item",
+              "display": "Problem List Item",
+              "system": "http://terminology.hl7.org/CodeSystem/condition-category"
+            }
+          ]
+        },
+        "assertedDate": "2023-07-06",
+        "recordedDate": "2023-07-06"
+      },
+      {
+        "condition": {
+          "text": "Acute NSTEMI (resolved)",
+          "codings": [
+            {
+              "code": "401314000",
+              "display": "Acute non-ST segment elevation myocardial infarction",
+              "system": "http://snomed.info/sct"
+            },
+            {
+              "code": "I21.4",
+              "display": "Non-ST elevation (NSTEMI) myocardial infarction",
+              "system": "http://hl7.org/fhir/sid/icd-10-cm"
+            }
+          ]
+        },
+        "onsetDate": "2024-03-02",
+        "conditionStatus": {
+          "text": "Resolved",
+          "codings": [
+            {
+              "code": "resolved",
+              "display": "Resolved",
+              "system": "http://terminology.hl7.org/CodeSystem/condition-clinical"
+            }
+          ]
+        },
+        "resolutionDate": "2024-04-01",
+        "clinicalStatus": {
+          "text": "Resolved",
+          "codings": [
+            {
+              "code": "resolved",
+              "display": "Resolved",
+              "system": "http://terminology.hl7.org/CodeSystem/condition-clinical"
+            }
+          ]
+        },
+        "verificationStatus": {
+          "text": "Confirmed",
+          "codings": [
+            {
+              "code": "confirmed",
+              "display": "Confirmed",
+              "system": "http://terminology.hl7.org/CodeSystem/condition-ver-status"
+            }
+          ]
+        },
+        "conditionCategory": {
+          "text": "Encounter Diagnosis",
+          "codings": [
+            {
+              "code": "encounter-diagnosis",
+              "display": "Encounter Diagnosis",
+              "system": "http://terminology.hl7.org/CodeSystem/condition-category"
+            }
+          ]
+        },
+        "assertedDate": "2024-03-02",
+        "recordedDate": "2024-03-02"
+      },
+      {
+        "condition": {
+          "text": "History of myocardial infarction",
+          "codings": [
+            {
+              "code": "399211009",
+              "display": "History of myocardial infarction",
+              "system": "http://snomed.info/sct"
+            },
+            {
+              "code": "I25.2",
+              "display": "Old myocardial infarction",
+              "system": "http://hl7.org/fhir/sid/icd-10-cm"
+            }
+          ]
+        },
+        "onsetDate": "2024-04-09",
+        "conditionStatus": {
+          "text": "Active",
+          "codings": [
+            {
+              "code": "active",
+              "display": "Active",
+              "system": "http://terminology.hl7.org/CodeSystem/condition-clinical"
+            }
+          ]
+        },
+        "resolutionDate": null,
+        "clinicalStatus": {
+          "text": "Active",
+          "codings": [
+            {
+              "code": "active",
+              "display": "Active",
+              "system": "http://terminology.hl7.org/CodeSystem/condition-clinical"
+            }
+          ]
+        },
+        "verificationStatus": {
+          "text": "Confirmed",
+          "codings": [
+            {
+              "code": "confirmed",
+              "display": "Confirmed",
+              "system": "http://terminology.hl7.org/CodeSystem/condition-ver-status"
+            }
+          ]
+        },
+        "conditionCategory": {
+          "text": "Problem List Item",
+          "codings": [
+            {
+              "code": "problem-list-item",
+              "display": "Problem List Item",
+              "system": "http://terminology.hl7.org/CodeSystem/condition-category"
+            }
+          ]
+        },
+        "assertedDate": "2024-04-09",
+        "recordedDate": "2024-04-09"
+      },
+      {
+        "condition": {
+          "text": "Coronary artery disease, status post drug-eluting stent",
+          "codings": [
+            {
+              "code": "53741008",
+              "display": "Coronary arteriosclerosis",
+              "system": "http://snomed.info/sct"
+            },
+            {
+              "code": "I25.10",
+              "display": "Atherosclerotic heart disease of native coronary artery without angina pectoris",
+              "system": "http://hl7.org/fhir/sid/icd-10-cm"
+            }
+          ]
+        },
+        "onsetDate": "2024-03-03",
+        "conditionStatus": {
+          "text": "Active",
+          "codings": [
+            {
+              "code": "active",
+              "display": "Active",
+              "system": "http://terminology.hl7.org/CodeSystem/condition-clinical"
+            }
+          ]
+        },
+        "resolutionDate": null,
+        "clinicalStatus": {
+          "text": "Active",
+          "codings": [
+            {
+              "code": "active",
+              "display": "Active",
+              "system": "http://terminology.hl7.org/CodeSystem/condition-clinical"
+            }
+          ]
+        },
+        "verificationStatus": {
+          "text": "Confirmed",
+          "codings": [
+            {
+              "code": "confirmed",
+              "display": "Confirmed",
+              "system": "http://terminology.hl7.org/CodeSystem/condition-ver-status"
+            }
+          ]
+        },
+        "conditionCategory": {
+          "text": "Problem List Item",
+          "codings": [
+            {
+              "code": "problem-list-item",
+              "display": "Problem List Item",
+              "system": "http://terminology.hl7.org/CodeSystem/condition-category"
+            }
+          ]
+        },
+        "assertedDate": "2024-03-03",
+        "recordedDate": "2024-03-03"
+      },
+      {
+        "condition": {
+          "text": "Noise-induced sensorineural hearing loss, bilateral",
+          "codings": [
+            {
+              "code": "60700002",
+              "display": "Sensorineural hearing loss",
+              "system": "http://snomed.info/sct"
+            },
+            {
+              "code": "H90.3",
+              "display": "Sensorineural hearing loss, bilateral",
+              "system": "http://hl7.org/fhir/sid/icd-10-cm"
+            }
+          ]
+        },
+        "onsetDate": "2024-07-15",
+        "conditionStatus": {
+          "text": "Active",
+          "codings": [
+            {
+              "code": "active",
+              "display": "Active",
+              "system": "http://terminology.hl7.org/CodeSystem/condition-clinical"
+            }
+          ]
+        },
+        "resolutionDate": null,
+        "clinicalStatus": {
+          "text": "Active",
+          "codings": [
+            {
+              "code": "active",
+              "display": "Active",
+              "system": "http://terminology.hl7.org/CodeSystem/condition-clinical"
+            }
+          ]
+        },
+        "verificationStatus": {
+          "text": "Confirmed",
+          "codings": [
+            {
+              "code": "confirmed",
+              "display": "Confirmed",
+              "system": "http://terminology.hl7.org/CodeSystem/condition-ver-status"
+            }
+          ]
+        },
+        "conditionCategory": {
+          "text": "Problem List Item",
+          "codings": [
+            {
+              "code": "problem-list-item",
+              "display": "Problem List Item",
+              "system": "http://terminology.hl7.org/CodeSystem/condition-category"
+            }
+          ]
+        },
+        "assertedDate": "2024-07-15",
+        "recordedDate": "2024-07-15"
+      },
+      {
+        "condition": {
+          "text": "Tinnitus, bilateral",
+          "codings": [
+            {
+              "code": "60862001",
+              "display": "Tinnitus",
+              "system": "http://snomed.info/sct"
+            },
+            {
+              "code": "H93.13",
+              "display": "Tinnitus, bilateral",
+              "system": "http://hl7.org/fhir/sid/icd-10-cm"
+            }
+          ]
+        },
+        "onsetDate": "2024-07-15",
+        "conditionStatus": {
+          "text": "Active",
+          "codings": [
+            {
+              "code": "active",
+              "display": "Active",
+              "system": "http://terminology.hl7.org/CodeSystem/condition-clinical"
+            }
+          ]
+        },
+        "resolutionDate": null,
+        "clinicalStatus": {
+          "text": "Active",
+          "codings": [
+            {
+              "code": "active",
+              "display": "Active",
+              "system": "http://terminology.hl7.org/CodeSystem/condition-clinical"
+            }
+          ]
+        },
+        "verificationStatus": {
+          "text": "Confirmed",
+          "codings": [
+            {
+              "code": "confirmed",
+              "display": "Confirmed",
+              "system": "http://terminology.hl7.org/CodeSystem/condition-ver-status"
+            }
+          ]
+        },
+        "conditionCategory": {
+          "text": "Problem List Item",
+          "codings": [
+            {
+              "code": "problem-list-item",
+              "display": "Problem List Item",
+              "system": "http://terminology.hl7.org/CodeSystem/condition-category"
+            }
+          ]
+        },
+        "assertedDate": "2024-07-15",
+        "recordedDate": "2024-07-15"
+      },
+      {
+        "condition": {
+          "text": "Primary open-angle glaucoma, bilateral, mild stage",
+          "codings": [
+            {
+              "code": "77075001",
+              "display": "Primary open angle glaucoma",
+              "system": "http://snomed.info/sct"
+            },
+            {
+              "code": "H40.1131",
+              "display": "Primary open-angle glaucoma, bilateral, mild stage",
+              "system": "http://hl7.org/fhir/sid/icd-10-cm"
+            }
+          ]
+        },
+        "onsetDate": "2025-01-20",
+        "conditionStatus": {
+          "text": "Active",
+          "codings": [
+            {
+              "code": "active",
+              "display": "Active",
+              "system": "http://terminology.hl7.org/CodeSystem/condition-clinical"
+            }
+          ]
+        },
+        "resolutionDate": null,
+        "clinicalStatus": {
+          "text": "Active",
+          "codings": [
+            {
+              "code": "active",
+              "display": "Active",
+              "system": "http://terminology.hl7.org/CodeSystem/condition-clinical"
+            }
+          ]
+        },
+        "verificationStatus": {
+          "text": "Confirmed",
+          "codings": [
+            {
+              "code": "confirmed",
+              "display": "Confirmed",
+              "system": "http://terminology.hl7.org/CodeSystem/condition-ver-status"
+            }
+          ]
+        },
+        "conditionCategory": {
+          "text": "Problem List Item",
+          "codings": [
+            {
+              "code": "problem-list-item",
+              "display": "Problem List Item",
+              "system": "http://terminology.hl7.org/CodeSystem/condition-category"
+            }
+          ]
+        },
+        "assertedDate": "2025-01-20",
+        "recordedDate": "2025-01-20"
+      },
+      {
+        "condition": {
+          "text": "Myopia, bilateral",
+          "codings": [
+            {
+              "code": "57190000",
+              "display": "Myopia",
+              "system": "http://snomed.info/sct"
+            },
+            {
+              "code": "H52.13",
+              "display": "Myopia, bilateral",
+              "system": "http://hl7.org/fhir/sid/icd-10-cm"
+            }
+          ]
+        },
+        "onsetDate": "2010-05-01",
+        "conditionStatus": {
+          "text": "Active",
+          "codings": [
+            {
+              "code": "active",
+              "display": "Active",
+              "system": "http://terminology.hl7.org/CodeSystem/condition-clinical"
+            }
+          ]
+        },
+        "resolutionDate": null,
+        "clinicalStatus": {
+          "text": "Active",
+          "codings": [
+            {
+              "code": "active",
+              "display": "Active",
+              "system": "http://terminology.hl7.org/CodeSystem/condition-clinical"
+            }
+          ]
+        },
+        "verificationStatus": {
+          "text": "Confirmed",
+          "codings": [
+            {
+              "code": "confirmed",
+              "display": "Confirmed",
+              "system": "http://terminology.hl7.org/CodeSystem/condition-ver-status"
+            }
+          ]
+        },
+        "conditionCategory": {
+          "text": "Problem List Item",
+          "codings": [
+            {
+              "code": "problem-list-item",
+              "display": "Problem List Item",
+              "system": "http://terminology.hl7.org/CodeSystem/condition-category"
+            }
+          ]
+        },
+        "assertedDate": "2010-05-01",
+        "recordedDate": "2010-05-01"
+      },
+      {
+        "condition": {
+          "text": "Presbyopia",
+          "codings": [
+            {
+              "code": "H52.4",
+              "display": "Presbyopia",
+              "system": "http://hl7.org/fhir/sid/icd-10-cm"
+            }
+          ]
+        },
+        "onsetDate": "2024-01-10",
+        "conditionStatus": {
+          "text": "Active",
+          "codings": [
+            {
+              "code": "active",
+              "display": "Active",
+              "system": "http://terminology.hl7.org/CodeSystem/condition-clinical"
+            }
+          ]
+        },
+        "resolutionDate": null,
+        "clinicalStatus": {
+          "text": "Active",
+          "codings": [
+            {
+              "code": "active",
+              "display": "Active",
+              "system": "http://terminology.hl7.org/CodeSystem/condition-clinical"
+            }
+          ]
+        },
+        "verificationStatus": {
+          "text": "Confirmed",
+          "codings": [
+            {
+              "code": "confirmed",
+              "display": "Confirmed",
+              "system": "http://terminology.hl7.org/CodeSystem/condition-ver-status"
+            }
+          ]
+        },
+        "conditionCategory": {
+          "text": "Problem List Item",
+          "codings": [
+            {
+              "code": "problem-list-item",
+              "display": "Problem List Item",
+              "system": "http://terminology.hl7.org/CodeSystem/condition-category"
+            }
+          ]
+        },
+        "assertedDate": "2024-01-10",
+        "recordedDate": "2024-01-10"
+      },
+      {
+        "condition": {
+          "text": "Basal cell carcinoma of skin of nose (excised)",
+          "codings": [
+            {
+              "code": "254701007",
+              "display": "Basal cell carcinoma of skin",
+              "system": "http://snomed.info/sct"
+            },
+            {
+              "code": "C44.311",
+              "display": "Basal cell carcinoma of skin of nose",
+              "system": "http://hl7.org/fhir/sid/icd-10-cm"
+            }
+          ]
+        },
+        "onsetDate": "2025-05-12",
+        "conditionStatus": {
+          "text": "Resolved",
+          "codings": [
+            {
+              "code": "resolved",
+              "display": "Resolved",
+              "system": "http://terminology.hl7.org/CodeSystem/condition-clinical"
+            }
+          ]
+        },
+        "resolutionDate": "2025-06-02",
+        "clinicalStatus": {
+          "text": "Resolved",
+          "codings": [
+            {
+              "code": "resolved",
+              "display": "Resolved",
+              "system": "http://terminology.hl7.org/CodeSystem/condition-clinical"
+            }
+          ]
+        },
+        "verificationStatus": {
+          "text": "Confirmed",
+          "codings": [
+            {
+              "code": "confirmed",
+              "display": "Confirmed",
+              "system": "http://terminology.hl7.org/CodeSystem/condition-ver-status"
+            }
+          ]
+        },
+        "conditionCategory": {
+          "text": "Problem List Item",
+          "codings": [
+            {
+              "code": "problem-list-item",
+              "display": "Problem List Item",
+              "system": "http://terminology.hl7.org/CodeSystem/condition-category"
+            }
+          ]
+        },
+        "assertedDate": "2025-05-12",
+        "recordedDate": "2025-05-12"
+      },
+      {
+        "condition": {
+          "text": "Actinic keratosis",
+          "codings": [
+            {
+              "code": "201101007",
+              "display": "Actinic keratosis",
+              "system": "http://snomed.info/sct"
+            },
+            {
+              "code": "L57.0",
+              "display": "Actinic keratosis",
+              "system": "http://hl7.org/fhir/sid/icd-10-cm"
+            }
+          ]
+        },
+        "onsetDate": "2026-04-07",
+        "conditionStatus": {
+          "text": "Active",
+          "codings": [
+            {
+              "code": "active",
+              "display": "Active",
+              "system": "http://terminology.hl7.org/CodeSystem/condition-clinical"
+            }
+          ]
+        },
+        "resolutionDate": null,
+        "clinicalStatus": {
+          "text": "Active",
+          "codings": [
+            {
+              "code": "active",
+              "display": "Active",
+              "system": "http://terminology.hl7.org/CodeSystem/condition-clinical"
+            }
+          ]
+        },
+        "verificationStatus": {
+          "text": "Confirmed",
+          "codings": [
+            {
+              "code": "confirmed",
+              "display": "Confirmed",
+              "system": "http://terminology.hl7.org/CodeSystem/condition-ver-status"
+            }
+          ]
+        },
+        "conditionCategory": {
+          "text": "Problem List Item",
+          "codings": [
+            {
+              "code": "problem-list-item",
+              "display": "Problem List Item",
+              "system": "http://terminology.hl7.org/CodeSystem/condition-category"
+            }
+          ]
+        },
+        "assertedDate": "2026-04-07",
+        "recordedDate": "2026-04-07"
+      },
+      {
+        "condition": {
+          "text": "Chronic kidney disease stage 3a",
+          "codings": [
+            {
+              "code": "700378005",
+              "display": "Chronic kidney disease stage 3A",
+              "system": "http://snomed.info/sct"
+            },
+            {
+              "code": "N18.31",
+              "display": "Chronic kidney disease, stage 3a",
+              "system": "http://hl7.org/fhir/sid/icd-10-cm"
+            }
+          ]
+        },
+        "onsetDate": "2025-09-08",
+        "conditionStatus": {
+          "text": "Active",
+          "codings": [
+            {
+              "code": "active",
+              "display": "Active",
+              "system": "http://terminology.hl7.org/CodeSystem/condition-clinical"
+            }
+          ]
+        },
+        "resolutionDate": null,
+        "clinicalStatus": {
+          "text": "Active",
+          "codings": [
+            {
+              "code": "active",
+              "display": "Active",
+              "system": "http://terminology.hl7.org/CodeSystem/condition-clinical"
+            }
+          ]
+        },
+        "verificationStatus": {
+          "text": "Confirmed",
+          "codings": [
+            {
+              "code": "confirmed",
+              "display": "Confirmed",
+              "system": "http://terminology.hl7.org/CodeSystem/condition-ver-status"
+            }
+          ]
+        },
+        "conditionCategory": {
+          "text": "Problem List Item",
+          "codings": [
+            {
+              "code": "problem-list-item",
+              "display": "Problem List Item",
+              "system": "http://terminology.hl7.org/CodeSystem/condition-category"
+            }
+          ]
+        },
+        "assertedDate": "2025-09-08",
+        "recordedDate": "2025-09-08"
+      },
+      {
+        "condition": {
+          "text": "Morbid obesity, BMI 36",
+          "codings": [
+            {
+              "code": "238136002",
+              "display": "Morbid obesity",
+              "system": "http://snomed.info/sct"
+            },
+            {
+              "code": "E66.01",
+              "display": "Morbid (severe) obesity due to excess calories",
+              "system": "http://hl7.org/fhir/sid/icd-10-cm"
+            }
+          ]
+        },
+        "onsetDate": "2014-01-01",
+        "conditionStatus": {
+          "text": "Active",
+          "codings": [
+            {
+              "code": "active",
+              "display": "Active",
+              "system": "http://terminology.hl7.org/CodeSystem/condition-clinical"
+            }
+          ]
+        },
+        "resolutionDate": null,
+        "clinicalStatus": {
+          "text": "Active",
+          "codings": [
+            {
+              "code": "active",
+              "display": "Active",
+              "system": "http://terminology.hl7.org/CodeSystem/condition-clinical"
+            }
+          ]
+        },
+        "verificationStatus": {
+          "text": "Confirmed",
+          "codings": [
+            {
+              "code": "confirmed",
+              "display": "Confirmed",
+              "system": "http://terminology.hl7.org/CodeSystem/condition-ver-status"
+            }
+          ]
+        },
+        "conditionCategory": {
+          "text": "Problem List Item",
+          "codings": [
+            {
+              "code": "problem-list-item",
+              "display": "Problem List Item",
+              "system": "http://terminology.hl7.org/CodeSystem/condition-category"
+            }
+          ]
+        },
+        "assertedDate": "2014-01-01",
+        "recordedDate": "2014-01-01"
+      },
+      {
+        "condition": {
+          "text": "Vitamin D deficiency",
+          "codings": [
+            {
+              "code": "34713006",
+              "display": "Vitamin D deficiency",
+              "system": "http://snomed.info/sct"
+            },
+            {
+              "code": "E55.9",
+              "display": "Vitamin D deficiency, unspecified",
+              "system": "http://hl7.org/fhir/sid/icd-10-cm"
+            }
+          ]
+        },
+        "onsetDate": "2026-08-24",
+        "conditionStatus": {
+          "text": "Active",
+          "codings": [
+            {
+              "code": "active",
+              "display": "Active",
+              "system": "http://terminology.hl7.org/CodeSystem/condition-clinical"
+            }
+          ]
+        },
+        "resolutionDate": null,
+        "clinicalStatus": {
+          "text": "Active",
+          "codings": [
+            {
+              "code": "active",
+              "display": "Active",
+              "system": "http://terminology.hl7.org/CodeSystem/condition-clinical"
+            }
+          ]
+        },
+        "verificationStatus": {
+          "text": "Confirmed",
+          "codings": [
+            {
+              "code": "confirmed",
+              "display": "Confirmed",
+              "system": "http://terminology.hl7.org/CodeSystem/condition-ver-status"
+            }
+          ]
+        },
+        "conditionCategory": {
+          "text": "Problem List Item",
+          "codings": [
+            {
+              "code": "problem-list-item",
+              "display": "Problem List Item",
+              "system": "http://terminology.hl7.org/CodeSystem/condition-category"
+            }
+          ]
+        },
+        "assertedDate": "2026-08-24",
+        "recordedDate": "2026-08-24"
+      },
+      {
+        "condition": {
+          "text": "Nonalcoholic fatty liver disease",
+          "codings": [
+            {
+              "code": "197315008",
+              "display": "Non-alcoholic fatty liver",
+              "system": "http://snomed.info/sct"
+            },
+            {
+              "code": "K76.0",
+              "display": "Fatty (change of) liver, not elsewhere classified",
+              "system": "http://hl7.org/fhir/sid/icd-10-cm"
+            }
+          ]
+        },
+        "onsetDate": "2024-03-04",
+        "conditionStatus": {
+          "text": "Active",
+          "codings": [
+            {
+              "code": "active",
+              "display": "Active",
+              "system": "http://terminology.hl7.org/CodeSystem/condition-clinical"
+            }
+          ]
+        },
+        "resolutionDate": null,
+        "clinicalStatus": {
+          "text": "Active",
+          "codings": [
+            {
+              "code": "active",
+              "display": "Active",
+              "system": "http://terminology.hl7.org/CodeSystem/condition-clinical"
+            }
+          ]
+        },
+        "verificationStatus": {
+          "text": "Confirmed",
+          "codings": [
+            {
+              "code": "confirmed",
+              "display": "Confirmed",
+              "system": "http://terminology.hl7.org/CodeSystem/condition-ver-status"
+            }
+          ]
+        },
+        "conditionCategory": {
+          "text": "Problem List Item",
+          "codings": [
+            {
+              "code": "problem-list-item",
+              "display": "Problem List Item",
+              "system": "http://terminology.hl7.org/CodeSystem/condition-category"
+            }
+          ]
+        },
+        "assertedDate": "2024-03-04",
+        "recordedDate": "2024-03-04"
+      },
+      {
+        "condition": {
+          "text": "Chronic periodontitis, generalized, moderate",
+          "codings": [
+            {
+              "code": "41565005",
+              "display": "Periodontitis",
+              "system": "http://snomed.info/sct"
+            },
+            {
+              "code": "K05.322",
+              "display": "Chronic periodontitis, generalized, moderate",
+              "system": "http://hl7.org/fhir/sid/icd-10-cm"
+            }
+          ]
+        },
+        "onsetDate": "2026-02-11",
+        "conditionStatus": {
+          "text": "Active",
+          "codings": [
+            {
+              "code": "active",
+              "display": "Active",
+              "system": "http://terminology.hl7.org/CodeSystem/condition-clinical"
+            }
+          ]
+        },
+        "resolutionDate": null,
+        "clinicalStatus": {
+          "text": "Active",
+          "codings": [
+            {
+              "code": "active",
+              "display": "Active",
+              "system": "http://terminology.hl7.org/CodeSystem/condition-clinical"
+            }
+          ]
+        },
+        "verificationStatus": {
+          "text": "Confirmed",
+          "codings": [
+            {
+              "code": "confirmed",
+              "display": "Confirmed",
+              "system": "http://terminology.hl7.org/CodeSystem/condition-ver-status"
+            }
+          ]
+        },
+        "conditionCategory": {
+          "text": "Problem List Item",
+          "codings": [
+            {
+              "code": "problem-list-item",
+              "display": "Problem List Item",
+              "system": "http://terminology.hl7.org/CodeSystem/condition-category"
+            }
+          ]
+        },
+        "assertedDate": "2026-02-11",
+        "recordedDate": "2026-02-11"
+      },
+      {
+        "condition": {
+          "text": "Dental caries into dentin",
+          "codings": [
+            {
+              "code": "80967001",
+              "display": "Dental caries",
+              "system": "http://snomed.info/sct"
+            },
+            {
+              "code": "K02.52",
+              "display": "Dental caries on pit and fissure surface penetrating into dentin",
+              "system": "http://hl7.org/fhir/sid/icd-10-cm"
+            }
+          ]
+        },
+        "onsetDate": "2026-02-11",
+        "conditionStatus": {
+          "text": "Active",
+          "codings": [
+            {
+              "code": "active",
+              "display": "Active",
+              "system": "http://terminology.hl7.org/CodeSystem/condition-clinical"
+            }
+          ]
+        },
+        "resolutionDate": null,
+        "clinicalStatus": {
+          "text": "Active",
+          "codings": [
+            {
+              "code": "active",
+              "display": "Active",
+              "system": "http://terminology.hl7.org/CodeSystem/condition-clinical"
+            }
+          ]
+        },
+        "verificationStatus": {
+          "text": "Confirmed",
+          "codings": [
+            {
+              "code": "confirmed",
+              "display": "Confirmed",
+              "system": "http://terminology.hl7.org/CodeSystem/condition-ver-status"
+            }
+          ]
+        },
+        "conditionCategory": {
+          "text": "Problem List Item",
+          "codings": [
+            {
+              "code": "problem-list-item",
+              "display": "Problem List Item",
+              "system": "http://terminology.hl7.org/CodeSystem/condition-category"
+            }
+          ]
+        },
+        "assertedDate": "2026-02-11",
+        "recordedDate": "2026-02-11"
+      },
+      {
+        "condition": {
+          "text": "Partial loss of teeth",
+          "codings": [
+            {
+              "code": "K08.409",
+              "display": "Partial loss of teeth, unspecified cause, unspecified class",
+              "system": "http://hl7.org/fhir/sid/icd-10-cm"
+            }
+          ]
+        },
+        "onsetDate": "2026-03-04",
+        "conditionStatus": {
+          "text": "Active",
+          "codings": [
+            {
+              "code": "active",
+              "display": "Active",
+              "system": "http://terminology.hl7.org/CodeSystem/condition-clinical"
+            }
+          ]
+        },
+        "resolutionDate": null,
+        "clinicalStatus": {
+          "text": "Active",
+          "codings": [
+            {
+              "code": "active",
+              "display": "Active",
+              "system": "http://terminology.hl7.org/CodeSystem/condition-clinical"
+            }
+          ]
+        },
+        "verificationStatus": {
+          "text": "Confirmed",
+          "codings": [
+            {
+              "code": "confirmed",
+              "display": "Confirmed",
+              "system": "http://terminology.hl7.org/CodeSystem/condition-ver-status"
+            }
+          ]
+        },
+        "conditionCategory": {
+          "text": "Problem List Item",
+          "codings": [
+            {
+              "code": "problem-list-item",
+              "display": "Problem List Item",
+              "system": "http://terminology.hl7.org/CodeSystem/condition-category"
+            }
+          ]
+        },
+        "assertedDate": "2026-03-04",
+        "recordedDate": "2026-03-04"
+      },
+      {
+        "condition": {
+          "text": "Non-ST elevation (NSTEMI) myocardial infarction",
+          "codings": [
+            {
+              "code": "I21.4",
+              "display": "Non-ST elevation (NSTEMI) myocardial infarction",
+              "system": "http://hl7.org/fhir/sid/icd-10-cm"
+            }
+          ]
+        },
+        "onsetDate": null,
+        "conditionStatus": {
+          "text": null,
+          "codings": []
+        },
+        "resolutionDate": null,
+        "clinicalStatus": {
+          "text": null,
+          "codings": []
+        },
+        "verificationStatus": {
+          "text": null,
+          "codings": []
+        },
+        "conditionCategory": {
+          "text": "Claim diagnosis",
+          "codings": []
+        },
+        "assertedDate": null,
+        "recordedDate": "2024-03-02"
+      },
+      {
+        "condition": {
+          "text": "Atherosclerotic heart disease of native coronary artery without angina pectoris",
+          "codings": [
+            {
+              "code": "I25.10",
+              "display": "Atherosclerotic heart disease of native coronary artery without angina pectoris",
+              "system": "http://hl7.org/fhir/sid/icd-10-cm"
+            }
+          ]
+        },
+        "onsetDate": null,
+        "conditionStatus": {
+          "text": null,
+          "codings": []
+        },
+        "resolutionDate": null,
+        "clinicalStatus": {
+          "text": null,
+          "codings": []
+        },
+        "verificationStatus": {
+          "text": null,
+          "codings": []
+        },
+        "conditionCategory": {
+          "text": "Claim diagnosis",
+          "codings": []
+        },
+        "assertedDate": null,
+        "recordedDate": "2024-03-02"
+      },
+      {
+        "condition": {
+          "text": "Type 2 diabetes mellitus with hyperglycemia",
+          "codings": [
+            {
+              "code": "E11.65",
+              "display": "Type 2 diabetes mellitus with hyperglycemia",
+              "system": "http://hl7.org/fhir/sid/icd-10-cm"
+            }
+          ]
+        },
+        "onsetDate": null,
+        "conditionStatus": {
+          "text": null,
+          "codings": []
+        },
+        "resolutionDate": null,
+        "clinicalStatus": {
+          "text": null,
+          "codings": []
+        },
+        "verificationStatus": {
+          "text": null,
+          "codings": []
+        },
+        "conditionCategory": {
+          "text": "Claim diagnosis",
+          "codings": []
+        },
+        "assertedDate": null,
+        "recordedDate": "2024-03-02"
+      },
+      {
+        "condition": {
+          "text": "Type 2 diabetes mellitus with diabetic polyneuropathy",
+          "codings": [
+            {
+              "code": "E11.42",
+              "display": "Type 2 diabetes mellitus with diabetic polyneuropathy",
+              "system": "http://hl7.org/fhir/sid/icd-10-cm"
+            }
+          ]
+        },
+        "onsetDate": null,
+        "conditionStatus": {
+          "text": null,
+          "codings": []
+        },
+        "resolutionDate": null,
+        "clinicalStatus": {
+          "text": null,
+          "codings": []
+        },
+        "verificationStatus": {
+          "text": null,
+          "codings": []
+        },
+        "conditionCategory": {
+          "text": "Claim diagnosis",
+          "codings": []
+        },
+        "assertedDate": null,
+        "recordedDate": "2024-03-02"
+      },
+      {
+        "condition": {
+          "text": "Essential (primary) hypertension",
+          "codings": [
+            {
+              "code": "I10",
+              "display": "Essential (primary) hypertension",
+              "system": "http://hl7.org/fhir/sid/icd-10-cm"
+            }
+          ]
+        },
+        "onsetDate": null,
+        "conditionStatus": {
+          "text": null,
+          "codings": []
+        },
+        "resolutionDate": null,
+        "clinicalStatus": {
+          "text": null,
+          "codings": []
+        },
+        "verificationStatus": {
+          "text": null,
+          "codings": []
+        },
+        "conditionCategory": {
+          "text": "Claim diagnosis",
+          "codings": []
+        },
+        "assertedDate": null,
+        "recordedDate": "2024-03-02"
+      },
+      {
+        "condition": {
+          "text": "Hyperlipidemia, unspecified",
+          "codings": [
+            {
+              "code": "E78.5",
+              "display": "Hyperlipidemia, unspecified",
+              "system": "http://hl7.org/fhir/sid/icd-10-cm"
+            }
+          ]
+        },
+        "onsetDate": null,
+        "conditionStatus": {
+          "text": null,
+          "codings": []
+        },
+        "resolutionDate": null,
+        "clinicalStatus": {
+          "text": null,
+          "codings": []
+        },
+        "verificationStatus": {
+          "text": null,
+          "codings": []
+        },
+        "conditionCategory": {
+          "text": "Claim diagnosis",
+          "codings": []
+        },
+        "assertedDate": null,
+        "recordedDate": "2024-03-02"
+      },
+      {
+        "condition": {
+          "text": "Obstructive sleep apnea (adult) (pediatric)",
+          "codings": [
+            {
+              "code": "G47.33",
+              "display": "Obstructive sleep apnea (adult) (pediatric)",
+              "system": "http://hl7.org/fhir/sid/icd-10-cm"
+            }
+          ]
+        },
+        "onsetDate": null,
+        "conditionStatus": {
+          "text": null,
+          "codings": []
+        },
+        "resolutionDate": null,
+        "clinicalStatus": {
+          "text": null,
+          "codings": []
+        },
+        "verificationStatus": {
+          "text": null,
+          "codings": []
+        },
+        "conditionCategory": {
+          "text": "Claim diagnosis",
+          "codings": []
+        },
+        "assertedDate": null,
+        "recordedDate": "2019-05-20"
+      },
+      {
+        "condition": {
+          "text": "Morbid (severe) obesity due to excess calories",
+          "codings": [
+            {
+              "code": "E66.01",
+              "display": "Morbid (severe) obesity due to excess calories",
+              "system": "http://hl7.org/fhir/sid/icd-10-cm"
+            }
+          ]
+        },
+        "onsetDate": null,
+        "conditionStatus": {
+          "text": null,
+          "codings": []
+        },
+        "resolutionDate": null,
+        "clinicalStatus": {
+          "text": null,
+          "codings": []
+        },
+        "verificationStatus": {
+          "text": null,
+          "codings": []
+        },
+        "conditionCategory": {
+          "text": "Claim diagnosis",
+          "codings": []
+        },
+        "assertedDate": null,
+        "recordedDate": "2024-03-02"
+      },
+      {
+        "condition": {
+          "text": "Body mass index [BMI] 36.0-36.9, adult",
+          "codings": [
+            {
+              "code": "Z68.36",
+              "display": "Body mass index [BMI] 36.0-36.9, adult",
+              "system": "http://hl7.org/fhir/sid/icd-10-cm"
+            }
+          ]
+        },
+        "onsetDate": null,
+        "conditionStatus": {
+          "text": null,
+          "codings": []
+        },
+        "resolutionDate": null,
+        "clinicalStatus": {
+          "text": null,
+          "codings": []
+        },
+        "verificationStatus": {
+          "text": null,
+          "codings": []
+        },
+        "conditionCategory": {
+          "text": "Claim diagnosis",
+          "codings": []
+        },
+        "assertedDate": null,
+        "recordedDate": "2024-03-02"
+      },
+      {
+        "condition": {
+          "text": "Intervertebral disc disorders with radiculopathy, lumbar region",
+          "codings": [
+            {
+              "code": "M51.16",
+              "display": "Intervertebral disc disorders with radiculopathy, lumbar region",
+              "system": "http://hl7.org/fhir/sid/icd-10-cm"
+            }
+          ]
+        },
+        "onsetDate": null,
+        "conditionStatus": {
+          "text": null,
+          "codings": []
+        },
+        "resolutionDate": null,
+        "clinicalStatus": {
+          "text": null,
+          "codings": []
+        },
+        "verificationStatus": {
+          "text": null,
+          "codings": []
+        },
+        "conditionCategory": {
+          "text": "Claim diagnosis",
+          "codings": []
+        },
+        "assertedDate": null,
+        "recordedDate": "2022-10-20"
+      },
+      {
+        "condition": {
+          "text": "Old myocardial infarction",
+          "codings": [
+            {
+              "code": "I25.2",
+              "display": "Old myocardial infarction",
+              "system": "http://hl7.org/fhir/sid/icd-10-cm"
+            }
+          ]
+        },
+        "onsetDate": null,
+        "conditionStatus": {
+          "text": null,
+          "codings": []
+        },
+        "resolutionDate": null,
+        "clinicalStatus": {
+          "text": null,
+          "codings": []
+        },
+        "verificationStatus": {
+          "text": null,
+          "codings": []
+        },
+        "conditionCategory": {
+          "text": "Claim diagnosis",
+          "codings": []
+        },
+        "assertedDate": null,
+        "recordedDate": "2024-04-09"
+      },
+      {
+        "condition": {
+          "text": "Sensorineural hearing loss, bilateral",
+          "codings": [
+            {
+              "code": "H90.3",
+              "display": "Sensorineural hearing loss, bilateral",
+              "system": "http://hl7.org/fhir/sid/icd-10-cm"
+            }
+          ]
+        },
+        "onsetDate": null,
+        "conditionStatus": {
+          "text": null,
+          "codings": []
+        },
+        "resolutionDate": null,
+        "clinicalStatus": {
+          "text": null,
+          "codings": []
+        },
+        "verificationStatus": {
+          "text": null,
+          "codings": []
+        },
+        "conditionCategory": {
+          "text": "Claim diagnosis",
+          "codings": []
+        },
+        "assertedDate": null,
+        "recordedDate": "2024-07-15"
+      },
+      {
+        "condition": {
+          "text": "Tinnitus, bilateral",
+          "codings": [
+            {
+              "code": "H93.13",
+              "display": "Tinnitus, bilateral",
+              "system": "http://hl7.org/fhir/sid/icd-10-cm"
+            }
+          ]
+        },
+        "onsetDate": null,
+        "conditionStatus": {
+          "text": null,
+          "codings": []
+        },
+        "resolutionDate": null,
+        "clinicalStatus": {
+          "text": null,
+          "codings": []
+        },
+        "verificationStatus": {
+          "text": null,
+          "codings": []
+        },
+        "conditionCategory": {
+          "text": "Claim diagnosis",
+          "codings": []
+        },
+        "assertedDate": null,
+        "recordedDate": "2024-07-15"
+      },
+      {
+        "condition": {
+          "text": "Noise effects on inner ear, bilateral",
+          "codings": [
+            {
+              "code": "H83.3X3",
+              "display": "Noise effects on inner ear, bilateral",
+              "system": "http://hl7.org/fhir/sid/icd-10-cm"
+            }
+          ]
+        },
+        "onsetDate": null,
+        "conditionStatus": {
+          "text": null,
+          "codings": []
+        },
+        "resolutionDate": null,
+        "clinicalStatus": {
+          "text": null,
+          "codings": []
+        },
+        "verificationStatus": {
+          "text": null,
+          "codings": []
+        },
+        "conditionCategory": {
+          "text": "Claim diagnosis",
+          "codings": []
+        },
+        "assertedDate": null,
+        "recordedDate": "2024-07-15"
+      },
+      {
+        "condition": {
+          "text": "Encounter for fitting and adjustment of hearing aid",
+          "codings": [
+            {
+              "code": "Z46.1",
+              "display": "Encounter for fitting and adjustment of hearing aid",
+              "system": "http://hl7.org/fhir/sid/icd-10-cm"
+            }
+          ]
+        },
+        "onsetDate": null,
+        "conditionStatus": {
+          "text": null,
+          "codings": []
+        },
+        "resolutionDate": null,
+        "clinicalStatus": {
+          "text": null,
+          "codings": []
+        },
+        "verificationStatus": {
+          "text": null,
+          "codings": []
+        },
+        "conditionCategory": {
+          "text": "Claim diagnosis",
+          "codings": []
+        },
+        "assertedDate": null,
+        "recordedDate": "2024-08-12"
+      },
+      {
+        "condition": {
+          "text": "Encounter for screening for malignant neoplasm of colon",
+          "codings": [
+            {
+              "code": "Z12.11",
+              "display": "Encounter for screening for malignant neoplasm of colon",
+              "system": "http://hl7.org/fhir/sid/icd-10-cm"
+            }
+          ]
+        },
+        "onsetDate": null,
+        "conditionStatus": {
+          "text": null,
+          "codings": []
+        },
+        "resolutionDate": null,
+        "clinicalStatus": {
+          "text": null,
+          "codings": []
+        },
+        "verificationStatus": {
+          "text": null,
+          "codings": []
+        },
+        "conditionCategory": {
+          "text": "Claim diagnosis",
+          "codings": []
+        },
+        "assertedDate": null,
+        "recordedDate": "2024-11-18"
+      },
+      {
+        "condition": {
+          "text": "Primary open-angle glaucoma, bilateral, mild stage",
+          "codings": [
+            {
+              "code": "H40.1131",
+              "display": "Primary open-angle glaucoma, bilateral, mild stage",
+              "system": "http://hl7.org/fhir/sid/icd-10-cm"
+            }
+          ]
+        },
+        "onsetDate": null,
+        "conditionStatus": {
+          "text": null,
+          "codings": []
+        },
+        "resolutionDate": null,
+        "clinicalStatus": {
+          "text": null,
+          "codings": []
+        },
+        "verificationStatus": {
+          "text": null,
+          "codings": []
+        },
+        "conditionCategory": {
+          "text": "Claim diagnosis",
+          "codings": []
+        },
+        "assertedDate": null,
+        "recordedDate": "2025-01-20"
+      },
+      {
+        "condition": {
+          "text": "Basal cell carcinoma of skin of nose",
+          "codings": [
+            {
+              "code": "C44.311",
+              "display": "Basal cell carcinoma of skin of nose",
+              "system": "http://hl7.org/fhir/sid/icd-10-cm"
+            }
+          ]
+        },
+        "onsetDate": null,
+        "conditionStatus": {
+          "text": null,
+          "codings": []
+        },
+        "resolutionDate": null,
+        "clinicalStatus": {
+          "text": null,
+          "codings": []
+        },
+        "verificationStatus": {
+          "text": null,
+          "codings": []
+        },
+        "conditionCategory": {
+          "text": "Claim diagnosis",
+          "codings": []
+        },
+        "assertedDate": null,
+        "recordedDate": "2025-05-12"
+      },
+      {
+        "condition": {
+          "text": "Psoriasis vulgaris",
+          "codings": [
+            {
+              "code": "L40.0",
+              "display": "Psoriasis vulgaris",
+              "system": "http://hl7.org/fhir/sid/icd-10-cm"
+            }
+          ]
+        },
+        "onsetDate": null,
+        "conditionStatus": {
+          "text": null,
+          "codings": []
+        },
+        "resolutionDate": null,
+        "clinicalStatus": {
+          "text": null,
+          "codings": []
+        },
+        "verificationStatus": {
+          "text": null,
+          "codings": []
+        },
+        "conditionCategory": {
+          "text": "Claim diagnosis",
+          "codings": []
+        },
+        "assertedDate": null,
+        "recordedDate": "2025-05-12"
+      },
+      {
+        "condition": {
+          "text": "Actinic keratosis",
+          "codings": [
+            {
+              "code": "L57.0",
+              "display": "Actinic keratosis",
+              "system": "http://hl7.org/fhir/sid/icd-10-cm"
+            }
+          ]
+        },
+        "onsetDate": null,
+        "conditionStatus": {
+          "text": null,
+          "codings": []
+        },
+        "resolutionDate": null,
+        "clinicalStatus": {
+          "text": null,
+          "codings": []
+        },
+        "verificationStatus": {
+          "text": null,
+          "codings": []
+        },
+        "conditionCategory": {
+          "text": "Claim diagnosis",
+          "codings": []
+        },
+        "assertedDate": null,
+        "recordedDate": "2026-04-07"
+      },
+      {
+        "condition": {
+          "text": "Presence of external hearing-aid",
+          "codings": [
+            {
+              "code": "Z97.4",
+              "display": "Presence of external hearing-aid",
+              "system": "http://hl7.org/fhir/sid/icd-10-cm"
+            }
+          ]
+        },
+        "onsetDate": null,
+        "conditionStatus": {
+          "text": null,
+          "codings": []
+        },
+        "resolutionDate": null,
+        "clinicalStatus": {
+          "text": null,
+          "codings": []
+        },
+        "verificationStatus": {
+          "text": null,
+          "codings": []
+        },
+        "conditionCategory": {
+          "text": "Claim diagnosis",
+          "codings": []
+        },
+        "assertedDate": null,
+        "recordedDate": "2026-06-10"
+      },
+      {
+        "condition": {
+          "text": "Post-traumatic stress disorder, unspecified",
+          "codings": [
+            {
+              "code": "F43.10",
+              "display": "Post-traumatic stress disorder, unspecified",
+              "system": "http://hl7.org/fhir/sid/icd-10-cm"
+            }
+          ]
+        },
+        "onsetDate": null,
+        "conditionStatus": {
+          "text": null,
+          "codings": []
+        },
+        "resolutionDate": null,
+        "clinicalStatus": {
+          "text": null,
+          "codings": []
+        },
+        "verificationStatus": {
+          "text": null,
+          "codings": []
+        },
+        "conditionCategory": {
+          "text": "Claim diagnosis",
+          "codings": []
+        },
+        "assertedDate": null,
+        "recordedDate": "2026-07-22"
+      },
+      {
+        "condition": {
+          "text": "Major depressive disorder, recurrent, moderate",
+          "codings": [
+            {
+              "code": "F33.1",
+              "display": "Major depressive disorder, recurrent, moderate",
+              "system": "http://hl7.org/fhir/sid/icd-10-cm"
+            }
+          ]
+        },
+        "onsetDate": null,
+        "conditionStatus": {
+          "text": null,
+          "codings": []
+        },
+        "resolutionDate": null,
+        "clinicalStatus": {
+          "text": null,
+          "codings": []
+        },
+        "verificationStatus": {
+          "text": null,
+          "codings": []
+        },
+        "conditionCategory": {
+          "text": "Claim diagnosis",
+          "codings": []
+        },
+        "assertedDate": null,
+        "recordedDate": "2026-07-22"
+      },
+      {
+        "condition": {
+          "text": "Encounter for general adult medical examination without abnormal findings",
+          "codings": [
+            {
+              "code": "Z00.00",
+              "display": "Encounter for general adult medical examination without abnormal findings",
+              "system": "http://hl7.org/fhir/sid/icd-10-cm"
+            }
+          ]
+        },
+        "onsetDate": null,
+        "conditionStatus": {
+          "text": null,
+          "codings": []
+        },
+        "resolutionDate": null,
+        "clinicalStatus": {
+          "text": null,
+          "codings": []
+        },
+        "verificationStatus": {
+          "text": null,
+          "codings": []
+        },
+        "conditionCategory": {
+          "text": "Claim diagnosis",
+          "codings": []
+        },
+        "assertedDate": null,
+        "recordedDate": "2026-08-24"
+      },
+      {
+        "condition": {
+          "text": "Chronic kidney disease, stage 3a",
+          "codings": [
+            {
+              "code": "N18.31",
+              "display": "Chronic kidney disease, stage 3a",
+              "system": "http://hl7.org/fhir/sid/icd-10-cm"
+            }
+          ]
+        },
+        "onsetDate": null,
+        "conditionStatus": {
+          "text": null,
+          "codings": []
+        },
+        "resolutionDate": null,
+        "clinicalStatus": {
+          "text": null,
+          "codings": []
+        },
+        "verificationStatus": {
+          "text": null,
+          "codings": []
+        },
+        "conditionCategory": {
+          "text": "Claim diagnosis",
+          "codings": []
+        },
+        "assertedDate": null,
+        "recordedDate": "2026-08-24"
+      },
+      {
+        "condition": {
+          "text": "Vitamin D deficiency, unspecified",
+          "codings": [
+            {
+              "code": "E55.9",
+              "display": "Vitamin D deficiency, unspecified",
+              "system": "http://hl7.org/fhir/sid/icd-10-cm"
+            }
+          ]
+        },
+        "onsetDate": null,
+        "conditionStatus": {
+          "text": null,
+          "codings": []
+        },
+        "resolutionDate": null,
+        "clinicalStatus": {
+          "text": null,
+          "codings": []
+        },
+        "verificationStatus": {
+          "text": null,
+          "codings": []
+        },
+        "conditionCategory": {
+          "text": "Claim diagnosis",
+          "codings": []
+        },
+        "assertedDate": null,
+        "recordedDate": "2026-08-24"
+      },
+      {
+        "condition": {
+          "text": "Myopia, bilateral",
+          "codings": [
+            {
+              "code": "H52.13",
+              "display": "Myopia, bilateral",
+              "system": "http://hl7.org/fhir/sid/icd-10-cm"
+            }
+          ]
+        },
+        "onsetDate": null,
+        "conditionStatus": {
+          "text": null,
+          "codings": []
+        },
+        "resolutionDate": null,
+        "clinicalStatus": {
+          "text": null,
+          "codings": []
+        },
+        "verificationStatus": {
+          "text": null,
+          "codings": []
+        },
+        "conditionCategory": {
+          "text": "Claim diagnosis",
+          "codings": []
+        },
+        "assertedDate": null,
+        "recordedDate": "2026-07-14"
+      },
+      {
+        "condition": {
+          "text": "Presbyopia",
+          "codings": [
+            {
+              "code": "H52.4",
+              "display": "Presbyopia",
+              "system": "http://hl7.org/fhir/sid/icd-10-cm"
+            }
+          ]
+        },
+        "onsetDate": null,
+        "conditionStatus": {
+          "text": null,
+          "codings": []
+        },
+        "resolutionDate": null,
+        "clinicalStatus": {
+          "text": null,
+          "codings": []
+        },
+        "verificationStatus": {
+          "text": null,
+          "codings": []
+        },
+        "conditionCategory": {
+          "text": "Claim diagnosis",
+          "codings": []
+        },
+        "assertedDate": null,
+        "recordedDate": "2026-07-14"
+      },
+      {
+        "condition": {
+          "text": "Chronic periodontitis, generalized, moderate",
+          "codings": [
+            {
+              "code": "K05.322",
+              "display": "Chronic periodontitis, generalized, moderate",
+              "system": "http://hl7.org/fhir/sid/icd-10-cm"
+            }
+          ]
+        },
+        "onsetDate": null,
+        "conditionStatus": {
+          "text": null,
+          "codings": []
+        },
+        "resolutionDate": null,
+        "clinicalStatus": {
+          "text": null,
+          "codings": []
+        },
+        "verificationStatus": {
+          "text": null,
+          "codings": []
+        },
+        "conditionCategory": {
+          "text": "Claim diagnosis",
+          "codings": []
+        },
+        "assertedDate": null,
+        "recordedDate": "2026-02-11"
+      },
+      {
+        "condition": {
+          "text": "Dental caries on pit and fissure surface penetrating into dentin",
+          "codings": [
+            {
+              "code": "K02.52",
+              "display": "Dental caries on pit and fissure surface penetrating into dentin",
+              "system": "http://hl7.org/fhir/sid/icd-10-cm"
+            }
+          ]
+        },
+        "onsetDate": null,
+        "conditionStatus": {
+          "text": null,
+          "codings": []
+        },
+        "resolutionDate": null,
+        "clinicalStatus": {
+          "text": null,
+          "codings": []
+        },
+        "verificationStatus": {
+          "text": null,
+          "codings": []
+        },
+        "conditionCategory": {
+          "text": "Claim diagnosis",
+          "codings": []
+        },
+        "assertedDate": null,
+        "recordedDate": "2026-02-11"
+      },
+      {
+        "condition": {
+          "text": "Partial loss of teeth, unspecified cause, unspecified class",
+          "codings": [
+            {
+              "code": "K08.409",
+              "display": "Partial loss of teeth, unspecified cause, unspecified class",
+              "system": "http://hl7.org/fhir/sid/icd-10-cm"
+            }
+          ]
+        },
+        "onsetDate": null,
+        "conditionStatus": {
+          "text": null,
+          "codings": []
+        },
+        "resolutionDate": null,
+        "clinicalStatus": {
+          "text": null,
+          "codings": []
+        },
+        "verificationStatus": {
+          "text": null,
+          "codings": []
+        },
+        "conditionCategory": {
+          "text": "Claim diagnosis",
+          "codings": []
+        },
+        "assertedDate": null,
+        "recordedDate": "2026-03-04"
+      }
+    ]
+  }
+}

@@ -1,0 +1,4002 @@
+{
+  "FormatID": "M5 Whole Health JSON",
+  "MessageId": "2f458f15-7dd1-408f-be32-936b4b48e040",
+  "model": "PAT_EOB_V1",
+  "patient": {
+    "member": {
+      "memberId": "GPX-SYN-0000000279-0",
+      "uniqueMemberId": null,
+      "memberIdentifierType": {
+        "text": null,
+        "codings": []
+      },
+      "dateOfBirth": "1957-11-27",
+      "dateOfDeath": null,
+      "deceasedFlag": null,
+      "birthSex": {
+        "text": "F",
+        "codings": [
+          {
+            "code": "F",
+            "display": "F",
+            "system": "http://hl7.org/fhir/administrative-gender"
+          }
+        ]
+      },
+      "raceCode": {
+        "text": null,
+        "codings": []
+      },
+      "ethnicity": {
+        "text": null,
+        "codings": []
+      },
+      "city": null,
+      "county": null,
+      "state": null,
+      "country": null,
+      "postalCode": null,
+      "addressStartDate": null,
+      "addressEndDate": null,
+      "telecomSystem": {
+        "text": null,
+        "codings": []
+      },
+      "telecomUse": {
+        "text": null,
+        "codings": []
+      },
+      "streetAddress": null,
+      "primaryLanguage": {
+        "text": null,
+        "codings": []
+      }
+    },
+    "coverage": [
+      {
+        "subscriberId": "SYN-11B1CF66C6",
+        "coverageType": {
+          "text": "Medicare (Managed Care)",
+          "codings": [
+            {
+              "code": "11",
+              "display": "Medicare Managed Care (Includes Medicare Advantage Plans)",
+              "system": "https://nahdo.org/sopt"
+            }
+          ]
+        },
+        "coverageStatus": {
+          "text": "active",
+          "codings": [
+            {
+              "code": "active",
+              "display": "active",
+              "system": "http://hl7.org/fhir/fm-status"
+            }
+          ]
+        },
+        "startDate": "2018-07-14",
+        "endDate": null,
+        "groupId": null,
+        "groupName": null,
+        "planIdentifier": "medicare-ffs",
+        "planName": "medicare-ffs",
+        "payerIdentifier": null,
+        "otherPayerName": null,
+        "relationshipToSubscriber": {
+          "text": "Self",
+          "codings": [
+            {
+              "code": "self",
+              "display": "Self",
+              "system": "http://terminology.hl7.org/CodeSystem/subscriber-relationship"
+            }
+          ]
+        },
+        "claimPayerName": "Medicare Fee-for-Service"
+      }
+    ],
+    "medicalClaim": [
+      {
+        "claimDrgVersion": null,
+        "claimDrgCode": {
+          "text": null,
+          "codings": []
+        },
+        "claimStartDate": "2018-07-14",
+        "statementThruDate": "2018-07-14",
+        "procedureCodeType": {
+          "text": null,
+          "codings": []
+        },
+        "adjudicationDate": "2018-07-20",
+        "dischargedate": null,
+        "primaryPayerIdentifier": {
+          "text": null,
+          "codings": []
+        },
+        "claimSubType": {
+          "text": null,
+          "codings": []
+        },
+        "patientDischargeStatusCode": {
+          "text": null,
+          "codings": []
+        },
+        "claimPayerIdentifier": "medicare-ffs",
+        "medicalRecordNumber": null,
+        "claimIdentifierType": "Unique Claim ID",
+        "processingStatusCode": {
+          "text": "active",
+          "codings": [
+            {
+              "code": "active",
+              "display": "active",
+              "system": "http://hl7.org/fhir/explanationofbenefit-status"
+            }
+          ]
+        },
+        "billFacilityTypeCode": {
+          "text": null,
+          "codings": []
+        },
+        "claimAdjustedfromIdentifier": null,
+        "claimAdjustedtoIdentifier": null,
+        "claimAdjustedRelationship": {
+          "text": null,
+          "codings": []
+        },
+        "claimReceivedDate": "2018-07-20",
+        "claimPaymentStatusCode": {
+          "text": null,
+          "codings": []
+        },
+        "claimPaidDate": "2018-08-03",
+        "claimDiscountAmount": null,
+        "serviceClassificationTypeCode": {
+          "text": null,
+          "codings": []
+        },
+        "patientAccountNumber": null,
+        "claimPayeeTypeCode": {
+          "text": null,
+          "codings": []
+        },
+        "inpatientSourceAdmissionCode": {
+          "text": null,
+          "codings": []
+        },
+        "admissionDate": null,
+        "paymentDenialCode": {
+          "text": null,
+          "codings": []
+        },
+        "claimServiceEndDate": "2018-07-14",
+        "claimTypeCode": {
+          "text": "Professional",
+          "codings": [
+            {
+              "code": "professional",
+              "display": "Professional",
+              "system": "http://terminology.hl7.org/CodeSystem/claim-type"
+            }
+          ]
+        },
+        "payerClaimUniqueIdentifier": "CLM-20180714-PCP18",
+        "adjudicationAmountType": {
+          "text": "Submitted Amount",
+          "codings": [
+            {
+              "code": "submitted",
+              "display": "Submitted Amount",
+              "system": "http://terminology.hl7.org/CodeSystem/adjudication"
+            }
+          ]
+        },
+        "inpatientAdmissionTypeCode": {
+          "text": null,
+          "codings": []
+        },
+        "frequencyCode": {
+          "text": null,
+          "codings": []
+        },
+        "claimPayee": null,
+        "totalAmount": 210,
+        "statementFromDate": "2018-07-14",
+        "claimTotalSubmittedAmount": 210,
+        "claimTotalAllowedAmount": 109.33,
+        "amountPaidByPatient": 21.87,
+        "claimAmountPaidToProvider": 87.46,
+        "memberReimbursement": null,
+        "claimPaymentAmount": 87.46,
+        "claimNonCoveredAmount": null,
+        "memberPaidDeductible": null,
+        "coInsuranceLiabilityAmount": null,
+        "copayAmount": null,
+        "memberLiability": null,
+        "claimOtherPayerPaidAmount": null,
+        "claimUse": {
+          "text": "claim",
+          "codings": [
+            {
+              "code": "claim",
+              "display": "claim",
+              "system": "http://hl7.org/fhir/claim-use"
+            }
+          ]
+        },
+        "claimLastUpdateDate": null
+      },
+      {
+        "claimDrgVersion": null,
+        "claimDrgCode": {
+          "text": null,
+          "codings": []
+        },
+        "claimStartDate": "2018-08-20",
+        "statementThruDate": "2018-08-20",
+        "procedureCodeType": {
+          "text": null,
+          "codings": []
+        },
+        "adjudicationDate": "2018-08-24",
+        "dischargedate": null,
+        "primaryPayerIdentifier": {
+          "text": null,
+          "codings": []
+        },
+        "claimSubType": {
+          "text": null,
+          "codings": []
+        },
+        "patientDischargeStatusCode": {
+          "text": null,
+          "codings": []
+        },
+        "claimPayerIdentifier": "medicare-ffs",
+        "medicalRecordNumber": null,
+        "claimIdentifierType": "Unique Claim ID",
+        "processingStatusCode": {
+          "text": "active",
+          "codings": [
+            {
+              "code": "active",
+              "display": "active",
+              "system": "http://hl7.org/fhir/explanationofbenefit-status"
+            }
+          ]
+        },
+        "billFacilityTypeCode": {
+          "text": null,
+          "codings": []
+        },
+        "claimAdjustedfromIdentifier": null,
+        "claimAdjustedtoIdentifier": null,
+        "claimAdjustedRelationship": {
+          "text": null,
+          "codings": []
+        },
+        "claimReceivedDate": "2018-08-24",
+        "claimPaymentStatusCode": {
+          "text": null,
+          "codings": []
+        },
+        "claimPaidDate": "2018-09-07",
+        "claimDiscountAmount": null,
+        "serviceClassificationTypeCode": {
+          "text": null,
+          "codings": []
+        },
+        "patientAccountNumber": null,
+        "claimPayeeTypeCode": {
+          "text": null,
+          "codings": []
+        },
+        "inpatientSourceAdmissionCode": {
+          "text": null,
+          "codings": []
+        },
+        "admissionDate": null,
+        "paymentDenialCode": {
+          "text": null,
+          "codings": []
+        },
+        "claimServiceEndDate": "2018-08-20",
+        "claimTypeCode": {
+          "text": "Professional",
+          "codings": [
+            {
+              "code": "professional",
+              "display": "Professional",
+              "system": "http://terminology.hl7.org/CodeSystem/claim-type"
+            }
+          ]
+        },
+        "payerClaimUniqueIdentifier": "CLM-20180820-NEPH18",
+        "adjudicationAmountType": {
+          "text": "Submitted Amount",
+          "codings": [
+            {
+              "code": "submitted",
+              "display": "Submitted Amount",
+              "system": "http://terminology.hl7.org/CodeSystem/adjudication"
+            }
+          ]
+        },
+        "inpatientAdmissionTypeCode": {
+          "text": null,
+          "codings": []
+        },
+        "frequencyCode": {
+          "text": null,
+          "codings": []
+        },
+        "claimPayee": null,
+        "totalAmount": 350,
+        "statementFromDate": "2018-08-20",
+        "claimTotalSubmittedAmount": 350,
+        "claimTotalAllowedAmount": 167.09,
+        "amountPaidByPatient": 33.42,
+        "claimAmountPaidToProvider": 133.67,
+        "memberReimbursement": null,
+        "claimPaymentAmount": 133.67,
+        "claimNonCoveredAmount": null,
+        "memberPaidDeductible": null,
+        "coInsuranceLiabilityAmount": null,
+        "copayAmount": null,
+        "memberLiability": null,
+        "claimOtherPayerPaidAmount": null,
+        "claimUse": {
+          "text": "claim",
+          "codings": [
+            {
+              "code": "claim",
+              "display": "claim",
+              "system": "http://hl7.org/fhir/claim-use"
+            }
+          ]
+        },
+        "claimLastUpdateDate": null
+      },
+      {
+        "claimDrgVersion": null,
+        "claimDrgCode": {
+          "text": null,
+          "codings": []
+        },
+        "claimStartDate": "2018-08-28",
+        "statementThruDate": "2018-08-28",
+        "procedureCodeType": {
+          "text": null,
+          "codings": []
+        },
+        "adjudicationDate": "2018-08-31",
+        "dischargedate": null,
+        "primaryPayerIdentifier": {
+          "text": null,
+          "codings": []
+        },
+        "claimSubType": {
+          "text": null,
+          "codings": []
+        },
+        "patientDischargeStatusCode": {
+          "text": null,
+          "codings": []
+        },
+        "claimPayerIdentifier": "medicare-ffs",
+        "medicalRecordNumber": null,
+        "claimIdentifierType": "Unique Claim ID",
+        "processingStatusCode": {
+          "text": "active",
+          "codings": [
+            {
+              "code": "active",
+              "display": "active",
+              "system": "http://hl7.org/fhir/explanationofbenefit-status"
+            }
+          ]
+        },
+        "billFacilityTypeCode": {
+          "text": null,
+          "codings": []
+        },
+        "claimAdjustedfromIdentifier": null,
+        "claimAdjustedtoIdentifier": null,
+        "claimAdjustedRelationship": {
+          "text": null,
+          "codings": []
+        },
+        "claimReceivedDate": "2018-08-31",
+        "claimPaymentStatusCode": {
+          "text": null,
+          "codings": []
+        },
+        "claimPaidDate": "2018-09-14",
+        "claimDiscountAmount": null,
+        "serviceClassificationTypeCode": {
+          "text": null,
+          "codings": []
+        },
+        "patientAccountNumber": null,
+        "claimPayeeTypeCode": {
+          "text": null,
+          "codings": []
+        },
+        "inpatientSourceAdmissionCode": {
+          "text": null,
+          "codings": []
+        },
+        "admissionDate": null,
+        "paymentDenialCode": {
+          "text": null,
+          "codings": []
+        },
+        "claimServiceEndDate": "2018-08-28",
+        "claimTypeCode": {
+          "text": "Professional",
+          "codings": [
+            {
+              "code": "professional",
+              "display": "Professional",
+              "system": "http://terminology.hl7.org/CodeSystem/claim-type"
+            }
+          ]
+        },
+        "payerClaimUniqueIdentifier": "CLM-20180828-US18",
+        "adjudicationAmountType": {
+          "text": "Submitted Amount",
+          "codings": [
+            {
+              "code": "submitted",
+              "display": "Submitted Amount",
+              "system": "http://terminology.hl7.org/CodeSystem/adjudication"
+            }
+          ]
+        },
+        "inpatientAdmissionTypeCode": {
+          "text": null,
+          "codings": []
+        },
+        "frequencyCode": {
+          "text": null,
+          "codings": []
+        },
+        "claimPayee": null,
+        "totalAmount": 420,
+        "statementFromDate": "2018-08-28",
+        "claimTotalSubmittedAmount": 420,
+        "claimTotalAllowedAmount": 119.52,
+        "amountPaidByPatient": 23.9,
+        "claimAmountPaidToProvider": 95.62,
+        "memberReimbursement": null,
+        "claimPaymentAmount": 95.62,
+        "claimNonCoveredAmount": null,
+        "memberPaidDeductible": null,
+        "coInsuranceLiabilityAmount": null,
+        "copayAmount": null,
+        "memberLiability": null,
+        "claimOtherPayerPaidAmount": null,
+        "claimUse": {
+          "text": "claim",
+          "codings": [
+            {
+              "code": "claim",
+              "display": "claim",
+              "system": "http://hl7.org/fhir/claim-use"
+            }
+          ]
+        },
+        "claimLastUpdateDate": null
+      },
+      {
+        "claimDrgVersion": null,
+        "claimDrgCode": {
+          "text": null,
+          "codings": []
+        },
+        "claimStartDate": "2018-09-05",
+        "statementThruDate": "2018-09-05",
+        "procedureCodeType": {
+          "text": null,
+          "codings": []
+        },
+        "adjudicationDate": "2018-09-10",
+        "dischargedate": null,
+        "primaryPayerIdentifier": {
+          "text": null,
+          "codings": []
+        },
+        "claimSubType": {
+          "text": null,
+          "codings": []
+        },
+        "patientDischargeStatusCode": {
+          "text": null,
+          "codings": []
+        },
+        "claimPayerIdentifier": "medicare-ffs",
+        "medicalRecordNumber": null,
+        "claimIdentifierType": "Unique Claim ID",
+        "processingStatusCode": {
+          "text": "active",
+          "codings": [
+            {
+              "code": "active",
+              "display": "active",
+              "system": "http://hl7.org/fhir/explanationofbenefit-status"
+            }
+          ]
+        },
+        "billFacilityTypeCode": {
+          "text": null,
+          "codings": []
+        },
+        "claimAdjustedfromIdentifier": null,
+        "claimAdjustedtoIdentifier": null,
+        "claimAdjustedRelationship": {
+          "text": null,
+          "codings": []
+        },
+        "claimReceivedDate": "2018-09-10",
+        "claimPaymentStatusCode": {
+          "text": null,
+          "codings": []
+        },
+        "claimPaidDate": "2018-09-24",
+        "claimDiscountAmount": null,
+        "serviceClassificationTypeCode": {
+          "text": null,
+          "codings": []
+        },
+        "patientAccountNumber": null,
+        "claimPayeeTypeCode": {
+          "text": null,
+          "codings": []
+        },
+        "inpatientSourceAdmissionCode": {
+          "text": null,
+          "codings": []
+        },
+        "admissionDate": null,
+        "paymentDenialCode": {
+          "text": null,
+          "codings": []
+        },
+        "claimServiceEndDate": "2018-09-05",
+        "claimTypeCode": {
+          "text": "Professional",
+          "codings": [
+            {
+              "code": "professional",
+              "display": "Professional",
+              "system": "http://terminology.hl7.org/CodeSystem/claim-type"
+            }
+          ]
+        },
+        "payerClaimUniqueIdentifier": "CLM-20180905-EYE18",
+        "adjudicationAmountType": {
+          "text": "Submitted Amount",
+          "codings": [
+            {
+              "code": "submitted",
+              "display": "Submitted Amount",
+              "system": "http://terminology.hl7.org/CodeSystem/adjudication"
+            }
+          ]
+        },
+        "inpatientAdmissionTypeCode": {
+          "text": null,
+          "codings": []
+        },
+        "frequencyCode": {
+          "text": null,
+          "codings": []
+        },
+        "claimPayee": null,
+        "totalAmount": 475,
+        "statementFromDate": "2018-09-05",
+        "claimTotalSubmittedAmount": 475,
+        "claimTotalAllowedAmount": 232.41,
+        "amountPaidByPatient": 46.48,
+        "claimAmountPaidToProvider": 185.93,
+        "memberReimbursement": null,
+        "claimPaymentAmount": 185.93,
+        "claimNonCoveredAmount": null,
+        "memberPaidDeductible": null,
+        "coInsuranceLiabilityAmount": null,
+        "copayAmount": null,
+        "memberLiability": null,
+        "claimOtherPayerPaidAmount": null,
+        "claimUse": {
+          "text": "claim",
+          "codings": [
+            {
+              "code": "claim",
+              "display": "claim",
+              "system": "http://hl7.org/fhir/claim-use"
+            }
+          ]
+        },
+        "claimLastUpdateDate": null
+      },
+      {
+        "claimDrgVersion": null,
+        "claimDrgCode": {
+          "text": null,
+          "codings": []
+        },
+        "claimStartDate": "2024-07-12",
+        "statementThruDate": "2024-07-12",
+        "procedureCodeType": {
+          "text": null,
+          "codings": []
+        },
+        "adjudicationDate": "2024-07-17",
+        "dischargedate": null,
+        "primaryPayerIdentifier": {
+          "text": null,
+          "codings": []
+        },
+        "claimSubType": {
+          "text": null,
+          "codings": []
+        },
+        "patientDischargeStatusCode": {
+          "text": null,
+          "codings": []
+        },
+        "claimPayerIdentifier": "medicare-ffs",
+        "medicalRecordNumber": null,
+        "claimIdentifierType": "Unique Claim ID",
+        "processingStatusCode": {
+          "text": "active",
+          "codings": [
+            {
+              "code": "active",
+              "display": "active",
+              "system": "http://hl7.org/fhir/explanationofbenefit-status"
+            }
+          ]
+        },
+        "billFacilityTypeCode": {
+          "text": null,
+          "codings": []
+        },
+        "claimAdjustedfromIdentifier": null,
+        "claimAdjustedtoIdentifier": null,
+        "claimAdjustedRelationship": {
+          "text": null,
+          "codings": []
+        },
+        "claimReceivedDate": "2024-07-17",
+        "claimPaymentStatusCode": {
+          "text": null,
+          "codings": []
+        },
+        "claimPaidDate": "2024-07-31",
+        "claimDiscountAmount": null,
+        "serviceClassificationTypeCode": {
+          "text": null,
+          "codings": []
+        },
+        "patientAccountNumber": null,
+        "claimPayeeTypeCode": {
+          "text": null,
+          "codings": []
+        },
+        "inpatientSourceAdmissionCode": {
+          "text": null,
+          "codings": []
+        },
+        "admissionDate": null,
+        "paymentDenialCode": {
+          "text": null,
+          "codings": []
+        },
+        "claimServiceEndDate": "2024-07-12",
+        "claimTypeCode": {
+          "text": "Professional",
+          "codings": [
+            {
+              "code": "professional",
+              "display": "Professional",
+              "system": "http://terminology.hl7.org/CodeSystem/claim-type"
+            }
+          ]
+        },
+        "payerClaimUniqueIdentifier": "CLM-20240712-AWV24",
+        "adjudicationAmountType": {
+          "text": "Submitted Amount",
+          "codings": [
+            {
+              "code": "submitted",
+              "display": "Submitted Amount",
+              "system": "http://terminology.hl7.org/CodeSystem/adjudication"
+            }
+          ]
+        },
+        "inpatientAdmissionTypeCode": {
+          "text": null,
+          "codings": []
+        },
+        "frequencyCode": {
+          "text": null,
+          "codings": []
+        },
+        "claimPayee": null,
+        "totalAmount": 460,
+        "statementFromDate": "2024-07-12",
+        "claimTotalSubmittedAmount": 460,
+        "claimTotalAllowedAmount": 262.14,
+        "amountPaidByPatient": 25.59,
+        "claimAmountPaidToProvider": 236.55,
+        "memberReimbursement": null,
+        "claimPaymentAmount": 236.55,
+        "claimNonCoveredAmount": null,
+        "memberPaidDeductible": null,
+        "coInsuranceLiabilityAmount": null,
+        "copayAmount": null,
+        "memberLiability": null,
+        "claimOtherPayerPaidAmount": null,
+        "claimUse": {
+          "text": "claim",
+          "codings": [
+            {
+              "code": "claim",
+              "display": "claim",
+              "system": "http://hl7.org/fhir/claim-use"
+            }
+          ]
+        },
+        "claimLastUpdateDate": null
+      },
+      {
+        "claimDrgVersion": null,
+        "claimDrgCode": {
+          "text": null,
+          "codings": []
+        },
+        "claimStartDate": "2024-08-05",
+        "statementThruDate": "2024-08-05",
+        "procedureCodeType": {
+          "text": null,
+          "codings": []
+        },
+        "adjudicationDate": "2024-08-09",
+        "dischargedate": null,
+        "primaryPayerIdentifier": {
+          "text": null,
+          "codings": []
+        },
+        "claimSubType": {
+          "text": null,
+          "codings": []
+        },
+        "patientDischargeStatusCode": {
+          "text": null,
+          "codings": []
+        },
+        "claimPayerIdentifier": "medicare-ffs",
+        "medicalRecordNumber": null,
+        "claimIdentifierType": "Unique Claim ID",
+        "processingStatusCode": {
+          "text": "active",
+          "codings": [
+            {
+              "code": "active",
+              "display": "active",
+              "system": "http://hl7.org/fhir/explanationofbenefit-status"
+            }
+          ]
+        },
+        "billFacilityTypeCode": {
+          "text": null,
+          "codings": []
+        },
+        "claimAdjustedfromIdentifier": null,
+        "claimAdjustedtoIdentifier": null,
+        "claimAdjustedRelationship": {
+          "text": null,
+          "codings": []
+        },
+        "claimReceivedDate": "2024-08-09",
+        "claimPaymentStatusCode": {
+          "text": null,
+          "codings": []
+        },
+        "claimPaidDate": "2024-08-23",
+        "claimDiscountAmount": null,
+        "serviceClassificationTypeCode": {
+          "text": null,
+          "codings": []
+        },
+        "patientAccountNumber": null,
+        "claimPayeeTypeCode": {
+          "text": null,
+          "codings": []
+        },
+        "inpatientSourceAdmissionCode": {
+          "text": null,
+          "codings": []
+        },
+        "admissionDate": null,
+        "paymentDenialCode": {
+          "text": null,
+          "codings": []
+        },
+        "claimServiceEndDate": "2024-08-05",
+        "claimTypeCode": {
+          "text": "Professional",
+          "codings": [
+            {
+              "code": "professional",
+              "display": "Professional",
+              "system": "http://terminology.hl7.org/CodeSystem/claim-type"
+            }
+          ]
+        },
+        "payerClaimUniqueIdentifier": "CLM-20240805-IMG24",
+        "adjudicationAmountType": {
+          "text": "Submitted Amount",
+          "codings": [
+            {
+              "code": "submitted",
+              "display": "Submitted Amount",
+              "system": "http://terminology.hl7.org/CodeSystem/adjudication"
+            }
+          ]
+        },
+        "inpatientAdmissionTypeCode": {
+          "text": null,
+          "codings": []
+        },
+        "frequencyCode": {
+          "text": null,
+          "codings": []
+        },
+        "claimPayee": null,
+        "totalAmount": 465,
+        "statementFromDate": "2024-08-05",
+        "claimTotalSubmittedAmount": 465,
+        "claimTotalAllowedAmount": 176.73,
+        "amountPaidByPatient": 0,
+        "claimAmountPaidToProvider": 176.73,
+        "memberReimbursement": null,
+        "claimPaymentAmount": 176.73,
+        "claimNonCoveredAmount": null,
+        "memberPaidDeductible": null,
+        "coInsuranceLiabilityAmount": null,
+        "copayAmount": null,
+        "memberLiability": null,
+        "claimOtherPayerPaidAmount": null,
+        "claimUse": {
+          "text": "claim",
+          "codings": [
+            {
+              "code": "claim",
+              "display": "claim",
+              "system": "http://hl7.org/fhir/claim-use"
+            }
+          ]
+        },
+        "claimLastUpdateDate": null
+      },
+      {
+        "claimDrgVersion": null,
+        "claimDrgCode": {
+          "text": null,
+          "codings": []
+        },
+        "claimStartDate": "2026-07-12",
+        "statementThruDate": "2026-07-12",
+        "procedureCodeType": {
+          "text": null,
+          "codings": []
+        },
+        "adjudicationDate": "2026-07-16",
+        "dischargedate": null,
+        "primaryPayerIdentifier": {
+          "text": null,
+          "codings": []
+        },
+        "claimSubType": {
+          "text": null,
+          "codings": []
+        },
+        "patientDischargeStatusCode": {
+          "text": null,
+          "codings": []
+        },
+        "claimPayerIdentifier": "medicare-ffs",
+        "medicalRecordNumber": null,
+        "claimIdentifierType": "Unique Claim ID",
+        "processingStatusCode": {
+          "text": "active",
+          "codings": [
+            {
+              "code": "active",
+              "display": "active",
+              "system": "http://hl7.org/fhir/explanationofbenefit-status"
+            }
+          ]
+        },
+        "billFacilityTypeCode": {
+          "text": null,
+          "codings": []
+        },
+        "claimAdjustedfromIdentifier": null,
+        "claimAdjustedtoIdentifier": null,
+        "claimAdjustedRelationship": {
+          "text": null,
+          "codings": []
+        },
+        "claimReceivedDate": "2026-07-16",
+        "claimPaymentStatusCode": {
+          "text": null,
+          "codings": []
+        },
+        "claimPaidDate": "2026-07-30",
+        "claimDiscountAmount": null,
+        "serviceClassificationTypeCode": {
+          "text": null,
+          "codings": []
+        },
+        "patientAccountNumber": null,
+        "claimPayeeTypeCode": {
+          "text": null,
+          "codings": []
+        },
+        "inpatientSourceAdmissionCode": {
+          "text": null,
+          "codings": []
+        },
+        "admissionDate": null,
+        "paymentDenialCode": {
+          "text": null,
+          "codings": []
+        },
+        "claimServiceEndDate": "2026-07-12",
+        "claimTypeCode": {
+          "text": "Professional",
+          "codings": [
+            {
+              "code": "professional",
+              "display": "Professional",
+              "system": "http://terminology.hl7.org/CodeSystem/claim-type"
+            }
+          ]
+        },
+        "payerClaimUniqueIdentifier": "CLM-20260712-AWV26",
+        "adjudicationAmountType": {
+          "text": "Submitted Amount",
+          "codings": [
+            {
+              "code": "submitted",
+              "display": "Submitted Amount",
+              "system": "http://terminology.hl7.org/CodeSystem/adjudication"
+            }
+          ]
+        },
+        "inpatientAdmissionTypeCode": {
+          "text": null,
+          "codings": []
+        },
+        "frequencyCode": {
+          "text": null,
+          "codings": []
+        },
+        "claimPayee": null,
+        "totalAmount": 470,
+        "statementFromDate": "2026-07-12",
+        "claimTotalSubmittedAmount": 470,
+        "claimTotalAllowedAmount": 267.73,
+        "amountPaidByPatient": 26.22,
+        "claimAmountPaidToProvider": 241.51,
+        "memberReimbursement": null,
+        "claimPaymentAmount": 241.51,
+        "claimNonCoveredAmount": null,
+        "memberPaidDeductible": null,
+        "coInsuranceLiabilityAmount": null,
+        "copayAmount": null,
+        "memberLiability": null,
+        "claimOtherPayerPaidAmount": null,
+        "claimUse": {
+          "text": "claim",
+          "codings": [
+            {
+              "code": "claim",
+              "display": "claim",
+              "system": "http://hl7.org/fhir/claim-use"
+            }
+          ]
+        },
+        "claimLastUpdateDate": null
+      },
+      {
+        "claimDrgVersion": null,
+        "claimDrgCode": {
+          "text": null,
+          "codings": []
+        },
+        "claimStartDate": "2026-07-12",
+        "statementThruDate": "2026-07-12",
+        "procedureCodeType": {
+          "text": null,
+          "codings": []
+        },
+        "adjudicationDate": "2026-07-15",
+        "dischargedate": null,
+        "primaryPayerIdentifier": {
+          "text": null,
+          "codings": []
+        },
+        "claimSubType": {
+          "text": null,
+          "codings": []
+        },
+        "patientDischargeStatusCode": {
+          "text": null,
+          "codings": []
+        },
+        "claimPayerIdentifier": "medicare-ffs",
+        "medicalRecordNumber": null,
+        "claimIdentifierType": "Unique Claim ID",
+        "processingStatusCode": {
+          "text": "active",
+          "codings": [
+            {
+              "code": "active",
+              "display": "active",
+              "system": "http://hl7.org/fhir/explanationofbenefit-status"
+            }
+          ]
+        },
+        "billFacilityTypeCode": {
+          "text": null,
+          "codings": []
+        },
+        "claimAdjustedfromIdentifier": null,
+        "claimAdjustedtoIdentifier": null,
+        "claimAdjustedRelationship": {
+          "text": null,
+          "codings": []
+        },
+        "claimReceivedDate": "2026-07-15",
+        "claimPaymentStatusCode": {
+          "text": null,
+          "codings": []
+        },
+        "claimPaidDate": "2026-07-29",
+        "claimDiscountAmount": null,
+        "serviceClassificationTypeCode": {
+          "text": null,
+          "codings": []
+        },
+        "patientAccountNumber": null,
+        "claimPayeeTypeCode": {
+          "text": null,
+          "codings": []
+        },
+        "inpatientSourceAdmissionCode": {
+          "text": null,
+          "codings": []
+        },
+        "admissionDate": null,
+        "paymentDenialCode": {
+          "text": null,
+          "codings": []
+        },
+        "claimServiceEndDate": "2026-07-12",
+        "claimTypeCode": {
+          "text": "Professional",
+          "codings": [
+            {
+              "code": "professional",
+              "display": "Professional",
+              "system": "http://terminology.hl7.org/CodeSystem/claim-type"
+            }
+          ]
+        },
+        "payerClaimUniqueIdentifier": "CLM-20260712-LAB26",
+        "adjudicationAmountType": {
+          "text": "Submitted Amount",
+          "codings": [
+            {
+              "code": "submitted",
+              "display": "Submitted Amount",
+              "system": "http://terminology.hl7.org/CodeSystem/adjudication"
+            }
+          ]
+        },
+        "inpatientAdmissionTypeCode": {
+          "text": null,
+          "codings": []
+        },
+        "frequencyCode": {
+          "text": null,
+          "codings": []
+        },
+        "claimPayee": null,
+        "totalAmount": 198,
+        "statementFromDate": "2026-07-12",
+        "claimTotalSubmittedAmount": 198,
+        "claimTotalAllowedAmount": 46,
+        "amountPaidByPatient": 0,
+        "claimAmountPaidToProvider": 46,
+        "memberReimbursement": null,
+        "claimPaymentAmount": 46,
+        "claimNonCoveredAmount": null,
+        "memberPaidDeductible": null,
+        "coInsuranceLiabilityAmount": null,
+        "copayAmount": null,
+        "memberLiability": null,
+        "claimOtherPayerPaidAmount": null,
+        "claimUse": {
+          "text": "claim",
+          "codings": [
+            {
+              "code": "claim",
+              "display": "claim",
+              "system": "http://hl7.org/fhir/claim-use"
+            }
+          ]
+        },
+        "claimLastUpdateDate": null
+      },
+      {
+        "claimDrgVersion": null,
+        "claimDrgCode": {
+          "text": null,
+          "codings": []
+        },
+        "claimStartDate": "2026-08-03",
+        "statementThruDate": "2026-08-03",
+        "procedureCodeType": {
+          "text": null,
+          "codings": []
+        },
+        "adjudicationDate": "2026-08-06",
+        "dischargedate": null,
+        "primaryPayerIdentifier": {
+          "text": null,
+          "codings": []
+        },
+        "claimSubType": {
+          "text": null,
+          "codings": []
+        },
+        "patientDischargeStatusCode": {
+          "text": null,
+          "codings": []
+        },
+        "claimPayerIdentifier": "medicare-ffs",
+        "medicalRecordNumber": null,
+        "claimIdentifierType": "Unique Claim ID",
+        "processingStatusCode": {
+          "text": "active",
+          "codings": [
+            {
+              "code": "active",
+              "display": "active",
+              "system": "http://hl7.org/fhir/explanationofbenefit-status"
+            }
+          ]
+        },
+        "billFacilityTypeCode": {
+          "text": null,
+          "codings": []
+        },
+        "claimAdjustedfromIdentifier": null,
+        "claimAdjustedtoIdentifier": null,
+        "claimAdjustedRelationship": {
+          "text": null,
+          "codings": []
+        },
+        "claimReceivedDate": "2026-08-06",
+        "claimPaymentStatusCode": {
+          "text": null,
+          "codings": []
+        },
+        "claimPaidDate": "2026-08-20",
+        "claimDiscountAmount": null,
+        "serviceClassificationTypeCode": {
+          "text": null,
+          "codings": []
+        },
+        "patientAccountNumber": null,
+        "claimPayeeTypeCode": {
+          "text": null,
+          "codings": []
+        },
+        "inpatientSourceAdmissionCode": {
+          "text": null,
+          "codings": []
+        },
+        "admissionDate": null,
+        "paymentDenialCode": {
+          "text": null,
+          "codings": []
+        },
+        "claimServiceEndDate": "2026-08-03",
+        "claimTypeCode": {
+          "text": "Professional",
+          "codings": [
+            {
+              "code": "professional",
+              "display": "Professional",
+              "system": "http://terminology.hl7.org/CodeSystem/claim-type"
+            }
+          ]
+        },
+        "payerClaimUniqueIdentifier": "CLM-20260803-EYE26",
+        "adjudicationAmountType": {
+          "text": "Submitted Amount",
+          "codings": [
+            {
+              "code": "submitted",
+              "display": "Submitted Amount",
+              "system": "http://terminology.hl7.org/CodeSystem/adjudication"
+            }
+          ]
+        },
+        "inpatientAdmissionTypeCode": {
+          "text": null,
+          "codings": []
+        },
+        "frequencyCode": {
+          "text": null,
+          "codings": []
+        },
+        "claimPayee": null,
+        "totalAmount": 275,
+        "statementFromDate": "2026-08-03",
+        "claimTotalSubmittedAmount": 275,
+        "claimTotalAllowedAmount": 142.65,
+        "amountPaidByPatient": 28.53,
+        "claimAmountPaidToProvider": 114.12,
+        "memberReimbursement": null,
+        "claimPaymentAmount": 114.12,
+        "claimNonCoveredAmount": null,
+        "memberPaidDeductible": null,
+        "coInsuranceLiabilityAmount": null,
+        "copayAmount": null,
+        "memberLiability": null,
+        "claimOtherPayerPaidAmount": null,
+        "claimUse": {
+          "text": "claim",
+          "codings": [
+            {
+              "code": "claim",
+              "display": "claim",
+              "system": "http://hl7.org/fhir/claim-use"
+            }
+          ]
+        },
+        "claimLastUpdateDate": null
+      },
+      {
+        "claimDrgVersion": null,
+        "claimDrgCode": {
+          "text": null,
+          "codings": []
+        },
+        "claimStartDate": "2026-08-18",
+        "statementThruDate": "2026-08-18",
+        "procedureCodeType": {
+          "text": null,
+          "codings": []
+        },
+        "adjudicationDate": "2026-08-21",
+        "dischargedate": null,
+        "primaryPayerIdentifier": {
+          "text": null,
+          "codings": []
+        },
+        "claimSubType": {
+          "text": null,
+          "codings": []
+        },
+        "patientDischargeStatusCode": {
+          "text": null,
+          "codings": []
+        },
+        "claimPayerIdentifier": "medicare-ffs",
+        "medicalRecordNumber": null,
+        "claimIdentifierType": "Unique Claim ID",
+        "processingStatusCode": {
+          "text": "active",
+          "codings": [
+            {
+              "code": "active",
+              "display": "active",
+              "system": "http://hl7.org/fhir/explanationofbenefit-status"
+            }
+          ]
+        },
+        "billFacilityTypeCode": {
+          "text": null,
+          "codings": []
+        },
+        "claimAdjustedfromIdentifier": null,
+        "claimAdjustedtoIdentifier": null,
+        "claimAdjustedRelationship": {
+          "text": null,
+          "codings": []
+        },
+        "claimReceivedDate": "2026-08-21",
+        "claimPaymentStatusCode": {
+          "text": null,
+          "codings": []
+        },
+        "claimPaidDate": "2026-09-04",
+        "claimDiscountAmount": null,
+        "serviceClassificationTypeCode": {
+          "text": null,
+          "codings": []
+        },
+        "patientAccountNumber": null,
+        "claimPayeeTypeCode": {
+          "text": null,
+          "codings": []
+        },
+        "inpatientSourceAdmissionCode": {
+          "text": null,
+          "codings": []
+        },
+        "admissionDate": null,
+        "paymentDenialCode": {
+          "text": null,
+          "codings": []
+        },
+        "claimServiceEndDate": "2026-08-18",
+        "claimTypeCode": {
+          "text": "Professional",
+          "codings": [
+            {
+              "code": "professional",
+              "display": "Professional",
+              "system": "http://terminology.hl7.org/CodeSystem/claim-type"
+            }
+          ]
+        },
+        "payerClaimUniqueIdentifier": "CLM-20260818-ENDO26",
+        "adjudicationAmountType": {
+          "text": "Submitted Amount",
+          "codings": [
+            {
+              "code": "submitted",
+              "display": "Submitted Amount",
+              "system": "http://terminology.hl7.org/CodeSystem/adjudication"
+            }
+          ]
+        },
+        "inpatientAdmissionTypeCode": {
+          "text": null,
+          "codings": []
+        },
+        "frequencyCode": {
+          "text": null,
+          "codings": []
+        },
+        "claimPayee": null,
+        "totalAmount": 360,
+        "statementFromDate": "2026-08-18",
+        "claimTotalSubmittedAmount": 360,
+        "claimTotalAllowedAmount": 173.86,
+        "amountPaidByPatient": 34.77,
+        "claimAmountPaidToProvider": 139.09,
+        "memberReimbursement": null,
+        "claimPaymentAmount": 139.09,
+        "claimNonCoveredAmount": null,
+        "memberPaidDeductible": null,
+        "coInsuranceLiabilityAmount": null,
+        "copayAmount": null,
+        "memberLiability": null,
+        "claimOtherPayerPaidAmount": null,
+        "claimUse": {
+          "text": "claim",
+          "codings": [
+            {
+              "code": "claim",
+              "display": "claim",
+              "system": "http://hl7.org/fhir/claim-use"
+            }
+          ]
+        },
+        "claimLastUpdateDate": null
+      }
+    ],
+    "provider": [
+      {
+        "providerNpi": "Practitioner/7f338461-3a08-5284-be38-33b673dc55c4",
+        "providerContractingStatus": {
+          "text": null,
+          "codings": []
+        },
+        "siteOfServiceNetworkStatus": {
+          "text": null,
+          "codings": []
+        },
+        "careTeamRole": {
+          "text": "Rendering provider",
+          "codings": [
+            {
+              "code": "rendering",
+              "display": "Rendering provider",
+              "system": "http://hl7.org/fhir/us/carin-bb/CodeSystem/C4BBClaimCareTeamRole"
+            }
+          ]
+        },
+        "providerName": null,
+        "providerAddress": null,
+        "providerPayerSpecificIdentifier": {
+          "text": null,
+          "codings": []
+        },
+        "providerType": {
+          "text": null,
+          "codings": []
+        }
+      },
+      {
+        "providerNpi": "Practitioner/b4e941a3-a3b9-5781-a1cb-78af4db571bd",
+        "providerContractingStatus": {
+          "text": null,
+          "codings": []
+        },
+        "siteOfServiceNetworkStatus": {
+          "text": null,
+          "codings": []
+        },
+        "careTeamRole": {
+          "text": "Rendering provider",
+          "codings": [
+            {
+              "code": "rendering",
+              "display": "Rendering provider",
+              "system": "http://hl7.org/fhir/us/carin-bb/CodeSystem/C4BBClaimCareTeamRole"
+            }
+          ]
+        },
+        "providerName": null,
+        "providerAddress": null,
+        "providerPayerSpecificIdentifier": {
+          "text": null,
+          "codings": []
+        },
+        "providerType": {
+          "text": null,
+          "codings": []
+        }
+      },
+      {
+        "providerNpi": "Practitioner/7f338461-3a08-5284-be38-33b673dc55c4",
+        "providerContractingStatus": {
+          "text": null,
+          "codings": []
+        },
+        "siteOfServiceNetworkStatus": {
+          "text": null,
+          "codings": []
+        },
+        "careTeamRole": {
+          "text": "Referring",
+          "codings": [
+            {
+              "code": "referring",
+              "display": "Referring",
+              "system": "http://hl7.org/fhir/us/carin-bb/CodeSystem/C4BBClaimCareTeamRole"
+            }
+          ]
+        },
+        "providerName": null,
+        "providerAddress": null,
+        "providerPayerSpecificIdentifier": {
+          "text": null,
+          "codings": []
+        },
+        "providerType": {
+          "text": null,
+          "codings": []
+        }
+      },
+      {
+        "providerNpi": "Practitioner/81d74345-58f7-5a5c-bb5a-4d6d5972fa3a",
+        "providerContractingStatus": {
+          "text": null,
+          "codings": []
+        },
+        "siteOfServiceNetworkStatus": {
+          "text": null,
+          "codings": []
+        },
+        "careTeamRole": {
+          "text": "Rendering provider",
+          "codings": [
+            {
+              "code": "rendering",
+              "display": "Rendering provider",
+              "system": "http://hl7.org/fhir/us/carin-bb/CodeSystem/C4BBClaimCareTeamRole"
+            }
+          ]
+        },
+        "providerName": null,
+        "providerAddress": null,
+        "providerPayerSpecificIdentifier": {
+          "text": null,
+          "codings": []
+        },
+        "providerType": {
+          "text": null,
+          "codings": []
+        }
+      },
+      {
+        "providerNpi": "Practitioner/b4e941a3-a3b9-5781-a1cb-78af4db571bd",
+        "providerContractingStatus": {
+          "text": null,
+          "codings": []
+        },
+        "siteOfServiceNetworkStatus": {
+          "text": null,
+          "codings": []
+        },
+        "careTeamRole": {
+          "text": "Referring",
+          "codings": [
+            {
+              "code": "referring",
+              "display": "Referring",
+              "system": "http://hl7.org/fhir/us/carin-bb/CodeSystem/C4BBClaimCareTeamRole"
+            }
+          ]
+        },
+        "providerName": null,
+        "providerAddress": null,
+        "providerPayerSpecificIdentifier": {
+          "text": null,
+          "codings": []
+        },
+        "providerType": {
+          "text": null,
+          "codings": []
+        }
+      },
+      {
+        "providerNpi": "Practitioner/810dc0b4-dabe-5e16-9025-904f01f3615b",
+        "providerContractingStatus": {
+          "text": null,
+          "codings": []
+        },
+        "siteOfServiceNetworkStatus": {
+          "text": null,
+          "codings": []
+        },
+        "careTeamRole": {
+          "text": "Rendering provider",
+          "codings": [
+            {
+              "code": "rendering",
+              "display": "Rendering provider",
+              "system": "http://hl7.org/fhir/us/carin-bb/CodeSystem/C4BBClaimCareTeamRole"
+            }
+          ]
+        },
+        "providerName": null,
+        "providerAddress": null,
+        "providerPayerSpecificIdentifier": {
+          "text": null,
+          "codings": []
+        },
+        "providerType": {
+          "text": null,
+          "codings": []
+        }
+      },
+      {
+        "providerNpi": "Organization/c7c269ee-ce2f-54f7-a90e-2ac2f127e3f7",
+        "providerContractingStatus": {
+          "text": null,
+          "codings": []
+        },
+        "siteOfServiceNetworkStatus": {
+          "text": null,
+          "codings": []
+        },
+        "careTeamRole": {
+          "text": "Rendering provider",
+          "codings": [
+            {
+              "code": "rendering",
+              "display": "Rendering provider",
+              "system": "http://hl7.org/fhir/us/carin-bb/CodeSystem/C4BBClaimCareTeamRole"
+            }
+          ]
+        },
+        "providerName": null,
+        "providerAddress": null,
+        "providerPayerSpecificIdentifier": {
+          "text": null,
+          "codings": []
+        },
+        "providerType": {
+          "text": null,
+          "codings": []
+        }
+      },
+      {
+        "providerNpi": "Practitioner/f74ce1f1-6b8f-592f-aa7e-d29c73dedbe9",
+        "providerContractingStatus": {
+          "text": null,
+          "codings": []
+        },
+        "siteOfServiceNetworkStatus": {
+          "text": null,
+          "codings": []
+        },
+        "careTeamRole": {
+          "text": "Rendering provider",
+          "codings": [
+            {
+              "code": "rendering",
+              "display": "Rendering provider",
+              "system": "http://hl7.org/fhir/us/carin-bb/CodeSystem/C4BBClaimCareTeamRole"
+            }
+          ]
+        },
+        "providerName": null,
+        "providerAddress": null,
+        "providerPayerSpecificIdentifier": {
+          "text": null,
+          "codings": []
+        },
+        "providerType": {
+          "text": null,
+          "codings": []
+        }
+      }
+    ],
+    "claimDiagnosis": [
+      {
+        "diagnosisCode": {
+          "text": "Type 2 diabetes mellitus with diabetic chronic kidney disease",
+          "codings": [
+            {
+              "code": "E11.22",
+              "display": "Type 2 diabetes mellitus with diabetic chronic kidney disease",
+              "system": "http://hl7.org/fhir/sid/icd-10-cm"
+            }
+          ]
+        },
+        "eCodeIndicator": "false",
+        "presentOnAdmissionIndicator": null,
+        "diagnosisType": {
+          "text": "Principal Diagnosis",
+          "codings": [
+            {
+              "code": "principal",
+              "display": "Principal Diagnosis",
+              "system": "http://terminology.hl7.org/CodeSystem/ex-diagnosistype"
+            }
+          ]
+        }
+      },
+      {
+        "diagnosisCode": {
+          "text": "Chronic kidney disease, stage 3 (moderate)",
+          "codings": [
+            {
+              "code": "N18.3",
+              "display": "Chronic kidney disease, stage 3 (moderate)",
+              "system": "http://hl7.org/fhir/sid/icd-10-cm"
+            }
+          ]
+        },
+        "eCodeIndicator": "false",
+        "presentOnAdmissionIndicator": null,
+        "diagnosisType": {
+          "text": "Secondary",
+          "codings": [
+            {
+              "code": "secondary",
+              "display": "Secondary",
+              "system": "http://hl7.org/fhir/us/carin-bb/CodeSystem/C4BBClaimDiagnosisType"
+            }
+          ]
+        }
+      },
+      {
+        "diagnosisCode": {
+          "text": "Hypertensive chronic kidney disease with stage 1 through stage 4 chronic kidney disease, or unspecified chronic kidney disease",
+          "codings": [
+            {
+              "code": "I12.9",
+              "display": "Hypertensive chronic kidney disease with stage 1 through stage 4 chronic kidney disease, or unspecified chronic kidney disease",
+              "system": "http://hl7.org/fhir/sid/icd-10-cm"
+            }
+          ]
+        },
+        "eCodeIndicator": "false",
+        "presentOnAdmissionIndicator": null,
+        "diagnosisType": {
+          "text": "Secondary",
+          "codings": [
+            {
+              "code": "secondary",
+              "display": "Secondary",
+              "system": "http://hl7.org/fhir/us/carin-bb/CodeSystem/C4BBClaimDiagnosisType"
+            }
+          ]
+        }
+      },
+      {
+        "diagnosisCode": {
+          "text": "Type 2 diabetes mellitus with unspecified diabetic retinopathy without macular edema",
+          "codings": [
+            {
+              "code": "E11.319",
+              "display": "Type 2 diabetes mellitus with unspecified diabetic retinopathy without macular edema",
+              "system": "http://hl7.org/fhir/sid/icd-10-cm"
+            }
+          ]
+        },
+        "eCodeIndicator": "false",
+        "presentOnAdmissionIndicator": null,
+        "diagnosisType": {
+          "text": "Secondary",
+          "codings": [
+            {
+              "code": "secondary",
+              "display": "Secondary",
+              "system": "http://hl7.org/fhir/us/carin-bb/CodeSystem/C4BBClaimDiagnosisType"
+            }
+          ]
+        }
+      },
+      {
+        "diagnosisCode": {
+          "text": "Type 2 diabetes mellitus with diabetic chronic kidney disease",
+          "codings": [
+            {
+              "code": "E11.22",
+              "display": "Type 2 diabetes mellitus with diabetic chronic kidney disease",
+              "system": "http://hl7.org/fhir/sid/icd-10-cm"
+            }
+          ]
+        },
+        "eCodeIndicator": "false",
+        "presentOnAdmissionIndicator": null,
+        "diagnosisType": {
+          "text": "Principal Diagnosis",
+          "codings": [
+            {
+              "code": "principal",
+              "display": "Principal Diagnosis",
+              "system": "http://terminology.hl7.org/CodeSystem/ex-diagnosistype"
+            }
+          ]
+        }
+      },
+      {
+        "diagnosisCode": {
+          "text": "Chronic kidney disease, stage 3 (moderate)",
+          "codings": [
+            {
+              "code": "N18.3",
+              "display": "Chronic kidney disease, stage 3 (moderate)",
+              "system": "http://hl7.org/fhir/sid/icd-10-cm"
+            }
+          ]
+        },
+        "eCodeIndicator": "false",
+        "presentOnAdmissionIndicator": null,
+        "diagnosisType": {
+          "text": "Secondary",
+          "codings": [
+            {
+              "code": "secondary",
+              "display": "Secondary",
+              "system": "http://hl7.org/fhir/us/carin-bb/CodeSystem/C4BBClaimDiagnosisType"
+            }
+          ]
+        }
+      },
+      {
+        "diagnosisCode": {
+          "text": "Hypertensive chronic kidney disease with stage 1 through stage 4 chronic kidney disease, or unspecified chronic kidney disease",
+          "codings": [
+            {
+              "code": "I12.9",
+              "display": "Hypertensive chronic kidney disease with stage 1 through stage 4 chronic kidney disease, or unspecified chronic kidney disease",
+              "system": "http://hl7.org/fhir/sid/icd-10-cm"
+            }
+          ]
+        },
+        "eCodeIndicator": "false",
+        "presentOnAdmissionIndicator": null,
+        "diagnosisType": {
+          "text": "Secondary",
+          "codings": [
+            {
+              "code": "secondary",
+              "display": "Secondary",
+              "system": "http://hl7.org/fhir/us/carin-bb/CodeSystem/C4BBClaimDiagnosisType"
+            }
+          ]
+        }
+      },
+      {
+        "diagnosisCode": {
+          "text": "Chronic kidney disease, stage 3 (moderate)",
+          "codings": [
+            {
+              "code": "N18.3",
+              "display": "Chronic kidney disease, stage 3 (moderate)",
+              "system": "http://hl7.org/fhir/sid/icd-10-cm"
+            }
+          ]
+        },
+        "eCodeIndicator": "false",
+        "presentOnAdmissionIndicator": null,
+        "diagnosisType": {
+          "text": "Principal Diagnosis",
+          "codings": [
+            {
+              "code": "principal",
+              "display": "Principal Diagnosis",
+              "system": "http://terminology.hl7.org/CodeSystem/ex-diagnosistype"
+            }
+          ]
+        }
+      },
+      {
+        "diagnosisCode": {
+          "text": "Type 2 diabetes mellitus with diabetic chronic kidney disease",
+          "codings": [
+            {
+              "code": "E11.22",
+              "display": "Type 2 diabetes mellitus with diabetic chronic kidney disease",
+              "system": "http://hl7.org/fhir/sid/icd-10-cm"
+            }
+          ]
+        },
+        "eCodeIndicator": "false",
+        "presentOnAdmissionIndicator": null,
+        "diagnosisType": {
+          "text": "Secondary",
+          "codings": [
+            {
+              "code": "secondary",
+              "display": "Secondary",
+              "system": "http://hl7.org/fhir/us/carin-bb/CodeSystem/C4BBClaimDiagnosisType"
+            }
+          ]
+        }
+      },
+      {
+        "diagnosisCode": {
+          "text": "Type 2 diabetes mellitus with mild nonproliferative diabetic retinopathy without macular edema, bilateral",
+          "codings": [
+            {
+              "code": "E11.3293",
+              "display": "Type 2 diabetes mellitus with mild nonproliferative diabetic retinopathy without macular edema, bilateral",
+              "system": "http://hl7.org/fhir/sid/icd-10-cm"
+            }
+          ]
+        },
+        "eCodeIndicator": "false",
+        "presentOnAdmissionIndicator": null,
+        "diagnosisType": {
+          "text": "Principal Diagnosis",
+          "codings": [
+            {
+              "code": "principal",
+              "display": "Principal Diagnosis",
+              "system": "http://terminology.hl7.org/CodeSystem/ex-diagnosistype"
+            }
+          ]
+        }
+      },
+      {
+        "diagnosisCode": {
+          "text": "Encounter for general adult medical examination with abnormal findings",
+          "codings": [
+            {
+              "code": "Z00.01",
+              "display": "Encounter for general adult medical examination with abnormal findings",
+              "system": "http://hl7.org/fhir/sid/icd-10-cm"
+            }
+          ]
+        },
+        "eCodeIndicator": "false",
+        "presentOnAdmissionIndicator": null,
+        "diagnosisType": {
+          "text": "Principal Diagnosis",
+          "codings": [
+            {
+              "code": "principal",
+              "display": "Principal Diagnosis",
+              "system": "http://terminology.hl7.org/CodeSystem/ex-diagnosistype"
+            }
+          ]
+        }
+      },
+      {
+        "diagnosisCode": {
+          "text": "Type 2 diabetes mellitus with diabetic chronic kidney disease",
+          "codings": [
+            {
+              "code": "E11.22",
+              "display": "Type 2 diabetes mellitus with diabetic chronic kidney disease",
+              "system": "http://hl7.org/fhir/sid/icd-10-cm"
+            }
+          ]
+        },
+        "eCodeIndicator": "false",
+        "presentOnAdmissionIndicator": null,
+        "diagnosisType": {
+          "text": "Secondary",
+          "codings": [
+            {
+              "code": "secondary",
+              "display": "Secondary",
+              "system": "http://hl7.org/fhir/us/carin-bb/CodeSystem/C4BBClaimDiagnosisType"
+            }
+          ]
+        }
+      },
+      {
+        "diagnosisCode": {
+          "text": "Chronic kidney disease, stage 3a",
+          "codings": [
+            {
+              "code": "N18.31",
+              "display": "Chronic kidney disease, stage 3a",
+              "system": "http://hl7.org/fhir/sid/icd-10-cm"
+            }
+          ]
+        },
+        "eCodeIndicator": "false",
+        "presentOnAdmissionIndicator": null,
+        "diagnosisType": {
+          "text": "Secondary",
+          "codings": [
+            {
+              "code": "secondary",
+              "display": "Secondary",
+              "system": "http://hl7.org/fhir/us/carin-bb/CodeSystem/C4BBClaimDiagnosisType"
+            }
+          ]
+        }
+      },
+      {
+        "diagnosisCode": {
+          "text": "Hypertensive chronic kidney disease with stage 1 through stage 4 chronic kidney disease, or unspecified chronic kidney disease",
+          "codings": [
+            {
+              "code": "I12.9",
+              "display": "Hypertensive chronic kidney disease with stage 1 through stage 4 chronic kidney disease, or unspecified chronic kidney disease",
+              "system": "http://hl7.org/fhir/sid/icd-10-cm"
+            }
+          ]
+        },
+        "eCodeIndicator": "false",
+        "presentOnAdmissionIndicator": null,
+        "diagnosisType": {
+          "text": "Secondary",
+          "codings": [
+            {
+              "code": "secondary",
+              "display": "Secondary",
+              "system": "http://hl7.org/fhir/us/carin-bb/CodeSystem/C4BBClaimDiagnosisType"
+            }
+          ]
+        }
+      },
+      {
+        "diagnosisCode": {
+          "text": "Type 2 diabetes mellitus with mild nonproliferative diabetic retinopathy without macular edema, bilateral",
+          "codings": [
+            {
+              "code": "E11.3293",
+              "display": "Type 2 diabetes mellitus with mild nonproliferative diabetic retinopathy without macular edema, bilateral",
+              "system": "http://hl7.org/fhir/sid/icd-10-cm"
+            }
+          ]
+        },
+        "eCodeIndicator": "false",
+        "presentOnAdmissionIndicator": null,
+        "diagnosisType": {
+          "text": "Secondary",
+          "codings": [
+            {
+              "code": "secondary",
+              "display": "Secondary",
+              "system": "http://hl7.org/fhir/us/carin-bb/CodeSystem/C4BBClaimDiagnosisType"
+            }
+          ]
+        }
+      },
+      {
+        "diagnosisCode": {
+          "text": "Encounter for screening mammogram for malignant neoplasm of breast",
+          "codings": [
+            {
+              "code": "Z12.31",
+              "display": "Encounter for screening mammogram for malignant neoplasm of breast",
+              "system": "http://hl7.org/fhir/sid/icd-10-cm"
+            }
+          ]
+        },
+        "eCodeIndicator": "false",
+        "presentOnAdmissionIndicator": null,
+        "diagnosisType": {
+          "text": "Principal Diagnosis",
+          "codings": [
+            {
+              "code": "principal",
+              "display": "Principal Diagnosis",
+              "system": "http://terminology.hl7.org/CodeSystem/ex-diagnosistype"
+            }
+          ]
+        }
+      },
+      {
+        "diagnosisCode": {
+          "text": "Encounter for screening for osteoporosis",
+          "codings": [
+            {
+              "code": "Z13.820",
+              "display": "Encounter for screening for osteoporosis",
+              "system": "http://hl7.org/fhir/sid/icd-10-cm"
+            }
+          ]
+        },
+        "eCodeIndicator": "false",
+        "presentOnAdmissionIndicator": null,
+        "diagnosisType": {
+          "text": "Secondary",
+          "codings": [
+            {
+              "code": "secondary",
+              "display": "Secondary",
+              "system": "http://hl7.org/fhir/us/carin-bb/CodeSystem/C4BBClaimDiagnosisType"
+            }
+          ]
+        }
+      },
+      {
+        "diagnosisCode": {
+          "text": "Encounter for general adult medical examination with abnormal findings",
+          "codings": [
+            {
+              "code": "Z00.01",
+              "display": "Encounter for general adult medical examination with abnormal findings",
+              "system": "http://hl7.org/fhir/sid/icd-10-cm"
+            }
+          ]
+        },
+        "eCodeIndicator": "false",
+        "presentOnAdmissionIndicator": null,
+        "diagnosisType": {
+          "text": "Principal Diagnosis",
+          "codings": [
+            {
+              "code": "principal",
+              "display": "Principal Diagnosis",
+              "system": "http://terminology.hl7.org/CodeSystem/ex-diagnosistype"
+            }
+          ]
+        }
+      },
+      {
+        "diagnosisCode": {
+          "text": "Type 2 diabetes mellitus with diabetic chronic kidney disease",
+          "codings": [
+            {
+              "code": "E11.22",
+              "display": "Type 2 diabetes mellitus with diabetic chronic kidney disease",
+              "system": "http://hl7.org/fhir/sid/icd-10-cm"
+            }
+          ]
+        },
+        "eCodeIndicator": "false",
+        "presentOnAdmissionIndicator": null,
+        "diagnosisType": {
+          "text": "Secondary",
+          "codings": [
+            {
+              "code": "secondary",
+              "display": "Secondary",
+              "system": "http://hl7.org/fhir/us/carin-bb/CodeSystem/C4BBClaimDiagnosisType"
+            }
+          ]
+        }
+      },
+      {
+        "diagnosisCode": {
+          "text": "Chronic kidney disease, stage 3a",
+          "codings": [
+            {
+              "code": "N18.31",
+              "display": "Chronic kidney disease, stage 3a",
+              "system": "http://hl7.org/fhir/sid/icd-10-cm"
+            }
+          ]
+        },
+        "eCodeIndicator": "false",
+        "presentOnAdmissionIndicator": null,
+        "diagnosisType": {
+          "text": "Secondary",
+          "codings": [
+            {
+              "code": "secondary",
+              "display": "Secondary",
+              "system": "http://hl7.org/fhir/us/carin-bb/CodeSystem/C4BBClaimDiagnosisType"
+            }
+          ]
+        }
+      },
+      {
+        "diagnosisCode": {
+          "text": "Hypertensive chronic kidney disease with stage 1 through stage 4 chronic kidney disease, or unspecified chronic kidney disease",
+          "codings": [
+            {
+              "code": "I12.9",
+              "display": "Hypertensive chronic kidney disease with stage 1 through stage 4 chronic kidney disease, or unspecified chronic kidney disease",
+              "system": "http://hl7.org/fhir/sid/icd-10-cm"
+            }
+          ]
+        },
+        "eCodeIndicator": "false",
+        "presentOnAdmissionIndicator": null,
+        "diagnosisType": {
+          "text": "Secondary",
+          "codings": [
+            {
+              "code": "secondary",
+              "display": "Secondary",
+              "system": "http://hl7.org/fhir/us/carin-bb/CodeSystem/C4BBClaimDiagnosisType"
+            }
+          ]
+        }
+      },
+      {
+        "diagnosisCode": {
+          "text": "Type 2 diabetes mellitus with mild nonproliferative diabetic retinopathy without macular edema, bilateral",
+          "codings": [
+            {
+              "code": "E11.3293",
+              "display": "Type 2 diabetes mellitus with mild nonproliferative diabetic retinopathy without macular edema, bilateral",
+              "system": "http://hl7.org/fhir/sid/icd-10-cm"
+            }
+          ]
+        },
+        "eCodeIndicator": "false",
+        "presentOnAdmissionIndicator": null,
+        "diagnosisType": {
+          "text": "Secondary",
+          "codings": [
+            {
+              "code": "secondary",
+              "display": "Secondary",
+              "system": "http://hl7.org/fhir/us/carin-bb/CodeSystem/C4BBClaimDiagnosisType"
+            }
+          ]
+        }
+      },
+      {
+        "diagnosisCode": {
+          "text": "Long term (current) use of oral hypoglycemic drugs",
+          "codings": [
+            {
+              "code": "Z79.84",
+              "display": "Long term (current) use of oral hypoglycemic drugs",
+              "system": "http://hl7.org/fhir/sid/icd-10-cm"
+            }
+          ]
+        },
+        "eCodeIndicator": "false",
+        "presentOnAdmissionIndicator": null,
+        "diagnosisType": {
+          "text": "Secondary",
+          "codings": [
+            {
+              "code": "secondary",
+              "display": "Secondary",
+              "system": "http://hl7.org/fhir/us/carin-bb/CodeSystem/C4BBClaimDiagnosisType"
+            }
+          ]
+        }
+      },
+      {
+        "diagnosisCode": {
+          "text": "Type 2 diabetes mellitus with diabetic chronic kidney disease",
+          "codings": [
+            {
+              "code": "E11.22",
+              "display": "Type 2 diabetes mellitus with diabetic chronic kidney disease",
+              "system": "http://hl7.org/fhir/sid/icd-10-cm"
+            }
+          ]
+        },
+        "eCodeIndicator": "false",
+        "presentOnAdmissionIndicator": null,
+        "diagnosisType": {
+          "text": "Principal Diagnosis",
+          "codings": [
+            {
+              "code": "principal",
+              "display": "Principal Diagnosis",
+              "system": "http://terminology.hl7.org/CodeSystem/ex-diagnosistype"
+            }
+          ]
+        }
+      },
+      {
+        "diagnosisCode": {
+          "text": "Chronic kidney disease, stage 3a",
+          "codings": [
+            {
+              "code": "N18.31",
+              "display": "Chronic kidney disease, stage 3a",
+              "system": "http://hl7.org/fhir/sid/icd-10-cm"
+            }
+          ]
+        },
+        "eCodeIndicator": "false",
+        "presentOnAdmissionIndicator": null,
+        "diagnosisType": {
+          "text": "Secondary",
+          "codings": [
+            {
+              "code": "secondary",
+              "display": "Secondary",
+              "system": "http://hl7.org/fhir/us/carin-bb/CodeSystem/C4BBClaimDiagnosisType"
+            }
+          ]
+        }
+      },
+      {
+        "diagnosisCode": {
+          "text": "Long term (current) use of oral hypoglycemic drugs",
+          "codings": [
+            {
+              "code": "Z79.84",
+              "display": "Long term (current) use of oral hypoglycemic drugs",
+              "system": "http://hl7.org/fhir/sid/icd-10-cm"
+            }
+          ]
+        },
+        "eCodeIndicator": "false",
+        "presentOnAdmissionIndicator": null,
+        "diagnosisType": {
+          "text": "Secondary",
+          "codings": [
+            {
+              "code": "secondary",
+              "display": "Secondary",
+              "system": "http://hl7.org/fhir/us/carin-bb/CodeSystem/C4BBClaimDiagnosisType"
+            }
+          ]
+        }
+      },
+      {
+        "diagnosisCode": {
+          "text": "Other long term (current) drug therapy",
+          "codings": [
+            {
+              "code": "Z79.899",
+              "display": "Other long term (current) drug therapy",
+              "system": "http://hl7.org/fhir/sid/icd-10-cm"
+            }
+          ]
+        },
+        "eCodeIndicator": "false",
+        "presentOnAdmissionIndicator": null,
+        "diagnosisType": {
+          "text": "Secondary",
+          "codings": [
+            {
+              "code": "secondary",
+              "display": "Secondary",
+              "system": "http://hl7.org/fhir/us/carin-bb/CodeSystem/C4BBClaimDiagnosisType"
+            }
+          ]
+        }
+      },
+      {
+        "diagnosisCode": {
+          "text": "Type 2 diabetes mellitus with moderate nonproliferative diabetic retinopathy without macular edema, bilateral",
+          "codings": [
+            {
+              "code": "E11.3393",
+              "display": "Type 2 diabetes mellitus with moderate nonproliferative diabetic retinopathy without macular edema, bilateral",
+              "system": "http://hl7.org/fhir/sid/icd-10-cm"
+            }
+          ]
+        },
+        "eCodeIndicator": "false",
+        "presentOnAdmissionIndicator": null,
+        "diagnosisType": {
+          "text": "Principal Diagnosis",
+          "codings": [
+            {
+              "code": "principal",
+              "display": "Principal Diagnosis",
+              "system": "http://terminology.hl7.org/CodeSystem/ex-diagnosistype"
+            }
+          ]
+        }
+      },
+      {
+        "diagnosisCode": {
+          "text": "Type 2 diabetes mellitus with hyperglycemia",
+          "codings": [
+            {
+              "code": "E11.65",
+              "display": "Type 2 diabetes mellitus with hyperglycemia",
+              "system": "http://hl7.org/fhir/sid/icd-10-cm"
+            }
+          ]
+        },
+        "eCodeIndicator": "false",
+        "presentOnAdmissionIndicator": null,
+        "diagnosisType": {
+          "text": "Principal Diagnosis",
+          "codings": [
+            {
+              "code": "principal",
+              "display": "Principal Diagnosis",
+              "system": "http://terminology.hl7.org/CodeSystem/ex-diagnosistype"
+            }
+          ]
+        }
+      },
+      {
+        "diagnosisCode": {
+          "text": "Type 2 diabetes mellitus with diabetic chronic kidney disease",
+          "codings": [
+            {
+              "code": "E11.22",
+              "display": "Type 2 diabetes mellitus with diabetic chronic kidney disease",
+              "system": "http://hl7.org/fhir/sid/icd-10-cm"
+            }
+          ]
+        },
+        "eCodeIndicator": "false",
+        "presentOnAdmissionIndicator": null,
+        "diagnosisType": {
+          "text": "Secondary",
+          "codings": [
+            {
+              "code": "secondary",
+              "display": "Secondary",
+              "system": "http://hl7.org/fhir/us/carin-bb/CodeSystem/C4BBClaimDiagnosisType"
+            }
+          ]
+        }
+      },
+      {
+        "diagnosisCode": {
+          "text": "Chronic kidney disease, stage 3a",
+          "codings": [
+            {
+              "code": "N18.31",
+              "display": "Chronic kidney disease, stage 3a",
+              "system": "http://hl7.org/fhir/sid/icd-10-cm"
+            }
+          ]
+        },
+        "eCodeIndicator": "false",
+        "presentOnAdmissionIndicator": null,
+        "diagnosisType": {
+          "text": "Secondary",
+          "codings": [
+            {
+              "code": "secondary",
+              "display": "Secondary",
+              "system": "http://hl7.org/fhir/us/carin-bb/CodeSystem/C4BBClaimDiagnosisType"
+            }
+          ]
+        }
+      }
+    ],
+    "claimServiceLine": [
+      {
+        "serviceDate": "2018-07-14",
+        "lineNumber": 1,
+        "serviceToDate": null,
+        "typeOfService": {
+          "text": null,
+          "codings": []
+        },
+        "placeOfServiceCode": {
+          "text": "Office",
+          "codings": [
+            {
+              "code": "11",
+              "display": "Office",
+              "system": "https://www.cms.gov/Medicare/Coding/place-of-service-codes/Place_of_Service_Code_Set"
+            }
+          ]
+        },
+        "revenueCenterCode": {
+          "text": null,
+          "codings": []
+        },
+        "allowedNumberOfUnits": 1,
+        "nationalDrugCode": {
+          "text": null,
+          "codings": []
+        },
+        "compoundCode": {
+          "text": null,
+          "codings": []
+        },
+        "quantityDispensed": null,
+        "quantityQualifierCode": {
+          "text": null,
+          "codings": []
+        },
+        "benefitPaymentStatus": {
+          "text": "In Network",
+          "codings": [
+            {
+              "code": "innetwork",
+              "display": "In Network",
+              "system": "http://hl7.org/fhir/us/carin-bb/CodeSystem/C4BBPayerAdjudicationStatus"
+            }
+          ]
+        },
+        "linePaymentDenialCode": {
+          "text": null,
+          "codings": []
+        },
+        "paymentMemberExplanation": null,
+        "lineNoncoveredAmount": null,
+        "lineMemberReimbursement": null,
+        "linePaymentAmount": null,
+        "lineDiscountAmount": null,
+        "lineAmountPaidByPatient": 21.87,
+        "drugCost": null,
+        "lineAllowedAmount": 109.33,
+        "lineAmountPaidToProvider": 87.46,
+        "linePatientDeductible": null,
+        "lineOtherPayerPaidAmount": null,
+        "lineCoinsuranceAmount": null,
+        "lineSubmittedAmount": 210,
+        "lineMemberLiabilityAmount": null,
+        "lineCopayAmount": null,
+        "lineProcedureCode": {
+          "text": "Office/outpatient visit, established patient, moderate",
+          "codings": [
+            {
+              "code": "99214",
+              "system": "http://www.ama-assn.org/go/cpt"
+            }
+          ]
+        },
+        "lineProcedureCodeModifier": {
+          "text": null,
+          "codings": []
+        }
+      },
+      {
+        "serviceDate": "2018-08-20",
+        "lineNumber": 1,
+        "serviceToDate": null,
+        "typeOfService": {
+          "text": null,
+          "codings": []
+        },
+        "placeOfServiceCode": {
+          "text": "Office",
+          "codings": [
+            {
+              "code": "11",
+              "display": "Office",
+              "system": "https://www.cms.gov/Medicare/Coding/place-of-service-codes/Place_of_Service_Code_Set"
+            }
+          ]
+        },
+        "revenueCenterCode": {
+          "text": null,
+          "codings": []
+        },
+        "allowedNumberOfUnits": 1,
+        "nationalDrugCode": {
+          "text": null,
+          "codings": []
+        },
+        "compoundCode": {
+          "text": null,
+          "codings": []
+        },
+        "quantityDispensed": null,
+        "quantityQualifierCode": {
+          "text": null,
+          "codings": []
+        },
+        "benefitPaymentStatus": {
+          "text": "In Network",
+          "codings": [
+            {
+              "code": "innetwork",
+              "display": "In Network",
+              "system": "http://hl7.org/fhir/us/carin-bb/CodeSystem/C4BBPayerAdjudicationStatus"
+            }
+          ]
+        },
+        "linePaymentDenialCode": {
+          "text": null,
+          "codings": []
+        },
+        "paymentMemberExplanation": null,
+        "lineNoncoveredAmount": null,
+        "lineMemberReimbursement": null,
+        "linePaymentAmount": null,
+        "lineDiscountAmount": null,
+        "lineAmountPaidByPatient": 33.42,
+        "drugCost": null,
+        "lineAllowedAmount": 167.09,
+        "lineAmountPaidToProvider": 133.67,
+        "linePatientDeductible": null,
+        "lineOtherPayerPaidAmount": null,
+        "lineCoinsuranceAmount": null,
+        "lineSubmittedAmount": 350,
+        "lineMemberLiabilityAmount": null,
+        "lineCopayAmount": null,
+        "lineProcedureCode": {
+          "text": "Office/outpatient visit, new patient, moderate",
+          "codings": [
+            {
+              "code": "99204",
+              "system": "http://www.ama-assn.org/go/cpt"
+            }
+          ]
+        },
+        "lineProcedureCodeModifier": {
+          "text": null,
+          "codings": []
+        }
+      },
+      {
+        "serviceDate": "2018-08-28",
+        "lineNumber": 1,
+        "serviceToDate": null,
+        "typeOfService": {
+          "text": null,
+          "codings": []
+        },
+        "placeOfServiceCode": {
+          "text": "Office",
+          "codings": [
+            {
+              "code": "11",
+              "display": "Office",
+              "system": "https://www.cms.gov/Medicare/Coding/place-of-service-codes/Place_of_Service_Code_Set"
+            }
+          ]
+        },
+        "revenueCenterCode": {
+          "text": null,
+          "codings": []
+        },
+        "allowedNumberOfUnits": 1,
+        "nationalDrugCode": {
+          "text": null,
+          "codings": []
+        },
+        "compoundCode": {
+          "text": null,
+          "codings": []
+        },
+        "quantityDispensed": null,
+        "quantityQualifierCode": {
+          "text": null,
+          "codings": []
+        },
+        "benefitPaymentStatus": {
+          "text": "In Network",
+          "codings": [
+            {
+              "code": "innetwork",
+              "display": "In Network",
+              "system": "http://hl7.org/fhir/us/carin-bb/CodeSystem/C4BBPayerAdjudicationStatus"
+            }
+          ]
+        },
+        "linePaymentDenialCode": {
+          "text": null,
+          "codings": []
+        },
+        "paymentMemberExplanation": null,
+        "lineNoncoveredAmount": null,
+        "lineMemberReimbursement": null,
+        "linePaymentAmount": null,
+        "lineDiscountAmount": null,
+        "lineAmountPaidByPatient": 23.9,
+        "drugCost": null,
+        "lineAllowedAmount": 119.52,
+        "lineAmountPaidToProvider": 95.62,
+        "linePatientDeductible": null,
+        "lineOtherPayerPaidAmount": null,
+        "lineCoinsuranceAmount": null,
+        "lineSubmittedAmount": 420,
+        "lineMemberLiabilityAmount": null,
+        "lineCopayAmount": null,
+        "lineProcedureCode": {
+          "text": "US retroperitoneal, complete",
+          "codings": [
+            {
+              "code": "76770",
+              "system": "http://www.ama-assn.org/go/cpt"
+            }
+          ]
+        },
+        "lineProcedureCodeModifier": {
+          "text": null,
+          "codings": []
+        }
+      },
+      {
+        "serviceDate": "2018-09-05",
+        "lineNumber": 1,
+        "serviceToDate": null,
+        "typeOfService": {
+          "text": null,
+          "codings": []
+        },
+        "placeOfServiceCode": {
+          "text": "Office",
+          "codings": [
+            {
+              "code": "11",
+              "display": "Office",
+              "system": "https://www.cms.gov/Medicare/Coding/place-of-service-codes/Place_of_Service_Code_Set"
+            }
+          ]
+        },
+        "revenueCenterCode": {
+          "text": null,
+          "codings": []
+        },
+        "allowedNumberOfUnits": 1,
+        "nationalDrugCode": {
+          "text": null,
+          "codings": []
+        },
+        "compoundCode": {
+          "text": null,
+          "codings": []
+        },
+        "quantityDispensed": null,
+        "quantityQualifierCode": {
+          "text": null,
+          "codings": []
+        },
+        "benefitPaymentStatus": {
+          "text": "In Network",
+          "codings": [
+            {
+              "code": "innetwork",
+              "display": "In Network",
+              "system": "http://hl7.org/fhir/us/carin-bb/CodeSystem/C4BBPayerAdjudicationStatus"
+            }
+          ]
+        },
+        "linePaymentDenialCode": {
+          "text": null,
+          "codings": []
+        },
+        "paymentMemberExplanation": null,
+        "lineNoncoveredAmount": null,
+        "lineMemberReimbursement": null,
+        "linePaymentAmount": null,
+        "lineDiscountAmount": null,
+        "lineAmountPaidByPatient": 28.3,
+        "drugCost": null,
+        "lineAllowedAmount": 141.5,
+        "lineAmountPaidToProvider": 113.2,
+        "linePatientDeductible": null,
+        "lineOtherPayerPaidAmount": null,
+        "lineCoinsuranceAmount": null,
+        "lineSubmittedAmount": 260,
+        "lineMemberLiabilityAmount": null,
+        "lineCopayAmount": null,
+        "lineProcedureCode": {
+          "text": "Ophthalmological services, comprehensive, new patient",
+          "codings": [
+            {
+              "code": "92004",
+              "system": "http://www.ama-assn.org/go/cpt"
+            }
+          ]
+        },
+        "lineProcedureCodeModifier": {
+          "text": null,
+          "codings": []
+        }
+      },
+      {
+        "serviceDate": "2018-09-05",
+        "lineNumber": 2,
+        "serviceToDate": null,
+        "typeOfService": {
+          "text": null,
+          "codings": []
+        },
+        "placeOfServiceCode": {
+          "text": "Office",
+          "codings": [
+            {
+              "code": "11",
+              "display": "Office",
+              "system": "https://www.cms.gov/Medicare/Coding/place-of-service-codes/Place_of_Service_Code_Set"
+            }
+          ]
+        },
+        "revenueCenterCode": {
+          "text": null,
+          "codings": []
+        },
+        "allowedNumberOfUnits": 1,
+        "nationalDrugCode": {
+          "text": null,
+          "codings": []
+        },
+        "compoundCode": {
+          "text": null,
+          "codings": []
+        },
+        "quantityDispensed": null,
+        "quantityQualifierCode": {
+          "text": null,
+          "codings": []
+        },
+        "benefitPaymentStatus": {
+          "text": "In Network",
+          "codings": [
+            {
+              "code": "innetwork",
+              "display": "In Network",
+              "system": "http://hl7.org/fhir/us/carin-bb/CodeSystem/C4BBPayerAdjudicationStatus"
+            }
+          ]
+        },
+        "linePaymentDenialCode": {
+          "text": null,
+          "codings": []
+        },
+        "paymentMemberExplanation": null,
+        "lineNoncoveredAmount": null,
+        "lineMemberReimbursement": null,
+        "linePaymentAmount": null,
+        "lineDiscountAmount": null,
+        "lineAmountPaidByPatient": 8.56,
+        "drugCost": null,
+        "lineAllowedAmount": 42.8,
+        "lineAmountPaidToProvider": 34.24,
+        "linePatientDeductible": null,
+        "lineOtherPayerPaidAmount": null,
+        "lineCoinsuranceAmount": null,
+        "lineSubmittedAmount": 95,
+        "lineMemberLiabilityAmount": null,
+        "lineCopayAmount": null,
+        "lineProcedureCode": {
+          "text": "Scanning computerized ophthalmic diagnostic imaging, retina",
+          "codings": [
+            {
+              "code": "92134",
+              "system": "http://www.ama-assn.org/go/cpt"
+            }
+          ]
+        },
+        "lineProcedureCodeModifier": {
+          "text": null,
+          "codings": []
+        }
+      },
+      {
+        "serviceDate": "2018-09-05",
+        "lineNumber": 3,
+        "serviceToDate": null,
+        "typeOfService": {
+          "text": null,
+          "codings": []
+        },
+        "placeOfServiceCode": {
+          "text": "Office",
+          "codings": [
+            {
+              "code": "11",
+              "display": "Office",
+              "system": "https://www.cms.gov/Medicare/Coding/place-of-service-codes/Place_of_Service_Code_Set"
+            }
+          ]
+        },
+        "revenueCenterCode": {
+          "text": null,
+          "codings": []
+        },
+        "allowedNumberOfUnits": 1,
+        "nationalDrugCode": {
+          "text": null,
+          "codings": []
+        },
+        "compoundCode": {
+          "text": null,
+          "codings": []
+        },
+        "quantityDispensed": null,
+        "quantityQualifierCode": {
+          "text": null,
+          "codings": []
+        },
+        "benefitPaymentStatus": {
+          "text": "In Network",
+          "codings": [
+            {
+              "code": "innetwork",
+              "display": "In Network",
+              "system": "http://hl7.org/fhir/us/carin-bb/CodeSystem/C4BBPayerAdjudicationStatus"
+            }
+          ]
+        },
+        "linePaymentDenialCode": {
+          "text": null,
+          "codings": []
+        },
+        "paymentMemberExplanation": null,
+        "lineNoncoveredAmount": null,
+        "lineMemberReimbursement": null,
+        "linePaymentAmount": null,
+        "lineDiscountAmount": null,
+        "lineAmountPaidByPatient": 9.62,
+        "drugCost": null,
+        "lineAllowedAmount": 48.11,
+        "lineAmountPaidToProvider": 38.49,
+        "linePatientDeductible": null,
+        "lineOtherPayerPaidAmount": null,
+        "lineCoinsuranceAmount": null,
+        "lineSubmittedAmount": 120,
+        "lineMemberLiabilityAmount": null,
+        "lineCopayAmount": null,
+        "lineProcedureCode": {
+          "text": "Fundus photography with interpretation and report",
+          "codings": [
+            {
+              "code": "92250",
+              "system": "http://www.ama-assn.org/go/cpt"
+            }
+          ]
+        },
+        "lineProcedureCodeModifier": {
+          "text": null,
+          "codings": []
+        }
+      },
+      {
+        "serviceDate": "2024-07-12",
+        "lineNumber": 1,
+        "serviceToDate": null,
+        "typeOfService": {
+          "text": null,
+          "codings": []
+        },
+        "placeOfServiceCode": {
+          "text": "Office",
+          "codings": [
+            {
+              "code": "11",
+              "display": "Office",
+              "system": "https://www.cms.gov/Medicare/Coding/place-of-service-codes/Place_of_Service_Code_Set"
+            }
+          ]
+        },
+        "revenueCenterCode": {
+          "text": null,
+          "codings": []
+        },
+        "allowedNumberOfUnits": 1,
+        "nationalDrugCode": {
+          "text": null,
+          "codings": []
+        },
+        "compoundCode": {
+          "text": null,
+          "codings": []
+        },
+        "quantityDispensed": null,
+        "quantityQualifierCode": {
+          "text": null,
+          "codings": []
+        },
+        "benefitPaymentStatus": {
+          "text": "In Network",
+          "codings": [
+            {
+              "code": "innetwork",
+              "display": "In Network",
+              "system": "http://hl7.org/fhir/us/carin-bb/CodeSystem/C4BBPayerAdjudicationStatus"
+            }
+          ]
+        },
+        "linePaymentDenialCode": {
+          "text": null,
+          "codings": []
+        },
+        "paymentMemberExplanation": null,
+        "lineNoncoveredAmount": null,
+        "lineMemberReimbursement": null,
+        "linePaymentAmount": null,
+        "lineDiscountAmount": null,
+        "lineAmountPaidByPatient": 0,
+        "drugCost": null,
+        "lineAllowedAmount": 134.17,
+        "lineAmountPaidToProvider": 134.17,
+        "linePatientDeductible": null,
+        "lineOtherPayerPaidAmount": null,
+        "lineCoinsuranceAmount": null,
+        "lineSubmittedAmount": 240,
+        "lineMemberLiabilityAmount": null,
+        "lineCopayAmount": null,
+        "lineProcedureCode": {
+          "text": "Annual wellness visit, subsequent",
+          "codings": [
+            {
+              "code": "G0439",
+              "display": "Annual wellness visit, subsequent",
+              "system": "https://www.cms.gov/Medicare/Coding/HCPCSReleaseCodeSets"
+            }
+          ]
+        },
+        "lineProcedureCodeModifier": {
+          "text": null,
+          "codings": []
+        }
+      },
+      {
+        "serviceDate": "2024-07-12",
+        "lineNumber": 2,
+        "serviceToDate": null,
+        "typeOfService": {
+          "text": null,
+          "codings": []
+        },
+        "placeOfServiceCode": {
+          "text": "Office",
+          "codings": [
+            {
+              "code": "11",
+              "display": "Office",
+              "system": "https://www.cms.gov/Medicare/Coding/place-of-service-codes/Place_of_Service_Code_Set"
+            }
+          ]
+        },
+        "revenueCenterCode": {
+          "text": null,
+          "codings": []
+        },
+        "allowedNumberOfUnits": 1,
+        "nationalDrugCode": {
+          "text": null,
+          "codings": []
+        },
+        "compoundCode": {
+          "text": null,
+          "codings": []
+        },
+        "quantityDispensed": null,
+        "quantityQualifierCode": {
+          "text": null,
+          "codings": []
+        },
+        "benefitPaymentStatus": {
+          "text": "In Network",
+          "codings": [
+            {
+              "code": "innetwork",
+              "display": "In Network",
+              "system": "http://hl7.org/fhir/us/carin-bb/CodeSystem/C4BBPayerAdjudicationStatus"
+            }
+          ]
+        },
+        "linePaymentDenialCode": {
+          "text": null,
+          "codings": []
+        },
+        "paymentMemberExplanation": null,
+        "lineNoncoveredAmount": null,
+        "lineMemberReimbursement": null,
+        "linePaymentAmount": null,
+        "lineDiscountAmount": null,
+        "lineAmountPaidByPatient": 25.59,
+        "drugCost": null,
+        "lineAllowedAmount": 127.97,
+        "lineAmountPaidToProvider": 102.38,
+        "linePatientDeductible": null,
+        "lineOtherPayerPaidAmount": null,
+        "lineCoinsuranceAmount": null,
+        "lineSubmittedAmount": 220,
+        "lineMemberLiabilityAmount": null,
+        "lineCopayAmount": null,
+        "lineProcedureCode": {
+          "text": "Office/outpatient visit, established patient, moderate",
+          "codings": [
+            {
+              "code": "99214",
+              "system": "http://www.ama-assn.org/go/cpt"
+            }
+          ]
+        },
+        "lineProcedureCodeModifier": {
+          "text": "Significant, separately identifiable E/M service",
+          "codings": [
+            {
+              "code": "25",
+              "system": "http://www.ama-assn.org/go/cpt"
+            }
+          ]
+        }
+      },
+      {
+        "serviceDate": "2024-08-05",
+        "lineNumber": 1,
+        "serviceToDate": null,
+        "typeOfService": {
+          "text": null,
+          "codings": []
+        },
+        "placeOfServiceCode": {
+          "text": "Office",
+          "codings": [
+            {
+              "code": "11",
+              "display": "Office",
+              "system": "https://www.cms.gov/Medicare/Coding/place-of-service-codes/Place_of_Service_Code_Set"
+            }
+          ]
+        },
+        "revenueCenterCode": {
+          "text": null,
+          "codings": []
+        },
+        "allowedNumberOfUnits": 1,
+        "nationalDrugCode": {
+          "text": null,
+          "codings": []
+        },
+        "compoundCode": {
+          "text": null,
+          "codings": []
+        },
+        "quantityDispensed": null,
+        "quantityQualifierCode": {
+          "text": null,
+          "codings": []
+        },
+        "benefitPaymentStatus": {
+          "text": "In Network",
+          "codings": [
+            {
+              "code": "innetwork",
+              "display": "In Network",
+              "system": "http://hl7.org/fhir/us/carin-bb/CodeSystem/C4BBPayerAdjudicationStatus"
+            }
+          ]
+        },
+        "linePaymentDenialCode": {
+          "text": null,
+          "codings": []
+        },
+        "paymentMemberExplanation": null,
+        "lineNoncoveredAmount": null,
+        "lineMemberReimbursement": null,
+        "linePaymentAmount": null,
+        "lineDiscountAmount": null,
+        "lineAmountPaidByPatient": 0,
+        "drugCost": null,
+        "lineAllowedAmount": 138.37,
+        "lineAmountPaidToProvider": 138.37,
+        "linePatientDeductible": null,
+        "lineOtherPayerPaidAmount": null,
+        "lineCoinsuranceAmount": null,
+        "lineSubmittedAmount": 285,
+        "lineMemberLiabilityAmount": null,
+        "lineCopayAmount": null,
+        "lineProcedureCode": {
+          "text": "Screening mammography, bilateral",
+          "codings": [
+            {
+              "code": "77067",
+              "system": "http://www.ama-assn.org/go/cpt"
+            }
+          ]
+        },
+        "lineProcedureCodeModifier": {
+          "text": null,
+          "codings": []
+        }
+      },
+      {
+        "serviceDate": "2024-08-05",
+        "lineNumber": 2,
+        "serviceToDate": null,
+        "typeOfService": {
+          "text": null,
+          "codings": []
+        },
+        "placeOfServiceCode": {
+          "text": "Office",
+          "codings": [
+            {
+              "code": "11",
+              "display": "Office",
+              "system": "https://www.cms.gov/Medicare/Coding/place-of-service-codes/Place_of_Service_Code_Set"
+            }
+          ]
+        },
+        "revenueCenterCode": {
+          "text": null,
+          "codings": []
+        },
+        "allowedNumberOfUnits": 1,
+        "nationalDrugCode": {
+          "text": null,
+          "codings": []
+        },
+        "compoundCode": {
+          "text": null,
+          "codings": []
+        },
+        "quantityDispensed": null,
+        "quantityQualifierCode": {
+          "text": null,
+          "codings": []
+        },
+        "benefitPaymentStatus": {
+          "text": "In Network",
+          "codings": [
+            {
+              "code": "innetwork",
+              "display": "In Network",
+              "system": "http://hl7.org/fhir/us/carin-bb/CodeSystem/C4BBPayerAdjudicationStatus"
+            }
+          ]
+        },
+        "linePaymentDenialCode": {
+          "text": null,
+          "codings": []
+        },
+        "paymentMemberExplanation": null,
+        "lineNoncoveredAmount": null,
+        "lineMemberReimbursement": null,
+        "linePaymentAmount": null,
+        "lineDiscountAmount": null,
+        "lineAmountPaidByPatient": 0,
+        "drugCost": null,
+        "lineAllowedAmount": 38.36,
+        "lineAmountPaidToProvider": 38.36,
+        "linePatientDeductible": null,
+        "lineOtherPayerPaidAmount": null,
+        "lineCoinsuranceAmount": null,
+        "lineSubmittedAmount": 180,
+        "lineMemberLiabilityAmount": null,
+        "lineCopayAmount": null,
+        "lineProcedureCode": {
+          "text": "DXA bone density, axial skeleton",
+          "codings": [
+            {
+              "code": "77080",
+              "system": "http://www.ama-assn.org/go/cpt"
+            }
+          ]
+        },
+        "lineProcedureCodeModifier": {
+          "text": null,
+          "codings": []
+        }
+      },
+      {
+        "serviceDate": "2026-07-12",
+        "lineNumber": 1,
+        "serviceToDate": null,
+        "typeOfService": {
+          "text": null,
+          "codings": []
+        },
+        "placeOfServiceCode": {
+          "text": "Office",
+          "codings": [
+            {
+              "code": "11",
+              "display": "Office",
+              "system": "https://www.cms.gov/Medicare/Coding/place-of-service-codes/Place_of_Service_Code_Set"
+            }
+          ]
+        },
+        "revenueCenterCode": {
+          "text": null,
+          "codings": []
+        },
+        "allowedNumberOfUnits": 1,
+        "nationalDrugCode": {
+          "text": null,
+          "codings": []
+        },
+        "compoundCode": {
+          "text": null,
+          "codings": []
+        },
+        "quantityDispensed": null,
+        "quantityQualifierCode": {
+          "text": null,
+          "codings": []
+        },
+        "benefitPaymentStatus": {
+          "text": "In Network",
+          "codings": [
+            {
+              "code": "innetwork",
+              "display": "In Network",
+              "system": "http://hl7.org/fhir/us/carin-bb/CodeSystem/C4BBPayerAdjudicationStatus"
+            }
+          ]
+        },
+        "linePaymentDenialCode": {
+          "text": null,
+          "codings": []
+        },
+        "paymentMemberExplanation": null,
+        "lineNoncoveredAmount": null,
+        "lineMemberReimbursement": null,
+        "linePaymentAmount": null,
+        "lineDiscountAmount": null,
+        "lineAmountPaidByPatient": 0,
+        "drugCost": null,
+        "lineAllowedAmount": 136.61,
+        "lineAmountPaidToProvider": 136.61,
+        "linePatientDeductible": null,
+        "lineOtherPayerPaidAmount": null,
+        "lineCoinsuranceAmount": null,
+        "lineSubmittedAmount": 245,
+        "lineMemberLiabilityAmount": null,
+        "lineCopayAmount": null,
+        "lineProcedureCode": {
+          "text": "Annual wellness visit, subsequent",
+          "codings": [
+            {
+              "code": "G0439",
+              "display": "Annual wellness visit, subsequent",
+              "system": "https://www.cms.gov/Medicare/Coding/HCPCSReleaseCodeSets"
+            }
+          ]
+        },
+        "lineProcedureCodeModifier": {
+          "text": null,
+          "codings": []
+        }
+      },
+      {
+        "serviceDate": "2026-07-12",
+        "lineNumber": 2,
+        "serviceToDate": null,
+        "typeOfService": {
+          "text": null,
+          "codings": []
+        },
+        "placeOfServiceCode": {
+          "text": "Office",
+          "codings": [
+            {
+              "code": "11",
+              "display": "Office",
+              "system": "https://www.cms.gov/Medicare/Coding/place-of-service-codes/Place_of_Service_Code_Set"
+            }
+          ]
+        },
+        "revenueCenterCode": {
+          "text": null,
+          "codings": []
+        },
+        "allowedNumberOfUnits": 1,
+        "nationalDrugCode": {
+          "text": null,
+          "codings": []
+        },
+        "compoundCode": {
+          "text": null,
+          "codings": []
+        },
+        "quantityDispensed": null,
+        "quantityQualifierCode": {
+          "text": null,
+          "codings": []
+        },
+        "benefitPaymentStatus": {
+          "text": "In Network",
+          "codings": [
+            {
+              "code": "innetwork",
+              "display": "In Network",
+              "system": "http://hl7.org/fhir/us/carin-bb/CodeSystem/C4BBPayerAdjudicationStatus"
+            }
+          ]
+        },
+        "linePaymentDenialCode": {
+          "text": null,
+          "codings": []
+        },
+        "paymentMemberExplanation": null,
+        "lineNoncoveredAmount": null,
+        "lineMemberReimbursement": null,
+        "linePaymentAmount": null,
+        "lineDiscountAmount": null,
+        "lineAmountPaidByPatient": 26.22,
+        "drugCost": null,
+        "lineAllowedAmount": 131.12,
+        "lineAmountPaidToProvider": 104.9,
+        "linePatientDeductible": null,
+        "lineOtherPayerPaidAmount": null,
+        "lineCoinsuranceAmount": null,
+        "lineSubmittedAmount": 225,
+        "lineMemberLiabilityAmount": null,
+        "lineCopayAmount": null,
+        "lineProcedureCode": {
+          "text": "Office/outpatient visit, established patient, moderate",
+          "codings": [
+            {
+              "code": "99214",
+              "system": "http://www.ama-assn.org/go/cpt"
+            }
+          ]
+        },
+        "lineProcedureCodeModifier": {
+          "text": "Significant, separately identifiable E/M service",
+          "codings": [
+            {
+              "code": "25",
+              "system": "http://www.ama-assn.org/go/cpt"
+            }
+          ]
+        }
+      },
+      {
+        "serviceDate": "2026-07-12",
+        "lineNumber": 1,
+        "serviceToDate": null,
+        "typeOfService": {
+          "text": null,
+          "codings": []
+        },
+        "placeOfServiceCode": {
+          "text": "Independent Laboratory",
+          "codings": [
+            {
+              "code": "81",
+              "display": "Independent Laboratory",
+              "system": "https://www.cms.gov/Medicare/Coding/place-of-service-codes/Place_of_Service_Code_Set"
+            }
+          ]
+        },
+        "revenueCenterCode": {
+          "text": null,
+          "codings": []
+        },
+        "allowedNumberOfUnits": 1,
+        "nationalDrugCode": {
+          "text": null,
+          "codings": []
+        },
+        "compoundCode": {
+          "text": null,
+          "codings": []
+        },
+        "quantityDispensed": null,
+        "quantityQualifierCode": {
+          "text": null,
+          "codings": []
+        },
+        "benefitPaymentStatus": {
+          "text": "In Network",
+          "codings": [
+            {
+              "code": "innetwork",
+              "display": "In Network",
+              "system": "http://hl7.org/fhir/us/carin-bb/CodeSystem/C4BBPayerAdjudicationStatus"
+            }
+          ]
+        },
+        "linePaymentDenialCode": {
+          "text": null,
+          "codings": []
+        },
+        "paymentMemberExplanation": null,
+        "lineNoncoveredAmount": null,
+        "lineMemberReimbursement": null,
+        "linePaymentAmount": null,
+        "lineDiscountAmount": null,
+        "lineAmountPaidByPatient": 0,
+        "drugCost": null,
+        "lineAllowedAmount": 10.56,
+        "lineAmountPaidToProvider": 10.56,
+        "linePatientDeductible": null,
+        "lineOtherPayerPaidAmount": null,
+        "lineCoinsuranceAmount": null,
+        "lineSubmittedAmount": 48,
+        "lineMemberLiabilityAmount": null,
+        "lineCopayAmount": null,
+        "lineProcedureCode": {
+          "text": "Comprehensive metabolic panel",
+          "codings": [
+            {
+              "code": "80053",
+              "system": "http://www.ama-assn.org/go/cpt"
+            }
+          ]
+        },
+        "lineProcedureCodeModifier": {
+          "text": null,
+          "codings": []
+        }
+      },
+      {
+        "serviceDate": "2026-07-12",
+        "lineNumber": 2,
+        "serviceToDate": null,
+        "typeOfService": {
+          "text": null,
+          "codings": []
+        },
+        "placeOfServiceCode": {
+          "text": "Independent Laboratory",
+          "codings": [
+            {
+              "code": "81",
+              "display": "Independent Laboratory",
+              "system": "https://www.cms.gov/Medicare/Coding/place-of-service-codes/Place_of_Service_Code_Set"
+            }
+          ]
+        },
+        "revenueCenterCode": {
+          "text": null,
+          "codings": []
+        },
+        "allowedNumberOfUnits": 1,
+        "nationalDrugCode": {
+          "text": null,
+          "codings": []
+        },
+        "compoundCode": {
+          "text": null,
+          "codings": []
+        },
+        "quantityDispensed": null,
+        "quantityQualifierCode": {
+          "text": null,
+          "codings": []
+        },
+        "benefitPaymentStatus": {
+          "text": "In Network",
+          "codings": [
+            {
+              "code": "innetwork",
+              "display": "In Network",
+              "system": "http://hl7.org/fhir/us/carin-bb/CodeSystem/C4BBPayerAdjudicationStatus"
+            }
+          ]
+        },
+        "linePaymentDenialCode": {
+          "text": null,
+          "codings": []
+        },
+        "paymentMemberExplanation": null,
+        "lineNoncoveredAmount": null,
+        "lineMemberReimbursement": null,
+        "linePaymentAmount": null,
+        "lineDiscountAmount": null,
+        "lineAmountPaidByPatient": 0,
+        "drugCost": null,
+        "lineAllowedAmount": 9.71,
+        "lineAmountPaidToProvider": 9.71,
+        "linePatientDeductible": null,
+        "lineOtherPayerPaidAmount": null,
+        "lineCoinsuranceAmount": null,
+        "lineSubmittedAmount": 40,
+        "lineMemberLiabilityAmount": null,
+        "lineCopayAmount": null,
+        "lineProcedureCode": {
+          "text": "Hemoglobin; glycosylated (A1C)",
+          "codings": [
+            {
+              "code": "83036",
+              "system": "http://www.ama-assn.org/go/cpt"
+            }
+          ]
+        },
+        "lineProcedureCodeModifier": {
+          "text": null,
+          "codings": []
+        }
+      },
+      {
+        "serviceDate": "2026-07-12",
+        "lineNumber": 3,
+        "serviceToDate": null,
+        "typeOfService": {
+          "text": null,
+          "codings": []
+        },
+        "placeOfServiceCode": {
+          "text": "Independent Laboratory",
+          "codings": [
+            {
+              "code": "81",
+              "display": "Independent Laboratory",
+              "system": "https://www.cms.gov/Medicare/Coding/place-of-service-codes/Place_of_Service_Code_Set"
+            }
+          ]
+        },
+        "revenueCenterCode": {
+          "text": null,
+          "codings": []
+        },
+        "allowedNumberOfUnits": 1,
+        "nationalDrugCode": {
+          "text": null,
+          "codings": []
+        },
+        "compoundCode": {
+          "text": null,
+          "codings": []
+        },
+        "quantityDispensed": null,
+        "quantityQualifierCode": {
+          "text": null,
+          "codings": []
+        },
+        "benefitPaymentStatus": {
+          "text": "In Network",
+          "codings": [
+            {
+              "code": "innetwork",
+              "display": "In Network",
+              "system": "http://hl7.org/fhir/us/carin-bb/CodeSystem/C4BBPayerAdjudicationStatus"
+            }
+          ]
+        },
+        "linePaymentDenialCode": {
+          "text": null,
+          "codings": []
+        },
+        "paymentMemberExplanation": null,
+        "lineNoncoveredAmount": null,
+        "lineMemberReimbursement": null,
+        "linePaymentAmount": null,
+        "lineDiscountAmount": null,
+        "lineAmountPaidByPatient": 0,
+        "drugCost": null,
+        "lineAllowedAmount": 13.39,
+        "lineAmountPaidToProvider": 13.39,
+        "linePatientDeductible": null,
+        "lineOtherPayerPaidAmount": null,
+        "lineCoinsuranceAmount": null,
+        "lineSubmittedAmount": 55,
+        "lineMemberLiabilityAmount": null,
+        "lineCopayAmount": null,
+        "lineProcedureCode": {
+          "text": "Lipid panel",
+          "codings": [
+            {
+              "code": "80061",
+              "system": "http://www.ama-assn.org/go/cpt"
+            }
+          ]
+        },
+        "lineProcedureCodeModifier": {
+          "text": null,
+          "codings": []
+        }
+      },
+      {
+        "serviceDate": "2026-07-12",
+        "lineNumber": 4,
+        "serviceToDate": null,
+        "typeOfService": {
+          "text": null,
+          "codings": []
+        },
+        "placeOfServiceCode": {
+          "text": "Independent Laboratory",
+          "codings": [
+            {
+              "code": "81",
+              "display": "Independent Laboratory",
+              "system": "https://www.cms.gov/Medicare/Coding/place-of-service-codes/Place_of_Service_Code_Set"
+            }
+          ]
+        },
+        "revenueCenterCode": {
+          "text": null,
+          "codings": []
+        },
+        "allowedNumberOfUnits": 1,
+        "nationalDrugCode": {
+          "text": null,
+          "codings": []
+        },
+        "compoundCode": {
+          "text": null,
+          "codings": []
+        },
+        "quantityDispensed": null,
+        "quantityQualifierCode": {
+          "text": null,
+          "codings": []
+        },
+        "benefitPaymentStatus": {
+          "text": "In Network",
+          "codings": [
+            {
+              "code": "innetwork",
+              "display": "In Network",
+              "system": "http://hl7.org/fhir/us/carin-bb/CodeSystem/C4BBPayerAdjudicationStatus"
+            }
+          ]
+        },
+        "linePaymentDenialCode": {
+          "text": null,
+          "codings": []
+        },
+        "paymentMemberExplanation": null,
+        "lineNoncoveredAmount": null,
+        "lineMemberReimbursement": null,
+        "linePaymentAmount": null,
+        "lineDiscountAmount": null,
+        "lineAmountPaidByPatient": 0,
+        "drugCost": null,
+        "lineAllowedAmount": 7.1,
+        "lineAmountPaidToProvider": 7.1,
+        "linePatientDeductible": null,
+        "lineOtherPayerPaidAmount": null,
+        "lineCoinsuranceAmount": null,
+        "lineSubmittedAmount": 30,
+        "lineMemberLiabilityAmount": null,
+        "lineCopayAmount": null,
+        "lineProcedureCode": {
+          "text": "Albumin; urine, microalbumin, quantitative",
+          "codings": [
+            {
+              "code": "82043",
+              "system": "http://www.ama-assn.org/go/cpt"
+            }
+          ]
+        },
+        "lineProcedureCodeModifier": {
+          "text": null,
+          "codings": []
+        }
+      },
+      {
+        "serviceDate": "2026-07-12",
+        "lineNumber": 5,
+        "serviceToDate": null,
+        "typeOfService": {
+          "text": null,
+          "codings": []
+        },
+        "placeOfServiceCode": {
+          "text": "Independent Laboratory",
+          "codings": [
+            {
+              "code": "81",
+              "display": "Independent Laboratory",
+              "system": "https://www.cms.gov/Medicare/Coding/place-of-service-codes/Place_of_Service_Code_Set"
+            }
+          ]
+        },
+        "revenueCenterCode": {
+          "text": null,
+          "codings": []
+        },
+        "allowedNumberOfUnits": 1,
+        "nationalDrugCode": {
+          "text": null,
+          "codings": []
+        },
+        "compoundCode": {
+          "text": null,
+          "codings": []
+        },
+        "quantityDispensed": null,
+        "quantityQualifierCode": {
+          "text": null,
+          "codings": []
+        },
+        "benefitPaymentStatus": {
+          "text": "In Network",
+          "codings": [
+            {
+              "code": "innetwork",
+              "display": "In Network",
+              "system": "http://hl7.org/fhir/us/carin-bb/CodeSystem/C4BBPayerAdjudicationStatus"
+            }
+          ]
+        },
+        "linePaymentDenialCode": {
+          "text": null,
+          "codings": []
+        },
+        "paymentMemberExplanation": null,
+        "lineNoncoveredAmount": null,
+        "lineMemberReimbursement": null,
+        "linePaymentAmount": null,
+        "lineDiscountAmount": null,
+        "lineAmountPaidByPatient": 0,
+        "drugCost": null,
+        "lineAllowedAmount": 5.24,
+        "lineAmountPaidToProvider": 5.24,
+        "linePatientDeductible": null,
+        "lineOtherPayerPaidAmount": null,
+        "lineCoinsuranceAmount": null,
+        "lineSubmittedAmount": 25,
+        "lineMemberLiabilityAmount": null,
+        "lineCopayAmount": null,
+        "lineProcedureCode": {
+          "text": "Creatinine; other source",
+          "codings": [
+            {
+              "code": "82570",
+              "system": "http://www.ama-assn.org/go/cpt"
+            }
+          ]
+        },
+        "lineProcedureCodeModifier": {
+          "text": null,
+          "codings": []
+        }
+      },
+      {
+        "serviceDate": "2026-08-03",
+        "lineNumber": 1,
+        "serviceToDate": null,
+        "typeOfService": {
+          "text": null,
+          "codings": []
+        },
+        "placeOfServiceCode": {
+          "text": "Office",
+          "codings": [
+            {
+              "code": "11",
+              "display": "Office",
+              "system": "https://www.cms.gov/Medicare/Coding/place-of-service-codes/Place_of_Service_Code_Set"
+            }
+          ]
+        },
+        "revenueCenterCode": {
+          "text": null,
+          "codings": []
+        },
+        "allowedNumberOfUnits": 1,
+        "nationalDrugCode": {
+          "text": null,
+          "codings": []
+        },
+        "compoundCode": {
+          "text": null,
+          "codings": []
+        },
+        "quantityDispensed": null,
+        "quantityQualifierCode": {
+          "text": null,
+          "codings": []
+        },
+        "benefitPaymentStatus": {
+          "text": "In Network",
+          "codings": [
+            {
+              "code": "innetwork",
+              "display": "In Network",
+              "system": "http://hl7.org/fhir/us/carin-bb/CodeSystem/C4BBPayerAdjudicationStatus"
+            }
+          ]
+        },
+        "linePaymentDenialCode": {
+          "text": null,
+          "codings": []
+        },
+        "paymentMemberExplanation": null,
+        "lineNoncoveredAmount": null,
+        "lineMemberReimbursement": null,
+        "linePaymentAmount": null,
+        "lineDiscountAmount": null,
+        "lineAmountPaidByPatient": 20.74,
+        "drugCost": null,
+        "lineAllowedAmount": 103.71,
+        "lineAmountPaidToProvider": 82.97,
+        "linePatientDeductible": null,
+        "lineOtherPayerPaidAmount": null,
+        "lineCoinsuranceAmount": null,
+        "lineSubmittedAmount": 180,
+        "lineMemberLiabilityAmount": null,
+        "lineCopayAmount": null,
+        "lineProcedureCode": {
+          "text": "Ophthalmological services, comprehensive, established patient",
+          "codings": [
+            {
+              "code": "92014",
+              "system": "http://www.ama-assn.org/go/cpt"
+            }
+          ]
+        },
+        "lineProcedureCodeModifier": {
+          "text": null,
+          "codings": []
+        }
+      },
+      {
+        "serviceDate": "2026-08-03",
+        "lineNumber": 2,
+        "serviceToDate": null,
+        "typeOfService": {
+          "text": null,
+          "codings": []
+        },
+        "placeOfServiceCode": {
+          "text": "Office",
+          "codings": [
+            {
+              "code": "11",
+              "display": "Office",
+              "system": "https://www.cms.gov/Medicare/Coding/place-of-service-codes/Place_of_Service_Code_Set"
+            }
+          ]
+        },
+        "revenueCenterCode": {
+          "text": null,
+          "codings": []
+        },
+        "allowedNumberOfUnits": 1,
+        "nationalDrugCode": {
+          "text": null,
+          "codings": []
+        },
+        "compoundCode": {
+          "text": null,
+          "codings": []
+        },
+        "quantityDispensed": null,
+        "quantityQualifierCode": {
+          "text": null,
+          "codings": []
+        },
+        "benefitPaymentStatus": {
+          "text": "In Network",
+          "codings": [
+            {
+              "code": "innetwork",
+              "display": "In Network",
+              "system": "http://hl7.org/fhir/us/carin-bb/CodeSystem/C4BBPayerAdjudicationStatus"
+            }
+          ]
+        },
+        "linePaymentDenialCode": {
+          "text": null,
+          "codings": []
+        },
+        "paymentMemberExplanation": null,
+        "lineNoncoveredAmount": null,
+        "lineMemberReimbursement": null,
+        "linePaymentAmount": null,
+        "lineDiscountAmount": null,
+        "lineAmountPaidByPatient": 7.79,
+        "drugCost": null,
+        "lineAllowedAmount": 38.94,
+        "lineAmountPaidToProvider": 31.15,
+        "linePatientDeductible": null,
+        "lineOtherPayerPaidAmount": null,
+        "lineCoinsuranceAmount": null,
+        "lineSubmittedAmount": 95,
+        "lineMemberLiabilityAmount": null,
+        "lineCopayAmount": null,
+        "lineProcedureCode": {
+          "text": "Scanning computerized ophthalmic diagnostic imaging, retina",
+          "codings": [
+            {
+              "code": "92134",
+              "system": "http://www.ama-assn.org/go/cpt"
+            }
+          ]
+        },
+        "lineProcedureCodeModifier": {
+          "text": null,
+          "codings": []
+        }
+      },
+      {
+        "serviceDate": "2026-08-18",
+        "lineNumber": 1,
+        "serviceToDate": null,
+        "typeOfService": {
+          "text": null,
+          "codings": []
+        },
+        "placeOfServiceCode": {
+          "text": "Office",
+          "codings": [
+            {
+              "code": "11",
+              "display": "Office",
+              "system": "https://www.cms.gov/Medicare/Coding/place-of-service-codes/Place_of_Service_Code_Set"
+            }
+          ]
+        },
+        "revenueCenterCode": {
+          "text": null,
+          "codings": []
+        },
+        "allowedNumberOfUnits": 1,
+        "nationalDrugCode": {
+          "text": null,
+          "codings": []
+        },
+        "compoundCode": {
+          "text": null,
+          "codings": []
+        },
+        "quantityDispensed": null,
+        "quantityQualifierCode": {
+          "text": null,
+          "codings": []
+        },
+        "benefitPaymentStatus": {
+          "text": "In Network",
+          "codings": [
+            {
+              "code": "innetwork",
+              "display": "In Network",
+              "system": "http://hl7.org/fhir/us/carin-bb/CodeSystem/C4BBPayerAdjudicationStatus"
+            }
+          ]
+        },
+        "linePaymentDenialCode": {
+          "text": null,
+          "codings": []
+        },
+        "paymentMemberExplanation": null,
+        "lineNoncoveredAmount": null,
+        "lineMemberReimbursement": null,
+        "linePaymentAmount": null,
+        "lineDiscountAmount": null,
+        "lineAmountPaidByPatient": 34.77,
+        "drugCost": null,
+        "lineAllowedAmount": 173.86,
+        "lineAmountPaidToProvider": 139.09,
+        "linePatientDeductible": null,
+        "lineOtherPayerPaidAmount": null,
+        "lineCoinsuranceAmount": null,
+        "lineSubmittedAmount": 360,
+        "lineMemberLiabilityAmount": null,
+        "lineCopayAmount": null,
+        "lineProcedureCode": {
+          "text": "Office/outpatient visit, new patient, moderate",
+          "codings": [
+            {
+              "code": "99204",
+              "system": "http://www.ama-assn.org/go/cpt"
+            }
+          ]
+        },
+        "lineProcedureCodeModifier": {
+          "text": null,
+          "codings": []
+        }
+      }
+    ]
+  }
+}

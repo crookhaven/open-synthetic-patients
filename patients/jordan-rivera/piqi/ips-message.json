@@ -1,0 +1,417 @@
+{
+  "FormatID": "M5 Whole Health JSON",
+  "MessageId": "460a4012-d935-4085-8afa-35d9014aada0",
+  "model": "PAT_CLINICAL_V1",
+  "patient": {
+    "demographics": {
+      "firstName": "Jordan",
+      "lastName": "Rivera",
+      "middleName": null,
+      "birthDate": "1985-04-12",
+      "birthSex": {
+        "text": "female",
+        "codings": [
+          {
+            "code": "female",
+            "system": "http://hl7.org/fhir/administrative-gender"
+          }
+        ]
+      },
+      "genderIdentity": {
+        "text": null,
+        "codings": []
+      },
+      "race": {
+        "text": null,
+        "codings": []
+      },
+      "ethnicity": {
+        "text": null,
+        "codings": []
+      },
+      "maritalStatus": {
+        "text": null,
+        "codings": []
+      },
+      "primaryLanguage": {
+        "text": null,
+        "codings": []
+      },
+      "deathDate": null,
+      "deceased": {
+        "text": null,
+        "codings": []
+      },
+      "patientIdentifier": null,
+      "currentAddress": null,
+      "emailAddress": null,
+      "telecom": null
+    },
+    "allergies": [
+      {
+        "substance": {
+          "text": "Penicillin",
+          "codings": [
+            {
+              "code": "764146007",
+              "display": "Penicillin (substance)",
+              "system": "http://snomed.info/sct"
+            }
+          ]
+        },
+        "category": {
+          "text": null,
+          "codings": []
+        },
+        "reaction": {
+          "text": "Rash",
+          "codings": [
+            {
+              "code": "271807003",
+              "display": "Rash",
+              "system": "http://snomed.info/sct"
+            }
+          ]
+        },
+        "severity": {
+          "text": null,
+          "codings": []
+        },
+        "effectiveDate": null,
+        "clinicalStatus": {
+          "text": null,
+          "codings": []
+        },
+        "verificationStatus": {
+          "text": null,
+          "codings": []
+        }
+      },
+      {
+        "substance": {
+          "text": "Penicillin",
+          "codings": [
+            {
+              "code": "764146007",
+              "display": "Penicillin (substance)",
+              "system": "http://snomed.info/sct"
+            }
+          ]
+        },
+        "category": {
+          "text": null,
+          "codings": []
+        },
+        "reaction": {
+          "text": "Hives",
+          "codings": [
+            {
+              "code": "126485001",
+              "display": "Urticaria (disorder)",
+              "system": "http://snomed.info/sct"
+            }
+          ]
+        },
+        "severity": {
+          "text": "moderate",
+          "codings": []
+        },
+        "effectiveDate": null,
+        "clinicalStatus": {
+          "text": null,
+          "codings": []
+        },
+        "verificationStatus": {
+          "text": null,
+          "codings": []
+        }
+      }
+    ],
+    "medications": [
+      {
+        "medication": {
+          "text": "Lisinopril",
+          "codings": [
+            {
+              "code": "29046",
+              "display": "lisinopril",
+              "system": "http://www.nlm.nih.gov/research/umls/rxnorm"
+            }
+          ]
+        },
+        "doseAmount": "20",
+        "doseAmountUnit": {
+          "text": "mg",
+          "codings": [
+            {
+              "code": "mg",
+              "display": "mg",
+              "system": "http://unitsofmeasure.org"
+            }
+          ]
+        },
+        "doseRoute": {
+          "text": "Oral",
+          "codings": [
+            {
+              "code": "26643006",
+              "display": "Oral route",
+              "system": "http://snomed.info/sct"
+            }
+          ]
+        },
+        "doseQuantity": null,
+        "doseQuantityUnit": {
+          "text": null,
+          "codings": []
+        },
+        "instructions": null,
+        "indication": {
+          "text": null,
+          "codings": []
+        },
+        "startDate": null,
+        "endDate": null,
+        "statementDate": null,
+        "adherence": {
+          "text": null,
+          "codings": []
+        },
+        "fillStatus": {
+          "text": null,
+          "codings": []
+        },
+        "requestStatus": {
+          "text": "active",
+          "codings": []
+        },
+        "medicationCategory": {
+          "text": null,
+          "codings": []
+        },
+        "medicationIntent": {
+          "text": null,
+          "codings": []
+        }
+      },
+      {
+        "medication": {
+          "text": "Lisinopril",
+          "codings": [
+            {
+              "code": "29046",
+              "display": "lisinopril",
+              "system": "http://www.nlm.nih.gov/research/umls/rxnorm"
+            }
+          ]
+        },
+        "doseAmount": "10",
+        "doseAmountUnit": {
+          "text": "mg",
+          "codings": [
+            {
+              "code": "mg",
+              "display": "mg",
+              "system": "http://unitsofmeasure.org"
+            }
+          ]
+        },
+        "doseRoute": {
+          "text": "Oral",
+          "codings": [
+            {
+              "code": "26643006",
+              "display": "Oral route",
+              "system": "http://snomed.info/sct"
+            }
+          ]
+        },
+        "doseQuantity": null,
+        "doseQuantityUnit": {
+          "text": null,
+          "codings": []
+        },
+        "instructions": null,
+        "indication": {
+          "text": null,
+          "codings": []
+        },
+        "startDate": null,
+        "endDate": null,
+        "statementDate": null,
+        "adherence": {
+          "text": null,
+          "codings": []
+        },
+        "fillStatus": {
+          "text": null,
+          "codings": []
+        },
+        "requestStatus": {
+          "text": "active",
+          "codings": []
+        },
+        "medicationCategory": {
+          "text": null,
+          "codings": []
+        },
+        "medicationIntent": {
+          "text": null,
+          "codings": []
+        }
+      },
+      {
+        "medication": {
+          "text": "Atorvastatin",
+          "codings": [
+            {
+              "code": "83367",
+              "display": "atorvastatin",
+              "system": "http://www.nlm.nih.gov/research/umls/rxnorm"
+            }
+          ]
+        },
+        "doseAmount": "40",
+        "doseAmountUnit": {
+          "text": "mg",
+          "codings": [
+            {
+              "code": "mg",
+              "display": "mg",
+              "system": "http://unitsofmeasure.org"
+            }
+          ]
+        },
+        "doseRoute": {
+          "text": "Oral",
+          "codings": [
+            {
+              "code": "26643006",
+              "display": "Oral route",
+              "system": "http://snomed.info/sct"
+            }
+          ]
+        },
+        "doseQuantity": null,
+        "doseQuantityUnit": {
+          "text": null,
+          "codings": []
+        },
+        "instructions": null,
+        "indication": {
+          "text": null,
+          "codings": []
+        },
+        "startDate": null,
+        "endDate": null,
+        "statementDate": null,
+        "adherence": {
+          "text": null,
+          "codings": []
+        },
+        "fillStatus": {
+          "text": null,
+          "codings": []
+        },
+        "requestStatus": {
+          "text": "active",
+          "codings": []
+        },
+        "medicationCategory": {
+          "text": null,
+          "codings": []
+        },
+        "medicationIntent": {
+          "text": null,
+          "codings": []
+        }
+      }
+    ],
+    "conditions": [
+      {
+        "condition": {
+          "text": "Essential hypertension",
+          "codings": [
+            {
+              "code": "59621000",
+              "display": "Essential hypertension (disorder)",
+              "system": "http://snomed.info/sct"
+            }
+          ]
+        },
+        "onsetDate": null,
+        "conditionStatus": {
+          "text": null,
+          "codings": [
+            {
+              "code": "active",
+              "system": "http://terminology.hl7.org/CodeSystem/condition-clinical"
+            }
+          ]
+        },
+        "resolutionDate": null,
+        "clinicalStatus": {
+          "text": null,
+          "codings": [
+            {
+              "code": "active",
+              "system": "http://terminology.hl7.org/CodeSystem/condition-clinical"
+            }
+          ]
+        },
+        "verificationStatus": {
+          "text": null,
+          "codings": []
+        },
+        "conditionCategory": {
+          "text": null,
+          "codings": []
+        },
+        "assertedDate": null,
+        "recordedDate": null
+      },
+      {
+        "condition": {
+          "text": "Type 2 diabetes mellitus",
+          "codings": [
+            {
+              "code": "44054006",
+              "display": "Diabetes mellitus type 2 (disorder)",
+              "system": "http://snomed.info/sct"
+            }
+          ]
+        },
+        "onsetDate": null,
+        "conditionStatus": {
+          "text": null,
+          "codings": [
+            {
+              "code": "active",
+              "system": "http://terminology.hl7.org/CodeSystem/condition-clinical"
+            }
+          ]
+        },
+        "resolutionDate": null,
+        "clinicalStatus": {
+          "text": null,
+          "codings": [
+            {
+              "code": "active",
+              "system": "http://terminology.hl7.org/CodeSystem/condition-clinical"
+            }
+          ]
+        },
+        "verificationStatus": {
+          "text": null,
+          "codings": []
+        },
+        "conditionCategory": {
+          "text": null,
+          "codings": []
+        },
+        "assertedDate": null,
+        "recordedDate": null
+      }
+    ]
+  }
+}
