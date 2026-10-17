@@ -6,7 +6,8 @@ Usage:
   python tools/build_sources.py --check   # fail if SOURCES.md is out of date
 
 Sources are grouped by region (United States first, then International) and by
-section, and sorted within each section by level (1 = Start here) and then name.
+section. United States sections are sorted by type (how you get the data) and then name;
+International regions and their sources are alphabetical.
 """
 import json
 import sys
@@ -15,7 +16,7 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parent.parent
 SOURCES_JSON = ROOT / "sources.json"
 SOURCES_MD = ROOT / "SOURCES.md"
-REQUIRED = ["name", "url", "section", "level", "what", "best_for", "format", "license"]
+REQUIRED = ["name", "url", "section", "type", "what", "best_for", "format", "license"]
 
 
 def cell(text):
@@ -23,18 +24,19 @@ def cell(text):
 
 
 def render(data):
-    levels = data["levels"]
+    types = {t["id"]: t for t in data["types"]}
+    type_order = {t["id"]: i for i, t in enumerate(data["types"])}
     sections = data["sections"]
     section_ids = {s["id"] for s in sections}
     errors = []
     for src in data["sources"]:
-        missing = [f for f in REQUIRED if not src.get(f) and src.get(f) != 0]
+        missing = [f for f in REQUIRED if not src.get(f)]
         if missing:
             errors.append(f"{src.get('name', '?')}: missing {', '.join(missing)}")
         if src.get("section") not in section_ids:
             errors.append(f"{src.get('name', '?')}: unknown section {src.get('section')}")
-        if str(src.get("level")) not in levels:
-            errors.append(f"{src.get('name', '?')}: level must be one of {', '.join(levels)}")
+        if src.get("type") not in types:
+            errors.append(f"{src.get('name', '?')}: type must be one of {', '.join(types)}")
     if errors:
         raise SystemExit("sources.json problems:\n  " + "\n  ".join(errors))
 
@@ -49,16 +51,12 @@ def render(data):
         "updates. A patient from one of these is only copied here when it has been reworked (like",
         "Kimberly Gonzalez, built on APEX Atlas) and its license allows it.",
         "",
-        "Within each section, sources are sorted by how broadly useful they are:",
+        "Each source has a **type** that says how you get the data. United States sections list",
+        "sources in this order; International regions and their sources are alphabetical.",
         "",
     ]
-    for key in sorted(levels):
-        meaning = {
-            "1": "broadly useful, ready-to-use data",
-            "2": "excellent for a particular purpose",
-            "3": "examples, non-FHIR formats, or limited access",
-        }.get(key, "")
-        lines.append(f"- **{levels[key]}**: {meaning}")
+    for t in data["types"]:
+        lines.append(f"- **{t['label']}**: {t['meaning']}")
     lines.append("")
 
     current_region = None
@@ -73,12 +71,17 @@ def render(data):
         if section.get("intro"):
             lines += [section["intro"], ""]
         lines += [
-            "| Source | Level | What it is | Best for | Format and coding | License |",
+            "| Source | Type | What it is | Best for | Format and coding | License |",
             "|---|---|---|---|---|---|",
         ]
-        for s in sorted(items, key=lambda s: (int(s["level"]), s["name"].lower())):
+        # United States: by type, then name. International: alphabetical by name.
+        if section["region"] == "International":
+            ordered = sorted(items, key=lambda s: s["name"].lower())
+        else:
+            ordered = sorted(items, key=lambda s: (type_order[s["type"]], s["name"].lower()))
+        for s in ordered:
             lines.append(
-                f"| [{cell(s['name'])}]({s['url']}) | {levels[str(s['level'])]} | {cell(s['what'])} "
+                f"| [{cell(s['name'])}]({s['url']}) | {types[s['type']]['label']} | {cell(s['what'])} "
                 f"| {cell(s['best_for'])} | {cell(s['format'])} | {cell(s['license'])} |"
             )
         lines.append("")
@@ -87,7 +90,7 @@ def render(data):
     lines += [
         "## Adding a source",
         "",
-        "Add an entry to `sources.json` with a section, a level and its license, then run",
+        "Add an entry to `sources.json` with a section, a type and its license, then run",
         "`python tools/build_sources.py`. Prefer sources with a clear license, and say what the",
         "source is best for rather than grading it.",
         "",

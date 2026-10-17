@@ -8,11 +8,14 @@ repository links to them rather than copying them, so each keeps its own license
 updates. A patient from one of these is only copied here when it has been reworked (like
 Kimberly Gonzalez, built on APEX Atlas) and its license allows it.
 
-Within each section, sources are sorted by how broadly useful they are:
+Each source has a **type** that says how you get the data. United States sections list
+sources in this order; International regions and their sources are alphabetical.
 
-- **Start here**: broadly useful, ready-to-use data
-- **Specific needs**: excellent for a particular purpose
-- **Reference**: examples, non-FHIR formats, or limited access
+- **FHIR download**: ready-made FHIR files you can load right away
+- **Generator**: a tool you run to make your own patients
+- **API sandbox**: test data behind a live API, usually with sign-up
+- **Guide examples**: sample instances published inside an implementation guide
+- **Other format**: data sets that aren't FHIR, such as claims files, registry tables or databases
 
 ## United States
 
@@ -20,86 +23,86 @@ Within each section, sources are sorted by how broadly useful they are:
 
 Full or partial clinical records for testing apps, servers and data quality.
 
-| Source | Level | What it is | Best for | Format and coding | License |
+| Source | Type | What it is | Best for | Format and coding | License |
 |---|---|---|---|---|---|
-| [Inferno reference server data (ONC)](https://github.com/inferno-framework/inferno-reference-server-data) | Start here | The test patients behind ONC's Inferno certification tests: patients 85 and 355 (long US Core histories), a compact patient touching about 53 US Core profiles, a US Quality Core patient, a CARIN Blue Button 2.1 patient (888), a Da Vinci PDex patient (999) and a Da Vinci DTR prior-auth patient (pat015). Updated September 2026 | Conformance testing: data built to pass US Core, CARIN Blue Button and Da Vinci validation, so it doubles as a reference for what correct looks like | FHIR R4 bundles (US Core 3.1.1 to 6.1.0, US Quality Core, CARIN BB 2.1, Da Vinci PDex and DTR) | Apache 2.0 (MITRE notice) |
-| [MIMIC-IV Clinical Database Demo on FHIR](https://www.physionet.org/content/mimic-iv-fhir-demo/) | Start here | 100 real, de-identified hospital patients (Beth Israel Deaconess Medical Center ICU and emergency department) converted to FHIR R4 (v2.1.0, August 2025) | The closest open option to real-world data: actual labs, medication administrations, microbiology and charted observations, with the gaps and variation of real hospital records. Open access, no credentialing | FHIR R4 bulk NDJSON, profiles based on US Core, MIMIC-specific terminology. Mostly inpatient and emergency care | ODbL 1.0 (share-alike for databases); citation required. Link to it rather than copying patients into this repository |
-| [Synthea](https://github.com/synthetichealth/synthea) | Start here | Simulator that generates lifetime US patient histories on demand, for any state, city or age range | Many patients with varied demographics and long histories: decades of encounters, conditions, medications, labs, notes and claims | FHIR R4 (US Core 6.1), also C-CDA and CSV; LOINC, RxNorm, CVX, SNOMED CT. Claims and EOBs are not CARIN-profiled by default. Some simulated care follows older guidance, so check vaccines and medicines for recent scenarios | Apache 2.0 (generated data: public domain) |
-| [APEX Atlas](https://github.com/ParkerApex/apex-atlas) | Specific needs | Generated US population: 20,000 patients as bulk files and 25 readable bundles, plus a provider directory and scheduling data | Bulk data and performance testing at scale, US Core conformance, provider directory (Plan-Net) and scheduling scenarios, and a starting point for enriched patients | FHIR R4 (US Core 6.1), NDJSON and bundles; RxNorm, LOINC, SNOMED CT, Coverage, InsurancePlan. A few conditions, observations and medications per patient | Apache 2.0 |
-| [Synthea prebuilt data sets](https://synthetichealth.github.io/downloads.html) | Specific needs | Ready-made Synthea downloads: Synthetic Denver (6,357 children), breast cancer (mCODE), COVID-19 sets, 100-record samples, and the Coherent Data Set (FHIR plus DICOM imaging, genomics, ECGs and notes, 9 GB) | Pediatric patients, imaging and genomics linked to the same patient, and Synthea data without running the simulator | FHIR (R4 for recent sets), CSV, C-CDA; same coding as Synthea | Free to use; citation requested |
+| [APEX Atlas](https://github.com/ParkerApex/apex-atlas) | FHIR download | Generated US population: 20,000 patients as bulk files and 25 readable bundles, plus a provider directory and scheduling data | Bulk data and performance testing at scale, US Core conformance, provider directory (Plan-Net) and scheduling scenarios, and a starting point for enriched patients | FHIR R4 (US Core 6.1), NDJSON and bundles; RxNorm, LOINC, SNOMED CT, Coverage, InsurancePlan. A few conditions, observations and medications per patient | Apache 2.0 |
+| [Inferno reference server data (ONC)](https://github.com/inferno-framework/inferno-reference-server-data) | FHIR download | The test patients behind ONC's Inferno certification tests: patients 85 and 355 (long US Core histories), a compact patient touching about 53 US Core profiles, a US Quality Core patient, a CARIN Blue Button 2.1 patient (888), a Da Vinci PDex patient (999) and a Da Vinci DTR prior-auth patient (pat015). Updated September 2026 | Conformance testing: data built to pass US Core, CARIN Blue Button and Da Vinci validation, so it doubles as a reference for what correct looks like | FHIR R4 bundles (US Core 3.1.1 to 6.1.0, US Quality Core, CARIN BB 2.1, Da Vinci PDex and DTR) | Apache 2.0 (MITRE notice) |
+| [MIMIC-IV Clinical Database Demo on FHIR](https://www.physionet.org/content/mimic-iv-fhir-demo/) | FHIR download | 100 real, de-identified hospital patients (Beth Israel Deaconess Medical Center ICU and emergency department) converted to FHIR R4 (v2.1.0, August 2025) | The closest open option to real-world data: actual labs, medication administrations, microbiology and charted observations, with the gaps and variation of real hospital records. Open access, no credentialing | FHIR R4 bulk NDJSON, profiles based on US Core, MIMIC-specific terminology. Mostly inpatient and emergency care | ODbL 1.0 (share-alike for databases); citation required. Link to it rather than copying patients into this repository |
+| [Synthea prebuilt data sets](https://synthetichealth.github.io/downloads.html) | FHIR download | Ready-made Synthea downloads: Synthetic Denver (6,357 children), breast cancer (mCODE), COVID-19 sets, 100-record samples, and the Coherent Data Set (FHIR plus DICOM imaging, genomics, ECGs and notes, 9 GB) | Pediatric patients, imaging and genomics linked to the same patient, and Synthea data without running the simulator | FHIR (R4 for recent sets), CSV, C-CDA; same coding as Synthea | Free to use; citation requested |
+| [Synthea](https://github.com/synthetichealth/synthea) | Generator | Simulator that generates lifetime US patient histories on demand, for any state, city or age range | Many patients with varied demographics and long histories: decades of encounters, conditions, medications, labs, notes and claims | FHIR R4 (US Core 6.1), also C-CDA and CSV; LOINC, RxNorm, CVX, SNOMED CT. Claims and EOBs are not CARIN-profiled by default. Some simulated care follows older guidance, so check vaccines and medicines for recent scenarios | Apache 2.0 (generated data: public domain) |
 
 ### Claims and coverage
 
 Medicare and payer data: explanations of benefit, coverage and payer APIs.
 
-| Source | Level | What it is | Best for | Format and coding | License |
+| Source | Type | What it is | Best for | Format and coding | License |
 |---|---|---|---|---|---|
-| [CMS Blue Button 2.0 sandbox](https://bluebutton.cms.gov/api-documentation/explore-the-api/) | Start here | Synthetic Medicare beneficiaries behind the live Blue Button API (Patient, Coverage, ExplanationOfBenefit), plus a downloadable single-beneficiary sample | Testing an app end to end against a real payer API, including OAuth sign-in, with synthetic members | FHIR R4 Medicare claims and coverage | Free developer sandbox; register an app to get credentials |
-| [CMS Beneficiary Claims Data API (BCDA) sandbox](https://bcda.cms.gov/guide.html) | Specific needs | Sandbox for CMS's bulk claims API for accountable care organizations. Anyone can try the API and download test claims data | Bulk FHIR export ($export) workflows with Medicare claims | FHIR R4 bulk NDJSON: ExplanationOfBenefit, Patient, Coverage | Free sandbox |
-| [CMS Synthetic Medicare Claims (Synthetic RIF files, 2023)](https://www.cms.gov/data-research/statistics-trends-and-reports/medicare-claims-synthetic-public-use-files) | Specific needs | 8,671 synthetic Medicare beneficiaries with about 1.9 million fee-for-service claims (carrier, outpatient, inpatient, skilled nursing, hospice, home health, DME) and 515,000 Part D events, 2015 to 2023. Generated with Synthea | Claims at volume in Medicare's research file format: claims-to-FHIR and CARIN Blue Button mapping, and payer analytics | Pipe-delimited RIF files, not FHIR | US government public data, no use restrictions |
-| [CMS Data at the Point of Care (DPC) sandbox](https://dpc.cms.gov/data) | Reference | Sandbox for CMS's provider-facing claims API, with downloadable sample files described as similar in content and structure to production data | Seeing Medicare claims as a provider receives them | FHIR R4 NDJSON samples: ExplanationOfBenefit, Patient, Coverage | Free sandbox; sample files downloadable |
+| [CMS Beneficiary Claims Data API (BCDA) sandbox](https://bcda.cms.gov/guide.html) | API sandbox | Sandbox for CMS's bulk claims API for accountable care organizations. Anyone can try the API and download test claims data | Bulk FHIR export ($export) workflows with Medicare claims | FHIR R4 bulk NDJSON: ExplanationOfBenefit, Patient, Coverage | Free sandbox |
+| [CMS Blue Button 2.0 sandbox](https://bluebutton.cms.gov/api-documentation/explore-the-api/) | API sandbox | Synthetic Medicare beneficiaries behind the live Blue Button API (Patient, Coverage, ExplanationOfBenefit), plus a downloadable single-beneficiary sample | Testing an app end to end against a real payer API, including OAuth sign-in, with synthetic members | FHIR R4 Medicare claims and coverage | Free developer sandbox; register an app to get credentials |
+| [CMS Data at the Point of Care (DPC) sandbox](https://dpc.cms.gov/data) | API sandbox | Sandbox for CMS's provider-facing claims API, with downloadable sample files described as similar in content and structure to production data | Seeing Medicare claims as a provider receives them | FHIR R4 NDJSON samples: ExplanationOfBenefit, Patient, Coverage | Free sandbox; sample files downloadable |
+| [CMS Synthetic Medicare Claims (Synthetic RIF files, 2023)](https://www.cms.gov/data-research/statistics-trends-and-reports/medicare-claims-synthetic-public-use-files) | Other format | 8,671 synthetic Medicare beneficiaries with about 1.9 million fee-for-service claims (carrier, outpatient, inpatient, skilled nursing, hospice, home health, DME) and 515,000 Part D events, 2015 to 2023. Generated with Synthea | Claims at volume in Medicare's research file format: claims-to-FHIR and CARIN Blue Button mapping, and payer analytics | Pipe-delimited RIF files, not FHIR | US government public data, no use restrictions |
 
 ### Public health and government programs
 
 Examples for reporting to public health agencies and federal programs.
 
-| Source | Level | What it is | Best for | Format and coding | License |
+| Source | Type | What it is | Best for | Format and coding | License |
 |---|---|---|---|---|---|
-| [CDC electronic case reporting guides (eCR and anonymized eICR)](https://build.fhir.org/ig/HL7/case-reporting/) | Reference | HL7 eCR guide for reportable condition reports from EHRs to public health, and CDC's companion guide for anonymized case reports | Public health case reporting workflows, using the guides' published examples | FHIR R4 (eCR US Realm; anonymized eICR builds on eCR 2.1.1) | HL7 implementation guide terms |
-| [HRSA UDS+ implementation guide examples](https://build.fhir.org/ig/drajer-health/uds-plus/artifacts.html) | Reference | Example de-identified patient-level data from HRSA's Uniform Data System reporting guide for health centers, including a small-population patient | Health center (FQHC) reporting to HRSA, and de-identified patient-level submissions | FHIR R4 examples (UDS+ profiles) | See the implementation guide |
+| [CDC electronic case reporting guides (eCR and anonymized eICR)](https://build.fhir.org/ig/HL7/case-reporting/) | Guide examples | HL7 eCR guide for reportable condition reports from EHRs to public health, and CDC's companion guide for anonymized case reports | Public health case reporting workflows, using the guides' published examples | FHIR R4 (eCR US Realm; anonymized eICR builds on eCR 2.1.1) | HL7 implementation guide terms |
+| [HRSA UDS+ implementation guide examples](https://build.fhir.org/ig/drajer-health/uds-plus/artifacts.html) | Guide examples | Example de-identified patient-level data from HRSA's Uniform Data System reporting guide for health centers, including a small-population patient | Health center (FQHC) reporting to HRSA, and de-identified patient-level submissions | FHIR R4 examples (UDS+ profiles) | See the implementation guide |
 
 ### Privacy and de-identification
 
 Before-and-after examples for de-identification and anonymization.
 
-| Source | Level | What it is | Best for | Format and coding | License |
+| Source | Type | What it is | Best for | Format and coding | License |
 |---|---|---|---|---|---|
-| [HL7 DARTS and DAPL examples](https://github.com/HL7/fhir-darts) | Specific needs | The same 10 patients as original US Core, pseudonymized and de-identified (HHS Safe Harbor), plus DAPL examples of most resource types (https://github.com/HL7/fhir-dapl) | De-identification testing: a before-and-after answer key, and importing data in DAPL profiles | FHIR R4: US Core in, DAPL profiles out. One condition per patient | CC0 |
+| [HL7 DARTS and DAPL examples](https://github.com/HL7/fhir-darts) | FHIR download | The same 10 patients as original US Core, pseudonymized and de-identified (HHS Safe Harbor), plus DAPL examples of most resource types (https://github.com/HL7/fhir-dapl) | De-identification testing: a before-and-after answer key, and importing data in DAPL profiles | FHIR R4: US Core in, DAPL profiles out. One condition per patient | CC0 |
 
 ## International
+
+### Africa
+
+| Source | Type | What it is | Best for | Format and coding | License |
+|---|---|---|---|---|---|
+| [OpenMRS demo data](https://openmrs.atlassian.net/wiki/spaces/docs/pages/26273323/Demo+Data) | Other format | Anonymized sample databases for OpenMRS, the open-source medical record system widely used in Africa: about 5,000 patients and 500,000 observations | Testing OpenMRS-based systems and performance, often in African deployments | MySQL database import, not FHIR (OpenMRS can expose data through its FHIR module) | See OpenMRS terms |
+
+### Asia
+
+| Source | Type | What it is | Best for | Format and coding | License |
+|---|---|---|---|---|---|
+| [India ABDM implementation guide examples (NRCES)](https://nrces.in/ndhm/fhir/r4/5.0.0/all-examples.html) | Guide examples | 140 official examples (33 bundles): outpatient consults, prescriptions, discharge summaries, lab and imaging reports, immunizations, wellness records, and NHCX insurance claims and eligibility | India's ABDM health records and NHCX claims exchange | FHIR R4 (ABDM profiles) | No license stated (© NRCES); link only |
+
+### Australia
+
+| Source | Type | What it is | Best for | Format and coding | License |
+|---|---|---|---|---|---|
+| [HL7 AU FHIR Test Data](https://github.com/hl7au/au-fhir-test-data) | FHIR download | About 1,500 hand-written files: 89 patients plus practitioners, organizations and locations, including AU Patient Summary bundles | Testing against the Australian guides (AU Base, AU Core, AU eRequesting, AU Patient Summary), and missing or suppressed data handling: 53 cases built for exactly that | FHIR R4; IHI and Medicare identifiers reserved for testing, SNOMED CT-AU and Australian medicine and vaccine codes | CC0 |
+
+### Canada
+
+| Source | Type | What it is | Best for | Format and coding | License |
+|---|---|---|---|---|---|
+| [Canada Health Infoway PS-CA testing](https://infoscribe.infoway-inforoute.ca/x/zoglE) | Guide examples | Testing approach and materials for the Pan-Canadian Patient Summary (PS-CA) projectathons | Canadian patient summary testing | FHIR R4 (PS-CA) | See Infoway's terms |
+| [Synthea Canadian sample](https://synthetichealth.github.io/downloads.html) | FHIR download | A Synthea data set generated with Canadian settings | Canadian demographics and addresses with Synthea's clinical depth | FHIR (124 MB download) | Free to use; citation requested |
+
+### Europe
+
+| Source | Type | What it is | Best for | Format and coding | License |
+|---|---|---|---|---|---|
+| [HiGHmed synthetic data generator (Germany)](https://github.com/medblocks/synthea_highmed) | Generator | Synthea adapted to Germany's Medical Informatics Initiative (MII) core data set profiles, with a web front end, reproducible seeds and an option to generate deliberately invalid FHIR | German MII profiles, and testing validators with intentionally malformed data | FHIR R4 (MII core data set). Disease statistics still follow Synthea's US modules | Apache 2.0 |
+| [HL7 Europe Patient Summary (EPS)](https://build.fhir.org/ig/hl7-eu/eps/) | Guide examples | The European patient summary guide and its published examples | EU patient summary testing and cross-border exchange | FHIR R4 (EPS) | HL7 Europe implementation guide terms |
+| [Nictiz test scripts and fixtures (Netherlands)](https://github.com/Nictiz/Nictiz-testscripts) | FHIR download | Nictiz's qualification test scripts, with thousands of fixture files of Dutch test data. Actively maintained | Testing against Dutch national specifications (zibs) | FHIR (STU3 and R4), Dutch profiles and terminology | No license file in the repository; link only |
+| [The Simulacrum (England)](https://simulacrum.healthdatainsight.org.uk/) | Other format | Artificial cancer registry data modeled on England's National Disease Registration Service, with no real patient information | Cancer registry and oncology analytics | Registry data tables, not FHIR | Free to download and use; see the site's terms |
 
 ### Multi-country
 
 Sources that cover several countries or the international standards.
 
-| Source | Level | What it is | Best for | Format and coding | License |
+| Source | Type | What it is | Best for | Format and coding | License |
 |---|---|---|---|---|---|
-| [fhir-test-data](https://github.com/dnlbox/fhir-test-data) | Specific needs | Generator for basic test resources with country-specific names, addresses, phone formats and identifiers that pass check-digit rules, for 14 countries: US, UK, Australia, Canada, Germany, France, Netherlands, India, Japan, South Korea, Mexico, Brazil, Singapore and South Africa | Identifier and demographic testing across countries: NHS numbers, BSN, Aadhaar, CPF and so on | FHIR R4 (also R4B and R5), LOINC and SNOMED CT; TypeScript library and CLI | MIT |
-| [HL7 International Patient Summary (IPS) examples](https://build.fhir.org/ig/HL7/fhir-ips/) | Specific needs | The example patient summaries published with the international IPS guide | The baseline IPS document that national patient summaries build on | FHIR R4 IPS document bundles | HL7 implementation guide terms |
-
-### Australia
-
-| Source | Level | What it is | Best for | Format and coding | License |
-|---|---|---|---|---|---|
-| [HL7 AU FHIR Test Data](https://github.com/hl7au/au-fhir-test-data) | Start here | About 1,500 hand-written files: 89 patients plus practitioners, organizations and locations, including AU Patient Summary bundles | Testing against the Australian guides (AU Base, AU Core, AU eRequesting, AU Patient Summary), and missing or suppressed data handling: 53 cases built for exactly that | FHIR R4; IHI and Medicare identifiers reserved for testing, SNOMED CT-AU and Australian medicine and vaccine codes | CC0 |
-
-### Canada
-
-| Source | Level | What it is | Best for | Format and coding | License |
-|---|---|---|---|---|---|
-| [Synthea Canadian sample](https://synthetichealth.github.io/downloads.html) | Specific needs | A Synthea data set generated with Canadian settings | Canadian demographics and addresses with Synthea's clinical depth | FHIR (124 MB download) | Free to use; citation requested |
-| [Canada Health Infoway PS-CA testing](https://infoscribe.infoway-inforoute.ca/x/zoglE) | Reference | Testing approach and materials for the Pan-Canadian Patient Summary (PS-CA) projectathons | Canadian patient summary testing | FHIR R4 (PS-CA) | See Infoway's terms |
-
-### Europe
-
-| Source | Level | What it is | Best for | Format and coding | License |
-|---|---|---|---|---|---|
-| [HiGHmed synthetic data generator (Germany)](https://github.com/medblocks/synthea_highmed) | Specific needs | Synthea adapted to Germany's Medical Informatics Initiative (MII) core data set profiles, with a web front end, reproducible seeds and an option to generate deliberately invalid FHIR | German MII profiles, and testing validators with intentionally malformed data | FHIR R4 (MII core data set). Disease statistics still follow Synthea's US modules | Apache 2.0 |
-| [Nictiz test scripts and fixtures (Netherlands)](https://github.com/Nictiz/Nictiz-testscripts) | Specific needs | Nictiz's qualification test scripts, with thousands of fixture files of Dutch test data. Actively maintained | Testing against Dutch national specifications (zibs) | FHIR (STU3 and R4), Dutch profiles and terminology | No license file in the repository; link only |
-| [The Simulacrum (England)](https://simulacrum.healthdatainsight.org.uk/) | Specific needs | Artificial cancer registry data modeled on England's National Disease Registration Service, with no real patient information | Cancer registry and oncology analytics | Registry data tables, not FHIR | Free to download and use; see the site's terms |
-| [HL7 Europe Patient Summary (EPS)](https://build.fhir.org/ig/hl7-eu/eps/) | Reference | The European patient summary guide and its published examples | EU patient summary testing and cross-border exchange | FHIR R4 (EPS) | HL7 Europe implementation guide terms |
-
-### Asia
-
-| Source | Level | What it is | Best for | Format and coding | License |
-|---|---|---|---|---|---|
-| [India ABDM implementation guide examples (NRCES)](https://nrces.in/ndhm/fhir/r4/5.0.0/all-examples.html) | Specific needs | 140 official examples (33 bundles): outpatient consults, prescriptions, discharge summaries, lab and imaging reports, immunizations, wellness records, and NHCX insurance claims and eligibility | India's ABDM health records and NHCX claims exchange | FHIR R4 (ABDM profiles) | No license stated (© NRCES); link only |
-
-### Africa
-
-| Source | Level | What it is | Best for | Format and coding | License |
-|---|---|---|---|---|---|
-| [OpenMRS demo data](https://openmrs.atlassian.net/wiki/spaces/docs/pages/26273323/Demo+Data) | Reference | Anonymized sample databases for OpenMRS, the open-source medical record system widely used in Africa: about 5,000 patients and 500,000 observations | Testing OpenMRS-based systems and performance, often in African deployments | MySQL database import, not FHIR (OpenMRS can expose data through its FHIR module) | See OpenMRS terms |
+| [fhir-test-data](https://github.com/dnlbox/fhir-test-data) | Generator | Generator for basic test resources with country-specific names, addresses, phone formats and identifiers that pass check-digit rules, for 14 countries: US, UK, Australia, Canada, Germany, France, Netherlands, India, Japan, South Korea, Mexico, Brazil, Singapore and South Africa | Identifier and demographic testing across countries: NHS numbers, BSN, Aadhaar, CPF and so on | FHIR R4 (also R4B and R5), LOINC and SNOMED CT; TypeScript library and CLI | MIT |
+| [HL7 International Patient Summary (IPS) examples](https://build.fhir.org/ig/HL7/fhir-ips/) | Guide examples | The example patient summaries published with the international IPS guide | The baseline IPS document that national patient summaries build on | FHIR R4 IPS document bundles | HL7 implementation guide terms |
 
 ### Not found yet
 
@@ -107,6 +110,6 @@ Japan, the Middle East and South America: no open patient data sets found beyond
 
 ## Adding a source
 
-Add an entry to `sources.json` with a section, a level and its license, then run
+Add an entry to `sources.json` with a section, a type and its license, then run
 `python tools/build_sources.py`. Prefer sources with a clear license, and say what the
 source is best for rather than grading it.
