@@ -66,7 +66,8 @@ Each patient card lists **variants**. Today every patient has a `clean` variant;
 ## Other sources
 
 Looking for something this collection doesn't have yet? [SOURCES.md](SOURCES.md) compares
-other open synthetic and test data sources, such as APEX Atlas, Synthea and the HL7 AU test data.
+other open synthetic and test data sources, such as APEX Atlas, Synthea and the HL7 AU test data,
+and what each is best for.
 
 ## Contributing
 
