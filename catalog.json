@@ -38,7 +38,7 @@
       "variant_stats": {
         "clean": {
           "file": "bundle.json",
-          "bytes": 15006,
+          "bytes": 15063,
           "resource_count": 17,
           "resource_types": {
             "MedicationRequest": 3,
