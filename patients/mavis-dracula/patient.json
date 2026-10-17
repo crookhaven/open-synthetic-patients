@@ -1,0 +1,41 @@
+{
+  "schema": "open-synthetic-patients/patient-card/v1",
+  "slug": "mavis-dracula",
+  "id": "MVD-SYN-0000000038-2",
+  "name": "Mavis Dracula",
+  "sex": "female",
+  "birth_date": "1988-02-14",
+  "summary": "38-year-old woman with a moderate, realistic record for a typical ACA Marketplace shopper: asthma, hypothyroidism, migraine and anxiety, 6 active RxNorm-coded medicines, 7 visits in the past year and 8 professional claims.",
+  "conditions": [
+    "Mild persistent asthma",
+    "Hypothyroidism",
+    "Migraine without aura",
+    "Generalized anxiety disorder",
+    "Seasonal allergic rhinitis"
+  ],
+  "use_cases": [
+    "us-core",
+    "piqi-data-quality",
+    "coverage",
+    "marketplace-plan-comparison",
+    "carin-bb-claims",
+    "clinical-notes",
+    "smart-health-links"
+  ],
+  "source": {
+    "method": "hand-built",
+    "tool": "build.ps1 (PowerShell) with tools/powershell/FhirBuilders.ps1 and ClinicalBuilders.ps1"
+  },
+  "license": "CC-BY-4.0",
+  "attribution": "crookhaven, open-synthetic-patients (CC BY 4.0)",
+  "also_published": {
+    "fhir_server": "https://hapi.fhir.org/baseR4 (public test server, wiped from time to time)",
+    "smart_health_link": "https://raw.githubusercontent.com/crookhaven/M5-WholeHealth/main/synthetic-patients/shl/mavis-dracula.jwe"
+  },
+  "notes": "Current medicines' RxNorm codes for drug-coverage checks: 966253, 312941, 313161, 895994, 2123076, 1797907. No pharmacy claims, so each medicine appears once. The MRN identifier system reuses an APEX Atlas URL, although this patient is not derived from APEX Atlas.",
+  "variants": {
+    "clean": "bundle.json"
+  },
+  "fhir_version": "4.0.1",
+  "synthetic": true
+}

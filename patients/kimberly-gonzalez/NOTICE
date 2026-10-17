@@ -1,0 +1,12 @@
+Kimberly Gonzalez (GPX-SYN-0000000279-0)
+
+This synthetic patient record is derived from the APEX Atlas synthetic patient
+GPX-SYN-0000000279-0 (https://github.com/ParkerApex/apex-atlas), which is licensed
+under the Apache License, Version 2.0.
+
+Changes: the original record was enriched with imaging studies, diagnostic reports,
+clinical notes, medications, referrals, CARIN Blue Button claims and a care team by
+crookhaven for the M5 Whole Health project (see build.ps1).
+
+This record (bundle.json) and build.ps1 are distributed under the Apache License,
+Version 2.0. See LICENSE-CODE at the repository root for the full text.

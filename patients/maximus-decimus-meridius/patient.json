@@ -1,0 +1,63 @@
+{
+  "schema": "open-synthetic-patients/patient-card/v1",
+  "slug": "maximus-decimus-meridius",
+  "id": "MDM-SYN-0000000048-1",
+  "name": "Maximus Decimus Meridius",
+  "sex": "male",
+  "birth_date": "1978-03-15",
+  "summary": "48-year-old man with a dense record that fills every category: cardiometabolic, behavioral health, dermatology, hearing, vision and dental care, with imaging, reports, 12 clinical notes, three coverages and 34 CARIN Blue Button claims.",
+  "conditions": [
+    "Type 2 diabetes with diabetic polyneuropathy",
+    "Essential hypertension",
+    "Hyperlipidemia",
+    "NSTEMI 2024 with LAD drug-eluting stent, coronary artery disease",
+    "CKD stage 3a",
+    "Morbid obesity",
+    "Obstructive sleep apnea on CPAP",
+    "COPD",
+    "Lumbar radiculopathy",
+    "PTSD",
+    "Major depressive disorder",
+    "Gout",
+    "GERD",
+    "Psoriasis",
+    "Basal cell carcinoma (Mohs)",
+    "Noise-induced hearing loss with hearing aids",
+    "Primary open-angle glaucoma",
+    "Periodontitis and caries"
+  ],
+  "use_cases": [
+    "us-core",
+    "piqi-data-quality",
+    "ips",
+    "carin-bb-claims",
+    "coverage",
+    "imaging",
+    "clinical-notes",
+    "referrals",
+    "dental",
+    "vision",
+    "hearing",
+    "dermatology",
+    "smart-health-links",
+    "cpap-coverage",
+    "glp1-prior-auth",
+    "large-record"
+  ],
+  "source": {
+    "method": "hand-built",
+    "tool": "build.ps1 (PowerShell) with tools/powershell/FhirBuilders.ps1 and ClinicalBuilders.ps1"
+  },
+  "license": "CC-BY-4.0",
+  "attribution": "crookhaven, open-synthetic-patients (CC BY 4.0)",
+  "also_published": {
+    "fhir_server": "https://hapi.fhir.org/baseR4 (public test server, wiped from time to time)",
+    "smart_health_link": "https://raw.githubusercontent.com/crookhaven/M5-WholeHealth/main/synthetic-patients/shl/maximus-decimus-meridius.jwe"
+  },
+  "notes": "Codes were checked against RxNav (RxNorm, NDC), NLM Clinical Tables (LOINC, ICD-10-CM) and tx.fhir.org (SNOMED CT, CVX, ICD-10-PCS). Dental surface codes (ex-surface) could not be verified. The MRN identifier system reuses an APEX Atlas URL, although this patient is not derived from APEX Atlas.",
+  "variants": {
+    "clean": "bundle.json"
+  },
+  "fhir_version": "4.0.1",
+  "synthetic": true
+}
