@@ -101,7 +101,7 @@
       "variant_stats": {
         "clean": {
           "file": "bundle.json",
-          "bytes": 455441,
+          "bytes": 455538,
           "resource_count": 130,
           "resource_types": {
             "Observation": 29,
@@ -188,7 +188,7 @@
       "variant_stats": {
         "clean": {
           "file": "bundle.json",
-          "bytes": 359796,
+          "bytes": 359812,
           "resource_count": 114,
           "resource_types": {
             "Observation": 40,
@@ -310,7 +310,7 @@
       "variant_stats": {
         "clean": {
           "file": "bundle.json",
-          "bytes": 1385398,
+          "bytes": 1385622,
           "resource_count": 408,
           "resource_types": {
             "Observation": 122,
@@ -347,6 +347,7 @@
             "us-core-body-temperature",
             "us-core-body-weight",
             "us-core-careteam",
+            "us-core-condition-encounter-diagnosis",
             "us-core-condition-problems-health-concerns",
             "us-core-coverage",
             "us-core-diagnosticreport-lab",

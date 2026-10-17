@@ -80,7 +80,12 @@ $HTEST = [ordered]@{ system = 'http://terminology.hl7.org/CodeSystem/v3-ActReaso
 function Meta($profile) { if ($profile) { [ordered]@{ profile = @($profile); tag = @($HTEST) } } else { [ordered]@{ tag = @($HTEST) } } }
 # CPT codes carry no display: the only valid displays are the AMA's licensed descriptors.
 # The plain-language label stays in CodeableConcept.text (see CC).
-function Coding($sys, $code, $disp) { if ($sys -eq $CPT) { $disp = $null }; [ordered]@{ system = $sys; code = $code; display = $disp } }
+# ex-tooth (FDI) displays are the tooth or area number itself, and 0 is 'Oral cavity'.
+function Coding($sys, $code, $disp) {
+  if ($sys -eq $CPT) { $disp = $null }
+  if ($sys -eq 'http://terminology.hl7.org/CodeSystem/ex-tooth') { $disp = $(if ($code -eq '0') { 'Oral cavity' } else { $code }) }
+  [ordered]@{ system = $sys; code = $code; display = $disp }
+}
 function CC($sys, $code, $disp, $text) { $t = $text; if (-not $t) { $t = $disp }; [ordered]@{ coding = @(Coding $sys $code $disp); text = $t } }
 # Several codings for one concept: CCn 'text' @($SCT,'1','A') @($ICD,'X','B')
 function CCn($text) { [ordered]@{ coding = @($args | ForEach-Object { Coding $_[0] $_[1] $_[2] }); text = $text } }

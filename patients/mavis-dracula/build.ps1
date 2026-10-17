@@ -266,11 +266,11 @@ Pro 'clm_pcp26a' '2026-03-10' '2026-03-13' '2026-03-31' 'org_pcp' 'pr_pcp' 'e_pc
 Pro 'clm_lab26a' '2026-03-10' '2026-03-12' '2026-03-30' 'org_lab' 'pr_path' 'e_pcp26a' @($DX_HYPO, (Dx 'Z00.00' 'Encounter for general adult medical examination without abnormal findings')) @(
   (Line $CPT '84443' 'Thyroid stimulating hormone' 45 22 22), (Line $CPT '84439' 'Thyroxine; free' 40 18 18), (Line $CPT '85025' 'Complete blood count with automated differential' 35 9 0),
   (Line $CPT '82728' 'Ferritin' 40 17 17), (Line $CPT '80061' 'Lipid panel' 55 14 0), (Line $CPT '80048' 'Basic metabolic panel' 38 9 0)) '81' 'Independent Laboratory' 'pr_pcp'
-Pro 'clm_bh26a' '2026-04-21' '2026-04-24' '2026-05-12' 'org_bh' 'pr_bh' 'e_bh26a' @($DX_GAD) @((Line $CPT '90834' 'Psychotherapy, 45 minutes' 150 96 30 @{ mod = '95'; modDisp = 'Synchronous telemedicine service' })) '10' 'Telehealth Provided in Patient Home' 'pr_pcp'
+Pro 'clm_bh26a' '2026-04-21' '2026-04-24' '2026-05-12' 'org_bh' 'pr_bh' 'e_bh26a' @($DX_GAD) @((Line $CPT '90834' 'Psychotherapy, 45 minutes' 150 96 30 @{ mod = '95'; modDisp = 'Synchronous telemedicine service' })) '10' "Telehealth Provided in Patient$([char]0x2019)s Home" 'pr_pcp'
 Pro 'clm_gyn26' '2026-06-02' '2026-06-05' '2026-06-23' 'org_womens' 'pr_gyn' 'e_gyn26' @((Dx 'Z01.419' 'Encounter for gynecological examination (general) (routine) without abnormal findings'), (Dx 'Z12.4' 'Encounter for screening for malignant neoplasm of cervix')) @(
   (Line $CPT '99395' 'Preventive visit, established patient, 18-39 years' 280 172 0),
   (Line $HCPCS 'Q0091' 'Screening Papanicolaou smear; obtaining, preparing and conveyance to laboratory' 60 38 0))
-Pro 'clm_bh26b' '2026-07-14' '2026-07-17' '2026-08-04' 'org_bh' 'pr_bh' 'e_bh26b' @($DX_GAD) @((Line $CPT '90834' 'Psychotherapy, 45 minutes' 150 96 30 @{ mod = '95'; modDisp = 'Synchronous telemedicine service' })) '10' 'Telehealth Provided in Patient Home' 'pr_pcp'
+Pro 'clm_bh26b' '2026-07-14' '2026-07-17' '2026-08-04' 'org_bh' 'pr_bh' 'e_bh26b' @($DX_GAD) @((Line $CPT '90834' 'Psychotherapy, 45 minutes' 150 96 30 @{ mod = '95'; modDisp = 'Synchronous telemedicine service' })) '10' "Telehealth Provided in Patient$([char]0x2019)s Home" 'pr_pcp'
 Pro 'clm_pcp26b' '2026-09-08' '2026-09-11' '2026-09-29' 'org_pcp' 'pr_pcp' 'e_pcp26b' @($DX_HYPO, (Dx 'J30.2' 'Other seasonal allergic rhinitis')) @(
   (Line $CPT '99213' 'Office/outpatient visit, established patient, low' 180 98 30),
   (Line $CPT '84443' 'Thyroid stimulating hormone' 45 22 22),

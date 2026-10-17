@@ -96,7 +96,7 @@ function Cond($key, $text, $sctCode, $sctDisp, $icdCode, $icdDisp, $onset, $enc,
   if ($sctCode) { $codings += (Coding $SCT $sctCode $sctDisp) }
   $codings += (Coding $ICD $icdCode $icdDisp)
   $r = [ordered]@{
-    resourceType = 'Condition'; id = (Id $key); meta = (Meta "$UC/us-core-condition-problems-health-concerns$UCV")
+    resourceType = 'Condition'; id = (Id $key); meta = (Meta $(if ($cat -eq 'encounter-diagnosis') { "$UC/us-core-condition-encounter-diagnosis$UCV" } else { "$UC/us-core-condition-problems-health-concerns$UCV" }))
     clinicalStatus = (CC 'http://terminology.hl7.org/CodeSystem/condition-clinical' $status ((Get-Culture).TextInfo.ToTitleCase($status)))
     verificationStatus = (CC 'http://terminology.hl7.org/CodeSystem/condition-ver-status' 'confirmed' 'Confirmed')
     category = @(CC 'http://terminology.hl7.org/CodeSystem/condition-category' $cat $(if ($cat -eq 'encounter-diagnosis') { 'Encounter Diagnosis' } else { 'Problem List Item' }))
@@ -461,7 +461,7 @@ function Eob($c) {
     careTeam = $care
     supportingInfo = $info
     diagnosis = $dx
-    procedure = (Each $c.pcs { param($p) [ordered]@{ sequence = 1; type = @(CC 'http://terminology.hl7.org/CodeSystem/ex-proceduretype' 'primary' 'Primary procedure'); date = $c.start; procedureCodeableConcept = (CC $PCS $p.c $p.d) } })
+    procedure = (Each $c.pcs { param($p) [ordered]@{ sequence = 1; type = @(CC "$C4BB/C4BBClaimProcedureType" 'principal' 'Principal'); date = $c.start; procedureCodeableConcept = (CC $PCS $p.c $p.d) } })
     insurance = @([ordered]@{ focal = $true; coverage = (Ref 'Coverage' $c.cov) })
     item = $items
     adjudication = (HeaderNetStatus $kind)

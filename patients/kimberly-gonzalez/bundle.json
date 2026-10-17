@@ -256,8 +256,8 @@
           "coding": [
             {
               "system": "http://snomed.info/sct",
-              "code": "420715001",
-              "display": "Diabetic chronic kidney disease (disorder)"
+              "code": "771000119108",
+              "display": "Chronic kidney disease due to type 2 diabetes mellitus"
             }
           ],
           "text": "Diabetic chronic kidney disease (disorder)"
@@ -704,8 +704,8 @@
             "coding": [
               {
                 "system": "http://snomed.info/sct",
-                "code": "420715001",
-                "display": "Diabetic chronic kidney disease"
+                "code": "771000119108",
+                "display": "Chronic kidney disease due to type 2 diabetes mellitus"
               }
             ],
             "text": "Diabetic chronic kidney disease"
@@ -1298,7 +1298,7 @@
             {
               "system": "http://loinc.org",
               "code": "33914-3",
-              "display": "Glomerular filtration rate/1.73 sq M.predicted (MDRD)"
+              "display": "Glomerular filtration rate [Volume Rate/Area] in Serum or Plasma by Creatinine-based formula (MDRD)/1.73 sq M"
             }
           ],
           "text": "Glomerular filtration rate/1.73 sq M.predicted (MDRD)"

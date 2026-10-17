@@ -10029,10 +10029,10 @@
                 {
                   "system": "https://www.cms.gov/Medicare/Coding/place-of-service-codes/Place_of_Service_Code_Set",
                   "code": "10",
-                  "display": "Telehealth Provided in Patient Home"
+                  "display": "Telehealth Provided in Patient’s Home"
                 }
               ],
-              "text": "Telehealth Provided in Patient Home"
+              "text": "Telehealth Provided in Patient’s Home"
             },
             "quantity": {
               "value": 1
@@ -10944,10 +10944,10 @@
                 {
                   "system": "https://www.cms.gov/Medicare/Coding/place-of-service-codes/Place_of_Service_Code_Set",
                   "code": "10",
-                  "display": "Telehealth Provided in Patient Home"
+                  "display": "Telehealth Provided in Patient’s Home"
                 }
               ],
-              "text": "Telehealth Provided in Patient Home"
+              "text": "Telehealth Provided in Patient’s Home"
             },
             "quantity": {
               "value": 1

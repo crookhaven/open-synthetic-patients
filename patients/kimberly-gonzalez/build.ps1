@@ -123,13 +123,17 @@ foreach ($fix in @(
 }
 # Further source fixes, each expected exactly once (checked against tx.fhir.org):
 #   payer organization type uses the organization-type code system, not v3-RoleCode
-#   official display names for RxNorm 861007, CVX 115 and NAHDO SOPT 11
+#   official display names for RxNorm 861007, CVX 115, NAHDO SOPT 11 and LOINC 33914-3
+#   SNOMED 420715001 is persistent microalbuminuria; diabetic CKD (type 2) is 771000119108
 #   the two source prescriptions (intent "order") need a requester under US Core
 foreach ($fix in @(
     @('"system": "http://terminology.hl7.org/CodeSystem/v3-RoleCode",(\s*)"code": "pay"', '"system": "http://terminology.hl7.org/CodeSystem/organization-type",${1}"code": "pay"'),
     @('("code": "861007",\s*"display": )"Metformin 500 MG Oral Tablet"', '${1}"metformin hydrochloride 500 MG Oral Tablet"'),
     @('("code": "115",\s*"display": )"Tdap \(tetanus, diphtheria, acellular pertussis\)"', '${1}"Tdap"'),
     @('("code": "11",\s*"display": )"Medicare \(Managed Care\)"', '${1}"Medicare Managed Care (Includes Medicare Advantage Plans)"'),
+    @('("code": "33914-3",\s*"display": )"[^"]+"', '${1}"Glomerular filtration rate [Volume Rate/Area] in Serum or Plasma by Creatinine-based formula (MDRD)/1.73 sq M"'),
+    @('"code": "420715001",(\s*)"display": "Diabetic chronic kidney disease \(disorder\)"', '"code": "771000119108",${1}"display": "Chronic kidney disease due to type 2 diabetes mellitus"'),
+    @('"code": "420715001",(\s*)"display": "Diabetic chronic kidney disease"', '"code": "771000119108",${1}"display": "Chronic kidney disease due to type 2 diabetes mellitus"'),
     @('("id": "e857ac28-6c02-5325-8361-013e4b7981be",[\s\S]*?\n(\s*)"authoredOn": "[^"]+",)', ('${1}' + "`n" + '${2}"requester": {' + "`n" + '${2}  "reference": "Practitioner/' + (Id 'pr_pcp') + '"' + "`n" + '${2}},')),
     @('("id": "b23cfb33-4e91-5bed-821b-c6fc85b188ce",[\s\S]*?\n(\s*)"authoredOn": "[^"]+",)', ('${1}' + "`n" + '${2}"requester": {' + "`n" + '${2}  "reference": "Practitioner/' + (Id 'pr_pcp') + '"' + "`n" + '${2}},')))) {
   $fixRe = [regex]$fix[0]

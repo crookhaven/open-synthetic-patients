@@ -5740,7 +5740,7 @@
         "id": "a2b58cf5-a2b1-57e0-9bf7-b9a97be321fc",
         "meta": {
           "profile": [
-            "http://hl7.org/fhir/us/core/StructureDefinition/us-core-condition-problems-health-concerns|6.1.0"
+            "http://hl7.org/fhir/us/core/StructureDefinition/us-core-condition-encounter-diagnosis|6.1.0"
           ],
           "tag": [
             {
@@ -20748,7 +20748,7 @@
               {
                 "system": "http://terminology.hl7.org/CodeSystem/ex-tooth",
                 "code": "1",
-                "display": "Upper right quadrant"
+                "display": "1"
               }
             ],
             "text": "Upper right quadrant"
@@ -20809,7 +20809,7 @@
               {
                 "system": "http://terminology.hl7.org/CodeSystem/ex-tooth",
                 "code": "4",
-                "display": "Lower right quadrant"
+                "display": "4"
               }
             ],
             "text": "Lower right quadrant"
@@ -20870,7 +20870,7 @@
               {
                 "system": "http://terminology.hl7.org/CodeSystem/ex-tooth",
                 "code": "17",
-                "display": "Tooth #2 (upper right second molar)"
+                "display": "17"
               }
             ],
             "text": "Tooth #2 (upper right second molar)"
@@ -21177,7 +21177,7 @@
               {
                 "system": "http://terminology.hl7.org/CodeSystem/ex-tooth",
                 "code": "0",
-                "display": "Whole mouth"
+                "display": "Oral cavity"
               }
             ],
             "text": "Whole mouth"
@@ -21243,7 +21243,7 @@
               {
                 "system": "http://terminology.hl7.org/CodeSystem/ex-tooth",
                 "code": "46",
-                "display": "Tooth #30 (lower right first molar)"
+                "display": "46"
               }
             ],
             "text": "Tooth #30 (lower right first molar)"
@@ -21304,7 +21304,7 @@
               {
                 "system": "http://terminology.hl7.org/CodeSystem/ex-tooth",
                 "code": "36",
-                "display": "Tooth #19 (lower left first molar)"
+                "display": "36"
               }
             ],
             "text": "Tooth #19 (lower left first molar)"
@@ -27513,12 +27513,12 @@
               {
                 "coding": [
                   {
-                    "system": "http://terminology.hl7.org/CodeSystem/ex-proceduretype",
-                    "code": "primary",
-                    "display": "Primary procedure"
+                    "system": "http://hl7.org/fhir/us/carin-bb/CodeSystem/C4BBClaimProcedureType",
+                    "code": "principal",
+                    "display": "Principal"
                   }
                 ],
-                "text": "Primary procedure"
+                "text": "Principal"
               }
             ],
             "date": "2024-03-02",
@@ -29241,10 +29241,10 @@
                 {
                   "system": "https://www.cms.gov/Medicare/Coding/place-of-service-codes/Place_of_Service_Code_Set",
                   "code": "23",
-                  "display": "Emergency Room - Hospital"
+                  "display": "Emergency Room – Hospital"
                 }
               ],
-              "text": "Emergency Room - Hospital"
+              "text": "Emergency Room – Hospital"
             },
             "quantity": {
               "value": 1
@@ -35579,10 +35579,10 @@
                 {
                   "system": "https://www.cms.gov/Medicare/Coding/place-of-service-codes/Place_of_Service_Code_Set",
                   "code": "10",
-                  "display": "Telehealth Provided in Patient Home"
+                  "display": "Telehealth Provided in Patient’s Home"
                 }
               ],
-              "text": "Telehealth Provided in Patient Home"
+              "text": "Telehealth Provided in Patient’s Home"
             },
             "quantity": {
               "value": 1
@@ -39979,7 +39979,7 @@
                 {
                   "system": "http://terminology.hl7.org/CodeSystem/ex-tooth",
                   "code": "1",
-                  "display": "Upper right quadrant"
+                  "display": "1"
                 }
               ],
               "text": "Upper right quadrant"
@@ -40109,7 +40109,7 @@
                 {
                   "system": "http://terminology.hl7.org/CodeSystem/ex-tooth",
                   "code": "4",
-                  "display": "Lower right quadrant"
+                  "display": "4"
                 }
               ],
               "text": "Lower right quadrant"
@@ -40516,7 +40516,7 @@
                 {
                   "system": "http://terminology.hl7.org/CodeSystem/ex-tooth",
                   "code": "17",
-                  "display": "Tooth #2 (upper right second molar)"
+                  "display": "17"
                 }
               ],
               "text": "Tooth #2 (upper right second molar)"
@@ -41043,7 +41043,7 @@
                 {
                   "system": "http://terminology.hl7.org/CodeSystem/ex-tooth",
                   "code": "46",
-                  "display": "Tooth #30 (lower right first molar)"
+                  "display": "46"
                 }
               ],
               "text": "Tooth #30 (lower right first molar)"
@@ -41173,7 +41173,7 @@
                 {
                   "system": "http://terminology.hl7.org/CodeSystem/ex-tooth",
                   "code": "36",
-                  "display": "Tooth #19 (lower left first molar)"
+                  "display": "36"
                 }
               ],
               "text": "Tooth #19 (lower left first molar)"
@@ -41570,10 +41570,10 @@
                 {
                   "system": "http://hl7.org/fhir/sid/ndc",
                   "code": "00093731405",
-                  "display": "clopidogrel 75 MG Oral Tablet"
+                  "display": "Clopidogrel, 500 TABLET, FILM COATED in 1 BOTTLE (0093-7314-05) (package)"
                 }
               ],
-              "text": "clopidogrel 75 MG Oral Tablet"
+              "text": "Clopidogrel, 500 TABLET, FILM COATED in 1 BOTTLE (0093-7314-05) (package)"
             },
             "servicedDate": "2024-03-05",
             "locationCodeableConcept": {
@@ -42320,10 +42320,10 @@
                 {
                   "system": "http://hl7.org/fhir/sid/ndc",
                   "code": "00185022101",
-                  "display": "metformin hydrochloride 1000 MG Oral Tablet"
+                  "display": "metformin hydrochloride, 100 TABLET in 1 BOTTLE (0185-0221-01) (package)"
                 }
               ],
-              "text": "metformin hydrochloride 1000 MG Oral Tablet"
+              "text": "metformin hydrochloride, 100 TABLET in 1 BOTTLE (0185-0221-01) (package)"
             },
             "servicedDate": "2026-07-30",
             "locationCodeableConcept": {
@@ -43070,10 +43070,10 @@
                 {
                   "system": "http://hl7.org/fhir/sid/ndc",
                   "code": "00054012522",
-                  "display": "losartan potassium 100 MG Oral Tablet"
+                  "display": "Losartan Potassium, 90 TABLET in 1 BOTTLE (0054-0125-22) (package)"
                 }
               ],
-              "text": "losartan potassium 100 MG Oral Tablet"
+              "text": "Losartan Potassium, 90 TABLET in 1 BOTTLE (0054-0125-22) (package)"
             },
             "servicedDate": "2026-07-30",
             "locationCodeableConcept": {
@@ -43820,10 +43820,10 @@
                 {
                   "system": "http://hl7.org/fhir/sid/ndc",
                   "code": "00378418801",
-                  "display": "sertraline 100 MG Oral Tablet"
+                  "display": "Sertraline Hydrochloride, 100 TABLET, FILM COATED in 1 BOTTLE, PLASTIC (0378-4188-01) (package)"
                 }
               ],
-              "text": "sertraline 100 MG Oral Tablet"
+              "text": "Sertraline Hydrochloride, 100 TABLET, FILM COATED in 1 BOTTLE, PLASTIC (0378-4188-01) (package)"
             },
             "servicedDate": "2026-08-02",
             "locationCodeableConcept": {
@@ -44195,10 +44195,10 @@
                 {
                   "system": "http://hl7.org/fhir/sid/ndc",
                   "code": "00378964532",
-                  "display": "latanoprost 0.05 MG/ML Ophthalmic Solution"
+                  "display": "Latanoprost, 1 BOTTLE in 1 CARTON (0378-9645-32) > 2.5 mL in 1 BOTTLE (package)"
                 }
               ],
-              "text": "latanoprost 0.05 MG/ML Ophthalmic Solution"
+              "text": "Latanoprost, 1 BOTTLE in 1 CARTON (0378-9645-32) > 2.5 mL in 1 BOTTLE (package)"
             },
             "servicedDate": "2026-07-14",
             "locationCodeableConcept": {
@@ -44945,10 +44945,10 @@
                 {
                   "system": "http://hl7.org/fhir/sid/ndc",
                   "code": "00116000315",
-                  "display": "chlorhexidine gluconate 1.2 MG/ML Mouthwash"
+                  "display": "Chlorhexidine Gluconate 0.12% Oral Rinse, 15 mL in 1 BOTTLE (0116-0003-15) (package)"
                 }
               ],
-              "text": "chlorhexidine gluconate 1.2 MG/ML Mouthwash"
+              "text": "Chlorhexidine Gluconate 0.12% Oral Rinse, 15 mL in 1 BOTTLE (0116-0003-15) (package)"
             },
             "servicedDate": "2026-02-25",
             "locationCodeableConcept": {
