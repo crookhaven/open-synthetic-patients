@@ -30,18 +30,4 @@ Kimberly Gonzalez, built on APEX Atlas) and its license allows it.
   FHIR Test Data.
 - **De-identification:** the DARTS and DAPL examples.
 
-## Worth watching
-
-- [carebundle (fhirfaker)](https://github.com/27jackson08/fhirfaker): a new Python generator
-  for US Core 6.1 patients with statistically linked lab values, and an `inject_defects`
-  option that adds missing fields and unparseable values while logging each one, so tests
-  can check for them. Apache 2.0. Five condition profiles so far and no releases yet.
-- [MedCase-Structured](https://huggingface.co/papers/2605.30295): about 1,400 FHIR R4
-  bundles converted by an LLM from published clinical case reports, covering unusual
-  diagnoses. The paper reports some invalid codes from the conversion and states no license.
-- **EHR and payer developer sandboxes** (Oracle Health, Athena, Aetna, Cigna, Humana and
-  others): test patients are often thin, but they show what each vendor's API actually
-  returns. [Fasten Health keeps a catalog](https://docs.connect.fastenhealth.com/guides/test-patient-credentials)
-  of where each sandbox documents its test accounts.
-
 When adding a source, include its license and what it's best for.
