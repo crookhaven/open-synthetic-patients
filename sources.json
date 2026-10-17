@@ -320,6 +320,16 @@
       "best_for": "Testing OpenMRS-based systems and performance, often in African deployments",
       "format": "MySQL database import, not FHIR (OpenMRS can expose data through its FHIR module)",
       "license": "See OpenMRS terms"
+    },
+    {
+      "name": "Benefit Plan Standard examples",
+      "url": "https://github.com/Benefit-Plan-Standard/benefit-plan-schema",
+      "section": "us-claims",
+      "type": "fhir-download",
+      "what": "20 real health plans' benefit designs: 10 employer and ACA plans read from their Summaries of Benefits and Coverage, 5 Medicare Advantage plans from the CMS Plan Benefit Package files and 5 Marketplace plans from the CMS public use files. Each comes as a Benefit Plan Standard JSON file and as a FHIR InsurancePlan Bundle, with importers to build more",
+      "best_for": "Plan benefits and cost sharing: what a plan covers, what you pay and its limits. Useful for Real-Time Benefits and CARIN Digital Insurance Card testing, including Medicare Advantage extras such as hearing aids",
+      "format": "FHIR R4 InsurancePlan (CARIN Digital Insurance Card SBC profile) and Benefit Plan Standard JSON",
+      "license": "MIT"
     }
   ]
 }
