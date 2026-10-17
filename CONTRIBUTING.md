@@ -23,6 +23,11 @@ Thanks for adding to the collection. Every change goes through a pull request, a
 
 6. Commit `catalog.json` and `CATALOG.md` along with the patient.
 
+The **FHIR validation** check validates every bundle against FHIR R4, US Core 6.1.0 and CARIN
+Blue Button 2.1.0, and fails on any error not listed in `tools/validation_known_issues.json`.
+Fix new errors rather than adding them to that file; add one only when the validator itself is
+wrong or out of date, with the reason.
+
 ## Adding a variant
 
 Put the file beside the clean bundle (for example `bundle-messy.json`) and list it in the
