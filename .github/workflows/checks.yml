@@ -52,6 +52,9 @@ jobs:
               [ $code -ne 0 ] && status=1
               summary=$(grep -E "^(Success|\*FAILURE\*)" "$log" | tail -1)
               echo "- \`$dir/$file\`: ${summary:-see log}" >> "$GITHUB_STEP_SUMMARY"
+              # One annotation per bundle, so results show on the pull request.
+              top=$(grep -E "^\s*Error @" "$log" | sed -E 's/^\s*Error @ [^:]*: //; s/\(line [0-9]+, col[0-9]+\)//' | sort | uniq -c | sort -rn | head -5 | tr '\n' ';')
+              echo "::warning file=$dir/$file,title=FHIR validation::${summary:-no summary (see log)} | Most common errors: ${top:-none}"
             done
           done
           exit $status
