@@ -621,10 +621,17 @@
               {
                 "system": "http://nucc.org/provider-taxonomy",
                 "code": "207Q00000X",
-                "display": "Family Medicine"
+                "display": "Family Medicine Physician"
               }
             ],
-            "text": "Family Medicine"
+            "text": "Family Medicine Physician"
+          }
+        ],
+        "telecom": [
+          {
+            "system": "phone",
+            "value": "217-555-0100",
+            "use": "work"
           }
         ]
       }
@@ -698,10 +705,17 @@
               {
                 "system": "http://nucc.org/provider-taxonomy",
                 "code": "207P00000X",
-                "display": "Emergency Medicine"
+                "display": "Emergency Medicine Physician"
               }
             ],
-            "text": "Emergency Medicine"
+            "text": "Emergency Medicine Physician"
+          }
+        ],
+        "telecom": [
+          {
+            "system": "phone",
+            "value": "217-555-0100",
+            "use": "work"
           }
         ]
       }
@@ -775,10 +789,17 @@
               {
                 "system": "http://nucc.org/provider-taxonomy",
                 "code": "2084N0400X",
-                "display": "Neurology"
+                "display": "Neurology Physician"
               }
             ],
-            "text": "Neurology"
+            "text": "Neurology Physician"
+          }
+        ],
+        "telecom": [
+          {
+            "system": "phone",
+            "value": "217-555-0100",
+            "use": "work"
           }
         ]
       }
@@ -857,6 +878,13 @@
             ],
             "text": "Clinical Social Worker"
           }
+        ],
+        "telecom": [
+          {
+            "system": "phone",
+            "value": "217-555-0100",
+            "use": "work"
+          }
         ]
       }
     },
@@ -929,10 +957,17 @@
               {
                 "system": "http://nucc.org/provider-taxonomy",
                 "code": "207V00000X",
-                "display": "Obstetrics & Gynecology"
+                "display": "Obstetrics & Gynecology Physician"
               }
             ],
-            "text": "Obstetrics & Gynecology"
+            "text": "Obstetrics & Gynecology Physician"
+          }
+        ],
+        "telecom": [
+          {
+            "system": "phone",
+            "value": "217-555-0100",
+            "use": "work"
           }
         ]
       }
@@ -1006,10 +1041,17 @@
               {
                 "system": "http://nucc.org/provider-taxonomy",
                 "code": "207ZP0102X",
-                "display": "Anatomic & Clinical Pathology"
+                "display": "Anatomic Pathology & Clinical Pathology Physician"
               }
             ],
-            "text": "Anatomic & Clinical Pathology"
+            "text": "Anatomic Pathology & Clinical Pathology Physician"
+          }
+        ],
+        "telecom": [
+          {
+            "system": "phone",
+            "value": "217-555-0100",
+            "use": "work"
           }
         ]
       }
@@ -1087,6 +1129,13 @@
               }
             ],
             "text": "Registered Nurse"
+          }
+        ],
+        "telecom": [
+          {
+            "system": "phone",
+            "value": "217-555-0100",
+            "use": "work"
           }
         ]
       }
@@ -3436,6 +3485,11 @@
           "coding": [
             {
               "system": "http://loinc.org",
+              "code": "2708-6",
+              "display": "Oxygen saturation in Arterial blood"
+            },
+            {
+              "system": "http://loinc.org",
               "code": "59408-5",
               "display": "Oxygen saturation in Arterial blood by Pulse oximetry"
             }
@@ -3766,6 +3820,11 @@
         ],
         "code": {
           "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "2708-6",
+              "display": "Oxygen saturation in Arterial blood"
+            },
             {
               "system": "http://loinc.org",
               "code": "59408-5",
@@ -4218,6 +4277,11 @@
         ],
         "code": {
           "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "2708-6",
+              "display": "Oxygen saturation in Arterial blood"
+            },
             {
               "system": "http://loinc.org",
               "code": "59408-5",
@@ -6316,8 +6380,7 @@
           "coding": [
             {
               "system": "http://www.ama-assn.org/go/cpt",
-              "code": "94640",
-              "display": "Inhalation treatment, nebulizer"
+              "code": "94640"
             }
           ],
           "text": "Nebulized albuterol treatment"
@@ -6370,8 +6433,7 @@
           "coding": [
             {
               "system": "http://www.ama-assn.org/go/cpt",
-              "code": "94010",
-              "display": "Spirometry"
+              "code": "94010"
             }
           ],
           "text": "Spirometry"
@@ -7318,29 +7380,6 @@
               "coding": [
                 {
                   "system": "http://hl7.org/fhir/us/carin-bb/CodeSystem/C4BBSupportingInfoType",
-                  "code": "billingnetworkcontractingstatus",
-                  "display": "Billing Network Contracting Status"
-                }
-              ],
-              "text": "Billing Network Contracting Status"
-            },
-            "code": {
-              "coding": [
-                {
-                  "system": "http://hl7.org/fhir/us/carin-bb/CodeSystem/C4BBPayerProviderContractingStatus",
-                  "code": "contracted",
-                  "display": "Contracted"
-                }
-              ],
-              "text": "Contracted"
-            }
-          },
-          {
-            "sequence": 2,
-            "category": {
-              "coding": [
-                {
-                  "system": "http://hl7.org/fhir/us/carin-bb/CodeSystem/C4BBSupportingInfoType",
                   "code": "clmrecvddate",
                   "display": "Claim Received Date"
                 }
@@ -7397,8 +7436,7 @@
               "coding": [
                 {
                   "system": "http://www.ama-assn.org/go/cpt",
-                  "code": "99204",
-                  "display": "Office/outpatient visit, new patient, moderate"
+                  "code": "99204"
                 }
               ],
               "text": "Office/outpatient visit, new patient, moderate"
@@ -7407,7 +7445,7 @@
             "locationCodeableConcept": {
               "coding": [
                 {
-                  "system": "11",
+                  "system": "https://www.cms.gov/Medicare/Coding/place-of-service-codes/Place_of_Service_Code_Set",
                   "code": "11",
                   "display": "Office"
                 }
@@ -7488,8 +7526,8 @@
                   "coding": [
                     {
                       "system": "http://hl7.org/fhir/us/carin-bb/CodeSystem/C4BBAdjudicationDiscriminator",
-                      "code": "inoutnetwork",
-                      "display": "In or Out of Network"
+                      "code": "benefitpaymentstatus",
+                      "display": "Benefit Payment Status"
                     }
                   ]
                 },
@@ -7504,6 +7542,48 @@
                 }
               }
             ]
+          }
+        ],
+        "adjudication": [
+          {
+            "category": {
+              "coding": [
+                {
+                  "system": "http://hl7.org/fhir/us/carin-bb/CodeSystem/C4BBAdjudicationDiscriminator",
+                  "code": "billingnetworkstatus",
+                  "display": "Billing Network Status"
+                }
+              ]
+            },
+            "reason": {
+              "coding": [
+                {
+                  "system": "http://hl7.org/fhir/us/carin-bb/CodeSystem/C4BBPayerAdjudicationStatus",
+                  "code": "innetwork",
+                  "display": "In Network"
+                }
+              ]
+            }
+          },
+          {
+            "category": {
+              "coding": [
+                {
+                  "system": "http://hl7.org/fhir/us/carin-bb/CodeSystem/C4BBAdjudicationDiscriminator",
+                  "code": "renderingnetworkstatus",
+                  "display": "Rendering Network Status"
+                }
+              ]
+            },
+            "reason": {
+              "coding": [
+                {
+                  "system": "http://hl7.org/fhir/us/carin-bb/CodeSystem/C4BBPayerAdjudicationStatus",
+                  "code": "innetwork",
+                  "display": "In Network"
+                }
+              ]
+            }
           }
         ],
         "total": [
@@ -7672,29 +7752,6 @@
               "coding": [
                 {
                   "system": "http://hl7.org/fhir/us/carin-bb/CodeSystem/C4BBSupportingInfoType",
-                  "code": "billingnetworkcontractingstatus",
-                  "display": "Billing Network Contracting Status"
-                }
-              ],
-              "text": "Billing Network Contracting Status"
-            },
-            "code": {
-              "coding": [
-                {
-                  "system": "http://hl7.org/fhir/us/carin-bb/CodeSystem/C4BBPayerProviderContractingStatus",
-                  "code": "contracted",
-                  "display": "Contracted"
-                }
-              ],
-              "text": "Contracted"
-            }
-          },
-          {
-            "sequence": 2,
-            "category": {
-              "coding": [
-                {
-                  "system": "http://hl7.org/fhir/us/carin-bb/CodeSystem/C4BBSupportingInfoType",
                   "code": "clmrecvddate",
                   "display": "Claim Received Date"
                 }
@@ -7751,8 +7808,7 @@
               "coding": [
                 {
                   "system": "http://www.ama-assn.org/go/cpt",
-                  "code": "99214",
-                  "display": "Office/outpatient visit, established patient, moderate"
+                  "code": "99214"
                 }
               ],
               "text": "Office/outpatient visit, established patient, moderate"
@@ -7761,7 +7817,7 @@
             "locationCodeableConcept": {
               "coding": [
                 {
-                  "system": "20",
+                  "system": "https://www.cms.gov/Medicare/Coding/place-of-service-codes/Place_of_Service_Code_Set",
                   "code": "20",
                   "display": "Urgent Care Facility"
                 }
@@ -7842,8 +7898,8 @@
                   "coding": [
                     {
                       "system": "http://hl7.org/fhir/us/carin-bb/CodeSystem/C4BBAdjudicationDiscriminator",
-                      "code": "inoutnetwork",
-                      "display": "In or Out of Network"
+                      "code": "benefitpaymentstatus",
+                      "display": "Benefit Payment Status"
                     }
                   ]
                 },
@@ -7871,8 +7927,7 @@
               "coding": [
                 {
                   "system": "http://www.ama-assn.org/go/cpt",
-                  "code": "94640",
-                  "display": "Inhalation treatment, nebulizer"
+                  "code": "94640"
                 }
               ],
               "text": "Inhalation treatment, nebulizer"
@@ -7881,7 +7936,7 @@
             "locationCodeableConcept": {
               "coding": [
                 {
-                  "system": "20",
+                  "system": "https://www.cms.gov/Medicare/Coding/place-of-service-codes/Place_of_Service_Code_Set",
                   "code": "20",
                   "display": "Urgent Care Facility"
                 }
@@ -7963,8 +8018,8 @@
                   "coding": [
                     {
                       "system": "http://hl7.org/fhir/us/carin-bb/CodeSystem/C4BBAdjudicationDiscriminator",
-                      "code": "inoutnetwork",
-                      "display": "In or Out of Network"
+                      "code": "benefitpaymentstatus",
+                      "display": "Benefit Payment Status"
                     }
                   ]
                 },
@@ -8002,7 +8057,7 @@
             "locationCodeableConcept": {
               "coding": [
                 {
-                  "system": "20",
+                  "system": "https://www.cms.gov/Medicare/Coding/place-of-service-codes/Place_of_Service_Code_Set",
                   "code": "20",
                   "display": "Urgent Care Facility"
                 }
@@ -8084,8 +8139,8 @@
                   "coding": [
                     {
                       "system": "http://hl7.org/fhir/us/carin-bb/CodeSystem/C4BBAdjudicationDiscriminator",
-                      "code": "inoutnetwork",
-                      "display": "In or Out of Network"
+                      "code": "benefitpaymentstatus",
+                      "display": "Benefit Payment Status"
                     }
                   ]
                 },
@@ -8100,6 +8155,48 @@
                 }
               }
             ]
+          }
+        ],
+        "adjudication": [
+          {
+            "category": {
+              "coding": [
+                {
+                  "system": "http://hl7.org/fhir/us/carin-bb/CodeSystem/C4BBAdjudicationDiscriminator",
+                  "code": "billingnetworkstatus",
+                  "display": "Billing Network Status"
+                }
+              ]
+            },
+            "reason": {
+              "coding": [
+                {
+                  "system": "http://hl7.org/fhir/us/carin-bb/CodeSystem/C4BBPayerAdjudicationStatus",
+                  "code": "innetwork",
+                  "display": "In Network"
+                }
+              ]
+            }
+          },
+          {
+            "category": {
+              "coding": [
+                {
+                  "system": "http://hl7.org/fhir/us/carin-bb/CodeSystem/C4BBAdjudicationDiscriminator",
+                  "code": "renderingnetworkstatus",
+                  "display": "Rendering Network Status"
+                }
+              ]
+            },
+            "reason": {
+              "coding": [
+                {
+                  "system": "http://hl7.org/fhir/us/carin-bb/CodeSystem/C4BBPayerAdjudicationStatus",
+                  "code": "innetwork",
+                  "display": "In Network"
+                }
+              ]
+            }
           }
         ],
         "total": [
@@ -8268,29 +8365,6 @@
               "coding": [
                 {
                   "system": "http://hl7.org/fhir/us/carin-bb/CodeSystem/C4BBSupportingInfoType",
-                  "code": "billingnetworkcontractingstatus",
-                  "display": "Billing Network Contracting Status"
-                }
-              ],
-              "text": "Billing Network Contracting Status"
-            },
-            "code": {
-              "coding": [
-                {
-                  "system": "http://hl7.org/fhir/us/carin-bb/CodeSystem/C4BBPayerProviderContractingStatus",
-                  "code": "contracted",
-                  "display": "Contracted"
-                }
-              ],
-              "text": "Contracted"
-            }
-          },
-          {
-            "sequence": 2,
-            "category": {
-              "coding": [
-                {
-                  "system": "http://hl7.org/fhir/us/carin-bb/CodeSystem/C4BBSupportingInfoType",
                   "code": "clmrecvddate",
                   "display": "Claim Received Date"
                 }
@@ -8419,8 +8493,7 @@
               "coding": [
                 {
                   "system": "http://www.ama-assn.org/go/cpt",
-                  "code": "99395",
-                  "display": "Preventive visit, established patient, 18-39 years"
+                  "code": "99395"
                 }
               ],
               "text": "Preventive visit, established patient, 18-39 years"
@@ -8429,7 +8502,7 @@
             "locationCodeableConcept": {
               "coding": [
                 {
-                  "system": "11",
+                  "system": "https://www.cms.gov/Medicare/Coding/place-of-service-codes/Place_of_Service_Code_Set",
                   "code": "11",
                   "display": "Office"
                 }
@@ -8510,8 +8583,8 @@
                   "coding": [
                     {
                       "system": "http://hl7.org/fhir/us/carin-bb/CodeSystem/C4BBAdjudicationDiscriminator",
-                      "code": "inoutnetwork",
-                      "display": "In or Out of Network"
+                      "code": "benefitpaymentstatus",
+                      "display": "Benefit Payment Status"
                     }
                   ]
                 },
@@ -8539,8 +8612,7 @@
               "coding": [
                 {
                   "system": "http://www.ama-assn.org/go/cpt",
-                  "code": "94010",
-                  "display": "Spirometry"
+                  "code": "94010"
                 }
               ],
               "text": "Spirometry"
@@ -8549,7 +8621,7 @@
             "locationCodeableConcept": {
               "coding": [
                 {
-                  "system": "11",
+                  "system": "https://www.cms.gov/Medicare/Coding/place-of-service-codes/Place_of_Service_Code_Set",
                   "code": "11",
                   "display": "Office"
                 }
@@ -8630,8 +8702,8 @@
                   "coding": [
                     {
                       "system": "http://hl7.org/fhir/us/carin-bb/CodeSystem/C4BBAdjudicationDiscriminator",
-                      "code": "inoutnetwork",
-                      "display": "In or Out of Network"
+                      "code": "benefitpaymentstatus",
+                      "display": "Benefit Payment Status"
                     }
                   ]
                 },
@@ -8646,6 +8718,48 @@
                 }
               }
             ]
+          }
+        ],
+        "adjudication": [
+          {
+            "category": {
+              "coding": [
+                {
+                  "system": "http://hl7.org/fhir/us/carin-bb/CodeSystem/C4BBAdjudicationDiscriminator",
+                  "code": "billingnetworkstatus",
+                  "display": "Billing Network Status"
+                }
+              ]
+            },
+            "reason": {
+              "coding": [
+                {
+                  "system": "http://hl7.org/fhir/us/carin-bb/CodeSystem/C4BBPayerAdjudicationStatus",
+                  "code": "innetwork",
+                  "display": "In Network"
+                }
+              ]
+            }
+          },
+          {
+            "category": {
+              "coding": [
+                {
+                  "system": "http://hl7.org/fhir/us/carin-bb/CodeSystem/C4BBAdjudicationDiscriminator",
+                  "code": "renderingnetworkstatus",
+                  "display": "Rendering Network Status"
+                }
+              ]
+            },
+            "reason": {
+              "coding": [
+                {
+                  "system": "http://hl7.org/fhir/us/carin-bb/CodeSystem/C4BBPayerAdjudicationStatus",
+                  "code": "innetwork",
+                  "display": "In Network"
+                }
+              ]
+            }
           }
         ],
         "total": [
@@ -8830,29 +8944,6 @@
               "coding": [
                 {
                   "system": "http://hl7.org/fhir/us/carin-bb/CodeSystem/C4BBSupportingInfoType",
-                  "code": "billingnetworkcontractingstatus",
-                  "display": "Billing Network Contracting Status"
-                }
-              ],
-              "text": "Billing Network Contracting Status"
-            },
-            "code": {
-              "coding": [
-                {
-                  "system": "http://hl7.org/fhir/us/carin-bb/CodeSystem/C4BBPayerProviderContractingStatus",
-                  "code": "contracted",
-                  "display": "Contracted"
-                }
-              ],
-              "text": "Contracted"
-            }
-          },
-          {
-            "sequence": 2,
-            "category": {
-              "coding": [
-                {
-                  "system": "http://hl7.org/fhir/us/carin-bb/CodeSystem/C4BBSupportingInfoType",
                   "code": "clmrecvddate",
                   "display": "Claim Received Date"
                 }
@@ -8933,8 +9024,7 @@
               "coding": [
                 {
                   "system": "http://www.ama-assn.org/go/cpt",
-                  "code": "84443",
-                  "display": "Thyroid stimulating hormone"
+                  "code": "84443"
                 }
               ],
               "text": "Thyroid stimulating hormone"
@@ -8943,7 +9033,7 @@
             "locationCodeableConcept": {
               "coding": [
                 {
-                  "system": "81",
+                  "system": "https://www.cms.gov/Medicare/Coding/place-of-service-codes/Place_of_Service_Code_Set",
                   "code": "81",
                   "display": "Independent Laboratory"
                 }
@@ -9024,8 +9114,8 @@
                   "coding": [
                     {
                       "system": "http://hl7.org/fhir/us/carin-bb/CodeSystem/C4BBAdjudicationDiscriminator",
-                      "code": "inoutnetwork",
-                      "display": "In or Out of Network"
+                      "code": "benefitpaymentstatus",
+                      "display": "Benefit Payment Status"
                     }
                   ]
                 },
@@ -9053,8 +9143,7 @@
               "coding": [
                 {
                   "system": "http://www.ama-assn.org/go/cpt",
-                  "code": "84439",
-                  "display": "Thyroxine; free"
+                  "code": "84439"
                 }
               ],
               "text": "Thyroxine; free"
@@ -9063,7 +9152,7 @@
             "locationCodeableConcept": {
               "coding": [
                 {
-                  "system": "81",
+                  "system": "https://www.cms.gov/Medicare/Coding/place-of-service-codes/Place_of_Service_Code_Set",
                   "code": "81",
                   "display": "Independent Laboratory"
                 }
@@ -9144,8 +9233,8 @@
                   "coding": [
                     {
                       "system": "http://hl7.org/fhir/us/carin-bb/CodeSystem/C4BBAdjudicationDiscriminator",
-                      "code": "inoutnetwork",
-                      "display": "In or Out of Network"
+                      "code": "benefitpaymentstatus",
+                      "display": "Benefit Payment Status"
                     }
                   ]
                 },
@@ -9173,8 +9262,7 @@
               "coding": [
                 {
                   "system": "http://www.ama-assn.org/go/cpt",
-                  "code": "85025",
-                  "display": "Complete blood count with automated differential"
+                  "code": "85025"
                 }
               ],
               "text": "Complete blood count with automated differential"
@@ -9183,7 +9271,7 @@
             "locationCodeableConcept": {
               "coding": [
                 {
-                  "system": "81",
+                  "system": "https://www.cms.gov/Medicare/Coding/place-of-service-codes/Place_of_Service_Code_Set",
                   "code": "81",
                   "display": "Independent Laboratory"
                 }
@@ -9264,8 +9352,8 @@
                   "coding": [
                     {
                       "system": "http://hl7.org/fhir/us/carin-bb/CodeSystem/C4BBAdjudicationDiscriminator",
-                      "code": "inoutnetwork",
-                      "display": "In or Out of Network"
+                      "code": "benefitpaymentstatus",
+                      "display": "Benefit Payment Status"
                     }
                   ]
                 },
@@ -9293,8 +9381,7 @@
               "coding": [
                 {
                   "system": "http://www.ama-assn.org/go/cpt",
-                  "code": "82728",
-                  "display": "Ferritin"
+                  "code": "82728"
                 }
               ],
               "text": "Ferritin"
@@ -9303,7 +9390,7 @@
             "locationCodeableConcept": {
               "coding": [
                 {
-                  "system": "81",
+                  "system": "https://www.cms.gov/Medicare/Coding/place-of-service-codes/Place_of_Service_Code_Set",
                   "code": "81",
                   "display": "Independent Laboratory"
                 }
@@ -9384,8 +9471,8 @@
                   "coding": [
                     {
                       "system": "http://hl7.org/fhir/us/carin-bb/CodeSystem/C4BBAdjudicationDiscriminator",
-                      "code": "inoutnetwork",
-                      "display": "In or Out of Network"
+                      "code": "benefitpaymentstatus",
+                      "display": "Benefit Payment Status"
                     }
                   ]
                 },
@@ -9413,8 +9500,7 @@
               "coding": [
                 {
                   "system": "http://www.ama-assn.org/go/cpt",
-                  "code": "80061",
-                  "display": "Lipid panel"
+                  "code": "80061"
                 }
               ],
               "text": "Lipid panel"
@@ -9423,7 +9509,7 @@
             "locationCodeableConcept": {
               "coding": [
                 {
-                  "system": "81",
+                  "system": "https://www.cms.gov/Medicare/Coding/place-of-service-codes/Place_of_Service_Code_Set",
                   "code": "81",
                   "display": "Independent Laboratory"
                 }
@@ -9504,8 +9590,8 @@
                   "coding": [
                     {
                       "system": "http://hl7.org/fhir/us/carin-bb/CodeSystem/C4BBAdjudicationDiscriminator",
-                      "code": "inoutnetwork",
-                      "display": "In or Out of Network"
+                      "code": "benefitpaymentstatus",
+                      "display": "Benefit Payment Status"
                     }
                   ]
                 },
@@ -9533,8 +9619,7 @@
               "coding": [
                 {
                   "system": "http://www.ama-assn.org/go/cpt",
-                  "code": "80048",
-                  "display": "Basic metabolic panel"
+                  "code": "80048"
                 }
               ],
               "text": "Basic metabolic panel"
@@ -9543,7 +9628,7 @@
             "locationCodeableConcept": {
               "coding": [
                 {
-                  "system": "81",
+                  "system": "https://www.cms.gov/Medicare/Coding/place-of-service-codes/Place_of_Service_Code_Set",
                   "code": "81",
                   "display": "Independent Laboratory"
                 }
@@ -9624,8 +9709,8 @@
                   "coding": [
                     {
                       "system": "http://hl7.org/fhir/us/carin-bb/CodeSystem/C4BBAdjudicationDiscriminator",
-                      "code": "inoutnetwork",
-                      "display": "In or Out of Network"
+                      "code": "benefitpaymentstatus",
+                      "display": "Benefit Payment Status"
                     }
                   ]
                 },
@@ -9640,6 +9725,48 @@
                 }
               }
             ]
+          }
+        ],
+        "adjudication": [
+          {
+            "category": {
+              "coding": [
+                {
+                  "system": "http://hl7.org/fhir/us/carin-bb/CodeSystem/C4BBAdjudicationDiscriminator",
+                  "code": "billingnetworkstatus",
+                  "display": "Billing Network Status"
+                }
+              ]
+            },
+            "reason": {
+              "coding": [
+                {
+                  "system": "http://hl7.org/fhir/us/carin-bb/CodeSystem/C4BBPayerAdjudicationStatus",
+                  "code": "innetwork",
+                  "display": "In Network"
+                }
+              ]
+            }
+          },
+          {
+            "category": {
+              "coding": [
+                {
+                  "system": "http://hl7.org/fhir/us/carin-bb/CodeSystem/C4BBAdjudicationDiscriminator",
+                  "code": "renderingnetworkstatus",
+                  "display": "Rendering Network Status"
+                }
+              ]
+            },
+            "reason": {
+              "coding": [
+                {
+                  "system": "http://hl7.org/fhir/us/carin-bb/CodeSystem/C4BBPayerAdjudicationStatus",
+                  "code": "innetwork",
+                  "display": "In Network"
+                }
+              ]
+            }
           }
         ],
         "total": [
@@ -9824,29 +9951,6 @@
               "coding": [
                 {
                   "system": "http://hl7.org/fhir/us/carin-bb/CodeSystem/C4BBSupportingInfoType",
-                  "code": "billingnetworkcontractingstatus",
-                  "display": "Billing Network Contracting Status"
-                }
-              ],
-              "text": "Billing Network Contracting Status"
-            },
-            "code": {
-              "coding": [
-                {
-                  "system": "http://hl7.org/fhir/us/carin-bb/CodeSystem/C4BBPayerProviderContractingStatus",
-                  "code": "contracted",
-                  "display": "Contracted"
-                }
-              ],
-              "text": "Contracted"
-            }
-          },
-          {
-            "sequence": 2,
-            "category": {
-              "coding": [
-                {
-                  "system": "http://hl7.org/fhir/us/carin-bb/CodeSystem/C4BBSupportingInfoType",
                   "code": "clmrecvddate",
                   "display": "Claim Received Date"
                 }
@@ -9903,8 +10007,7 @@
               "coding": [
                 {
                   "system": "http://www.ama-assn.org/go/cpt",
-                  "code": "90834",
-                  "display": "Psychotherapy, 45 minutes"
+                  "code": "90834"
                 }
               ],
               "text": "Psychotherapy, 45 minutes"
@@ -9914,8 +10017,7 @@
                 "coding": [
                   {
                     "system": "http://www.ama-assn.org/go/cpt",
-                    "code": "95",
-                    "display": "Synchronous telemedicine service"
+                    "code": "95"
                   }
                 ],
                 "text": "Synchronous telemedicine service"
@@ -9925,12 +10027,12 @@
             "locationCodeableConcept": {
               "coding": [
                 {
-                  "system": "10",
+                  "system": "https://www.cms.gov/Medicare/Coding/place-of-service-codes/Place_of_Service_Code_Set",
                   "code": "10",
-                  "display": "Telehealth Provided in Patient Home"
+                  "display": "Telehealth Provided in Patient’s Home"
                 }
               ],
-              "text": "Telehealth Provided in Patient Home"
+              "text": "Telehealth Provided in Patient’s Home"
             },
             "quantity": {
               "value": 1
@@ -10006,8 +10108,8 @@
                   "coding": [
                     {
                       "system": "http://hl7.org/fhir/us/carin-bb/CodeSystem/C4BBAdjudicationDiscriminator",
-                      "code": "inoutnetwork",
-                      "display": "In or Out of Network"
+                      "code": "benefitpaymentstatus",
+                      "display": "Benefit Payment Status"
                     }
                   ]
                 },
@@ -10022,6 +10124,48 @@
                 }
               }
             ]
+          }
+        ],
+        "adjudication": [
+          {
+            "category": {
+              "coding": [
+                {
+                  "system": "http://hl7.org/fhir/us/carin-bb/CodeSystem/C4BBAdjudicationDiscriminator",
+                  "code": "billingnetworkstatus",
+                  "display": "Billing Network Status"
+                }
+              ]
+            },
+            "reason": {
+              "coding": [
+                {
+                  "system": "http://hl7.org/fhir/us/carin-bb/CodeSystem/C4BBPayerAdjudicationStatus",
+                  "code": "innetwork",
+                  "display": "In Network"
+                }
+              ]
+            }
+          },
+          {
+            "category": {
+              "coding": [
+                {
+                  "system": "http://hl7.org/fhir/us/carin-bb/CodeSystem/C4BBAdjudicationDiscriminator",
+                  "code": "renderingnetworkstatus",
+                  "display": "Rendering Network Status"
+                }
+              ]
+            },
+            "reason": {
+              "coding": [
+                {
+                  "system": "http://hl7.org/fhir/us/carin-bb/CodeSystem/C4BBPayerAdjudicationStatus",
+                  "code": "innetwork",
+                  "display": "In Network"
+                }
+              ]
+            }
           }
         ],
         "total": [
@@ -10190,29 +10334,6 @@
               "coding": [
                 {
                   "system": "http://hl7.org/fhir/us/carin-bb/CodeSystem/C4BBSupportingInfoType",
-                  "code": "billingnetworkcontractingstatus",
-                  "display": "Billing Network Contracting Status"
-                }
-              ],
-              "text": "Billing Network Contracting Status"
-            },
-            "code": {
-              "coding": [
-                {
-                  "system": "http://hl7.org/fhir/us/carin-bb/CodeSystem/C4BBPayerProviderContractingStatus",
-                  "code": "contracted",
-                  "display": "Contracted"
-                }
-              ],
-              "text": "Contracted"
-            }
-          },
-          {
-            "sequence": 2,
-            "category": {
-              "coding": [
-                {
-                  "system": "http://hl7.org/fhir/us/carin-bb/CodeSystem/C4BBSupportingInfoType",
                   "code": "clmrecvddate",
                   "display": "Claim Received Date"
                 }
@@ -10293,8 +10414,7 @@
               "coding": [
                 {
                   "system": "http://www.ama-assn.org/go/cpt",
-                  "code": "99395",
-                  "display": "Preventive visit, established patient, 18-39 years"
+                  "code": "99395"
                 }
               ],
               "text": "Preventive visit, established patient, 18-39 years"
@@ -10303,7 +10423,7 @@
             "locationCodeableConcept": {
               "coding": [
                 {
-                  "system": "11",
+                  "system": "https://www.cms.gov/Medicare/Coding/place-of-service-codes/Place_of_Service_Code_Set",
                   "code": "11",
                   "display": "Office"
                 }
@@ -10384,8 +10504,8 @@
                   "coding": [
                     {
                       "system": "http://hl7.org/fhir/us/carin-bb/CodeSystem/C4BBAdjudicationDiscriminator",
-                      "code": "inoutnetwork",
-                      "display": "In or Out of Network"
+                      "code": "benefitpaymentstatus",
+                      "display": "Benefit Payment Status"
                     }
                   ]
                 },
@@ -10423,7 +10543,7 @@
             "locationCodeableConcept": {
               "coding": [
                 {
-                  "system": "11",
+                  "system": "https://www.cms.gov/Medicare/Coding/place-of-service-codes/Place_of_Service_Code_Set",
                   "code": "11",
                   "display": "Office"
                 }
@@ -10504,8 +10624,8 @@
                   "coding": [
                     {
                       "system": "http://hl7.org/fhir/us/carin-bb/CodeSystem/C4BBAdjudicationDiscriminator",
-                      "code": "inoutnetwork",
-                      "display": "In or Out of Network"
+                      "code": "benefitpaymentstatus",
+                      "display": "Benefit Payment Status"
                     }
                   ]
                 },
@@ -10520,6 +10640,48 @@
                 }
               }
             ]
+          }
+        ],
+        "adjudication": [
+          {
+            "category": {
+              "coding": [
+                {
+                  "system": "http://hl7.org/fhir/us/carin-bb/CodeSystem/C4BBAdjudicationDiscriminator",
+                  "code": "billingnetworkstatus",
+                  "display": "Billing Network Status"
+                }
+              ]
+            },
+            "reason": {
+              "coding": [
+                {
+                  "system": "http://hl7.org/fhir/us/carin-bb/CodeSystem/C4BBPayerAdjudicationStatus",
+                  "code": "innetwork",
+                  "display": "In Network"
+                }
+              ]
+            }
+          },
+          {
+            "category": {
+              "coding": [
+                {
+                  "system": "http://hl7.org/fhir/us/carin-bb/CodeSystem/C4BBAdjudicationDiscriminator",
+                  "code": "renderingnetworkstatus",
+                  "display": "Rendering Network Status"
+                }
+              ]
+            },
+            "reason": {
+              "coding": [
+                {
+                  "system": "http://hl7.org/fhir/us/carin-bb/CodeSystem/C4BBPayerAdjudicationStatus",
+                  "code": "innetwork",
+                  "display": "In Network"
+                }
+              ]
+            }
           }
         ],
         "total": [
@@ -10704,29 +10866,6 @@
               "coding": [
                 {
                   "system": "http://hl7.org/fhir/us/carin-bb/CodeSystem/C4BBSupportingInfoType",
-                  "code": "billingnetworkcontractingstatus",
-                  "display": "Billing Network Contracting Status"
-                }
-              ],
-              "text": "Billing Network Contracting Status"
-            },
-            "code": {
-              "coding": [
-                {
-                  "system": "http://hl7.org/fhir/us/carin-bb/CodeSystem/C4BBPayerProviderContractingStatus",
-                  "code": "contracted",
-                  "display": "Contracted"
-                }
-              ],
-              "text": "Contracted"
-            }
-          },
-          {
-            "sequence": 2,
-            "category": {
-              "coding": [
-                {
-                  "system": "http://hl7.org/fhir/us/carin-bb/CodeSystem/C4BBSupportingInfoType",
                   "code": "clmrecvddate",
                   "display": "Claim Received Date"
                 }
@@ -10783,8 +10922,7 @@
               "coding": [
                 {
                   "system": "http://www.ama-assn.org/go/cpt",
-                  "code": "90834",
-                  "display": "Psychotherapy, 45 minutes"
+                  "code": "90834"
                 }
               ],
               "text": "Psychotherapy, 45 minutes"
@@ -10794,8 +10932,7 @@
                 "coding": [
                   {
                     "system": "http://www.ama-assn.org/go/cpt",
-                    "code": "95",
-                    "display": "Synchronous telemedicine service"
+                    "code": "95"
                   }
                 ],
                 "text": "Synchronous telemedicine service"
@@ -10805,12 +10942,12 @@
             "locationCodeableConcept": {
               "coding": [
                 {
-                  "system": "10",
+                  "system": "https://www.cms.gov/Medicare/Coding/place-of-service-codes/Place_of_Service_Code_Set",
                   "code": "10",
-                  "display": "Telehealth Provided in Patient Home"
+                  "display": "Telehealth Provided in Patient’s Home"
                 }
               ],
-              "text": "Telehealth Provided in Patient Home"
+              "text": "Telehealth Provided in Patient’s Home"
             },
             "quantity": {
               "value": 1
@@ -10886,8 +11023,8 @@
                   "coding": [
                     {
                       "system": "http://hl7.org/fhir/us/carin-bb/CodeSystem/C4BBAdjudicationDiscriminator",
-                      "code": "inoutnetwork",
-                      "display": "In or Out of Network"
+                      "code": "benefitpaymentstatus",
+                      "display": "Benefit Payment Status"
                     }
                   ]
                 },
@@ -10902,6 +11039,48 @@
                 }
               }
             ]
+          }
+        ],
+        "adjudication": [
+          {
+            "category": {
+              "coding": [
+                {
+                  "system": "http://hl7.org/fhir/us/carin-bb/CodeSystem/C4BBAdjudicationDiscriminator",
+                  "code": "billingnetworkstatus",
+                  "display": "Billing Network Status"
+                }
+              ]
+            },
+            "reason": {
+              "coding": [
+                {
+                  "system": "http://hl7.org/fhir/us/carin-bb/CodeSystem/C4BBPayerAdjudicationStatus",
+                  "code": "innetwork",
+                  "display": "In Network"
+                }
+              ]
+            }
+          },
+          {
+            "category": {
+              "coding": [
+                {
+                  "system": "http://hl7.org/fhir/us/carin-bb/CodeSystem/C4BBAdjudicationDiscriminator",
+                  "code": "renderingnetworkstatus",
+                  "display": "Rendering Network Status"
+                }
+              ]
+            },
+            "reason": {
+              "coding": [
+                {
+                  "system": "http://hl7.org/fhir/us/carin-bb/CodeSystem/C4BBPayerAdjudicationStatus",
+                  "code": "innetwork",
+                  "display": "In Network"
+                }
+              ]
+            }
           }
         ],
         "total": [
@@ -11070,29 +11249,6 @@
               "coding": [
                 {
                   "system": "http://hl7.org/fhir/us/carin-bb/CodeSystem/C4BBSupportingInfoType",
-                  "code": "billingnetworkcontractingstatus",
-                  "display": "Billing Network Contracting Status"
-                }
-              ],
-              "text": "Billing Network Contracting Status"
-            },
-            "code": {
-              "coding": [
-                {
-                  "system": "http://hl7.org/fhir/us/carin-bb/CodeSystem/C4BBPayerProviderContractingStatus",
-                  "code": "contracted",
-                  "display": "Contracted"
-                }
-              ],
-              "text": "Contracted"
-            }
-          },
-          {
-            "sequence": 2,
-            "category": {
-              "coding": [
-                {
-                  "system": "http://hl7.org/fhir/us/carin-bb/CodeSystem/C4BBSupportingInfoType",
                   "code": "clmrecvddate",
                   "display": "Claim Received Date"
                 }
@@ -11173,8 +11329,7 @@
               "coding": [
                 {
                   "system": "http://www.ama-assn.org/go/cpt",
-                  "code": "99213",
-                  "display": "Office/outpatient visit, established patient, low"
+                  "code": "99213"
                 }
               ],
               "text": "Office/outpatient visit, established patient, low"
@@ -11183,7 +11338,7 @@
             "locationCodeableConcept": {
               "coding": [
                 {
-                  "system": "11",
+                  "system": "https://www.cms.gov/Medicare/Coding/place-of-service-codes/Place_of_Service_Code_Set",
                   "code": "11",
                   "display": "Office"
                 }
@@ -11264,8 +11419,8 @@
                   "coding": [
                     {
                       "system": "http://hl7.org/fhir/us/carin-bb/CodeSystem/C4BBAdjudicationDiscriminator",
-                      "code": "inoutnetwork",
-                      "display": "In or Out of Network"
+                      "code": "benefitpaymentstatus",
+                      "display": "Benefit Payment Status"
                     }
                   ]
                 },
@@ -11293,8 +11448,7 @@
               "coding": [
                 {
                   "system": "http://www.ama-assn.org/go/cpt",
-                  "code": "84443",
-                  "display": "Thyroid stimulating hormone"
+                  "code": "84443"
                 }
               ],
               "text": "Thyroid stimulating hormone"
@@ -11303,7 +11457,7 @@
             "locationCodeableConcept": {
               "coding": [
                 {
-                  "system": "11",
+                  "system": "https://www.cms.gov/Medicare/Coding/place-of-service-codes/Place_of_Service_Code_Set",
                   "code": "11",
                   "display": "Office"
                 }
@@ -11384,8 +11538,8 @@
                   "coding": [
                     {
                       "system": "http://hl7.org/fhir/us/carin-bb/CodeSystem/C4BBAdjudicationDiscriminator",
-                      "code": "inoutnetwork",
-                      "display": "In or Out of Network"
+                      "code": "benefitpaymentstatus",
+                      "display": "Benefit Payment Status"
                     }
                   ]
                 },
@@ -11413,8 +11567,7 @@
               "coding": [
                 {
                   "system": "http://www.ama-assn.org/go/cpt",
-                  "code": "84439",
-                  "display": "Thyroxine; free"
+                  "code": "84439"
                 }
               ],
               "text": "Thyroxine; free"
@@ -11423,7 +11576,7 @@
             "locationCodeableConcept": {
               "coding": [
                 {
-                  "system": "11",
+                  "system": "https://www.cms.gov/Medicare/Coding/place-of-service-codes/Place_of_Service_Code_Set",
                   "code": "11",
                   "display": "Office"
                 }
@@ -11504,8 +11657,8 @@
                   "coding": [
                     {
                       "system": "http://hl7.org/fhir/us/carin-bb/CodeSystem/C4BBAdjudicationDiscriminator",
-                      "code": "inoutnetwork",
-                      "display": "In or Out of Network"
+                      "code": "benefitpaymentstatus",
+                      "display": "Benefit Payment Status"
                     }
                   ]
                 },
@@ -11520,6 +11673,48 @@
                 }
               }
             ]
+          }
+        ],
+        "adjudication": [
+          {
+            "category": {
+              "coding": [
+                {
+                  "system": "http://hl7.org/fhir/us/carin-bb/CodeSystem/C4BBAdjudicationDiscriminator",
+                  "code": "billingnetworkstatus",
+                  "display": "Billing Network Status"
+                }
+              ]
+            },
+            "reason": {
+              "coding": [
+                {
+                  "system": "http://hl7.org/fhir/us/carin-bb/CodeSystem/C4BBPayerAdjudicationStatus",
+                  "code": "innetwork",
+                  "display": "In Network"
+                }
+              ]
+            }
+          },
+          {
+            "category": {
+              "coding": [
+                {
+                  "system": "http://hl7.org/fhir/us/carin-bb/CodeSystem/C4BBAdjudicationDiscriminator",
+                  "code": "renderingnetworkstatus",
+                  "display": "Rendering Network Status"
+                }
+              ]
+            },
+            "reason": {
+              "coding": [
+                {
+                  "system": "http://hl7.org/fhir/us/carin-bb/CodeSystem/C4BBPayerAdjudicationStatus",
+                  "code": "innetwork",
+                  "display": "In Network"
+                }
+              ]
+            }
           }
         ],
         "total": [

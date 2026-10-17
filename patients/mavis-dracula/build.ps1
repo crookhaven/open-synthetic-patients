@@ -63,12 +63,12 @@ Org 'org_womens' "Atlas Women's Health"
 Org 'org_lab' 'Atlas Reference Laboratory'
 Org 'payer_med' 'Atlas Marketplace Health Plan' 'pay' 'Payer'
 
-Prac 'pr_pcp' 'Nadia' 'Petrescu' 'MD' 'org_pcp' '207Q00000X' 'Family Medicine'
-Prac 'pr_uc' 'Kevin' 'Brooks' 'MD' 'org_uc' '207P00000X' 'Emergency Medicine'
-Prac 'pr_neuro' 'Ivan' 'Novak' 'MD' 'org_neuro' '2084N0400X' 'Neurology'
+Prac 'pr_pcp' 'Nadia' 'Petrescu' 'MD' 'org_pcp' '207Q00000X' 'Family Medicine Physician'
+Prac 'pr_uc' 'Kevin' 'Brooks' 'MD' 'org_uc' '207P00000X' 'Emergency Medicine Physician'
+Prac 'pr_neuro' 'Ivan' 'Novak' 'MD' 'org_neuro' '2084N0400X' 'Neurology Physician'
 Prac 'pr_bh' 'Elena' 'Popa' 'LCSW' 'org_bh' '1041C0700X' 'Clinical Social Worker'
-Prac 'pr_gyn' 'Sarah' 'Wolfe' 'MD' 'org_womens' '207V00000X' 'Obstetrics & Gynecology'
-Prac 'pr_path' 'Laura' 'Kim' 'MD' 'org_lab' '207ZP0102X' 'Anatomic & Clinical Pathology'
+Prac 'pr_gyn' 'Sarah' 'Wolfe' 'MD' 'org_womens' '207V00000X' 'Obstetrics & Gynecology Physician'
+Prac 'pr_path' 'Laura' 'Kim' 'MD' 'org_lab' '207ZP0102X' 'Anatomic Pathology & Clinical Pathology Physician'
 Prac 'pr_rn' 'Marta' 'Jones' 'RN' 'org_pcp' '163W00000X' 'Registered Nurse'
 
 Coverage 'cov_med' 'payer_med' 'HMO' 'health maintenance organization policy' 'Atlas Silver 4500 HMO' 'Individual Marketplace' '2025-01-01' 'AMP-562-38-1988' '38'
@@ -266,11 +266,11 @@ Pro 'clm_pcp26a' '2026-03-10' '2026-03-13' '2026-03-31' 'org_pcp' 'pr_pcp' 'e_pc
 Pro 'clm_lab26a' '2026-03-10' '2026-03-12' '2026-03-30' 'org_lab' 'pr_path' 'e_pcp26a' @($DX_HYPO, (Dx 'Z00.00' 'Encounter for general adult medical examination without abnormal findings')) @(
   (Line $CPT '84443' 'Thyroid stimulating hormone' 45 22 22), (Line $CPT '84439' 'Thyroxine; free' 40 18 18), (Line $CPT '85025' 'Complete blood count with automated differential' 35 9 0),
   (Line $CPT '82728' 'Ferritin' 40 17 17), (Line $CPT '80061' 'Lipid panel' 55 14 0), (Line $CPT '80048' 'Basic metabolic panel' 38 9 0)) '81' 'Independent Laboratory' 'pr_pcp'
-Pro 'clm_bh26a' '2026-04-21' '2026-04-24' '2026-05-12' 'org_bh' 'pr_bh' 'e_bh26a' @($DX_GAD) @((Line $CPT '90834' 'Psychotherapy, 45 minutes' 150 96 30 @{ mod = '95'; modDisp = 'Synchronous telemedicine service' })) '10' 'Telehealth Provided in Patient Home' 'pr_pcp'
+Pro 'clm_bh26a' '2026-04-21' '2026-04-24' '2026-05-12' 'org_bh' 'pr_bh' 'e_bh26a' @($DX_GAD) @((Line $CPT '90834' 'Psychotherapy, 45 minutes' 150 96 30 @{ mod = '95'; modDisp = 'Synchronous telemedicine service' })) '10' "Telehealth Provided in Patient$([char]0x2019)s Home" 'pr_pcp'
 Pro 'clm_gyn26' '2026-06-02' '2026-06-05' '2026-06-23' 'org_womens' 'pr_gyn' 'e_gyn26' @((Dx 'Z01.419' 'Encounter for gynecological examination (general) (routine) without abnormal findings'), (Dx 'Z12.4' 'Encounter for screening for malignant neoplasm of cervix')) @(
   (Line $CPT '99395' 'Preventive visit, established patient, 18-39 years' 280 172 0),
   (Line $HCPCS 'Q0091' 'Screening Papanicolaou smear; obtaining, preparing and conveyance to laboratory' 60 38 0))
-Pro 'clm_bh26b' '2026-07-14' '2026-07-17' '2026-08-04' 'org_bh' 'pr_bh' 'e_bh26b' @($DX_GAD) @((Line $CPT '90834' 'Psychotherapy, 45 minutes' 150 96 30 @{ mod = '95'; modDisp = 'Synchronous telemedicine service' })) '10' 'Telehealth Provided in Patient Home' 'pr_pcp'
+Pro 'clm_bh26b' '2026-07-14' '2026-07-17' '2026-08-04' 'org_bh' 'pr_bh' 'e_bh26b' @($DX_GAD) @((Line $CPT '90834' 'Psychotherapy, 45 minutes' 150 96 30 @{ mod = '95'; modDisp = 'Synchronous telemedicine service' })) '10' "Telehealth Provided in Patient$([char]0x2019)s Home" 'pr_pcp'
 Pro 'clm_pcp26b' '2026-09-08' '2026-09-11' '2026-09-29' 'org_pcp' 'pr_pcp' 'e_pcp26b' @($DX_HYPO, (Dx 'J30.2' 'Other seasonal allergic rhinitis')) @(
   (Line $CPT '99213' 'Office/outpatient visit, established patient, low' 180 98 30),
   (Line $CPT '84443' 'Thyroid stimulating hormone' 45 22 22),
