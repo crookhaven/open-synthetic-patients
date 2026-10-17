@@ -1,0 +1,4724 @@
+{
+  "FormatID": "M5 Whole Health JSON",
+  "MessageId": "0aa2c53c-f34d-4598-8fec-c911e1f9372a",
+  "model": "PAT_CLINICAL_V1",
+  "patient": {
+    "demographics": {
+      "firstName": "Mavis",
+      "lastName": "Dracula",
+      "middleName": null,
+      "birthDate": "1988-02-14",
+      "birthSex": {
+        "text": "Female",
+        "codings": [
+          {
+            "code": "F",
+            "display": "Female",
+            "system": "http://hl7.org/fhir/us/core/CodeSystem/birthsex"
+          },
+          {
+            "code": "248152002",
+            "display": "Female",
+            "system": "http://snomed.info/sct"
+          }
+        ]
+      },
+      "genderIdentity": {
+        "text": null,
+        "codings": []
+      },
+      "race": {
+        "text": "White",
+        "codings": [
+          {
+            "code": "2106-3",
+            "display": "White",
+            "system": "urn:oid:2.16.840.1.113883.6.238"
+          }
+        ]
+      },
+      "ethnicity": {
+        "text": "Not Hispanic or Latino",
+        "codings": [
+          {
+            "code": "2186-5",
+            "display": "Not Hispanic or Latino",
+            "system": "urn:oid:2.16.840.1.113883.6.238"
+          }
+        ]
+      },
+      "maritalStatus": {
+        "text": "Married",
+        "codings": [
+          {
+            "code": "M",
+            "display": "Married",
+            "system": "http://terminology.hl7.org/CodeSystem/v3-MaritalStatus"
+          }
+        ]
+      },
+      "primaryLanguage": {
+        "text": "English (United States)",
+        "codings": [
+          {
+            "code": "en-US",
+            "display": "English (United States)",
+            "system": "urn:ietf:bcp:47"
+          }
+        ]
+      },
+      "deathDate": null,
+      "deceased": {
+        "text": null,
+        "codings": []
+      },
+      "patientIdentifier": "MVD-SYN-0000000038-2",
+      "currentAddress": "1 Castle Hill Road, Springfield, IL, 62703",
+      "emailAddress": "mavis.dracula@example.org",
+      "telecom": "555-0138"
+    },
+    "allergies": [
+      {
+        "substance": {
+          "text": "Sulfamethoxazole (sulfa antibiotics)",
+          "codings": [
+            {
+              "code": "10180",
+              "display": "sulfamethoxazole",
+              "system": "http://www.nlm.nih.gov/research/umls/rxnorm"
+            }
+          ]
+        },
+        "category": {
+          "text": "medication",
+          "codings": []
+        },
+        "reaction": {
+          "text": "Widespread rash",
+          "codings": [
+            {
+              "code": "271807003",
+              "display": "Eruption",
+              "system": "http://snomed.info/sct"
+            }
+          ]
+        },
+        "severity": {
+          "text": "moderate",
+          "codings": []
+        },
+        "effectiveDate": "2012-09-03",
+        "clinicalStatus": {
+          "text": "Active",
+          "codings": [
+            {
+              "code": "active",
+              "display": "Active",
+              "system": "http://terminology.hl7.org/CodeSystem/allergyintolerance-clinical"
+            }
+          ]
+        },
+        "verificationStatus": {
+          "text": "Confirmed",
+          "codings": [
+            {
+              "code": "confirmed",
+              "display": "Confirmed",
+              "system": "http://terminology.hl7.org/CodeSystem/allergyintolerance-verification"
+            }
+          ]
+        }
+      },
+      {
+        "substance": {
+          "text": "Garlic",
+          "codings": []
+        },
+        "category": {
+          "text": "food",
+          "codings": []
+        },
+        "reaction": {
+          "text": "Hives",
+          "codings": [
+            {
+              "code": "126485001",
+              "display": "Urticaria",
+              "system": "http://snomed.info/sct"
+            }
+          ]
+        },
+        "severity": {
+          "text": "mild",
+          "codings": []
+        },
+        "effectiveDate": "2016-10-31",
+        "clinicalStatus": {
+          "text": "Active",
+          "codings": [
+            {
+              "code": "active",
+              "display": "Active",
+              "system": "http://terminology.hl7.org/CodeSystem/allergyintolerance-clinical"
+            }
+          ]
+        },
+        "verificationStatus": {
+          "text": "Confirmed",
+          "codings": [
+            {
+              "code": "confirmed",
+              "display": "Confirmed",
+              "system": "http://terminology.hl7.org/CodeSystem/allergyintolerance-verification"
+            }
+          ]
+        }
+      }
+    ],
+    "conditions": [
+      {
+        "condition": {
+          "text": "Seasonal allergic rhinitis",
+          "codings": [
+            {
+              "code": "367498001",
+              "display": "Seasonal allergic rhinitis",
+              "system": "http://snomed.info/sct"
+            },
+            {
+              "code": "J30.2",
+              "display": "Other seasonal allergic rhinitis",
+              "system": "http://hl7.org/fhir/sid/icd-10-cm"
+            }
+          ]
+        },
+        "onsetDate": "2005-04-01",
+        "conditionStatus": {
+          "text": "Active",
+          "codings": [
+            {
+              "code": "active",
+              "display": "Active",
+              "system": "http://terminology.hl7.org/CodeSystem/condition-clinical"
+            }
+          ]
+        },
+        "resolutionDate": null,
+        "clinicalStatus": {
+          "text": "Active",
+          "codings": [
+            {
+              "code": "active",
+              "display": "Active",
+              "system": "http://terminology.hl7.org/CodeSystem/condition-clinical"
+            }
+          ]
+        },
+        "verificationStatus": {
+          "text": "Confirmed",
+          "codings": [
+            {
+              "code": "confirmed",
+              "display": "Confirmed",
+              "system": "http://terminology.hl7.org/CodeSystem/condition-ver-status"
+            }
+          ]
+        },
+        "conditionCategory": {
+          "text": "Problem List Item",
+          "codings": [
+            {
+              "code": "problem-list-item",
+              "display": "Problem List Item",
+              "system": "http://terminology.hl7.org/CodeSystem/condition-category"
+            }
+          ]
+        },
+        "assertedDate": "2005-04-01",
+        "recordedDate": "2005-04-01"
+      },
+      {
+        "condition": {
+          "text": "Mild persistent asthma",
+          "codings": [
+            {
+              "code": "426979002",
+              "display": "Mild persistent asthma",
+              "system": "http://snomed.info/sct"
+            },
+            {
+              "code": "J45.30",
+              "display": "Mild persistent asthma, uncomplicated",
+              "system": "http://hl7.org/fhir/sid/icd-10-cm"
+            }
+          ]
+        },
+        "onsetDate": "2009-04-01",
+        "conditionStatus": {
+          "text": "Active",
+          "codings": [
+            {
+              "code": "active",
+              "display": "Active",
+              "system": "http://terminology.hl7.org/CodeSystem/condition-clinical"
+            }
+          ]
+        },
+        "resolutionDate": null,
+        "clinicalStatus": {
+          "text": "Active",
+          "codings": [
+            {
+              "code": "active",
+              "display": "Active",
+              "system": "http://terminology.hl7.org/CodeSystem/condition-clinical"
+            }
+          ]
+        },
+        "verificationStatus": {
+          "text": "Confirmed",
+          "codings": [
+            {
+              "code": "confirmed",
+              "display": "Confirmed",
+              "system": "http://terminology.hl7.org/CodeSystem/condition-ver-status"
+            }
+          ]
+        },
+        "conditionCategory": {
+          "text": "Problem List Item",
+          "codings": [
+            {
+              "code": "problem-list-item",
+              "display": "Problem List Item",
+              "system": "http://terminology.hl7.org/CodeSystem/condition-category"
+            }
+          ]
+        },
+        "assertedDate": "2009-04-01",
+        "recordedDate": "2009-04-01"
+      },
+      {
+        "condition": {
+          "text": "Migraine without aura",
+          "codings": [
+            {
+              "code": "56097005",
+              "display": "Migraine without aura",
+              "system": "http://snomed.info/sct"
+            },
+            {
+              "code": "G43.009",
+              "display": "Migraine without aura, not intractable, without status migrainosus",
+              "system": "http://hl7.org/fhir/sid/icd-10-cm"
+            }
+          ]
+        },
+        "onsetDate": "2014-03-01",
+        "conditionStatus": {
+          "text": "Active",
+          "codings": [
+            {
+              "code": "active",
+              "display": "Active",
+              "system": "http://terminology.hl7.org/CodeSystem/condition-clinical"
+            }
+          ]
+        },
+        "resolutionDate": null,
+        "clinicalStatus": {
+          "text": "Active",
+          "codings": [
+            {
+              "code": "active",
+              "display": "Active",
+              "system": "http://terminology.hl7.org/CodeSystem/condition-clinical"
+            }
+          ]
+        },
+        "verificationStatus": {
+          "text": "Confirmed",
+          "codings": [
+            {
+              "code": "confirmed",
+              "display": "Confirmed",
+              "system": "http://terminology.hl7.org/CodeSystem/condition-ver-status"
+            }
+          ]
+        },
+        "conditionCategory": {
+          "text": "Problem List Item",
+          "codings": [
+            {
+              "code": "problem-list-item",
+              "display": "Problem List Item",
+              "system": "http://terminology.hl7.org/CodeSystem/condition-category"
+            }
+          ]
+        },
+        "assertedDate": "2014-03-01",
+        "recordedDate": "2014-03-01"
+      },
+      {
+        "condition": {
+          "text": "Hypothyroidism",
+          "codings": [
+            {
+              "code": "40930008",
+              "display": "Hypothyroidism",
+              "system": "http://snomed.info/sct"
+            },
+            {
+              "code": "E03.9",
+              "display": "Hypothyroidism, unspecified",
+              "system": "http://hl7.org/fhir/sid/icd-10-cm"
+            }
+          ]
+        },
+        "onsetDate": "2017-08-15",
+        "conditionStatus": {
+          "text": "Active",
+          "codings": [
+            {
+              "code": "active",
+              "display": "Active",
+              "system": "http://terminology.hl7.org/CodeSystem/condition-clinical"
+            }
+          ]
+        },
+        "resolutionDate": null,
+        "clinicalStatus": {
+          "text": "Active",
+          "codings": [
+            {
+              "code": "active",
+              "display": "Active",
+              "system": "http://terminology.hl7.org/CodeSystem/condition-clinical"
+            }
+          ]
+        },
+        "verificationStatus": {
+          "text": "Confirmed",
+          "codings": [
+            {
+              "code": "confirmed",
+              "display": "Confirmed",
+              "system": "http://terminology.hl7.org/CodeSystem/condition-ver-status"
+            }
+          ]
+        },
+        "conditionCategory": {
+          "text": "Problem List Item",
+          "codings": [
+            {
+              "code": "problem-list-item",
+              "display": "Problem List Item",
+              "system": "http://terminology.hl7.org/CodeSystem/condition-category"
+            }
+          ]
+        },
+        "assertedDate": "2017-08-15",
+        "recordedDate": "2017-08-15"
+      },
+      {
+        "condition": {
+          "text": "Generalized anxiety disorder",
+          "codings": [
+            {
+              "code": "21897009",
+              "display": "Generalized anxiety disorder",
+              "system": "http://snomed.info/sct"
+            },
+            {
+              "code": "F41.1",
+              "display": "Generalized anxiety disorder",
+              "system": "http://hl7.org/fhir/sid/icd-10-cm"
+            }
+          ]
+        },
+        "onsetDate": "2021-02-10",
+        "conditionStatus": {
+          "text": "Active",
+          "codings": [
+            {
+              "code": "active",
+              "display": "Active",
+              "system": "http://terminology.hl7.org/CodeSystem/condition-clinical"
+            }
+          ]
+        },
+        "resolutionDate": null,
+        "clinicalStatus": {
+          "text": "Active",
+          "codings": [
+            {
+              "code": "active",
+              "display": "Active",
+              "system": "http://terminology.hl7.org/CodeSystem/condition-clinical"
+            }
+          ]
+        },
+        "verificationStatus": {
+          "text": "Confirmed",
+          "codings": [
+            {
+              "code": "confirmed",
+              "display": "Confirmed",
+              "system": "http://terminology.hl7.org/CodeSystem/condition-ver-status"
+            }
+          ]
+        },
+        "conditionCategory": {
+          "text": "Problem List Item",
+          "codings": [
+            {
+              "code": "problem-list-item",
+              "display": "Problem List Item",
+              "system": "http://terminology.hl7.org/CodeSystem/condition-category"
+            }
+          ]
+        },
+        "assertedDate": "2021-02-10",
+        "recordedDate": "2021-02-10"
+      },
+      {
+        "condition": {
+          "text": "Migraine without aura, not intractable, without status migrainosus",
+          "codings": [
+            {
+              "code": "G43.009",
+              "display": "Migraine without aura, not intractable, without status migrainosus",
+              "system": "http://hl7.org/fhir/sid/icd-10-cm"
+            }
+          ]
+        },
+        "onsetDate": null,
+        "conditionStatus": {
+          "text": null,
+          "codings": []
+        },
+        "resolutionDate": null,
+        "clinicalStatus": {
+          "text": null,
+          "codings": []
+        },
+        "verificationStatus": {
+          "text": null,
+          "codings": []
+        },
+        "conditionCategory": {
+          "text": "Claim diagnosis",
+          "codings": []
+        },
+        "assertedDate": null,
+        "recordedDate": "2025-11-04"
+      },
+      {
+        "condition": {
+          "text": "Mild persistent asthma with (acute) exacerbation",
+          "codings": [
+            {
+              "code": "J45.31",
+              "display": "Mild persistent asthma with (acute) exacerbation",
+              "system": "http://hl7.org/fhir/sid/icd-10-cm"
+            }
+          ]
+        },
+        "onsetDate": null,
+        "conditionStatus": {
+          "text": null,
+          "codings": []
+        },
+        "resolutionDate": null,
+        "clinicalStatus": {
+          "text": null,
+          "codings": []
+        },
+        "verificationStatus": {
+          "text": null,
+          "codings": []
+        },
+        "conditionCategory": {
+          "text": "Claim diagnosis",
+          "codings": []
+        },
+        "assertedDate": null,
+        "recordedDate": "2026-01-18"
+      },
+      {
+        "condition": {
+          "text": "Encounter for general adult medical examination without abnormal findings",
+          "codings": [
+            {
+              "code": "Z00.00",
+              "display": "Encounter for general adult medical examination without abnormal findings",
+              "system": "http://hl7.org/fhir/sid/icd-10-cm"
+            }
+          ]
+        },
+        "onsetDate": null,
+        "conditionStatus": {
+          "text": null,
+          "codings": []
+        },
+        "resolutionDate": null,
+        "clinicalStatus": {
+          "text": null,
+          "codings": []
+        },
+        "verificationStatus": {
+          "text": null,
+          "codings": []
+        },
+        "conditionCategory": {
+          "text": "Claim diagnosis",
+          "codings": []
+        },
+        "assertedDate": null,
+        "recordedDate": "2026-03-10"
+      },
+      {
+        "condition": {
+          "text": "Mild persistent asthma, uncomplicated",
+          "codings": [
+            {
+              "code": "J45.30",
+              "display": "Mild persistent asthma, uncomplicated",
+              "system": "http://hl7.org/fhir/sid/icd-10-cm"
+            }
+          ]
+        },
+        "onsetDate": null,
+        "conditionStatus": {
+          "text": null,
+          "codings": []
+        },
+        "resolutionDate": null,
+        "clinicalStatus": {
+          "text": null,
+          "codings": []
+        },
+        "verificationStatus": {
+          "text": null,
+          "codings": []
+        },
+        "conditionCategory": {
+          "text": "Claim diagnosis",
+          "codings": []
+        },
+        "assertedDate": null,
+        "recordedDate": "2026-03-10"
+      },
+      {
+        "condition": {
+          "text": "Hypothyroidism, unspecified",
+          "codings": [
+            {
+              "code": "E03.9",
+              "display": "Hypothyroidism, unspecified",
+              "system": "http://hl7.org/fhir/sid/icd-10-cm"
+            }
+          ]
+        },
+        "onsetDate": null,
+        "conditionStatus": {
+          "text": null,
+          "codings": []
+        },
+        "resolutionDate": null,
+        "clinicalStatus": {
+          "text": null,
+          "codings": []
+        },
+        "verificationStatus": {
+          "text": null,
+          "codings": []
+        },
+        "conditionCategory": {
+          "text": "Claim diagnosis",
+          "codings": []
+        },
+        "assertedDate": null,
+        "recordedDate": "2026-03-10"
+      },
+      {
+        "condition": {
+          "text": "Generalized anxiety disorder",
+          "codings": [
+            {
+              "code": "F41.1",
+              "display": "Generalized anxiety disorder",
+              "system": "http://hl7.org/fhir/sid/icd-10-cm"
+            }
+          ]
+        },
+        "onsetDate": null,
+        "conditionStatus": {
+          "text": null,
+          "codings": []
+        },
+        "resolutionDate": null,
+        "clinicalStatus": {
+          "text": null,
+          "codings": []
+        },
+        "verificationStatus": {
+          "text": null,
+          "codings": []
+        },
+        "conditionCategory": {
+          "text": "Claim diagnosis",
+          "codings": []
+        },
+        "assertedDate": null,
+        "recordedDate": "2026-03-10"
+      },
+      {
+        "condition": {
+          "text": "Encounter for gynecological examination (general) (routine) without abnormal findings",
+          "codings": [
+            {
+              "code": "Z01.419",
+              "display": "Encounter for gynecological examination (general) (routine) without abnormal findings",
+              "system": "http://hl7.org/fhir/sid/icd-10-cm"
+            }
+          ]
+        },
+        "onsetDate": null,
+        "conditionStatus": {
+          "text": null,
+          "codings": []
+        },
+        "resolutionDate": null,
+        "clinicalStatus": {
+          "text": null,
+          "codings": []
+        },
+        "verificationStatus": {
+          "text": null,
+          "codings": []
+        },
+        "conditionCategory": {
+          "text": "Claim diagnosis",
+          "codings": []
+        },
+        "assertedDate": null,
+        "recordedDate": "2026-06-02"
+      },
+      {
+        "condition": {
+          "text": "Encounter for screening for malignant neoplasm of cervix",
+          "codings": [
+            {
+              "code": "Z12.4",
+              "display": "Encounter for screening for malignant neoplasm of cervix",
+              "system": "http://hl7.org/fhir/sid/icd-10-cm"
+            }
+          ]
+        },
+        "onsetDate": null,
+        "conditionStatus": {
+          "text": null,
+          "codings": []
+        },
+        "resolutionDate": null,
+        "clinicalStatus": {
+          "text": null,
+          "codings": []
+        },
+        "verificationStatus": {
+          "text": null,
+          "codings": []
+        },
+        "conditionCategory": {
+          "text": "Claim diagnosis",
+          "codings": []
+        },
+        "assertedDate": null,
+        "recordedDate": "2026-06-02"
+      },
+      {
+        "condition": {
+          "text": "Other seasonal allergic rhinitis",
+          "codings": [
+            {
+              "code": "J30.2",
+              "display": "Other seasonal allergic rhinitis",
+              "system": "http://hl7.org/fhir/sid/icd-10-cm"
+            }
+          ]
+        },
+        "onsetDate": null,
+        "conditionStatus": {
+          "text": null,
+          "codings": []
+        },
+        "resolutionDate": null,
+        "clinicalStatus": {
+          "text": null,
+          "codings": []
+        },
+        "verificationStatus": {
+          "text": null,
+          "codings": []
+        },
+        "conditionCategory": {
+          "text": "Claim diagnosis",
+          "codings": []
+        },
+        "assertedDate": null,
+        "recordedDate": "2026-09-08"
+      }
+    ],
+    "immunizations": [
+      {
+        "administrationDate": "2019-05-20",
+        "immunization": {
+          "text": "Tdap",
+          "codings": [
+            {
+              "code": "115",
+              "display": "Tdap",
+              "system": "http://hl7.org/fhir/sid/cvx"
+            }
+          ]
+        },
+        "lotNumber": "TD19E20",
+        "reaction": {
+          "text": null,
+          "codings": []
+        },
+        "expirationDate": null,
+        "immunizationStatus": {
+          "text": "completed",
+          "codings": []
+        },
+        "immunizationStatusReason": {
+          "text": null,
+          "codings": []
+        },
+        "primarySource": "true"
+      },
+      {
+        "administrationDate": "2025-10-14",
+        "immunization": {
+          "text": "Influenza, split virus, quadrivalent, PF",
+          "codings": [
+            {
+              "code": "150",
+              "display": "Influenza, split virus, quadrivalent, PF",
+              "system": "http://hl7.org/fhir/sid/cvx"
+            }
+          ]
+        },
+        "lotNumber": "FL25J14",
+        "reaction": {
+          "text": null,
+          "codings": []
+        },
+        "expirationDate": null,
+        "immunizationStatus": {
+          "text": "completed",
+          "codings": []
+        },
+        "immunizationStatusReason": {
+          "text": null,
+          "codings": []
+        },
+        "primarySource": "true"
+      },
+      {
+        "administrationDate": "2025-10-14",
+        "immunization": {
+          "text": "SARS-COV-2 (COVID-19) vaccine, UNSPECIFIED",
+          "codings": [
+            {
+              "code": "213",
+              "display": "SARS-COV-2 (COVID-19) vaccine, UNSPECIFIED",
+              "system": "http://hl7.org/fhir/sid/cvx"
+            }
+          ]
+        },
+        "lotNumber": "CV25J14",
+        "reaction": {
+          "text": null,
+          "codings": []
+        },
+        "expirationDate": null,
+        "immunizationStatus": {
+          "text": "completed",
+          "codings": []
+        },
+        "immunizationStatusReason": {
+          "text": null,
+          "codings": []
+        },
+        "primarySource": "true"
+      }
+    ],
+    "labResults": [
+      {
+        "order": {
+          "text": null,
+          "codings": []
+        },
+        "test": {
+          "text": "Glucose [Mass/volume] in Serum or Plasma",
+          "codings": [
+            {
+              "code": "2345-7",
+              "display": "Glucose [Mass/volume] in Serum or Plasma",
+              "system": "http://loinc.org"
+            }
+          ]
+        },
+        "resultUnit": {
+          "text": "mg/dL",
+          "codings": [
+            {
+              "code": "mg/dL",
+              "display": "mg/dL",
+              "system": "http://unitsofmeasure.org"
+            }
+          ]
+        },
+        "resultValue": {
+          "text": null,
+          "type": {
+            "text": null,
+            "codings": []
+          },
+          "number": 88,
+          "number2": null,
+          "codings": []
+        },
+        "interpretation": {
+          "text": "Normal",
+          "codings": [
+            {
+              "code": "N",
+              "display": "Normal",
+              "system": "http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation"
+            }
+          ]
+        },
+        "specimenType": {
+          "text": null,
+          "codings": []
+        },
+        "resultStatus": {
+          "text": "final",
+          "codings": []
+        },
+        "performedDateTime": "2026-03-10",
+        "issuedDateTime": "2026-03-11T07:20:00-05:00",
+        "referenceRange": {
+          "text": null,
+          "lowValue": "70",
+          "highValue": "99"
+        },
+        "performingSite": {
+          "text": "Atlas Reference Laboratory",
+          "codings": []
+        },
+        "specimenIdentifier": null,
+        "orderDate": "2026-03-11T07:20:00-05:00",
+        "labCategory": {
+          "text": "Laboratory",
+          "codings": [
+            {
+              "code": "laboratory",
+              "display": "Laboratory",
+              "system": "http://terminology.hl7.org/CodeSystem/observation-category"
+            }
+          ]
+        }
+      },
+      {
+        "order": {
+          "text": null,
+          "codings": []
+        },
+        "test": {
+          "text": "Creatinine [Mass/volume] in Serum or Plasma",
+          "codings": [
+            {
+              "code": "2160-0",
+              "display": "Creatinine [Mass/volume] in Serum or Plasma",
+              "system": "http://loinc.org"
+            }
+          ]
+        },
+        "resultUnit": {
+          "text": "mg/dL",
+          "codings": [
+            {
+              "code": "mg/dL",
+              "display": "mg/dL",
+              "system": "http://unitsofmeasure.org"
+            }
+          ]
+        },
+        "resultValue": {
+          "text": null,
+          "type": {
+            "text": null,
+            "codings": []
+          },
+          "number": 0.78,
+          "number2": null,
+          "codings": []
+        },
+        "interpretation": {
+          "text": "Normal",
+          "codings": [
+            {
+              "code": "N",
+              "display": "Normal",
+              "system": "http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation"
+            }
+          ]
+        },
+        "specimenType": {
+          "text": null,
+          "codings": []
+        },
+        "resultStatus": {
+          "text": "final",
+          "codings": []
+        },
+        "performedDateTime": "2026-03-10",
+        "issuedDateTime": "2026-03-11T07:20:00-05:00",
+        "referenceRange": {
+          "text": null,
+          "lowValue": "0.57",
+          "highValue": "1"
+        },
+        "performingSite": {
+          "text": "Atlas Reference Laboratory",
+          "codings": []
+        },
+        "specimenIdentifier": null,
+        "orderDate": "2026-03-11T07:20:00-05:00",
+        "labCategory": {
+          "text": "Laboratory",
+          "codings": [
+            {
+              "code": "laboratory",
+              "display": "Laboratory",
+              "system": "http://terminology.hl7.org/CodeSystem/observation-category"
+            }
+          ]
+        }
+      },
+      {
+        "order": {
+          "text": null,
+          "codings": []
+        },
+        "test": {
+          "text": "Glomerular filtration rate [Volume Rate/Area] in Serum, Plasma or Blood by Creatinine-based formula (CKD-EPI 2021)/1.73 sq M",
+          "codings": [
+            {
+              "code": "98979-8",
+              "display": "Glomerular filtration rate [Volume Rate/Area] in Serum, Plasma or Blood by Creatinine-based formula (CKD-EPI 2021)/1.73 sq M",
+              "system": "http://loinc.org"
+            }
+          ]
+        },
+        "resultUnit": {
+          "text": "mL/min/{1.73_m2}",
+          "codings": [
+            {
+              "code": "mL/min/{1.73_m2}",
+              "display": "mL/min/{1.73_m2}",
+              "system": "http://unitsofmeasure.org"
+            }
+          ]
+        },
+        "resultValue": {
+          "text": null,
+          "type": {
+            "text": null,
+            "codings": []
+          },
+          "number": 100,
+          "number2": null,
+          "codings": []
+        },
+        "interpretation": {
+          "text": "Normal",
+          "codings": [
+            {
+              "code": "N",
+              "display": "Normal",
+              "system": "http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation"
+            }
+          ]
+        },
+        "specimenType": {
+          "text": null,
+          "codings": []
+        },
+        "resultStatus": {
+          "text": "final",
+          "codings": []
+        },
+        "performedDateTime": "2026-03-10",
+        "issuedDateTime": "2026-03-11T07:20:00-05:00",
+        "referenceRange": {
+          "text": null,
+          "lowValue": "60",
+          "highValue": null
+        },
+        "performingSite": {
+          "text": "Atlas Reference Laboratory",
+          "codings": []
+        },
+        "specimenIdentifier": null,
+        "orderDate": "2026-03-11T07:20:00-05:00",
+        "labCategory": {
+          "text": "Laboratory",
+          "codings": [
+            {
+              "code": "laboratory",
+              "display": "Laboratory",
+              "system": "http://terminology.hl7.org/CodeSystem/observation-category"
+            }
+          ]
+        }
+      },
+      {
+        "order": {
+          "text": null,
+          "codings": []
+        },
+        "test": {
+          "text": "Sodium [Moles/volume] in Serum or Plasma",
+          "codings": [
+            {
+              "code": "2951-2",
+              "display": "Sodium [Moles/volume] in Serum or Plasma",
+              "system": "http://loinc.org"
+            }
+          ]
+        },
+        "resultUnit": {
+          "text": "mmol/L",
+          "codings": [
+            {
+              "code": "mmol/L",
+              "display": "mmol/L",
+              "system": "http://unitsofmeasure.org"
+            }
+          ]
+        },
+        "resultValue": {
+          "text": null,
+          "type": {
+            "text": null,
+            "codings": []
+          },
+          "number": 140,
+          "number2": null,
+          "codings": []
+        },
+        "interpretation": {
+          "text": "Normal",
+          "codings": [
+            {
+              "code": "N",
+              "display": "Normal",
+              "system": "http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation"
+            }
+          ]
+        },
+        "specimenType": {
+          "text": null,
+          "codings": []
+        },
+        "resultStatus": {
+          "text": "final",
+          "codings": []
+        },
+        "performedDateTime": "2026-03-10",
+        "issuedDateTime": "2026-03-11T07:20:00-05:00",
+        "referenceRange": {
+          "text": null,
+          "lowValue": "136",
+          "highValue": "145"
+        },
+        "performingSite": {
+          "text": "Atlas Reference Laboratory",
+          "codings": []
+        },
+        "specimenIdentifier": null,
+        "orderDate": "2026-03-11T07:20:00-05:00",
+        "labCategory": {
+          "text": "Laboratory",
+          "codings": [
+            {
+              "code": "laboratory",
+              "display": "Laboratory",
+              "system": "http://terminology.hl7.org/CodeSystem/observation-category"
+            }
+          ]
+        }
+      },
+      {
+        "order": {
+          "text": null,
+          "codings": []
+        },
+        "test": {
+          "text": "Potassium [Moles/volume] in Serum or Plasma",
+          "codings": [
+            {
+              "code": "2823-3",
+              "display": "Potassium [Moles/volume] in Serum or Plasma",
+              "system": "http://loinc.org"
+            }
+          ]
+        },
+        "resultUnit": {
+          "text": "mmol/L",
+          "codings": [
+            {
+              "code": "mmol/L",
+              "display": "mmol/L",
+              "system": "http://unitsofmeasure.org"
+            }
+          ]
+        },
+        "resultValue": {
+          "text": null,
+          "type": {
+            "text": null,
+            "codings": []
+          },
+          "number": 4.1,
+          "number2": null,
+          "codings": []
+        },
+        "interpretation": {
+          "text": "Normal",
+          "codings": [
+            {
+              "code": "N",
+              "display": "Normal",
+              "system": "http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation"
+            }
+          ]
+        },
+        "specimenType": {
+          "text": null,
+          "codings": []
+        },
+        "resultStatus": {
+          "text": "final",
+          "codings": []
+        },
+        "performedDateTime": "2026-03-10",
+        "issuedDateTime": "2026-03-11T07:20:00-05:00",
+        "referenceRange": {
+          "text": null,
+          "lowValue": "3.5",
+          "highValue": "5.1"
+        },
+        "performingSite": {
+          "text": "Atlas Reference Laboratory",
+          "codings": []
+        },
+        "specimenIdentifier": null,
+        "orderDate": "2026-03-11T07:20:00-05:00",
+        "labCategory": {
+          "text": "Laboratory",
+          "codings": [
+            {
+              "code": "laboratory",
+              "display": "Laboratory",
+              "system": "http://terminology.hl7.org/CodeSystem/observation-category"
+            }
+          ]
+        }
+      },
+      {
+        "order": {
+          "text": null,
+          "codings": []
+        },
+        "test": {
+          "text": "Thyrotropin [Units/volume] in Serum or Plasma",
+          "codings": [
+            {
+              "code": "3016-3",
+              "display": "Thyrotropin [Units/volume] in Serum or Plasma",
+              "system": "http://loinc.org"
+            }
+          ]
+        },
+        "resultUnit": {
+          "text": "m[IU]/L",
+          "codings": [
+            {
+              "code": "m[IU]/L",
+              "display": "m[IU]/L",
+              "system": "http://unitsofmeasure.org"
+            }
+          ]
+        },
+        "resultValue": {
+          "text": null,
+          "type": {
+            "text": null,
+            "codings": []
+          },
+          "number": 2.8,
+          "number2": null,
+          "codings": []
+        },
+        "interpretation": {
+          "text": "Normal",
+          "codings": [
+            {
+              "code": "N",
+              "display": "Normal",
+              "system": "http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation"
+            }
+          ]
+        },
+        "specimenType": {
+          "text": null,
+          "codings": []
+        },
+        "resultStatus": {
+          "text": "final",
+          "codings": []
+        },
+        "performedDateTime": "2026-03-10",
+        "issuedDateTime": "2026-03-11T07:20:00-05:00",
+        "referenceRange": {
+          "text": null,
+          "lowValue": "0.4",
+          "highValue": "4.5"
+        },
+        "performingSite": {
+          "text": "Atlas Reference Laboratory",
+          "codings": []
+        },
+        "specimenIdentifier": null,
+        "orderDate": "2026-03-11T07:20:00-05:00",
+        "labCategory": {
+          "text": "Laboratory",
+          "codings": [
+            {
+              "code": "laboratory",
+              "display": "Laboratory",
+              "system": "http://terminology.hl7.org/CodeSystem/observation-category"
+            }
+          ]
+        }
+      },
+      {
+        "order": {
+          "text": null,
+          "codings": []
+        },
+        "test": {
+          "text": "Thyroxine (T4) free [Mass/volume] in Serum or Plasma",
+          "codings": [
+            {
+              "code": "3024-7",
+              "display": "Thyroxine (T4) free [Mass/volume] in Serum or Plasma",
+              "system": "http://loinc.org"
+            }
+          ]
+        },
+        "resultUnit": {
+          "text": "ng/dL",
+          "codings": [
+            {
+              "code": "ng/dL",
+              "display": "ng/dL",
+              "system": "http://unitsofmeasure.org"
+            }
+          ]
+        },
+        "resultValue": {
+          "text": null,
+          "type": {
+            "text": null,
+            "codings": []
+          },
+          "number": 1.2,
+          "number2": null,
+          "codings": []
+        },
+        "interpretation": {
+          "text": "Normal",
+          "codings": [
+            {
+              "code": "N",
+              "display": "Normal",
+              "system": "http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation"
+            }
+          ]
+        },
+        "specimenType": {
+          "text": null,
+          "codings": []
+        },
+        "resultStatus": {
+          "text": "final",
+          "codings": []
+        },
+        "performedDateTime": "2026-03-10",
+        "issuedDateTime": "2026-03-11T07:20:00-05:00",
+        "referenceRange": {
+          "text": null,
+          "lowValue": "0.8",
+          "highValue": "1.8"
+        },
+        "performingSite": {
+          "text": "Atlas Reference Laboratory",
+          "codings": []
+        },
+        "specimenIdentifier": null,
+        "orderDate": "2026-03-11T07:20:00-05:00",
+        "labCategory": {
+          "text": "Laboratory",
+          "codings": [
+            {
+              "code": "laboratory",
+              "display": "Laboratory",
+              "system": "http://terminology.hl7.org/CodeSystem/observation-category"
+            }
+          ]
+        }
+      },
+      {
+        "order": {
+          "text": null,
+          "codings": []
+        },
+        "test": {
+          "text": "Leukocytes [#/volume] in Blood by Automated count",
+          "codings": [
+            {
+              "code": "6690-2",
+              "display": "Leukocytes [#/volume] in Blood by Automated count",
+              "system": "http://loinc.org"
+            }
+          ]
+        },
+        "resultUnit": {
+          "text": "10*3/uL",
+          "codings": [
+            {
+              "code": "10*3/uL",
+              "display": "10*3/uL",
+              "system": "http://unitsofmeasure.org"
+            }
+          ]
+        },
+        "resultValue": {
+          "text": null,
+          "type": {
+            "text": null,
+            "codings": []
+          },
+          "number": 6.2,
+          "number2": null,
+          "codings": []
+        },
+        "interpretation": {
+          "text": "Normal",
+          "codings": [
+            {
+              "code": "N",
+              "display": "Normal",
+              "system": "http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation"
+            }
+          ]
+        },
+        "specimenType": {
+          "text": null,
+          "codings": []
+        },
+        "resultStatus": {
+          "text": "final",
+          "codings": []
+        },
+        "performedDateTime": "2026-03-10",
+        "issuedDateTime": "2026-03-11T07:20:00-05:00",
+        "referenceRange": {
+          "text": null,
+          "lowValue": "4",
+          "highValue": "11"
+        },
+        "performingSite": {
+          "text": "Atlas Reference Laboratory",
+          "codings": []
+        },
+        "specimenIdentifier": null,
+        "orderDate": "2026-03-11T07:20:00-05:00",
+        "labCategory": {
+          "text": "Laboratory",
+          "codings": [
+            {
+              "code": "laboratory",
+              "display": "Laboratory",
+              "system": "http://terminology.hl7.org/CodeSystem/observation-category"
+            }
+          ]
+        }
+      },
+      {
+        "order": {
+          "text": null,
+          "codings": []
+        },
+        "test": {
+          "text": "Hemoglobin [Mass/volume] in Blood",
+          "codings": [
+            {
+              "code": "718-7",
+              "display": "Hemoglobin [Mass/volume] in Blood",
+              "system": "http://loinc.org"
+            }
+          ]
+        },
+        "resultUnit": {
+          "text": "g/dL",
+          "codings": [
+            {
+              "code": "g/dL",
+              "display": "g/dL",
+              "system": "http://unitsofmeasure.org"
+            }
+          ]
+        },
+        "resultValue": {
+          "text": null,
+          "type": {
+            "text": null,
+            "codings": []
+          },
+          "number": 12.1,
+          "number2": null,
+          "codings": []
+        },
+        "interpretation": {
+          "text": "Normal",
+          "codings": [
+            {
+              "code": "N",
+              "display": "Normal",
+              "system": "http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation"
+            }
+          ]
+        },
+        "specimenType": {
+          "text": null,
+          "codings": []
+        },
+        "resultStatus": {
+          "text": "final",
+          "codings": []
+        },
+        "performedDateTime": "2026-03-10",
+        "issuedDateTime": "2026-03-11T07:20:00-05:00",
+        "referenceRange": {
+          "text": null,
+          "lowValue": "12",
+          "highValue": "15.5"
+        },
+        "performingSite": {
+          "text": "Atlas Reference Laboratory",
+          "codings": []
+        },
+        "specimenIdentifier": null,
+        "orderDate": "2026-03-11T07:20:00-05:00",
+        "labCategory": {
+          "text": "Laboratory",
+          "codings": [
+            {
+              "code": "laboratory",
+              "display": "Laboratory",
+              "system": "http://terminology.hl7.org/CodeSystem/observation-category"
+            }
+          ]
+        }
+      },
+      {
+        "order": {
+          "text": null,
+          "codings": []
+        },
+        "test": {
+          "text": "Hematocrit [Volume Fraction] of Blood by Automated count",
+          "codings": [
+            {
+              "code": "4544-3",
+              "display": "Hematocrit [Volume Fraction] of Blood by Automated count",
+              "system": "http://loinc.org"
+            }
+          ]
+        },
+        "resultUnit": {
+          "text": "%",
+          "codings": [
+            {
+              "code": "%",
+              "display": "%",
+              "system": "http://unitsofmeasure.org"
+            }
+          ]
+        },
+        "resultValue": {
+          "text": null,
+          "type": {
+            "text": null,
+            "codings": []
+          },
+          "number": 37,
+          "number2": null,
+          "codings": []
+        },
+        "interpretation": {
+          "text": "Normal",
+          "codings": [
+            {
+              "code": "N",
+              "display": "Normal",
+              "system": "http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation"
+            }
+          ]
+        },
+        "specimenType": {
+          "text": null,
+          "codings": []
+        },
+        "resultStatus": {
+          "text": "final",
+          "codings": []
+        },
+        "performedDateTime": "2026-03-10",
+        "issuedDateTime": "2026-03-11T07:20:00-05:00",
+        "referenceRange": {
+          "text": null,
+          "lowValue": "35",
+          "highValue": "45"
+        },
+        "performingSite": {
+          "text": "Atlas Reference Laboratory",
+          "codings": []
+        },
+        "specimenIdentifier": null,
+        "orderDate": "2026-03-11T07:20:00-05:00",
+        "labCategory": {
+          "text": "Laboratory",
+          "codings": [
+            {
+              "code": "laboratory",
+              "display": "Laboratory",
+              "system": "http://terminology.hl7.org/CodeSystem/observation-category"
+            }
+          ]
+        }
+      },
+      {
+        "order": {
+          "text": null,
+          "codings": []
+        },
+        "test": {
+          "text": "Platelets [#/volume] in Blood by Automated count",
+          "codings": [
+            {
+              "code": "777-3",
+              "display": "Platelets [#/volume] in Blood by Automated count",
+              "system": "http://loinc.org"
+            }
+          ]
+        },
+        "resultUnit": {
+          "text": "10*3/uL",
+          "codings": [
+            {
+              "code": "10*3/uL",
+              "display": "10*3/uL",
+              "system": "http://unitsofmeasure.org"
+            }
+          ]
+        },
+        "resultValue": {
+          "text": null,
+          "type": {
+            "text": null,
+            "codings": []
+          },
+          "number": 260,
+          "number2": null,
+          "codings": []
+        },
+        "interpretation": {
+          "text": "Normal",
+          "codings": [
+            {
+              "code": "N",
+              "display": "Normal",
+              "system": "http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation"
+            }
+          ]
+        },
+        "specimenType": {
+          "text": null,
+          "codings": []
+        },
+        "resultStatus": {
+          "text": "final",
+          "codings": []
+        },
+        "performedDateTime": "2026-03-10",
+        "issuedDateTime": "2026-03-11T07:20:00-05:00",
+        "referenceRange": {
+          "text": null,
+          "lowValue": "150",
+          "highValue": "400"
+        },
+        "performingSite": {
+          "text": "Atlas Reference Laboratory",
+          "codings": []
+        },
+        "specimenIdentifier": null,
+        "orderDate": "2026-03-11T07:20:00-05:00",
+        "labCategory": {
+          "text": "Laboratory",
+          "codings": [
+            {
+              "code": "laboratory",
+              "display": "Laboratory",
+              "system": "http://terminology.hl7.org/CodeSystem/observation-category"
+            }
+          ]
+        }
+      },
+      {
+        "order": {
+          "text": null,
+          "codings": []
+        },
+        "test": {
+          "text": "Ferritin [Mass/volume] in Serum or Plasma",
+          "codings": [
+            {
+              "code": "2276-4",
+              "display": "Ferritin [Mass/volume] in Serum or Plasma",
+              "system": "http://loinc.org"
+            }
+          ]
+        },
+        "resultUnit": {
+          "text": "ng/mL",
+          "codings": [
+            {
+              "code": "ng/mL",
+              "display": "ng/mL",
+              "system": "http://unitsofmeasure.org"
+            }
+          ]
+        },
+        "resultValue": {
+          "text": null,
+          "type": {
+            "text": null,
+            "codings": []
+          },
+          "number": 18,
+          "number2": null,
+          "codings": []
+        },
+        "interpretation": {
+          "text": "Normal",
+          "codings": [
+            {
+              "code": "N",
+              "display": "Normal",
+              "system": "http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation"
+            }
+          ]
+        },
+        "specimenType": {
+          "text": null,
+          "codings": []
+        },
+        "resultStatus": {
+          "text": "final",
+          "codings": []
+        },
+        "performedDateTime": "2026-03-10",
+        "issuedDateTime": "2026-03-11T07:20:00-05:00",
+        "referenceRange": {
+          "text": null,
+          "lowValue": "15",
+          "highValue": "150"
+        },
+        "performingSite": {
+          "text": "Atlas Reference Laboratory",
+          "codings": []
+        },
+        "specimenIdentifier": null,
+        "orderDate": "2026-03-11T07:20:00-05:00",
+        "labCategory": {
+          "text": "Laboratory",
+          "codings": [
+            {
+              "code": "laboratory",
+              "display": "Laboratory",
+              "system": "http://terminology.hl7.org/CodeSystem/observation-category"
+            }
+          ]
+        }
+      },
+      {
+        "order": {
+          "text": null,
+          "codings": []
+        },
+        "test": {
+          "text": "Cholesterol [Mass/volume] in Serum or Plasma",
+          "codings": [
+            {
+              "code": "2093-3",
+              "display": "Cholesterol [Mass/volume] in Serum or Plasma",
+              "system": "http://loinc.org"
+            }
+          ]
+        },
+        "resultUnit": {
+          "text": "mg/dL",
+          "codings": [
+            {
+              "code": "mg/dL",
+              "display": "mg/dL",
+              "system": "http://unitsofmeasure.org"
+            }
+          ]
+        },
+        "resultValue": {
+          "text": null,
+          "type": {
+            "text": null,
+            "codings": []
+          },
+          "number": 182,
+          "number2": null,
+          "codings": []
+        },
+        "interpretation": {
+          "text": "Normal",
+          "codings": [
+            {
+              "code": "N",
+              "display": "Normal",
+              "system": "http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation"
+            }
+          ]
+        },
+        "specimenType": {
+          "text": null,
+          "codings": []
+        },
+        "resultStatus": {
+          "text": "final",
+          "codings": []
+        },
+        "performedDateTime": "2026-03-10",
+        "issuedDateTime": "2026-03-11T07:20:00-05:00",
+        "referenceRange": {
+          "text": null,
+          "lowValue": null,
+          "highValue": "199"
+        },
+        "performingSite": {
+          "text": "Atlas Reference Laboratory",
+          "codings": []
+        },
+        "specimenIdentifier": null,
+        "orderDate": "2026-03-11T07:20:00-05:00",
+        "labCategory": {
+          "text": "Laboratory",
+          "codings": [
+            {
+              "code": "laboratory",
+              "display": "Laboratory",
+              "system": "http://terminology.hl7.org/CodeSystem/observation-category"
+            }
+          ]
+        }
+      },
+      {
+        "order": {
+          "text": null,
+          "codings": []
+        },
+        "test": {
+          "text": "Triglyceride [Mass/volume] in Serum or Plasma",
+          "codings": [
+            {
+              "code": "2571-8",
+              "display": "Triglyceride [Mass/volume] in Serum or Plasma",
+              "system": "http://loinc.org"
+            }
+          ]
+        },
+        "resultUnit": {
+          "text": "mg/dL",
+          "codings": [
+            {
+              "code": "mg/dL",
+              "display": "mg/dL",
+              "system": "http://unitsofmeasure.org"
+            }
+          ]
+        },
+        "resultValue": {
+          "text": null,
+          "type": {
+            "text": null,
+            "codings": []
+          },
+          "number": 96,
+          "number2": null,
+          "codings": []
+        },
+        "interpretation": {
+          "text": "Normal",
+          "codings": [
+            {
+              "code": "N",
+              "display": "Normal",
+              "system": "http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation"
+            }
+          ]
+        },
+        "specimenType": {
+          "text": null,
+          "codings": []
+        },
+        "resultStatus": {
+          "text": "final",
+          "codings": []
+        },
+        "performedDateTime": "2026-03-10",
+        "issuedDateTime": "2026-03-11T07:20:00-05:00",
+        "referenceRange": {
+          "text": null,
+          "lowValue": null,
+          "highValue": "149"
+        },
+        "performingSite": {
+          "text": "Atlas Reference Laboratory",
+          "codings": []
+        },
+        "specimenIdentifier": null,
+        "orderDate": "2026-03-11T07:20:00-05:00",
+        "labCategory": {
+          "text": "Laboratory",
+          "codings": [
+            {
+              "code": "laboratory",
+              "display": "Laboratory",
+              "system": "http://terminology.hl7.org/CodeSystem/observation-category"
+            }
+          ]
+        }
+      },
+      {
+        "order": {
+          "text": null,
+          "codings": []
+        },
+        "test": {
+          "text": "Cholesterol in HDL [Mass/volume] in Serum or Plasma",
+          "codings": [
+            {
+              "code": "2085-9",
+              "display": "Cholesterol in HDL [Mass/volume] in Serum or Plasma",
+              "system": "http://loinc.org"
+            }
+          ]
+        },
+        "resultUnit": {
+          "text": "mg/dL",
+          "codings": [
+            {
+              "code": "mg/dL",
+              "display": "mg/dL",
+              "system": "http://unitsofmeasure.org"
+            }
+          ]
+        },
+        "resultValue": {
+          "text": null,
+          "type": {
+            "text": null,
+            "codings": []
+          },
+          "number": 62,
+          "number2": null,
+          "codings": []
+        },
+        "interpretation": {
+          "text": "Normal",
+          "codings": [
+            {
+              "code": "N",
+              "display": "Normal",
+              "system": "http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation"
+            }
+          ]
+        },
+        "specimenType": {
+          "text": null,
+          "codings": []
+        },
+        "resultStatus": {
+          "text": "final",
+          "codings": []
+        },
+        "performedDateTime": "2026-03-10",
+        "issuedDateTime": "2026-03-11T07:20:00-05:00",
+        "referenceRange": {
+          "text": null,
+          "lowValue": "50",
+          "highValue": null
+        },
+        "performingSite": {
+          "text": "Atlas Reference Laboratory",
+          "codings": []
+        },
+        "specimenIdentifier": null,
+        "orderDate": "2026-03-11T07:20:00-05:00",
+        "labCategory": {
+          "text": "Laboratory",
+          "codings": [
+            {
+              "code": "laboratory",
+              "display": "Laboratory",
+              "system": "http://terminology.hl7.org/CodeSystem/observation-category"
+            }
+          ]
+        }
+      },
+      {
+        "order": {
+          "text": null,
+          "codings": []
+        },
+        "test": {
+          "text": "Cholesterol in LDL [Mass/volume] in Serum or Plasma by calculation",
+          "codings": [
+            {
+              "code": "13457-7",
+              "display": "Cholesterol in LDL [Mass/volume] in Serum or Plasma by calculation",
+              "system": "http://loinc.org"
+            }
+          ]
+        },
+        "resultUnit": {
+          "text": "mg/dL",
+          "codings": [
+            {
+              "code": "mg/dL",
+              "display": "mg/dL",
+              "system": "http://unitsofmeasure.org"
+            }
+          ]
+        },
+        "resultValue": {
+          "text": null,
+          "type": {
+            "text": null,
+            "codings": []
+          },
+          "number": 101,
+          "number2": null,
+          "codings": []
+        },
+        "interpretation": {
+          "text": "High",
+          "codings": [
+            {
+              "code": "H",
+              "display": "High",
+              "system": "http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation"
+            }
+          ]
+        },
+        "specimenType": {
+          "text": null,
+          "codings": []
+        },
+        "resultStatus": {
+          "text": "final",
+          "codings": []
+        },
+        "performedDateTime": "2026-03-10",
+        "issuedDateTime": "2026-03-11T07:20:00-05:00",
+        "referenceRange": {
+          "text": null,
+          "lowValue": null,
+          "highValue": "99"
+        },
+        "performingSite": {
+          "text": "Atlas Reference Laboratory",
+          "codings": []
+        },
+        "specimenIdentifier": null,
+        "orderDate": "2026-03-11T07:20:00-05:00",
+        "labCategory": {
+          "text": "Laboratory",
+          "codings": [
+            {
+              "code": "laboratory",
+              "display": "Laboratory",
+              "system": "http://terminology.hl7.org/CodeSystem/observation-category"
+            }
+          ]
+        }
+      },
+      {
+        "order": {
+          "text": null,
+          "codings": []
+        },
+        "test": {
+          "text": "Thyrotropin [Units/volume] in Serum or Plasma",
+          "codings": [
+            {
+              "code": "3016-3",
+              "display": "Thyrotropin [Units/volume] in Serum or Plasma",
+              "system": "http://loinc.org"
+            }
+          ]
+        },
+        "resultUnit": {
+          "text": "m[IU]/L",
+          "codings": [
+            {
+              "code": "m[IU]/L",
+              "display": "m[IU]/L",
+              "system": "http://unitsofmeasure.org"
+            }
+          ]
+        },
+        "resultValue": {
+          "text": null,
+          "type": {
+            "text": null,
+            "codings": []
+          },
+          "number": 4.9,
+          "number2": null,
+          "codings": []
+        },
+        "interpretation": {
+          "text": "High",
+          "codings": [
+            {
+              "code": "H",
+              "display": "High",
+              "system": "http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation"
+            }
+          ]
+        },
+        "specimenType": {
+          "text": null,
+          "codings": []
+        },
+        "resultStatus": {
+          "text": "final",
+          "codings": []
+        },
+        "performedDateTime": "2026-09-08",
+        "issuedDateTime": "2026-09-09T07:20:00-05:00",
+        "referenceRange": {
+          "text": null,
+          "lowValue": "0.4",
+          "highValue": "4.5"
+        },
+        "performingSite": {
+          "text": "Atlas Reference Laboratory",
+          "codings": []
+        },
+        "specimenIdentifier": null,
+        "orderDate": "2026-09-09T07:20:00-05:00",
+        "labCategory": {
+          "text": "Laboratory",
+          "codings": [
+            {
+              "code": "laboratory",
+              "display": "Laboratory",
+              "system": "http://terminology.hl7.org/CodeSystem/observation-category"
+            }
+          ]
+        }
+      },
+      {
+        "order": {
+          "text": null,
+          "codings": []
+        },
+        "test": {
+          "text": "Thyroxine (T4) free [Mass/volume] in Serum or Plasma",
+          "codings": [
+            {
+              "code": "3024-7",
+              "display": "Thyroxine (T4) free [Mass/volume] in Serum or Plasma",
+              "system": "http://loinc.org"
+            }
+          ]
+        },
+        "resultUnit": {
+          "text": "ng/dL",
+          "codings": [
+            {
+              "code": "ng/dL",
+              "display": "ng/dL",
+              "system": "http://unitsofmeasure.org"
+            }
+          ]
+        },
+        "resultValue": {
+          "text": null,
+          "type": {
+            "text": null,
+            "codings": []
+          },
+          "number": 0.9,
+          "number2": null,
+          "codings": []
+        },
+        "interpretation": {
+          "text": "Normal",
+          "codings": [
+            {
+              "code": "N",
+              "display": "Normal",
+              "system": "http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation"
+            }
+          ]
+        },
+        "specimenType": {
+          "text": null,
+          "codings": []
+        },
+        "resultStatus": {
+          "text": "final",
+          "codings": []
+        },
+        "performedDateTime": "2026-09-08",
+        "issuedDateTime": "2026-09-09T07:20:00-05:00",
+        "referenceRange": {
+          "text": null,
+          "lowValue": "0.8",
+          "highValue": "1.8"
+        },
+        "performingSite": {
+          "text": "Atlas Reference Laboratory",
+          "codings": []
+        },
+        "specimenIdentifier": null,
+        "orderDate": "2026-09-09T07:20:00-05:00",
+        "labCategory": {
+          "text": "Laboratory",
+          "codings": [
+            {
+              "code": "laboratory",
+              "display": "Laboratory",
+              "system": "http://terminology.hl7.org/CodeSystem/observation-category"
+            }
+          ]
+        }
+      }
+    ],
+    "medications": [
+      {
+        "medication": {
+          "text": "levothyroxine sodium 0.075 MG Oral Tablet",
+          "codings": [
+            {
+              "code": "966222",
+              "display": "levothyroxine sodium 0.075 MG Oral Tablet",
+              "system": "http://www.nlm.nih.gov/research/umls/rxnorm"
+            }
+          ]
+        },
+        "doseAmount": "0.075",
+        "doseAmountUnit": {
+          "text": "mg",
+          "codings": []
+        },
+        "doseRoute": {
+          "text": "Oral route",
+          "codings": [
+            {
+              "code": "26643006",
+              "display": "Oral route",
+              "system": "http://snomed.info/sct"
+            }
+          ]
+        },
+        "doseQuantity": "90",
+        "doseQuantityUnit": {
+          "text": "tablet",
+          "codings": []
+        },
+        "instructions": "Take 1 tablet by mouth every morning on an empty stomach, 30-60 minutes before breakfast.",
+        "indication": {
+          "text": null,
+          "codings": []
+        },
+        "startDate": "2024-09-10",
+        "endDate": null,
+        "statementDate": "2024-09-10",
+        "adherence": {
+          "text": null,
+          "codings": []
+        },
+        "fillStatus": {
+          "text": null,
+          "codings": []
+        },
+        "requestStatus": {
+          "text": "stopped",
+          "codings": []
+        },
+        "medicationCategory": {
+          "text": "Community",
+          "codings": [
+            {
+              "code": "community",
+              "display": "Community",
+              "system": "http://terminology.hl7.org/CodeSystem/medicationrequest-category"
+            }
+          ]
+        },
+        "medicationIntent": {
+          "text": "order",
+          "codings": []
+        }
+      },
+      {
+        "medication": {
+          "text": "levothyroxine sodium 0.088 MG Oral Tablet",
+          "codings": [
+            {
+              "code": "966253",
+              "display": "levothyroxine sodium 0.088 MG Oral Tablet",
+              "system": "http://www.nlm.nih.gov/research/umls/rxnorm"
+            }
+          ]
+        },
+        "doseAmount": "0.088",
+        "doseAmountUnit": {
+          "text": "mg",
+          "codings": []
+        },
+        "doseRoute": {
+          "text": "Oral route",
+          "codings": [
+            {
+              "code": "26643006",
+              "display": "Oral route",
+              "system": "http://snomed.info/sct"
+            }
+          ]
+        },
+        "doseQuantity": "90",
+        "doseQuantityUnit": {
+          "text": "tablet",
+          "codings": []
+        },
+        "instructions": "Take 1 tablet by mouth every morning on an empty stomach, 30-60 minutes before breakfast.",
+        "indication": {
+          "text": null,
+          "codings": []
+        },
+        "startDate": "2026-09-08",
+        "endDate": null,
+        "statementDate": "2026-09-08",
+        "adherence": {
+          "text": null,
+          "codings": []
+        },
+        "fillStatus": {
+          "text": null,
+          "codings": []
+        },
+        "requestStatus": {
+          "text": "active",
+          "codings": []
+        },
+        "medicationCategory": {
+          "text": "Community",
+          "codings": [
+            {
+              "code": "community",
+              "display": "Community",
+              "system": "http://terminology.hl7.org/CodeSystem/medicationrequest-category"
+            }
+          ]
+        },
+        "medicationIntent": {
+          "text": "order",
+          "codings": []
+        }
+      },
+      {
+        "medication": {
+          "text": "sertraline 50 MG Oral Tablet",
+          "codings": [
+            {
+              "code": "312941",
+              "display": "sertraline 50 MG Oral Tablet",
+              "system": "http://www.nlm.nih.gov/research/umls/rxnorm"
+            }
+          ]
+        },
+        "doseAmount": "50",
+        "doseAmountUnit": {
+          "text": "mg",
+          "codings": []
+        },
+        "doseRoute": {
+          "text": "Oral route",
+          "codings": [
+            {
+              "code": "26643006",
+              "display": "Oral route",
+              "system": "http://snomed.info/sct"
+            }
+          ]
+        },
+        "doseQuantity": "90",
+        "doseQuantityUnit": {
+          "text": "tablet",
+          "codings": []
+        },
+        "instructions": "Take 1 tablet by mouth daily.",
+        "indication": {
+          "text": null,
+          "codings": []
+        },
+        "startDate": "2021-02-10",
+        "endDate": null,
+        "statementDate": "2021-02-10",
+        "adherence": {
+          "text": null,
+          "codings": []
+        },
+        "fillStatus": {
+          "text": null,
+          "codings": []
+        },
+        "requestStatus": {
+          "text": "active",
+          "codings": []
+        },
+        "medicationCategory": {
+          "text": "Community",
+          "codings": [
+            {
+              "code": "community",
+              "display": "Community",
+              "system": "http://terminology.hl7.org/CodeSystem/medicationrequest-category"
+            }
+          ]
+        },
+        "medicationIntent": {
+          "text": "order",
+          "codings": []
+        }
+      },
+      {
+        "medication": {
+          "text": "sumatriptan 50 MG Oral Tablet",
+          "codings": [
+            {
+              "code": "313161",
+              "display": "sumatriptan 50 MG Oral Tablet",
+              "system": "http://www.nlm.nih.gov/research/umls/rxnorm"
+            }
+          ]
+        },
+        "doseAmount": "50",
+        "doseAmountUnit": {
+          "text": "mg",
+          "codings": []
+        },
+        "doseRoute": {
+          "text": "Oral route",
+          "codings": [
+            {
+              "code": "26643006",
+              "display": "Oral route",
+              "system": "http://snomed.info/sct"
+            }
+          ]
+        },
+        "doseQuantity": "9",
+        "doseQuantityUnit": {
+          "text": "tablet",
+          "codings": []
+        },
+        "instructions": "Take 1 tablet at the start of a migraine; may repeat once after 2 hours. No more than 200 mg in 24 hours.",
+        "indication": {
+          "text": null,
+          "codings": []
+        },
+        "startDate": "2025-11-04",
+        "endDate": null,
+        "statementDate": "2025-11-04",
+        "adherence": {
+          "text": null,
+          "codings": []
+        },
+        "fillStatus": {
+          "text": null,
+          "codings": []
+        },
+        "requestStatus": {
+          "text": "active",
+          "codings": []
+        },
+        "medicationCategory": {
+          "text": "Community",
+          "codings": [
+            {
+              "code": "community",
+              "display": "Community",
+              "system": "http://terminology.hl7.org/CodeSystem/medicationrequest-category"
+            }
+          ]
+        },
+        "medicationIntent": {
+          "text": "order",
+          "codings": []
+        }
+      },
+      {
+        "medication": {
+          "text": "120 ACTUAT fluticasone propionate 0.044 MG/ACTUAT Metered Dose Inhaler",
+          "codings": [
+            {
+              "code": "895994",
+              "display": "120 ACTUAT fluticasone propionate 0.044 MG/ACTUAT Metered Dose Inhaler",
+              "system": "http://www.nlm.nih.gov/research/umls/rxnorm"
+            }
+          ]
+        },
+        "doseAmount": null,
+        "doseAmountUnit": {
+          "text": null,
+          "codings": []
+        },
+        "doseRoute": {
+          "text": "Respiratory tract route",
+          "codings": [
+            {
+              "code": "447694001",
+              "display": "Respiratory tract route",
+              "system": "http://snomed.info/sct"
+            }
+          ]
+        },
+        "doseQuantity": "1",
+        "doseQuantityUnit": {
+          "text": "inhaler",
+          "codings": []
+        },
+        "instructions": "Inhale 2 puffs twice daily. Rinse mouth after each use.",
+        "indication": {
+          "text": null,
+          "codings": []
+        },
+        "startDate": "2026-01-18",
+        "endDate": null,
+        "statementDate": "2026-01-18",
+        "adherence": {
+          "text": null,
+          "codings": []
+        },
+        "fillStatus": {
+          "text": null,
+          "codings": []
+        },
+        "requestStatus": {
+          "text": "active",
+          "codings": []
+        },
+        "medicationCategory": {
+          "text": "Community",
+          "codings": [
+            {
+              "code": "community",
+              "display": "Community",
+              "system": "http://terminology.hl7.org/CodeSystem/medicationrequest-category"
+            }
+          ]
+        },
+        "medicationIntent": {
+          "text": "order",
+          "codings": []
+        }
+      },
+      {
+        "medication": {
+          "text": "NDA020983 200 ACTUAT albuterol 0.09 MG/ACTUAT Metered Dose Inhaler",
+          "codings": [
+            {
+              "code": "2123076",
+              "display": "NDA020983 200 ACTUAT albuterol 0.09 MG/ACTUAT Metered Dose Inhaler",
+              "system": "http://www.nlm.nih.gov/research/umls/rxnorm"
+            }
+          ]
+        },
+        "doseAmount": null,
+        "doseAmountUnit": {
+          "text": null,
+          "codings": []
+        },
+        "doseRoute": {
+          "text": "Respiratory tract route",
+          "codings": [
+            {
+              "code": "447694001",
+              "display": "Respiratory tract route",
+              "system": "http://snomed.info/sct"
+            }
+          ]
+        },
+        "doseQuantity": "1",
+        "doseQuantityUnit": {
+          "text": "inhaler",
+          "codings": []
+        },
+        "instructions": "Inhale 2 puffs every 4-6 hours as needed for wheezing or shortness of breath.",
+        "indication": {
+          "text": null,
+          "codings": []
+        },
+        "startDate": "2026-01-18",
+        "endDate": null,
+        "statementDate": "2026-01-18",
+        "adherence": {
+          "text": null,
+          "codings": []
+        },
+        "fillStatus": {
+          "text": null,
+          "codings": []
+        },
+        "requestStatus": {
+          "text": "active",
+          "codings": []
+        },
+        "medicationCategory": {
+          "text": "Community",
+          "codings": [
+            {
+              "code": "community",
+              "display": "Community",
+              "system": "http://terminology.hl7.org/CodeSystem/medicationrequest-category"
+            }
+          ]
+        },
+        "medicationIntent": {
+          "text": "order",
+          "codings": []
+        }
+      },
+      {
+        "medication": {
+          "text": "fluticasone propionate 0.05 MG/ACTUAT Metered Dose Nasal Spray",
+          "codings": [
+            {
+              "code": "1797907",
+              "display": "fluticasone propionate 0.05 MG/ACTUAT Metered Dose Nasal Spray",
+              "system": "http://www.nlm.nih.gov/research/umls/rxnorm"
+            }
+          ]
+        },
+        "doseAmount": null,
+        "doseAmountUnit": {
+          "text": null,
+          "codings": []
+        },
+        "doseRoute": {
+          "text": "Nasal route",
+          "codings": [
+            {
+              "code": "46713006",
+              "display": "Nasal route",
+              "system": "http://snomed.info/sct"
+            }
+          ]
+        },
+        "doseQuantity": "1",
+        "doseQuantityUnit": {
+          "text": "bottle",
+          "codings": []
+        },
+        "instructions": "Spray 2 sprays in each nostril daily during allergy season.",
+        "indication": {
+          "text": null,
+          "codings": []
+        },
+        "startDate": "2026-09-08",
+        "endDate": null,
+        "statementDate": "2026-09-08",
+        "adherence": {
+          "text": null,
+          "codings": []
+        },
+        "fillStatus": {
+          "text": null,
+          "codings": []
+        },
+        "requestStatus": {
+          "text": "active",
+          "codings": []
+        },
+        "medicationCategory": {
+          "text": "Community",
+          "codings": [
+            {
+              "code": "community",
+              "display": "Community",
+              "system": "http://terminology.hl7.org/CodeSystem/medicationrequest-category"
+            }
+          ]
+        },
+        "medicationIntent": {
+          "text": "order",
+          "codings": []
+        }
+      },
+      {
+        "medication": {
+          "text": "prednisone 20 MG Oral Tablet",
+          "codings": [
+            {
+              "code": "312615",
+              "display": "prednisone 20 MG Oral Tablet",
+              "system": "http://www.nlm.nih.gov/research/umls/rxnorm"
+            }
+          ]
+        },
+        "doseAmount": "40",
+        "doseAmountUnit": {
+          "text": "mg",
+          "codings": []
+        },
+        "doseRoute": {
+          "text": "Oral route",
+          "codings": [
+            {
+              "code": "26643006",
+              "display": "Oral route",
+              "system": "http://snomed.info/sct"
+            }
+          ]
+        },
+        "doseQuantity": "10",
+        "doseQuantityUnit": {
+          "text": "tablet",
+          "codings": []
+        },
+        "instructions": "Take 2 tablets (40 mg) by mouth daily for 5 days.",
+        "indication": {
+          "text": null,
+          "codings": []
+        },
+        "startDate": "2026-01-18",
+        "endDate": null,
+        "statementDate": "2026-01-18",
+        "adherence": {
+          "text": null,
+          "codings": []
+        },
+        "fillStatus": {
+          "text": null,
+          "codings": []
+        },
+        "requestStatus": {
+          "text": "completed",
+          "codings": []
+        },
+        "medicationCategory": {
+          "text": "Community",
+          "codings": [
+            {
+              "code": "community",
+              "display": "Community",
+              "system": "http://terminology.hl7.org/CodeSystem/medicationrequest-category"
+            }
+          ]
+        },
+        "medicationIntent": {
+          "text": "order",
+          "codings": []
+        }
+      }
+    ],
+    "procedures": [
+      {
+        "procedureDateTime": "2026-01-18T19:30:00-05:00",
+        "procedure": {
+          "text": "Nebulized albuterol treatment",
+          "codings": [
+            {
+              "code": "94640",
+              "system": "http://www.ama-assn.org/go/cpt"
+            }
+          ]
+        },
+        "procedureReason": {
+          "text": "Mild persistent asthma",
+          "codings": []
+        },
+        "procedureStatus": {
+          "text": "completed",
+          "codings": []
+        },
+        "procedurePerformedDate": "2026-01-18T19:30:00-05:00"
+      },
+      {
+        "procedureDateTime": "2026-03-10T09:00:00-05:00",
+        "procedure": {
+          "text": "Spirometry",
+          "codings": [
+            {
+              "code": "94010",
+              "system": "http://www.ama-assn.org/go/cpt"
+            }
+          ]
+        },
+        "procedureReason": {
+          "text": "Mild persistent asthma",
+          "codings": []
+        },
+        "procedureStatus": {
+          "text": "completed",
+          "codings": []
+        },
+        "procedurePerformedDate": "2026-03-10T09:00:00-05:00"
+      },
+      {
+        "procedureDateTime": "2026-06-02T09:10:00-05:00",
+        "procedure": {
+          "text": "Cervical cancer screening (Pap with HPV co-test)",
+          "codings": [
+            {
+              "code": "Q0091",
+              "display": "Screening Papanicolaou smear; obtaining, preparing and conveyance to laboratory",
+              "system": "https://www.cms.gov/Medicare/Coding/HCPCSReleaseCodeSets"
+            }
+          ]
+        },
+        "procedureReason": {
+          "text": null,
+          "codings": []
+        },
+        "procedureStatus": {
+          "text": "completed",
+          "codings": []
+        },
+        "procedurePerformedDate": "2026-06-02T09:10:00-05:00"
+      },
+      {
+        "procedureDateTime": "2025-11-04",
+        "procedure": {
+          "text": "Office/outpatient visit, new patient, moderate",
+          "codings": [
+            {
+              "code": "99204",
+              "system": "http://www.ama-assn.org/go/cpt"
+            }
+          ]
+        },
+        "procedureReason": {
+          "text": null,
+          "codings": []
+        },
+        "procedureStatus": {
+          "text": null,
+          "codings": []
+        },
+        "procedurePerformedDate": "2025-11-04"
+      },
+      {
+        "procedureDateTime": "2026-01-18",
+        "procedure": {
+          "text": "Office/outpatient visit, established patient, moderate",
+          "codings": [
+            {
+              "code": "99214",
+              "system": "http://www.ama-assn.org/go/cpt"
+            }
+          ]
+        },
+        "procedureReason": {
+          "text": null,
+          "codings": []
+        },
+        "procedureStatus": {
+          "text": null,
+          "codings": []
+        },
+        "procedurePerformedDate": "2026-01-18"
+      },
+      {
+        "procedureDateTime": "2026-01-18",
+        "procedure": {
+          "text": "Inhalation treatment, nebulizer",
+          "codings": [
+            {
+              "code": "94640",
+              "system": "http://www.ama-assn.org/go/cpt"
+            }
+          ]
+        },
+        "procedureReason": {
+          "text": null,
+          "codings": []
+        },
+        "procedureStatus": {
+          "text": null,
+          "codings": []
+        },
+        "procedurePerformedDate": "2026-01-18"
+      },
+      {
+        "procedureDateTime": "2026-01-18",
+        "procedure": {
+          "text": "Albuterol, inhalation solution, unit dose, 1 mg",
+          "codings": [
+            {
+              "code": "J7613",
+              "display": "Albuterol, inhalation solution, unit dose, 1 mg",
+              "system": "https://www.cms.gov/Medicare/Coding/HCPCSReleaseCodeSets"
+            }
+          ]
+        },
+        "procedureReason": {
+          "text": null,
+          "codings": []
+        },
+        "procedureStatus": {
+          "text": null,
+          "codings": []
+        },
+        "procedurePerformedDate": "2026-01-18"
+      },
+      {
+        "procedureDateTime": "2026-03-10",
+        "procedure": {
+          "text": "Preventive visit, established patient, 18-39 years",
+          "codings": [
+            {
+              "code": "99395",
+              "system": "http://www.ama-assn.org/go/cpt"
+            }
+          ]
+        },
+        "procedureReason": {
+          "text": null,
+          "codings": []
+        },
+        "procedureStatus": {
+          "text": null,
+          "codings": []
+        },
+        "procedurePerformedDate": "2026-03-10"
+      },
+      {
+        "procedureDateTime": "2026-03-10",
+        "procedure": {
+          "text": "Spirometry",
+          "codings": [
+            {
+              "code": "94010",
+              "system": "http://www.ama-assn.org/go/cpt"
+            }
+          ]
+        },
+        "procedureReason": {
+          "text": null,
+          "codings": []
+        },
+        "procedureStatus": {
+          "text": null,
+          "codings": []
+        },
+        "procedurePerformedDate": "2026-03-10"
+      },
+      {
+        "procedureDateTime": "2026-03-10",
+        "procedure": {
+          "text": "Thyroid stimulating hormone",
+          "codings": [
+            {
+              "code": "84443",
+              "system": "http://www.ama-assn.org/go/cpt"
+            }
+          ]
+        },
+        "procedureReason": {
+          "text": null,
+          "codings": []
+        },
+        "procedureStatus": {
+          "text": null,
+          "codings": []
+        },
+        "procedurePerformedDate": "2026-03-10"
+      },
+      {
+        "procedureDateTime": "2026-03-10",
+        "procedure": {
+          "text": "Thyroxine; free",
+          "codings": [
+            {
+              "code": "84439",
+              "system": "http://www.ama-assn.org/go/cpt"
+            }
+          ]
+        },
+        "procedureReason": {
+          "text": null,
+          "codings": []
+        },
+        "procedureStatus": {
+          "text": null,
+          "codings": []
+        },
+        "procedurePerformedDate": "2026-03-10"
+      },
+      {
+        "procedureDateTime": "2026-03-10",
+        "procedure": {
+          "text": "Complete blood count with automated differential",
+          "codings": [
+            {
+              "code": "85025",
+              "system": "http://www.ama-assn.org/go/cpt"
+            }
+          ]
+        },
+        "procedureReason": {
+          "text": null,
+          "codings": []
+        },
+        "procedureStatus": {
+          "text": null,
+          "codings": []
+        },
+        "procedurePerformedDate": "2026-03-10"
+      },
+      {
+        "procedureDateTime": "2026-03-10",
+        "procedure": {
+          "text": "Ferritin",
+          "codings": [
+            {
+              "code": "82728",
+              "system": "http://www.ama-assn.org/go/cpt"
+            }
+          ]
+        },
+        "procedureReason": {
+          "text": null,
+          "codings": []
+        },
+        "procedureStatus": {
+          "text": null,
+          "codings": []
+        },
+        "procedurePerformedDate": "2026-03-10"
+      },
+      {
+        "procedureDateTime": "2026-03-10",
+        "procedure": {
+          "text": "Lipid panel",
+          "codings": [
+            {
+              "code": "80061",
+              "system": "http://www.ama-assn.org/go/cpt"
+            }
+          ]
+        },
+        "procedureReason": {
+          "text": null,
+          "codings": []
+        },
+        "procedureStatus": {
+          "text": null,
+          "codings": []
+        },
+        "procedurePerformedDate": "2026-03-10"
+      },
+      {
+        "procedureDateTime": "2026-03-10",
+        "procedure": {
+          "text": "Basic metabolic panel",
+          "codings": [
+            {
+              "code": "80048",
+              "system": "http://www.ama-assn.org/go/cpt"
+            }
+          ]
+        },
+        "procedureReason": {
+          "text": null,
+          "codings": []
+        },
+        "procedureStatus": {
+          "text": null,
+          "codings": []
+        },
+        "procedurePerformedDate": "2026-03-10"
+      },
+      {
+        "procedureDateTime": "2026-04-21",
+        "procedure": {
+          "text": "Psychotherapy, 45 minutes",
+          "codings": [
+            {
+              "code": "90834",
+              "system": "http://www.ama-assn.org/go/cpt"
+            }
+          ]
+        },
+        "procedureReason": {
+          "text": null,
+          "codings": []
+        },
+        "procedureStatus": {
+          "text": null,
+          "codings": []
+        },
+        "procedurePerformedDate": "2026-04-21"
+      },
+      {
+        "procedureDateTime": "2026-06-02",
+        "procedure": {
+          "text": "Preventive visit, established patient, 18-39 years",
+          "codings": [
+            {
+              "code": "99395",
+              "system": "http://www.ama-assn.org/go/cpt"
+            }
+          ]
+        },
+        "procedureReason": {
+          "text": null,
+          "codings": []
+        },
+        "procedureStatus": {
+          "text": null,
+          "codings": []
+        },
+        "procedurePerformedDate": "2026-06-02"
+      },
+      {
+        "procedureDateTime": "2026-06-02",
+        "procedure": {
+          "text": "Screening Papanicolaou smear; obtaining, preparing and conveyance to laboratory",
+          "codings": [
+            {
+              "code": "Q0091",
+              "display": "Screening Papanicolaou smear; obtaining, preparing and conveyance to laboratory",
+              "system": "https://www.cms.gov/Medicare/Coding/HCPCSReleaseCodeSets"
+            }
+          ]
+        },
+        "procedureReason": {
+          "text": null,
+          "codings": []
+        },
+        "procedureStatus": {
+          "text": null,
+          "codings": []
+        },
+        "procedurePerformedDate": "2026-06-02"
+      },
+      {
+        "procedureDateTime": "2026-07-14",
+        "procedure": {
+          "text": "Psychotherapy, 45 minutes",
+          "codings": [
+            {
+              "code": "90834",
+              "system": "http://www.ama-assn.org/go/cpt"
+            }
+          ]
+        },
+        "procedureReason": {
+          "text": null,
+          "codings": []
+        },
+        "procedureStatus": {
+          "text": null,
+          "codings": []
+        },
+        "procedurePerformedDate": "2026-07-14"
+      },
+      {
+        "procedureDateTime": "2026-09-08",
+        "procedure": {
+          "text": "Office/outpatient visit, established patient, low",
+          "codings": [
+            {
+              "code": "99213",
+              "system": "http://www.ama-assn.org/go/cpt"
+            }
+          ]
+        },
+        "procedureReason": {
+          "text": null,
+          "codings": []
+        },
+        "procedureStatus": {
+          "text": null,
+          "codings": []
+        },
+        "procedurePerformedDate": "2026-09-08"
+      },
+      {
+        "procedureDateTime": "2026-09-08",
+        "procedure": {
+          "text": "Thyroid stimulating hormone",
+          "codings": [
+            {
+              "code": "84443",
+              "system": "http://www.ama-assn.org/go/cpt"
+            }
+          ]
+        },
+        "procedureReason": {
+          "text": null,
+          "codings": []
+        },
+        "procedureStatus": {
+          "text": null,
+          "codings": []
+        },
+        "procedurePerformedDate": "2026-09-08"
+      },
+      {
+        "procedureDateTime": "2026-09-08",
+        "procedure": {
+          "text": "Thyroxine; free",
+          "codings": [
+            {
+              "code": "84439",
+              "system": "http://www.ama-assn.org/go/cpt"
+            }
+          ]
+        },
+        "procedureReason": {
+          "text": null,
+          "codings": []
+        },
+        "procedureStatus": {
+          "text": null,
+          "codings": []
+        },
+        "procedurePerformedDate": "2026-09-08"
+      }
+    ],
+    "vitalSigns": [
+      {
+        "vitalSign": {
+          "text": "Systolic blood pressure",
+          "codings": [
+            {
+              "code": "8480-6",
+              "display": "Systolic blood pressure",
+              "system": "http://loinc.org"
+            }
+          ]
+        },
+        "resultValue": {
+          "text": null,
+          "type": {
+            "text": null,
+            "codings": []
+          },
+          "number": 124,
+          "number2": null,
+          "codings": []
+        },
+        "resultUnit": {
+          "text": "mm[Hg]",
+          "codings": [
+            {
+              "code": "mm[Hg]",
+              "display": "mm[Hg]",
+              "system": "http://unitsofmeasure.org"
+            }
+          ]
+        },
+        "interpretation": {
+          "text": null,
+          "codings": []
+        },
+        "resultStatus": {
+          "text": "final",
+          "codings": []
+        },
+        "performedDateTime": "2026-01-18T19:15:00-05:00",
+        "performingSite": {
+          "text": null,
+          "codings": []
+        },
+        "referenceRange": {
+          "text": null,
+          "lowValue": null,
+          "highValue": null
+        },
+        "issuedDateTime": null,
+        "vitalSignCategory": {
+          "text": "Vital Signs",
+          "codings": [
+            {
+              "code": "vital-signs",
+              "display": "Vital Signs",
+              "system": "http://terminology.hl7.org/CodeSystem/observation-category"
+            }
+          ]
+        }
+      },
+      {
+        "vitalSign": {
+          "text": "Diastolic blood pressure",
+          "codings": [
+            {
+              "code": "8462-4",
+              "display": "Diastolic blood pressure",
+              "system": "http://loinc.org"
+            }
+          ]
+        },
+        "resultValue": {
+          "text": null,
+          "type": {
+            "text": null,
+            "codings": []
+          },
+          "number": 80,
+          "number2": null,
+          "codings": []
+        },
+        "resultUnit": {
+          "text": "mm[Hg]",
+          "codings": [
+            {
+              "code": "mm[Hg]",
+              "display": "mm[Hg]",
+              "system": "http://unitsofmeasure.org"
+            }
+          ]
+        },
+        "interpretation": {
+          "text": null,
+          "codings": []
+        },
+        "resultStatus": {
+          "text": "final",
+          "codings": []
+        },
+        "performedDateTime": "2026-01-18T19:15:00-05:00",
+        "performingSite": {
+          "text": null,
+          "codings": []
+        },
+        "referenceRange": {
+          "text": null,
+          "lowValue": null,
+          "highValue": null
+        },
+        "issuedDateTime": null,
+        "vitalSignCategory": {
+          "text": "Vital Signs",
+          "codings": [
+            {
+              "code": "vital-signs",
+              "display": "Vital Signs",
+              "system": "http://terminology.hl7.org/CodeSystem/observation-category"
+            }
+          ]
+        }
+      },
+      {
+        "vitalSign": {
+          "text": "Heart rate",
+          "codings": [
+            {
+              "code": "8867-4",
+              "display": "Heart rate",
+              "system": "http://loinc.org"
+            }
+          ]
+        },
+        "resultValue": {
+          "text": null,
+          "type": {
+            "text": null,
+            "codings": []
+          },
+          "number": 98,
+          "number2": null,
+          "codings": []
+        },
+        "resultUnit": {
+          "text": "/min",
+          "codings": [
+            {
+              "code": "/min",
+              "display": "/min",
+              "system": "http://unitsofmeasure.org"
+            }
+          ]
+        },
+        "interpretation": {
+          "text": null,
+          "codings": []
+        },
+        "resultStatus": {
+          "text": "final",
+          "codings": []
+        },
+        "performedDateTime": "2026-01-18T19:15:00-05:00",
+        "performingSite": {
+          "text": null,
+          "codings": []
+        },
+        "referenceRange": {
+          "text": null,
+          "lowValue": null,
+          "highValue": null
+        },
+        "issuedDateTime": null,
+        "vitalSignCategory": {
+          "text": "Vital Signs",
+          "codings": [
+            {
+              "code": "vital-signs",
+              "display": "Vital Signs",
+              "system": "http://terminology.hl7.org/CodeSystem/observation-category"
+            }
+          ]
+        }
+      },
+      {
+        "vitalSign": {
+          "text": "Respiratory rate",
+          "codings": [
+            {
+              "code": "9279-1",
+              "display": "Respiratory rate",
+              "system": "http://loinc.org"
+            }
+          ]
+        },
+        "resultValue": {
+          "text": null,
+          "type": {
+            "text": null,
+            "codings": []
+          },
+          "number": 22,
+          "number2": null,
+          "codings": []
+        },
+        "resultUnit": {
+          "text": "/min",
+          "codings": [
+            {
+              "code": "/min",
+              "display": "/min",
+              "system": "http://unitsofmeasure.org"
+            }
+          ]
+        },
+        "interpretation": {
+          "text": null,
+          "codings": []
+        },
+        "resultStatus": {
+          "text": "final",
+          "codings": []
+        },
+        "performedDateTime": "2026-01-18T19:15:00-05:00",
+        "performingSite": {
+          "text": null,
+          "codings": []
+        },
+        "referenceRange": {
+          "text": null,
+          "lowValue": null,
+          "highValue": null
+        },
+        "issuedDateTime": null,
+        "vitalSignCategory": {
+          "text": "Vital Signs",
+          "codings": [
+            {
+              "code": "vital-signs",
+              "display": "Vital Signs",
+              "system": "http://terminology.hl7.org/CodeSystem/observation-category"
+            }
+          ]
+        }
+      },
+      {
+        "vitalSign": {
+          "text": "Body temperature",
+          "codings": [
+            {
+              "code": "8310-5",
+              "display": "Body temperature",
+              "system": "http://loinc.org"
+            }
+          ]
+        },
+        "resultValue": {
+          "text": null,
+          "type": {
+            "text": null,
+            "codings": []
+          },
+          "number": 37,
+          "number2": null,
+          "codings": []
+        },
+        "resultUnit": {
+          "text": "Cel",
+          "codings": [
+            {
+              "code": "Cel",
+              "display": "Cel",
+              "system": "http://unitsofmeasure.org"
+            }
+          ]
+        },
+        "interpretation": {
+          "text": null,
+          "codings": []
+        },
+        "resultStatus": {
+          "text": "final",
+          "codings": []
+        },
+        "performedDateTime": "2026-01-18T19:15:00-05:00",
+        "performingSite": {
+          "text": null,
+          "codings": []
+        },
+        "referenceRange": {
+          "text": null,
+          "lowValue": null,
+          "highValue": null
+        },
+        "issuedDateTime": null,
+        "vitalSignCategory": {
+          "text": "Vital Signs",
+          "codings": [
+            {
+              "code": "vital-signs",
+              "display": "Vital Signs",
+              "system": "http://terminology.hl7.org/CodeSystem/observation-category"
+            }
+          ]
+        }
+      },
+      {
+        "vitalSign": {
+          "text": "Oxygen saturation in Arterial blood by Pulse oximetry",
+          "codings": [
+            {
+              "code": "2708-6",
+              "display": "Oxygen saturation in Arterial blood",
+              "system": "http://loinc.org"
+            },
+            {
+              "code": "59408-5",
+              "display": "Oxygen saturation in Arterial blood by Pulse oximetry",
+              "system": "http://loinc.org"
+            }
+          ]
+        },
+        "resultValue": {
+          "text": null,
+          "type": {
+            "text": null,
+            "codings": []
+          },
+          "number": 94,
+          "number2": null,
+          "codings": []
+        },
+        "resultUnit": {
+          "text": "%",
+          "codings": [
+            {
+              "code": "%",
+              "display": "%",
+              "system": "http://unitsofmeasure.org"
+            }
+          ]
+        },
+        "interpretation": {
+          "text": null,
+          "codings": []
+        },
+        "resultStatus": {
+          "text": "final",
+          "codings": []
+        },
+        "performedDateTime": "2026-01-18T19:15:00-05:00",
+        "performingSite": {
+          "text": null,
+          "codings": []
+        },
+        "referenceRange": {
+          "text": null,
+          "lowValue": null,
+          "highValue": null
+        },
+        "issuedDateTime": null,
+        "vitalSignCategory": {
+          "text": "Vital Signs",
+          "codings": [
+            {
+              "code": "vital-signs",
+              "display": "Vital Signs",
+              "system": "http://terminology.hl7.org/CodeSystem/observation-category"
+            }
+          ]
+        }
+      },
+      {
+        "vitalSign": {
+          "text": "Systolic blood pressure",
+          "codings": [
+            {
+              "code": "8480-6",
+              "display": "Systolic blood pressure",
+              "system": "http://loinc.org"
+            }
+          ]
+        },
+        "resultValue": {
+          "text": null,
+          "type": {
+            "text": null,
+            "codings": []
+          },
+          "number": 118,
+          "number2": null,
+          "codings": []
+        },
+        "resultUnit": {
+          "text": "mm[Hg]",
+          "codings": [
+            {
+              "code": "mm[Hg]",
+              "display": "mm[Hg]",
+              "system": "http://unitsofmeasure.org"
+            }
+          ]
+        },
+        "interpretation": {
+          "text": null,
+          "codings": []
+        },
+        "resultStatus": {
+          "text": "final",
+          "codings": []
+        },
+        "performedDateTime": "2026-03-10T08:35:00-05:00",
+        "performingSite": {
+          "text": null,
+          "codings": []
+        },
+        "referenceRange": {
+          "text": null,
+          "lowValue": null,
+          "highValue": null
+        },
+        "issuedDateTime": null,
+        "vitalSignCategory": {
+          "text": "Vital Signs",
+          "codings": [
+            {
+              "code": "vital-signs",
+              "display": "Vital Signs",
+              "system": "http://terminology.hl7.org/CodeSystem/observation-category"
+            }
+          ]
+        }
+      },
+      {
+        "vitalSign": {
+          "text": "Diastolic blood pressure",
+          "codings": [
+            {
+              "code": "8462-4",
+              "display": "Diastolic blood pressure",
+              "system": "http://loinc.org"
+            }
+          ]
+        },
+        "resultValue": {
+          "text": null,
+          "type": {
+            "text": null,
+            "codings": []
+          },
+          "number": 76,
+          "number2": null,
+          "codings": []
+        },
+        "resultUnit": {
+          "text": "mm[Hg]",
+          "codings": [
+            {
+              "code": "mm[Hg]",
+              "display": "mm[Hg]",
+              "system": "http://unitsofmeasure.org"
+            }
+          ]
+        },
+        "interpretation": {
+          "text": null,
+          "codings": []
+        },
+        "resultStatus": {
+          "text": "final",
+          "codings": []
+        },
+        "performedDateTime": "2026-03-10T08:35:00-05:00",
+        "performingSite": {
+          "text": null,
+          "codings": []
+        },
+        "referenceRange": {
+          "text": null,
+          "lowValue": null,
+          "highValue": null
+        },
+        "issuedDateTime": null,
+        "vitalSignCategory": {
+          "text": "Vital Signs",
+          "codings": [
+            {
+              "code": "vital-signs",
+              "display": "Vital Signs",
+              "system": "http://terminology.hl7.org/CodeSystem/observation-category"
+            }
+          ]
+        }
+      },
+      {
+        "vitalSign": {
+          "text": "Heart rate",
+          "codings": [
+            {
+              "code": "8867-4",
+              "display": "Heart rate",
+              "system": "http://loinc.org"
+            }
+          ]
+        },
+        "resultValue": {
+          "text": null,
+          "type": {
+            "text": null,
+            "codings": []
+          },
+          "number": 72,
+          "number2": null,
+          "codings": []
+        },
+        "resultUnit": {
+          "text": "/min",
+          "codings": [
+            {
+              "code": "/min",
+              "display": "/min",
+              "system": "http://unitsofmeasure.org"
+            }
+          ]
+        },
+        "interpretation": {
+          "text": null,
+          "codings": []
+        },
+        "resultStatus": {
+          "text": "final",
+          "codings": []
+        },
+        "performedDateTime": "2026-03-10T08:35:00-05:00",
+        "performingSite": {
+          "text": null,
+          "codings": []
+        },
+        "referenceRange": {
+          "text": null,
+          "lowValue": null,
+          "highValue": null
+        },
+        "issuedDateTime": null,
+        "vitalSignCategory": {
+          "text": "Vital Signs",
+          "codings": [
+            {
+              "code": "vital-signs",
+              "display": "Vital Signs",
+              "system": "http://terminology.hl7.org/CodeSystem/observation-category"
+            }
+          ]
+        }
+      },
+      {
+        "vitalSign": {
+          "text": "Respiratory rate",
+          "codings": [
+            {
+              "code": "9279-1",
+              "display": "Respiratory rate",
+              "system": "http://loinc.org"
+            }
+          ]
+        },
+        "resultValue": {
+          "text": null,
+          "type": {
+            "text": null,
+            "codings": []
+          },
+          "number": 14,
+          "number2": null,
+          "codings": []
+        },
+        "resultUnit": {
+          "text": "/min",
+          "codings": [
+            {
+              "code": "/min",
+              "display": "/min",
+              "system": "http://unitsofmeasure.org"
+            }
+          ]
+        },
+        "interpretation": {
+          "text": null,
+          "codings": []
+        },
+        "resultStatus": {
+          "text": "final",
+          "codings": []
+        },
+        "performedDateTime": "2026-03-10T08:35:00-05:00",
+        "performingSite": {
+          "text": null,
+          "codings": []
+        },
+        "referenceRange": {
+          "text": null,
+          "lowValue": null,
+          "highValue": null
+        },
+        "issuedDateTime": null,
+        "vitalSignCategory": {
+          "text": "Vital Signs",
+          "codings": [
+            {
+              "code": "vital-signs",
+              "display": "Vital Signs",
+              "system": "http://terminology.hl7.org/CodeSystem/observation-category"
+            }
+          ]
+        }
+      },
+      {
+        "vitalSign": {
+          "text": "Body temperature",
+          "codings": [
+            {
+              "code": "8310-5",
+              "display": "Body temperature",
+              "system": "http://loinc.org"
+            }
+          ]
+        },
+        "resultValue": {
+          "text": null,
+          "type": {
+            "text": null,
+            "codings": []
+          },
+          "number": 36.7,
+          "number2": null,
+          "codings": []
+        },
+        "resultUnit": {
+          "text": "Cel",
+          "codings": [
+            {
+              "code": "Cel",
+              "display": "Cel",
+              "system": "http://unitsofmeasure.org"
+            }
+          ]
+        },
+        "interpretation": {
+          "text": null,
+          "codings": []
+        },
+        "resultStatus": {
+          "text": "final",
+          "codings": []
+        },
+        "performedDateTime": "2026-03-10T08:35:00-05:00",
+        "performingSite": {
+          "text": null,
+          "codings": []
+        },
+        "referenceRange": {
+          "text": null,
+          "lowValue": null,
+          "highValue": null
+        },
+        "issuedDateTime": null,
+        "vitalSignCategory": {
+          "text": "Vital Signs",
+          "codings": [
+            {
+              "code": "vital-signs",
+              "display": "Vital Signs",
+              "system": "http://terminology.hl7.org/CodeSystem/observation-category"
+            }
+          ]
+        }
+      },
+      {
+        "vitalSign": {
+          "text": "Oxygen saturation in Arterial blood by Pulse oximetry",
+          "codings": [
+            {
+              "code": "2708-6",
+              "display": "Oxygen saturation in Arterial blood",
+              "system": "http://loinc.org"
+            },
+            {
+              "code": "59408-5",
+              "display": "Oxygen saturation in Arterial blood by Pulse oximetry",
+              "system": "http://loinc.org"
+            }
+          ]
+        },
+        "resultValue": {
+          "text": null,
+          "type": {
+            "text": null,
+            "codings": []
+          },
+          "number": 98,
+          "number2": null,
+          "codings": []
+        },
+        "resultUnit": {
+          "text": "%",
+          "codings": [
+            {
+              "code": "%",
+              "display": "%",
+              "system": "http://unitsofmeasure.org"
+            }
+          ]
+        },
+        "interpretation": {
+          "text": null,
+          "codings": []
+        },
+        "resultStatus": {
+          "text": "final",
+          "codings": []
+        },
+        "performedDateTime": "2026-03-10T08:35:00-05:00",
+        "performingSite": {
+          "text": null,
+          "codings": []
+        },
+        "referenceRange": {
+          "text": null,
+          "lowValue": null,
+          "highValue": null
+        },
+        "issuedDateTime": null,
+        "vitalSignCategory": {
+          "text": "Vital Signs",
+          "codings": [
+            {
+              "code": "vital-signs",
+              "display": "Vital Signs",
+              "system": "http://terminology.hl7.org/CodeSystem/observation-category"
+            }
+          ]
+        }
+      },
+      {
+        "vitalSign": {
+          "text": "Body height",
+          "codings": [
+            {
+              "code": "8302-2",
+              "display": "Body height",
+              "system": "http://loinc.org"
+            }
+          ]
+        },
+        "resultValue": {
+          "text": null,
+          "type": {
+            "text": null,
+            "codings": []
+          },
+          "number": 165.1,
+          "number2": null,
+          "codings": []
+        },
+        "resultUnit": {
+          "text": "cm",
+          "codings": [
+            {
+              "code": "cm",
+              "display": "cm",
+              "system": "http://unitsofmeasure.org"
+            }
+          ]
+        },
+        "interpretation": {
+          "text": null,
+          "codings": []
+        },
+        "resultStatus": {
+          "text": "final",
+          "codings": []
+        },
+        "performedDateTime": "2026-03-10T08:35:00-05:00",
+        "performingSite": {
+          "text": null,
+          "codings": []
+        },
+        "referenceRange": {
+          "text": null,
+          "lowValue": null,
+          "highValue": null
+        },
+        "issuedDateTime": null,
+        "vitalSignCategory": {
+          "text": "Vital Signs",
+          "codings": [
+            {
+              "code": "vital-signs",
+              "display": "Vital Signs",
+              "system": "http://terminology.hl7.org/CodeSystem/observation-category"
+            }
+          ]
+        }
+      },
+      {
+        "vitalSign": {
+          "text": "Body weight",
+          "codings": [
+            {
+              "code": "29463-7",
+              "display": "Body weight",
+              "system": "http://loinc.org"
+            }
+          ]
+        },
+        "resultValue": {
+          "text": null,
+          "type": {
+            "text": null,
+            "codings": []
+          },
+          "number": 63.5,
+          "number2": null,
+          "codings": []
+        },
+        "resultUnit": {
+          "text": "kg",
+          "codings": [
+            {
+              "code": "kg",
+              "display": "kg",
+              "system": "http://unitsofmeasure.org"
+            }
+          ]
+        },
+        "interpretation": {
+          "text": null,
+          "codings": []
+        },
+        "resultStatus": {
+          "text": "final",
+          "codings": []
+        },
+        "performedDateTime": "2026-03-10T08:35:00-05:00",
+        "performingSite": {
+          "text": null,
+          "codings": []
+        },
+        "referenceRange": {
+          "text": null,
+          "lowValue": null,
+          "highValue": null
+        },
+        "issuedDateTime": null,
+        "vitalSignCategory": {
+          "text": "Vital Signs",
+          "codings": [
+            {
+              "code": "vital-signs",
+              "display": "Vital Signs",
+              "system": "http://terminology.hl7.org/CodeSystem/observation-category"
+            }
+          ]
+        }
+      },
+      {
+        "vitalSign": {
+          "text": "Body mass index (BMI) [Ratio]",
+          "codings": [
+            {
+              "code": "39156-5",
+              "display": "Body mass index (BMI) [Ratio]",
+              "system": "http://loinc.org"
+            }
+          ]
+        },
+        "resultValue": {
+          "text": null,
+          "type": {
+            "text": null,
+            "codings": []
+          },
+          "number": 23.3,
+          "number2": null,
+          "codings": []
+        },
+        "resultUnit": {
+          "text": "kg/m2",
+          "codings": [
+            {
+              "code": "kg/m2",
+              "display": "kg/m2",
+              "system": "http://unitsofmeasure.org"
+            }
+          ]
+        },
+        "interpretation": {
+          "text": null,
+          "codings": []
+        },
+        "resultStatus": {
+          "text": "final",
+          "codings": []
+        },
+        "performedDateTime": "2026-03-10T08:35:00-05:00",
+        "performingSite": {
+          "text": null,
+          "codings": []
+        },
+        "referenceRange": {
+          "text": null,
+          "lowValue": null,
+          "highValue": null
+        },
+        "issuedDateTime": null,
+        "vitalSignCategory": {
+          "text": "Vital Signs",
+          "codings": [
+            {
+              "code": "vital-signs",
+              "display": "Vital Signs",
+              "system": "http://terminology.hl7.org/CodeSystem/observation-category"
+            }
+          ]
+        }
+      },
+      {
+        "vitalSign": {
+          "text": "Systolic blood pressure",
+          "codings": [
+            {
+              "code": "8480-6",
+              "display": "Systolic blood pressure",
+              "system": "http://loinc.org"
+            }
+          ]
+        },
+        "resultValue": {
+          "text": null,
+          "type": {
+            "text": null,
+            "codings": []
+          },
+          "number": 116,
+          "number2": null,
+          "codings": []
+        },
+        "resultUnit": {
+          "text": "mm[Hg]",
+          "codings": [
+            {
+              "code": "mm[Hg]",
+              "display": "mm[Hg]",
+              "system": "http://unitsofmeasure.org"
+            }
+          ]
+        },
+        "interpretation": {
+          "text": null,
+          "codings": []
+        },
+        "resultStatus": {
+          "text": "final",
+          "codings": []
+        },
+        "performedDateTime": "2026-09-08T15:05:00-05:00",
+        "performingSite": {
+          "text": null,
+          "codings": []
+        },
+        "referenceRange": {
+          "text": null,
+          "lowValue": null,
+          "highValue": null
+        },
+        "issuedDateTime": null,
+        "vitalSignCategory": {
+          "text": "Vital Signs",
+          "codings": [
+            {
+              "code": "vital-signs",
+              "display": "Vital Signs",
+              "system": "http://terminology.hl7.org/CodeSystem/observation-category"
+            }
+          ]
+        }
+      },
+      {
+        "vitalSign": {
+          "text": "Diastolic blood pressure",
+          "codings": [
+            {
+              "code": "8462-4",
+              "display": "Diastolic blood pressure",
+              "system": "http://loinc.org"
+            }
+          ]
+        },
+        "resultValue": {
+          "text": null,
+          "type": {
+            "text": null,
+            "codings": []
+          },
+          "number": 74,
+          "number2": null,
+          "codings": []
+        },
+        "resultUnit": {
+          "text": "mm[Hg]",
+          "codings": [
+            {
+              "code": "mm[Hg]",
+              "display": "mm[Hg]",
+              "system": "http://unitsofmeasure.org"
+            }
+          ]
+        },
+        "interpretation": {
+          "text": null,
+          "codings": []
+        },
+        "resultStatus": {
+          "text": "final",
+          "codings": []
+        },
+        "performedDateTime": "2026-09-08T15:05:00-05:00",
+        "performingSite": {
+          "text": null,
+          "codings": []
+        },
+        "referenceRange": {
+          "text": null,
+          "lowValue": null,
+          "highValue": null
+        },
+        "issuedDateTime": null,
+        "vitalSignCategory": {
+          "text": "Vital Signs",
+          "codings": [
+            {
+              "code": "vital-signs",
+              "display": "Vital Signs",
+              "system": "http://terminology.hl7.org/CodeSystem/observation-category"
+            }
+          ]
+        }
+      },
+      {
+        "vitalSign": {
+          "text": "Heart rate",
+          "codings": [
+            {
+              "code": "8867-4",
+              "display": "Heart rate",
+              "system": "http://loinc.org"
+            }
+          ]
+        },
+        "resultValue": {
+          "text": null,
+          "type": {
+            "text": null,
+            "codings": []
+          },
+          "number": 70,
+          "number2": null,
+          "codings": []
+        },
+        "resultUnit": {
+          "text": "/min",
+          "codings": [
+            {
+              "code": "/min",
+              "display": "/min",
+              "system": "http://unitsofmeasure.org"
+            }
+          ]
+        },
+        "interpretation": {
+          "text": null,
+          "codings": []
+        },
+        "resultStatus": {
+          "text": "final",
+          "codings": []
+        },
+        "performedDateTime": "2026-09-08T15:05:00-05:00",
+        "performingSite": {
+          "text": null,
+          "codings": []
+        },
+        "referenceRange": {
+          "text": null,
+          "lowValue": null,
+          "highValue": null
+        },
+        "issuedDateTime": null,
+        "vitalSignCategory": {
+          "text": "Vital Signs",
+          "codings": [
+            {
+              "code": "vital-signs",
+              "display": "Vital Signs",
+              "system": "http://terminology.hl7.org/CodeSystem/observation-category"
+            }
+          ]
+        }
+      },
+      {
+        "vitalSign": {
+          "text": "Oxygen saturation in Arterial blood by Pulse oximetry",
+          "codings": [
+            {
+              "code": "2708-6",
+              "display": "Oxygen saturation in Arterial blood",
+              "system": "http://loinc.org"
+            },
+            {
+              "code": "59408-5",
+              "display": "Oxygen saturation in Arterial blood by Pulse oximetry",
+              "system": "http://loinc.org"
+            }
+          ]
+        },
+        "resultValue": {
+          "text": null,
+          "type": {
+            "text": null,
+            "codings": []
+          },
+          "number": 98,
+          "number2": null,
+          "codings": []
+        },
+        "resultUnit": {
+          "text": "%",
+          "codings": [
+            {
+              "code": "%",
+              "display": "%",
+              "system": "http://unitsofmeasure.org"
+            }
+          ]
+        },
+        "interpretation": {
+          "text": null,
+          "codings": []
+        },
+        "resultStatus": {
+          "text": "final",
+          "codings": []
+        },
+        "performedDateTime": "2026-09-08T15:05:00-05:00",
+        "performingSite": {
+          "text": null,
+          "codings": []
+        },
+        "referenceRange": {
+          "text": null,
+          "lowValue": null,
+          "highValue": null
+        },
+        "issuedDateTime": null,
+        "vitalSignCategory": {
+          "text": "Vital Signs",
+          "codings": [
+            {
+              "code": "vital-signs",
+              "display": "Vital Signs",
+              "system": "http://terminology.hl7.org/CodeSystem/observation-category"
+            }
+          ]
+        }
+      },
+      {
+        "vitalSign": {
+          "text": "Body weight",
+          "codings": [
+            {
+              "code": "29463-7",
+              "display": "Body weight",
+              "system": "http://loinc.org"
+            }
+          ]
+        },
+        "resultValue": {
+          "text": null,
+          "type": {
+            "text": null,
+            "codings": []
+          },
+          "number": 64.2,
+          "number2": null,
+          "codings": []
+        },
+        "resultUnit": {
+          "text": "kg",
+          "codings": [
+            {
+              "code": "kg",
+              "display": "kg",
+              "system": "http://unitsofmeasure.org"
+            }
+          ]
+        },
+        "interpretation": {
+          "text": null,
+          "codings": []
+        },
+        "resultStatus": {
+          "text": "final",
+          "codings": []
+        },
+        "performedDateTime": "2026-09-08T15:05:00-05:00",
+        "performingSite": {
+          "text": null,
+          "codings": []
+        },
+        "referenceRange": {
+          "text": null,
+          "lowValue": null,
+          "highValue": null
+        },
+        "issuedDateTime": null,
+        "vitalSignCategory": {
+          "text": "Vital Signs",
+          "codings": [
+            {
+              "code": "vital-signs",
+              "display": "Vital Signs",
+              "system": "http://terminology.hl7.org/CodeSystem/observation-category"
+            }
+          ]
+        }
+      }
+    ],
+    "healthAssessments": [
+      {
+        "assessment": {
+          "text": "Pain severity - 0-10 verbal numeric rating [Score] - Reported",
+          "codings": [
+            {
+              "code": "72514-3",
+              "display": "Pain severity - 0-10 verbal numeric rating [Score] - Reported",
+              "system": "http://loinc.org"
+            }
+          ]
+        },
+        "assessmentStatus": {
+          "text": "final",
+          "codings": []
+        },
+        "resultValue": {
+          "text": null,
+          "type": {
+            "text": null,
+            "codings": []
+          },
+          "number": 0,
+          "number2": null,
+          "codings": []
+        },
+        "resultUnit": {
+          "text": "{score}",
+          "codings": [
+            {
+              "code": "{score}",
+              "display": "{score}",
+              "system": "http://unitsofmeasure.org"
+            }
+          ]
+        },
+        "effectiveDate": "2026-03-10T08:35:00-05:00",
+        "issueDateTime": null,
+        "category": {
+          "text": "Survey",
+          "codings": [
+            {
+              "code": "survey",
+              "display": "Survey",
+              "system": "http://terminology.hl7.org/CodeSystem/observation-category"
+            }
+          ]
+        }
+      },
+      {
+        "assessment": {
+          "text": "Patient Health Questionnaire 9 item (PHQ-9) total score [Reported]",
+          "codings": [
+            {
+              "code": "44261-6",
+              "display": "Patient Health Questionnaire 9 item (PHQ-9) total score [Reported]",
+              "system": "http://loinc.org"
+            }
+          ]
+        },
+        "assessmentStatus": {
+          "text": "final",
+          "codings": []
+        },
+        "resultValue": {
+          "text": null,
+          "type": {
+            "text": null,
+            "codings": []
+          },
+          "number": 5,
+          "number2": null,
+          "codings": []
+        },
+        "resultUnit": {
+          "text": "{score}",
+          "codings": [
+            {
+              "code": "{score}",
+              "display": "{score}",
+              "system": "http://unitsofmeasure.org"
+            }
+          ]
+        },
+        "effectiveDate": "2026-03-10T08:40:00-05:00",
+        "issueDateTime": null,
+        "category": {
+          "text": "Survey",
+          "codings": [
+            {
+              "code": "survey",
+              "display": "Survey",
+              "system": "http://terminology.hl7.org/CodeSystem/observation-category"
+            }
+          ]
+        }
+      },
+      {
+        "assessment": {
+          "text": "Generalized anxiety disorder 7 item (GAD-7) total score [Reported.PHQ]",
+          "codings": [
+            {
+              "code": "70274-6",
+              "display": "Generalized anxiety disorder 7 item (GAD-7) total score [Reported.PHQ]",
+              "system": "http://loinc.org"
+            }
+          ]
+        },
+        "assessmentStatus": {
+          "text": "final",
+          "codings": []
+        },
+        "resultValue": {
+          "text": null,
+          "type": {
+            "text": null,
+            "codings": []
+          },
+          "number": 11,
+          "number2": null,
+          "codings": []
+        },
+        "resultUnit": {
+          "text": "{score}",
+          "codings": [
+            {
+              "code": "{score}",
+              "display": "{score}",
+              "system": "http://unitsofmeasure.org"
+            }
+          ]
+        },
+        "effectiveDate": "2026-03-10T08:40:00-05:00",
+        "issueDateTime": null,
+        "category": {
+          "text": "Survey",
+          "codings": [
+            {
+              "code": "survey",
+              "display": "Survey",
+              "system": "http://terminology.hl7.org/CodeSystem/observation-category"
+            }
+          ]
+        }
+      },
+      {
+        "assessment": {
+          "text": "Generalized anxiety disorder 7 item (GAD-7) total score [Reported.PHQ]",
+          "codings": [
+            {
+              "code": "70274-6",
+              "display": "Generalized anxiety disorder 7 item (GAD-7) total score [Reported.PHQ]",
+              "system": "http://loinc.org"
+            }
+          ]
+        },
+        "assessmentStatus": {
+          "text": "final",
+          "codings": []
+        },
+        "resultValue": {
+          "text": null,
+          "type": {
+            "text": null,
+            "codings": []
+          },
+          "number": 7,
+          "number2": null,
+          "codings": []
+        },
+        "resultUnit": {
+          "text": "{score}",
+          "codings": [
+            {
+              "code": "{score}",
+              "display": "{score}",
+              "system": "http://unitsofmeasure.org"
+            }
+          ]
+        },
+        "effectiveDate": "2026-07-14T17:05:00-05:00",
+        "issueDateTime": null,
+        "category": {
+          "text": "Survey",
+          "codings": [
+            {
+              "code": "survey",
+              "display": "Survey",
+              "system": "http://terminology.hl7.org/CodeSystem/observation-category"
+            }
+          ]
+        }
+      },
+      {
+        "assessment": {
+          "text": "Tobacco smoking status",
+          "codings": [
+            {
+              "code": "72166-2",
+              "display": "Tobacco smoking status",
+              "system": "http://loinc.org"
+            }
+          ]
+        },
+        "assessmentStatus": {
+          "text": "final",
+          "codings": []
+        },
+        "resultValue": {
+          "text": "Never smoker",
+          "type": {
+            "text": "Never smoker",
+            "codings": [
+              {
+                "code": "266919005",
+                "display": "Never smoked tobacco",
+                "system": "http://snomed.info/sct"
+              }
+            ]
+          },
+          "number": null,
+          "number2": null,
+          "codings": []
+        },
+        "resultUnit": {
+          "text": null,
+          "codings": []
+        },
+        "effectiveDate": "2026-03-10T08:40:00-05:00",
+        "issueDateTime": null,
+        "category": {
+          "text": "Social History",
+          "codings": [
+            {
+              "code": "social-history",
+              "display": "Social History",
+              "system": "http://terminology.hl7.org/CodeSystem/observation-category"
+            }
+          ]
+        }
+      }
+    ]
+  }
+}
