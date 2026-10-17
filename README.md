@@ -29,6 +29,8 @@ tools/
   powershell/         shared builders and publishing scripts (HAPI, SMART Health Links)
 catalog.json      machine-readable index of every patient (generated)
 CATALOG.md        human-readable index (generated)
+sources.json      other data sources, with section, level and license
+SOURCES.md        human-readable list of other sources (generated)
 ```
 
 Each patient card lists **variants**. Today every patient has a `clean` variant; `messy`
@@ -65,9 +67,10 @@ Each patient card lists **variants**. Today every patient has a `clean` variant;
 
 ## Other sources
 
-Looking for something this collection doesn't have yet? [SOURCES.md](SOURCES.md) compares
-other open synthetic and test data sources, such as APEX Atlas, Synthea and the HL7 AU test data,
-and what each is best for.
+Looking for something this collection doesn't have yet? [SOURCES.md](SOURCES.md) lists other
+open synthetic and test data sources, from Synthea, ONC's Inferno data and MIMIC-IV to
+international sets from Australia, Europe, Canada, India and Africa. It's grouped by region
+and by what you're testing, and sorted by how broadly useful each source is.
 
 ## Contributing
 
