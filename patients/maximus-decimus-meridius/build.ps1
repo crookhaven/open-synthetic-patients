@@ -82,23 +82,23 @@ Org 'payer_med' 'Atlas Health Plan' 'pay' 'Payer'
 Org 'payer_dental' 'Atlas Dental Plan' 'pay' 'Payer'
 Org 'payer_vision' 'Atlas Vision Plan' 'pay' 'Payer'
 
-Prac 'pr_pcp' 'Helena' 'Ortiz' 'MD' 'org_pcp' '207R00000X' 'Internal Medicine'
-Prac 'pr_ed' 'Priya' 'Raman' 'MD' 'org_hosp' '207P00000X' 'Emergency Medicine'
-Prac 'pr_hosp' 'Samuel' 'Okafor' 'MD' 'org_hosp' '208M00000X' 'Hospitalist'
-Prac 'pr_icard' 'Elena' 'Vasquez' 'MD' 'org_cards' '207RI0011X' 'Interventional Cardiology'
-Prac 'pr_cards' 'Marcus' 'Chen' 'MD' 'org_cards' '207RC0000X' 'Cardiovascular Disease'
-Prac 'pr_sleep' 'Aaron' 'Feld' 'MD' 'org_sleep' '207RP1001X' 'Pulmonary Disease'
-Prac 'pr_pain' 'Victor' 'Hale' 'MD' 'org_pain' '208VP0014X' 'Interventional Pain Medicine'
-Prac 'pr_derm' 'Naomi' 'Blake' 'MD' 'org_derm' '207N00000X' 'Dermatology'
-Prac 'pr_path' 'Laura' 'Kim' 'MD' 'org_lab' '207ZP0102X' 'Anatomic & Clinical Pathology'
+Prac 'pr_pcp' 'Helena' 'Ortiz' 'MD' 'org_pcp' '207R00000X' 'Internal Medicine Physician'
+Prac 'pr_ed' 'Priya' 'Raman' 'MD' 'org_hosp' '207P00000X' 'Emergency Medicine Physician'
+Prac 'pr_hosp' 'Samuel' 'Okafor' 'MD' 'org_hosp' '208M00000X' 'Hospitalist Physician'
+Prac 'pr_icard' 'Elena' 'Vasquez' 'MD' 'org_cards' '207RI0011X' 'Interventional Cardiology Physician'
+Prac 'pr_cards' 'Marcus' 'Chen' 'MD' 'org_cards' '207RC0000X' 'Cardiovascular Disease Physician'
+Prac 'pr_sleep' 'Aaron' 'Feld' 'MD' 'org_sleep' '207RP1001X' 'Pulmonary Disease Physician'
+Prac 'pr_pain' 'Victor' 'Hale' 'MD' 'org_pain' '208VP0014X' 'Interventional Pain Medicine Physician'
+Prac 'pr_derm' 'Naomi' 'Blake' 'MD' 'org_derm' '207N00000X' 'Dermatology Physician'
+Prac 'pr_path' 'Laura' 'Kim' 'MD' 'org_lab' '207ZP0102X' 'Anatomic Pathology & Clinical Pathology Physician'
 Prac 'pr_aud' 'Jordan' 'Lee' 'AuD' 'org_aud' '231H00000X' 'Audiologist'
-Prac 'pr_ophth' 'Rajiv' 'Mehta' 'MD' 'org_eye' '207W00000X' 'Ophthalmology'
+Prac 'pr_ophth' 'Rajiv' 'Mehta' 'MD' 'org_eye' '207W00000X' 'Ophthalmology Physician'
 Prac 'pr_od' 'Claire' 'Dubois' 'OD' 'org_eye' '152W00000X' 'Optometrist'
 Prac 'pr_dds' 'Sofia' 'Marin' 'DDS' 'org_dental' '1223G0001X' 'General Practice Dentistry'
-Prac 'pr_perio' 'Tomas' 'Reyes' 'DDS' 'org_perio' '1223P0300X' 'Periodontics'
+Prac 'pr_perio' 'Tomas' 'Reyes' 'DDS' 'org_perio' '1223P0300X' 'Periodontist'
 Prac 'pr_psych' 'Grace' 'Holloway' 'PhD' 'org_bh' '103T00000X' 'Psychologist'
-Prac 'pr_gi' 'Ben' 'Adler' 'MD' 'org_gi' '207RG0100X' 'Gastroenterology'
-Prac 'pr_rad' 'Thomas' 'Nguyen' 'MD' 'org_img' '2085R0202X' 'Diagnostic Radiology'
+Prac 'pr_gi' 'Ben' 'Adler' 'MD' 'org_gi' '207RG0100X' 'Gastroenterology Physician'
+Prac 'pr_rad' 'Thomas' 'Nguyen' 'MD' 'org_img' '2085R0202X' 'Diagnostic Radiology Physician'
 Prac 'pr_rn' 'Maria' 'Santos' 'RN' 'org_pcp' '163W00000X' 'Registered Nurse'
 
 # =====================================================================
@@ -950,7 +950,7 @@ function Fill($k, $date, $medKey, $prac, $days, $qty, $unit, $charge, $allowed, 
     care = @(CareRef $prac 'prescribing' 'Prescribing provider')
     info = @(
       [ordered]@{ category = (CC "$C4BB/C4BBSupportingInfoType" 'dayssupply' 'Days Supply'); valueQuantity = [ordered]@{ value = $days } },
-      [ordered]@{ category = (CC "$C4BB/C4BBSupportingInfoType" 'dawcode' 'DAW Code'); code = (CC 'http://terminology.hl7.org/CodeSystem/NCPDPDispensedAsWrittenOrProductSelectionCode' '0' 'No product selection indicated') },
+      [ordered]@{ category = (CC "$C4BB/C4BBSupportingInfoType" 'dawcode' 'DAW (Dispense As Written) Code'); code = (CC 'http://terminology.hl7.org/CodeSystem/NCPDPDispensedAsWrittenOrProductSelectionCode' '0' 'No product selection indicated') },
       [ordered]@{ category = (CC "$C4BB/C4BBSupportingInfoType" 'refillnum' 'Refill Number'); valueQuantity = [ordered]@{ value = $refill } })
     lines = @((Line $NDC $m.ndc $m.n $charge $allowed $copay @{ qty = $qty; unit = $unit })); pos = '01'; posDisp = 'Pharmacy' }
 }

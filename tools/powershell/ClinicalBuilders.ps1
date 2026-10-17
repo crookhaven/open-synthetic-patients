@@ -38,6 +38,7 @@ function Prac($key, $given, $family, $suffix, $org, $taxCode, $taxDisp) {
     practitioner = (Ref 'Practitioner' $key $PRAC[$key])
     organization = (Ref 'Organization' $org)
     specialty = @(CC $NUCC $taxCode $taxDisp)
+    telecom = @([ordered]@{ system = 'phone'; value = '217-555-0100'; use = 'work' })
   })
 }
 
@@ -177,7 +178,8 @@ function Obs($o) {
     resourceType = 'Observation'; id = (Id $o.k); meta = (Meta $profile)
     status = 'final'
     category = @(CC $OBSCAT $cat $catDisp)
-    code = (CC $LOINC $o.code $o.disp $o.text)
+    # US Core pulse oximetry requires LOINC 2708-6 alongside 59408-5
+    code = $(if ($o.code -eq '59408-5') { CCn $(if ($o.text) { $o.text } else { $o.disp }) @($LOINC, '2708-6', 'Oxygen saturation in Arterial blood') @($LOINC, $o.code, $o.disp) } else { CC $LOINC $o.code $o.disp $o.text })
     subject = (PatRef)
     encounter = (Ref 'Encounter' $o.e)
     effectiveDateTime = $o.date
@@ -385,6 +387,19 @@ $REFER = { param($text) CC $SCT '103696004' 'Patient referral to specialist (pro
 
 $ADJ = 'http://terminology.hl7.org/CodeSystem/adjudication'
 
+# CARIN BB 2.x network status: category from C4BBAdjudicationDiscriminator, reason from
+# C4BBPayerAdjudicationStatus. All synthetic claims here are in network.
+function NetStatus($slice) {
+  $disp = @{ benefitpaymentstatus = 'Benefit Payment Status'; billingnetworkstatus = 'Billing Network Status'; renderingnetworkstatus = 'Rendering Network Status' }[$slice]
+  [ordered]@{ category = [ordered]@{ coding = @(Coding "$C4BB/C4BBAdjudicationDiscriminator" $slice $disp) }; reason = [ordered]@{ coding = @(Coding "$C4BB/C4BBPayerAdjudicationStatus" 'innetwork' 'In Network') } }
+}
+# Header-level statuses, following the CARIN BB 2.x profiles (and ONC's Inferno examples):
+# professional and oral: billing + rendering; institutional and pharmacy: benefit payment + billing.
+function HeaderNetStatus($kind) {
+  if ($kind -eq 'professional' -or $kind -eq 'oral') { @((NetStatus 'billingnetworkstatus'), (NetStatus 'renderingnetworkstatus')) }
+  else { @((NetStatus 'benefitpaymentstatus'), (NetStatus 'billingnetworkstatus')) }
+}
+
 function Adj($sys, $code, $disp, $amt) { [ordered]@{ category = [ordered]@{ coding = @(Coding $sys $code $disp) }; amount = (Money $amt) } }
 
 $PROFILES = @{
@@ -402,7 +417,6 @@ function Eob($c) {
     [ordered]@{ sequence = $ctr.j; diagnosisCodeableConcept = (CC $ICD $d.c $d.d); type = @([ordered]@{ coding = @($type) }) }
   }
   $info = New-Object System.Collections.ArrayList
-  [void]$info.Add([ordered]@{ category = (CC "$C4BB/C4BBSupportingInfoType" 'billingnetworkcontractingstatus' 'Billing Network Contracting Status'); code = (CC "$C4BB/C4BBPayerProviderContractingStatus" 'contracted' 'Contracted') })
   [void]$info.Add([ordered]@{ category = (CC "$C4BB/C4BBSupportingInfoType" 'clmrecvddate' 'Claim Received Date'); timingDate = $c.received })
   foreach ($x in @($c.info)) { if ($x) { [void]$info.Add($x) } }
   $info = Each $info { param($x) $ctr.s++; $x.Insert(0, 'sequence', $ctr.s); $x }
@@ -417,17 +431,19 @@ function Eob($c) {
     $it.productOrService = (CC $l.sys $l.code $l.disp)
     if ($l.mod) { $it.modifier = @(CC $CPT $l.mod $l.modDisp) }
     $it.servicedDate = $(if ($l.date) { $l.date } else { $c.start })
-    if ($c.pos) { $it.locationCodeableConcept = (CC $POS $c.pos $c.posDisp) }
+    if ($c.pos) { $it.locationCodeableConcept = (CC $POS_SYSTEM $c.pos $c.posDisp) }
     $it.quantity = $(if ($l.qty) { [ordered]@{ value = $l.qty; unit = $l.unit } } else { [ordered]@{ value = 1 } })
     if ($l.tooth) { $it.bodySite = (CC 'http://terminology.hl7.org/CodeSystem/ex-tooth' $l.tooth $l.toothDisp) }
     if ($l.surface) { $it.subSite = @(CC 'http://terminology.hl7.org/CodeSystem/ex-surface' $l.surface $l.surfaceDisp) }
     if ($c.enc) { $it.encounter = @(Ref 'Encounter' $c.enc) }
-    $it.adjudication = @(
+    $lineAdj = @(
       (Adj $ADJ 'submitted' 'Submitted Amount' $l.charge),
       (Adj $ADJ 'eligible' 'Eligible Amount' $allowed),
       (Adj "$C4BB/C4BBAdjudication" 'paidtoprovider' 'Paid to provider' $paid),
-      (Adj "$C4BB/C4BBAdjudication" 'paidbypatient' 'Paid by patient' $pt),
-      [ordered]@{ category = [ordered]@{ coding = @(Coding "$C4BB/C4BBAdjudicationDiscriminator" 'inoutnetwork' 'In or Out of Network') }; reason = [ordered]@{ coding = @(Coding "$C4BB/C4BBPayerAdjudicationStatus" 'innetwork' 'In Network') } })
+      (Adj "$C4BB/C4BBAdjudication" 'paidbypatient' 'Paid by patient' $pt))
+    # CARIN BB 2.x: professional and oral claims report benefit payment status per line
+    if ($kind -eq 'professional' -or $kind -eq 'oral') { $lineAdj += (NetStatus 'benefitpaymentstatus') }
+    $it.adjudication = $lineAdj
     $it
   }
   $r = [ordered]@{
@@ -448,6 +464,7 @@ function Eob($c) {
     procedure = (Each $c.pcs { param($p) [ordered]@{ sequence = 1; type = @(CC 'http://terminology.hl7.org/CodeSystem/ex-proceduretype' 'primary' 'Primary procedure'); date = $c.start; procedureCodeableConcept = (CC $PCS $p.c $p.d) } })
     insurance = @([ordered]@{ focal = $true; coverage = (Ref 'Coverage' $c.cov) })
     item = $items
+    adjudication = (HeaderNetStatus $kind)
     total = @(
       (Adj $ADJ 'submitted' 'Submitted Amount' $tot.sub), (Adj $ADJ 'eligible' 'Eligible Amount' $tot.elig),
       (Adj "$C4BB/C4BBAdjudication" 'paidtoprovider' 'Paid to provider' $tot.prov), (Adj "$C4BB/C4BBAdjudication" 'paidbypatient' 'Paid by patient' $tot.pt))

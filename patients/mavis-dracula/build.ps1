@@ -63,12 +63,12 @@ Org 'org_womens' "Atlas Women's Health"
 Org 'org_lab' 'Atlas Reference Laboratory'
 Org 'payer_med' 'Atlas Marketplace Health Plan' 'pay' 'Payer'
 
-Prac 'pr_pcp' 'Nadia' 'Petrescu' 'MD' 'org_pcp' '207Q00000X' 'Family Medicine'
-Prac 'pr_uc' 'Kevin' 'Brooks' 'MD' 'org_uc' '207P00000X' 'Emergency Medicine'
-Prac 'pr_neuro' 'Ivan' 'Novak' 'MD' 'org_neuro' '2084N0400X' 'Neurology'
+Prac 'pr_pcp' 'Nadia' 'Petrescu' 'MD' 'org_pcp' '207Q00000X' 'Family Medicine Physician'
+Prac 'pr_uc' 'Kevin' 'Brooks' 'MD' 'org_uc' '207P00000X' 'Emergency Medicine Physician'
+Prac 'pr_neuro' 'Ivan' 'Novak' 'MD' 'org_neuro' '2084N0400X' 'Neurology Physician'
 Prac 'pr_bh' 'Elena' 'Popa' 'LCSW' 'org_bh' '1041C0700X' 'Clinical Social Worker'
-Prac 'pr_gyn' 'Sarah' 'Wolfe' 'MD' 'org_womens' '207V00000X' 'Obstetrics & Gynecology'
-Prac 'pr_path' 'Laura' 'Kim' 'MD' 'org_lab' '207ZP0102X' 'Anatomic & Clinical Pathology'
+Prac 'pr_gyn' 'Sarah' 'Wolfe' 'MD' 'org_womens' '207V00000X' 'Obstetrics & Gynecology Physician'
+Prac 'pr_path' 'Laura' 'Kim' 'MD' 'org_lab' '207ZP0102X' 'Anatomic Pathology & Clinical Pathology Physician'
 Prac 'pr_rn' 'Marta' 'Jones' 'RN' 'org_pcp' '163W00000X' 'Registered Nurse'
 
 Coverage 'cov_med' 'payer_med' 'HMO' 'health maintenance organization policy' 'Atlas Silver 4500 HMO' 'Individual Marketplace' '2025-01-01' 'AMP-562-38-1988' '38'

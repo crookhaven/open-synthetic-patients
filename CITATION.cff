@@ -3,7 +3,8 @@ message: "If you use these synthetic patients, please cite them as below."
 title: "open-synthetic-patients: open, fully synthetic FHIR R4 test patients"
 type: dataset
 authors:
-  - given-names: Mark
+  - family-names: Roberts
+    given-names: Mark
     alias: crookhaven
 repository-code: "https://github.com/crookhaven/open-synthetic-patients"
 license: CC-BY-4.0

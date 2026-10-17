@@ -20,6 +20,9 @@ $DCM = 'http://dicom.nema.org/resources/ontology/DCM'
 $NUCC = 'http://nucc.org/provider-taxonomy'
 $UCUM = 'http://unitsofmeasure.org'
 $POS = 'https://www.cms.gov/Medicare/Coding/place-of-service-codes/Place_of_Service_Code_Set'
+# Same value under a name no function parameter uses. PowerShell variable names ignore case
+# and are dynamically scoped, so a caller's $pos parameter would otherwise shadow $POS.
+$POS_SYSTEM = $POS
 $C4BB = 'http://hl7.org/fhir/us/carin-bb/CodeSystem'
 $C4BBSD = 'http://hl7.org/fhir/us/carin-bb/StructureDefinition'
 $UC = 'http://hl7.org/fhir/us/core/StructureDefinition'
@@ -75,7 +78,9 @@ function DicomUid([string]$key) {
 # ---------- small builders ----------
 $HTEST = [ordered]@{ system = 'http://terminology.hl7.org/CodeSystem/v3-ActReason'; code = 'HTEST'; display = 'test health data' }
 function Meta($profile) { if ($profile) { [ordered]@{ profile = @($profile); tag = @($HTEST) } } else { [ordered]@{ tag = @($HTEST) } } }
-function Coding($sys, $code, $disp) { [ordered]@{ system = $sys; code = $code; display = $disp } }
+# CPT codes carry no display: the only valid displays are the AMA's licensed descriptors.
+# The plain-language label stays in CodeableConcept.text (see CC).
+function Coding($sys, $code, $disp) { if ($sys -eq $CPT) { $disp = $null }; [ordered]@{ system = $sys; code = $code; display = $disp } }
 function CC($sys, $code, $disp, $text) { $t = $text; if (-not $t) { $t = $disp }; [ordered]@{ coding = @(Coding $sys $code $disp); text = $t } }
 # Several codings for one concept: CCn 'text' @($SCT,'1','A') @($ICD,'X','B')
 function CCn($text) { [ordered]@{ coding = @($args | ForEach-Object { Coding $_[0] $_[1] $_[2] }); text = $text } }

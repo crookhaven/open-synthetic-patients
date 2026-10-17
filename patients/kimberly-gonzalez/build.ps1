@@ -86,7 +86,8 @@ $HTEST = [ordered]@{ system = 'http://terminology.hl7.org/CodeSystem/v3-ActReaso
 function Meta($profile) {
   if ($profile) { [ordered]@{ profile = @($profile); tag = @($HTEST) } } else { [ordered]@{ tag = @($HTEST) } }
 }
-function Coding($sys, $code, $disp) { [ordered]@{ system = $sys; code = $code; display = $disp } }
+# CPT codes carry no display: the only valid displays are the AMA's licensed descriptors.
+function Coding($sys, $code, $disp) { if ($sys -eq $CPT) { $disp = $null }; [ordered]@{ system = $sys; code = $code; display = $disp } }
 function CC($sys, $code, $disp, $text) {
   $t = $text; if (-not $t) { $t = $disp }
   [ordered]@{ coding = @(Coding $sys $code $disp); text = $t }
@@ -119,6 +120,22 @@ foreach ($fix in @(
   $n = $fixRe.Matches($srcText).Count
   if ($n -ne 1) { throw "Expected 1 match for $($fix[0]), found $n" }
   $srcText = $fixRe.Replace($srcText, "`${1}`"$($fix[1])`"`${2}")
+}
+# Further source fixes, each expected exactly once (checked against tx.fhir.org):
+#   payer organization type uses the organization-type code system, not v3-RoleCode
+#   official display names for RxNorm 861007, CVX 115 and NAHDO SOPT 11
+#   the two source prescriptions (intent "order") need a requester under US Core
+foreach ($fix in @(
+    @('"system": "http://terminology.hl7.org/CodeSystem/v3-RoleCode",(\s*)"code": "pay"', '"system": "http://terminology.hl7.org/CodeSystem/organization-type",${1}"code": "pay"'),
+    @('("code": "861007",\s*"display": )"Metformin 500 MG Oral Tablet"', '${1}"metformin hydrochloride 500 MG Oral Tablet"'),
+    @('("code": "115",\s*"display": )"Tdap \(tetanus, diphtheria, acellular pertussis\)"', '${1}"Tdap"'),
+    @('("code": "11",\s*"display": )"Medicare \(Managed Care\)"', '${1}"Medicare Managed Care (Includes Medicare Advantage Plans)"'),
+    @('("id": "e857ac28-6c02-5325-8361-013e4b7981be",[\s\S]*?\n(\s*)"authoredOn": "[^"]+",)', ('${1}' + "`n" + '${2}"requester": {' + "`n" + '${2}  "reference": "Practitioner/' + (Id 'pr_pcp') + '"' + "`n" + '${2}},')),
+    @('("id": "b23cfb33-4e91-5bed-821b-c6fc85b188ce",[\s\S]*?\n(\s*)"authoredOn": "[^"]+",)', ('${1}' + "`n" + '${2}"requester": {' + "`n" + '${2}  "reference": "Practitioner/' + (Id 'pr_pcp') + '"' + "`n" + '${2}},')))) {
+  $fixRe = [regex]$fix[0]
+  $n = $fixRe.Matches($srcText).Count
+  if ($n -ne 1) { throw "Expected 1 match for $($fix[0]), found $n" }
+  $srcText = $fixRe.Replace($srcText, $fix[1])
 }
 $bundle = $srcText | ConvertFrom-Json
 function FindId($type, [scriptblock]$pred) {
@@ -177,13 +194,14 @@ function Prac($key, $given, $family, $suffix, $ident, $orgKey, $taxCode, $taxDis
     practitioner = (Ref 'Practitioner' $key "$given $family, $suffix")
     organization = (Ref 'Organization' $orgKey)
     specialty = @(CC $NUCC $taxCode $taxDisp)
+    telecom = @([ordered]@{ system = 'phone'; value = '217-555-0100'; use = 'work' })
   })
 }
-Prac 'pr_pcp'  'Angela'  'Morris' 'MD'  'PRAC-10001' 'org_pcp'  '207R00000X' 'Internal Medicine'
-Prac 'pr_neph' 'Rajesh'  'Patel'  'MD'  'PRAC-10002' 'org_neph' '207RN0300X' 'Nephrology'
-Prac 'pr_eye'  'Elena'   'Ruiz'   'MD'  'PRAC-10003' 'org_eye'  '207W00000X' 'Ophthalmology'
-Prac 'pr_rad'  'Thomas'  'Nguyen' 'MD'  'PRAC-10004' 'org_img'  '2085R0202X' 'Diagnostic Radiology'
-Prac 'pr_endo' 'Grace'   'Okafor' 'MD'  'PRAC-10005' 'org_endo' '207RE0101X' 'Endocrinology, Diabetes & Metabolism'
+Prac 'pr_pcp'  'Angela'  'Morris' 'MD'  'PRAC-10001' 'org_pcp'  '207R00000X' 'Internal Medicine Physician'
+Prac 'pr_neph' 'Rajesh'  'Patel'  'MD'  'PRAC-10002' 'org_neph' '207RN0300X' 'Nephrology Physician'
+Prac 'pr_eye'  'Elena'   'Ruiz'   'MD'  'PRAC-10003' 'org_eye'  '207W00000X' 'Ophthalmology Physician'
+Prac 'pr_rad'  'Thomas'  'Nguyen' 'MD'  'PRAC-10004' 'org_img'  '2085R0202X' 'Diagnostic Radiology Physician'
+Prac 'pr_endo' 'Grace'   'Okafor' 'MD'  'PRAC-10005' 'org_endo' '207RE0101X' 'Endocrinology, Diabetes & Metabolism Physician'
 Prac 'pr_pod'  'Marcus'  'Bell'   'DPM' 'PRAC-10006' 'org_pod'  '213E00000X' 'Podiatrist'
 
 # =====================================================================
@@ -558,7 +576,7 @@ Electronically signed: Elena Ruiz, MD - Ophthalmology    09/05/2018 11:05
 # --- 2024 screening mammogram ---
 $t = "2024-08-05T08:30:00$TZ"
 Study 'is_mammo24' $t 'enc_img24' @('sr_mammo24') 'pr_pcp' 'pr_rad' @(CC $CPT '77067' 'Screening mammography, bilateral' 'Screening mammogram, bilateral') @() 'MG SCREENING BILATERAL' @(
-  (Series 'is_mammo24' 1 'MG' 'Right breast CC/MLO' '80248007' 'Right breast structure' 'R' $t @('R CC', 'R MLO')),
+  (Series 'is_mammo24' 1 'MG' 'Right breast CC/MLO' '73056007' 'Right breast structure' 'R' $t @('R CC', 'R MLO')),
   (Series 'is_mammo24' 2 'MG' 'Left breast CC/MLO'  '80248007' 'Left breast structure' 'L' $t @('L CC', 'L MLO'))
 )
 ImgDR 'dr_mammo24' '2024-08-05' "2024-08-06T09:10:00$TZ" 'enc_img24' @('sr_mammo24') @('is_mammo24') (CC $LOINC '24606-6' 'MG Breast Screening') 'Mammography' 'pr_rad' 'org_img' 'Screening Mammogram, Bilateral' 'Negative screening mammogram. BI-RADS 1. Breast density B (scattered fibroglandular). Annual screening recommended.' @"
@@ -892,7 +910,7 @@ function EOB($key, $dos, $created, $paid, $billOrg, $rendering, $renderingType, 
       (Adj "$C4BB/C4BBAdjudication" 'paidtoprovider' 'Paid to provider' $paidAmt),
       (Adj "$C4BB/C4BBAdjudication" 'paidbypatient' 'Paid by patient' $ptAmt),
       [ordered]@{
-        category = [ordered]@{ coding = @(Coding "$C4BB/C4BBAdjudicationDiscriminator" 'inoutnetwork' 'In or Out of Network') }
+        category = [ordered]@{ coding = @(Coding "$C4BB/C4BBAdjudicationDiscriminator" 'benefitpaymentstatus' 'Benefit Payment Status') }
         reason = [ordered]@{ coding = @(Coding "$C4BB/C4BBPayerAdjudicationStatus" 'innetwork' 'In Network') }
       }
     )
@@ -912,12 +930,16 @@ function EOB($key, $dos, $created, $paid, $billOrg, $rendering, $renderingType, 
     outcome = 'complete'
     careTeam = @($care)
     supportingInfo = @(
-      [ordered]@{ sequence = 1; category = (CC "$C4BB/C4BBSupportingInfoType" 'billingnetworkcontractingstatus' 'Billing Network Contracting Status'); code = (CC "$C4BB/C4BBPayerProviderContractingStatus" 'contracted' 'Contracted') },
-      [ordered]@{ sequence = 2; category = (CC "$C4BB/C4BBSupportingInfoType" 'clmrecvddate' 'Claim Received Date'); timingDate = $created }
+      [ordered]@{ sequence = 1; category = (CC "$C4BB/C4BBSupportingInfoType" 'clmrecvddate' 'Claim Received Date'); timingDate = $created }
     )
     diagnosis = @($dxOut)
     insurance = @([ordered]@{ focal = $true; coverage = (Ref 'Coverage' 'coverage') })
     item = @($items)
+    # CARIN BB 2.x: billing and rendering provider network status at the claim level
+    adjudication = @(
+      [ordered]@{ category = [ordered]@{ coding = @(Coding "$C4BB/C4BBAdjudicationDiscriminator" 'billingnetworkstatus' 'Billing Network Status') }; reason = [ordered]@{ coding = @(Coding "$C4BB/C4BBPayerAdjudicationStatus" 'innetwork' 'In Network') } },
+      [ordered]@{ category = [ordered]@{ coding = @(Coding "$C4BB/C4BBAdjudicationDiscriminator" 'renderingnetworkstatus' 'Rendering Network Status') }; reason = [ordered]@{ coding = @(Coding "$C4BB/C4BBPayerAdjudicationStatus" 'innetwork' 'In Network') } }
+    )
     total = @(
       (Adj $ADJ 'submitted' 'Submitted Amount' $tot.sub),
       (Adj $ADJ 'eligible' 'Eligible Amount' $tot.elig),

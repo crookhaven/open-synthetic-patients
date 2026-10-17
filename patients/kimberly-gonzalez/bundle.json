@@ -421,7 +421,7 @@
             {
               "system": "https://nahdo.org/sopt",
               "code": "11",
-              "display": "Medicare (Managed Care)"
+              "display": "Medicare Managed Care (Includes Medicare Advantage Plans)"
             }
           ],
           "text": "Medicare (Managed Care)"
@@ -866,7 +866,7 @@
             {
               "system": "http://hl7.org/fhir/sid/cvx",
               "code": "115",
-              "display": "Tdap (tetanus, diphtheria, acellular pertussis)"
+              "display": "Tdap"
             }
           ],
           "text": "Tdap (tetanus, diphtheria, acellular pertussis)"
@@ -914,6 +914,9 @@
           "reference": "Patient/GPX-SYN-0000000279-0"
         },
         "authoredOn": "1990-07-21",
+        "requester": {
+          "reference": "Practitioner/7f338461-3a08-5284-be38-33b673dc55c4"
+        },
         "reasonCode": [
           {
             "coding": [
@@ -955,7 +958,7 @@
             {
               "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
               "code": "861007",
-              "display": "Metformin 500 MG Oral Tablet"
+              "display": "metformin hydrochloride 500 MG Oral Tablet"
             }
           ],
           "text": "Metformin 500 MG Oral Tablet"
@@ -964,6 +967,9 @@
           "reference": "Patient/GPX-SYN-0000000279-0"
         },
         "authoredOn": "2008-07-16",
+        "requester": {
+          "reference": "Practitioner/7f338461-3a08-5284-be38-33b673dc55c4"
+        },
         "reasonCode": [
           {
             "coding": [
@@ -1534,7 +1540,7 @@
           {
             "coding": [
               {
-                "system": "http://terminology.hl7.org/CodeSystem/v3-RoleCode",
+                "system": "http://terminology.hl7.org/CodeSystem/organization-type",
                 "code": "pay",
                 "display": "Payer"
               }
@@ -1925,10 +1931,17 @@
               {
                 "system": "http://nucc.org/provider-taxonomy",
                 "code": "207R00000X",
-                "display": "Internal Medicine"
+                "display": "Internal Medicine Physician"
               }
             ],
-            "text": "Internal Medicine"
+            "text": "Internal Medicine Physician"
+          }
+        ],
+        "telecom": [
+          {
+            "system": "phone",
+            "value": "217-555-0100",
+            "use": "work"
           }
         ]
       }
@@ -2002,10 +2015,17 @@
               {
                 "system": "http://nucc.org/provider-taxonomy",
                 "code": "207RN0300X",
-                "display": "Nephrology"
+                "display": "Nephrology Physician"
               }
             ],
-            "text": "Nephrology"
+            "text": "Nephrology Physician"
+          }
+        ],
+        "telecom": [
+          {
+            "system": "phone",
+            "value": "217-555-0100",
+            "use": "work"
           }
         ]
       }
@@ -2079,10 +2099,17 @@
               {
                 "system": "http://nucc.org/provider-taxonomy",
                 "code": "207W00000X",
-                "display": "Ophthalmology"
+                "display": "Ophthalmology Physician"
               }
             ],
-            "text": "Ophthalmology"
+            "text": "Ophthalmology Physician"
+          }
+        ],
+        "telecom": [
+          {
+            "system": "phone",
+            "value": "217-555-0100",
+            "use": "work"
           }
         ]
       }
@@ -2156,10 +2183,17 @@
               {
                 "system": "http://nucc.org/provider-taxonomy",
                 "code": "2085R0202X",
-                "display": "Diagnostic Radiology"
+                "display": "Diagnostic Radiology Physician"
               }
             ],
-            "text": "Diagnostic Radiology"
+            "text": "Diagnostic Radiology Physician"
+          }
+        ],
+        "telecom": [
+          {
+            "system": "phone",
+            "value": "217-555-0100",
+            "use": "work"
           }
         ]
       }
@@ -2233,10 +2267,17 @@
               {
                 "system": "http://nucc.org/provider-taxonomy",
                 "code": "207RE0101X",
-                "display": "Endocrinology, Diabetes & Metabolism"
+                "display": "Endocrinology, Diabetes & Metabolism Physician"
               }
             ],
-            "text": "Endocrinology, Diabetes & Metabolism"
+            "text": "Endocrinology, Diabetes & Metabolism Physician"
+          }
+        ],
+        "telecom": [
+          {
+            "system": "phone",
+            "value": "217-555-0100",
+            "use": "work"
           }
         ]
       }
@@ -2314,6 +2355,13 @@
               }
             ],
             "text": "Podiatrist"
+          }
+        ],
+        "telecom": [
+          {
+            "system": "phone",
+            "value": "217-555-0100",
+            "use": "work"
           }
         ]
       }
@@ -2516,8 +2564,7 @@
           "coding": [
             {
               "system": "http://www.ama-assn.org/go/cpt",
-              "code": "76770",
-              "display": "US retroperitoneal, complete"
+              "code": "76770"
             }
           ],
           "text": "Renal ultrasound, complete"
@@ -2591,8 +2638,7 @@
           "coding": [
             {
               "system": "http://www.ama-assn.org/go/cpt",
-              "code": "77067",
-              "display": "Screening mammography, bilateral"
+              "code": "77067"
             }
           ],
           "text": "Screening mammogram, bilateral"
@@ -2661,8 +2707,7 @@
           "coding": [
             {
               "system": "http://www.ama-assn.org/go/cpt",
-              "code": "77080",
-              "display": "DXA bone density, axial skeleton"
+              "code": "77080"
             }
           ],
           "text": "DXA bone density study"
@@ -2965,8 +3010,7 @@
           "coding": [
             {
               "system": "http://www.ama-assn.org/go/cpt",
-              "code": "77067",
-              "display": "Screening mammography, bilateral"
+              "code": "77067"
             }
           ],
           "text": "Screening mammogram, bilateral"
@@ -3035,8 +3079,7 @@
           "coding": [
             {
               "system": "http://www.ama-assn.org/go/cpt",
-              "code": "77080",
-              "display": "DXA bone density, axial skeleton"
+              "code": "77080"
             }
           ],
           "text": "DXA bone density study"
@@ -6153,8 +6196,7 @@
             "coding": [
               {
                 "system": "http://www.ama-assn.org/go/cpt",
-                "code": "76770",
-                "display": "US retroperitoneal, complete"
+                "code": "76770"
               }
             ],
             "text": "Renal ultrasound, complete"
@@ -6590,8 +6632,7 @@
             "coding": [
               {
                 "system": "http://www.ama-assn.org/go/cpt",
-                "code": "92134",
-                "display": "Scanning computerized ophthalmic diagnostic imaging, retina"
+                "code": "92134"
               }
             ],
             "text": "OCT retina, both eyes"
@@ -6600,8 +6641,7 @@
             "coding": [
               {
                 "system": "http://www.ama-assn.org/go/cpt",
-                "code": "92250",
-                "display": "Fundus photography with interpretation and report"
+                "code": "92250"
               }
             ],
             "text": "Fundus photography"
@@ -7028,8 +7068,7 @@
             "coding": [
               {
                 "system": "http://www.ama-assn.org/go/cpt",
-                "code": "77067",
-                "display": "Screening mammography, bilateral"
+                "code": "77067"
               }
             ],
             "text": "Screening mammogram, bilateral"
@@ -7049,7 +7088,7 @@
             "numberOfInstances": 2,
             "bodySite": {
               "system": "http://snomed.info/sct",
-              "code": "80248007",
+              "code": "73056007",
               "display": "Right breast structure"
             },
             "laterality": {
@@ -7391,8 +7430,7 @@
             "coding": [
               {
                 "system": "http://www.ama-assn.org/go/cpt",
-                "code": "77080",
-                "display": "DXA bone density, axial skeleton"
+                "code": "77080"
               }
             ],
             "text": "DXA bone density study"
@@ -7744,8 +7782,7 @@
             "coding": [
               {
                 "system": "http://www.ama-assn.org/go/cpt",
-                "code": "92134",
-                "display": "Scanning computerized ophthalmic diagnostic imaging, retina"
+                "code": "92134"
               }
             ],
             "text": "OCT retina, both eyes"
@@ -8716,29 +8753,6 @@
               "coding": [
                 {
                   "system": "http://hl7.org/fhir/us/carin-bb/CodeSystem/C4BBSupportingInfoType",
-                  "code": "billingnetworkcontractingstatus",
-                  "display": "Billing Network Contracting Status"
-                }
-              ],
-              "text": "Billing Network Contracting Status"
-            },
-            "code": {
-              "coding": [
-                {
-                  "system": "http://hl7.org/fhir/us/carin-bb/CodeSystem/C4BBPayerProviderContractingStatus",
-                  "code": "contracted",
-                  "display": "Contracted"
-                }
-              ],
-              "text": "Contracted"
-            }
-          },
-          {
-            "sequence": 2,
-            "category": {
-              "coding": [
-                {
-                  "system": "http://hl7.org/fhir/us/carin-bb/CodeSystem/C4BBSupportingInfoType",
                   "code": "clmrecvddate",
                   "display": "Claim Received Date"
                 }
@@ -8870,8 +8884,7 @@
               "coding": [
                 {
                   "system": "http://www.ama-assn.org/go/cpt",
-                  "code": "99214",
-                  "display": "Office/outpatient visit, established patient, moderate"
+                  "code": "99214"
                 }
               ],
               "text": "Office/outpatient visit, established patient, moderate"
@@ -8961,8 +8974,8 @@
                   "coding": [
                     {
                       "system": "http://hl7.org/fhir/us/carin-bb/CodeSystem/C4BBAdjudicationDiscriminator",
-                      "code": "inoutnetwork",
-                      "display": "In or Out of Network"
+                      "code": "benefitpaymentstatus",
+                      "display": "Benefit Payment Status"
                     }
                   ]
                 },
@@ -8977,6 +8990,48 @@
                 }
               }
             ]
+          }
+        ],
+        "adjudication": [
+          {
+            "category": {
+              "coding": [
+                {
+                  "system": "http://hl7.org/fhir/us/carin-bb/CodeSystem/C4BBAdjudicationDiscriminator",
+                  "code": "billingnetworkstatus",
+                  "display": "Billing Network Status"
+                }
+              ]
+            },
+            "reason": {
+              "coding": [
+                {
+                  "system": "http://hl7.org/fhir/us/carin-bb/CodeSystem/C4BBPayerAdjudicationStatus",
+                  "code": "innetwork",
+                  "display": "In Network"
+                }
+              ]
+            }
+          },
+          {
+            "category": {
+              "coding": [
+                {
+                  "system": "http://hl7.org/fhir/us/carin-bb/CodeSystem/C4BBAdjudicationDiscriminator",
+                  "code": "renderingnetworkstatus",
+                  "display": "Rendering Network Status"
+                }
+              ]
+            },
+            "reason": {
+              "coding": [
+                {
+                  "system": "http://hl7.org/fhir/us/carin-bb/CodeSystem/C4BBPayerAdjudicationStatus",
+                  "code": "innetwork",
+                  "display": "In Network"
+                }
+              ]
+            }
           }
         ],
         "total": [
@@ -9162,29 +9217,6 @@
               "coding": [
                 {
                   "system": "http://hl7.org/fhir/us/carin-bb/CodeSystem/C4BBSupportingInfoType",
-                  "code": "billingnetworkcontractingstatus",
-                  "display": "Billing Network Contracting Status"
-                }
-              ],
-              "text": "Billing Network Contracting Status"
-            },
-            "code": {
-              "coding": [
-                {
-                  "system": "http://hl7.org/fhir/us/carin-bb/CodeSystem/C4BBPayerProviderContractingStatus",
-                  "code": "contracted",
-                  "display": "Contracted"
-                }
-              ],
-              "text": "Contracted"
-            }
-          },
-          {
-            "sequence": 2,
-            "category": {
-              "coding": [
-                {
-                  "system": "http://hl7.org/fhir/us/carin-bb/CodeSystem/C4BBSupportingInfoType",
                   "code": "clmrecvddate",
                   "display": "Claim Received Date"
                 }
@@ -9291,8 +9323,7 @@
               "coding": [
                 {
                   "system": "http://www.ama-assn.org/go/cpt",
-                  "code": "99204",
-                  "display": "Office/outpatient visit, new patient, moderate"
+                  "code": "99204"
                 }
               ],
               "text": "Office/outpatient visit, new patient, moderate"
@@ -9382,8 +9413,8 @@
                   "coding": [
                     {
                       "system": "http://hl7.org/fhir/us/carin-bb/CodeSystem/C4BBAdjudicationDiscriminator",
-                      "code": "inoutnetwork",
-                      "display": "In or Out of Network"
+                      "code": "benefitpaymentstatus",
+                      "display": "Benefit Payment Status"
                     }
                   ]
                 },
@@ -9398,6 +9429,48 @@
                 }
               }
             ]
+          }
+        ],
+        "adjudication": [
+          {
+            "category": {
+              "coding": [
+                {
+                  "system": "http://hl7.org/fhir/us/carin-bb/CodeSystem/C4BBAdjudicationDiscriminator",
+                  "code": "billingnetworkstatus",
+                  "display": "Billing Network Status"
+                }
+              ]
+            },
+            "reason": {
+              "coding": [
+                {
+                  "system": "http://hl7.org/fhir/us/carin-bb/CodeSystem/C4BBPayerAdjudicationStatus",
+                  "code": "innetwork",
+                  "display": "In Network"
+                }
+              ]
+            }
+          },
+          {
+            "category": {
+              "coding": [
+                {
+                  "system": "http://hl7.org/fhir/us/carin-bb/CodeSystem/C4BBAdjudicationDiscriminator",
+                  "code": "renderingnetworkstatus",
+                  "display": "Rendering Network Status"
+                }
+              ]
+            },
+            "reason": {
+              "coding": [
+                {
+                  "system": "http://hl7.org/fhir/us/carin-bb/CodeSystem/C4BBPayerAdjudicationStatus",
+                  "code": "innetwork",
+                  "display": "In Network"
+                }
+              ]
+            }
           }
         ],
         "total": [
@@ -9583,29 +9656,6 @@
               "coding": [
                 {
                   "system": "http://hl7.org/fhir/us/carin-bb/CodeSystem/C4BBSupportingInfoType",
-                  "code": "billingnetworkcontractingstatus",
-                  "display": "Billing Network Contracting Status"
-                }
-              ],
-              "text": "Billing Network Contracting Status"
-            },
-            "code": {
-              "coding": [
-                {
-                  "system": "http://hl7.org/fhir/us/carin-bb/CodeSystem/C4BBPayerProviderContractingStatus",
-                  "code": "contracted",
-                  "display": "Contracted"
-                }
-              ],
-              "text": "Contracted"
-            }
-          },
-          {
-            "sequence": 2,
-            "category": {
-              "coding": [
-                {
-                  "system": "http://hl7.org/fhir/us/carin-bb/CodeSystem/C4BBSupportingInfoType",
                   "code": "clmrecvddate",
                   "display": "Claim Received Date"
                 }
@@ -9687,8 +9737,7 @@
               "coding": [
                 {
                   "system": "http://www.ama-assn.org/go/cpt",
-                  "code": "76770",
-                  "display": "US retroperitoneal, complete"
+                  "code": "76770"
                 }
               ],
               "text": "US retroperitoneal, complete"
@@ -9778,8 +9827,8 @@
                   "coding": [
                     {
                       "system": "http://hl7.org/fhir/us/carin-bb/CodeSystem/C4BBAdjudicationDiscriminator",
-                      "code": "inoutnetwork",
-                      "display": "In or Out of Network"
+                      "code": "benefitpaymentstatus",
+                      "display": "Benefit Payment Status"
                     }
                   ]
                 },
@@ -9794,6 +9843,48 @@
                 }
               }
             ]
+          }
+        ],
+        "adjudication": [
+          {
+            "category": {
+              "coding": [
+                {
+                  "system": "http://hl7.org/fhir/us/carin-bb/CodeSystem/C4BBAdjudicationDiscriminator",
+                  "code": "billingnetworkstatus",
+                  "display": "Billing Network Status"
+                }
+              ]
+            },
+            "reason": {
+              "coding": [
+                {
+                  "system": "http://hl7.org/fhir/us/carin-bb/CodeSystem/C4BBPayerAdjudicationStatus",
+                  "code": "innetwork",
+                  "display": "In Network"
+                }
+              ]
+            }
+          },
+          {
+            "category": {
+              "coding": [
+                {
+                  "system": "http://hl7.org/fhir/us/carin-bb/CodeSystem/C4BBAdjudicationDiscriminator",
+                  "code": "renderingnetworkstatus",
+                  "display": "Rendering Network Status"
+                }
+              ]
+            },
+            "reason": {
+              "coding": [
+                {
+                  "system": "http://hl7.org/fhir/us/carin-bb/CodeSystem/C4BBPayerAdjudicationStatus",
+                  "code": "innetwork",
+                  "display": "In Network"
+                }
+              ]
+            }
           }
         ],
         "total": [
@@ -9979,29 +10070,6 @@
               "coding": [
                 {
                   "system": "http://hl7.org/fhir/us/carin-bb/CodeSystem/C4BBSupportingInfoType",
-                  "code": "billingnetworkcontractingstatus",
-                  "display": "Billing Network Contracting Status"
-                }
-              ],
-              "text": "Billing Network Contracting Status"
-            },
-            "code": {
-              "coding": [
-                {
-                  "system": "http://hl7.org/fhir/us/carin-bb/CodeSystem/C4BBPayerProviderContractingStatus",
-                  "code": "contracted",
-                  "display": "Contracted"
-                }
-              ],
-              "text": "Contracted"
-            }
-          },
-          {
-            "sequence": 2,
-            "category": {
-              "coding": [
-                {
-                  "system": "http://hl7.org/fhir/us/carin-bb/CodeSystem/C4BBSupportingInfoType",
                   "code": "clmrecvddate",
                   "display": "Claim Received Date"
                 }
@@ -10058,8 +10126,7 @@
               "coding": [
                 {
                   "system": "http://www.ama-assn.org/go/cpt",
-                  "code": "92004",
-                  "display": "Ophthalmological services, comprehensive, new patient"
+                  "code": "92004"
                 }
               ],
               "text": "Ophthalmological services, comprehensive, new patient"
@@ -10149,8 +10216,8 @@
                   "coding": [
                     {
                       "system": "http://hl7.org/fhir/us/carin-bb/CodeSystem/C4BBAdjudicationDiscriminator",
-                      "code": "inoutnetwork",
-                      "display": "In or Out of Network"
+                      "code": "benefitpaymentstatus",
+                      "display": "Benefit Payment Status"
                     }
                   ]
                 },
@@ -10178,8 +10245,7 @@
               "coding": [
                 {
                   "system": "http://www.ama-assn.org/go/cpt",
-                  "code": "92134",
-                  "display": "Scanning computerized ophthalmic diagnostic imaging, retina"
+                  "code": "92134"
                 }
               ],
               "text": "Scanning computerized ophthalmic diagnostic imaging, retina"
@@ -10269,8 +10335,8 @@
                   "coding": [
                     {
                       "system": "http://hl7.org/fhir/us/carin-bb/CodeSystem/C4BBAdjudicationDiscriminator",
-                      "code": "inoutnetwork",
-                      "display": "In or Out of Network"
+                      "code": "benefitpaymentstatus",
+                      "display": "Benefit Payment Status"
                     }
                   ]
                 },
@@ -10298,8 +10364,7 @@
               "coding": [
                 {
                   "system": "http://www.ama-assn.org/go/cpt",
-                  "code": "92250",
-                  "display": "Fundus photography with interpretation and report"
+                  "code": "92250"
                 }
               ],
               "text": "Fundus photography with interpretation and report"
@@ -10389,8 +10454,8 @@
                   "coding": [
                     {
                       "system": "http://hl7.org/fhir/us/carin-bb/CodeSystem/C4BBAdjudicationDiscriminator",
-                      "code": "inoutnetwork",
-                      "display": "In or Out of Network"
+                      "code": "benefitpaymentstatus",
+                      "display": "Benefit Payment Status"
                     }
                   ]
                 },
@@ -10405,6 +10470,48 @@
                 }
               }
             ]
+          }
+        ],
+        "adjudication": [
+          {
+            "category": {
+              "coding": [
+                {
+                  "system": "http://hl7.org/fhir/us/carin-bb/CodeSystem/C4BBAdjudicationDiscriminator",
+                  "code": "billingnetworkstatus",
+                  "display": "Billing Network Status"
+                }
+              ]
+            },
+            "reason": {
+              "coding": [
+                {
+                  "system": "http://hl7.org/fhir/us/carin-bb/CodeSystem/C4BBPayerAdjudicationStatus",
+                  "code": "innetwork",
+                  "display": "In Network"
+                }
+              ]
+            }
+          },
+          {
+            "category": {
+              "coding": [
+                {
+                  "system": "http://hl7.org/fhir/us/carin-bb/CodeSystem/C4BBAdjudicationDiscriminator",
+                  "code": "renderingnetworkstatus",
+                  "display": "Rendering Network Status"
+                }
+              ]
+            },
+            "reason": {
+              "coding": [
+                {
+                  "system": "http://hl7.org/fhir/us/carin-bb/CodeSystem/C4BBPayerAdjudicationStatus",
+                  "code": "innetwork",
+                  "display": "In Network"
+                }
+              ]
+            }
           }
         ],
         "total": [
@@ -10570,29 +10677,6 @@
         "supportingInfo": [
           {
             "sequence": 1,
-            "category": {
-              "coding": [
-                {
-                  "system": "http://hl7.org/fhir/us/carin-bb/CodeSystem/C4BBSupportingInfoType",
-                  "code": "billingnetworkcontractingstatus",
-                  "display": "Billing Network Contracting Status"
-                }
-              ],
-              "text": "Billing Network Contracting Status"
-            },
-            "code": {
-              "coding": [
-                {
-                  "system": "http://hl7.org/fhir/us/carin-bb/CodeSystem/C4BBPayerProviderContractingStatus",
-                  "code": "contracted",
-                  "display": "Contracted"
-                }
-              ],
-              "text": "Contracted"
-            }
-          },
-          {
-            "sequence": 2,
             "category": {
               "coding": [
                 {
@@ -10840,8 +10924,8 @@
                   "coding": [
                     {
                       "system": "http://hl7.org/fhir/us/carin-bb/CodeSystem/C4BBAdjudicationDiscriminator",
-                      "code": "inoutnetwork",
-                      "display": "In or Out of Network"
+                      "code": "benefitpaymentstatus",
+                      "display": "Benefit Payment Status"
                     }
                   ]
                 },
@@ -10872,8 +10956,7 @@
               "coding": [
                 {
                   "system": "http://www.ama-assn.org/go/cpt",
-                  "code": "99214",
-                  "display": "Office/outpatient visit, established patient, moderate"
+                  "code": "99214"
                 }
               ],
               "text": "Office/outpatient visit, established patient, moderate"
@@ -10883,8 +10966,7 @@
                 "coding": [
                   {
                     "system": "http://www.ama-assn.org/go/cpt",
-                    "code": "25",
-                    "display": "Significant, separately identifiable E/M service"
+                    "code": "25"
                   }
                 ],
                 "text": "Significant, separately identifiable E/M service"
@@ -10975,8 +11057,8 @@
                   "coding": [
                     {
                       "system": "http://hl7.org/fhir/us/carin-bb/CodeSystem/C4BBAdjudicationDiscriminator",
-                      "code": "inoutnetwork",
-                      "display": "In or Out of Network"
+                      "code": "benefitpaymentstatus",
+                      "display": "Benefit Payment Status"
                     }
                   ]
                 },
@@ -10991,6 +11073,48 @@
                 }
               }
             ]
+          }
+        ],
+        "adjudication": [
+          {
+            "category": {
+              "coding": [
+                {
+                  "system": "http://hl7.org/fhir/us/carin-bb/CodeSystem/C4BBAdjudicationDiscriminator",
+                  "code": "billingnetworkstatus",
+                  "display": "Billing Network Status"
+                }
+              ]
+            },
+            "reason": {
+              "coding": [
+                {
+                  "system": "http://hl7.org/fhir/us/carin-bb/CodeSystem/C4BBPayerAdjudicationStatus",
+                  "code": "innetwork",
+                  "display": "In Network"
+                }
+              ]
+            }
+          },
+          {
+            "category": {
+              "coding": [
+                {
+                  "system": "http://hl7.org/fhir/us/carin-bb/CodeSystem/C4BBAdjudicationDiscriminator",
+                  "code": "renderingnetworkstatus",
+                  "display": "Rendering Network Status"
+                }
+              ]
+            },
+            "reason": {
+              "coding": [
+                {
+                  "system": "http://hl7.org/fhir/us/carin-bb/CodeSystem/C4BBPayerAdjudicationStatus",
+                  "code": "innetwork",
+                  "display": "In Network"
+                }
+              ]
+            }
           }
         ],
         "total": [
@@ -11176,29 +11300,6 @@
               "coding": [
                 {
                   "system": "http://hl7.org/fhir/us/carin-bb/CodeSystem/C4BBSupportingInfoType",
-                  "code": "billingnetworkcontractingstatus",
-                  "display": "Billing Network Contracting Status"
-                }
-              ],
-              "text": "Billing Network Contracting Status"
-            },
-            "code": {
-              "coding": [
-                {
-                  "system": "http://hl7.org/fhir/us/carin-bb/CodeSystem/C4BBPayerProviderContractingStatus",
-                  "code": "contracted",
-                  "display": "Contracted"
-                }
-              ],
-              "text": "Contracted"
-            }
-          },
-          {
-            "sequence": 2,
-            "category": {
-              "coding": [
-                {
-                  "system": "http://hl7.org/fhir/us/carin-bb/CodeSystem/C4BBSupportingInfoType",
                   "code": "clmrecvddate",
                   "display": "Claim Received Date"
                 }
@@ -11279,8 +11380,7 @@
               "coding": [
                 {
                   "system": "http://www.ama-assn.org/go/cpt",
-                  "code": "77067",
-                  "display": "Screening mammography, bilateral"
+                  "code": "77067"
                 }
               ],
               "text": "Screening mammography, bilateral"
@@ -11370,8 +11470,8 @@
                   "coding": [
                     {
                       "system": "http://hl7.org/fhir/us/carin-bb/CodeSystem/C4BBAdjudicationDiscriminator",
-                      "code": "inoutnetwork",
-                      "display": "In or Out of Network"
+                      "code": "benefitpaymentstatus",
+                      "display": "Benefit Payment Status"
                     }
                   ]
                 },
@@ -11399,8 +11499,7 @@
               "coding": [
                 {
                   "system": "http://www.ama-assn.org/go/cpt",
-                  "code": "77080",
-                  "display": "DXA bone density, axial skeleton"
+                  "code": "77080"
                 }
               ],
               "text": "DXA bone density, axial skeleton"
@@ -11490,8 +11589,8 @@
                   "coding": [
                     {
                       "system": "http://hl7.org/fhir/us/carin-bb/CodeSystem/C4BBAdjudicationDiscriminator",
-                      "code": "inoutnetwork",
-                      "display": "In or Out of Network"
+                      "code": "benefitpaymentstatus",
+                      "display": "Benefit Payment Status"
                     }
                   ]
                 },
@@ -11506,6 +11605,48 @@
                 }
               }
             ]
+          }
+        ],
+        "adjudication": [
+          {
+            "category": {
+              "coding": [
+                {
+                  "system": "http://hl7.org/fhir/us/carin-bb/CodeSystem/C4BBAdjudicationDiscriminator",
+                  "code": "billingnetworkstatus",
+                  "display": "Billing Network Status"
+                }
+              ]
+            },
+            "reason": {
+              "coding": [
+                {
+                  "system": "http://hl7.org/fhir/us/carin-bb/CodeSystem/C4BBPayerAdjudicationStatus",
+                  "code": "innetwork",
+                  "display": "In Network"
+                }
+              ]
+            }
+          },
+          {
+            "category": {
+              "coding": [
+                {
+                  "system": "http://hl7.org/fhir/us/carin-bb/CodeSystem/C4BBAdjudicationDiscriminator",
+                  "code": "renderingnetworkstatus",
+                  "display": "Rendering Network Status"
+                }
+              ]
+            },
+            "reason": {
+              "coding": [
+                {
+                  "system": "http://hl7.org/fhir/us/carin-bb/CodeSystem/C4BBPayerAdjudicationStatus",
+                  "code": "innetwork",
+                  "display": "In Network"
+                }
+              ]
+            }
           }
         ],
         "total": [
@@ -11671,29 +11812,6 @@
         "supportingInfo": [
           {
             "sequence": 1,
-            "category": {
-              "coding": [
-                {
-                  "system": "http://hl7.org/fhir/us/carin-bb/CodeSystem/C4BBSupportingInfoType",
-                  "code": "billingnetworkcontractingstatus",
-                  "display": "Billing Network Contracting Status"
-                }
-              ],
-              "text": "Billing Network Contracting Status"
-            },
-            "code": {
-              "coding": [
-                {
-                  "system": "http://hl7.org/fhir/us/carin-bb/CodeSystem/C4BBPayerProviderContractingStatus",
-                  "code": "contracted",
-                  "display": "Contracted"
-                }
-              ],
-              "text": "Contracted"
-            }
-          },
-          {
-            "sequence": 2,
             "category": {
               "coding": [
                 {
@@ -11965,8 +12083,8 @@
                   "coding": [
                     {
                       "system": "http://hl7.org/fhir/us/carin-bb/CodeSystem/C4BBAdjudicationDiscriminator",
-                      "code": "inoutnetwork",
-                      "display": "In or Out of Network"
+                      "code": "benefitpaymentstatus",
+                      "display": "Benefit Payment Status"
                     }
                   ]
                 },
@@ -11998,8 +12116,7 @@
               "coding": [
                 {
                   "system": "http://www.ama-assn.org/go/cpt",
-                  "code": "99214",
-                  "display": "Office/outpatient visit, established patient, moderate"
+                  "code": "99214"
                 }
               ],
               "text": "Office/outpatient visit, established patient, moderate"
@@ -12009,8 +12126,7 @@
                 "coding": [
                   {
                     "system": "http://www.ama-assn.org/go/cpt",
-                    "code": "25",
-                    "display": "Significant, separately identifiable E/M service"
+                    "code": "25"
                   }
                 ],
                 "text": "Significant, separately identifiable E/M service"
@@ -12101,8 +12217,8 @@
                   "coding": [
                     {
                       "system": "http://hl7.org/fhir/us/carin-bb/CodeSystem/C4BBAdjudicationDiscriminator",
-                      "code": "inoutnetwork",
-                      "display": "In or Out of Network"
+                      "code": "benefitpaymentstatus",
+                      "display": "Benefit Payment Status"
                     }
                   ]
                 },
@@ -12117,6 +12233,48 @@
                 }
               }
             ]
+          }
+        ],
+        "adjudication": [
+          {
+            "category": {
+              "coding": [
+                {
+                  "system": "http://hl7.org/fhir/us/carin-bb/CodeSystem/C4BBAdjudicationDiscriminator",
+                  "code": "billingnetworkstatus",
+                  "display": "Billing Network Status"
+                }
+              ]
+            },
+            "reason": {
+              "coding": [
+                {
+                  "system": "http://hl7.org/fhir/us/carin-bb/CodeSystem/C4BBPayerAdjudicationStatus",
+                  "code": "innetwork",
+                  "display": "In Network"
+                }
+              ]
+            }
+          },
+          {
+            "category": {
+              "coding": [
+                {
+                  "system": "http://hl7.org/fhir/us/carin-bb/CodeSystem/C4BBAdjudicationDiscriminator",
+                  "code": "renderingnetworkstatus",
+                  "display": "Rendering Network Status"
+                }
+              ]
+            },
+            "reason": {
+              "coding": [
+                {
+                  "system": "http://hl7.org/fhir/us/carin-bb/CodeSystem/C4BBPayerAdjudicationStatus",
+                  "code": "innetwork",
+                  "display": "In Network"
+                }
+              ]
+            }
           }
         ],
         "total": [
@@ -12302,29 +12460,6 @@
               "coding": [
                 {
                   "system": "http://hl7.org/fhir/us/carin-bb/CodeSystem/C4BBSupportingInfoType",
-                  "code": "billingnetworkcontractingstatus",
-                  "display": "Billing Network Contracting Status"
-                }
-              ],
-              "text": "Billing Network Contracting Status"
-            },
-            "code": {
-              "coding": [
-                {
-                  "system": "http://hl7.org/fhir/us/carin-bb/CodeSystem/C4BBPayerProviderContractingStatus",
-                  "code": "contracted",
-                  "display": "Contracted"
-                }
-              ],
-              "text": "Contracted"
-            }
-          },
-          {
-            "sequence": 2,
-            "category": {
-              "coding": [
-                {
-                  "system": "http://hl7.org/fhir/us/carin-bb/CodeSystem/C4BBSupportingInfoType",
                   "code": "clmrecvddate",
                   "display": "Claim Received Date"
                 }
@@ -12455,8 +12590,7 @@
               "coding": [
                 {
                   "system": "http://www.ama-assn.org/go/cpt",
-                  "code": "80053",
-                  "display": "Comprehensive metabolic panel"
+                  "code": "80053"
                 }
               ],
               "text": "Comprehensive metabolic panel"
@@ -12546,8 +12680,8 @@
                   "coding": [
                     {
                       "system": "http://hl7.org/fhir/us/carin-bb/CodeSystem/C4BBAdjudicationDiscriminator",
-                      "code": "inoutnetwork",
-                      "display": "In or Out of Network"
+                      "code": "benefitpaymentstatus",
+                      "display": "Benefit Payment Status"
                     }
                   ]
                 },
@@ -12576,8 +12710,7 @@
               "coding": [
                 {
                   "system": "http://www.ama-assn.org/go/cpt",
-                  "code": "83036",
-                  "display": "Hemoglobin; glycosylated (A1C)"
+                  "code": "83036"
                 }
               ],
               "text": "Hemoglobin; glycosylated (A1C)"
@@ -12667,8 +12800,8 @@
                   "coding": [
                     {
                       "system": "http://hl7.org/fhir/us/carin-bb/CodeSystem/C4BBAdjudicationDiscriminator",
-                      "code": "inoutnetwork",
-                      "display": "In or Out of Network"
+                      "code": "benefitpaymentstatus",
+                      "display": "Benefit Payment Status"
                     }
                   ]
                 },
@@ -12697,8 +12830,7 @@
               "coding": [
                 {
                   "system": "http://www.ama-assn.org/go/cpt",
-                  "code": "80061",
-                  "display": "Lipid panel"
+                  "code": "80061"
                 }
               ],
               "text": "Lipid panel"
@@ -12788,8 +12920,8 @@
                   "coding": [
                     {
                       "system": "http://hl7.org/fhir/us/carin-bb/CodeSystem/C4BBAdjudicationDiscriminator",
-                      "code": "inoutnetwork",
-                      "display": "In or Out of Network"
+                      "code": "benefitpaymentstatus",
+                      "display": "Benefit Payment Status"
                     }
                   ]
                 },
@@ -12818,8 +12950,7 @@
               "coding": [
                 {
                   "system": "http://www.ama-assn.org/go/cpt",
-                  "code": "82043",
-                  "display": "Albumin; urine, microalbumin, quantitative"
+                  "code": "82043"
                 }
               ],
               "text": "Albumin; urine, microalbumin, quantitative"
@@ -12909,8 +13040,8 @@
                   "coding": [
                     {
                       "system": "http://hl7.org/fhir/us/carin-bb/CodeSystem/C4BBAdjudicationDiscriminator",
-                      "code": "inoutnetwork",
-                      "display": "In or Out of Network"
+                      "code": "benefitpaymentstatus",
+                      "display": "Benefit Payment Status"
                     }
                   ]
                 },
@@ -12939,8 +13070,7 @@
               "coding": [
                 {
                   "system": "http://www.ama-assn.org/go/cpt",
-                  "code": "82570",
-                  "display": "Creatinine; other source"
+                  "code": "82570"
                 }
               ],
               "text": "Creatinine; other source"
@@ -13030,8 +13160,8 @@
                   "coding": [
                     {
                       "system": "http://hl7.org/fhir/us/carin-bb/CodeSystem/C4BBAdjudicationDiscriminator",
-                      "code": "inoutnetwork",
-                      "display": "In or Out of Network"
+                      "code": "benefitpaymentstatus",
+                      "display": "Benefit Payment Status"
                     }
                   ]
                 },
@@ -13046,6 +13176,48 @@
                 }
               }
             ]
+          }
+        ],
+        "adjudication": [
+          {
+            "category": {
+              "coding": [
+                {
+                  "system": "http://hl7.org/fhir/us/carin-bb/CodeSystem/C4BBAdjudicationDiscriminator",
+                  "code": "billingnetworkstatus",
+                  "display": "Billing Network Status"
+                }
+              ]
+            },
+            "reason": {
+              "coding": [
+                {
+                  "system": "http://hl7.org/fhir/us/carin-bb/CodeSystem/C4BBPayerAdjudicationStatus",
+                  "code": "innetwork",
+                  "display": "In Network"
+                }
+              ]
+            }
+          },
+          {
+            "category": {
+              "coding": [
+                {
+                  "system": "http://hl7.org/fhir/us/carin-bb/CodeSystem/C4BBAdjudicationDiscriminator",
+                  "code": "renderingnetworkstatus",
+                  "display": "Rendering Network Status"
+                }
+              ]
+            },
+            "reason": {
+              "coding": [
+                {
+                  "system": "http://hl7.org/fhir/us/carin-bb/CodeSystem/C4BBPayerAdjudicationStatus",
+                  "code": "innetwork",
+                  "display": "In Network"
+                }
+              ]
+            }
           }
         ],
         "total": [
@@ -13215,29 +13387,6 @@
               "coding": [
                 {
                   "system": "http://hl7.org/fhir/us/carin-bb/CodeSystem/C4BBSupportingInfoType",
-                  "code": "billingnetworkcontractingstatus",
-                  "display": "Billing Network Contracting Status"
-                }
-              ],
-              "text": "Billing Network Contracting Status"
-            },
-            "code": {
-              "coding": [
-                {
-                  "system": "http://hl7.org/fhir/us/carin-bb/CodeSystem/C4BBPayerProviderContractingStatus",
-                  "code": "contracted",
-                  "display": "Contracted"
-                }
-              ],
-              "text": "Contracted"
-            }
-          },
-          {
-            "sequence": 2,
-            "category": {
-              "coding": [
-                {
-                  "system": "http://hl7.org/fhir/us/carin-bb/CodeSystem/C4BBSupportingInfoType",
                   "code": "clmrecvddate",
                   "display": "Claim Received Date"
                 }
@@ -13294,8 +13443,7 @@
               "coding": [
                 {
                   "system": "http://www.ama-assn.org/go/cpt",
-                  "code": "92014",
-                  "display": "Ophthalmological services, comprehensive, established patient"
+                  "code": "92014"
                 }
               ],
               "text": "Ophthalmological services, comprehensive, established patient"
@@ -13385,8 +13533,8 @@
                   "coding": [
                     {
                       "system": "http://hl7.org/fhir/us/carin-bb/CodeSystem/C4BBAdjudicationDiscriminator",
-                      "code": "inoutnetwork",
-                      "display": "In or Out of Network"
+                      "code": "benefitpaymentstatus",
+                      "display": "Benefit Payment Status"
                     }
                   ]
                 },
@@ -13414,8 +13562,7 @@
               "coding": [
                 {
                   "system": "http://www.ama-assn.org/go/cpt",
-                  "code": "92134",
-                  "display": "Scanning computerized ophthalmic diagnostic imaging, retina"
+                  "code": "92134"
                 }
               ],
               "text": "Scanning computerized ophthalmic diagnostic imaging, retina"
@@ -13505,8 +13652,8 @@
                   "coding": [
                     {
                       "system": "http://hl7.org/fhir/us/carin-bb/CodeSystem/C4BBAdjudicationDiscriminator",
-                      "code": "inoutnetwork",
-                      "display": "In or Out of Network"
+                      "code": "benefitpaymentstatus",
+                      "display": "Benefit Payment Status"
                     }
                   ]
                 },
@@ -13521,6 +13668,48 @@
                 }
               }
             ]
+          }
+        ],
+        "adjudication": [
+          {
+            "category": {
+              "coding": [
+                {
+                  "system": "http://hl7.org/fhir/us/carin-bb/CodeSystem/C4BBAdjudicationDiscriminator",
+                  "code": "billingnetworkstatus",
+                  "display": "Billing Network Status"
+                }
+              ]
+            },
+            "reason": {
+              "coding": [
+                {
+                  "system": "http://hl7.org/fhir/us/carin-bb/CodeSystem/C4BBPayerAdjudicationStatus",
+                  "code": "innetwork",
+                  "display": "In Network"
+                }
+              ]
+            }
+          },
+          {
+            "category": {
+              "coding": [
+                {
+                  "system": "http://hl7.org/fhir/us/carin-bb/CodeSystem/C4BBAdjudicationDiscriminator",
+                  "code": "renderingnetworkstatus",
+                  "display": "Rendering Network Status"
+                }
+              ]
+            },
+            "reason": {
+              "coding": [
+                {
+                  "system": "http://hl7.org/fhir/us/carin-bb/CodeSystem/C4BBPayerAdjudicationStatus",
+                  "code": "innetwork",
+                  "display": "In Network"
+                }
+              ]
+            }
           }
         ],
         "total": [
@@ -13706,29 +13895,6 @@
               "coding": [
                 {
                   "system": "http://hl7.org/fhir/us/carin-bb/CodeSystem/C4BBSupportingInfoType",
-                  "code": "billingnetworkcontractingstatus",
-                  "display": "Billing Network Contracting Status"
-                }
-              ],
-              "text": "Billing Network Contracting Status"
-            },
-            "code": {
-              "coding": [
-                {
-                  "system": "http://hl7.org/fhir/us/carin-bb/CodeSystem/C4BBPayerProviderContractingStatus",
-                  "code": "contracted",
-                  "display": "Contracted"
-                }
-              ],
-              "text": "Contracted"
-            }
-          },
-          {
-            "sequence": 2,
-            "category": {
-              "coding": [
-                {
-                  "system": "http://hl7.org/fhir/us/carin-bb/CodeSystem/C4BBSupportingInfoType",
                   "code": "clmrecvddate",
                   "display": "Claim Received Date"
                 }
@@ -13835,8 +14001,7 @@
               "coding": [
                 {
                   "system": "http://www.ama-assn.org/go/cpt",
-                  "code": "99204",
-                  "display": "Office/outpatient visit, new patient, moderate"
+                  "code": "99204"
                 }
               ],
               "text": "Office/outpatient visit, new patient, moderate"
@@ -13926,8 +14091,8 @@
                   "coding": [
                     {
                       "system": "http://hl7.org/fhir/us/carin-bb/CodeSystem/C4BBAdjudicationDiscriminator",
-                      "code": "inoutnetwork",
-                      "display": "In or Out of Network"
+                      "code": "benefitpaymentstatus",
+                      "display": "Benefit Payment Status"
                     }
                   ]
                 },
@@ -13942,6 +14107,48 @@
                 }
               }
             ]
+          }
+        ],
+        "adjudication": [
+          {
+            "category": {
+              "coding": [
+                {
+                  "system": "http://hl7.org/fhir/us/carin-bb/CodeSystem/C4BBAdjudicationDiscriminator",
+                  "code": "billingnetworkstatus",
+                  "display": "Billing Network Status"
+                }
+              ]
+            },
+            "reason": {
+              "coding": [
+                {
+                  "system": "http://hl7.org/fhir/us/carin-bb/CodeSystem/C4BBPayerAdjudicationStatus",
+                  "code": "innetwork",
+                  "display": "In Network"
+                }
+              ]
+            }
+          },
+          {
+            "category": {
+              "coding": [
+                {
+                  "system": "http://hl7.org/fhir/us/carin-bb/CodeSystem/C4BBAdjudicationDiscriminator",
+                  "code": "renderingnetworkstatus",
+                  "display": "Rendering Network Status"
+                }
+              ]
+            },
+            "reason": {
+              "coding": [
+                {
+                  "system": "http://hl7.org/fhir/us/carin-bb/CodeSystem/C4BBPayerAdjudicationStatus",
+                  "code": "innetwork",
+                  "display": "In Network"
+                }
+              ]
+            }
           }
         ],
         "total": [
