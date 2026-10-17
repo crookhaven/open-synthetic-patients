@@ -1,0 +1,14 @@
+# SMART Health Link secrets and QR pages carry the decryption key: never commit them.
+shl-secret.json
+shl.html
+
+# Transaction bundles written by tools/powershell/publish_to_hapi.ps1
+*_transaction.json
+transaction.json
+
+# FHIR validator downloads and logs
+validator_cli.jar
+*.log
+
+__pycache__/
+.DS_Store

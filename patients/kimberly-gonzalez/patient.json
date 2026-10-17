@@ -1,0 +1,43 @@
+{
+  "schema": "open-synthetic-patients/patient-card/v1",
+  "slug": "kimberly-gonzalez",
+  "id": "GPX-SYN-0000000279-0",
+  "name": "Kimberly Gonzalez",
+  "sex": "female",
+  "birth_date": "1957-11-27",
+  "summary": "68-year-old woman with hypertension, type 2 diabetes, diabetic CKD G3a/A2, diabetic retinopathy and osteopenia. Built on an APEX Atlas synthetic record and enriched with imaging, reports, clinical notes, referrals, CARIN Blue Button claims and a care team.",
+  "conditions": [
+    "Essential hypertension",
+    "Type 2 diabetes mellitus",
+    "Diabetic chronic kidney disease (G3a/A2)",
+    "Diabetic retinopathy",
+    "Osteopenia"
+  ],
+  "use_cases": [
+    "us-core",
+    "piqi-data-quality",
+    "carin-bb-claims",
+    "imaging",
+    "clinical-notes",
+    "referrals",
+    "smart-health-links",
+    "cgm-coverage"
+  ],
+  "source": {
+    "method": "derived",
+    "based_on": "APEX Atlas synthetic patient GPX-SYN-0000000279-0 (https://github.com/ParkerApex/apex-atlas, samples/cms-connectathon-2026)",
+    "tool": "build.ps1 (PowerShell)"
+  },
+  "license": "Apache-2.0",
+  "attribution": "Based on APEX Atlas by Parker Apex (Apache-2.0); enriched by crookhaven for M5 Whole Health. See NOTICE.",
+  "also_published": {
+    "fhir_server": "https://hapi.fhir.org/baseR4 (public test server, wiped from time to time)",
+    "smart_health_link": "https://raw.githubusercontent.com/crookhaven/M5-WholeHealth/main/synthetic-patients/shl/kimberly-gonzalez.jwe"
+  },
+  "notes": "No address on the Patient resource (inherited from the APEX source).",
+  "variants": {
+    "clean": "bundle.json"
+  },
+  "fhir_version": "4.0.1",
+  "synthetic": true
+}

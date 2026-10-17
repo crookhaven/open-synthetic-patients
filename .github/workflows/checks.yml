@@ -1,0 +1,63 @@
+name: Checks
+
+on:
+  pull_request:
+  push:
+    branches: [main]
+
+permissions:
+  contents: read
+
+jobs:
+  safety:
+    name: Safety and catalog
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Every patient is synthetic, tagged and documented
+        run: python tools/check_safety.py
+      - name: Catalog matches the patient cards
+        run: python tools/build_catalog.py --check
+
+  fhir-validation:
+    name: FHIR validation (report only)
+    runs-on: ubuntu-latest
+    # Reports conformance problems without blocking a merge, until the existing
+    # patients are cleaned up. Make it required later by removing this line.
+    continue-on-error: true
+    timeout-minutes: 45
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-java@v4
+        with:
+          distribution: temurin
+          java-version: '21'
+      - name: Download the HL7 FHIR validator
+        run: curl -sSL -o validator_cli.jar https://github.com/hapifhir/org.hl7.fhir.core/releases/latest/download/validator_cli.jar
+      - name: Validate every bundle against FHIR R4 and US Core 6.1
+        run: |
+          set +e
+          status=0
+          echo "## FHIR validation (FHIR R4, US Core 6.1.0)" >> "$GITHUB_STEP_SUMMARY"
+          echo "" >> "$GITHUB_STEP_SUMMARY"
+          for card in patients/*/patient.json; do
+            dir=$(dirname "$card")
+            for file in $(python -c "import json,sys; print(' '.join(json.load(open(sys.argv[1]))['variants'].values()))" "$card"); do
+              log="$(basename "$dir")-$file.log"
+              java -jar validator_cli.jar "$dir/$file" -version 4.0.1 -ig hl7.fhir.us.core#6.1.0 > "$log" 2>&1
+              code=$?
+              [ $code -ne 0 ] && status=1
+              summary=$(grep -E "^(Success|\*FAILURE\*)" "$log" | tail -1)
+              echo "- \`$dir/$file\`: ${summary:-see log}" >> "$GITHUB_STEP_SUMMARY"
+            done
+          done
+          exit $status
+      - name: Keep the full validator logs
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: fhir-validation-logs
+          path: '*.log'

@@ -1,0 +1,378 @@
+{
+  "schema": "open-synthetic-patients/catalog/v1",
+  "patients": [
+    {
+      "schema": "open-synthetic-patients/patient-card/v1",
+      "slug": "jordan-rivera",
+      "id": null,
+      "name": "Jordan Rivera",
+      "sex": "female",
+      "birth_date": "1985-04-12",
+      "summary": "Small hand-written record (17 resources) with intentional duplicates and gaps, so data-quality checks have something to find. Hypertension and type 2 diabetes.",
+      "conditions": [
+        "Essential hypertension",
+        "Type 2 diabetes mellitus"
+      ],
+      "use_cases": [
+        "piqi-data-quality",
+        "intentional-gaps",
+        "minimal",
+        "quick-demo"
+      ],
+      "source": {
+        "method": "hand-built",
+        "tool": "hand-written JSON"
+      },
+      "license": "CC-BY-4.0",
+      "attribution": "crookhaven, open-synthetic-patients (CC BY 4.0)",
+      "also_published": {
+        "app_sample": "M5 Whole Health sample health record (web/src/data/sample_fhir_bundle.json)"
+      },
+      "notes": "Deliberately minimal: no resource ids, no references between resources and no US Core profiles. HTEST tags were added for this repository.",
+      "variants": {
+        "clean": "bundle.json"
+      },
+      "fhir_version": "4.0.1",
+      "synthetic": true,
+      "path": "patients/jordan-rivera",
+      "variant_stats": {
+        "clean": {
+          "file": "bundle.json",
+          "bytes": 15006,
+          "resource_count": 17,
+          "resource_types": {
+            "MedicationRequest": 3,
+            "Observation": 3,
+            "AllergyIntolerance": 2,
+            "Condition": 2,
+            "Immunization": 2,
+            "Procedure": 2,
+            "Coverage": 1,
+            "Device": 1,
+            "Patient": 1
+          },
+          "profiles": []
+        }
+      }
+    },
+    {
+      "schema": "open-synthetic-patients/patient-card/v1",
+      "slug": "kimberly-gonzalez",
+      "id": "GPX-SYN-0000000279-0",
+      "name": "Kimberly Gonzalez",
+      "sex": "female",
+      "birth_date": "1957-11-27",
+      "summary": "68-year-old woman with hypertension, type 2 diabetes, diabetic CKD G3a/A2, diabetic retinopathy and osteopenia. Built on an APEX Atlas synthetic record and enriched with imaging, reports, clinical notes, referrals, CARIN Blue Button claims and a care team.",
+      "conditions": [
+        "Essential hypertension",
+        "Type 2 diabetes mellitus",
+        "Diabetic chronic kidney disease (G3a/A2)",
+        "Diabetic retinopathy",
+        "Osteopenia"
+      ],
+      "use_cases": [
+        "us-core",
+        "piqi-data-quality",
+        "carin-bb-claims",
+        "imaging",
+        "clinical-notes",
+        "referrals",
+        "smart-health-links",
+        "cgm-coverage"
+      ],
+      "source": {
+        "method": "derived",
+        "based_on": "APEX Atlas synthetic patient GPX-SYN-0000000279-0 (https://github.com/ParkerApex/apex-atlas, samples/cms-connectathon-2026)",
+        "tool": "build.ps1 (PowerShell)"
+      },
+      "license": "Apache-2.0",
+      "attribution": "Based on APEX Atlas by Parker Apex (Apache-2.0); enriched by crookhaven for M5 Whole Health. See NOTICE.",
+      "also_published": {
+        "fhir_server": "https://hapi.fhir.org/baseR4 (public test server, wiped from time to time)",
+        "smart_health_link": "https://raw.githubusercontent.com/crookhaven/M5-WholeHealth/main/synthetic-patients/shl/kimberly-gonzalez.jwe"
+      },
+      "notes": "No address on the Patient resource (inherited from the APEX source).",
+      "variants": {
+        "clean": "bundle.json"
+      },
+      "fhir_version": "4.0.1",
+      "synthetic": true,
+      "path": "patients/kimberly-gonzalez",
+      "variant_stats": {
+        "clean": {
+          "file": "bundle.json",
+          "bytes": 450821,
+          "resource_count": 130,
+          "resource_types": {
+            "Observation": 29,
+            "Encounter": 13,
+            "Binary": 10,
+            "DocumentReference": 10,
+            "ExplanationOfBenefit": 10,
+            "ServiceRequest": 10,
+            "Organization": 9,
+            "DiagnosticReport": 7,
+            "Condition": 6,
+            "MedicationRequest": 6,
+            "Practitioner": 6,
+            "PractitionerRole": 6,
+            "ImagingStudy": 5,
+            "Coverage": 1,
+            "Immunization": 1,
+            "Patient": 1
+          },
+          "profiles": [
+            "C4BB-ExplanationOfBenefit-Professional-NonClinician",
+            "us-core-blood-pressure",
+            "us-core-condition-problems-health-concerns",
+            "us-core-coverage",
+            "us-core-diagnosticreport-lab",
+            "us-core-diagnosticreport-note",
+            "us-core-documentreference",
+            "us-core-encounter",
+            "us-core-immunization",
+            "us-core-laboratory-result-observation",
+            "us-core-medicationrequest",
+            "us-core-observation-lab",
+            "us-core-organization",
+            "us-core-patient",
+            "us-core-practitioner",
+            "us-core-practitionerrole",
+            "us-core-servicerequest",
+            "us-core-vital-signs"
+          ]
+        }
+      }
+    },
+    {
+      "schema": "open-synthetic-patients/patient-card/v1",
+      "slug": "mavis-dracula",
+      "id": "MVD-SYN-0000000038-2",
+      "name": "Mavis Dracula",
+      "sex": "female",
+      "birth_date": "1988-02-14",
+      "summary": "38-year-old woman with a moderate, realistic record for a typical ACA Marketplace shopper: asthma, hypothyroidism, migraine and anxiety, 6 active RxNorm-coded medicines, 7 visits in the past year and 8 professional claims.",
+      "conditions": [
+        "Mild persistent asthma",
+        "Hypothyroidism",
+        "Migraine without aura",
+        "Generalized anxiety disorder",
+        "Seasonal allergic rhinitis"
+      ],
+      "use_cases": [
+        "us-core",
+        "piqi-data-quality",
+        "coverage",
+        "marketplace-plan-comparison",
+        "carin-bb-claims",
+        "clinical-notes",
+        "smart-health-links"
+      ],
+      "source": {
+        "method": "hand-built",
+        "tool": "build.ps1 (PowerShell) with tools/powershell/FhirBuilders.ps1 and ClinicalBuilders.ps1"
+      },
+      "license": "CC-BY-4.0",
+      "attribution": "crookhaven, open-synthetic-patients (CC BY 4.0)",
+      "also_published": {
+        "fhir_server": "https://hapi.fhir.org/baseR4 (public test server, wiped from time to time)",
+        "smart_health_link": "https://raw.githubusercontent.com/crookhaven/M5-WholeHealth/main/synthetic-patients/shl/mavis-dracula.jwe"
+      },
+      "notes": "Current medicines' RxNorm codes for drug-coverage checks: 966253, 312941, 313161, 895994, 2123076, 1797907. No pharmacy claims, so each medicine appears once. The MRN identifier system reuses an APEX Atlas URL, although this patient is not derived from APEX Atlas.",
+      "variants": {
+        "clean": "bundle.json"
+      },
+      "fhir_version": "4.0.1",
+      "synthetic": true,
+      "path": "patients/mavis-dracula",
+      "variant_stats": {
+        "clean": {
+          "file": "bundle.json",
+          "bytes": 353312,
+          "resource_count": 114,
+          "resource_types": {
+            "Observation": 40,
+            "ExplanationOfBenefit": 8,
+            "MedicationRequest": 8,
+            "Encounter": 7,
+            "Organization": 7,
+            "Practitioner": 7,
+            "PractitionerRole": 7,
+            "Condition": 5,
+            "Binary": 4,
+            "DocumentReference": 4,
+            "Immunization": 3,
+            "Procedure": 3,
+            "ServiceRequest": 3,
+            "AllergyIntolerance": 2,
+            "DiagnosticReport": 2,
+            "CareTeam": 1,
+            "Coverage": 1,
+            "Patient": 1,
+            "RelatedPerson": 1
+          },
+          "profiles": [
+            "C4BB-ExplanationOfBenefit-Professional-NonClinician",
+            "us-core-allergyintolerance",
+            "us-core-blood-pressure",
+            "us-core-bmi",
+            "us-core-body-height",
+            "us-core-body-temperature",
+            "us-core-body-weight",
+            "us-core-careteam",
+            "us-core-condition-problems-health-concerns",
+            "us-core-coverage",
+            "us-core-diagnosticreport-lab",
+            "us-core-documentreference",
+            "us-core-encounter",
+            "us-core-heart-rate",
+            "us-core-immunization",
+            "us-core-medicationrequest",
+            "us-core-observation-lab",
+            "us-core-observation-screening-assessment",
+            "us-core-organization",
+            "us-core-patient",
+            "us-core-practitioner",
+            "us-core-practitionerrole",
+            "us-core-procedure",
+            "us-core-pulse-oximetry",
+            "us-core-relatedperson",
+            "us-core-respiratory-rate",
+            "us-core-servicerequest",
+            "us-core-smokingstatus"
+          ]
+        }
+      }
+    },
+    {
+      "schema": "open-synthetic-patients/patient-card/v1",
+      "slug": "maximus-decimus-meridius",
+      "id": "MDM-SYN-0000000048-1",
+      "name": "Maximus Decimus Meridius",
+      "sex": "male",
+      "birth_date": "1978-03-15",
+      "summary": "48-year-old man with a dense record that fills every category: cardiometabolic, behavioral health, dermatology, hearing, vision and dental care, with imaging, reports, 12 clinical notes, three coverages and 34 CARIN Blue Button claims.",
+      "conditions": [
+        "Type 2 diabetes with diabetic polyneuropathy",
+        "Essential hypertension",
+        "Hyperlipidemia",
+        "NSTEMI 2024 with LAD drug-eluting stent, coronary artery disease",
+        "CKD stage 3a",
+        "Morbid obesity",
+        "Obstructive sleep apnea on CPAP",
+        "COPD",
+        "Lumbar radiculopathy",
+        "PTSD",
+        "Major depressive disorder",
+        "Gout",
+        "GERD",
+        "Psoriasis",
+        "Basal cell carcinoma (Mohs)",
+        "Noise-induced hearing loss with hearing aids",
+        "Primary open-angle glaucoma",
+        "Periodontitis and caries"
+      ],
+      "use_cases": [
+        "us-core",
+        "piqi-data-quality",
+        "ips",
+        "carin-bb-claims",
+        "coverage",
+        "imaging",
+        "clinical-notes",
+        "referrals",
+        "dental",
+        "vision",
+        "hearing",
+        "dermatology",
+        "smart-health-links",
+        "cpap-coverage",
+        "glp1-prior-auth",
+        "large-record"
+      ],
+      "source": {
+        "method": "hand-built",
+        "tool": "build.ps1 (PowerShell) with tools/powershell/FhirBuilders.ps1 and ClinicalBuilders.ps1"
+      },
+      "license": "CC-BY-4.0",
+      "attribution": "crookhaven, open-synthetic-patients (CC BY 4.0)",
+      "also_published": {
+        "fhir_server": "https://hapi.fhir.org/baseR4 (public test server, wiped from time to time)",
+        "smart_health_link": "https://raw.githubusercontent.com/crookhaven/M5-WholeHealth/main/synthetic-patients/shl/maximus-decimus-meridius.jwe"
+      },
+      "notes": "Codes were checked against RxNav (RxNorm, NDC), NLM Clinical Tables (LOINC, ICD-10-CM) and tx.fhir.org (SNOMED CT, CVX, ICD-10-PCS). Dental surface codes (ex-surface) could not be verified. The MRN identifier system reuses an APEX Atlas URL, although this patient is not derived from APEX Atlas.",
+      "variants": {
+        "clean": "bundle.json"
+      },
+      "fhir_version": "4.0.1",
+      "synthetic": true,
+      "path": "patients/maximus-decimus-meridius",
+      "variant_stats": {
+        "clean": {
+          "file": "bundle.json",
+          "bytes": 1375652,
+          "resource_count": 408,
+          "resource_types": {
+            "Observation": 122,
+            "ExplanationOfBenefit": 34,
+            "Condition": 28,
+            "Encounter": 25,
+            "Procedure": 23,
+            "MedicationRequest": 22,
+            "Binary": 20,
+            "DocumentReference": 20,
+            "Organization": 18,
+            "Practitioner": 18,
+            "PractitionerRole": 18,
+            "ServiceRequest": 16,
+            "DiagnosticReport": 12,
+            "Immunization": 8,
+            "ImagingStudy": 7,
+            "Device": 6,
+            "AllergyIntolerance": 4,
+            "Coverage": 3,
+            "RelatedPerson": 2,
+            "CareTeam": 1,
+            "Patient": 1
+          },
+          "profiles": [
+            "C4BB-ExplanationOfBenefit-Inpatient-Institutional",
+            "C4BB-ExplanationOfBenefit-Oral",
+            "C4BB-ExplanationOfBenefit-Pharmacy",
+            "C4BB-ExplanationOfBenefit-Professional-NonClinician",
+            "us-core-allergyintolerance",
+            "us-core-blood-pressure",
+            "us-core-bmi",
+            "us-core-body-height",
+            "us-core-body-temperature",
+            "us-core-body-weight",
+            "us-core-careteam",
+            "us-core-condition-problems-health-concerns",
+            "us-core-coverage",
+            "us-core-diagnosticreport-lab",
+            "us-core-diagnosticreport-note",
+            "us-core-documentreference",
+            "us-core-encounter",
+            "us-core-heart-rate",
+            "us-core-immunization",
+            "us-core-implantable-device",
+            "us-core-medicationrequest",
+            "us-core-observation-lab",
+            "us-core-observation-screening-assessment",
+            "us-core-organization",
+            "us-core-patient",
+            "us-core-practitioner",
+            "us-core-practitionerrole",
+            "us-core-procedure",
+            "us-core-pulse-oximetry",
+            "us-core-relatedperson",
+            "us-core-respiratory-rate",
+            "us-core-servicerequest",
+            "us-core-simple-observation",
+            "us-core-smokingstatus"
+          ]
+        }
+      }
+    }
+  ]
+}

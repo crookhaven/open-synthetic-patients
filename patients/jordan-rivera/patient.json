@@ -1,0 +1,34 @@
+{
+  "schema": "open-synthetic-patients/patient-card/v1",
+  "slug": "jordan-rivera",
+  "id": null,
+  "name": "Jordan Rivera",
+  "sex": "female",
+  "birth_date": "1985-04-12",
+  "summary": "Small hand-written record (17 resources) with intentional duplicates and gaps, so data-quality checks have something to find. Hypertension and type 2 diabetes.",
+  "conditions": [
+    "Essential hypertension",
+    "Type 2 diabetes mellitus"
+  ],
+  "use_cases": [
+    "piqi-data-quality",
+    "intentional-gaps",
+    "minimal",
+    "quick-demo"
+  ],
+  "source": {
+    "method": "hand-built",
+    "tool": "hand-written JSON"
+  },
+  "license": "CC-BY-4.0",
+  "attribution": "crookhaven, open-synthetic-patients (CC BY 4.0)",
+  "also_published": {
+    "app_sample": "M5 Whole Health sample health record (web/src/data/sample_fhir_bundle.json)"
+  },
+  "notes": "Deliberately minimal: no resource ids, no references between resources and no US Core profiles. HTEST tags were added for this repository.",
+  "variants": {
+    "clean": "bundle.json"
+  },
+  "fhir_version": "4.0.1",
+  "synthetic": true
+}
