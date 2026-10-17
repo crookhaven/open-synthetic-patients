@@ -63,6 +63,11 @@ Each patient card lists **variants**. Today every patient has a `clean` variant;
   [APEX Atlas](https://github.com/ParkerApex/apex-atlas). Each `patient.json` has a
   `license` field, and a `NOTICE` file where attribution is required.
 
+## Other sources
+
+Looking for something this collection doesn't have yet? [SOURCES.md](SOURCES.md) compares
+other open synthetic and test data sources, such as APEX Atlas, Synthea and the HL7 AU test data.
+
 ## Contributing
 
 New patients and variants are welcome. See [CONTRIBUTING.md](CONTRIBUTING.md).
