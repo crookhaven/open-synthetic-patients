@@ -29,7 +29,7 @@ tools/
   powershell/         shared builders and publishing scripts (HAPI, SMART Health Links)
 catalog.json      machine-readable index of every patient (generated)
 CATALOG.md        human-readable index (generated)
-sources.json      other data sources, with section, level and license
+sources.json      other data sources, with section, type and license
 SOURCES.md        human-readable list of other sources (generated)
 ```
 
@@ -70,7 +70,8 @@ Each patient card lists **variants**. Today every patient has a `clean` variant;
 Looking for something this collection doesn't have yet? [SOURCES.md](SOURCES.md) lists other
 open synthetic and test data sources, from Synthea, ONC's Inferno data and MIMIC-IV to
 international sets from Australia, Europe, Canada, India and Africa. It's grouped by region
-and by what you're testing, and sorted by how broadly useful each source is.
+and by what you're testing, with each source's type (FHIR download, generator, API sandbox
+and so on) so you can see at a glance how you'd get the data.
 
 ## Contributing
 
