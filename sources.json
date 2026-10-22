@@ -330,6 +330,16 @@
       "best_for": "Plan benefits and cost sharing: what a plan covers, what you pay and its limits. Useful for Real-Time Benefits and CARIN Digital Insurance Card testing, including Medicare Advantage extras such as hearing aids",
       "format": "FHIR R4 InsurancePlan (CARIN Digital Insurance Card SBC profile) and Benefit Plan Standard JSON",
       "license": "MIT"
+    },
+    {
+      "name": "openEHR Data Generator",
+      "url": "https://github.com/atalagk/openEHR-Data-Generator",
+      "section": "intl-multi",
+      "type": "generator",
+      "what": "Python tool by Koray Atalag, a fork of Genkidata from the Berlin Institute of Health (https://github.com/Berlin-Institute-of-Health/Genkidata). From the templates a system uses, it copies known-good compositions or varies them within the template's limits (values, codes and dates), then loads them into EHRbase or another openEHR server",
+      "best_for": "Loading and testing openEHR systems with records that are always valid against their templates. The records vary at random, so they are not realistic patient histories",
+      "format": "openEHR compositions (flat and canonical JSON), not FHIR; uses your own templates (OPT)",
+      "license": "License not stated on the project page; link only"
     }
   ]
 }
