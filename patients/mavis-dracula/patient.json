@@ -20,7 +20,8 @@
     "marketplace-plan-comparison",
     "carin-bb-claims",
     "clinical-notes",
-    "smart-health-links"
+    "smart-health-links",
+    "digital-insurance-card"
   ],
   "source": {
     "method": "hand-built",
@@ -32,7 +33,7 @@
     "fhir_server": "https://hapi.fhir.org/baseR4 (public test server, wiped from time to time)",
     "smart_health_link": "https://raw.githubusercontent.com/crookhaven/M5-WholeHealth/main/synthetic-patients/shl/mavis-dracula.jwe"
   },
-  "notes": "Current medicines' RxNorm codes for drug-coverage checks: 966253, 312941, 313161, 895994, 2123076, 1797907. No pharmacy claims, so each medicine appears once. The MRN identifier system reuses an APEX Atlas URL, although this patient is not derived from APEX Atlas.",
+  "notes": "Current medicines' RxNorm codes for drug-coverage checks: 966253, 312941, 313161, 895994, 2123076, 1797907. No pharmacy claims, so each medicine appears once. Insurance: an individual Marketplace HMO card on the CARIN Digital Insurance Card profiles, with pharmacy numbers, copays, card images, barcode and QR code (synthetic; see insurance-cards/).",
   "variants": {
     "clean": "bundle.json"
   },

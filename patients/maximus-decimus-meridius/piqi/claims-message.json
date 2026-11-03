@@ -68,8 +68,13 @@
       {
         "subscriberId": "AHP-778-48-1978",
         "coverageType": {
-          "text": "preferred provider organization policy",
+          "text": "PPO",
           "codings": [
+            {
+              "code": "512",
+              "display": "Commercial Managed Care - PPO",
+              "system": "https://nahdo.org/sopt"
+            },
             {
               "code": "PPO",
               "display": "preferred provider organization policy",
@@ -110,7 +115,7 @@
       {
         "subscriberId": "AHP-778-48-1978",
         "coverageType": {
-          "text": "vision care policy",
+          "text": "Vision",
           "codings": [
             {
               "code": "VISPOL",
@@ -152,7 +157,7 @@
       {
         "subscriberId": "AHP-778-48-1978",
         "coverageType": {
-          "text": "dental care policy",
+          "text": "Dental PPO",
           "codings": [
             {
               "code": "DENTAL",
@@ -225,7 +230,7 @@
             }
           ]
         },
-        "claimPayerIdentifier": "ORG-MDM-PAYER_MED",
+        "claimPayerIdentifier": "ATLHP",
         "medicalRecordNumber": null,
         "claimIdentifierType": "Unique Claim ID",
         "processingStatusCode": {
@@ -374,7 +379,7 @@
           "text": null,
           "codings": []
         },
-        "claimPayerIdentifier": "ORG-MDM-PAYER_MED",
+        "claimPayerIdentifier": "ATLHP",
         "medicalRecordNumber": null,
         "claimIdentifierType": "Unique Claim ID",
         "processingStatusCode": {
@@ -505,7 +510,7 @@
           "text": null,
           "codings": []
         },
-        "claimPayerIdentifier": "ORG-MDM-PAYER_MED",
+        "claimPayerIdentifier": "ATLHP",
         "medicalRecordNumber": null,
         "claimIdentifierType": "Unique Claim ID",
         "processingStatusCode": {
@@ -636,7 +641,7 @@
           "text": null,
           "codings": []
         },
-        "claimPayerIdentifier": "ORG-MDM-PAYER_MED",
+        "claimPayerIdentifier": "ATLHP",
         "medicalRecordNumber": null,
         "claimIdentifierType": "Unique Claim ID",
         "processingStatusCode": {
@@ -767,7 +772,7 @@
           "text": null,
           "codings": []
         },
-        "claimPayerIdentifier": "ORG-MDM-PAYER_MED",
+        "claimPayerIdentifier": "ATLHP",
         "medicalRecordNumber": null,
         "claimIdentifierType": "Unique Claim ID",
         "processingStatusCode": {
@@ -898,7 +903,7 @@
           "text": null,
           "codings": []
         },
-        "claimPayerIdentifier": "ORG-MDM-PAYER_MED",
+        "claimPayerIdentifier": "ATLHP",
         "medicalRecordNumber": null,
         "claimIdentifierType": "Unique Claim ID",
         "processingStatusCode": {
@@ -1029,7 +1034,7 @@
           "text": null,
           "codings": []
         },
-        "claimPayerIdentifier": "ORG-MDM-PAYER_MED",
+        "claimPayerIdentifier": "ATLHP",
         "medicalRecordNumber": null,
         "claimIdentifierType": "Unique Claim ID",
         "processingStatusCode": {
@@ -1160,7 +1165,7 @@
           "text": null,
           "codings": []
         },
-        "claimPayerIdentifier": "ORG-MDM-PAYER_MED",
+        "claimPayerIdentifier": "ATLHP",
         "medicalRecordNumber": null,
         "claimIdentifierType": "Unique Claim ID",
         "processingStatusCode": {
@@ -1291,7 +1296,7 @@
           "text": null,
           "codings": []
         },
-        "claimPayerIdentifier": "ORG-MDM-PAYER_MED",
+        "claimPayerIdentifier": "ATLHP",
         "medicalRecordNumber": null,
         "claimIdentifierType": "Unique Claim ID",
         "processingStatusCode": {
@@ -1422,7 +1427,7 @@
           "text": null,
           "codings": []
         },
-        "claimPayerIdentifier": "ORG-MDM-PAYER_MED",
+        "claimPayerIdentifier": "ATLHP",
         "medicalRecordNumber": null,
         "claimIdentifierType": "Unique Claim ID",
         "processingStatusCode": {
@@ -1553,7 +1558,7 @@
           "text": null,
           "codings": []
         },
-        "claimPayerIdentifier": "ORG-MDM-PAYER_MED",
+        "claimPayerIdentifier": "ATLHP",
         "medicalRecordNumber": null,
         "claimIdentifierType": "Unique Claim ID",
         "processingStatusCode": {
@@ -1684,7 +1689,7 @@
           "text": null,
           "codings": []
         },
-        "claimPayerIdentifier": "ORG-MDM-PAYER_MED",
+        "claimPayerIdentifier": "ATLHP",
         "medicalRecordNumber": null,
         "claimIdentifierType": "Unique Claim ID",
         "processingStatusCode": {
@@ -1815,7 +1820,7 @@
           "text": null,
           "codings": []
         },
-        "claimPayerIdentifier": "ORG-MDM-PAYER_MED",
+        "claimPayerIdentifier": "ATLHP",
         "medicalRecordNumber": null,
         "claimIdentifierType": "Unique Claim ID",
         "processingStatusCode": {
@@ -1946,7 +1951,7 @@
           "text": null,
           "codings": []
         },
-        "claimPayerIdentifier": "ORG-MDM-PAYER_MED",
+        "claimPayerIdentifier": "ATLHP",
         "medicalRecordNumber": null,
         "claimIdentifierType": "Unique Claim ID",
         "processingStatusCode": {
@@ -2077,7 +2082,7 @@
           "text": null,
           "codings": []
         },
-        "claimPayerIdentifier": "ORG-MDM-PAYER_MED",
+        "claimPayerIdentifier": "ATLHP",
         "medicalRecordNumber": null,
         "claimIdentifierType": "Unique Claim ID",
         "processingStatusCode": {
@@ -2208,7 +2213,7 @@
           "text": null,
           "codings": []
         },
-        "claimPayerIdentifier": "ORG-MDM-PAYER_MED",
+        "claimPayerIdentifier": "ATLHP",
         "medicalRecordNumber": null,
         "claimIdentifierType": "Unique Claim ID",
         "processingStatusCode": {
@@ -2339,7 +2344,7 @@
           "text": null,
           "codings": []
         },
-        "claimPayerIdentifier": "ORG-MDM-PAYER_MED",
+        "claimPayerIdentifier": "ATLHP",
         "medicalRecordNumber": null,
         "claimIdentifierType": "Unique Claim ID",
         "processingStatusCode": {
@@ -2470,7 +2475,7 @@
           "text": null,
           "codings": []
         },
-        "claimPayerIdentifier": "ORG-MDM-PAYER_MED",
+        "claimPayerIdentifier": "ATLHP",
         "medicalRecordNumber": null,
         "claimIdentifierType": "Unique Claim ID",
         "processingStatusCode": {
@@ -2601,7 +2606,7 @@
           "text": null,
           "codings": []
         },
-        "claimPayerIdentifier": "ORG-MDM-PAYER_MED",
+        "claimPayerIdentifier": "ATLHP",
         "medicalRecordNumber": null,
         "claimIdentifierType": "Unique Claim ID",
         "processingStatusCode": {
@@ -2732,7 +2737,7 @@
           "text": null,
           "codings": []
         },
-        "claimPayerIdentifier": "ORG-MDM-PAYER_VISION",
+        "claimPayerIdentifier": "ATLVS",
         "medicalRecordNumber": null,
         "claimIdentifierType": "Unique Claim ID",
         "processingStatusCode": {
@@ -2863,7 +2868,7 @@
           "text": null,
           "codings": []
         },
-        "claimPayerIdentifier": "ORG-MDM-PAYER_DENTAL",
+        "claimPayerIdentifier": "ATLDN",
         "medicalRecordNumber": null,
         "claimIdentifierType": "Unique Claim ID",
         "processingStatusCode": {
@@ -2994,7 +2999,7 @@
           "text": null,
           "codings": []
         },
-        "claimPayerIdentifier": "ORG-MDM-PAYER_DENTAL",
+        "claimPayerIdentifier": "ATLDN",
         "medicalRecordNumber": null,
         "claimIdentifierType": "Unique Claim ID",
         "processingStatusCode": {
@@ -3125,7 +3130,7 @@
           "text": null,
           "codings": []
         },
-        "claimPayerIdentifier": "ORG-MDM-PAYER_DENTAL",
+        "claimPayerIdentifier": "ATLDN",
         "medicalRecordNumber": null,
         "claimIdentifierType": "Unique Claim ID",
         "processingStatusCode": {
@@ -3256,7 +3261,7 @@
           "text": null,
           "codings": []
         },
-        "claimPayerIdentifier": "ORG-MDM-PAYER_DENTAL",
+        "claimPayerIdentifier": "ATLDN",
         "medicalRecordNumber": null,
         "claimIdentifierType": "Unique Claim ID",
         "processingStatusCode": {
@@ -3387,7 +3392,7 @@
           "text": null,
           "codings": []
         },
-        "claimPayerIdentifier": "ORG-MDM-PAYER_MED",
+        "claimPayerIdentifier": "ATLHP",
         "medicalRecordNumber": null,
         "claimIdentifierType": "Unique Claim ID",
         "processingStatusCode": {
@@ -3518,7 +3523,7 @@
           "text": null,
           "codings": []
         },
-        "claimPayerIdentifier": "ORG-MDM-PAYER_MED",
+        "claimPayerIdentifier": "ATLHP",
         "medicalRecordNumber": null,
         "claimIdentifierType": "Unique Claim ID",
         "processingStatusCode": {
@@ -3649,7 +3654,7 @@
           "text": null,
           "codings": []
         },
-        "claimPayerIdentifier": "ORG-MDM-PAYER_MED",
+        "claimPayerIdentifier": "ATLHP",
         "medicalRecordNumber": null,
         "claimIdentifierType": "Unique Claim ID",
         "processingStatusCode": {
@@ -3780,7 +3785,7 @@
           "text": null,
           "codings": []
         },
-        "claimPayerIdentifier": "ORG-MDM-PAYER_MED",
+        "claimPayerIdentifier": "ATLHP",
         "medicalRecordNumber": null,
         "claimIdentifierType": "Unique Claim ID",
         "processingStatusCode": {
@@ -3911,7 +3916,7 @@
           "text": null,
           "codings": []
         },
-        "claimPayerIdentifier": "ORG-MDM-PAYER_MED",
+        "claimPayerIdentifier": "ATLHP",
         "medicalRecordNumber": null,
         "claimIdentifierType": "Unique Claim ID",
         "processingStatusCode": {
@@ -4042,7 +4047,7 @@
           "text": null,
           "codings": []
         },
-        "claimPayerIdentifier": "ORG-MDM-PAYER_MED",
+        "claimPayerIdentifier": "ATLHP",
         "medicalRecordNumber": null,
         "claimIdentifierType": "Unique Claim ID",
         "processingStatusCode": {
@@ -4173,7 +4178,7 @@
           "text": null,
           "codings": []
         },
-        "claimPayerIdentifier": "ORG-MDM-PAYER_MED",
+        "claimPayerIdentifier": "ATLHP",
         "medicalRecordNumber": null,
         "claimIdentifierType": "Unique Claim ID",
         "processingStatusCode": {
@@ -4304,7 +4309,7 @@
           "text": null,
           "codings": []
         },
-        "claimPayerIdentifier": "ORG-MDM-PAYER_MED",
+        "claimPayerIdentifier": "ATLHP",
         "medicalRecordNumber": null,
         "claimIdentifierType": "Unique Claim ID",
         "processingStatusCode": {
@@ -4435,7 +4440,7 @@
           "text": null,
           "codings": []
         },
-        "claimPayerIdentifier": "ORG-MDM-PAYER_MED",
+        "claimPayerIdentifier": "ATLHP",
         "medicalRecordNumber": null,
         "claimIdentifierType": "Unique Claim ID",
         "processingStatusCode": {
@@ -4566,7 +4571,7 @@
           "text": null,
           "codings": []
         },
-        "claimPayerIdentifier": "ORG-MDM-PAYER_MED",
+        "claimPayerIdentifier": "ATLHP",
         "medicalRecordNumber": null,
         "claimIdentifierType": "Unique Claim ID",
         "processingStatusCode": {

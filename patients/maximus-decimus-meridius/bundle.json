@@ -8,7 +8,9 @@
         "resourceType": "Patient",
         "id": "MDM-SYN-0000000048-1",
         "meta": {
+          "lastUpdated": "2026-11-03T12:00:00Z",
           "profile": [
+            "http://hl7.org/fhir/us/insurance-card/StructureDefinition/C4DIC-Patient",
             "http://hl7.org/fhir/us/core/StructureDefinition/us-core-patient|6.1.0"
           ],
           "tag": [
@@ -72,7 +74,7 @@
               ],
               "text": "Medical record number"
             },
-            "system": "https://parkerapex.com/atlas/mrn",
+            "system": "https://example.org/open-synthetic-patients/mrn",
             "value": "MDM-SYN-0000000048-1"
           }
         ],
@@ -299,7 +301,7 @@
         },
         "identifier": [
           {
-            "system": "https://parkerapex.com/atlas/organization",
+            "system": "https://example.org/open-synthetic-patients/organization",
             "value": "ORG-MDM-ORG_PCP"
           }
         ],
@@ -348,7 +350,7 @@
         },
         "identifier": [
           {
-            "system": "https://parkerapex.com/atlas/organization",
+            "system": "https://example.org/open-synthetic-patients/organization",
             "value": "ORG-MDM-ORG_HOSP"
           }
         ],
@@ -397,7 +399,7 @@
         },
         "identifier": [
           {
-            "system": "https://parkerapex.com/atlas/organization",
+            "system": "https://example.org/open-synthetic-patients/organization",
             "value": "ORG-MDM-ORG_CARDS"
           }
         ],
@@ -446,7 +448,7 @@
         },
         "identifier": [
           {
-            "system": "https://parkerapex.com/atlas/organization",
+            "system": "https://example.org/open-synthetic-patients/organization",
             "value": "ORG-MDM-ORG_SLEEP"
           }
         ],
@@ -495,7 +497,7 @@
         },
         "identifier": [
           {
-            "system": "https://parkerapex.com/atlas/organization",
+            "system": "https://example.org/open-synthetic-patients/organization",
             "value": "ORG-MDM-ORG_PAIN"
           }
         ],
@@ -544,7 +546,7 @@
         },
         "identifier": [
           {
-            "system": "https://parkerapex.com/atlas/organization",
+            "system": "https://example.org/open-synthetic-patients/organization",
             "value": "ORG-MDM-ORG_DERM"
           }
         ],
@@ -593,7 +595,7 @@
         },
         "identifier": [
           {
-            "system": "https://parkerapex.com/atlas/organization",
+            "system": "https://example.org/open-synthetic-patients/organization",
             "value": "ORG-MDM-ORG_AUD"
           }
         ],
@@ -642,7 +644,7 @@
         },
         "identifier": [
           {
-            "system": "https://parkerapex.com/atlas/organization",
+            "system": "https://example.org/open-synthetic-patients/organization",
             "value": "ORG-MDM-ORG_EYE"
           }
         ],
@@ -691,7 +693,7 @@
         },
         "identifier": [
           {
-            "system": "https://parkerapex.com/atlas/organization",
+            "system": "https://example.org/open-synthetic-patients/organization",
             "value": "ORG-MDM-ORG_DENTAL"
           }
         ],
@@ -740,7 +742,7 @@
         },
         "identifier": [
           {
-            "system": "https://parkerapex.com/atlas/organization",
+            "system": "https://example.org/open-synthetic-patients/organization",
             "value": "ORG-MDM-ORG_PERIO"
           }
         ],
@@ -789,7 +791,7 @@
         },
         "identifier": [
           {
-            "system": "https://parkerapex.com/atlas/organization",
+            "system": "https://example.org/open-synthetic-patients/organization",
             "value": "ORG-MDM-ORG_BH"
           }
         ],
@@ -838,7 +840,7 @@
         },
         "identifier": [
           {
-            "system": "https://parkerapex.com/atlas/organization",
+            "system": "https://example.org/open-synthetic-patients/organization",
             "value": "ORG-MDM-ORG_GI"
           }
         ],
@@ -887,7 +889,7 @@
         },
         "identifier": [
           {
-            "system": "https://parkerapex.com/atlas/organization",
+            "system": "https://example.org/open-synthetic-patients/organization",
             "value": "ORG-MDM-ORG_LAB"
           }
         ],
@@ -936,7 +938,7 @@
         },
         "identifier": [
           {
-            "system": "https://parkerapex.com/atlas/organization",
+            "system": "https://example.org/open-synthetic-patients/organization",
             "value": "ORG-MDM-ORG_IMG"
           }
         ],
@@ -985,7 +987,7 @@
         },
         "identifier": [
           {
-            "system": "https://parkerapex.com/atlas/organization",
+            "system": "https://example.org/open-synthetic-patients/organization",
             "value": "ORG-MDM-ORG_PHARM"
           }
         ],
@@ -1021,7 +1023,9 @@
         "resourceType": "Organization",
         "id": "a7b3e1ba-1eea-58e2-84a7-57e53f177e6b",
         "meta": {
+          "lastUpdated": "2026-11-03T12:00:00Z",
           "profile": [
+            "http://hl7.org/fhir/us/insurance-card/StructureDefinition/C4DIC-Organization",
             "http://hl7.org/fhir/us/core/StructureDefinition/us-core-organization|6.1.0"
           ],
           "tag": [
@@ -1034,7 +1038,19 @@
         },
         "identifier": [
           {
-            "system": "https://parkerapex.com/atlas/organization",
+            "type": {
+              "coding": [
+                {
+                  "system": "http://terminology.hl7.org/CodeSystem/C4DICIdentifierType",
+                  "code": "payerid",
+                  "display": "Payer ID"
+                }
+              ]
+            },
+            "value": "ATLHP"
+          },
+          {
+            "system": "https://example.org/open-synthetic-patients/organization",
             "value": "ORG-MDM-PAYER_MED"
           }
         ],
@@ -1052,14 +1068,122 @@
           }
         ],
         "name": "Atlas Health Plan",
-        "address": [
+        "telecom": [
           {
-            "line": [
-              "1 Atlas Medical Plaza"
-            ],
-            "city": "Springfield",
-            "state": "IL",
-            "postalCode": "62702"
+            "system": "url",
+            "value": "https://atlas-health.example"
+          }
+        ],
+        "contact": [
+          {
+            "purpose": {
+              "coding": [
+                {
+                  "system": "http://terminology.hl7.org/CodeSystem/contactentity-type",
+                  "code": "PATINF",
+                  "display": "Patient"
+                }
+              ]
+            },
+            "telecom": [
+              {
+                "system": "phone",
+                "value": "1-800-555-0110"
+              }
+            ]
+          },
+          {
+            "purpose": {
+              "coding": [
+                {
+                  "system": "http://terminology.hl7.org/CodeSystem/C4DICExtendedContactTypeCS",
+                  "code": "provider",
+                  "display": "Provider Service"
+                }
+              ]
+            },
+            "telecom": [
+              {
+                "system": "phone",
+                "value": "1-800-555-0111"
+              }
+            ]
+          },
+          {
+            "purpose": {
+              "coding": [
+                {
+                  "system": "http://terminology.hl7.org/CodeSystem/C4DICExtendedContactTypeCS",
+                  "code": "pharma",
+                  "display": "Pharmacists"
+                }
+              ]
+            },
+            "telecom": [
+              {
+                "system": "phone",
+                "value": "1-800-555-0112"
+              }
+            ]
+          },
+          {
+            "purpose": {
+              "coding": [
+                {
+                  "system": "http://terminology.hl7.org/CodeSystem/C4DICExtendedContactTypeCS",
+                  "code": "rxmailorder",
+                  "display": "Mail Order Pharmacy"
+                }
+              ]
+            },
+            "telecom": [
+              {
+                "system": "phone",
+                "value": "1-800-555-0113"
+              }
+            ]
+          },
+          {
+            "purpose": {
+              "coding": [
+                {
+                  "system": "http://terminology.hl7.org/CodeSystem/C4DICExtendedContactTypeCS",
+                  "code": "virtual",
+                  "display": "Virtual Care Services"
+                }
+              ]
+            },
+            "telecom": [
+              {
+                "system": "url",
+                "value": "https://atlas-health.example/virtual-care"
+              }
+            ]
+          },
+          {
+            "purpose": {
+              "coding": [
+                {
+                  "system": "http://terminology.hl7.org/CodeSystem/contactentity-type",
+                  "code": "PAYOR",
+                  "display": "Payor"
+                }
+              ]
+            },
+            "name": {
+              "text": "Claims"
+            },
+            "address": {
+              "type": "postal",
+              "text": "PO Box 1450, Springfield, IL 62705",
+              "line": [
+                "PO Box 1450"
+              ],
+              "city": "Springfield",
+              "state": "IL",
+              "postalCode": "62705",
+              "country": "US"
+            }
           }
         ]
       }
@@ -1070,7 +1194,9 @@
         "resourceType": "Organization",
         "id": "3038bbb2-eae4-548c-ac5a-66b745dc0e98",
         "meta": {
+          "lastUpdated": "2026-11-03T12:00:00Z",
           "profile": [
+            "http://hl7.org/fhir/us/insurance-card/StructureDefinition/C4DIC-Organization",
             "http://hl7.org/fhir/us/core/StructureDefinition/us-core-organization|6.1.0"
           ],
           "tag": [
@@ -1083,7 +1209,19 @@
         },
         "identifier": [
           {
-            "system": "https://parkerapex.com/atlas/organization",
+            "type": {
+              "coding": [
+                {
+                  "system": "http://terminology.hl7.org/CodeSystem/C4DICIdentifierType",
+                  "code": "payerid",
+                  "display": "Payer ID"
+                }
+              ]
+            },
+            "value": "ATLDN"
+          },
+          {
+            "system": "https://example.org/open-synthetic-patients/organization",
             "value": "ORG-MDM-PAYER_DENTAL"
           }
         ],
@@ -1101,14 +1239,71 @@
           }
         ],
         "name": "Atlas Dental Plan",
-        "address": [
+        "telecom": [
           {
-            "line": [
-              "1 Atlas Medical Plaza"
-            ],
-            "city": "Springfield",
-            "state": "IL",
-            "postalCode": "62702"
+            "system": "url",
+            "value": "https://atlas-health.example/dental"
+          }
+        ],
+        "contact": [
+          {
+            "purpose": {
+              "coding": [
+                {
+                  "system": "http://terminology.hl7.org/CodeSystem/contactentity-type",
+                  "code": "PATINF",
+                  "display": "Patient"
+                }
+              ]
+            },
+            "telecom": [
+              {
+                "system": "phone",
+                "value": "1-800-555-0120"
+              }
+            ]
+          },
+          {
+            "purpose": {
+              "coding": [
+                {
+                  "system": "http://terminology.hl7.org/CodeSystem/C4DICExtendedContactTypeCS",
+                  "code": "provider",
+                  "display": "Provider Service"
+                }
+              ]
+            },
+            "telecom": [
+              {
+                "system": "phone",
+                "value": "1-800-555-0121"
+              }
+            ]
+          },
+          {
+            "purpose": {
+              "coding": [
+                {
+                  "system": "http://terminology.hl7.org/CodeSystem/contactentity-type",
+                  "code": "PAYOR",
+                  "display": "Payor"
+                }
+              ]
+            },
+            "name": {
+              "text": "Claims"
+            },
+            "address": {
+              "type": "postal",
+              "text": "PO Box 1451, Springfield, IL 62705",
+              "line": [
+                "PO Box 1451"
+              ],
+              "city": "Springfield",
+              "state": "IL",
+              "postalCode": "62705",
+              "country": "US"
+            }
           }
         ]
       }
@@ -1119,7 +1314,9 @@
         "resourceType": "Organization",
         "id": "6cb7d665-4b92-5509-95b4-a90856e5adc5",
         "meta": {
+          "lastUpdated": "2026-11-03T12:00:00Z",
           "profile": [
+            "http://hl7.org/fhir/us/insurance-card/StructureDefinition/C4DIC-Organization",
             "http://hl7.org/fhir/us/core/StructureDefinition/us-core-organization|6.1.0"
           ],
           "tag": [
@@ -1132,7 +1329,19 @@
         },
         "identifier": [
           {
-            "system": "https://parkerapex.com/atlas/organization",
+            "type": {
+              "coding": [
+                {
+                  "system": "http://terminology.hl7.org/CodeSystem/C4DICIdentifierType",
+                  "code": "payerid",
+                  "display": "Payer ID"
+                }
+              ]
+            },
+            "value": "ATLVS"
+          },
+          {
+            "system": "https://example.org/open-synthetic-patients/organization",
             "value": "ORG-MDM-PAYER_VISION"
           }
         ],
@@ -1150,14 +1359,71 @@
           }
         ],
         "name": "Atlas Vision Plan",
-        "address": [
+        "telecom": [
           {
-            "line": [
-              "1 Atlas Medical Plaza"
-            ],
-            "city": "Springfield",
-            "state": "IL",
-            "postalCode": "62702"
+            "system": "url",
+            "value": "https://atlas-health.example/vision"
+          }
+        ],
+        "contact": [
+          {
+            "purpose": {
+              "coding": [
+                {
+                  "system": "http://terminology.hl7.org/CodeSystem/contactentity-type",
+                  "code": "PATINF",
+                  "display": "Patient"
+                }
+              ]
+            },
+            "telecom": [
+              {
+                "system": "phone",
+                "value": "1-800-555-0130"
+              }
+            ]
+          },
+          {
+            "purpose": {
+              "coding": [
+                {
+                  "system": "http://terminology.hl7.org/CodeSystem/C4DICExtendedContactTypeCS",
+                  "code": "provider",
+                  "display": "Provider Service"
+                }
+              ]
+            },
+            "telecom": [
+              {
+                "system": "phone",
+                "value": "1-800-555-0131"
+              }
+            ]
+          },
+          {
+            "purpose": {
+              "coding": [
+                {
+                  "system": "http://terminology.hl7.org/CodeSystem/contactentity-type",
+                  "code": "PAYOR",
+                  "display": "Payor"
+                }
+              ]
+            },
+            "name": {
+              "text": "Claims"
+            },
+            "address": {
+              "type": "postal",
+              "text": "PO Box 1452, Springfield, IL 62705",
+              "line": [
+                "PO Box 1452"
+              ],
+              "city": "Springfield",
+              "state": "IL",
+              "postalCode": "62705",
+              "country": "US"
+            }
           }
         ]
       }
@@ -1181,7 +1447,7 @@
         },
         "identifier": [
           {
-            "system": "https://parkerapex.com/atlas/practitioner",
+            "system": "https://example.org/open-synthetic-patients/practitioner",
             "value": "PRAC-MDM-PR_PCP"
           }
         ],
@@ -1265,7 +1531,7 @@
         },
         "identifier": [
           {
-            "system": "https://parkerapex.com/atlas/practitioner",
+            "system": "https://example.org/open-synthetic-patients/practitioner",
             "value": "PRAC-MDM-PR_ED"
           }
         ],
@@ -1349,7 +1615,7 @@
         },
         "identifier": [
           {
-            "system": "https://parkerapex.com/atlas/practitioner",
+            "system": "https://example.org/open-synthetic-patients/practitioner",
             "value": "PRAC-MDM-PR_HOSP"
           }
         ],
@@ -1433,7 +1699,7 @@
         },
         "identifier": [
           {
-            "system": "https://parkerapex.com/atlas/practitioner",
+            "system": "https://example.org/open-synthetic-patients/practitioner",
             "value": "PRAC-MDM-PR_ICARD"
           }
         ],
@@ -1517,7 +1783,7 @@
         },
         "identifier": [
           {
-            "system": "https://parkerapex.com/atlas/practitioner",
+            "system": "https://example.org/open-synthetic-patients/practitioner",
             "value": "PRAC-MDM-PR_CARDS"
           }
         ],
@@ -1601,7 +1867,7 @@
         },
         "identifier": [
           {
-            "system": "https://parkerapex.com/atlas/practitioner",
+            "system": "https://example.org/open-synthetic-patients/practitioner",
             "value": "PRAC-MDM-PR_SLEEP"
           }
         ],
@@ -1685,7 +1951,7 @@
         },
         "identifier": [
           {
-            "system": "https://parkerapex.com/atlas/practitioner",
+            "system": "https://example.org/open-synthetic-patients/practitioner",
             "value": "PRAC-MDM-PR_PAIN"
           }
         ],
@@ -1769,7 +2035,7 @@
         },
         "identifier": [
           {
-            "system": "https://parkerapex.com/atlas/practitioner",
+            "system": "https://example.org/open-synthetic-patients/practitioner",
             "value": "PRAC-MDM-PR_DERM"
           }
         ],
@@ -1853,7 +2119,7 @@
         },
         "identifier": [
           {
-            "system": "https://parkerapex.com/atlas/practitioner",
+            "system": "https://example.org/open-synthetic-patients/practitioner",
             "value": "PRAC-MDM-PR_PATH"
           }
         ],
@@ -1937,7 +2203,7 @@
         },
         "identifier": [
           {
-            "system": "https://parkerapex.com/atlas/practitioner",
+            "system": "https://example.org/open-synthetic-patients/practitioner",
             "value": "PRAC-MDM-PR_AUD"
           }
         ],
@@ -2021,7 +2287,7 @@
         },
         "identifier": [
           {
-            "system": "https://parkerapex.com/atlas/practitioner",
+            "system": "https://example.org/open-synthetic-patients/practitioner",
             "value": "PRAC-MDM-PR_OPHTH"
           }
         ],
@@ -2105,7 +2371,7 @@
         },
         "identifier": [
           {
-            "system": "https://parkerapex.com/atlas/practitioner",
+            "system": "https://example.org/open-synthetic-patients/practitioner",
             "value": "PRAC-MDM-PR_OD"
           }
         ],
@@ -2189,7 +2455,7 @@
         },
         "identifier": [
           {
-            "system": "https://parkerapex.com/atlas/practitioner",
+            "system": "https://example.org/open-synthetic-patients/practitioner",
             "value": "PRAC-MDM-PR_DDS"
           }
         ],
@@ -2273,7 +2539,7 @@
         },
         "identifier": [
           {
-            "system": "https://parkerapex.com/atlas/practitioner",
+            "system": "https://example.org/open-synthetic-patients/practitioner",
             "value": "PRAC-MDM-PR_PERIO"
           }
         ],
@@ -2357,7 +2623,7 @@
         },
         "identifier": [
           {
-            "system": "https://parkerapex.com/atlas/practitioner",
+            "system": "https://example.org/open-synthetic-patients/practitioner",
             "value": "PRAC-MDM-PR_PSYCH"
           }
         ],
@@ -2441,7 +2707,7 @@
         },
         "identifier": [
           {
-            "system": "https://parkerapex.com/atlas/practitioner",
+            "system": "https://example.org/open-synthetic-patients/practitioner",
             "value": "PRAC-MDM-PR_GI"
           }
         ],
@@ -2525,7 +2791,7 @@
         },
         "identifier": [
           {
-            "system": "https://parkerapex.com/atlas/practitioner",
+            "system": "https://example.org/open-synthetic-patients/practitioner",
             "value": "PRAC-MDM-PR_RAD"
           }
         ],
@@ -2609,7 +2875,7 @@
         },
         "identifier": [
           {
-            "system": "https://parkerapex.com/atlas/practitioner",
+            "system": "https://example.org/open-synthetic-patients/practitioner",
             "value": "PRAC-MDM-PR_RN"
           }
         ],
@@ -2680,7 +2946,9 @@
         "resourceType": "Coverage",
         "id": "a803a630-5e3b-5bc3-ad38-6b6ef1958d65",
         "meta": {
+          "lastUpdated": "2026-11-03T12:00:00Z",
           "profile": [
+            "http://hl7.org/fhir/us/insurance-card/StructureDefinition/C4DIC-Coverage",
             "http://hl7.org/fhir/us/core/StructureDefinition/us-core-coverage|6.1.0"
           ],
           "tag": [
@@ -2691,6 +2959,199 @@
             }
           ]
         },
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/us/insurance-card/StructureDefinition/C4DIC-PlanBeneficiaries-extension",
+            "extension": [
+              {
+                "url": "memberId",
+                "valueString": "AHP-778-48-1978"
+              },
+              {
+                "url": "name",
+                "valueHumanName": {
+                  "family": "Meridius",
+                  "given": [
+                    "Maximus",
+                    "Decimus"
+                  ]
+                }
+              }
+            ]
+          },
+          {
+            "url": "http://hl7.org/fhir/us/insurance-card/StructureDefinition/C4DIC-AdditionalCardInformation-extension",
+            "valueAnnotation": {
+              "text": "TTY users call 711."
+            }
+          },
+          {
+            "url": "http://hl7.org/fhir/us/insurance-card/StructureDefinition/C4DIC-AdditionalCardInformation-extension",
+            "valueAnnotation": {
+              "text": "This card does not guarantee coverage or payment. Misusing it may be fraud."
+            }
+          },
+          {
+            "url": "http://hl7.org/fhir/us/insurance-card/StructureDefinition/C4DIC-AdditionalCardInformation-extension",
+            "valueAnnotation": {
+              "text": "In an emergency, call 911 or go to the nearest emergency room."
+            }
+          },
+          {
+            "url": "http://hl7.org/fhir/us/insurance-card/StructureDefinition/C4DIC-AdditionalCardInformation-extension",
+            "valueAnnotation": {
+              "text": "Hospital stays need prior approval: call member services within 48 hours of admission."
+            }
+          },
+          {
+            "url": "http://hl7.org/fhir/us/insurance-card/StructureDefinition/C4DIC-AdditionalCardInformation-extension",
+            "valueAnnotation": {
+              "text": "SAMPLE: synthetic test data from open-synthetic-patients. Not a real insurance card; the plan, numbers and member are made up."
+            }
+          },
+          {
+            "url": "http://hl7.org/fhir/us/insurance-card/StructureDefinition/C4DIC-CardIssueDate-extension",
+            "valueDate": "2025-12-10"
+          },
+          {
+            "url": "http://hl7.org/fhir/us/insurance-card/StructureDefinition/C4DIC-ColorPalette-extension",
+            "extension": [
+              {
+                "url": "http://hl7.org/fhir/us/insurance-card/StructureDefinition/C4DIC-ForegroundColor-extension",
+                "valueCodeableConcept": {
+                  "coding": [
+                    {
+                      "system": "http://terminology.hl7.org/CodeSystem/IECColourManagement",
+                      "code": "#FFFFFF"
+                    }
+                  ]
+                }
+              },
+              {
+                "url": "http://hl7.org/fhir/us/insurance-card/StructureDefinition/C4DIC-BackgroundColor-extension",
+                "valueCodeableConcept": {
+                  "coding": [
+                    {
+                      "system": "http://terminology.hl7.org/CodeSystem/IECColourManagement",
+                      "code": "#1F3A5F"
+                    }
+                  ]
+                }
+              },
+              {
+                "url": "http://hl7.org/fhir/us/insurance-card/StructureDefinition/C4DIC-HighlightColor-extension",
+                "valueCodeableConcept": {
+                  "coding": [
+                    {
+                      "system": "http://terminology.hl7.org/CodeSystem/IECColourManagement",
+                      "code": "#E8B33A"
+                    }
+                  ]
+                }
+              }
+            ]
+          },
+          {
+            "url": "http://hl7.org/fhir/us/insurance-card/StructureDefinition/C4DIC-Logo-extension",
+            "extension": [
+              {
+                "url": "description",
+                "valueString": "Atlas Health logo: a A monogram in a circle beside the plan name. Synthetic brand."
+              },
+              {
+                "url": "image",
+                "valueAttachment": {
+                  "contentType": "image/png",
+                  "data": "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"
+                }
+              },
+              {
+                "url": "label",
+                "valueString": "Atlas Health"
+              }
+            ]
+          },
+          {
+            "url": "http://hl7.org/fhir/us/insurance-card/StructureDefinition/C4DIC-QRCode-extension",
+            "extension": [
+              {
+                "url": "description",
+                "valueString": "QR code on the back of the card holding the plan name, member ID, group and pharmacy numbers as text. Synthetic."
+              },
+              {
+                "url": "image",
+                "valueAttachment": {
+                  "contentType": "image/png",
+                  "data": "iVBORw0KGgoAAAANSUhEUgAAAPQAAAD0AQMAAACW4Zm9AAAABlBMVEX///8AAABVwtN+AAACwklEQVR42uWZS44bSQxEn4zZR92g738s3eDlCWIWTHllwAZmmhsLWghVEFhMkvFhwd/+aatJU1NjaVNLW/nxm3//1/sgmARSIPO7DcL3x/8BFTj1nKbn4S09ODe+O/4/ALx5Dn08j3m+gLzyv+X3J/cfv77OoebI24PsxJ/6F9MaxDYQ3an/i8L55a3Aeb4/fwBbnJyldwLXzt+2NTpYgIGmLRvzn5a04kAQpJgMBCzM36Fwnp4DvAnSA4/0tXH+g3shSaJxDiU0G/Uvbala22CEastKfHtBQJPaJrWgZKP/amzrh/iitgXalfwTdDCglNwnIVmqvyU2RBuallqydP5J6qCQWJKmScvK+TcKlFA6pcgHBhfiD9VO25tCSalhZ/6qGjWliaZNlcaN+EEapKbpZYHEshIfdOCvxdAyoetK/aMxacwH+m0iuMK/ELkU1ESxWE2W8k+qIrEp6HiRHf+RtBraQivRzNWs6O/3ecG7r+cF55W8iTmcF0v6S3txt6q0aLQu9T/DuqTSEmf4mx3/2V6xI+2gQFiq/0A/mLaCITHE4YUN/sehgDgqXPnpBVb4N1fw0JDOpfsUG+dvEzCGGX8yrbjTfw2RjATr9N6Q4Q7+9jow4l0ENUqTHf1HZv2DHd+rs35a0n/F5BJAZcRHripf8R80NUlJSTJShCX9wSRPaMRZAY4cc8f/ZNaP9obt57s1/wVbxwR+SrLkvxypreH6MFOq2dH/6DRdJnFtUhkDtBB/nG4zIFTRjAjf6T9zsTZhDl3RxiX8ERQ6gzfTzxXgK/vHAb8M5zcjAdqd/K8GG+NzYSf3aVb4Z3Y/sZklFNEkurT/AQk6jdeUjit2af+mlWn8jv/GLtV/3n+8YjhfbzhwDgl5QXx28ifiiM46LDwvoLbqT1JCSD7bGOiO/m9tGAtQM7tPkS7tH/7mz79tyTBqIBoW+gAAAABJRU5ErkJggg=="
+                }
+              },
+              {
+                "url": "label",
+                "valueString": "Card details"
+              }
+            ]
+          },
+          {
+            "url": "http://hl7.org/fhir/us/insurance-card/StructureDefinition/C4DIC-Barcode-extension",
+            "extension": [
+              {
+                "url": "description",
+                "valueString": "Code 128 barcode of the member ID AHP-778-48-1978, for scanning at check-in. Synthetic."
+              },
+              {
+                "url": "image",
+                "valueAttachment": {
+                  "contentType": "image/png",
+                  "data": "iVBORw0KGgoAAAANSUhEUgAAAXYAAAA8AQMAAABIJAOYAAAABlBMVEX///8AAABVwtN+AAAATUlEQVR42u3KsQkAQQgEwOWvgGvlwFSwdcH0wFYEU4Ov4dNnJx4A+7gsL1ndmWY6ExE7r57RkejMq1paJg48+Iafn5+fn5+fn5//T/8FOg4YdLTUXwoAAAAASUVORK5CYII="
+                }
+              },
+              {
+                "url": "label",
+                "valueString": "Member ID barcode"
+              }
+            ]
+          },
+          {
+            "url": "http://hl7.org/fhir/us/insurance-card/StructureDefinition/C4DIC-SupportingImage-extension",
+            "extension": [
+              {
+                "url": "description",
+                "valueString": "Front of the card: Atlas Health logo, member name Maximus D. Meridius, member ID AHP-778-48-1978, group LEGION-VETS-01, PPO Gold plan, Atlas Choice PPO network, RxBIN 999102, RxPCN ATLRX, RxGrp LVC01, and copays for primary care, specialist, urgent care, emergency and prescriptions. Marked SAMPLE."
+              },
+              {
+                "url": "image",
+                "valueAttachment": {
+                  "contentType": "image/png",
+                  "data": "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"
+                }
+              },
+              {
+                "url": "label",
+                "valueString": "Front of insurance card"
+              }
+            ]
+          },
+          {
+            "url": "http://hl7.org/fhir/us/insurance-card/StructureDefinition/C4DIC-SupportingImage-extension",
+            "extension": [
+              {
+                "url": "description",
+                "valueString": "Back of the card: member services, provider services, pharmacist help desk and mail-order pharmacy phone numbers, payer ID ATLHP, claims address, virtual care address, a QR code and a barcode of the member ID. Marked SAMPLE."
+              },
+              {
+                "url": "image",
+                "valueAttachment": {
+                  "contentType": "image/png",
+                  "data": "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"
+                }
+              },
+              {
+                "url": "label",
+                "valueString": "Back of insurance card"
+              }
+            ]
+          }
+        ],
         "identifier": [
           {
             "type": {
@@ -2701,25 +3162,34 @@
                   "display": "Member Number"
                 }
               ],
-              "text": "Member Number"
+              "text": "Member ID"
             },
-            "system": "https://parkerapex.com/atlas/member",
-            "value": "AHP-COV_MED-48"
+            "system": "https://atlas-health.example/member-id",
+            "value": "AHP-778-48-1978",
+            "assigner": {
+              "display": "Atlas Health Plan"
+            }
           }
         ],
         "status": "active",
         "type": {
           "coding": [
             {
+              "system": "https://nahdo.org/sopt",
+              "code": "512",
+              "display": "Commercial Managed Care - PPO"
+            },
+            {
               "system": "http://terminology.hl7.org/CodeSystem/v3-ActCode",
               "code": "PPO",
               "display": "preferred provider organization policy"
             }
           ],
-          "text": "preferred provider organization policy"
+          "text": "PPO"
         },
         "subscriber": {
-          "reference": "Patient/MDM-SYN-0000000048-1"
+          "reference": "Patient/MDM-SYN-0000000048-1",
+          "display": "Maximus D. Meridius"
         },
         "subscriberId": "AHP-778-48-1978",
         "beneficiary": {
@@ -2740,7 +3210,8 @@
         },
         "payor": [
           {
-            "reference": "Organization/a7b3e1ba-1eea-58e2-84a7-57e53f177e6b"
+            "reference": "Organization/a7b3e1ba-1eea-58e2-84a7-57e53f177e6b",
+            "display": "Atlas Health Plan"
           }
         ],
         "class": [
@@ -2749,11 +3220,9 @@
               "coding": [
                 {
                   "system": "http://terminology.hl7.org/CodeSystem/coverage-class",
-                  "code": "group",
-                  "display": "Group"
+                  "code": "group"
                 }
-              ],
-              "text": "Group"
+              ]
             },
             "value": "LEGION-VETS-01",
             "name": "Legion Veterans Cooperative"
@@ -2763,14 +3232,210 @@
               "coding": [
                 {
                   "system": "http://terminology.hl7.org/CodeSystem/coverage-class",
-                  "code": "plan",
-                  "display": "Plan"
+                  "code": "plan"
                 }
-              ],
-              "text": "Plan"
+              ]
             },
             "value": "ATLAS-HEALTH-PPO-GOLD",
             "name": "Atlas Health PPO Gold"
+          },
+          {
+            "type": {
+              "coding": [
+                {
+                  "system": "http://terminology.hl7.org/CodeSystem/C4DICExtendedCoverageClassCS",
+                  "code": "network"
+                }
+              ]
+            },
+            "value": "ATL-CHOICE-PPO",
+            "name": "Atlas Choice PPO"
+          },
+          {
+            "type": {
+              "coding": [
+                {
+                  "system": "http://terminology.hl7.org/CodeSystem/coverage-class",
+                  "code": "rxbin"
+                }
+              ]
+            },
+            "value": "999102"
+          },
+          {
+            "type": {
+              "coding": [
+                {
+                  "system": "http://terminology.hl7.org/CodeSystem/coverage-class",
+                  "code": "rxpcn"
+                }
+              ]
+            },
+            "value": "ATLRX"
+          },
+          {
+            "type": {
+              "coding": [
+                {
+                  "system": "http://terminology.hl7.org/CodeSystem/coverage-class",
+                  "code": "rxgroup"
+                }
+              ]
+            },
+            "value": "LVC01"
+          },
+          {
+            "type": {
+              "coding": [
+                {
+                  "system": "http://terminology.hl7.org/CodeSystem/coverage-class",
+                  "code": "rxid"
+                }
+              ]
+            },
+            "value": "AHP778481978"
+          }
+        ],
+        "costToBeneficiary": [
+          {
+            "type": {
+              "coding": [
+                {
+                  "system": "http://terminology.hl7.org/CodeSystem/coverage-copay-type",
+                  "code": "gpvisit",
+                  "display": "GP Office Visit"
+                }
+              ]
+            },
+            "valueMoney": {
+              "value": 25,
+              "currency": "USD"
+            }
+          },
+          {
+            "type": {
+              "coding": [
+                {
+                  "system": "http://terminology.hl7.org/CodeSystem/coverage-copay-type",
+                  "code": "spvisit",
+                  "display": "Specialist Office Visit"
+                }
+              ]
+            },
+            "valueMoney": {
+              "value": 50,
+              "currency": "USD"
+            }
+          },
+          {
+            "type": {
+              "coding": [
+                {
+                  "system": "http://terminology.hl7.org/CodeSystem/coverage-copay-type",
+                  "code": "urgentcare",
+                  "display": "Urgent Care"
+                }
+              ]
+            },
+            "valueMoney": {
+              "value": 75,
+              "currency": "USD"
+            }
+          },
+          {
+            "type": {
+              "coding": [
+                {
+                  "system": "http://terminology.hl7.org/CodeSystem/coverage-copay-type",
+                  "code": "emergency",
+                  "display": "Emergency"
+                }
+              ]
+            },
+            "valueMoney": {
+              "value": 300,
+              "currency": "USD"
+            }
+          },
+          {
+            "type": {
+              "coding": [
+                {
+                  "system": "http://terminology.hl7.org/CodeSystem/C4DICExtendedCopayTypeCS",
+                  "code": "IndInDed",
+                  "display": "Individual In Network Deductible"
+                }
+              ]
+            },
+            "valueMoney": {
+              "value": 1500,
+              "currency": "USD"
+            }
+          },
+          {
+            "type": {
+              "coding": [
+                {
+                  "system": "http://terminology.hl7.org/CodeSystem/C4DICExtendedCopayTypeCS",
+                  "code": "IndOutDed",
+                  "display": "Individual Out of Network Deductible"
+                }
+              ]
+            },
+            "valueMoney": {
+              "value": 3000,
+              "currency": "USD"
+            }
+          },
+          {
+            "type": {
+              "coding": [
+                {
+                  "system": "http://terminology.hl7.org/CodeSystem/C4DICExtendedCopayTypeCS",
+                  "code": "IndInMax",
+                  "display": "Individual In Network Out of Pocket Maximum"
+                }
+              ]
+            },
+            "valueMoney": {
+              "value": 5000,
+              "currency": "USD"
+            }
+          },
+          {
+            "type": {
+              "coding": [
+                {
+                  "system": "http://terminology.hl7.org/CodeSystem/C4DICExtendedCopayTypeCS",
+                  "code": "IndOutMax",
+                  "display": "Individual Out of Network Out of Pocket Maximum"
+                }
+              ]
+            },
+            "valueMoney": {
+              "value": 10000,
+              "currency": "USD"
+            }
+          },
+          {
+            "type": {
+              "coding": [
+                {
+                  "system": "http://terminology.hl7.org/CodeSystem/C4DICExtendedCopayTypeCS",
+                  "code": "rx",
+                  "display": "Prescription"
+                }
+              ],
+              "text": "Prescription copays by tier: generic / preferred brand / non-preferred brand / specialty"
+            },
+            "valueMoney": {
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/us/insurance-card/StructureDefinition/C4DIC-BeneficiaryCostString-extension",
+                  "valueString": "$10 / $40 / $75 / 30%"
+                }
+              ]
+            }
           }
         ]
       }
@@ -2781,7 +3446,9 @@
         "resourceType": "Coverage",
         "id": "f47d0962-336e-5aa5-b14a-781d2d4d6ce6",
         "meta": {
+          "lastUpdated": "2026-11-03T12:00:00Z",
           "profile": [
+            "http://hl7.org/fhir/us/insurance-card/StructureDefinition/C4DIC-Coverage",
             "http://hl7.org/fhir/us/core/StructureDefinition/us-core-coverage|6.1.0"
           ],
           "tag": [
@@ -2792,6 +3459,193 @@
             }
           ]
         },
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/us/insurance-card/StructureDefinition/C4DIC-PlanBeneficiaries-extension",
+            "extension": [
+              {
+                "url": "memberId",
+                "valueString": "AHP-778-48-1978"
+              },
+              {
+                "url": "name",
+                "valueHumanName": {
+                  "family": "Meridius",
+                  "given": [
+                    "Maximus",
+                    "Decimus"
+                  ]
+                }
+              }
+            ]
+          },
+          {
+            "url": "http://hl7.org/fhir/us/insurance-card/StructureDefinition/C4DIC-AdditionalCardInformation-extension",
+            "valueAnnotation": {
+              "text": "TTY users call 711."
+            }
+          },
+          {
+            "url": "http://hl7.org/fhir/us/insurance-card/StructureDefinition/C4DIC-AdditionalCardInformation-extension",
+            "valueAnnotation": {
+              "text": "This card does not guarantee coverage or payment."
+            }
+          },
+          {
+            "url": "http://hl7.org/fhir/us/insurance-card/StructureDefinition/C4DIC-AdditionalCardInformation-extension",
+            "valueAnnotation": {
+              "text": "Annual maximum benefit: $1,500 per person."
+            }
+          },
+          {
+            "url": "http://hl7.org/fhir/us/insurance-card/StructureDefinition/C4DIC-AdditionalCardInformation-extension",
+            "valueAnnotation": {
+              "text": "SAMPLE: synthetic test data from open-synthetic-patients. Not a real insurance card; the plan, numbers and member are made up."
+            }
+          },
+          {
+            "url": "http://hl7.org/fhir/us/insurance-card/StructureDefinition/C4DIC-CardIssueDate-extension",
+            "valueDate": "2025-12-10"
+          },
+          {
+            "url": "http://hl7.org/fhir/us/insurance-card/StructureDefinition/C4DIC-ColorPalette-extension",
+            "extension": [
+              {
+                "url": "http://hl7.org/fhir/us/insurance-card/StructureDefinition/C4DIC-ForegroundColor-extension",
+                "valueCodeableConcept": {
+                  "coding": [
+                    {
+                      "system": "http://terminology.hl7.org/CodeSystem/IECColourManagement",
+                      "code": "#FFFFFF"
+                    }
+                  ]
+                }
+              },
+              {
+                "url": "http://hl7.org/fhir/us/insurance-card/StructureDefinition/C4DIC-BackgroundColor-extension",
+                "valueCodeableConcept": {
+                  "coding": [
+                    {
+                      "system": "http://terminology.hl7.org/CodeSystem/IECColourManagement",
+                      "code": "#1D5C63"
+                    }
+                  ]
+                }
+              },
+              {
+                "url": "http://hl7.org/fhir/us/insurance-card/StructureDefinition/C4DIC-HighlightColor-extension",
+                "valueCodeableConcept": {
+                  "coding": [
+                    {
+                      "system": "http://terminology.hl7.org/CodeSystem/IECColourManagement",
+                      "code": "#9ED8DB"
+                    }
+                  ]
+                }
+              }
+            ]
+          },
+          {
+            "url": "http://hl7.org/fhir/us/insurance-card/StructureDefinition/C4DIC-Logo-extension",
+            "extension": [
+              {
+                "url": "description",
+                "valueString": "Atlas Dental logo: a A monogram in a circle beside the plan name. Synthetic brand."
+              },
+              {
+                "url": "image",
+                "valueAttachment": {
+                  "contentType": "image/png",
+                  "data": "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"
+                }
+              },
+              {
+                "url": "label",
+                "valueString": "Atlas Dental"
+              }
+            ]
+          },
+          {
+            "url": "http://hl7.org/fhir/us/insurance-card/StructureDefinition/C4DIC-QRCode-extension",
+            "extension": [
+              {
+                "url": "description",
+                "valueString": "QR code on the back of the card holding the plan name, member ID, group and pharmacy numbers as text. Synthetic."
+              },
+              {
+                "url": "image",
+                "valueAttachment": {
+                  "contentType": "image/png",
+                  "data": "iVBORw0KGgoAAAANSUhEUgAAAOQAAADkAQMAAACymRrOAAAABlBMVEX///8AAABVwtN+AAACcElEQVR42uWYsdEzRwxD33mcYztQ/2Wpg3cVwAH3+yOPHdh04lOk29FA5IIESPi/PW212IhRUpC28ttf/vKfnb7PAw88L3y+H/y+JvN6DxesEokhgZqYeb2H+/tgE/kQDx6+5/P9NzL596eHw8f3i56XFM4+7nPIIS/yPjTv4QWes4n7UHj/5CDwnk1eTS2FUqQaRZfzDDalTaeUKanFRHbjbUq0avvzNwK7uGmEQAwmaNTS3TyH0hCa3q8SYDnPTRsSK6ZN9Ea/e78xA1c6sTdptvkMtpPmy+aUYLqbZxNAMBjCvd4u51kRQgOhFZqUdT4LrYhpjIVe8d/ls97kVqC3lrrMq5QEofirVbXWXdwWY4lJhs9p7Xp/Hu0JbQze5Id1PreOHoUqNYnreSa/RKESDUrIuh61E+TQKZU4xNr0V573Abj+6nyfT/m8T97tOtKOd44q1wN0Oc9EBo44VZUoXa6j0CpFab0i2LqNm4b4Y+ZAMpW83TfaDovHazkqke3+bNNc7NArEInbuNYmc8GaEEu3eUXGqZtKRpRisq2DhdKOAqcJaSjZ1gUSitM0DHJ9wLKvm3hNr/eIiZBu61EzY4lQBzXjMnfjnXWO/sjfKNO6f27SNmOhI5oxHMv1O6NCUrG2oZFsxzsdOsExN3EYvl1HTcXBIxlf27A9D2as87U8YZgV2c5zsJkibmdIMV3eT/7MhD9kHmHo9QCbe8LCmy99kddxeA/6crb7pNOlRBos3s/2PjZN6Z0c0Njq/h7YUSXSKS3T/hd7YIzk8RzoAb7HZ10XGBsXKTh+y3Xdb2tpmfXKzIVJ1vX3f/X8AcAlaYRnW7/eAAAAAElFTkSuQmCC"
+                }
+              },
+              {
+                "url": "label",
+                "valueString": "Card details"
+              }
+            ]
+          },
+          {
+            "url": "http://hl7.org/fhir/us/insurance-card/StructureDefinition/C4DIC-Barcode-extension",
+            "extension": [
+              {
+                "url": "description",
+                "valueString": "Code 128 barcode of the member ID AHP-778-48-1978, for scanning at check-in. Synthetic."
+              },
+              {
+                "url": "image",
+                "valueAttachment": {
+                  "contentType": "image/png",
+                  "data": "iVBORw0KGgoAAAANSUhEUgAAAXYAAAA8AQMAAABIJAOYAAAABlBMVEX///8AAABVwtN+AAAATUlEQVR42u3KsQkAQQgEwOWvgGvlwFSwdcH0wFYEU4Ov4dNnJx4A+7gsL1ndmWY6ExE7r57RkejMq1paJg48+Iafn5+fn5+fn5//T/8FOg4YdLTUXwoAAAAASUVORK5CYII="
+                }
+              },
+              {
+                "url": "label",
+                "valueString": "Member ID barcode"
+              }
+            ]
+          },
+          {
+            "url": "http://hl7.org/fhir/us/insurance-card/StructureDefinition/C4DIC-SupportingImage-extension",
+            "extension": [
+              {
+                "url": "description",
+                "valueString": "Front of the dental card: Atlas Dental logo, member name, member ID AHP-778-48-1978, group LEGION-VETS-01, Dental PPO plan, $1,500 annual maximum and the share the plan pays for preventive, basic and major care. Marked SAMPLE."
+              },
+              {
+                "url": "image",
+                "valueAttachment": {
+                  "contentType": "image/png",
+                  "data": "iVBORw0KGgoAAAANSUhEUgAAAoAAAAGUCAMAAACSvGMBAAABIFBMVEX////9/f37/Pz5+vr09/fw8vLr8fHn7e7m6+/k6Ord5und4+XW4ePY3eHS3uDM2tye2Nud2NvR1djI19nI0tzH19jE1NbE09fGz9S8zdK/w8W2ys63xtC2xs+1xs6kz9KTzdCtw8eovsSfub6DvsKetbmqra6SsLSPrLOErbKHp62Ro6iApKh9oaZ5naKLi4trqKxpl5xrlJldkZdijZNei5Bbh49PipBWhoxShIplgodSgohRgodegIRPgIVOf4VOfoZMfoNWe39HeoBpaWlCfIJFeH9Cd30/dXs8cnk3cng4b3YybnUxa3IvaW8saW8rZm0pZ24pZWwnZWsmYmokYWgiYGchX2YgXmUfXWQrXGIdXGNRUVEtLS0bGxsUFBQbaUJTAAAvB0lEQVR42u2dCVfiPBfHi+yIuAzjiM7jEVDxYRQUUZkpB14PjMAgyINl6QmO3/9bvEm6paVlkR3v/8xIlzQp7Y+b3DS55RAItEBxcAlAACAIAASBAEAQAAgCAYAgABAEAgBBACAIBACCAEAQCAAEAYAgEAAIAgBBIAAQBACCQAAgCAAEgQBAEAAIAs0OwB1FcOFA8wZwxyi4eKD5AbhjJrh8oPkAuGMluICg2QO4M0hwCUEzBnBnBwgELQ7AnR0gELQ4AHd2Zkagn+O4/aW4CstzJgDg+PwNIvDFzhGVp3XbIzS7DYfbfxQvA4DrD+DOzmQEXlFguJiyniBrlUkBlGTbL41+oK5gAHBVANzZmZDAgMSKW5wBgBznSAGAaw3gzs6EBJYVVDLTBPAOCZWEn9bF9wAgADgAwBiBxIX/hKcLIFaXLroEAHB9AdzZmZBA0YNvbChKKstXsn6s1Z6bzG1v3sW+uO0bDn/4TjnyPrzp2HD5Qxe5rgWAqLtNluN0uXkVctvtvkhWB9T9kWvDdVToL7ivQABwPQHMkDue4snfmwEAhrXN+6/Gpl7aCkCUJssBuuRUUofbKlDbcrb2TF/BfQUCgMsIoAllJx2653REAsmNtr+KbuX2DgdQqqvT3CgAChvEFcZ1cMqmJT8SFaBUeboDAJQKBABXBMBrac/taAAKDkIEQmcElKp1GzAaTj/VO/XMFyUdqbT3y+1G+T4WuLMEEHmkzOqkGEei/kxanFxCBdCZFgp04aex4L4CAcAlBNAMsj/SrpfdkQi8oTUwQo9aY22gE1KW01MLFRvihGBtkpUCiiuHoSO84FMBJJvuyMKVlROiFggArgaAp8q+0ergfWKZWnjBp4BhAWA+GnDZ5SqRgEqR8oSiV/nOIABlC0iKcYpq7opFcxD3paJkqQfQWCAAuBoA3hLnk7TaH0YBsGpTmli0bsxZAShG2RbbBd5RdylrzljLug1ok9qAm7rOabrXr7gnz0qWbMH9BQKAKwHg7gve/PsB/2mdjABgXA9G1ArABGfkAVWP7TonwdoL3kZGAHVVas0MwP4CAcDlA9CqBr6W/o5gAn16MJxtCwBJFWq/qnVRVQUQm7fMVTREKLTVrfoBA3IFuq8vJzEUwP4CAcCVAJDYvvaJZAeHA5jnuH7TRP2Skh5An2TIZEgumCwe1aq7H8CO+iSEWFqn/olIP4Bswf0FAoCrAOBuS2r9kZYgGl4Hk4aW7Vla7pCekpDilcaaOkzIEw17Wqhd2VVztR//WW50qmcsriyALflZsI08C66RzAPpWqdRzsRDYXMA2YL7CwQAVwHAa7nupXXwzTAA207FEVA6SDZq2L3YkM3hpXbbL/uaZOyWzf42oHE0DNsRTTE3AZAt+BLagCsJ4G/ifZAeQGLWnocBmNbVpzcKdNF+ADtyI84WNwHQ/WQNoDoeMOUaCiBbcH+BAOAKAHgiKv0vtxZdgbrjQ1Ivsaw6MVJ+0gWS2HbY9ACi7lXAbveGn+oKD+1sPOR3bdg9oatXk35AzmYn4xSYEdGviZDHvuHa3I/dNS0AZAvuKxAAXAEAb/T7H2B2EmiuAD7r97/uAoCgOQJ4akxwDQCCZgggMukEVDpfdgWzrkC4mKDZAbhLvIE/LI3dEwAQNDcAaSfgjbFLEAAEzQnA37quF9ol8wcABM0QwPGmhAB/IAAQtFYAIuAPtMoAxj0ez+a3i8pI5xE7Yo4KRMrMAuomvvl8R2nzErBSI2QLWkEAJ4yMEPch9PoY8d2Z5n12bAEgPqp65G9oC91w4E5o3PguTEsYkWvQ5wQQK+qrjwsgKmCrpi4kPHRMQ8rzEwD8ZABOFh1LxqPsIcMY0iGfn0wwih5ffvGFCihG6s44uvR4fN9SfQA2PZfawrY0LaQTiFgDGD2+2PaFntLffF8ydDW+7TsqSdmKiW1v4KKN0t46RfpROxuSMOChw2rEeMAbuvFUlG3KUSh8Ro+qMrmC5gXgRPEBZTxEX4yYr6tG+Ru+lVFPrN6IBjqaBRTufWkjgE+KBcQLDY80pRiFAwMA9Fw0aqHNo7Jw4WuQ1WitFvU3abYJX1rIBc4wwWQo1tk35mxwwrOalMPV5r2Q2aQA0m3KUSyASq6guQE4SYRUBY9AFInUej3iuxjdFhEq4fvMVMGxyKA2YNWTkCttBbeUp6JzQgg0JNuUB1unOqmpoz4Bk72ZoNn6L+gxNXQZ6KKmL8WcDSI/BUl+QucVzYtuU49iAFRyBc0PwAliRDMWsEo91a73DkVJfVrD1aAEYO0sgAn6NsgL7reAGoCaBSTZ3nlwrdr1YHsapeOij85ItjUPmThS9WRQzXuPDZvAnA2uVeUMarSFmZOqYLquHMUAqOQKmiOAH4+Sr7YBU/hGSkoYAQyFywK6+GasgnULI7UBJQDbAwEkqb7GEHM20nFGAMMA4DIB+OH3hKhecAOJ/hRLCgGQEifQ2xwaDOAoXrARQF0VHJcrU5T30FpaOxsNQLSpVcHSxDrlqGiELkAVvDAAP/qmJIKHIPcDpvx3jWY+UtMATPhJ6387Uq9feAYDKPUDpgb2AxoBNDoh+QC1W9+8tBj1bBgArzYzwk+/BqB6VMrHC/ltcEIWCOAH3xVHGnE+5UnI/ZFv8/iesYDNyCZu3D2FfJvRs8EAos6QJyHxfgBph8mTvhuGGrK07mwYAMW43xtKUM7oNvWobjyweXyjdcM8ATTzB3DV3pYZDZtvv/S3Bx534+t8IFfQHABcrfcFW6BS9V9ZHlKOV4VMIIYAwGUFUAfhkn8rc1S++aLWBq579cX39bIDAC41gCAQAAgCAEEgABAEAIJAACAIAASBAEAQAAgCAYAgABAEAgBBACAIBACCAEAQCAAEAYCgFRHP5wFA0KLgIwIAQYujjwCYBwBBi6JvjiYQAASZ0AcAghZKHwAIWih98yMQAFwZcasqABDwW14EAUDgb6EEAoDA30IJBACBv4USuJoAXuJvtEkWOm68JMU7jeGlI7JQsHMbj/iz7OBsP0nSryZHyJuRg+PIex2qEc+Gw70drbEl2Bye/fjL8MIvlYtckBZtju2rrpzyqzErddvA4gHA5QeQ3rkUpwDYJTTY6Ttx4hznE1AnwHExxALIHqEnoOJUEWJLIHLdDy3cCCBRVA+glpUZgP3Frx1/lgQOBvCfYLCCTUowGKHLQbJq3BaK1XU7g98v6nMBkIQM31YBvOM4fDdJoGckfiUAXHAcCUfJAsgcoScgynFntVb5Zv+JKeErEvh9DHVhWOFKXsphzTN8lKCHTc3KDMD+4gFAFcA4rtxk2O7NtnXjwTN25337IhibA4AuzlZFj+RTAvCI49IbnJ/uruL7erHB2UuIBVB3hJ6Ar33GR94vYmz2hxVuBBDV8fUuG62dnJUZgF8tbR8A+P2gWQt+1wOo35YJftcBiNLB8BwAjLi5MxTm/EcSgHU7bpfh5Ue6n1aOkjnUANQdoScgjCvt+M/XfgCJYbU1hxRuBqCt0VfdSlmZAdhfPACoAHgTTCXwHx2Aum3iZb8FvJoHgHHOWbVzCRnAS8JbWm570VvK7YsGANkj9AT8tFHnYTvVB2AVb38aUrjSyPMyVXCo3+GQsjIDsL94AFAB8CnyTyiaU9uA38y2PbI7sc7EeQBIbB7nFGQA/dxGnTgijhb1T7EDwvleDQCyRxjc0EyA04zmCADqCtcDSFkKN8YBsL94AFAFMB0MZnJ6C6jbJvLBUJO1gLV/gql5AEitXAxJDDyq3zMld8nYSBI9gOwRVxy3TRpmGxyXk9qNqaiTMqQHMG1eBesK11fBFMCQCYBppgoeVvzYALrfXJb7eofyQvJwBQFsh467RgD124LBgqENGGrNA8ACR1wBiYGo+j2Jy5C1cfZ7fD/TBgCZIzANLlGySlUlV7zbbnRCvpg6IfrCDW1AsRwwq4LlrKS1YcVPD8De+YoDSD6MAOq28cFvDR2AwkHwbh4Aom3S8UwZaDk4B633AwSLppfjrogj4qrpAWSOaBBHuVHDy8RxjkTSZaEe42Qvur8b5p7h0JhVvxOCm4cM/GbdMMOKHwBg8e3trVfcGwFAzJ7uc3YAvjvomb0TJTluI/n29y1pnzqARHzftlD0f+xODGI8GJkLgEjufkkR2I6UxyEXpHokDkiY2iEdgNoRKGGTros9K22Sqs60RUd0P4BMVmrahFIaPg1fe1BH9LDiBwGY5OxbybfDpQHQXXx7f0u6CYByQcX3ogv/nwKAS/wkRMfAPjF5MigeTKOTPNOSDKEVgOjnkXvD7o3Q16XnY1889g330U9db7PN7t6/fEEfAFDAtyOuexSnZqWYy8HFDwYQ61fPxjmSvbeilxLQO8cAkqrW+4abHk68I+mgppJWwclk8deWBKDjR7FIYJmieu/n71s/khqA7r/vB9ze+/vm+gL4mcciSAAevm1xxeImRs3G9YruzR4LYLG35Tw/lCwfAfDt0HFedFIAk0m34/yXbZoA/n0/VKrgv7jmdXKH7+9uzvmu2EMAcB0B3Hw78L5h62d729p8cxMgNQC9b5ta1UstIDnskADo6uGa2lbcnCaApOnXSxK+z117b+897vz93cnZ399/AIBrbQEP3qgOD94okBqAB282PYDkM3lOANzrUR1ME0DcEsAIymX+wPBhC+gFC7jmAOI2IK1tKXuMBdwbbAHdPedMvODDv5g5GUAXtAHXHcANyQvGbUDHXtGO24Au2gYsFp3eItMGLCY35DbgAdMG9GIf2j5VJ+Tc+771920D/wCctAr+BF7wpwZQ7QckXjCtdmUvGFOIP1UvmDvoKV4w9pb3ZC/4HHvBU62BuUPSDdPbowt/SblT7AcELR+AyyjJC57BkxAQAAgAgj7vaBgQAAgAggBAEAAIAAKAACAIAAQAP5l4ngcAQQtTHgAEAYAA4KcmEABcxqYR+VIlukjiINB5eHYyKl4Oi7DhPspqqQPqdagZVqpRn93m2r8xzGVOc3IILNME5bifk+YdISTE/XZH4LLdV4xV1gDgWgAYIV/qzBpAMhEjMRzAqjI+LqrLveZSADRNIA30oAA25dy+to3FWGQNAI4B4ITRscgcObzl2/FFedr8CfTxt6trAWALVb8o0do0hdiJj9JKjOPcJQH/3RCYhOI+Z5cBNE3gjxVcMoBRjgtUq34aCk5fjHnWHyHwUwM4SXQsCcD710woyE8ZQEzZto/j7iwBJPO8OX2IhoqN2SKvnHFcWJog3mBSxjnHhQygeQKEFAClzxuOc3YMxVgdCQCOA+BE0bFkAHGLKvi9M10AyUTMC3k2sDmADU6Zq6kIGytPx7DyUzFTX5iEBTuXSsgAmibQABRwKXmEMpwWYU0pxurIuQPYO19hACeKjqUCWA8GS1Plr2rjNurYuNgbiGn0cSyAj0YLSKIRXPWtpOnMBXuEsVKCjztGCoBmCRgARSkIQkr1SZhiLI4cn0DdjUz2esXk3mLZS5IQCNTVU8Y+Kwu24tsbmYKSfLNPB8CJomOpAHaDU66D4zTqwTYFzhxAqQ3Yohsv6DGXuJpUW2PqyiWNKGDbx+1aJXGEc79oAGoJ2MzUKhg3+LZpG1ChXSuGyXqaAP4gs8udCzZ+5xKA6uwPZeH8/RD/4w7+HkzJAk4UHWt2FtBH7/cVdgAGe8EMM10P4yioKxgXf/kV/3ULSuIyZ8OnrADIJDAFsKQOBr7T56zLepDwqXfGA5Cz9w64XrL4di4HRzjv0dlxm0qsBLKPzBZRgiMo+6cXGEECUJ3/pi4k3+2b70k7tYLTAXCS6FhsG7A7Tf6y2vcqWfUDukikC4aZFOsVqyvYdN3gDy/BSU5c0DIP6RKYAogqYZfdF8NFP+tz1mVtrudGO1+u8YXnbEUYBKEpgMW3gw0lOILzDdfJyaIWK6G350iSmbryzExl//QCI0gAqjEQ1AXJAvZXwIuJjiUDKEzdC45o3ytm5YQYtc12yKkrHokS+UNyQXQAmiTQA0h1L9liXTFWR8p6KlXU9wJm+WyWz79UxdEApFUwmR+sBEcgK7beubraw5A6yYoyNVjaj9NPKzCCBKAaA0FdoG1AXAHjJmFxY9oAjh0da1b9gC2H7HNi59PdHQ1AXI/ZKv0rJEBaWSDxgwxxUJUq2CqBAmDhmG/WUy7OljEWY5k1uXr5R7MXVJZEcTiAshNSxGwpwRG4wzf74ZtDXSXc2cn0dAVAaT9OP63ACKoF9CoWUAuGgCvgw/cfh2scGYGE/qMLbQdpeo0EYFiJ4KZfeVKacMaIcgqApgncWrvvUf/UhSnGKmtq8Sz09FQepQom+qWEIqLF9w6xkVNX+wCU9msJZtYGpGf45vjxvrXx/mttAdynXbyyD3o8EoDVDdpf179i9cA2MehZMAOgmN532T3hglkxJkfyQ1UdA0A1OAJu4JFmnhorQQFQCY4g78cJphQYwcoLxtr7iy0yMYoQG2bpBlCMoqwwBoBKcATs4vaYVRVAJTiCvB8nmEpgBNoP+P6+1d8PiJd6RWoFp9IGBM2ZPkn1QQDCaBjQTOnDKgCAoIXRR9QAAEELo4+oLAKAoEXRh5VrAoCgRdFH9AwAghZGH62EAUDQR5XnJ1cBAAQtEsA8AAhaJIA8DwCCZktg9YmvZq13dwFA0OwA7AgNhNpIKFinAABBMwIQIbWjufPYzg0jEAAETZHAvsRVi4QiAAga2t1XHw9As8RidkhaABBk2dk8DoCWOT0P7okBAJdNzKBndRLmtmRN7sM+h90diKaZZK3EvmvDEYip89bIbCMaSkgJX7RPRlZTfSWjrZlM2ReRF5Bw4XdsuDaPrhA7eC+977R7oxRFJW5WfpRhVkMALIwF4HLEP/jsANb3lVW7lqzsk7c50uoRvB7AlBxkgYRckGeZmAHYUsJfbbKjR2PSNjeZjKTEzRoPwPrgp3F9k5KK57bloGqTvB6OzLKbUWQE9BT7HgxF0ogJe8VHQwdkizIDLi7vjFUXBqA6A4QAYo9X28+5C23GesPLcf5suxLGlymrALitB5DMs6PLcf08O0lnyvyQK3xgKZO+Cn9lAMxgsnOvUSlPJW7WeACixsARCcYh+bYt8vLVZVDvvegosi/InHJkhPtgiBdq6QQT9ioVDFfrMQk7DcD7Lt7eWTiAGB95eiSzjwRIIz8O0a8FUqBzKhkAyUzjr+RzUz/T2AAgZvisb/x8iMYpbG5w3CNNJE3YnIYJfLUAUPpDTCGxhD969F2VuAqW35I5R/19P8fM/bXNKDKCEJLnm2thr5rfgv+TQ23oAETNYLC8cAA35dadLplPmSmZwKtVutXt5vyiDsAsRrcqTUovWQLI4wreE783YOKQwsLgsuMfBtC0JyYnDrGAtk386X07sO8lpenn0nuC56gitYBFbkaREfhgUNAApGGv8CYSCjQcTC0RgFSXCLU5BQImGQmoIYXTeOSUSFbeBAlXwAJIMI1T1AKGTBUACRJn9LZ7jxIMJiSY773kvUQ+DGCpNKgRaGwD9npJuQ14SCYDb8lOiPKm9DnK1Xt/f++5uRlFRrgLHmC7oQt7dUdWEIpiFpenClZYqXESUvQ+xOVkZKMULo3EiryRAOxucp42BVAJ+IJrbx/qugzxtlQAvZSIn355+z7PZ+hChCdpM4iZrCzHTBiPwOygqSF9FtCbxCbv8FcRk8hxB8XeL1oFH7zN2zWxv70nHcn3N/uMIiNIFrAiASiFvVIt4A06XjonRLGAOgBNLSAJQn6pA5C4v4/3TMRBfRUsAchnYgHpd32hAmhhAccDsDt6NwxtAx4WOWfxwGE7p20t2/mbYyEWcIvMDd58f9+bUWQEqQ2oAEjDXjFtwGgQX+eLYEKLW7Q8bcBtDUCzNqCXpHD5WACJBYuGjTFXjQASBq+OMatHKoAWbcDxAKwOnB7cZwHd2AK6e3v2rWKS2zvftEsAzr8NqFhAx6wiI9wHv+da/1MApGGvNC84FYw2KyHS8lsaAIkXnDMCqHrBAbWB55Vf88C0AWnAGYcx6rQJgFhfCYCqpHhYRi94PAJbY1jAHolO5Oa482Ix+SPJbZwXlWgI8/eC90g/IPHBZxUZoRALBUORS8SEvcpED75FUthBE1ORAxoaa3kAFHAbzXFV6zz7GQAbHo7z59pV0g/IqwCSsDI6AE3j7hsADO/Hbu4yV06Oi2mcXOEy80JUeRbzEQA7prGyBHgUt8xPQqhs7CJW7Yv6heMmT0JSSAPwyaYH0PjmES1TDcCQ+gQgw4ASZp6EMGGLRgfw1ZS/LAxGWD0AkZg+8tjt3u2z+7ZmyIQr6VlwFTEAkl5lHYCGdy+ZAXgTCbgdNsdmNKNDJbXvsHuj5OVIOgBHJtBiXDQACFIfSY4XTWjAkJjCiA1AdmImAPjpJcwOwKoF3E8iAAhSVPkQgGYEFnQEdloNi/HQpRIACFL7iXP8TEygaJ1jhQlPBACuuYY+xH7mZwHgwBzZt9sAgOss0uEx9Cn24xQBLAynj8+/IADwc8AnTRGvDn6pdIOfrgkcml2lAwB+GvqIHusDk5amCeAogcoNNwkAXGv6rAEasRdmygCSF3cBgJ+JPv2T1/F7YaZMYF+LFABce/oMbqdRuXkC2P+sBABce/qGuMI1fcpZAlgzec8iALgeGkbD46i9MOWZEZg37ZIEAD8JgC+jGc5cY1YAti1u0hAlDwHAtSDQ6q3uDT1x1eZMAKxUntEIABbf6Lvh6LjjhatI3xmXnF1khM8FoKUrrO8HzLanT2D+8cn6vPX3vEdeO/ijuCQAnisLM4mMsJYARuisSgsr1DU7rmU0lNMGMJsbeN76e57sbXGO4mFRi41AqmAneQ+mg+N+nSfnGLdDAXBGkRGWVmTEss3uCkSyQx7hcpyjjwYWwAtp3LPra0Jd2XAfybmqQbWqxum6UwZw2Nc1AJhMcofJA2oBaWwECmAy6XKR2cK/ilu2eVrAv7jmdc4qMsJSAygp/DoFAMmdjLErdKQ+M5UkZ+RligSO8HUNALrfnMW9A7kKPkxSAL09N2kYOrEFnGcVnDx37b2992YVGUGbca7OezsOBqvSnnAXlYOhxQHY6pQv8FcMiZMCmOFTfo6zp+WVpy94BbPEBtVK6LvqpgfgaF/XACD+V7QRAJXYCBjAPcKjHVfOv+buEf/A8M0oMoIWc0MBsICJTMhophcMoPxJZrq14gGH3XdGCMAUHdfDDtfxM50dTFWQTKbDH8uYAsiTKesX8kqpIGXKBtXyGWM3TwXAkb+uEcCD3jl3wMRG0FnARQDomlFkBC3qkAJgPBgJHssAHncWDiCJL4RPoSHHjXRXKYD7tO4MiEYAsXwZUwDvOBJ3TV6552gwGV1AhZQxaNXEBI7zdY0AEmEAldgIchvQKbUB5wpg79BJq+BZRUYwAtgJBQv4H91zEUwvHsAox7noBMsvlcYZBosCyEXrd7hyzhmq4HbBTyeUD7GAdCWF9CFl4rp+wCkAWJgCgEpsBM0Lds47Uu8hiYxAnO8ZRUYwVsF88LtIwxHhDYXj708LBxAzs4EEO53P27GT0C94i7uDkJ9Wo4Y2YBzby6FtQLpSR/qgWjEWntZCATTRr7V9EmJ0QkhMGD4Y6pANT3fYCC6FBXzSvuUdAZCc1Bc66VwFULgIOGjvxLaVF3ymc4nRAAsoPS+ZJ4FDbi32idcXwHt24fVbkOonBbAbDi4cQD/B7Ub7linqhCAaLI0FUI3YETDtB3R+udKvNAe0AaWwfcsD4F7xB/dJAEwHSeiUFAkVjQFE98Fl8IIv+Hvc2FBH8xkBtNMuPZwu3aIOSt6kCs7qGoTy4zY2qJavf9DMElnANR4NwwBIRALzkniBwSYFUIwsth+wcmGjdSoJ3bxdaNWysX0DgBXiAou0GWfj2xmXBYBP+T4A+SoTVMt2ZegGJADOkUAYjrW8T0K+kZDhd155zWMAUPTQNpLcI7gRtgCwVO0HMC9qT0Li+teodudtAgHApXwWvOH0heRHFJmo32H3fI1XDQCiwlcHBbAecdu3f16Sjpq8STdMqZM1AohhUoJqlUzH7gOAnxdA057dlwnGZJWQySDnp1fTwVjKkC3TOrg+EwIBwKWnj4yT70wCYLNgHR+tnTV9hjE/EwgALosGzk7L1iYh0OxlRfI8par5yxMAwE8HoCiOOZ9xHABFk+104I9xx2ALOAsCAcBlUf1DA+pHA9DsVQmPdKxXzWLu3NxMIAC4LBoWo6U6EYFtM0+EuNLm77CEOngK/K0WgJ3ssKk9jUkANCVK6JuU2fkAgGAC1wLA4YEiJwMQFQomETuaZasQHmACJ+ZvxQAsDJ9f1v0YgSWJwJrJS1O7WauWJvRFT8zfagE4PEqa8qT2oyZQNOnoqfa3Cj8A4KcmEK0JgKg6HMAn1JoAQFRtD2tnsk9clmpY6irit2r9gCPN8h7uCuet6+ChnrYugtFcAVxPrRSAL/x0ABxkAofGg37+IIDDXxoCAC69yqMA+NhoTALgMFenAybw0wI4tB+w7y1r49TB6t5abuT44QDgpwKwNmKgs5w4kQnsVkd+3jcxgAUAcJW6AdnKMWobO2LzqHWw1fsrTWaUgwlccQDrben/aOL7AKw88nwq4jPMnEwrPQD01eXpfafdG5WpkFbuhoSnLA3o5gEA1wPAal3IPeHK7rHM58fuiM5E/A7O9SV238E5SDPwLQGMyXE76DM0ZSU9mMABrrA4VQChDThkvxwNSwuGxS7dk2AxcV2ye/XIf4LBCo1mFNES8MFQnUymu8x+C1zyfHBrK8Xzia0Am5v+OPN+6HtlFlKEQOkNJ5x9AB4pB2U4zpF7jXLcNrviHxah1+qx86M4PRMIvYBDAVSiYWnBsNglFUAtmQ7AOImlQEFSElwEI9XE1rcMZk8CMMrz4a0tA4DacRZV8BkGLGJLX4ZIxUoahv0AhpryMSGOO8OcYDP5yK6oEdfIHKX0F7tjP00AVONsdXNkR2rb7jOkC9OOQDVdk1fTZcJeu90bihMABbLfEyZZqvG67oC+sQFUomFpwbDYJRVALRkL4PeDZi34nYIkJyhg5mKBQIJXAAwG7tOBoAFA5ji91IrxiOOuaBuQjD2omgLowPc/UkZIdEgR3DZxCnYlygAYcBFr6rorsXG2KvIOrzGd94WNx9Xk1XRfZbOc4Ot1v7RoTzPxunxA37gAqtGwtGBY7JICIJOMBfAmmErgPxEpwXYghR2Gqy1q9RQAY1sXZ/iPHkDtOKt+aFyHugO2lNTjJ/AFEwClGb1ZVMcf5KS+kvqaWTliAOTCdwmM0FGpL87WvhaTQ07nxuzq4nE1I3K6jI1zpTKpC/L7wr+QzVIdn6bjhYnXlQD6xgRQjYalBcNilxQAmWQsgE+Rf0LRHAGJDwT5CAWPVLtpDcCbUHD7n8RWKM8CqB1nkPri8rQUgtgVvq9LbUMjgNsXqfs4ZspHY1tlcJp9jA+7EmLAckm1uqtkjLPlZKYJy+kuMfu6eFwEQCmdnXPGJefm3k7iJKGOi8xO1uJ1XQB9YwKoRsPSgmFpS8cqgEwyHYDpYDCDQXoqRAJRbPu28W262ApshRkA41tbVxTAYwZA+bgBHdGJgBSJe1uUuu0MAGqzzstWFjCS18Ai4T1ICKJM2hBna5vXAYhXn3J4n8DG42pGlHQhWukGYjxPwiXVJNDPmHhdMeBtPAC1aFhaMCxtKRokDRzsW7DJdAC2Q8fdzPYxfx/Yorri04HAlcyeBGBmO/iTAqjmJh9nBuATw8Pdke2LTQ5K1EKmAJL4CT+t2oDxIQDSOFuhPgBpMFUWwBTp2dlX4jNQyxztA5CJ1QAaA0AtGpYWDEtbSgWjzUooWNYl0wGI/4qYLj6+dUwMEjZ9/2xRU3inAkjNGU6SV3OTjkNmALYMHdFHck8zQi4rC1ghjm+U9YKVlXxfFezkH+2GOFs5YxWcT5CIhAKbLsa+dyRNu3hIvC62CgYAPwZgVI2GpQXD0pbEVOQgFP2fPhkRrwJYLeUIXf9skdZPaisQIz0wuDUY7gdQzW0AgGo/YDh0mY7a7rArWtYDSIwe2X90laZtQL/U9ZcXmH5AZSXf54TQWlQXZ6siGJyQG4/ihKjpVAAD0cRdJkq9XWz6/KUXDLWjDgAu7kmIwI+skR6GPDLdMJJoeDi3snapABhSvOCbvGj+JKTCAqh0w/B81m+IsyU89XXXeLDjU9enkwB0yNvOtHhdcjcMALgIADvVAj9VArVwQHexbbeNc/jPyv0Absj77XZvOE1H0Kf3HXZvVJ4soq1oAO6nvtgd34gDW2pdbuvjbNXZDuvqkUPpiNalkwBMRTadNkfggvrBsYBjQ+uIBgAXAeB4b8odIcdK/2AE9cFYm5oqbOAiI48NNHt1XP8LM8VHFcBjix/GR8bjgGYMYLuSnTqAuT4A84ZOmn3O99M8wtCHAUTVLO2+u7AE0IxAIGvRAI6H30gE6kMTUQArrMXFRTptN6NP1BwRwI7mFI8IIGC1eADFYbwVsnytnM8L1UL7ufBaydWehmdaGmxpLAbxFYSBBBre3mr10uqRAQSmlgFAYbD/Ua+SYQLsiy67H7OqerNpNWekOtAEjvbW9MHuEdC3XADWB03r6XaEj+XaHoZWpzTCXN7ZAQg0LQ2AAyY1iuLHszUxq009+FYxixqzJbAJ9K0EgA2hPVG2haG2rWtRCZe7szWBoKUC0HT6ZKFSmzDb1xFad+Wx4kcDgGsJYDM7o+k3lf5JusKIrc+nJyDw0wDY6b+t+Xx1Cl07uRFmNYpW4TtaAOBnAdAEgYo4hXzrI3Ww1MeJWQQAriOAs5r+WiqNEhdftOoCemwCgZ8CwOZHo9cPrdqzowUWsKqEKwDgZ7WA07mlzyORPV7MIgBw/QAUhnUXf1SF4Z7FkAfQdSDwEwBYHflR2ORkF8agrz+yEAC4nlXw4yg3fipkM/FyRxvz1QYAP2UVXJ5KxnlLoEYfdVgYJdcSELjKANb4GVnAhnn/znjjXl/BBK59FWzSDZJ/mU2+T+OOu+7viwEA1w5AMypejDMzRGwqBfRUfc2VG2JFEJ4aSBgfwA/I2BmThzp43QA0symPhTaZXFEXUbXRQeXnZraAecrprdmQB3adqQDY1xeTh8ClawagRassx2fLfJZG5bV0EYRcc6zG5UdU6gwBEKhYcQC7E9WQr5bTKAv8lPQ8oA4GJFYfwMmqyrxV+0sQpgVgwcoEAg/rUQW3p9xKk1UdO6PsKC+bUQAEGNYGwEm9hUdzZ+RxvFzIIVbv+6iKBgCBhHUCUMzNwgQ2xqUPWY9OzTfg1q8xgJP7C6YBXcpj0jfop1Auw71fZwDL/PRtYDc3Jn0Dz8Q6ZhFoDQCcuMvOZPRyfWz4aMVt1XKswc1fYwDRxF0mJuMXnsamb4DvDLd+vQEc12UdIVpb+wP0WfwW4L6vP4DV7IQEiqN3A47nEcFN/xQAonZlQgJboxnV4WfyDPB9RgBRZ8LewL7RWfxHZztJ8aOBvk8G4Chu6zgANj/uStSBvs8IILJ+FPaRGUSV3Kym24HWFkCxzGc/MlpACqVqyGuM4LsgAFDxXVHzsZrTj30uZLN8tZQTnktivdSyZHSEGl2AOwgADjeDqFPN1Qp8tcDXamXUruNN7GCARqMxyrC90iiTLEEAoKmGRME3fWJrGJnazsLzNABwRmqOAGAVRhQAgLNTYeiQmALM3wUA5wug3r69wisBAcD5AqhPURkt4h8IAPyQhk2fFPOjxTwFAYAfUXvooxCTfsBmE+4gADgdmfm4egBLPDyKAwBnZgDbQyvYLDyJAwBnpo6JE5LVPWjrwLh6AHBmaj4OH2lQAPoAwJkBOEJ8BKAPAJwZf2bjBvU1MDu3CG4bADhV5cYJJAn3DACcql6eyyMNBxQhhhAAOG2J3bbVDPZs1mABG0AfADhVtTuiOCBSKsSvAgCnwxn9Z1St1hDGfKcRCAD8gOp8tpItNwu1LmqI6EVE1WqDfxw6W+4Jbg0AOBWpcbKy2NfID5kHp0WGgbH2AOCUARxH1S7cGQBwcQTCIBcAcIEAluowzhkAXCCAgB8AuDgCCxWYZwQALg7ALNwRAHBxANZfofoFABdFYAle3QEALgzAXB66XgDARQGYhaYfALgwAvM5oA8AXBSApQLUvADgIgAsZHm+VgWvAzQfAGuVPB0KU+D5SiHbeC4XUKsFFx80rxHRrQpqVFCzijp1hLow1AU0ZwBBIAAQBACCQAAgCAAEgQBAEAAIAgDhEoAAQBAACAIBgCAAEAQCAEEAIAgEAIIAQBAIAAQBgCAQAAgCAEEgABAEAIJAACAIAASBAEAQAAgCAYAgABAEAgBBACAIBACCAEAQCAAEAYAgEAAIAgBBIAAQBACCQAAgCAAEAYAgEAAIAgBBIAAQBACCQAAgCAAEgQBAEAAIAgGAIAAQBAIAQQAgCDQ9AHdAoAUKAAQBgCAAEAQCAEEAIAgEAIIAQBAIAAQBgCAQAAgCAEEgABD0eQH8D11Po7jB2YxXyMdP6eS3gMoT5H+C0OmwLYaM1MymdCE/CYB/EELt55vdKVy33+hhaQC8QX925ROyPtVpAKh96TUB8OThpdt+oZfnAaG8zMittPqbBeaPfHn/0EFX5Q8D+LBz+h8pYK0AfCDnMj8AdZmtNoC/0c3uyTX5UicthLonEmHCyc5JWwZQAUYD8GEiC/hAbtd/0nXDRXWfr+lFvP0tvFyr1xavPf+7o+ynt/eUnN31c7v2cEITPZPfwat25Mntc/v5elfOQk6o5asrqnWtS63kqs/rFheH/hASTnbK1OSw56j8GGmmv+m5SCeknohUEHOqFud68rv155rgpm5Vt+yI6F8JRbyv9edU+9LX2kWiAOq//epot6v+zq7Raw3d0Kv6gj9v8d/fLDCzABCfwMkz+fwPPZ9cI/FEAfD55LQrnir7T1H7BJ/Qbwzhn5OT61u9BZSO3P2Dbk8elHNTErL5qkXVTnd0qdVc1bye8d5bVN49wSv/InR9Qi6T/hyVCyhlylhANWtakMECmpwrLQxXN6fqVnWLBiDe93BycquvguWLRFb0336VJKDWw/WJjMYteqYLt//9dyLUHmYF4ImuCr4l+ZEVrdL5j/wQfqNbdf8fdL37gpOcotfr05O+Kpgc+S/q7kpWUmJKSqjPVy4KZ65Lreaq5YV2pcNe0L+3zdeHU/RizEvVrXSFVADVrGlBfVVw37meEgt7ym5Vt2gA/ks2GduA8kUiK/pvv0q67hKj/rBLv7D0pTGAuE2NrlUATwxVMNHtNJyQ3ZtnXO+TYowAUqOSV/dfo+dTJOzu7GK7gLq3ZgBeyzMCpCyUhGq++qJ2dKnVXLW8BLwVWz58Erd/8vlnkx8JPVDNlAFQzZppmxkA1JV+jdo7+q3qFg3Aa9QydULwRaIL+m+/Wl7I9W/c2vuXVLm7uInxQAHE7cH/dh+snJCJq2CFsn9R61QqxtwCqvt3m0g+8OT0tt8YSDairWsBSQnVfPVF7RhSy7n2W0BMvniN/0h1txFALVOdBZSztgZQVzpjAeWtjAXs4DtzOpIFbK9e+0+7/CI2Rq/STwg3tjCAGMebHa0K1qEzRQCxpTk5bZoBKDVvtP230q/79OF09xS1dmXP8/eudiRtBZ1c5+W7KidU89UXtaNLreaq5iW1Af9QCmnFgNjqPK98By3TB6keJiekZs0AKO0xP1d9G5BsZdqApOn3wLYBtS/d3wZUv/0qqXx9gi++gNvG5LbuSq7prXLVZgzg7u3r629TC4j9R+zgafvxb+SFnN91ufX6W051+qeDd6lHEj+w9iDvUxJqVbCuqB1dajVXJq9au3YrdQm87hL7u2MGoJap5KfTE1KzZgCU95ifK/Z5n691W9Ut+MC25iH/OWW/tHKRNC9YzXGVlH8Wuv/hiy9XEg/4UlsCKHUBKJ+TPgkZrz+uPKDVOW+9tE93QCv6JOSDAJ60Okvj4J3Co69PB+BvVIObDpobgCAQAAgCAEEgABAEAIJAACAIAASBAEAQAAgCAYAgABAEAgBBACAIBACClkT/B+D6IZDg4H9rAAAAAElFTkSuQmCC"
+                }
+              },
+              {
+                "url": "label",
+                "valueString": "Front of insurance card"
+              }
+            ]
+          },
+          {
+            "url": "http://hl7.org/fhir/us/insurance-card/StructureDefinition/C4DIC-SupportingImage-extension",
+            "extension": [
+              {
+                "url": "description",
+                "valueString": "Back of the dental card: member and dentist services phone numbers, payer ID ATLDN, claims address, a QR code and a barcode of the member ID. Marked SAMPLE."
+              },
+              {
+                "url": "image",
+                "valueAttachment": {
+                  "contentType": "image/png",
+                  "data": "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"
+                }
+              },
+              {
+                "url": "label",
+                "valueString": "Back of insurance card"
+              }
+            ]
+          }
+        ],
         "identifier": [
           {
             "type": {
@@ -2802,10 +3656,13 @@
                   "display": "Member Number"
                 }
               ],
-              "text": "Member Number"
+              "text": "Member ID"
             },
-            "system": "https://parkerapex.com/atlas/member",
-            "value": "AHP-COV_DENTAL-48"
+            "system": "https://atlas-health.example/member-id",
+            "value": "AHP-778-48-1978",
+            "assigner": {
+              "display": "Atlas Dental Plan"
+            }
           }
         ],
         "status": "active",
@@ -2817,10 +3674,11 @@
               "display": "dental care policy"
             }
           ],
-          "text": "dental care policy"
+          "text": "Dental PPO"
         },
         "subscriber": {
-          "reference": "Patient/MDM-SYN-0000000048-1"
+          "reference": "Patient/MDM-SYN-0000000048-1",
+          "display": "Maximus D. Meridius"
         },
         "subscriberId": "AHP-778-48-1978",
         "beneficiary": {
@@ -2841,7 +3699,8 @@
         },
         "payor": [
           {
-            "reference": "Organization/3038bbb2-eae4-548c-ac5a-66b745dc0e98"
+            "reference": "Organization/3038bbb2-eae4-548c-ac5a-66b745dc0e98",
+            "display": "Atlas Dental Plan"
           }
         ],
         "class": [
@@ -2850,11 +3709,9 @@
               "coding": [
                 {
                   "system": "http://terminology.hl7.org/CodeSystem/coverage-class",
-                  "code": "group",
-                  "display": "Group"
+                  "code": "group"
                 }
-              ],
-              "text": "Group"
+              ]
             },
             "value": "LEGION-VETS-01",
             "name": "Legion Veterans Cooperative"
@@ -2864,14 +3721,49 @@
               "coding": [
                 {
                   "system": "http://terminology.hl7.org/CodeSystem/coverage-class",
-                  "code": "plan",
-                  "display": "Plan"
+                  "code": "plan"
                 }
-              ],
-              "text": "Plan"
+              ]
             },
             "value": "ATLAS-DENTAL-PPO",
             "name": "Atlas Dental PPO"
+          }
+        ],
+        "costToBeneficiary": [
+          {
+            "type": {
+              "coding": [
+                {
+                  "system": "http://terminology.hl7.org/CodeSystem/coverage-copay-type",
+                  "code": "deductible",
+                  "display": "Deductible"
+                }
+              ]
+            },
+            "valueMoney": {
+              "value": 50,
+              "currency": "USD"
+            }
+          },
+          {
+            "type": {
+              "coding": [
+                {
+                  "system": "http://terminology.hl7.org/CodeSystem/coverage-copay-type",
+                  "code": "copaypct",
+                  "display": "Copay Percentage"
+                }
+              ],
+              "text": "Share the plan pays, by type of service"
+            },
+            "valueMoney": {
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/us/insurance-card/StructureDefinition/C4DIC-BeneficiaryCostString-extension",
+                  "valueString": "Preventive 100% · Basic 80% · Major 50%"
+                }
+              ]
+            }
           }
         ]
       }
@@ -2882,7 +3774,9 @@
         "resourceType": "Coverage",
         "id": "40db92d5-b5f8-598e-ade0-ee2a18e5c7fe",
         "meta": {
+          "lastUpdated": "2026-11-03T12:00:00Z",
           "profile": [
+            "http://hl7.org/fhir/us/insurance-card/StructureDefinition/C4DIC-Coverage",
             "http://hl7.org/fhir/us/core/StructureDefinition/us-core-coverage|6.1.0"
           ],
           "tag": [
@@ -2893,6 +3787,193 @@
             }
           ]
         },
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/us/insurance-card/StructureDefinition/C4DIC-PlanBeneficiaries-extension",
+            "extension": [
+              {
+                "url": "memberId",
+                "valueString": "AHP-778-48-1978"
+              },
+              {
+                "url": "name",
+                "valueHumanName": {
+                  "family": "Meridius",
+                  "given": [
+                    "Maximus",
+                    "Decimus"
+                  ]
+                }
+              }
+            ]
+          },
+          {
+            "url": "http://hl7.org/fhir/us/insurance-card/StructureDefinition/C4DIC-AdditionalCardInformation-extension",
+            "valueAnnotation": {
+              "text": "TTY users call 711."
+            }
+          },
+          {
+            "url": "http://hl7.org/fhir/us/insurance-card/StructureDefinition/C4DIC-AdditionalCardInformation-extension",
+            "valueAnnotation": {
+              "text": "This card does not guarantee coverage or payment."
+            }
+          },
+          {
+            "url": "http://hl7.org/fhir/us/insurance-card/StructureDefinition/C4DIC-AdditionalCardInformation-extension",
+            "valueAnnotation": {
+              "text": "One eye exam and one pair of lenses every 12 months; frames every 24 months."
+            }
+          },
+          {
+            "url": "http://hl7.org/fhir/us/insurance-card/StructureDefinition/C4DIC-AdditionalCardInformation-extension",
+            "valueAnnotation": {
+              "text": "SAMPLE: synthetic test data from open-synthetic-patients. Not a real insurance card; the plan, numbers and member are made up."
+            }
+          },
+          {
+            "url": "http://hl7.org/fhir/us/insurance-card/StructureDefinition/C4DIC-CardIssueDate-extension",
+            "valueDate": "2025-12-10"
+          },
+          {
+            "url": "http://hl7.org/fhir/us/insurance-card/StructureDefinition/C4DIC-ColorPalette-extension",
+            "extension": [
+              {
+                "url": "http://hl7.org/fhir/us/insurance-card/StructureDefinition/C4DIC-ForegroundColor-extension",
+                "valueCodeableConcept": {
+                  "coding": [
+                    {
+                      "system": "http://terminology.hl7.org/CodeSystem/IECColourManagement",
+                      "code": "#FFFFFF"
+                    }
+                  ]
+                }
+              },
+              {
+                "url": "http://hl7.org/fhir/us/insurance-card/StructureDefinition/C4DIC-BackgroundColor-extension",
+                "valueCodeableConcept": {
+                  "coding": [
+                    {
+                      "system": "http://terminology.hl7.org/CodeSystem/IECColourManagement",
+                      "code": "#4B3F72"
+                    }
+                  ]
+                }
+              },
+              {
+                "url": "http://hl7.org/fhir/us/insurance-card/StructureDefinition/C4DIC-HighlightColor-extension",
+                "valueCodeableConcept": {
+                  "coding": [
+                    {
+                      "system": "http://terminology.hl7.org/CodeSystem/IECColourManagement",
+                      "code": "#C9B6E4"
+                    }
+                  ]
+                }
+              }
+            ]
+          },
+          {
+            "url": "http://hl7.org/fhir/us/insurance-card/StructureDefinition/C4DIC-Logo-extension",
+            "extension": [
+              {
+                "url": "description",
+                "valueString": "Atlas Vision logo: a A monogram in a circle beside the plan name. Synthetic brand."
+              },
+              {
+                "url": "image",
+                "valueAttachment": {
+                  "contentType": "image/png",
+                  "data": "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"
+                }
+              },
+              {
+                "url": "label",
+                "valueString": "Atlas Vision"
+              }
+            ]
+          },
+          {
+            "url": "http://hl7.org/fhir/us/insurance-card/StructureDefinition/C4DIC-QRCode-extension",
+            "extension": [
+              {
+                "url": "description",
+                "valueString": "QR code on the back of the card holding the plan name, member ID, group and pharmacy numbers as text. Synthetic."
+              },
+              {
+                "url": "image",
+                "valueAttachment": {
+                  "contentType": "image/png",
+                  "data": "iVBORw0KGgoAAAANSUhEUgAAAOQAAADkAQMAAACymRrOAAAABlBMVEX///8AAABVwtN+AAACZElEQVR42uWZPW4bYRBD3xruuTfI/Y/lG7w9AVPMt10QBDAmjVUJEiRqfkmO4Kc92pogpUHbVmkrH3/95HfeBcGYNKnWIC3CMm6V2FLyBpt5eQ/384DfD95we/OE++v73/xPuHhxU8ArX7m53cX9gOvGB9pcz/Xg16/7Aa57E/ei8PzhjcBzb/bVgamimNQ02/UFEy2xdGbZmmQbt0hB0VQSkND1+aUIUSrVxmi7G28aUmdVtZNzom7nOdVIq5LWlKq7eQbS1lZbbKFBlnFrS0SdRGMjssxHnAATm+TlxPU5ojQRT5jWYlO3+7k0xpBKCA2zs1ZxwZz1YUcF2CbL9W0JNkUzWyQGtuM9SdXg9HJjpdmeIyfgSEiIkeB2vHAY0EgyT2yW+1lMrXVCfcOm27htixkxWWMdWbk7R0odYDGx82uW6+vwAUi0ITrUtNzPEdsAkZa+kbteX5vSoeDMDHd7fuPIjYBNkuDM8TIfpc1YBdUmhdTt/Zx0wht9Q0xjm3U9WetMrRzune7e3s+JGYVF3iTA+vzGgQpNm3EO2eaF2LRnWY52Hru/vJ87Jw0qVrQOS2RbP4cqpW97h0xrLedZmpKkibMnu37PaaFCbJMxgjkOeDXP1jGenQajTWA93jTNUVmHJ0gT13GbxI6cZAjC1nU+AqXpyTLjH7brm9eV1R5v5Cztbf/LsEIyapaMBtmeoxrTVBzjz6wt1u+xVTv6KiXNtNj+PZZi5n7l8H93dd3n8SpPQbi8483FFbn/w/0ZO/bEwCHh/fqG2RwJJsS6zvtTU5rzn0LbZBw4+/fYn/L4DUTryu8g/9vHAAAAAElFTkSuQmCC"
+                }
+              },
+              {
+                "url": "label",
+                "valueString": "Card details"
+              }
+            ]
+          },
+          {
+            "url": "http://hl7.org/fhir/us/insurance-card/StructureDefinition/C4DIC-Barcode-extension",
+            "extension": [
+              {
+                "url": "description",
+                "valueString": "Code 128 barcode of the member ID AHP-778-48-1978, for scanning at check-in. Synthetic."
+              },
+              {
+                "url": "image",
+                "valueAttachment": {
+                  "contentType": "image/png",
+                  "data": "iVBORw0KGgoAAAANSUhEUgAAAXYAAAA8AQMAAABIJAOYAAAABlBMVEX///8AAABVwtN+AAAATUlEQVR42u3KsQkAQQgEwOWvgGvlwFSwdcH0wFYEU4Ov4dNnJx4A+7gsL1ndmWY6ExE7r57RkejMq1paJg48+Iafn5+fn5+fn5//T/8FOg4YdLTUXwoAAAAASUVORK5CYII="
+                }
+              },
+              {
+                "url": "label",
+                "valueString": "Member ID barcode"
+              }
+            ]
+          },
+          {
+            "url": "http://hl7.org/fhir/us/insurance-card/StructureDefinition/C4DIC-SupportingImage-extension",
+            "extension": [
+              {
+                "url": "description",
+                "valueString": "Front of the vision card: Atlas Vision logo, member name, member ID AHP-778-48-1978, group LEGION-VETS-01, Vision Plus plan, exam and lens copays and frame and contact lens allowances. Marked SAMPLE."
+              },
+              {
+                "url": "image",
+                "valueAttachment": {
+                  "contentType": "image/png",
+                  "data": "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"
+                }
+              },
+              {
+                "url": "label",
+                "valueString": "Front of insurance card"
+              }
+            ]
+          },
+          {
+            "url": "http://hl7.org/fhir/us/insurance-card/StructureDefinition/C4DIC-SupportingImage-extension",
+            "extension": [
+              {
+                "url": "description",
+                "valueString": "Back of the vision card: member and eye doctor services phone numbers, payer ID ATLVS, claims address, a QR code and a barcode of the member ID. Marked SAMPLE."
+              },
+              {
+                "url": "image",
+                "valueAttachment": {
+                  "contentType": "image/png",
+                  "data": "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"
+                }
+              },
+              {
+                "url": "label",
+                "valueString": "Back of insurance card"
+              }
+            ]
+          }
+        ],
         "identifier": [
           {
             "type": {
@@ -2903,10 +3984,13 @@
                   "display": "Member Number"
                 }
               ],
-              "text": "Member Number"
+              "text": "Member ID"
             },
-            "system": "https://parkerapex.com/atlas/member",
-            "value": "AHP-COV_VISION-48"
+            "system": "https://atlas-health.example/member-id",
+            "value": "AHP-778-48-1978",
+            "assigner": {
+              "display": "Atlas Vision Plan"
+            }
           }
         ],
         "status": "active",
@@ -2918,10 +4002,11 @@
               "display": "vision care policy"
             }
           ],
-          "text": "vision care policy"
+          "text": "Vision"
         },
         "subscriber": {
-          "reference": "Patient/MDM-SYN-0000000048-1"
+          "reference": "Patient/MDM-SYN-0000000048-1",
+          "display": "Maximus D. Meridius"
         },
         "subscriberId": "AHP-778-48-1978",
         "beneficiary": {
@@ -2942,7 +4027,8 @@
         },
         "payor": [
           {
-            "reference": "Organization/6cb7d665-4b92-5509-95b4-a90856e5adc5"
+            "reference": "Organization/6cb7d665-4b92-5509-95b4-a90856e5adc5",
+            "display": "Atlas Vision Plan"
           }
         ],
         "class": [
@@ -2951,11 +4037,9 @@
               "coding": [
                 {
                   "system": "http://terminology.hl7.org/CodeSystem/coverage-class",
-                  "code": "group",
-                  "display": "Group"
+                  "code": "group"
                 }
-              ],
-              "text": "Group"
+              ]
             },
             "value": "LEGION-VETS-01",
             "name": "Legion Veterans Cooperative"
@@ -2965,14 +4049,34 @@
               "coding": [
                 {
                   "system": "http://terminology.hl7.org/CodeSystem/coverage-class",
-                  "code": "plan",
-                  "display": "Plan"
+                  "code": "plan"
                 }
-              ],
-              "text": "Plan"
+              ]
             },
             "value": "ATLAS-VISION-PLUS",
             "name": "Atlas Vision Plus"
+          }
+        ],
+        "costToBeneficiary": [
+          {
+            "type": {
+              "coding": [
+                {
+                  "system": "http://terminology.hl7.org/CodeSystem/coverage-copay-type",
+                  "code": "copay",
+                  "display": "Copay Amount"
+                }
+              ],
+              "text": "Eye exam and lens copays"
+            },
+            "valueMoney": {
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/us/insurance-card/StructureDefinition/C4DIC-BeneficiaryCostString-extension",
+                  "valueString": "Exam $10 · Lenses $25"
+                }
+              ]
+            }
           }
         ]
       }
@@ -2996,7 +4100,7 @@
         },
         "identifier": [
           {
-            "system": "https://parkerapex.com/atlas/encounter",
+            "system": "https://example.org/open-synthetic-patients/encounter",
             "value": "55289d94-46ae-545a-b164-39a5bfa3861a"
           }
         ],
@@ -3073,7 +4177,7 @@
         },
         "identifier": [
           {
-            "system": "https://parkerapex.com/atlas/encounter",
+            "system": "https://example.org/open-synthetic-patients/encounter",
             "value": "1be56063-93cd-5baf-8b99-4369deb2969d"
           }
         ],
@@ -3150,7 +4254,7 @@
         },
         "identifier": [
           {
-            "system": "https://parkerapex.com/atlas/encounter",
+            "system": "https://example.org/open-synthetic-patients/encounter",
             "value": "d0934012-6e4c-53c6-846c-2e8615efa537"
           }
         ],
@@ -3227,7 +4331,7 @@
         },
         "identifier": [
           {
-            "system": "https://parkerapex.com/atlas/encounter",
+            "system": "https://example.org/open-synthetic-patients/encounter",
             "value": "c4f959d8-6c87-58b0-86c9-094f33b70a98"
           }
         ],
@@ -3304,7 +4408,7 @@
         },
         "identifier": [
           {
-            "system": "https://parkerapex.com/atlas/encounter",
+            "system": "https://example.org/open-synthetic-patients/encounter",
             "value": "eb93b3ae-a975-5035-bbc9-de2bc589945b"
           }
         ],
@@ -3381,7 +4485,7 @@
         },
         "identifier": [
           {
-            "system": "https://parkerapex.com/atlas/encounter",
+            "system": "https://example.org/open-synthetic-patients/encounter",
             "value": "b0c704ef-a2eb-5c82-8832-e473c3c4914a"
           }
         ],
@@ -3458,7 +4562,7 @@
         },
         "identifier": [
           {
-            "system": "https://parkerapex.com/atlas/encounter",
+            "system": "https://example.org/open-synthetic-patients/encounter",
             "value": "e34af4c3-be06-5378-909f-1488f6f8941f"
           }
         ],
@@ -3535,7 +4639,7 @@
         },
         "identifier": [
           {
-            "system": "https://parkerapex.com/atlas/encounter",
+            "system": "https://example.org/open-synthetic-patients/encounter",
             "value": "a714f436-a70a-5c99-83f8-fbf83cda5767"
           }
         ],
@@ -3637,7 +4741,7 @@
         },
         "identifier": [
           {
-            "system": "https://parkerapex.com/atlas/encounter",
+            "system": "https://example.org/open-synthetic-patients/encounter",
             "value": "7ca30fb9-4958-516f-a20e-16351a556ece"
           }
         ],
@@ -3714,7 +4818,7 @@
         },
         "identifier": [
           {
-            "system": "https://parkerapex.com/atlas/encounter",
+            "system": "https://example.org/open-synthetic-patients/encounter",
             "value": "369ad15d-cafd-50df-bd6a-03aa761e9ce4"
           }
         ],
@@ -3791,7 +4895,7 @@
         },
         "identifier": [
           {
-            "system": "https://parkerapex.com/atlas/encounter",
+            "system": "https://example.org/open-synthetic-patients/encounter",
             "value": "2b602558-1c09-59b6-97eb-812969e1db7a"
           }
         ],
@@ -3868,7 +4972,7 @@
         },
         "identifier": [
           {
-            "system": "https://parkerapex.com/atlas/encounter",
+            "system": "https://example.org/open-synthetic-patients/encounter",
             "value": "a148bf94-1b11-5dee-bc08-2cf2a2329419"
           }
         ],
@@ -3940,7 +5044,7 @@
         },
         "identifier": [
           {
-            "system": "https://parkerapex.com/atlas/encounter",
+            "system": "https://example.org/open-synthetic-patients/encounter",
             "value": "a23972b4-b0a9-5cd5-a23f-89b4e0742f24"
           }
         ],
@@ -4017,7 +5121,7 @@
         },
         "identifier": [
           {
-            "system": "https://parkerapex.com/atlas/encounter",
+            "system": "https://example.org/open-synthetic-patients/encounter",
             "value": "be96c131-27fe-53ee-8c8e-aa0e68415f40"
           }
         ],
@@ -4094,7 +5198,7 @@
         },
         "identifier": [
           {
-            "system": "https://parkerapex.com/atlas/encounter",
+            "system": "https://example.org/open-synthetic-patients/encounter",
             "value": "e5139da4-be6f-5b53-824c-ebf8a9f5e058"
           }
         ],
@@ -4171,7 +5275,7 @@
         },
         "identifier": [
           {
-            "system": "https://parkerapex.com/atlas/encounter",
+            "system": "https://example.org/open-synthetic-patients/encounter",
             "value": "7d707d88-f084-5675-abd8-50fe9c27dda4"
           }
         ],
@@ -4248,7 +5352,7 @@
         },
         "identifier": [
           {
-            "system": "https://parkerapex.com/atlas/encounter",
+            "system": "https://example.org/open-synthetic-patients/encounter",
             "value": "5862e67c-b704-525a-8d28-6a7d618c568b"
           }
         ],
@@ -4325,7 +5429,7 @@
         },
         "identifier": [
           {
-            "system": "https://parkerapex.com/atlas/encounter",
+            "system": "https://example.org/open-synthetic-patients/encounter",
             "value": "7f85e7d2-03fd-5042-8303-886b04b4b40f"
           }
         ],
@@ -4402,7 +5506,7 @@
         },
         "identifier": [
           {
-            "system": "https://parkerapex.com/atlas/encounter",
+            "system": "https://example.org/open-synthetic-patients/encounter",
             "value": "4eba2b8d-768c-55b5-adfe-e412f694ad80"
           }
         ],
@@ -4482,7 +5586,7 @@
         },
         "identifier": [
           {
-            "system": "https://parkerapex.com/atlas/encounter",
+            "system": "https://example.org/open-synthetic-patients/encounter",
             "value": "e31ce206-7bf3-55e8-8dd1-439a4f36cf1d"
           }
         ],
@@ -4559,7 +5663,7 @@
         },
         "identifier": [
           {
-            "system": "https://parkerapex.com/atlas/encounter",
+            "system": "https://example.org/open-synthetic-patients/encounter",
             "value": "d76d76a2-d9d8-5aec-a7f2-30f6090e76ae"
           }
         ],
@@ -4639,7 +5743,7 @@
         },
         "identifier": [
           {
-            "system": "https://parkerapex.com/atlas/encounter",
+            "system": "https://example.org/open-synthetic-patients/encounter",
             "value": "2736d5e2-9922-5ffe-9a55-de20164326b3"
           }
         ],
@@ -4719,7 +5823,7 @@
         },
         "identifier": [
           {
-            "system": "https://parkerapex.com/atlas/encounter",
+            "system": "https://example.org/open-synthetic-patients/encounter",
             "value": "5b0c88ff-42fa-5b5f-abf5-c6304a8916d7"
           }
         ],
@@ -4799,7 +5903,7 @@
         },
         "identifier": [
           {
-            "system": "https://parkerapex.com/atlas/encounter",
+            "system": "https://example.org/open-synthetic-patients/encounter",
             "value": "809db94d-b07b-514e-b364-bdd0b579687f"
           }
         ],
@@ -4882,7 +5986,7 @@
         },
         "identifier": [
           {
-            "system": "https://parkerapex.com/atlas/encounter",
+            "system": "https://example.org/open-synthetic-patients/encounter",
             "value": "2ef6d269-9e54-5b69-ae5d-5ef24409c716"
           }
         ],
@@ -25726,7 +26830,7 @@
         },
         "identifier": [
           {
-            "system": "https://parkerapex.com/atlas/order",
+            "system": "https://example.org/open-synthetic-patients/order",
             "value": "ORD-20180401-SR_BH18"
           }
         ],
@@ -25804,7 +26908,7 @@
         },
         "identifier": [
           {
-            "system": "https://parkerapex.com/atlas/order",
+            "system": "https://example.org/open-synthetic-patients/order",
             "value": "ORD-20190402-SR_SLEEP19"
           }
         ],
@@ -25882,7 +26986,7 @@
         },
         "identifier": [
           {
-            "system": "https://parkerapex.com/atlas/order",
+            "system": "https://example.org/open-synthetic-patients/order",
             "value": "ORD-20220830-SR_MRI22"
           }
         ],
@@ -25956,7 +27060,7 @@
         },
         "identifier": [
           {
-            "system": "https://parkerapex.com/atlas/order",
+            "system": "https://example.org/open-synthetic-patients/order",
             "value": "ORD-20220920-SR_ESI22"
           }
         ],
@@ -26034,7 +27138,7 @@
         },
         "identifier": [
           {
-            "system": "https://parkerapex.com/atlas/order",
+            "system": "https://example.org/open-synthetic-patients/order",
             "value": "ORD-20240305-SR_REHAB24"
           }
         ],
@@ -26112,7 +27216,7 @@
         },
         "identifier": [
           {
-            "system": "https://parkerapex.com/atlas/order",
+            "system": "https://example.org/open-synthetic-patients/order",
             "value": "ORD-20240305-SR_CARDS24"
           }
         ],
@@ -26190,7 +27294,7 @@
         },
         "identifier": [
           {
-            "system": "https://parkerapex.com/atlas/order",
+            "system": "https://example.org/open-synthetic-patients/order",
             "value": "ORD-20240618-SR_AUD24"
           }
         ],
@@ -26268,7 +27372,7 @@
         },
         "identifier": [
           {
-            "system": "https://parkerapex.com/atlas/order",
+            "system": "https://example.org/open-synthetic-patients/order",
             "value": "ORD-20241001-SR_GI24"
           }
         ],
@@ -26341,7 +27445,7 @@
         },
         "identifier": [
           {
-            "system": "https://parkerapex.com/atlas/order",
+            "system": "https://example.org/open-synthetic-patients/order",
             "value": "ORD-20241210-SR_EYE24"
           }
         ],
@@ -26419,7 +27523,7 @@
         },
         "identifier": [
           {
-            "system": "https://parkerapex.com/atlas/order",
+            "system": "https://example.org/open-synthetic-patients/order",
             "value": "ORD-20250422-SR_DERM25"
           }
         ],
@@ -26497,7 +27601,7 @@
         },
         "identifier": [
           {
-            "system": "https://parkerapex.com/atlas/order",
+            "system": "https://example.org/open-synthetic-patients/order",
             "value": "ORD-20250519-SR_MOHS25"
           }
         ],
@@ -26575,7 +27679,7 @@
         },
         "identifier": [
           {
-            "system": "https://parkerapex.com/atlas/order",
+            "system": "https://example.org/open-synthetic-patients/order",
             "value": "ORD-20260211-SR_PERIO26"
           }
         ],
@@ -26653,7 +27757,7 @@
         },
         "identifier": [
           {
-            "system": "https://parkerapex.com/atlas/order",
+            "system": "https://example.org/open-synthetic-patients/order",
             "value": "ORD-20260824-SR_ENDO26"
           }
         ],
@@ -26731,7 +27835,7 @@
         },
         "identifier": [
           {
-            "system": "https://parkerapex.com/atlas/order",
+            "system": "https://example.org/open-synthetic-patients/order",
             "value": "ORD-20260824-SR_POD26"
           }
         ],
@@ -26801,7 +27905,7 @@
         },
         "identifier": [
           {
-            "system": "https://parkerapex.com/atlas/order",
+            "system": "https://example.org/open-synthetic-patients/order",
             "value": "ORD-20260824-SR_DSMES26"
           }
         ],
@@ -26871,7 +27975,7 @@
         },
         "identifier": [
           {
-            "system": "https://parkerapex.com/atlas/order",
+            "system": "https://example.org/open-synthetic-patients/order",
             "value": "ORD-20260915-SR_ECHO26"
           }
         ],
@@ -27121,7 +28225,7 @@
               ],
               "text": "Unique Claim ID"
             },
-            "system": "https://parkerapex.com/atlas/claim",
+            "system": "https://example.org/open-synthetic-patients/claim",
             "value": "CLM-20240302-CLM_IP24"
           }
         ],
@@ -28294,7 +29398,7 @@
               ],
               "text": "Unique Claim ID"
             },
-            "system": "https://parkerapex.com/atlas/claim",
+            "system": "https://example.org/open-synthetic-patients/claim",
             "value": "CLM-20190520-CLM_PSG19"
           }
         ],
@@ -28682,7 +29786,7 @@
               ],
               "text": "Unique Claim ID"
             },
-            "system": "https://parkerapex.com/atlas/claim",
+            "system": "https://example.org/open-synthetic-patients/claim",
             "value": "CLM-20221020-CLM_ESI22"
           }
         ],
@@ -29070,7 +30174,7 @@
               ],
               "text": "Unique Claim ID"
             },
-            "system": "https://parkerapex.com/atlas/claim",
+            "system": "https://example.org/open-synthetic-patients/claim",
             "value": "CLM-20240302-CLM_ED24"
           }
         ],
@@ -29490,7 +30594,7 @@
               ],
               "text": "Unique Claim ID"
             },
-            "system": "https://parkerapex.com/atlas/claim",
+            "system": "https://example.org/open-synthetic-patients/claim",
             "value": "CLM-20240303-CLM_PCI24"
           }
         ],
@@ -30016,7 +31120,7 @@
               ],
               "text": "Unique Claim ID"
             },
-            "system": "https://parkerapex.com/atlas/claim",
+            "system": "https://example.org/open-synthetic-patients/claim",
             "value": "CLM-20240409-CLM_CARD24"
           }
         ],
@@ -30650,7 +31754,7 @@
               ],
               "text": "Unique Claim ID"
             },
-            "system": "https://parkerapex.com/atlas/claim",
+            "system": "https://example.org/open-synthetic-patients/claim",
             "value": "CLM-20240715-CLM_AUD24"
           }
         ],
@@ -31205,7 +32309,7 @@
               ],
               "text": "Unique Claim ID"
             },
-            "system": "https://parkerapex.com/atlas/claim",
+            "system": "https://example.org/open-synthetic-patients/claim",
             "value": "CLM-20240812-CLM_HA24"
           }
         ],
@@ -31722,7 +32826,7 @@
               ],
               "text": "Unique Claim ID"
             },
-            "system": "https://parkerapex.com/atlas/claim",
+            "system": "https://example.org/open-synthetic-patients/claim",
             "value": "CLM-20241118-CLM_COLO24"
           }
         ],
@@ -32110,7 +33214,7 @@
               ],
               "text": "Unique Claim ID"
             },
-            "system": "https://parkerapex.com/atlas/claim",
+            "system": "https://example.org/open-synthetic-patients/claim",
             "value": "CLM-20250120-CLM_EYE25"
           }
         ],
@@ -32736,7 +33840,7 @@
               ],
               "text": "Unique Claim ID"
             },
-            "system": "https://parkerapex.com/atlas/claim",
+            "system": "https://example.org/open-synthetic-patients/claim",
             "value": "CLM-20250512-CLM_DERM25"
           }
         ],
@@ -33278,7 +34382,7 @@
               ],
               "text": "Unique Claim ID"
             },
-            "system": "https://parkerapex.com/atlas/claim",
+            "system": "https://example.org/open-synthetic-patients/claim",
             "value": "CLM-20250602-CLM_MOHS25"
           }
         ],
@@ -33769,7 +34873,7 @@
               ],
               "text": "Unique Claim ID"
             },
-            "system": "https://parkerapex.com/atlas/claim",
+            "system": "https://example.org/open-synthetic-patients/claim",
             "value": "CLM-20260407-CLM_DERM26"
           }
         ],
@@ -34415,7 +35519,7 @@
               ],
               "text": "Unique Claim ID"
             },
-            "system": "https://parkerapex.com/atlas/claim",
+            "system": "https://example.org/open-synthetic-patients/claim",
             "value": "CLM-20260610-CLM_AUD26"
           }
         ],
@@ -34811,7 +35915,7 @@
               ],
               "text": "Unique Claim ID"
             },
-            "system": "https://parkerapex.com/atlas/claim",
+            "system": "https://example.org/open-synthetic-patients/claim",
             "value": "CLM-20260714-CLM_EYEMED26"
           }
         ],
@@ -35421,7 +36525,7 @@
               ],
               "text": "Unique Claim ID"
             },
-            "system": "https://parkerapex.com/atlas/claim",
+            "system": "https://example.org/open-synthetic-patients/claim",
             "value": "CLM-20260722-CLM_BH26"
           }
         ],
@@ -35828,7 +36932,7 @@
               ],
               "text": "Unique Claim ID"
             },
-            "system": "https://parkerapex.com/atlas/claim",
+            "system": "https://example.org/open-synthetic-patients/claim",
             "value": "CLM-20260824-CLM_PCP26"
           }
         ],
@@ -36617,7 +37721,7 @@
               ],
               "text": "Unique Claim ID"
             },
-            "system": "https://parkerapex.com/atlas/claim",
+            "system": "https://example.org/open-synthetic-patients/claim",
             "value": "CLM-20260824-CLM_LAB26"
           }
         ],
@@ -38148,7 +39252,7 @@
               ],
               "text": "Unique Claim ID"
             },
-            "system": "https://parkerapex.com/atlas/claim",
+            "system": "https://example.org/open-synthetic-patients/claim",
             "value": "CLM-20260915-CLM_CARD26"
           }
         ],
@@ -38568,7 +39672,7 @@
               ],
               "text": "Unique Claim ID"
             },
-            "system": "https://parkerapex.com/atlas/claim",
+            "system": "https://example.org/open-synthetic-patients/claim",
             "value": "CLM-20260714-CLM_VISION26"
           }
         ],
@@ -39205,7 +40309,7 @@
               ],
               "text": "Unique Claim ID"
             },
-            "system": "https://parkerapex.com/atlas/claim",
+            "system": "https://example.org/open-synthetic-patients/claim",
             "value": "CLM-20260211-CLM_DENT26A"
           }
         ],
@@ -39842,7 +40946,7 @@
               ],
               "text": "Unique Claim ID"
             },
-            "system": "https://parkerapex.com/atlas/claim",
+            "system": "https://example.org/open-synthetic-patients/claim",
             "value": "CLM-20260225-CLM_DENT26B"
           }
         ],
@@ -40355,7 +41459,7 @@
               ],
               "text": "Unique Claim ID"
             },
-            "system": "https://parkerapex.com/atlas/claim",
+            "system": "https://example.org/open-synthetic-patients/claim",
             "value": "CLM-20260304-CLM_DENT26C"
           }
         ],
@@ -40762,7 +41866,7 @@
               ],
               "text": "Unique Claim ID"
             },
-            "system": "https://parkerapex.com/atlas/claim",
+            "system": "https://example.org/open-synthetic-patients/claim",
             "value": "CLM-20260812-CLM_DENT26D"
           }
         ],
@@ -41431,7 +42535,7 @@
               ],
               "text": "Unique Claim ID"
             },
-            "system": "https://parkerapex.com/atlas/claim",
+            "system": "https://example.org/open-synthetic-patients/claim",
             "value": "CLM-20240305-RX_CLOPI24"
           }
         ],
@@ -41806,7 +42910,7 @@
               ],
               "text": "Unique Claim ID"
             },
-            "system": "https://parkerapex.com/atlas/claim",
+            "system": "https://example.org/open-synthetic-patients/claim",
             "value": "CLM-20260730-RX_ATORVA26"
           }
         ],
@@ -42181,7 +43285,7 @@
               ],
               "text": "Unique Claim ID"
             },
-            "system": "https://parkerapex.com/atlas/claim",
+            "system": "https://example.org/open-synthetic-patients/claim",
             "value": "CLM-20260730-RX_METFORMIN26"
           }
         ],
@@ -42556,7 +43660,7 @@
               ],
               "text": "Unique Claim ID"
             },
-            "system": "https://parkerapex.com/atlas/claim",
+            "system": "https://example.org/open-synthetic-patients/claim",
             "value": "CLM-20260730-RX_METOP26"
           }
         ],
@@ -42931,7 +44035,7 @@
               ],
               "text": "Unique Claim ID"
             },
-            "system": "https://parkerapex.com/atlas/claim",
+            "system": "https://example.org/open-synthetic-patients/claim",
             "value": "CLM-20260730-RX_LOSARTAN26"
           }
         ],
@@ -43306,7 +44410,7 @@
               ],
               "text": "Unique Claim ID"
             },
-            "system": "https://parkerapex.com/atlas/claim",
+            "system": "https://example.org/open-synthetic-patients/claim",
             "value": "CLM-20260802-RX_GLARGINE26"
           }
         ],
@@ -43681,7 +44785,7 @@
               ],
               "text": "Unique Claim ID"
             },
-            "system": "https://parkerapex.com/atlas/claim",
+            "system": "https://example.org/open-synthetic-patients/claim",
             "value": "CLM-20260802-RX_SERT26"
           }
         ],
@@ -44056,7 +45160,7 @@
               ],
               "text": "Unique Claim ID"
             },
-            "system": "https://parkerapex.com/atlas/claim",
+            "system": "https://example.org/open-synthetic-patients/claim",
             "value": "CLM-20260714-RX_LATANOPROST26"
           }
         ],
@@ -44431,7 +45535,7 @@
               ],
               "text": "Unique Claim ID"
             },
-            "system": "https://parkerapex.com/atlas/claim",
+            "system": "https://example.org/open-synthetic-patients/claim",
             "value": "CLM-20260407-RX_CLOBETASOL26"
           }
         ],
@@ -44806,7 +45910,7 @@
               ],
               "text": "Unique Claim ID"
             },
-            "system": "https://parkerapex.com/atlas/claim",
+            "system": "https://example.org/open-synthetic-patients/claim",
             "value": "CLM-20260225-RX_CHLORHEX26"
           }
         ],

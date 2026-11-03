@@ -1,0 +1,464 @@
+{
+  "cards": [
+    {
+      "key": "medical",
+      "coverage_id": "a803a630-5e3b-5bc3-ad38-6b6ef1958d65",
+      "payer_id_ref": "a7b3e1ba-1eea-58e2-84a7-57e53f177e6b",
+      "brand": {
+        "name": "Atlas Health",
+        "mark": "A",
+        "tagline": "Synthetic health plan",
+        "color": "#1F3A5F",
+        "accent": "#E8B33A"
+      },
+      "card_title": "PPO Gold · Employer group",
+      "member_id": "AHP-778-48-1978",
+      "member_id_system": "https://atlas-health.example/member-id",
+      "type": {
+        "coding": [
+          {
+            "system": "https://nahdo.org/sopt",
+            "code": "512",
+            "display": "Commercial Managed Care - PPO"
+          },
+          {
+            "system": "http://terminology.hl7.org/CodeSystem/v3-ActCode",
+            "code": "PPO",
+            "display": "preferred provider organization policy"
+          }
+        ],
+        "text": "PPO"
+      },
+      "period": {
+        "start": "2020-01-01"
+      },
+      "card_issue_date": "2025-12-10",
+      "payer": {
+        "name": "Atlas Health Plan",
+        "payer_id": "ATLHP",
+        "website": "https://atlas-health.example",
+        "contacts": {
+          "member": "1-800-555-0110",
+          "provider": "1-800-555-0111",
+          "pharmacist": "1-800-555-0112",
+          "mail_order": "1-800-555-0113",
+          "virtual": "https://atlas-health.example/virtual-care",
+          "payer": {
+            "line": [
+              "PO Box 1450"
+            ],
+            "city": "Springfield",
+            "state": "IL",
+            "postalCode": "62705"
+          }
+        }
+      },
+      "classes": {
+        "group": {
+          "value": "LEGION-VETS-01",
+          "name": "Legion Veterans Cooperative"
+        },
+        "plan": {
+          "value": "ATLAS-HEALTH-PPO-GOLD",
+          "name": "Atlas Health PPO Gold"
+        },
+        "network": {
+          "value": "ATL-CHOICE-PPO",
+          "name": "Atlas Choice PPO"
+        },
+        "rxbin": {
+          "value": "999102"
+        },
+        "rxpcn": {
+          "value": "ATLRX"
+        },
+        "rxgroup": {
+          "value": "LVC01"
+        },
+        "rxid": {
+          "value": "AHP778481978"
+        }
+      },
+      "copays": [
+        {
+          "type": "gpvisit",
+          "amount": 25
+        },
+        {
+          "type": "spvisit",
+          "amount": 50
+        },
+        {
+          "type": "urgentcare",
+          "amount": 75
+        },
+        {
+          "type": "emergency",
+          "amount": 300
+        },
+        {
+          "type": "IndInDed",
+          "amount": 1500
+        },
+        {
+          "type": "IndOutDed",
+          "amount": 3000
+        },
+        {
+          "type": "IndInMax",
+          "amount": 5000
+        },
+        {
+          "type": "IndOutMax",
+          "amount": 10000
+        },
+        {
+          "type": "rx",
+          "string": "$10 / $40 / $75 / 30%",
+          "text": "Prescription copays by tier: generic / preferred brand / non-preferred brand / specialty"
+        }
+      ],
+      "front_rows": [
+        [
+          "Group",
+          "LEGION-VETS-01"
+        ],
+        [
+          "Plan",
+          "PPO Gold"
+        ],
+        [
+          "Network",
+          "Atlas Choice PPO"
+        ],
+        [
+          "RxBIN / PCN",
+          "999102 / ATLRX"
+        ],
+        [
+          "RxGrp",
+          "LVC01"
+        ]
+      ],
+      "copay_box": [
+        [
+          "Primary care",
+          "$25"
+        ],
+        [
+          "Specialist",
+          "$50"
+        ],
+        [
+          "Urgent care",
+          "$75"
+        ],
+        [
+          "Emergency",
+          "$300"
+        ],
+        [
+          "Rx",
+          "$10/$40/$75/30%"
+        ]
+      ],
+      "footer": "Deductible $1,500 · Out-of-pocket max $5,000 (in network)",
+      "back_rows": [
+        [
+          "Member services",
+          "1-800-555-0110"
+        ],
+        [
+          "Provider services",
+          "1-800-555-0111"
+        ],
+        [
+          "Pharmacist help desk",
+          "1-800-555-0112"
+        ],
+        [
+          "Mail-order pharmacy",
+          "1-800-555-0113"
+        ],
+        [
+          "Payer ID (EDI)",
+          "ATLHP"
+        ],
+        [
+          "Submit claims to",
+          "PO Box 1450, Springfield, IL 62705"
+        ],
+        [
+          "Virtual care",
+          "atlas-health.example/virtual-care"
+        ]
+      ],
+      "back_notes": [
+        "TTY 711. This card does not guarantee coverage or payment.",
+        "Emergency? Call 911 or go to the nearest ER. Hospital stays",
+        "need approval: call member services within 48 hours."
+      ],
+      "notices": [
+        "TTY users call 711.",
+        "This card does not guarantee coverage or payment. Misusing it may be fraud.",
+        "In an emergency, call 911 or go to the nearest emergency room.",
+        "Hospital stays need prior approval: call member services within 48 hours of admission.",
+        "SAMPLE: synthetic test data from open-synthetic-patients. Not a real insurance card; the plan, numbers and member are made up."
+      ],
+      "front_description": "Front of the card: Atlas Health logo, member name Maximus D. Meridius, member ID AHP-778-48-1978, group LEGION-VETS-01, PPO Gold plan, Atlas Choice PPO network, RxBIN 999102, RxPCN ATLRX, RxGrp LVC01, and copays for primary care, specialist, urgent care, emergency and prescriptions. Marked SAMPLE.",
+      "back_description": "Back of the card: member services, provider services, pharmacist help desk and mail-order pharmacy phone numbers, payer ID ATLHP, claims address, virtual care address, a QR code and a barcode of the member ID. Marked SAMPLE."
+    },
+    {
+      "key": "dental",
+      "coverage_id": "f47d0962-336e-5aa5-b14a-781d2d4d6ce6",
+      "payer_id_ref": "3038bbb2-eae4-548c-ac5a-66b745dc0e98",
+      "brand": {
+        "name": "Atlas Dental",
+        "mark": "A",
+        "tagline": "Synthetic dental plan",
+        "color": "#1D5C63",
+        "accent": "#9ED8DB"
+      },
+      "card_title": "Dental PPO · Employer group",
+      "member_id": "AHP-778-48-1978",
+      "member_id_system": "https://atlas-health.example/member-id",
+      "type": {
+        "coding": [
+          {
+            "system": "http://terminology.hl7.org/CodeSystem/v3-ActCode",
+            "code": "DENTAL",
+            "display": "dental care policy"
+          }
+        ],
+        "text": "Dental PPO"
+      },
+      "period": {
+        "start": "2020-01-01"
+      },
+      "card_issue_date": "2025-12-10",
+      "payer": {
+        "name": "Atlas Dental Plan",
+        "payer_id": "ATLDN",
+        "website": "https://atlas-health.example/dental",
+        "contacts": {
+          "member": "1-800-555-0120",
+          "provider": "1-800-555-0121",
+          "payer": {
+            "line": [
+              "PO Box 1451"
+            ],
+            "city": "Springfield",
+            "state": "IL",
+            "postalCode": "62705"
+          }
+        }
+      },
+      "classes": {
+        "group": {
+          "value": "LEGION-VETS-01",
+          "name": "Legion Veterans Cooperative"
+        },
+        "plan": {
+          "value": "ATLAS-DENTAL-PPO",
+          "name": "Atlas Dental PPO"
+        }
+      },
+      "copays": [
+        {
+          "type": "deductible",
+          "amount": 50
+        },
+        {
+          "type": "copaypct",
+          "string": "Preventive 100% · Basic 80% · Major 50%",
+          "text": "Share the plan pays, by type of service"
+        }
+      ],
+      "front_rows": [
+        [
+          "Group",
+          "LEGION-VETS-01"
+        ],
+        [
+          "Plan",
+          "Dental PPO"
+        ],
+        [
+          "Annual maximum",
+          "$1,500 per person"
+        ]
+      ],
+      "copay_box": [
+        [
+          "Deductible",
+          "$50"
+        ],
+        [
+          "Preventive",
+          "100%"
+        ],
+        [
+          "Basic",
+          "80%"
+        ],
+        [
+          "Major",
+          "50%"
+        ]
+      ],
+      "footer": "Plan pays the share shown, after the deductible",
+      "back_rows": [
+        [
+          "Member services",
+          "1-800-555-0120"
+        ],
+        [
+          "Dentist services",
+          "1-800-555-0121"
+        ],
+        [
+          "Payer ID (EDI)",
+          "ATLDN"
+        ],
+        [
+          "Submit claims to",
+          "PO Box 1451, Springfield, IL 62705"
+        ]
+      ],
+      "back_notes": [
+        "TTY 711. This card does not guarantee coverage or payment.",
+        "Two cleanings and exams a year are covered at 100%."
+      ],
+      "notices": [
+        "TTY users call 711.",
+        "This card does not guarantee coverage or payment.",
+        "Annual maximum benefit: $1,500 per person.",
+        "SAMPLE: synthetic test data from open-synthetic-patients. Not a real insurance card; the plan, numbers and member are made up."
+      ],
+      "front_description": "Front of the dental card: Atlas Dental logo, member name, member ID AHP-778-48-1978, group LEGION-VETS-01, Dental PPO plan, $1,500 annual maximum and the share the plan pays for preventive, basic and major care. Marked SAMPLE.",
+      "back_description": "Back of the dental card: member and dentist services phone numbers, payer ID ATLDN, claims address, a QR code and a barcode of the member ID. Marked SAMPLE."
+    },
+    {
+      "key": "vision",
+      "coverage_id": "40db92d5-b5f8-598e-ade0-ee2a18e5c7fe",
+      "payer_id_ref": "6cb7d665-4b92-5509-95b4-a90856e5adc5",
+      "brand": {
+        "name": "Atlas Vision",
+        "mark": "A",
+        "tagline": "Synthetic vision plan",
+        "color": "#4B3F72",
+        "accent": "#C9B6E4"
+      },
+      "card_title": "Vision Plus · Employer group",
+      "member_id": "AHP-778-48-1978",
+      "member_id_system": "https://atlas-health.example/member-id",
+      "type": {
+        "coding": [
+          {
+            "system": "http://terminology.hl7.org/CodeSystem/v3-ActCode",
+            "code": "VISPOL",
+            "display": "vision care policy"
+          }
+        ],
+        "text": "Vision"
+      },
+      "period": {
+        "start": "2020-01-01"
+      },
+      "card_issue_date": "2025-12-10",
+      "payer": {
+        "name": "Atlas Vision Plan",
+        "payer_id": "ATLVS",
+        "website": "https://atlas-health.example/vision",
+        "contacts": {
+          "member": "1-800-555-0130",
+          "provider": "1-800-555-0131",
+          "payer": {
+            "line": [
+              "PO Box 1452"
+            ],
+            "city": "Springfield",
+            "state": "IL",
+            "postalCode": "62705"
+          }
+        }
+      },
+      "classes": {
+        "group": {
+          "value": "LEGION-VETS-01",
+          "name": "Legion Veterans Cooperative"
+        },
+        "plan": {
+          "value": "ATLAS-VISION-PLUS",
+          "name": "Atlas Vision Plus"
+        }
+      },
+      "copays": [
+        {
+          "type": "copay",
+          "string": "Exam $10 · Lenses $25",
+          "text": "Eye exam and lens copays"
+        }
+      ],
+      "front_rows": [
+        [
+          "Group",
+          "LEGION-VETS-01"
+        ],
+        [
+          "Plan",
+          "Vision Plus"
+        ],
+        [
+          "Frames",
+          "$150 every 24 months"
+        ]
+      ],
+      "copay_box": [
+        [
+          "Eye exam",
+          "$10"
+        ],
+        [
+          "Lenses",
+          "$25"
+        ],
+        [
+          "Contacts",
+          "$150"
+        ]
+      ],
+      "footer": "One exam and one pair of lenses every 12 months",
+      "back_rows": [
+        [
+          "Member services",
+          "1-800-555-0130"
+        ],
+        [
+          "Eye doctor services",
+          "1-800-555-0131"
+        ],
+        [
+          "Payer ID (EDI)",
+          "ATLVS"
+        ],
+        [
+          "Submit claims to",
+          "PO Box 1452, Springfield, IL 62705"
+        ]
+      ],
+      "back_notes": [
+        "TTY 711. This card does not guarantee coverage or payment.",
+        "Contact lenses: $150 allowance instead of glasses lenses."
+      ],
+      "notices": [
+        "TTY users call 711.",
+        "This card does not guarantee coverage or payment.",
+        "One eye exam and one pair of lenses every 12 months; frames every 24 months.",
+        "SAMPLE: synthetic test data from open-synthetic-patients. Not a real insurance card; the plan, numbers and member are made up."
+      ],
+      "front_description": "Front of the vision card: Atlas Vision logo, member name, member ID AHP-778-48-1978, group LEGION-VETS-01, Vision Plus plan, exam and lens copays and frame and contact lens allowances. Marked SAMPLE.",
+      "back_description": "Back of the vision card: member and eye doctor services phone numbers, payer ID ATLVS, claims address, a QR code and a barcode of the member ID. Marked SAMPLE."
+    }
+  ]
+}

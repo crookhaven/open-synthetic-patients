@@ -273,11 +273,11 @@
     ],
     "labResults": [
       {
-        "order": {
+        "orderedTest": {
           "text": null,
           "codings": []
         },
-        "test": {
+        "performedTest": {
           "text": "Hemoglobin A1c",
           "codings": [
             {
@@ -298,7 +298,7 @@
           ]
         },
         "resultValue": {
-          "text": null,
+          "text": "7.2",
           "type": {
             "text": null,
             "codings": []
@@ -342,11 +342,11 @@
         }
       },
       {
-        "order": {
+        "orderedTest": {
           "text": null,
           "codings": []
         },
-        "test": {
+        "performedTest": {
           "text": "Fasting Glucose",
           "codings": [
             {

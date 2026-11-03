@@ -1,0 +1,373 @@
+{
+  "cards": [
+    {
+      "key": "medicare",
+      "coverage_id": "43294409-74c6-559b-9e72-691fb3392f88",
+      "payer_id_ref": "0df4824d-6907-5319-80ab-2f36332b9ce1",
+      "brand": {
+        "name": "Medicare",
+        "mark": "M",
+        "tagline": "Original Medicare (sample layout)",
+        "color": "#2F4F6F",
+        "accent": "#D6E4F0"
+      },
+      "card_title": "Original Medicare · Part A and Part B",
+      "member_id": "3TQ7RW5CH42",
+      "hide_member_id_row": true,
+      "member_id_system": "http://hl7.org/fhir/sid/us-mbi",
+      "type": {
+        "coding": [
+          {
+            "system": "https://nahdo.org/sopt",
+            "code": "121",
+            "display": "Medicare FFS"
+          }
+        ],
+        "text": "Original Medicare (Part A and Part B)"
+      },
+      "period": {
+        "start": "2018-07-01"
+      },
+      "order": 1,
+      "card_issue_date": "2018-05-15",
+      "payer": {
+        "name": "Centers for Medicare & Medicaid Services",
+        "website": "https://www.medicare.gov",
+        "contacts": {
+          "member": "1-800-633-4227"
+        }
+      },
+      "classes": {
+        "plan": {
+          "value": "MEDICARE-PART-A-B",
+          "name": "Original Medicare Part A (Hospital) and Part B (Medical)"
+        }
+      },
+      "front_rows": [
+        [
+          "Medicare number",
+          "3TQ7-RW5-CH42"
+        ],
+        [
+          "Hospital (Part A)",
+          "Starts 07-01-2018"
+        ],
+        [
+          "Medical (Part B)",
+          "Starts 07-01-2018"
+        ]
+      ],
+      "footer": "Sample layout, not the official Medicare card design",
+      "back_rows": [
+        [
+          "Questions about Medicare",
+          "1-800-MEDICARE (1-800-633-4227)"
+        ],
+        [
+          "TTY",
+          "1-877-486-2048"
+        ],
+        [
+          "Website",
+          "Medicare.gov"
+        ],
+        [
+          "Drug coverage",
+          "See your Prairie Rx (Part D) card"
+        ],
+        [
+          "Medicaid",
+          "See your Prairie Health card"
+        ]
+      ],
+      "back_notes": [
+        "Medicare pays first. Show this card and your Medicaid card",
+        "at every visit. Keep your Medicare number private."
+      ],
+      "notices": [
+        "Medicare pays first; show your Medicaid card too. TTY users call 1-877-486-2048.",
+        "Keep your Medicare number private; Medicare will never call to ask for it.",
+        "This image is a sample layout, not the official Medicare card design.",
+        "SAMPLE: synthetic test data from open-synthetic-patients. Not a real insurance card; the plan, numbers and member are made up."
+      ],
+      "front_description": "Front of the card: name Kimberly Gonzalez, Medicare number 3TQ7-RW5-CH42, and Part A (hospital) and Part B (medical) coverage starting July 1, 2018. A sample layout, not the official Medicare card design. Marked SAMPLE.",
+      "back_description": "Back of the card: 1-800-MEDICARE and TTY numbers, Medicare.gov, and notes that drug coverage and Medicaid are on separate cards, with a QR code and a barcode of the Medicare number. Marked SAMPLE."
+    },
+    {
+      "key": "partd",
+      "brand": {
+        "name": "Prairie Rx",
+        "mark": "Rx",
+        "tagline": "Synthetic Medicare drug plan",
+        "color": "#7A2E3A",
+        "accent": "#F4D6CC"
+      },
+      "card_title": "Medicare Prescription Drug Plan (PDP)",
+      "member_id": "PRX104417229",
+      "member_id_system": "https://prairie-rx.example/member-id",
+      "type": {
+        "coding": [
+          {
+            "system": "https://nahdo.org/sopt",
+            "code": "122",
+            "display": "Medicare Drug Benefit"
+          }
+        ],
+        "text": "Medicare Part D prescription drug plan"
+      },
+      "period": {
+        "start": "2018-07-01"
+      },
+      "card_issue_date": "2025-12-01",
+      "payer": {
+        "name": "Prairie Rx Medicare Prescription Drug Plan",
+        "payer_id": "PRXPD",
+        "website": "https://prairie-rx.example",
+        "contacts": {
+          "member": "1-800-555-0150",
+          "provider": "1-800-555-0153",
+          "pharmacist": "1-800-555-0151",
+          "mail_order": "1-800-555-0152",
+          "payer": {
+            "line": [
+              "PO Box 3320"
+            ],
+            "city": "Springfield",
+            "state": "IL",
+            "postalCode": "62709"
+          }
+        }
+      },
+      "classes": {
+        "plan": {
+          "value": "S9999-001",
+          "name": "Prairie Rx Value (PDP)"
+        },
+        "rxbin": {
+          "value": "999215"
+        },
+        "rxpcn": {
+          "value": "MEDDPRX"
+        },
+        "rxgroup": {
+          "value": "PDPVAL"
+        },
+        "rxid": {
+          "value": "PRX104417229"
+        }
+      },
+      "copays": [
+        {
+          "type": "rx",
+          "string": "Tier 1 $0 · Tier 2 $5 · Tier 3 $47 · Tier 4 40% · Tier 5 25%",
+          "text": "Prescription copays by drug tier"
+        }
+      ],
+      "front_rows": [
+        [
+          "Plan",
+          "S9999-001 Prairie Rx Value"
+        ],
+        [
+          "RxBIN",
+          "999215"
+        ],
+        [
+          "RxPCN",
+          "MEDDPRX"
+        ],
+        [
+          "RxGrp",
+          "PDPVAL"
+        ],
+        [
+          "Coverage",
+          "Medicare Part D"
+        ]
+      ],
+      "copay_box": [
+        [
+          "Tier 1",
+          "$0"
+        ],
+        [
+          "Tier 2",
+          "$5"
+        ],
+        [
+          "Tier 3",
+          "$47"
+        ],
+        [
+          "Tier 4",
+          "40%"
+        ],
+        [
+          "Tier 5",
+          "25%"
+        ]
+      ],
+      "footer": "Medicare Part D · use with your Medicare card",
+      "back_rows": [
+        [
+          "Member services",
+          "1-800-555-0150"
+        ],
+        [
+          "Pharmacist help desk",
+          "1-800-555-0151"
+        ],
+        [
+          "Mail-order pharmacy",
+          "1-800-555-0152"
+        ],
+        [
+          "Prescriber services",
+          "1-800-555-0153"
+        ],
+        [
+          "Submit paper claims to",
+          "PO Box 3320, Springfield, IL 62709"
+        ]
+      ],
+      "back_notes": [
+        "Pharmacists: process with the BIN, PCN and group on the front.",
+        "TTY 711. This card does not guarantee coverage or payment."
+      ],
+      "notices": [
+        "TTY users call 711.",
+        "Medicare Part D plan: show this card with your Medicare card when you fill a prescription.",
+        "This card does not guarantee coverage or payment.",
+        "SAMPLE: synthetic test data from open-synthetic-patients. Not a real insurance card; the plan, numbers and member are made up."
+      ],
+      "front_description": "Front of the Part D card: Prairie Rx logo, member name Kimberly Gonzalez, member ID PRX104417229, plan S9999-001 Prairie Rx Value (PDP), RxBIN 999215, RxPCN MEDDPRX, RxGrp PDPVAL and copays by drug tier. Marked SAMPLE.",
+      "back_description": "Back of the Part D card: member services, pharmacist help desk, mail-order pharmacy and prescriber services numbers, claims address, a QR code and a barcode of the member ID. Marked SAMPLE."
+    },
+    {
+      "key": "medicaid",
+      "brand": {
+        "name": "Prairie Health",
+        "mark": "P",
+        "tagline": "Synthetic Medicaid plan",
+        "color": "#2E6B3F",
+        "accent": "#F2C14E"
+      },
+      "card_title": "Medicaid managed care · Dual eligible",
+      "member_id": "991447302",
+      "member_id_system": "https://prairie-health.example/medicaid-id",
+      "type": {
+        "coding": [
+          {
+            "system": "https://nahdo.org/sopt",
+            "code": "21",
+            "display": "Medicaid (Managed Care)"
+          }
+        ],
+        "text": "Medicaid managed care"
+      },
+      "period": {
+        "start": "2024-01-01"
+      },
+      "order": 2,
+      "card_issue_date": "2023-12-14",
+      "payer": {
+        "name": "Prairie Health Medicaid",
+        "payer_id": "PRHMD",
+        "website": "https://prairie-health.example",
+        "contacts": {
+          "member": "1-800-555-0160",
+          "provider": "1-800-555-0161",
+          "virtual": "https://prairie-health.example/nurse-line",
+          "payer": {
+            "line": [
+              "PO Box 2210"
+            ],
+            "city": "Springfield",
+            "state": "IL",
+            "postalCode": "62708"
+          }
+        }
+      },
+      "classes": {
+        "plan": {
+          "value": "PH-MCD-DUAL",
+          "name": "Prairie Health Medicaid (Medicare-Medicaid dual eligible)"
+        },
+        "network": {
+          "value": "PH-NETWORK",
+          "name": "Prairie Health Network"
+        }
+      },
+      "copays": [
+        {
+          "type": "copay",
+          "string": "$0 for covered services",
+          "text": "Member cost for covered services"
+        }
+      ],
+      "front_rows": [
+        [
+          "Plan",
+          "Prairie Health Medicaid"
+        ],
+        [
+          "Eligibility",
+          "Medicare and Medicaid (dual)"
+        ],
+        [
+          "Network",
+          "Prairie Health Network"
+        ]
+      ],
+      "copay_box": [
+        [
+          "Doctor visits",
+          "$0"
+        ],
+        [
+          "Hospital",
+          "$0"
+        ],
+        [
+          "Emergency",
+          "$0"
+        ]
+      ],
+      "footer": "Medicare pays first · Medicaid pays second",
+      "back_rows": [
+        [
+          "Member services",
+          "1-800-555-0160"
+        ],
+        [
+          "Provider services",
+          "1-800-555-0161"
+        ],
+        [
+          "Nurse line (24 hours)",
+          "prairie-health.example/nurse-line"
+        ],
+        [
+          "Payer ID (EDI)",
+          "PRHMD"
+        ],
+        [
+          "Submit claims to",
+          "PO Box 2210, Springfield, IL 62708"
+        ]
+      ],
+      "back_notes": [
+        "Providers: bill Medicare first, then Prairie Health as secondary.",
+        "TTY 711. This card does not guarantee coverage or payment."
+      ],
+      "notices": [
+        "TTY users call 711.",
+        "Dual eligible: Medicare pays first. Bill Prairie Health Medicaid as the secondary payer.",
+        "This card does not guarantee coverage or eligibility; check eligibility before each visit.",
+        "SAMPLE: synthetic test data from open-synthetic-patients. Not a real insurance card; the plan, numbers and member are made up."
+      ],
+      "front_description": "Front of the Medicaid card: Prairie Health logo, member name Kimberly Gonzalez, Medicaid ID 991447302, Prairie Health Medicaid plan for people with both Medicare and Medicaid, the Prairie Health Network and $0 cost for covered services. Marked SAMPLE.",
+      "back_description": "Back of the Medicaid card: member and provider services numbers, nurse line, payer ID PRHMD, claims address, billing order (Medicare first), a QR code and a barcode of the Medicaid ID. Marked SAMPLE."
+    }
+  ]
+}

@@ -14,7 +14,7 @@ function Each($list, [scriptblock]$fn) {
 function Org($key, $name, $type = 'prov', $typeDisp = 'Healthcare Provider') {
   Add ([ordered]@{
     resourceType = 'Organization'; id = (Id $key); meta = (Meta "$UC/us-core-organization$UCV")
-    identifier = @([ordered]@{ system = 'https://parkerapex.com/atlas/organization'; value = "ORG-$IdPrefix-$($key.ToUpper())" })
+    identifier = @([ordered]@{ system = 'https://example.org/open-synthetic-patients/organization'; value = "ORG-$IdPrefix-$($key.ToUpper())" })
     active = $true
     type = @(CC 'http://terminology.hl7.org/CodeSystem/organization-type' $type $typeDisp)
     name = $name
@@ -28,7 +28,7 @@ function Prac($key, $given, $family, $suffix, $org, $taxCode, $taxDisp) {
   $PRAC[$key] = "$given $family, $suffix"
   Add ([ordered]@{
     resourceType = 'Practitioner'; id = (Id $key); meta = (Meta "$UC/us-core-practitioner$UCV")
-    identifier = @([ordered]@{ system = 'https://parkerapex.com/atlas/practitioner'; value = "PRAC-$IdPrefix-$($key.ToUpper())" })
+    identifier = @([ordered]@{ system = 'https://example.org/open-synthetic-patients/practitioner'; value = "PRAC-$IdPrefix-$($key.ToUpper())" })
     active = $true
     name = @([ordered]@{ use = 'official'; family = $family; given = @($given); suffix = @($suffix) })
   })
@@ -45,7 +45,7 @@ function Prac($key, $given, $family, $suffix, $org, $taxCode, $taxDisp) {
 function Coverage($key, $payer, $typeCode, $typeDisp, $plan, $group, $start, $subscriberId = 'AHP-778-48-1978', $memberSuffix = '48') {
   Add ([ordered]@{
     resourceType = 'Coverage'; id = (Id $key); meta = (Meta "$UC/us-core-coverage$UCV")
-    identifier = @([ordered]@{ type = (CC 'http://terminology.hl7.org/CodeSystem/v2-0203' 'MB' 'Member Number'); system = 'https://parkerapex.com/atlas/member'; value = "AHP-$($key.ToUpper())-$memberSuffix" })
+    identifier = @([ordered]@{ type = (CC 'http://terminology.hl7.org/CodeSystem/v2-0203' 'MB' 'Member Number'); system = 'https://example.org/open-synthetic-patients/member'; value = "AHP-$($key.ToUpper())-$memberSuffix" })
     status = 'active'
     type = (CC 'http://terminology.hl7.org/CodeSystem/v3-ActCode' $typeCode $typeDisp)
     subscriber = (PatRef); subscriberId = $subscriberId
@@ -72,7 +72,7 @@ function Enc($key, $start, $end, $class, $type, $prac, $org, $reasons, $label) {
   $typeCC = CC $SCT $t[0] $t[1] $(if ($label) { $label } else { $t[1] })
   $r = [ordered]@{
     resourceType = 'Encounter'; id = (Id $key); meta = (Meta "$UC/us-core-encounter$UCV")
-    identifier = @([ordered]@{ system = 'https://parkerapex.com/atlas/encounter'; value = (Id $key) })
+    identifier = @([ordered]@{ system = 'https://example.org/open-synthetic-patients/encounter'; value = (Id $key) })
     status = 'finished'
     class = (Coding 'http://terminology.hl7.org/CodeSystem/v3-ActCode' $class $CLASSES[$class])
     type = @($typeCC)
@@ -368,7 +368,7 @@ $CAT_EDU = @('409073007', 'Education')
 function SR($key, $date, $status, $cat, $code, $requester, $performers, $enc, $reasons, $note, $priority = 'routine') {
   Add ([ordered]@{
     resourceType = 'ServiceRequest'; id = (Id $key); meta = (Meta "$UC/us-core-servicerequest$UCV")
-    identifier = @([ordered]@{ system = 'https://parkerapex.com/atlas/order'; value = "ORD-$($date -replace '-', '')-$($key.ToUpper())" })
+    identifier = @([ordered]@{ system = 'https://example.org/open-synthetic-patients/order'; value = "ORD-$($date -replace '-', '')-$($key.ToUpper())" })
     status = $status; intent = 'order'
     category = @(CC $SCT $cat[0] $cat[1])
     priority = $priority
@@ -448,7 +448,7 @@ function Eob($c) {
   }
   $r = [ordered]@{
     resourceType = 'ExplanationOfBenefit'; id = (Id $c.k); meta = (Meta "$C4BBSD/$($PROFILES[$kind])|2.0.0")
-    identifier = @([ordered]@{ type = (CC "$C4BB/C4BBIdentifierType" 'uc' 'Unique Claim ID'); system = 'https://parkerapex.com/atlas/claim'; value = "CLM-$($c.start -replace '-', '')-$($c.k.ToUpper())" })
+    identifier = @([ordered]@{ type = (CC "$C4BB/C4BBIdentifierType" 'uc' 'Unique Claim ID'); system = 'https://example.org/open-synthetic-patients/claim'; value = "CLM-$($c.start -replace '-', '')-$($c.k.ToUpper())" })
     status = 'active'
     type = (CC 'http://terminology.hl7.org/CodeSystem/claim-type' $(if ($kind -eq 'oral') { 'oral' } else { $kind }) $(if ($kind -eq 'oral') { 'Oral' } else { (Get-Culture).TextInfo.ToTitleCase($kind) }))
     use = 'claim'

@@ -1,0 +1,196 @@
+{
+  "cards": [
+    {
+      "key": "medical",
+      "coverage_id": "38955a15-dbe5-59b2-90d2-0710377bef4f",
+      "payer_id_ref": "c7b2188e-7fe5-567a-8b9d-ac12f37cb585",
+      "brand": {
+        "name": "Atlas Health",
+        "mark": "A",
+        "tagline": "Synthetic Marketplace plan",
+        "color": "#1F3A5F",
+        "accent": "#E8B33A"
+      },
+      "card_title": "Silver 4500 HMO · Marketplace",
+      "member_id": "AMP-562-38-1988",
+      "member_id_system": "https://atlas-health.example/member-id",
+      "type": {
+        "coding": [
+          {
+            "system": "https://nahdo.org/sopt",
+            "code": "511",
+            "display": "Commercial Managed Care - HMO"
+          },
+          {
+            "system": "http://terminology.hl7.org/CodeSystem/v3-ActCode",
+            "code": "HMO",
+            "display": "health maintenance organization policy"
+          }
+        ],
+        "text": "HMO"
+      },
+      "period": {
+        "start": "2025-01-01"
+      },
+      "card_issue_date": "2024-12-12",
+      "payer": {
+        "name": "Atlas Marketplace Health Plan",
+        "payer_id": "ATLMK",
+        "website": "https://atlas-health.example/marketplace",
+        "contacts": {
+          "member": "1-800-555-0140",
+          "provider": "1-800-555-0141",
+          "pharmacist": "1-800-555-0142",
+          "mail_order": "1-800-555-0143",
+          "virtual": "https://atlas-health.example/virtual-care",
+          "payer": {
+            "line": [
+              "PO Box 1460"
+            ],
+            "city": "Springfield",
+            "state": "IL",
+            "postalCode": "62706"
+          }
+        }
+      },
+      "classes": {
+        "plan": {
+          "value": "ATLAS-SILVER-4500-HMO",
+          "name": "Atlas Silver 4500 HMO"
+        },
+        "network": {
+          "value": "ATL-CONNECT-HMO",
+          "name": "Atlas Connect HMO"
+        },
+        "rxbin": {
+          "value": "999102"
+        },
+        "rxpcn": {
+          "value": "ATLRX"
+        },
+        "rxgroup": {
+          "value": "MKTSLV"
+        },
+        "rxid": {
+          "value": "AMP562381988"
+        }
+      },
+      "copays": [
+        {
+          "type": "gpvisit",
+          "amount": 40
+        },
+        {
+          "type": "spvisit",
+          "amount": 80
+        },
+        {
+          "type": "urgentcare",
+          "amount": 75
+        },
+        {
+          "type": "emergency",
+          "string": "$500 after deductible"
+        },
+        {
+          "type": "IndInDed",
+          "amount": 4500
+        },
+        {
+          "type": "IndInMax",
+          "amount": 9200
+        },
+        {
+          "type": "rx",
+          "string": "$15 / $50 / $100 / 40%",
+          "text": "Prescription copays by tier: generic / preferred brand / non-preferred brand / specialty"
+        }
+      ],
+      "front_rows": [
+        [
+          "Plan",
+          "Silver 4500 HMO"
+        ],
+        [
+          "Network",
+          "Atlas Connect HMO"
+        ],
+        [
+          "Coverage",
+          "Individual (Marketplace)"
+        ],
+        [
+          "RxBIN / PCN",
+          "999102 / ATLRX"
+        ],
+        [
+          "RxGrp",
+          "MKTSLV"
+        ]
+      ],
+      "copay_box": [
+        [
+          "Primary care",
+          "$40"
+        ],
+        [
+          "Specialist",
+          "$80"
+        ],
+        [
+          "Urgent care",
+          "$75"
+        ],
+        [
+          "Emergency",
+          "$500*"
+        ],
+        [
+          "Rx",
+          "$15/$50/$100/40%"
+        ]
+      ],
+      "footer": "Deductible $4,500 · Out-of-pocket max $9,200 · *after deductible",
+      "back_rows": [
+        [
+          "Member services",
+          "1-800-555-0140"
+        ],
+        [
+          "Provider services",
+          "1-800-555-0141"
+        ],
+        [
+          "Pharmacist help desk",
+          "1-800-555-0142"
+        ],
+        [
+          "Mail-order pharmacy",
+          "1-800-555-0143"
+        ],
+        [
+          "Payer ID (EDI)",
+          "ATLMK"
+        ],
+        [
+          "Submit claims to",
+          "PO Box 1460, Springfield, IL 62706"
+        ]
+      ],
+      "back_notes": [
+        "HMO: see your primary care doctor first; specialists need a",
+        "referral. Out-of-network care is not covered except emergencies.",
+        "TTY 711. This card does not guarantee coverage or payment."
+      ],
+      "notices": [
+        "TTY users call 711.",
+        "This card does not guarantee coverage or payment. Misusing it may be fraud.",
+        "In an emergency, call 911 or go to the nearest emergency room.",
+        "HMO plan: specialist visits need a referral from your primary care doctor. Out-of-network care is not covered except in an emergency.",
+        "SAMPLE: synthetic test data from open-synthetic-patients. Not a real insurance card; the plan, numbers and member are made up."
+      ],
+      "front_description": "Front of the card: Atlas Health logo, member name Mavis Dracula, member ID AMP-562-38-1988, Silver 4500 HMO plan bought on the Marketplace, Atlas Connect HMO network, RxBIN 999102, RxPCN ATLRX, RxGrp MKTSLV and copays. Marked SAMPLE.",
+      "back_description": "Back of the card: member services, provider services, pharmacist help desk and mail-order pharmacy numbers, payer ID ATLMK, claims address, referral rules, a QR code and a barcode of the member ID. Marked SAMPLE."
+    }
+  ]
+}

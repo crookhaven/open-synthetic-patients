@@ -8,7 +8,9 @@
         "resourceType": "Patient",
         "id": "GPX-SYN-0000000279-0",
         "meta": {
+          "lastUpdated": "2026-11-03T12:00:00Z",
           "profile": [
+            "http://hl7.org/fhir/us/insurance-card/StructureDefinition/C4DIC-Patient",
             "http://hl7.org/fhir/us/core/StructureDefinition/us-core-patient|6.1.0"
           ],
           "tag": [
@@ -398,7 +400,9 @@
         "resourceType": "Coverage",
         "id": "43294409-74c6-559b-9e72-691fb3392f88",
         "meta": {
+          "lastUpdated": "2026-11-03T12:00:00Z",
           "profile": [
+            "http://hl7.org/fhir/us/insurance-card/StructureDefinition/C4DIC-Coverage",
             "http://hl7.org/fhir/us/core/StructureDefinition/us-core-coverage|6.1.0"
           ],
           "tag": [
@@ -409,10 +413,209 @@
             }
           ]
         },
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/us/insurance-card/StructureDefinition/C4DIC-PlanBeneficiaries-extension",
+            "extension": [
+              {
+                "url": "memberId",
+                "valueString": "3TQ7RW5CH42"
+              },
+              {
+                "url": "name",
+                "valueHumanName": {
+                  "family": "Gonzalez",
+                  "given": [
+                    "Kimberly"
+                  ]
+                }
+              }
+            ]
+          },
+          {
+            "url": "http://hl7.org/fhir/us/insurance-card/StructureDefinition/C4DIC-AdditionalCardInformation-extension",
+            "valueAnnotation": {
+              "text": "Medicare pays first; show your Medicaid card too. TTY users call 1-877-486-2048."
+            }
+          },
+          {
+            "url": "http://hl7.org/fhir/us/insurance-card/StructureDefinition/C4DIC-AdditionalCardInformation-extension",
+            "valueAnnotation": {
+              "text": "Keep your Medicare number private; Medicare will never call to ask for it."
+            }
+          },
+          {
+            "url": "http://hl7.org/fhir/us/insurance-card/StructureDefinition/C4DIC-AdditionalCardInformation-extension",
+            "valueAnnotation": {
+              "text": "This image is a sample layout, not the official Medicare card design."
+            }
+          },
+          {
+            "url": "http://hl7.org/fhir/us/insurance-card/StructureDefinition/C4DIC-AdditionalCardInformation-extension",
+            "valueAnnotation": {
+              "text": "SAMPLE: synthetic test data from open-synthetic-patients. Not a real insurance card; the plan, numbers and member are made up."
+            }
+          },
+          {
+            "url": "http://hl7.org/fhir/us/insurance-card/StructureDefinition/C4DIC-CardIssueDate-extension",
+            "valueDate": "2018-05-15"
+          },
+          {
+            "url": "http://hl7.org/fhir/us/insurance-card/StructureDefinition/C4DIC-ColorPalette-extension",
+            "extension": [
+              {
+                "url": "http://hl7.org/fhir/us/insurance-card/StructureDefinition/C4DIC-ForegroundColor-extension",
+                "valueCodeableConcept": {
+                  "coding": [
+                    {
+                      "system": "http://terminology.hl7.org/CodeSystem/IECColourManagement",
+                      "code": "#FFFFFF"
+                    }
+                  ]
+                }
+              },
+              {
+                "url": "http://hl7.org/fhir/us/insurance-card/StructureDefinition/C4DIC-BackgroundColor-extension",
+                "valueCodeableConcept": {
+                  "coding": [
+                    {
+                      "system": "http://terminology.hl7.org/CodeSystem/IECColourManagement",
+                      "code": "#2F4F6F"
+                    }
+                  ]
+                }
+              },
+              {
+                "url": "http://hl7.org/fhir/us/insurance-card/StructureDefinition/C4DIC-HighlightColor-extension",
+                "valueCodeableConcept": {
+                  "coding": [
+                    {
+                      "system": "http://terminology.hl7.org/CodeSystem/IECColourManagement",
+                      "code": "#D6E4F0"
+                    }
+                  ]
+                }
+              }
+            ]
+          },
+          {
+            "url": "http://hl7.org/fhir/us/insurance-card/StructureDefinition/C4DIC-Logo-extension",
+            "extension": [
+              {
+                "url": "description",
+                "valueString": "Medicare logo: a M monogram in a circle beside the plan name. Synthetic brand."
+              },
+              {
+                "url": "image",
+                "valueAttachment": {
+                  "contentType": "image/png",
+                  "data": "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"
+                }
+              },
+              {
+                "url": "label",
+                "valueString": "Medicare"
+              }
+            ]
+          },
+          {
+            "url": "http://hl7.org/fhir/us/insurance-card/StructureDefinition/C4DIC-QRCode-extension",
+            "extension": [
+              {
+                "url": "description",
+                "valueString": "QR code on the back of the card holding the plan name, member ID, group and pharmacy numbers as text. Synthetic."
+              },
+              {
+                "url": "image",
+                "valueAttachment": {
+                  "contentType": "image/png",
+                  "data": "iVBORw0KGgoAAAANSUhEUgAAAOQAAADkAQMAAACymRrOAAAABlBMVEX///8AAABVwtN+AAACdElEQVR42uWYMY5jSQxDnxubs27g+x/LN2Cd4G2g3xMNdoNddTI/MIz6sAlJJZEU/GmP2lZs0DQgRS1f//jL//IWCsU2aSqlbZzjPdy/wAvnEk4OOd43nDlexQW8755e3vQc4PM//PO/5tlWLaJa01Jql/P8onDo8dVTXuQFc7yH+0K4v3kRuGczzwBtbGiRFJsfqC+1IW1QIQ1RWe5fnTvd1mLA1Kzj0pKKRCZOhSzjxgYsrUEokSTL9Q1aQzBim+Y7+6u4TWJjkpYKTcVu42oQ6VPbxkba7XipbUiTUmKSkF1cpabPp9Ya+YH6CtpAUp2R0dRl3LQMKKm1FEO3+zcyU0IyYyTVNtt5bmsk1oIxkW7XV8rgTahMtDTbvJAyNCDwdFC63b/SmAJtQ5nmdZsXVGUutT6Cdg5XcWnpdK8d5jeWdp0HawShFdqadp3380RZWgz59W05XtUmiNamTXQbt0MCsTRx2GGdf79IXx5yXxg+9xx4Xc66L7t4eskdX9Q3xxce+KzzbzBNaMaURtjWdegv6zuUkLFq6zqn/TYJaGKkdV3nPLJqplajjMpanhvEkjSdcWE0SeP+vAqMMxvxMdVenht2uKBRxvCn8AM8SBgFO5ZUY1yv77d8fiKemyWk23lOkmG/sShphp6W+8h21I4kJETmfu/OjdkxkIwvC/YxwLv9S03Eb63VudfL9X04uCOj9RFcy/r5C7XpAXooJzkklA/7+1iSUdHlm5vWdY6jH8eFtkklWnZ1zmwL33g/78s7cG4/97K9F51lJKfwhtPDu5wb7n596+PwDR0fnPX9hn0WKfF7g/QIrO3+/XOevwHbZaipLm2E4QAAAABJRU5ErkJggg=="
+                }
+              },
+              {
+                "url": "label",
+                "valueString": "Card details"
+              }
+            ]
+          },
+          {
+            "url": "http://hl7.org/fhir/us/insurance-card/StructureDefinition/C4DIC-Barcode-extension",
+            "extension": [
+              {
+                "url": "description",
+                "valueString": "Code 128 barcode of the member ID 3TQ7RW5CH42, for scanning at check-in. Synthetic."
+              },
+              {
+                "url": "image",
+                "valueAttachment": {
+                  "contentType": "image/png",
+                  "data": "iVBORw0KGgoAAAANSUhEUgAAAWAAAAA8AQMAAABilPI3AAAABlBMVEX///8AAABVwtN+AAAAS0lEQVR42u3KMQrAQAgEwCVpBb8SuFbI1wVbwa8ItlfcDwLpd+oBoI/b6umVWvWa7O1TIaIm3jHReatpNnDhB2ZmZmZmZmZmZuZvB1wDFZVgI86LAAAAAElFTkSuQmCC"
+                }
+              },
+              {
+                "url": "label",
+                "valueString": "Member ID barcode"
+              }
+            ]
+          },
+          {
+            "url": "http://hl7.org/fhir/us/insurance-card/StructureDefinition/C4DIC-SupportingImage-extension",
+            "extension": [
+              {
+                "url": "description",
+                "valueString": "Front of the card: name Kimberly Gonzalez, Medicare number 3TQ7-RW5-CH42, and Part A (hospital) and Part B (medical) coverage starting July 1, 2018. A sample layout, not the official Medicare card design. Marked SAMPLE."
+              },
+              {
+                "url": "image",
+                "valueAttachment": {
+                  "contentType": "image/png",
+                  "data": "iVBORw0KGgoAAAANSUhEUgAAAoAAAAGUCAMAAACSvGMBAAABIFBMVEX////9/f35+vv19vjw8/Xr7vHm6/Dk6O3h5uve5OrW5PDc4ufZ3+XT4u7T3ufT2+TP197J1+PJ0trI0tzC0uHH0NnBztq/ytW8x9K5yNW5xNC4xNC4w861wc2wwtKvvMmqucmmtcShsL+arsGbq7yWp7iRpbeQobOMoLSKnrCEmKx+k6h4j6V4jaJ3jKF1jKJyiaBthJxpgJhnfpZmfpZmfpVkfphie5NgeJFfeJFddo9cdY5bdpBZdI1XcYtWcIpVb4pVb4lTcItTbohRbIdQbIhPaoZNaYVMZ4NKZoJIZIFEYX5CX3xAXXs/XHo+XHs+XHo9XHo8Wnk6WXc5V3Y3VnU2VXU2VXQ1VXQ0VHMzU3IyUnIxUXExUHAwUHAvT296Tr6DAAAsO0lEQVR42u2dCVvaStvHAygqal1SxC4WsagFtAXbHlkOaB88oKA+PoAvB0Hm+3+Ld2ayzSSTEPbF+39drSSZmcTk5z1LZv5ICASaoiS4BSAAEAQAgkAAIAgABIEAQBAACAIBgCAAEAQCAEEAIAgEAIIAQBAIAAQBgCAQAAgCAEEgABAEAIJAACAIAASBxgdgQBPcONCkAQyYBTcPNDkAAyLB7QNNBsCAneAGgsYPYMBJcAtBYwYwEAACQdMDMBAAAkHTAzAQmCiBtxJWHH/YwD+D8HzePICBwMAEhglL0oa61Vyim6cAIKgPAAOBwQlUAJR+K1sJCQAE9QtgIDAEgSqAIWVrHQAE9QtgIDAMgSqAnjuy8VvqE0AQADgaAKUjshECAEH9AhgIDEUgBXBbknwNhMoe+lEHsBEPLXt9q+GMnjq5u+RdjdyJquBm4uOKz7sajD+RnBdHu8tez9JG+ELNqaS8C/s9QXHRoDcM4HeFpwj+8cMAMLmkBkQp3KI7Omq49J5aAbxY1hLv460DSVewYQCYX1LTW4oGzSuALF5Juqesbm3W6GbMmUDKVGtFkla7dR8OgLc6gN89BkX7XbInKrHiAEwZiU0ASgc6gFsrZHtXVDRocQBEh8rWMXINYDuG/0uRuJbUAXzAOEpLiacqxS6B91QJNr4fzw/HFgCfaEQ7KLQecqekNRk5SBYf2k+/SYXuqWoASp5opfH7SFA0aF4BDAgA/EvZKosADIgBJMFvF8enlY4OIK1maYkf8Yc1bU9c76ywANJDEevllcn+cx1A9W/CWjRokQDsvicbh6gPAGnzDyuGdACDJEq9kiR0dLqiYlenrUMzgEE90qnKHW0tedk+NUnpURoFgqJBiwQgOiMbl30BWKatMl/dAHCda/BJuDe7RbihmQpmAEniZaPQboTNeqwBqL3wsxYNWhwA/4NQ410gsNelH90CqIS3CDIAXOMpOWcBzJsBXOMBTEhCAHfVw9aiQXMKYMAK4Ff87yQQOMM/jgQABmwAJC9BPGXEV8GMEv1UwbtkrCZe7aAKB6D20s5aNGhxANzEHFQCO884Tu31ASCpF8kLYa4TstRgkxqdkP0enZBVMrhNPsSFAFqLBi0QgN/ISAz5L9IXgKp0AO/JWMlW6r5dK12ehshgXoW0E5eSzUfrMMwjHYYJX7085Y8xh2T0xZt8rsZ9QgCtRYMWCEAS/P7GYbC6ORSA6JwZLVZmyzgMRCe5geiYuA2oz5uxFg1aHABp8w/rW2A4AJn3ZSol7QOXr+LaaivPcyoG0Fo0aIEA3KMvt553hgUQNeL7Kz7P8nowelFX9vzY9XlXDm0mI+DE3pVg/BFvdOJb+HO4+GgDoKBo0MIAqAwBngVcAQgCjRxA8hKkuwcAgqYEIHkNfBkAAEFjBxCJAVQlAhBuJggABAGAIBAACJp7APtbEgL8gQBA0EIBiIA/0FwD2Ensra7tp4wd0X32ML9l2X3ql2khW/6YJc2N/9Yuu5NO/X7/VrjsnKi7jQvvoRs9Se8iSYrV4Bmg1j+AQzojdA62Lp5rZ6snAwK4tlLAPy7XV0YH4BpClf2Nmnn/0Udm49K/ddoHgOIimRJJiufv/h/A2qQBjPsJQOjcn+7rinQAtw6j+EfkaDXmAEDfAKI//qQjgJGPsa1OXwAKijQBiFAoDKz1D+Bw7ljbynzQ9tYhfqqfT7f8JcJW93RrJXRGHiDZinyOyWuhK4RipJ465wH8td5C9dUcBTAVWt2I/ktqyJian6bDu7dPW0x25URGciuAdVyl88kjuJL0a1Gvvvq94v+t5WASqheqn58v0r5EAHAIAIfxB6xpT+BgCz8W/9G9wlZ8/Xfjcl0H0H/8UIts0Ulbzz/XUhyAnY0LdL7dJQB+98dr5SBZiZJY/9n4va4CeLaSeLiPK6v0lOzKiYzkVgCLSrhik7MR8Gy1jvYPmUxaQvVC9fNbirQpkVbBP/wpYG0QAIdwSK341SVBR/gJKIwRZjZitHbWANzuMhVaNMwBiI7DaD+GMIBdEkVRwV9h8uN03Y0oV3mH1RMxyYm+a+XzDTY9OQdgKEK4rlnK1S7UuH5rkcISSSfE7492gLWBABzcI5qPgJ/U2vXeT+JVVgeQVNNVfx5Vj7ZW/P49HsDiCoEIA1ihbfjOygWTH6er+LWFv3p2eiIjuQlA2mUtmZOzuJT9P3GVupKwlKteKHP9XJH2JRJEW4XtCLA2GICDu+RzbcCDHgDuHZSe0UmQBxAFt/EGBVBRwg5APTst0EguqIKtyVlcTpSce8KEIgDXepWopDjzg0vDgAAO/D0hcf+10gu+ZABE63wVrD7XZ/8vUv2ZAUz4zymA3Y3vWql8FaxawhjZaYFMciGApuTMiE5ni3a58/4bUULylyKogh1L1AG8A9gGBHDQb0oi44DN+tkqgcR4LPH1y+fLDUsE3D58ejzxmwGkop2QjYt6PRe+J/l/GZ2Q85XEE+2E6NmVExnJxRHQlDy+oaX86adjyt2tY1FCcqH6+fkibUukKV6utvfAK25gAAf9rrh2Iqi9CTEA7J5urIQSpELiACyGVtcjR7YAoov9tfVPF3QYZoMdhtlThmH07MqJjORiAE3J6+F1tcEaVj0+jjdeBAnJhern54u0LZG2Ele2ow/A2hAAjvrbMs9WX+DWg/oBcGTfF1yKVRq/t6Jw50F9AshBOPgJO3F5VY5BAAQNAiAIBACCAEAQCAAEAYAgEAAIAgBBIAAQBACCQAAgCAAEgQBAEAAIAgGAIAAQBAIAQQAgaE6UTucAQNC04CMCAEHTo48AmAMAQdOib4IhEAAECegDAEFTpQ8ABE2VvskRCAACfQAgaOboAwBBU6VvYgQCgEAfAAiaPfoAQCd9lySpiVD3UJI837Ut8kP6Qw5fkE+X6h7J69+/QNoG1ra+4V05KBiltTckaZ24JpEPay3tXN2Lg1Wfd3kronwXSDMeXPIsbUWr2nWEyIctSYrjHx5JV4M+afLphr1kZLoSc46ZoW9SBM4zgK9hzF8ScQCGyeEgByDRmRBAwmDWYKOAaSDOqKe4WP3ePwT1pGSzvKZu+ZJaMWl7AMPk09EMAZjuS9MH8JMs3yJ0Jcth+lkmm+Z9IWL+yRyU948fJgJg5wBDkUI8gB4cmf5IDIBNVMEBbYMjQN1oZ5ck6SNzJIoLvEFlrwYNCXgYLd9p5aWaPcZloNoKLivbusOn9mTUU24bACo6wjuDxJG36SPHlzsCAJvc76PnmB34sGagF4x5+obQsQrbL9G+TkyOsgd/tY7l6CQAbHzEuFwgDsAlL0HngPw0AETHkuQXAUgj1BZz5AWjut3ZxRWwnpBEw9/GiXFRHmJ3/7qh55SkFA8g2bnySD6d4+JwxLzoBaCR443R5wLA/b36ffAjDyC/71Le5wBEKTk8CQD3MH8/EQ/galjyNaoeKepjAKxu8XGOBzDEHiGVMObPk9XPtI5PxJx4VZIUC+sEzlMhOf1+af2VBfAPPreXfkseaQrET+jJHQFkcrwx+lwAeCafx/F/HIDcPlEEjE8CQFw1XiIzgCWPFDuSvPc+vg24+8BsxLgqOMkBEZWMVhtRC28x353ZlJRWIkJ5GvnIKTGKCQbA2qrS5MSqeCTPwx2Gq2bTBoyZc4xHudys0ucCwGL4UyiS1duAe4J9wQJ7EGv8X0ulPML1JwuAKCT5fbgnYgJwKSUAkLbPEjwbpBJmKmB0LylkrUuURG0Tw0WhIafsrEv+lg7gKw7MUkSvvnF83VYO2QLI5hgXgbNKnxsAU7J8meUjILevm5FDdTYCVj/JPyYBIK4tNx4tAF6SIzeIrYJruInvfbBWwRTApKlK/C2pbTY+AqoAiiIgSmGSdABJCN1u6/X1d4TitLVoXwWzOaYM4DQGNHoC2Ap96pgB5PcF5SuuDZiUQ60JAJjABK4/mAEklSEOOyyAqI1TngvagE8RDGueB6KIP+eZM62rA30kkJ1Spj7qbcA79ZTb0tKqCmAKn2pZ/Y6arDHCUrIHkM0x1Tp4SiNqPQGkt9IEILsPR8C9Ggfgc0i+mMQwTBI/urWqGcAfFD0LgHFRJ6SzQQdRnAA81bokCoBRtRfc1XvBq+pwMwWwRLoT2ujZoQFg1BZALsfUQuAUh3T7AZAoY9kXiuTYgxjEb/LhRAaiU16FQA5AReYqWEoLe8FJ/OOnI4BNTJovXm1X1ymAyjjgCx0HTOunDKkANsgotfYNiWQQkH5Z3iUdChQDyOWYEoDTfacw16/iCIGrFWcAFYWYDY9RQHedhED2iBlAVN3VCyGNwdKq6U0IOWXRowB4ZcQ86RIfW1Y6Nj7SrGROwnzkckwDwKk/yrkGEF1gAlcqPQD0LG3H22IAyVAxRcUeQPSa+uj3+la2j37Slm0zvrvk8W3o74LpKcMCAIPqe0EaID9PF0AbAmfhUcJsmDchIYDXACAIAISHAwQCgCAAEAQAAoCgGSMwXQAAQVMCUElSAABBJl1PAEA9CQAIMpMxWNOtDwLZFAAgyEzGeAE0JykAgCATGeOrgwVJAECQmYwxhUDxdAUAEDSa8TtnAO2naxUAQKBvFAQ6AOg4WxUAfNMa4SsMm6J6zdUHAAHAMQLoQgUAEAgcWx0MAA6i14uDNa939YDMXV5mJhVfmdyrtvQjVT0vZ4x1rs6bX1ccD+oeSSqiqpYpxZ0z9XHF61vdTzDrO7z6evQUWadMPjS+f17xetePaosTAgFAa8Ncm9N+YQaQd68yALw3AagaYxHWbhGqYfCWEPV1W+qKAbzX14bUBABWlzQAj9RUK1Wog4cH0MYda+/TcRlpCzWL0VBw/+gFdQ9kuaJmUhyytBzKzoMOKskhpC2cO0FD+GxlP/6+b1wsaWt2yVOnT59zr9KXPISoOxYLoG6MhVboorSUung3Skus6qs5DCmr4x6apfNg3QpgNyh5NQC90Uo9Pkqzg6nXwVPshIjdsX41foeCWXXPL3n/7+fyaRNdY2ISagLFIUvLoZaUEgA4lM/WZyuAJvcqqlu6Lp0HUDPGIj/CJP+ql4CoLP4VAXjKEm0B8FTyHauXEC+qzK8vRh087spsEHcs/DMlf2xrq9BVymLyoXzQRYxDlgnAz20LgMP4bJEI6EmaADS5V1FFcH3YFgEYUtJRb4PILoauhYFS6mWfz7sSLjNn41yyzAAWvNJ5gkMuwgXduQVwAq2pQdyx8M8HWb6hn7Ky/Ex3v4Tkq5B8jRiHLB7AYzllAXBwny3a1Fq9RDyAZu8WorpPs6EyV8GE3jLpoDQxQMfSCllC7n1BehvQl9Ez8S5Z35lmJ1mPvip9RhyAxDjhaN77wZNpzg/ijoUJ6chyln66kNXAgMNX91SOIcYhS8uhlFQ4+Fg0Azi4z5bS1t+q8ACa3atoZMYdi4YKJ8GTM8aifZgfGLzKbwziiSTtklL2kpVGCh9Y0zMZBQsADEvLTzyA+JzLVTTPIXBi/clB3LGEEfAYt+fScuiFccjiI2DxQj5hADwd1mfrKYkRCVojYEyPgNShprNCrVkEACrV90fcXSDRr+GRvge1+En0g/RLtEzWCGhUwSXaGWcBPPVIvrzrR0Dca2YLwEkOaAzijiVqAzaCtPcqXzIOWSYAO7ibjAGM4N4IxjUxvM8W7mt6XixtwAO+DZik3mwmAHVjLFrIRpBk2pIOfcQpRlOJmBVomQyXLCuAjLsBTfKCm5fLrkYuqrVWrlRNX1Wzt00nCCdaB094RG0QdyyuF3wh7+ebt6dJmbR5fmitOOqQZQIQd5gJgEk5Ur8LBcvD+2zFdWt5HcAobrk9qI2wXbpn2zwgwhljUTsNj4/0gI8kzJ+nwUXAW64XnHUF4NMuRrrS+87/Kd3qDz2bzmTSuae77pRD4BSGdAdxx5L3Do5L+jjgFR0HjNDa8k4O1g2HLC2HVlI3TADsJsOhUCQvKN29z9bH00K9TlppW6Ze8JMf78tR9yrF9CyHwbkVAKgaYyH06lPHAOlYIC3vKPK72rhY5jqyZBxwKfHQLP8QjQMiowq+xUEYJ+mhbC4vAuDm9XV6AE7nncJ8vgnR3nAs5U0AohvOvYqOFe4jEYCKMZYyZEffgjx5NHfosFb6H7a6dHwTYgAY0ZL5bF/jkIhno2KxNJ06eGqPcj4BrJxsL5MXvvfIDCB5F7xMXqwpndAq/pgTAqgYYymVq8IoseGl1NYSoVWvb/2Ifw2juGTZvQt2C2DvNlhlCiFwiivUF3M2TJjztp8ZueqCZhoA4NyrsSJ5LueRPkUPk66DAcBRK+cZu/P3uOgTzj4ZIYAzRiBMSJ01+ohqb6cOBgBnjj6icndscQsABPp6K9uYbB18fQ0AAn2sqrNYB6fTbQDwLdBHVBpb3BoQQJoMAJyPPnh6eF1PeCDm2tXfEwD4ZgDMzU4dzCZrA4BvBEDz69lB4tYoADQlAwAXiMBKMV3J2B/uTLYOdteSBQAXBcB2s4ZQCzUK9immXAe7uioAcC4BREgfaG7nW1lXBE4WQLd/FgDg/BFoSVyxSfg6rTrYMXIDgLM13PfUH4CixK9ZV2knEwJ7tx0AwNmhL90fgLYlVd2MxEwAQDddJwCQqHmy4fMsre2T+ch5h+nvjkdTwSXvijLvWWSjxSUonWzwbkXp9M/j3WWPdyVSs0l8qjyw5L7f6/FtRZ1oqc7CWLRLzSWAZ3K23yyH+88O/GnAbA8BYFRdH3yLxDZaXAIvZ5dFn8RnzgfLmlgBMOlTk310gOXBzdu4WfDJGj2BvVbF/UIoQ9ayoXQktHeYxJ23++P9YChc1VywKjRVSFkVLN8zHlnGmsznULhrJNeSaP5Xel6aVjv6Sz63v644Ru+mVU0f7Q8O4CU+kG1E1KVJVLyNFpdgI1pYVgHUHsRnbzh5caT6YJkTL2kAhiVp6ewn/t/z0wGWmpsZCW8awKQcrjxEiZvVoVxslU7vFDuXM/ngRUn1QrwSEOeRZVRlyjJ0NbmWxPC/UvNSaUebewdd2+v6zBhlbOvegOd0LdBGlExlOpGkz7ch34Z+9Pl43eddD1+8MrQdIWKIIGkmBiYbLXMCCiDzII7OyP/bymIkQeJTLU4GcRwkRg19h8DGTNbBaBoA1vdkfGMfg/JNXd57Ng7WZbnEAch5ZOl1mVxgkmtJDP8rFkC9gIh8Z3tdB5K0lmoIAcTaaFEAg2Rlr350X/2g0db1KbStG+uXeBstSwKdKU4fadS0TxwnEfA3joAbfTcCs93Zq4NH3jpzCWBGlokJRlg+awblg3j2xQZAziOLKebJSK4nMfyvGACNAmLyT6cqGNdpG5G0pZJtXW1Qy0kMoPS5Yhxte6SV21b5PKitt3hQzWN2JUld/G6y0TInSC8JAVyloc9SmkHr6Qq1Yw1dOMFycyOcFz1bAI6le9DToJIopJlgRTAvZ2TPJ5sqmPXIMgAMyU0juZ7E8L9iADQKiMtJ2+tqa4HtwNrKO6X2khjA5SaD56tXWr5g21QVdVlwUHOT0Wy0NDsYLsEzvv8agL9pgrDyUHDUXLoRlGYAGFmify1bSUdashNeGpKbCfoGiYC4qZQ4lFWDU3k/WkEsgJxHljkCKsn1JIb/FQOgUYBTBETtxK7S1fzOANg43vIRewNiJXmiGUpqR6ndgS+Y6NpFQM1GSwOQS3BrA+ChR/IlnpwiICZ09fwn/n/5twMsnUkvjpsZq8C+24BKFcg58BoAmjyyLG1AxNpoGf5XBoBMAU5tQDoUc3nkoT1QHUAtLBLTNtIJ4QB8iW3TAZEY08QjBoJrWqtNs9HSAOQStLMiAC/3iGEMGYu2lKYDiKtoMgSobtvBInwb9zgbAI53hM5tL/gH7gU/RuVT1DjK1hrHpHoUAJjiPbLMvWDls5bE8L8yADSOOvaCVe1zABKz01ST2ESLAKRR75QZdFH6rXW932qx0WITVJkIqOsCNzdXksrLEHNpGLgYTbSsAxh1oKUpevJXCE29Dh77ELHrccDLSGgvnOyiVvRgb+/grCsEkPPIMqyxGqGDrpbcSGL4XxkAGkd/yWf213X0+bxYa14u07Bzi8Er4Ou5Iz7ircslHkDt6G7sqvYcM6zL6chdzhgHtNposQnyAgC/EyeuC/V1nKk0A8BtrQqWEvawtPNuRmEmHgIn8Y5iPt+EHGqV7XYb9y9oN3NJrYI9BzyA2tElw1JX8KJDZKPFJnjSsqtYEe3rXzjyZCptmUl8pr0JCdnD0hDyl0GjBNDd/MLJ+2XN57vgP8fB1SWPb/uUdnQLuz4K4EN42bt9GeMB1I6Wj4mhVjBpedWrvIAR2GixCYo9AWRLYwFk3wXb0XKXcY3AYAS6nl84ebc2mA3jSkXnaNHHlJhrlw1A66vgQQHsa4r1xL0CAUBXao4PwIoN3MWRmKX2O8d/4k6VAKAr3Q4EYO/F5O1mzWY+9M3NKxqWwL7n+E/hzgKAbtTJpscSArv2JQ5tWN73Mqfp3FoAkIwg9kpQTY8DQMcS79AwAPa9zm5q9x4AJNNOek5xy48QQDdrL3JP/Y3fXfemjwAoroOnevultw6fskS84vzWpZYebQjsWdxde1AA+5lLmps2fW8bQPbJ5B8dk96MEkA3RuUO1+IEYJ+TmXMz8BQkoM/mxX8fozAjBpB8cdcABLqZTd+euQchAX32b1513aUnSWAPSmZoSRsAOCr6sG4d8mQnCeAVAgDfHH09usL8MEx2nABWmz1/iRwAOJ/q9eDybkdhymMjMFcawe8xE5MMAMABAHxyFziztXEB2BrJ7zE/9L21KrjXk7uxGwbkiavUxwLg7W3V5a+RWxT6AECzmm7GATOt0ROYy/8Z5e8xJ/QBgJY3EB0Xw4AlNGoAs9kR/x5zQh96a+5Y/JM73fJ5lz+myMc1R3esu3T6/HBV9xuqKwCq7lgHF2ppu0IrrZxpRvQoEMnlFoS+8QM4wGIQ59UgKn8DumNxD079YvSl7xyAzGJkfZlHJ5tmDa/woTrjjrWcYkqzWGlVGHeskSGSWwz4egP4SZbxDb2SiYOLssztlvzc+3RcRtqyuGI0FNw/ekEiXyxqi+XSF4vsDEUfevhiKRrUHYt9cDF8IP5zXzFtSesr2Aw7AsPwqppOrx4k9FVxVRVAzR1rXy3tQmClRSjW3bFGxkhuQehzA+A34lagAPhL3fer8TsUzKp7fsn7fz+XT5tCX6yUZoPlwheLpIqRnS5WBA/sjhWKsbThoPTTo66XJOss8edj3MJTB0MMw6tzelgH8FUBUHfHWlFLezJbaREdse5Yo2IktyD0uQBwf69+H/xoApCQ9bGtrSxXcRP5YlFLBJe+WGTnpUxCWi9PhKHcsTTa0j5CWzq9IkkRY5nb8iXu5NI4zhpeHXMAZl/VOlhzx1rVSnvi3LFSWhw13LFGxkhuMehzAeCZfB7H/5kBfCDgkE9ZWVZabEJfLGoK49IXS4+Azq4wWhU8mDvW8ZYGYEpdNbmhrdhNX3hVFilhrN3LZz4C3rEArtLDSmlPnDeMaqeaYtyxhl1M3hvAuetO9gKwGP4UimT1NuCeyldHxr0L8km1zbLxxaK2WC59sehO6p7m5IulaHB3LP3JJVUAt2gVqdoI+X5q1i+cO1aQA9DijpXSSnvi3LFUAGOsO9Z4AZzH8YyeAKZk+TLrIgIKfbG0COjGFwvv7GbkUN1NBBzcHes4bRcBidFHOG0AyETAAw7AAk0QNdyxjNKerBEwxrljjZHAOR2b7QlgK/Spk+3dBhT7YhltQNTLF0tJFZSv3LQB6VDMYO5YEaYNGGXbgMe4nkwxADKGVxFBBIwa7lhGaU9rljbghtKEtNirjhbA+X050BNA8iPr0Au+kPfzzdvTpNAXS+8FKxtOvlhqBNyrufLFUrRP2Uhgcgjn7tyxNvhe8AXpBdP5VevKeIr2uu2FMbxKcAAq3dy64Y5llFax9oJXdACj4wJwrt9O9QOgYndFxgEPjks6WFd0HFDsi0Vtsdz5YinjgJEcGdg563XVhjsWfqrfSU3ccOuOtcaOAyaUccBijmLs+c7OODAMr7YKHIDKu5J63XDHYksz3LFS2h/JxnfDHWvkBKI513y+CdHdsdYvleji3h0rKngTclNJp3H3YZebHdA13oQUKH2a31BHeV9cN8yJzG9CdHMiHOOLvDvWaAFE8695dcfaWvZ5fOsR2rBPbOAOia/r0h0rx74L9ijvgm/aSY8lRD1ohlf1NAeg2kA1AaiUdsi7Y5FOTCWyJnwXPDSAaCE0lwD2sSjD3QjGDSpZd/7RlimVhFO26qIpMU/D+WS9QUmLQR+ZJNUeBsDGlf23JLQywh7nsHOyAMD5A9BxdVqmOgyBoi8rUtcpVcRfngAAvjkAu13HV/DXQwHYFeynSL/ajLmJAQQCFzkCPg40od4dgKKvSsjTAcl7m7VzEALfHIC9PFoqQxH4IuiJkHHQK0FYBADfIoDtTK+lPbVhABQS9WxZlNkeAEAgcDEiYE+jyOEARIWCwLGjXrKz8IAQ+NYALPReX9YZjMAbhcB7UYkZS0wEAN8mgA0XK3HuhwqBr4KBnoq1VTgAgEDgIkRAFzZpRdQcAkBUafVqZ7KAQQh8Y+OArpYj9u4K5+zrYCR6KWfrYAQAvi0An9KjAdApBPb0g64OCGDvLw0BAGdeJTcA5uv1YQDs1dVpQwh8u+OAWVchMN3zez+EdbAx2ON0Gn5+IwD4pgCsuuNPXVc5cAjsOPZ1GiMF8BoAnCNdX7v15HkYqg52dMVHEAIXCcDHF4QeWm5TC1wdxd9hVGwNBaDDS+ciALggAFYem9k/uLLLl9NuvzDFGpgy7UrvvuoABDp0hbsjBRDagNMYTWm8ZApshzbnksCKaCpz347jrkKgbXsz3x1dCIRRwCkAWKoIHq3bEChs7BVcdBb6B9DuG1rNoXVgAIG9KQBYuBZ/PbhLAGvCuQc2lfDtkCHw1sZMtz0KAAG8yQOYyeZsv/TUJYDW7+co0ZahOAZmH4cCEDWLrsYY+ycQqJs8gNlsxvElvzsCBdXio0N77WY4AFHRVc3eJ4CA3OQBLBZ6umq7A/DeZsjZZtgu0x6OwKe8NWRbv0yhHwCBt8kD+PxYcfM1Ge5IFlbBGEB01f9gjIsQKAqtD8MQCJo4gF2Xry5cEdi0XQVpUwkXhgTQ+vI51wUA5wjA6k12lABaY2lW5aGV7n8sxg2Bt8+9rxMAnFkAn91/nY8rAPMOc1NsYmCuOxSA6LnYe/AYCJxNANvVQnqkBArsgIxBkRcXM+gHAJCfBGtzXQDgbAKYTo8WQNHYsB7gXoo2nkVoSAK7+V6DxwDgLALYus2OHMCsYy6bStj+m9DdAajMT3UOzTDJYPYA7A8/VwS+Or9vs/NNqA4JYG/btzrQN3MAvvbi7SqbrpZyuUb1qlUtNO6y1WLvQm+cI43NJL7r5pAE9gcgMDULADad+x+PVdx76LJjJG4MDVCmR9i0i4GVMQNoEAhAzQaAj04VcKfdHKxUQUeX/0KR9k1/cwNHDCDQNDMAOixqfO0OXmyh10jzg51nUW3sdTCgNAcA1p5fhiq20DO22U0jLXfGGwJBMwXgvfC97G11yGIbLlp3NkvXs/cA4NsBsJ4Z0/Ib60B0o+Gy9VksAoFvBsC29bHmcpXhy+1mXUx3eS31YyANAC4igGXBgPHrCMp9cjXA8tSPZxEAuIgAjmv5a6nkJqx1s7amRUDgmwCw0f8ycZdVe8bdjNNy2v06OQDwTUTA0TzSqiuy+/MsAgAXD0DBNNT6SAq+6t2z6N+zCAhcOAAr/dpkDFG3X/dBn9VZCABczCo47+bBD6A7pyrY3ZyvFwDwTVbBpZEUnLMFyv2sw4KbUm+AwHkGsJoeUwSsicd3+pv32oAQuPBVsGAYJDeKJRKi7xLsd961dSwGAFw4AP+I1uiYJ7a/4lDZQMVqI1uude+en4s11OgfwAGUNc0Hy0EdvGgAimJK/qpFFlc8vaJKrY1K1XqmgANllo9md84v7NojAdCyXi0HxqULBqBNqyybzpbT2WIF02jbRWhm6301LgfRTbsHgEDFnAPYGaqGbNiuQrtOj0hVhzoYkJh/AIerKnN27a9mc1QAXtmFQOBhMarglyEBsbE2rfRdUMbVWAwYly4agMP2FvLihUv5/kohWey+7+OuawIQSFgkALvZcYTAWr/0YT3a1fM1ePQLDCCycyx1X3eKeiLlPulD4m9AV14OluDZLzKA5WH7CYKJU51sn/Q5Xkm2DQ9/gQEcesjuzlrmQ9/wEdXzrsZiQIsFYD/mqGJZ7ehRsW/6HPrO8OgXG8B+u6wu3NpaA9Bn87cAz33xAaxkhiSw634YsMelFIC+NwggerkbksCmu6DaV4MUHvjbAVDwJRv96dlcYHrQ1U6qfzQ87bcFoO0o8IAA1gfvSjwAfW8RQDTkHFLTCiKB63keHiAA6KhuKe3YGXGspU2efq99mO+CAECt74rq+UqWJ+0qk0lXbrLP1ZvXx5tm2Q5Daz3qzvIKBADyoQu1K9lqIV0ppO/vy+jlEe9iew+1Ws3NEsqbHuvSQQCgvToDtBVNM1NfMvA+DQAckxouAKy6nDQDAgAHUKHn+rXCuBwXQACgeAZhu2eUfIQnCACOD0A+xZ07xz8QADiQek3Z6+bceZ6CAMBB9NLzVYjAfbxehycIAI5Goj4uD2ApDa/iAMBxqdXqWcFm4E0cADg2tQW+GxnuRVsb5tUDgGNTI997psEV0AcAjg1AkT/Cq0M3GZ4cADhC1W+EPllcmmegDwAck7Ku/DnAQwgAHIeeqiVX0wG74CEEAI5a3c6LnelfJmNy56gBfQDgSPXSfu06TNYH/yoAcDScIdSy7r2/rzm7d7Tg2QCAo9BDOnubKdWv7juo1qUu+ZV6Ot9ztdwfeDQA4Eikv+PNltPpXI91cIYzDMy1BwBHDGBfNvYdeDIA4PQIhEkuAOAUASw9duG5AIDTAxCm2QOA0yPw6u4JHgoAODUAM/BEAMDpAfjQgOoXAJwWgTflMjwOAHBKAGZzMPQCAE4LwEw6Cw8CAJwSgbks0AcATgvAm2uoeQHAaQB4lU2n7yvQ6wBNBsDqXY5OhblKp28LmXq1fIWa4K4LmhSAqHmHareoUUHtJ4Q6MNUFNGEAQSAAEAQAgkAAIAgABIEAQBAACAIA4RaAAEAQAAgCAYAgABAEAgBBACAIBACCAEAQCAAEAYAgEAAIAgBBIAAQBACCQAAgCAAEgQBAEAAIAgGAIAAQBAIAQQAgCAQAggBAEAgABAGAIBAACAIAQSAAEAQAgkAAIAgABAGAIBAACAIAQSAAEAQAgkAAIAgABIEAQBAACAIBgCAAEAQCAEEAIAg0OgADINAUBQCCAEAQAAgCAYAgABAEAgBBACAIBACCAEAQCAAEAYAgEAAIAgBt9F/0teeeUalXye9SdVTYuWyg1D06EedycXE7CH0ZyS9BCxJuTOBezTuAOz+q7WY1OUYAL9GZ+xTKx14lf0P/bAbO0F+bgd4AlhBK4B8/EPobAHTzyxhAJBH6y3IL8Qb69y62ST6ltDuM9Z8BAbxEsXfvo6n5AjCJLgKBv+ld6Xm5+PY03gV2WjYAjuSZ9QZwfmQA8e7/EGrvmG8hwW7vgTwmA8DU4BFws40O9QfVrnzDH2oonm+WD88a9eQmeZCJvxu3EeWJ7pxVmrffNplnrOVKkYv4gK8XJ/m3kngXCHRwwe8R2iuTP48ah0Yi06geBwJaUiaF+pFNwpxQy5BnpzueBHYSd/9X/MJfDwvgA4oFEvj/v5ny3v/dKJ/oEVAtgcmcyD9/NZ1cmMYoiMjY0PN+q/xb/fFeOQ1zUvX3mz0ZQASOUa2KvplvIcXtB3oYEYCBBvq/i5M95fP7WxQhAP6zc4bQt50auWn/RZX3XzqdD+QWbpZRYielhyv1GdNcX1BrB1/iJU4Sx7n/YwBoiYD/RXfvv6LOjpFUEAH1JMwJjQwpEgHzJALiKhjvvtjZS/DXwwKY+O/DTqP6A989vbzNCi4qpQGol2Bkrn4IWE4uSMMUFGA39LwfUGnn/UlCOU2F7qQnVX6/WSTQAOIf9COB7ky3cOQARtskjKglnJEPNUz9V9TdDBRQnNznGKntzsgtPETtd/iWdt7xtRzNVcS5qugogrrvCHdfnAD8RuspI6kAQCUJf0IjAwfgIUI71uthAIzH0D/o5AzfPb08nId8UAHUSzAy4z98/uTiNAGjIG5Dz/sF1U++7ASM06gn/TazVbUOBLlS5Tdjb6GwCiZKDNoLfv/t8l+EYYndPiNayZPA9xU1AhqAX0nE+Yt8OFFrvQ8GgHqur+j2C2psnpCMmwgfcQDwa+Ad/sWMpMI2oJKEPaGRgQPwBP2f4HpYAHca6H+b5O7p5UVRk+mEaCXwmc0nF6UJGAVxG3rezVQXoY4SAfmTvpvVtqIGxBmJcncEMvYWUtxapk7IMBGQnrJDQtfzBxxZ81YAjQgYQf9u8iQZuTb/h4ooyUSpF1xPfXAC0DECaknYE7qIgMb1sADitkEsQO6eXp4wApoy8ycXp7GLgEzenS8JnFU9DXPSdzPcWSFAbNaVv6F/d7hbyOA2GgD/8/X95mG3sRNBjb0P/xMBSNqAXb0N+O79179YALVc+ArJn83mrdZOK6OznQsCYBK3DAOBv1DSBKCRVEmh9m8vN5kk3AmNDNY24PuE6Xo4AJV6U2kD0vIEbcD3CVNm08mFaZzagDTvh+SHd6RmUNuAzElnFUANCIwAeSgPuJfH3sKRA/hXpdH5XwbfirNa7a+UCMBEvnGn9YITuE+X/MCQpOcifzX3tKdabVUSOFh8Kf9bOiEAfvinhTIYwB8mAI2kSgoq5aORhDuhnoEDkCRq/vPFdD1CAI3y9v5+vmV7wbQEU2bTyYVpjIL4DS3v5tdCo5H/ovWCn2+/kTp9lgHUgPib3GMSEf6xB1AZs9B+judNiPsR1ILjuFy1uQcvpbC+oO7OG/uVJwTg+8aLA2If0DHA9+3rzvsCSgYAwDEAeNmtHgFiPd6YJB8a/5xsAoAgEAAIAgBBIAAQBACCQAAgCAAEgQBAEAAIAgGAIAAQBAIAQQAgCAQAguZV/w+mnSVvmpn7WgAAAABJRU5ErkJggg=="
+                }
+              },
+              {
+                "url": "label",
+                "valueString": "Front of insurance card"
+              }
+            ]
+          },
+          {
+            "url": "http://hl7.org/fhir/us/insurance-card/StructureDefinition/C4DIC-SupportingImage-extension",
+            "extension": [
+              {
+                "url": "description",
+                "valueString": "Back of the card: 1-800-MEDICARE and TTY numbers, Medicare.gov, and notes that drug coverage and Medicaid are on separate cards, with a QR code and a barcode of the Medicare number. Marked SAMPLE."
+              },
+              {
+                "url": "image",
+                "valueAttachment": {
+                  "contentType": "image/png",
+                  "data": "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"
+                }
+              },
+              {
+                "url": "label",
+                "valueString": "Back of insurance card"
+              }
+            ]
+          }
+        ],
         "identifier": [
           {
-            "system": "https://parkerapex.com/atlas/coverage",
-            "value": "43294409-74c6-559b-9e72-691fb3392f88"
+            "type": {
+              "coding": [
+                {
+                  "system": "http://terminology.hl7.org/CodeSystem/v2-0203",
+                  "code": "MB",
+                  "display": "Member Number"
+                }
+              ],
+              "text": "Member ID"
+            },
+            "system": "http://hl7.org/fhir/sid/us-mbi",
+            "value": "3TQ7RW5CH42",
+            "assigner": {
+              "display": "Centers for Medicare & Medicaid Services"
+            }
           }
         ],
         "status": "active",
@@ -420,16 +623,17 @@
           "coding": [
             {
               "system": "https://nahdo.org/sopt",
-              "code": "11",
-              "display": "Medicare Managed Care (Includes Medicare Advantage Plans)"
+              "code": "121",
+              "display": "Medicare FFS"
             }
           ],
-          "text": "Medicare (Managed Care)"
+          "text": "Original Medicare (Part A and Part B)"
         },
         "subscriber": {
-          "reference": "Patient/GPX-SYN-0000000279-0"
+          "reference": "Patient/GPX-SYN-0000000279-0",
+          "display": "Kimberly Gonzalez"
         },
-        "subscriberId": "SYN-11B1CF66C6",
+        "subscriberId": "3TQ7RW5CH42",
         "beneficiary": {
           "reference": "Patient/GPX-SYN-0000000279-0"
         },
@@ -440,11 +644,16 @@
               "code": "self",
               "display": "Self"
             }
-          ]
+          ],
+          "text": "Self"
+        },
+        "period": {
+          "start": "2018-07-01"
         },
         "payor": [
           {
-            "reference": "Organization/0df4824d-6907-5319-80ab-2f36332b9ce1"
+            "reference": "Organization/0df4824d-6907-5319-80ab-2f36332b9ce1",
+            "display": "Centers for Medicare & Medicaid Services"
           }
         ],
         "order": 1,
@@ -454,13 +663,667 @@
               "coding": [
                 {
                   "system": "http://terminology.hl7.org/CodeSystem/coverage-class",
-                  "code": "plan",
-                  "display": "Plan"
+                  "code": "plan"
                 }
               ]
             },
-            "value": "medicare-ffs",
-            "name": "medicare-ffs"
+            "value": "MEDICARE-PART-A-B",
+            "name": "Original Medicare Part A (Hospital) and Part B (Medical)"
+          }
+        ]
+      }
+    },
+    {
+      "fullUrl": "https://hapi.fhir.org/baseR4/Coverage/b95549a7-24a3-5db4-8472-988e979af9c9",
+      "resource": {
+        "resourceType": "Coverage",
+        "id": "b95549a7-24a3-5db4-8472-988e979af9c9",
+        "meta": {
+          "lastUpdated": "2026-11-03T12:00:00Z",
+          "profile": [
+            "http://hl7.org/fhir/us/insurance-card/StructureDefinition/C4DIC-Coverage"
+          ],
+          "tag": [
+            {
+              "system": "http://terminology.hl7.org/CodeSystem/v3-ActReason",
+              "code": "HTEST",
+              "display": "test health data"
+            }
+          ]
+        },
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/us/insurance-card/StructureDefinition/C4DIC-PlanBeneficiaries-extension",
+            "extension": [
+              {
+                "url": "memberId",
+                "valueString": "PRX104417229"
+              },
+              {
+                "url": "name",
+                "valueHumanName": {
+                  "family": "Gonzalez",
+                  "given": [
+                    "Kimberly"
+                  ]
+                }
+              }
+            ]
+          },
+          {
+            "url": "http://hl7.org/fhir/us/insurance-card/StructureDefinition/C4DIC-AdditionalCardInformation-extension",
+            "valueAnnotation": {
+              "text": "TTY users call 711."
+            }
+          },
+          {
+            "url": "http://hl7.org/fhir/us/insurance-card/StructureDefinition/C4DIC-AdditionalCardInformation-extension",
+            "valueAnnotation": {
+              "text": "Medicare Part D plan: show this card with your Medicare card when you fill a prescription."
+            }
+          },
+          {
+            "url": "http://hl7.org/fhir/us/insurance-card/StructureDefinition/C4DIC-AdditionalCardInformation-extension",
+            "valueAnnotation": {
+              "text": "This card does not guarantee coverage or payment."
+            }
+          },
+          {
+            "url": "http://hl7.org/fhir/us/insurance-card/StructureDefinition/C4DIC-AdditionalCardInformation-extension",
+            "valueAnnotation": {
+              "text": "SAMPLE: synthetic test data from open-synthetic-patients. Not a real insurance card; the plan, numbers and member are made up."
+            }
+          },
+          {
+            "url": "http://hl7.org/fhir/us/insurance-card/StructureDefinition/C4DIC-CardIssueDate-extension",
+            "valueDate": "2025-12-01"
+          },
+          {
+            "url": "http://hl7.org/fhir/us/insurance-card/StructureDefinition/C4DIC-ColorPalette-extension",
+            "extension": [
+              {
+                "url": "http://hl7.org/fhir/us/insurance-card/StructureDefinition/C4DIC-ForegroundColor-extension",
+                "valueCodeableConcept": {
+                  "coding": [
+                    {
+                      "system": "http://terminology.hl7.org/CodeSystem/IECColourManagement",
+                      "code": "#FFFFFF"
+                    }
+                  ]
+                }
+              },
+              {
+                "url": "http://hl7.org/fhir/us/insurance-card/StructureDefinition/C4DIC-BackgroundColor-extension",
+                "valueCodeableConcept": {
+                  "coding": [
+                    {
+                      "system": "http://terminology.hl7.org/CodeSystem/IECColourManagement",
+                      "code": "#7A2E3A"
+                    }
+                  ]
+                }
+              },
+              {
+                "url": "http://hl7.org/fhir/us/insurance-card/StructureDefinition/C4DIC-HighlightColor-extension",
+                "valueCodeableConcept": {
+                  "coding": [
+                    {
+                      "system": "http://terminology.hl7.org/CodeSystem/IECColourManagement",
+                      "code": "#F4D6CC"
+                    }
+                  ]
+                }
+              }
+            ]
+          },
+          {
+            "url": "http://hl7.org/fhir/us/insurance-card/StructureDefinition/C4DIC-Logo-extension",
+            "extension": [
+              {
+                "url": "description",
+                "valueString": "Prairie Rx logo: a Rx monogram in a circle beside the plan name. Synthetic brand."
+              },
+              {
+                "url": "image",
+                "valueAttachment": {
+                  "contentType": "image/png",
+                  "data": "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"
+                }
+              },
+              {
+                "url": "label",
+                "valueString": "Prairie Rx"
+              }
+            ]
+          },
+          {
+            "url": "http://hl7.org/fhir/us/insurance-card/StructureDefinition/C4DIC-QRCode-extension",
+            "extension": [
+              {
+                "url": "description",
+                "valueString": "QR code on the back of the card holding the plan name, member ID, group and pharmacy numbers as text. Synthetic."
+              },
+              {
+                "url": "image",
+                "valueAttachment": {
+                  "contentType": "image/png",
+                  "data": "iVBORw0KGgoAAAANSUhEUgAAAPQAAAD0AQMAAACW4Zm9AAAABlBMVEX///8AAABVwtN+AAACtUlEQVR42uWZO47bUAxFj4L0Vzvw/pc1O7hawUnB51QBMkBm2MSNC8F6pkjen+B//6htkmK1xbZG1PLjL7/+1+tQaGPbtgGIaCisnG9bicxXKlWp/f7zfwLwenxouAV45P54fc39P3d+L24IH/A8L3p/fNX9P9d/BGJarKGhO/2/EJ4/Xgo89/fXD5BApmYJaUu3nn+0bbSgJtqG0JX9JxCm95JqrKkr+wdKm5YkDRjbYJsd/Ath5r7zHEptSFbqZ+A/NJ0eWNvEZmP+UqZ4xVajNWcHNvAn5pRcktCS1HRn/2oAm7YVsMNGdOV8o6WBWGb5NSXZ2b8EUizTiKRNBZfw78CtqYlaY8wO/gSxyYE8SYb+lvSX1SZJo9qkI8joyvOns4RgCtrzT1w6P20c6mtoUrFL/f9ByM2DDzf30xcPtxd9nmsLf4rQgpiOIHYL/+zQX3ukd3oGMDv1z6TVhHhIiKDuzJ/FMSBYms5SlI35u0Zn3g0PuQq5+oJeJVc39G+HdKq0SBNbS1f4L1EDotWq5vR/x38mRgZ2OrK7lOzw3xjd0R0WRxDTxhX9lQaVmBzp41uRLemP0wEkGReiSbOjPzClo/8jUtJRwEv8Jz20j0wO0z3/U7HQ+NZ91cSl5z8D7ym4R4CZsnT+5B2Ss4d5z4Nu5S8z7zRkcFfHj2zs/5j+mrZO16017vgfqhB4y+5MB7qEf5oTOGJjsSRu1Z+gOM0f3qulCTv+nyO+z8TNGrRkaf47Xr+JPVEciZQl/hn3ZWObMsbbdMn/HAsuPb1/qyBX/P948OSdPzQ1Dgbu4K890//b+WTAqFv4a+Sdvw0BS5fy11m3g7k6bOzkwXvvX0b9OWnEhGFu+M+5/rp4ng8vgOuOvICHtfdfmBn8xgli0y3/MXlXw4mA6bx+c0t//tefX3cDfW62ai4fAAAAAElFTkSuQmCC"
+                }
+              },
+              {
+                "url": "label",
+                "valueString": "Card details"
+              }
+            ]
+          },
+          {
+            "url": "http://hl7.org/fhir/us/insurance-card/StructureDefinition/C4DIC-Barcode-extension",
+            "extension": [
+              {
+                "url": "description",
+                "valueString": "Code 128 barcode of the member ID PRX104417229, for scanning at check-in. Synthetic."
+              },
+              {
+                "url": "image",
+                "valueAttachment": {
+                  "contentType": "image/png",
+                  "data": "iVBORw0KGgoAAAANSUhEUgAAAXYAAAA8AQMAAABIJAOYAAAABlBMVEX///8AAABVwtN+AAAATElEQVR42u3KsQnAMAwEQJE6oFUMagW/ukGtIKs8uFWRGdKGv/rMzNcGknEYDV9D1ilvOHI4UXwq0TcR2+yyb/T19fX19fX19fX/9F+mHxeBZdR2YgAAAABJRU5ErkJggg=="
+                }
+              },
+              {
+                "url": "label",
+                "valueString": "Member ID barcode"
+              }
+            ]
+          },
+          {
+            "url": "http://hl7.org/fhir/us/insurance-card/StructureDefinition/C4DIC-SupportingImage-extension",
+            "extension": [
+              {
+                "url": "description",
+                "valueString": "Front of the Part D card: Prairie Rx logo, member name Kimberly Gonzalez, member ID PRX104417229, plan S9999-001 Prairie Rx Value (PDP), RxBIN 999215, RxPCN MEDDPRX, RxGrp PDPVAL and copays by drug tier. Marked SAMPLE."
+              },
+              {
+                "url": "image",
+                "valueAttachment": {
+                  "contentType": "image/png",
+                  "data": "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"
+                }
+              },
+              {
+                "url": "label",
+                "valueString": "Front of insurance card"
+              }
+            ]
+          },
+          {
+            "url": "http://hl7.org/fhir/us/insurance-card/StructureDefinition/C4DIC-SupportingImage-extension",
+            "extension": [
+              {
+                "url": "description",
+                "valueString": "Back of the Part D card: member services, pharmacist help desk, mail-order pharmacy and prescriber services numbers, claims address, a QR code and a barcode of the member ID. Marked SAMPLE."
+              },
+              {
+                "url": "image",
+                "valueAttachment": {
+                  "contentType": "image/png",
+                  "data": "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"
+                }
+              },
+              {
+                "url": "label",
+                "valueString": "Back of insurance card"
+              }
+            ]
+          }
+        ],
+        "identifier": [
+          {
+            "type": {
+              "coding": [
+                {
+                  "system": "http://terminology.hl7.org/CodeSystem/v2-0203",
+                  "code": "MB",
+                  "display": "Member Number"
+                }
+              ],
+              "text": "Member ID"
+            },
+            "system": "https://prairie-rx.example/member-id",
+            "value": "PRX104417229",
+            "assigner": {
+              "display": "Prairie Rx Medicare Prescription Drug Plan"
+            }
+          }
+        ],
+        "status": "active",
+        "type": {
+          "coding": [
+            {
+              "system": "https://nahdo.org/sopt",
+              "code": "122",
+              "display": "Medicare Drug Benefit"
+            }
+          ],
+          "text": "Medicare Part D prescription drug plan"
+        },
+        "subscriber": {
+          "reference": "Patient/GPX-SYN-0000000279-0",
+          "display": "Kimberly Gonzalez"
+        },
+        "subscriberId": "PRX104417229",
+        "beneficiary": {
+          "reference": "Patient/GPX-SYN-0000000279-0"
+        },
+        "relationship": {
+          "coding": [
+            {
+              "system": "http://terminology.hl7.org/CodeSystem/subscriber-relationship",
+              "code": "self",
+              "display": "Self"
+            }
+          ],
+          "text": "Self"
+        },
+        "period": {
+          "start": "2018-07-01"
+        },
+        "payor": [
+          {
+            "reference": "Organization/a542f1b4-efd9-573f-a283-3a0e30301dc9",
+            "display": "Prairie Rx Medicare Prescription Drug Plan"
+          }
+        ],
+        "class": [
+          {
+            "type": {
+              "coding": [
+                {
+                  "system": "http://terminology.hl7.org/CodeSystem/coverage-class",
+                  "code": "plan"
+                }
+              ]
+            },
+            "value": "S9999-001",
+            "name": "Prairie Rx Value (PDP)"
+          },
+          {
+            "type": {
+              "coding": [
+                {
+                  "system": "http://terminology.hl7.org/CodeSystem/coverage-class",
+                  "code": "rxbin"
+                }
+              ]
+            },
+            "value": "999215"
+          },
+          {
+            "type": {
+              "coding": [
+                {
+                  "system": "http://terminology.hl7.org/CodeSystem/coverage-class",
+                  "code": "rxpcn"
+                }
+              ]
+            },
+            "value": "MEDDPRX"
+          },
+          {
+            "type": {
+              "coding": [
+                {
+                  "system": "http://terminology.hl7.org/CodeSystem/coverage-class",
+                  "code": "rxgroup"
+                }
+              ]
+            },
+            "value": "PDPVAL"
+          },
+          {
+            "type": {
+              "coding": [
+                {
+                  "system": "http://terminology.hl7.org/CodeSystem/coverage-class",
+                  "code": "rxid"
+                }
+              ]
+            },
+            "value": "PRX104417229"
+          }
+        ],
+        "costToBeneficiary": [
+          {
+            "type": {
+              "coding": [
+                {
+                  "system": "http://terminology.hl7.org/CodeSystem/C4DICExtendedCopayTypeCS",
+                  "code": "rx",
+                  "display": "Prescription"
+                }
+              ],
+              "text": "Prescription copays by drug tier"
+            },
+            "valueMoney": {
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/us/insurance-card/StructureDefinition/C4DIC-BeneficiaryCostString-extension",
+                  "valueString": "Tier 1 $0 · Tier 2 $5 · Tier 3 $47 · Tier 4 40% · Tier 5 25%"
+                }
+              ]
+            }
+          }
+        ]
+      }
+    },
+    {
+      "fullUrl": "https://hapi.fhir.org/baseR4/Coverage/1ba80ca0-a7df-575d-bbdd-1f6c323ee8b7",
+      "resource": {
+        "resourceType": "Coverage",
+        "id": "1ba80ca0-a7df-575d-bbdd-1f6c323ee8b7",
+        "meta": {
+          "lastUpdated": "2026-11-03T12:00:00Z",
+          "profile": [
+            "http://hl7.org/fhir/us/insurance-card/StructureDefinition/C4DIC-Coverage"
+          ],
+          "tag": [
+            {
+              "system": "http://terminology.hl7.org/CodeSystem/v3-ActReason",
+              "code": "HTEST",
+              "display": "test health data"
+            }
+          ]
+        },
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/us/insurance-card/StructureDefinition/C4DIC-PlanBeneficiaries-extension",
+            "extension": [
+              {
+                "url": "memberId",
+                "valueString": "991447302"
+              },
+              {
+                "url": "name",
+                "valueHumanName": {
+                  "family": "Gonzalez",
+                  "given": [
+                    "Kimberly"
+                  ]
+                }
+              }
+            ]
+          },
+          {
+            "url": "http://hl7.org/fhir/us/insurance-card/StructureDefinition/C4DIC-AdditionalCardInformation-extension",
+            "valueAnnotation": {
+              "text": "TTY users call 711."
+            }
+          },
+          {
+            "url": "http://hl7.org/fhir/us/insurance-card/StructureDefinition/C4DIC-AdditionalCardInformation-extension",
+            "valueAnnotation": {
+              "text": "Dual eligible: Medicare pays first. Bill Prairie Health Medicaid as the secondary payer."
+            }
+          },
+          {
+            "url": "http://hl7.org/fhir/us/insurance-card/StructureDefinition/C4DIC-AdditionalCardInformation-extension",
+            "valueAnnotation": {
+              "text": "This card does not guarantee coverage or eligibility; check eligibility before each visit."
+            }
+          },
+          {
+            "url": "http://hl7.org/fhir/us/insurance-card/StructureDefinition/C4DIC-AdditionalCardInformation-extension",
+            "valueAnnotation": {
+              "text": "SAMPLE: synthetic test data from open-synthetic-patients. Not a real insurance card; the plan, numbers and member are made up."
+            }
+          },
+          {
+            "url": "http://hl7.org/fhir/us/insurance-card/StructureDefinition/C4DIC-CardIssueDate-extension",
+            "valueDate": "2023-12-14"
+          },
+          {
+            "url": "http://hl7.org/fhir/us/insurance-card/StructureDefinition/C4DIC-ColorPalette-extension",
+            "extension": [
+              {
+                "url": "http://hl7.org/fhir/us/insurance-card/StructureDefinition/C4DIC-ForegroundColor-extension",
+                "valueCodeableConcept": {
+                  "coding": [
+                    {
+                      "system": "http://terminology.hl7.org/CodeSystem/IECColourManagement",
+                      "code": "#FFFFFF"
+                    }
+                  ]
+                }
+              },
+              {
+                "url": "http://hl7.org/fhir/us/insurance-card/StructureDefinition/C4DIC-BackgroundColor-extension",
+                "valueCodeableConcept": {
+                  "coding": [
+                    {
+                      "system": "http://terminology.hl7.org/CodeSystem/IECColourManagement",
+                      "code": "#2E6B3F"
+                    }
+                  ]
+                }
+              },
+              {
+                "url": "http://hl7.org/fhir/us/insurance-card/StructureDefinition/C4DIC-HighlightColor-extension",
+                "valueCodeableConcept": {
+                  "coding": [
+                    {
+                      "system": "http://terminology.hl7.org/CodeSystem/IECColourManagement",
+                      "code": "#F2C14E"
+                    }
+                  ]
+                }
+              }
+            ]
+          },
+          {
+            "url": "http://hl7.org/fhir/us/insurance-card/StructureDefinition/C4DIC-Logo-extension",
+            "extension": [
+              {
+                "url": "description",
+                "valueString": "Prairie Health logo: a P monogram in a circle beside the plan name. Synthetic brand."
+              },
+              {
+                "url": "image",
+                "valueAttachment": {
+                  "contentType": "image/png",
+                  "data": "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"
+                }
+              },
+              {
+                "url": "label",
+                "valueString": "Prairie Health"
+              }
+            ]
+          },
+          {
+            "url": "http://hl7.org/fhir/us/insurance-card/StructureDefinition/C4DIC-QRCode-extension",
+            "extension": [
+              {
+                "url": "description",
+                "valueString": "QR code on the back of the card holding the plan name, member ID, group and pharmacy numbers as text. Synthetic."
+              },
+              {
+                "url": "image",
+                "valueAttachment": {
+                  "contentType": "image/png",
+                  "data": "iVBORw0KGgoAAAANSUhEUgAAANQAAADUAQMAAADeEJ9bAAAABlBMVEX///8AAABVwtN+AAACKUlEQVR42t2YwY3dMBBDn7YBqgP3X9bvgKrg5SBvECBADkHmEsEXS7AHpIbUjOB/H2pLiEGxSNXy9Yev/n7trMWWfNaHcwCXnLUYiocFPkC6Hw+bfSeH4gFueLIfPmfvT9j/4J9/XDsb+FSe+nwOY/GgUBvblt43CjP5shDOb9OBs2fwAVRoUxpVOspnlcZUS2obHeITbEBamhZNjc1UPKqF2Eg1GEmn+FSS4MUWmsTiVDyIhlZRau4zp/ezT7Oztpv8oo4ZfGnVCCYFJOrY/mFI21pMG6GD+1erVHKNrWmhY/rr6ydekDGaMqa/FNVSEpKIjXP5YpOrgBtWCB3Ml9poBYOmlXbOzxJvjhT4NrQxfIk2hqCVXF4d5BOh7/l3+WWqHlx4ILDkALvZXQX2FJ8UA+lb6uaKY/L8k8aqtmXWP+XbwZImePfTQX8piaWtobTJVD34BXG3bOTZ0Af40IzxmYsnJlJi00zp/Yt18oDhvLDYPDiYn7ylZ2lTtdqx/s8nm+ewizwnex84rLn62ia3AiUlDWbOr5GUKMTaNmbQr8MtKCJB0timY3pvRENorfW2hJnD9yruwst7Hs7x6cUYlUunyZx/Wm4DZrV5+4g5Pr810baITVvm8kVtU8gtzELTzp1/hUbT/Gwg7OR9j6V7sUt8b2PiSQfve3b9ZC02kEP22WvyfumslUNhselafeLk/mFJalMjt2sZzE9LqNye03RQ7//3+AGhDD96OYNxtgAAAABJRU5ErkJggg=="
+                }
+              },
+              {
+                "url": "label",
+                "valueString": "Card details"
+              }
+            ]
+          },
+          {
+            "url": "http://hl7.org/fhir/us/insurance-card/StructureDefinition/C4DIC-Barcode-extension",
+            "extension": [
+              {
+                "url": "description",
+                "valueString": "Code 128 barcode of the member ID 991447302, for scanning at check-in. Synthetic."
+              },
+              {
+                "url": "image",
+                "valueAttachment": {
+                  "contentType": "image/png",
+                  "data": "iVBORw0KGgoAAAANSUhEUgAAATQAAAA8AQMAAADSa9QFAAAABlBMVEX///8AAABVwtN+AAAARUlEQVR42u3KsQnAMAwEwCe1QKsY3Ap+dYEG8CoBtSq8Qvr81QfAV9Le2eV1jLFmuovGCFp25xwAD77R09PT09PT0/v7ux+REhoHAOa4AAAAAElFTkSuQmCC"
+                }
+              },
+              {
+                "url": "label",
+                "valueString": "Member ID barcode"
+              }
+            ]
+          },
+          {
+            "url": "http://hl7.org/fhir/us/insurance-card/StructureDefinition/C4DIC-SupportingImage-extension",
+            "extension": [
+              {
+                "url": "description",
+                "valueString": "Front of the Medicaid card: Prairie Health logo, member name Kimberly Gonzalez, Medicaid ID 991447302, Prairie Health Medicaid plan for people with both Medicare and Medicaid, the Prairie Health Network and $0 cost for covered services. Marked SAMPLE."
+              },
+              {
+                "url": "image",
+                "valueAttachment": {
+                  "contentType": "image/png",
+                  "data": "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"
+                }
+              },
+              {
+                "url": "label",
+                "valueString": "Front of insurance card"
+              }
+            ]
+          },
+          {
+            "url": "http://hl7.org/fhir/us/insurance-card/StructureDefinition/C4DIC-SupportingImage-extension",
+            "extension": [
+              {
+                "url": "description",
+                "valueString": "Back of the Medicaid card: member and provider services numbers, nurse line, payer ID PRHMD, claims address, billing order (Medicare first), a QR code and a barcode of the Medicaid ID. Marked SAMPLE."
+              },
+              {
+                "url": "image",
+                "valueAttachment": {
+                  "contentType": "image/png",
+                  "data": "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"
+                }
+              },
+              {
+                "url": "label",
+                "valueString": "Back of insurance card"
+              }
+            ]
+          }
+        ],
+        "identifier": [
+          {
+            "type": {
+              "coding": [
+                {
+                  "system": "http://terminology.hl7.org/CodeSystem/v2-0203",
+                  "code": "MB",
+                  "display": "Member Number"
+                }
+              ],
+              "text": "Member ID"
+            },
+            "system": "https://prairie-health.example/medicaid-id",
+            "value": "991447302",
+            "assigner": {
+              "display": "Prairie Health Medicaid"
+            }
+          }
+        ],
+        "status": "active",
+        "type": {
+          "coding": [
+            {
+              "system": "https://nahdo.org/sopt",
+              "code": "21",
+              "display": "Medicaid (Managed Care)"
+            }
+          ],
+          "text": "Medicaid managed care"
+        },
+        "subscriber": {
+          "reference": "Patient/GPX-SYN-0000000279-0",
+          "display": "Kimberly Gonzalez"
+        },
+        "subscriberId": "991447302",
+        "beneficiary": {
+          "reference": "Patient/GPX-SYN-0000000279-0"
+        },
+        "relationship": {
+          "coding": [
+            {
+              "system": "http://terminology.hl7.org/CodeSystem/subscriber-relationship",
+              "code": "self",
+              "display": "Self"
+            }
+          ],
+          "text": "Self"
+        },
+        "period": {
+          "start": "2024-01-01"
+        },
+        "payor": [
+          {
+            "reference": "Organization/32a3a79b-1b1a-54d4-81e4-09a8d9f18c2b",
+            "display": "Prairie Health Medicaid"
+          }
+        ],
+        "order": 2,
+        "class": [
+          {
+            "type": {
+              "coding": [
+                {
+                  "system": "http://terminology.hl7.org/CodeSystem/coverage-class",
+                  "code": "plan"
+                }
+              ]
+            },
+            "value": "PH-MCD-DUAL",
+            "name": "Prairie Health Medicaid (Medicare-Medicaid dual eligible)"
+          },
+          {
+            "type": {
+              "coding": [
+                {
+                  "system": "http://terminology.hl7.org/CodeSystem/C4DICExtendedCoverageClassCS",
+                  "code": "network"
+                }
+              ]
+            },
+            "value": "PH-NETWORK",
+            "name": "Prairie Health Network"
+          }
+        ],
+        "costToBeneficiary": [
+          {
+            "type": {
+              "coding": [
+                {
+                  "system": "http://terminology.hl7.org/CodeSystem/coverage-copay-type",
+                  "code": "copay",
+                  "display": "Copay Amount"
+                }
+              ],
+              "text": "Member cost for covered services"
+            },
+            "valueMoney": {
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/us/insurance-card/StructureDefinition/C4DIC-BeneficiaryCostString-extension",
+                  "valueString": "$0 for covered services"
+                }
+              ]
+            }
           }
         ]
       }
@@ -1518,7 +2381,9 @@
         "resourceType": "Organization",
         "id": "0df4824d-6907-5319-80ab-2f36332b9ce1",
         "meta": {
+          "lastUpdated": "2026-11-03T12:00:00Z",
           "profile": [
+            "http://hl7.org/fhir/us/insurance-card/StructureDefinition/C4DIC-Organization",
             "http://hl7.org/fhir/us/core/StructureDefinition/us-core-organization|6.1.0"
           ],
           "tag": [
@@ -1544,10 +2409,36 @@
                 "code": "pay",
                 "display": "Payer"
               }
-            ]
+            ],
+            "text": "Payer"
           }
         ],
-        "name": "Medicare Fee-for-Service"
+        "name": "Centers for Medicare & Medicaid Services",
+        "telecom": [
+          {
+            "system": "url",
+            "value": "https://www.medicare.gov"
+          }
+        ],
+        "contact": [
+          {
+            "purpose": {
+              "coding": [
+                {
+                  "system": "http://terminology.hl7.org/CodeSystem/contactentity-type",
+                  "code": "PATINF",
+                  "display": "Patient"
+                }
+              ]
+            },
+            "telecom": [
+              {
+                "system": "phone",
+                "value": "1-800-633-4227"
+              }
+            ]
+          }
+        ]
       }
     },
     {
@@ -1860,6 +2751,287 @@
           }
         ],
         "name": "Atlas Diabetes Self-Management Education Program"
+      }
+    },
+    {
+      "fullUrl": "https://hapi.fhir.org/baseR4/Organization/a542f1b4-efd9-573f-a283-3a0e30301dc9",
+      "resource": {
+        "resourceType": "Organization",
+        "id": "a542f1b4-efd9-573f-a283-3a0e30301dc9",
+        "meta": {
+          "lastUpdated": "2026-11-03T12:00:00Z",
+          "profile": [
+            "http://hl7.org/fhir/us/insurance-card/StructureDefinition/C4DIC-Organization"
+          ],
+          "tag": [
+            {
+              "system": "http://terminology.hl7.org/CodeSystem/v3-ActReason",
+              "code": "HTEST",
+              "display": "test health data"
+            }
+          ]
+        },
+        "identifier": [
+          {
+            "type": {
+              "coding": [
+                {
+                  "system": "http://terminology.hl7.org/CodeSystem/C4DICIdentifierType",
+                  "code": "payerid",
+                  "display": "Payer ID"
+                }
+              ]
+            },
+            "value": "PRXPD"
+          }
+        ],
+        "active": true,
+        "type": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/organization-type",
+                "code": "pay",
+                "display": "Payer"
+              }
+            ],
+            "text": "Payer"
+          }
+        ],
+        "name": "Prairie Rx Medicare Prescription Drug Plan",
+        "telecom": [
+          {
+            "system": "url",
+            "value": "https://prairie-rx.example"
+          }
+        ],
+        "contact": [
+          {
+            "purpose": {
+              "coding": [
+                {
+                  "system": "http://terminology.hl7.org/CodeSystem/contactentity-type",
+                  "code": "PATINF",
+                  "display": "Patient"
+                }
+              ]
+            },
+            "telecom": [
+              {
+                "system": "phone",
+                "value": "1-800-555-0150"
+              }
+            ]
+          },
+          {
+            "purpose": {
+              "coding": [
+                {
+                  "system": "http://terminology.hl7.org/CodeSystem/C4DICExtendedContactTypeCS",
+                  "code": "provider",
+                  "display": "Provider Service"
+                }
+              ]
+            },
+            "telecom": [
+              {
+                "system": "phone",
+                "value": "1-800-555-0153"
+              }
+            ]
+          },
+          {
+            "purpose": {
+              "coding": [
+                {
+                  "system": "http://terminology.hl7.org/CodeSystem/C4DICExtendedContactTypeCS",
+                  "code": "pharma",
+                  "display": "Pharmacists"
+                }
+              ]
+            },
+            "telecom": [
+              {
+                "system": "phone",
+                "value": "1-800-555-0151"
+              }
+            ]
+          },
+          {
+            "purpose": {
+              "coding": [
+                {
+                  "system": "http://terminology.hl7.org/CodeSystem/C4DICExtendedContactTypeCS",
+                  "code": "rxmailorder",
+                  "display": "Mail Order Pharmacy"
+                }
+              ]
+            },
+            "telecom": [
+              {
+                "system": "phone",
+                "value": "1-800-555-0152"
+              }
+            ]
+          },
+          {
+            "purpose": {
+              "coding": [
+                {
+                  "system": "http://terminology.hl7.org/CodeSystem/contactentity-type",
+                  "code": "PAYOR",
+                  "display": "Payor"
+                }
+              ]
+            },
+            "name": {
+              "text": "Claims"
+            },
+            "address": {
+              "type": "postal",
+              "text": "PO Box 3320, Springfield, IL 62709",
+              "line": [
+                "PO Box 3320"
+              ],
+              "city": "Springfield",
+              "state": "IL",
+              "postalCode": "62709",
+              "country": "US"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "fullUrl": "https://hapi.fhir.org/baseR4/Organization/32a3a79b-1b1a-54d4-81e4-09a8d9f18c2b",
+      "resource": {
+        "resourceType": "Organization",
+        "id": "32a3a79b-1b1a-54d4-81e4-09a8d9f18c2b",
+        "meta": {
+          "lastUpdated": "2026-11-03T12:00:00Z",
+          "profile": [
+            "http://hl7.org/fhir/us/insurance-card/StructureDefinition/C4DIC-Organization"
+          ],
+          "tag": [
+            {
+              "system": "http://terminology.hl7.org/CodeSystem/v3-ActReason",
+              "code": "HTEST",
+              "display": "test health data"
+            }
+          ]
+        },
+        "identifier": [
+          {
+            "type": {
+              "coding": [
+                {
+                  "system": "http://terminology.hl7.org/CodeSystem/C4DICIdentifierType",
+                  "code": "payerid",
+                  "display": "Payer ID"
+                }
+              ]
+            },
+            "value": "PRHMD"
+          }
+        ],
+        "active": true,
+        "type": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/organization-type",
+                "code": "pay",
+                "display": "Payer"
+              }
+            ],
+            "text": "Payer"
+          }
+        ],
+        "name": "Prairie Health Medicaid",
+        "telecom": [
+          {
+            "system": "url",
+            "value": "https://prairie-health.example"
+          }
+        ],
+        "contact": [
+          {
+            "purpose": {
+              "coding": [
+                {
+                  "system": "http://terminology.hl7.org/CodeSystem/contactentity-type",
+                  "code": "PATINF",
+                  "display": "Patient"
+                }
+              ]
+            },
+            "telecom": [
+              {
+                "system": "phone",
+                "value": "1-800-555-0160"
+              }
+            ]
+          },
+          {
+            "purpose": {
+              "coding": [
+                {
+                  "system": "http://terminology.hl7.org/CodeSystem/C4DICExtendedContactTypeCS",
+                  "code": "provider",
+                  "display": "Provider Service"
+                }
+              ]
+            },
+            "telecom": [
+              {
+                "system": "phone",
+                "value": "1-800-555-0161"
+              }
+            ]
+          },
+          {
+            "purpose": {
+              "coding": [
+                {
+                  "system": "http://terminology.hl7.org/CodeSystem/C4DICExtendedContactTypeCS",
+                  "code": "virtual",
+                  "display": "Virtual Care Services"
+                }
+              ]
+            },
+            "telecom": [
+              {
+                "system": "url",
+                "value": "https://prairie-health.example/nurse-line"
+              }
+            ]
+          },
+          {
+            "purpose": {
+              "coding": [
+                {
+                  "system": "http://terminology.hl7.org/CodeSystem/contactentity-type",
+                  "code": "PAYOR",
+                  "display": "Payor"
+                }
+              ]
+            },
+            "name": {
+              "text": "Claims"
+            },
+            "address": {
+              "type": "postal",
+              "text": "PO Box 2210, Springfield, IL 62708",
+              "line": [
+                "PO Box 2210"
+              ],
+              "city": "Springfield",
+              "state": "IL",
+              "postalCode": "62708",
+              "country": "US"
+            }
+          }
+        ]
       }
     },
     {
@@ -8722,7 +9894,7 @@
         "created": "2018-07-20T00:00:00-05:00",
         "insurer": {
           "reference": "Organization/0df4824d-6907-5319-80ab-2f36332b9ce1",
-          "display": "Medicare Fee-for-Service"
+          "display": "Centers for Medicare & Medicaid Services"
         },
         "provider": {
           "reference": "Organization/ecaa4573-92ad-52cd-8085-9dd1d0a4cede"
@@ -9170,7 +10342,7 @@
         "created": "2018-08-24T00:00:00-05:00",
         "insurer": {
           "reference": "Organization/0df4824d-6907-5319-80ab-2f36332b9ce1",
-          "display": "Medicare Fee-for-Service"
+          "display": "Centers for Medicare & Medicaid Services"
         },
         "provider": {
           "reference": "Organization/26068363-2ba2-5aa3-9364-316743f68f18"
@@ -9609,7 +10781,7 @@
         "created": "2018-08-31T00:00:00-05:00",
         "insurer": {
           "reference": "Organization/0df4824d-6907-5319-80ab-2f36332b9ce1",
-          "display": "Medicare Fee-for-Service"
+          "display": "Centers for Medicare & Medicaid Services"
         },
         "provider": {
           "reference": "Organization/2450fdaa-26bc-5a13-a17e-a6a0b14cb10d"
@@ -9818,7 +10990,7 @@
                   ]
                 },
                 "amount": {
-                  "value": 23.90,
+                  "value": 23.9,
                   "currency": "USD"
                 }
               },
@@ -9944,7 +11116,7 @@
               ]
             },
             "amount": {
-              "value": 23.90,
+              "value": 23.9,
               "currency": "USD"
             }
           }
@@ -10023,7 +11195,7 @@
         "created": "2018-09-10T00:00:00-05:00",
         "insurer": {
           "reference": "Organization/0df4824d-6907-5319-80ab-2f36332b9ce1",
-          "display": "Medicare Fee-for-Service"
+          "display": "Centers for Medicare & Medicaid Services"
         },
         "provider": {
           "reference": "Organization/6013115e-5f69-5e6b-b4a3-55353b41415a"
@@ -10192,7 +11364,7 @@
                   ]
                 },
                 "amount": {
-                  "value": 113.20,
+                  "value": 113.2,
                   "currency": "USD"
                 }
               },
@@ -10207,7 +11379,7 @@
                   ]
                 },
                 "amount": {
-                  "value": 28.30,
+                  "value": 28.3,
                   "currency": "USD"
                 }
               },
@@ -10650,7 +11822,7 @@
         "created": "2024-07-17T00:00:00-05:00",
         "insurer": {
           "reference": "Organization/0df4824d-6907-5319-80ab-2f36332b9ce1",
-          "display": "Medicare Fee-for-Service"
+          "display": "Centers for Medicare & Medicaid Services"
         },
         "provider": {
           "reference": "Organization/ecaa4573-92ad-52cd-8085-9dd1d0a4cede"
@@ -10915,7 +12087,7 @@
                   ]
                 },
                 "amount": {
-                  "value": 0.00,
+                  "value": 0.0,
                   "currency": "USD"
                 }
               },
@@ -11253,7 +12425,7 @@
         "created": "2024-08-09T00:00:00-05:00",
         "insurer": {
           "reference": "Organization/0df4824d-6907-5319-80ab-2f36332b9ce1",
-          "display": "Medicare Fee-for-Service"
+          "display": "Centers for Medicare & Medicaid Services"
         },
         "provider": {
           "reference": "Organization/2450fdaa-26bc-5a13-a17e-a6a0b14cb10d"
@@ -11461,7 +12633,7 @@
                   ]
                 },
                 "amount": {
-                  "value": 0.00,
+                  "value": 0.0,
                   "currency": "USD"
                 }
               },
@@ -11580,7 +12752,7 @@
                   ]
                 },
                 "amount": {
-                  "value": 0.00,
+                  "value": 0.0,
                   "currency": "USD"
                 }
               },
@@ -11706,7 +12878,7 @@
               ]
             },
             "amount": {
-              "value": 0.00,
+              "value": 0.0,
               "currency": "USD"
             }
           }
@@ -11785,7 +12957,7 @@
         "created": "2026-07-16T00:00:00-05:00",
         "insurer": {
           "reference": "Organization/0df4824d-6907-5319-80ab-2f36332b9ce1",
-          "display": "Medicare Fee-for-Service"
+          "display": "Centers for Medicare & Medicaid Services"
         },
         "provider": {
           "reference": "Organization/ecaa4573-92ad-52cd-8085-9dd1d0a4cede"
@@ -12074,7 +13246,7 @@
                   ]
                 },
                 "amount": {
-                  "value": 0.00,
+                  "value": 0.0,
                   "currency": "USD"
                 }
               },
@@ -12193,7 +13365,7 @@
                   ]
                 },
                 "amount": {
-                  "value": 104.90,
+                  "value": 104.9,
                   "currency": "USD"
                 }
               },
@@ -12413,7 +13585,7 @@
         "created": "2026-07-15T00:00:00-05:00",
         "insurer": {
           "reference": "Organization/0df4824d-6907-5319-80ab-2f36332b9ce1",
-          "display": "Medicare Fee-for-Service"
+          "display": "Centers for Medicare & Medicaid Services"
         },
         "provider": {
           "reference": "Organization/c7c269ee-ce2f-54f7-a90e-2ac2f127e3f7"
@@ -12671,7 +13843,7 @@
                   ]
                 },
                 "amount": {
-                  "value": 0.00,
+                  "value": 0.0,
                   "currency": "USD"
                 }
               },
@@ -12791,7 +13963,7 @@
                   ]
                 },
                 "amount": {
-                  "value": 0.00,
+                  "value": 0.0,
                   "currency": "USD"
                 }
               },
@@ -12911,7 +14083,7 @@
                   ]
                 },
                 "amount": {
-                  "value": 0.00,
+                  "value": 0.0,
                   "currency": "USD"
                 }
               },
@@ -13151,7 +14323,7 @@
                   ]
                 },
                 "amount": {
-                  "value": 0.00,
+                  "value": 0.0,
                   "currency": "USD"
                 }
               },
@@ -13247,7 +14419,7 @@
               ]
             },
             "amount": {
-              "value": 46.00,
+              "value": 46.0,
               "currency": "USD"
             }
           },
@@ -13262,7 +14434,7 @@
               ]
             },
             "amount": {
-              "value": 46.00,
+              "value": 46.0,
               "currency": "USD"
             }
           },
@@ -13277,7 +14449,7 @@
               ]
             },
             "amount": {
-              "value": 0.00,
+              "value": 0.0,
               "currency": "USD"
             }
           }
@@ -13295,7 +14467,7 @@
           },
           "date": "2026-07-29",
           "amount": {
-            "value": 46.00,
+            "value": 46.0,
             "currency": "USD"
           }
         }
@@ -13356,7 +14528,7 @@
         "created": "2026-08-06T00:00:00-05:00",
         "insurer": {
           "reference": "Organization/0df4824d-6907-5319-80ab-2f36332b9ce1",
-          "display": "Medicare Fee-for-Service"
+          "display": "Centers for Medicare & Medicaid Services"
         },
         "provider": {
           "reference": "Organization/6013115e-5f69-5e6b-b4a3-55353b41415a"
@@ -13848,7 +15020,7 @@
         "created": "2026-08-21T00:00:00-05:00",
         "insurer": {
           "reference": "Organization/0df4824d-6907-5319-80ab-2f36332b9ce1",
-          "display": "Medicare Fee-for-Service"
+          "display": "Centers for Medicare & Medicaid Services"
         },
         "provider": {
           "reference": "Organization/0ed2e382-3e00-57f8-b641-ec9293682bef"

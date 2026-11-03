@@ -54,13 +54,13 @@
     },
     "coverage": [
       {
-        "subscriberId": "SYN-11B1CF66C6",
+        "subscriberId": "3TQ7RW5CH42",
         "coverageType": {
-          "text": "Medicare (Managed Care)",
+          "text": "Original Medicare (Part A and Part B)",
           "codings": [
             {
-              "code": "11",
-              "display": "Medicare Managed Care (Includes Medicare Advantage Plans)",
+              "code": "121",
+              "display": "Medicare FFS",
               "system": "https://nahdo.org/sopt"
             }
           ]
@@ -75,12 +75,12 @@
             }
           ]
         },
-        "startDate": "2018-07-14",
+        "startDate": "2018-07-01",
         "endDate": null,
         "groupId": null,
         "groupName": null,
-        "planIdentifier": "medicare-ffs",
-        "planName": "medicare-ffs",
+        "planIdentifier": "MEDICARE-PART-A-B",
+        "planName": "Original Medicare Part A (Hospital) and Part B (Medical)",
         "payerIdentifier": null,
         "otherPayerName": null,
         "relationshipToSubscriber": {
@@ -93,7 +93,7 @@
             }
           ]
         },
-        "claimPayerName": "Medicare Fee-for-Service"
+        "claimPayerName": "Centers for Medicare & Medicaid Services"
       }
     ],
     "medicalClaim": [

@@ -856,11 +856,11 @@
     ],
     "labResults": [
       {
-        "order": {
+        "orderedTest": {
           "text": null,
           "codings": []
         },
-        "test": {
+        "performedTest": {
           "text": "Hemoglobin A1c/Hemoglobin.total in Blood",
           "codings": [
             {
@@ -881,7 +881,7 @@
           ]
         },
         "resultValue": {
-          "text": null,
+          "text": "9.2",
           "type": {
             "text": null,
             "codings": []
@@ -927,11 +927,11 @@
         }
       },
       {
-        "order": {
+        "orderedTest": {
           "text": null,
           "codings": []
         },
-        "test": {
+        "performedTest": {
           "text": "Hemoglobin A1c/Hemoglobin.total in Blood",
           "codings": [
             {
@@ -952,7 +952,7 @@
           ]
         },
         "resultValue": {
-          "text": null,
+          "text": "8.5",
           "type": {
             "text": null,
             "codings": []
@@ -998,11 +998,11 @@
         }
       },
       {
-        "order": {
+        "orderedTest": {
           "text": null,
           "codings": []
         },
-        "test": {
+        "performedTest": {
           "text": "Glomerular filtration rate/1.73 sq M.predicted (MDRD)",
           "codings": [
             {
@@ -1023,7 +1023,7 @@
           ]
         },
         "resultValue": {
-          "text": null,
+          "text": "57",
           "type": {
             "text": null,
             "codings": []
@@ -1069,11 +1069,11 @@
         }
       },
       {
-        "order": {
+        "orderedTest": {
           "text": null,
           "codings": []
         },
-        "test": {
+        "performedTest": {
           "text": "Right eye Distance binocular Visual acuity LogMAR",
           "codings": [
             {
@@ -1094,7 +1094,7 @@
           ]
         },
         "resultValue": {
-          "text": null,
+          "text": "0.02",
           "type": {
             "text": null,
             "codings": []
@@ -1140,11 +1140,11 @@
         }
       },
       {
-        "order": {
+        "orderedTest": {
           "text": null,
           "codings": []
         },
-        "test": {
+        "performedTest": {
           "text": "Glucose [Mass/volume] in Serum or Plasma",
           "codings": [
             {
@@ -1165,7 +1165,7 @@
           ]
         },
         "resultValue": {
-          "text": null,
+          "text": "168",
           "type": {
             "text": null,
             "codings": []
@@ -1217,11 +1217,11 @@
         }
       },
       {
-        "order": {
+        "orderedTest": {
           "text": null,
           "codings": []
         },
-        "test": {
+        "performedTest": {
           "text": "Urea nitrogen [Mass/volume] in Serum or Plasma",
           "codings": [
             {
@@ -1242,7 +1242,7 @@
           ]
         },
         "resultValue": {
-          "text": null,
+          "text": "24",
           "type": {
             "text": null,
             "codings": []
@@ -1294,11 +1294,11 @@
         }
       },
       {
-        "order": {
+        "orderedTest": {
           "text": null,
           "codings": []
         },
-        "test": {
+        "performedTest": {
           "text": "Creatinine [Mass/volume] in Serum or Plasma",
           "codings": [
             {
@@ -1319,7 +1319,7 @@
           ]
         },
         "resultValue": {
-          "text": null,
+          "text": "1.21",
           "type": {
             "text": null,
             "codings": []
@@ -1371,11 +1371,11 @@
         }
       },
       {
-        "order": {
+        "orderedTest": {
           "text": null,
           "codings": []
         },
-        "test": {
+        "performedTest": {
           "text": "Glomerular filtration rate [Volume Rate/Area] in Serum, Plasma or Blood by Creatinine-based formula (CKD-EPI 2021)/1.73 sq M",
           "codings": [
             {
@@ -1396,7 +1396,7 @@
           ]
         },
         "resultValue": {
-          "text": null,
+          "text": "49",
           "type": {
             "text": null,
             "codings": []
@@ -1448,11 +1448,11 @@
         }
       },
       {
-        "order": {
+        "orderedTest": {
           "text": null,
           "codings": []
         },
-        "test": {
+        "performedTest": {
           "text": "Sodium [Moles/volume] in Serum or Plasma",
           "codings": [
             {
@@ -1473,7 +1473,7 @@
           ]
         },
         "resultValue": {
-          "text": null,
+          "text": "139",
           "type": {
             "text": null,
             "codings": []
@@ -1525,11 +1525,11 @@
         }
       },
       {
-        "order": {
+        "orderedTest": {
           "text": null,
           "codings": []
         },
-        "test": {
+        "performedTest": {
           "text": "Potassium [Moles/volume] in Serum or Plasma",
           "codings": [
             {
@@ -1550,7 +1550,7 @@
           ]
         },
         "resultValue": {
-          "text": null,
+          "text": "4.8",
           "type": {
             "text": null,
             "codings": []
@@ -1602,11 +1602,11 @@
         }
       },
       {
-        "order": {
+        "orderedTest": {
           "text": null,
           "codings": []
         },
-        "test": {
+        "performedTest": {
           "text": "Chloride [Moles/volume] in Serum or Plasma",
           "codings": [
             {
@@ -1627,7 +1627,7 @@
           ]
         },
         "resultValue": {
-          "text": null,
+          "text": "103",
           "type": {
             "text": null,
             "codings": []
@@ -1679,11 +1679,11 @@
         }
       },
       {
-        "order": {
+        "orderedTest": {
           "text": null,
           "codings": []
         },
-        "test": {
+        "performedTest": {
           "text": "Carbon dioxide, total [Moles/volume] in Serum or Plasma",
           "codings": [
             {
@@ -1704,7 +1704,7 @@
           ]
         },
         "resultValue": {
-          "text": null,
+          "text": "24",
           "type": {
             "text": null,
             "codings": []
@@ -1756,11 +1756,11 @@
         }
       },
       {
-        "order": {
+        "orderedTest": {
           "text": null,
           "codings": []
         },
-        "test": {
+        "performedTest": {
           "text": "Calcium [Mass/volume] in Serum or Plasma",
           "codings": [
             {
@@ -1781,7 +1781,7 @@
           ]
         },
         "resultValue": {
-          "text": null,
+          "text": "9.4",
           "type": {
             "text": null,
             "codings": []
@@ -1833,11 +1833,11 @@
         }
       },
       {
-        "order": {
+        "orderedTest": {
           "text": null,
           "codings": []
         },
-        "test": {
+        "performedTest": {
           "text": "Albumin [Mass/volume] in Serum or Plasma",
           "codings": [
             {
@@ -1858,7 +1858,7 @@
           ]
         },
         "resultValue": {
-          "text": null,
+          "text": "4",
           "type": {
             "text": null,
             "codings": []
@@ -1910,11 +1910,11 @@
         }
       },
       {
-        "order": {
+        "orderedTest": {
           "text": null,
           "codings": []
         },
-        "test": {
+        "performedTest": {
           "text": "Protein [Mass/volume] in Serum or Plasma",
           "codings": [
             {
@@ -1935,7 +1935,7 @@
           ]
         },
         "resultValue": {
-          "text": null,
+          "text": "7.1",
           "type": {
             "text": null,
             "codings": []
@@ -1987,11 +1987,11 @@
         }
       },
       {
-        "order": {
+        "orderedTest": {
           "text": null,
           "codings": []
         },
-        "test": {
+        "performedTest": {
           "text": "Alanine aminotransferase [Enzymatic activity/volume] in Serum or Plasma",
           "codings": [
             {
@@ -2012,7 +2012,7 @@
           ]
         },
         "resultValue": {
-          "text": null,
+          "text": "18",
           "type": {
             "text": null,
             "codings": []
@@ -2064,11 +2064,11 @@
         }
       },
       {
-        "order": {
+        "orderedTest": {
           "text": null,
           "codings": []
         },
-        "test": {
+        "performedTest": {
           "text": "Aspartate aminotransferase [Enzymatic activity/volume] in Serum or Plasma",
           "codings": [
             {
@@ -2089,7 +2089,7 @@
           ]
         },
         "resultValue": {
-          "text": null,
+          "text": "21",
           "type": {
             "text": null,
             "codings": []
@@ -2141,11 +2141,11 @@
         }
       },
       {
-        "order": {
+        "orderedTest": {
           "text": null,
           "codings": []
         },
-        "test": {
+        "performedTest": {
           "text": "Alkaline phosphatase [Enzymatic activity/volume] in Serum or Plasma",
           "codings": [
             {
@@ -2166,7 +2166,7 @@
           ]
         },
         "resultValue": {
-          "text": null,
+          "text": "74",
           "type": {
             "text": null,
             "codings": []
@@ -2218,11 +2218,11 @@
         }
       },
       {
-        "order": {
+        "orderedTest": {
           "text": null,
           "codings": []
         },
-        "test": {
+        "performedTest": {
           "text": "Bilirubin.total [Mass/volume] in Serum or Plasma",
           "codings": [
             {
@@ -2243,7 +2243,7 @@
           ]
         },
         "resultValue": {
-          "text": null,
+          "text": "0.6",
           "type": {
             "text": null,
             "codings": []
@@ -2295,11 +2295,11 @@
         }
       },
       {
-        "order": {
+        "orderedTest": {
           "text": null,
           "codings": []
         },
-        "test": {
+        "performedTest": {
           "text": "Cholesterol [Mass/volume] in Serum or Plasma",
           "codings": [
             {
@@ -2320,7 +2320,7 @@
           ]
         },
         "resultValue": {
-          "text": null,
+          "text": "182",
           "type": {
             "text": null,
             "codings": []
@@ -2372,11 +2372,11 @@
         }
       },
       {
-        "order": {
+        "orderedTest": {
           "text": null,
           "codings": []
         },
-        "test": {
+        "performedTest": {
           "text": "Triglyceride [Mass/volume] in Serum or Plasma",
           "codings": [
             {
@@ -2397,7 +2397,7 @@
           ]
         },
         "resultValue": {
-          "text": null,
+          "text": "168",
           "type": {
             "text": null,
             "codings": []
@@ -2449,11 +2449,11 @@
         }
       },
       {
-        "order": {
+        "orderedTest": {
           "text": null,
           "codings": []
         },
-        "test": {
+        "performedTest": {
           "text": "Cholesterol in HDL [Mass/volume] in Serum or Plasma",
           "codings": [
             {
@@ -2474,7 +2474,7 @@
           ]
         },
         "resultValue": {
-          "text": null,
+          "text": "46",
           "type": {
             "text": null,
             "codings": []
@@ -2526,11 +2526,11 @@
         }
       },
       {
-        "order": {
+        "orderedTest": {
           "text": null,
           "codings": []
         },
-        "test": {
+        "performedTest": {
           "text": "Cholesterol in LDL [Mass/volume] in Serum or Plasma by calculation",
           "codings": [
             {
@@ -2551,7 +2551,7 @@
           ]
         },
         "resultValue": {
-          "text": null,
+          "text": "102",
           "type": {
             "text": null,
             "codings": []
@@ -2603,11 +2603,11 @@
         }
       },
       {
-        "order": {
+        "orderedTest": {
           "text": null,
           "codings": []
         },
-        "test": {
+        "performedTest": {
           "text": "Hemoglobin A1c/Hemoglobin.total in Blood",
           "codings": [
             {
@@ -2628,7 +2628,7 @@
           ]
         },
         "resultValue": {
-          "text": null,
+          "text": "8.4",
           "type": {
             "text": null,
             "codings": []
@@ -2680,11 +2680,11 @@
         }
       },
       {
-        "order": {
+        "orderedTest": {
           "text": null,
           "codings": []
         },
-        "test": {
+        "performedTest": {
           "text": "Albumin/Creatinine [Mass Ratio] in Urine",
           "codings": [
             {
@@ -2705,7 +2705,7 @@
           ]
         },
         "resultValue": {
-          "text": null,
+          "text": "142",
           "type": {
             "text": null,
             "codings": []
@@ -3604,7 +3604,7 @@
           ]
         },
         "resultValue": {
-          "text": null,
+          "text": "157",
           "type": {
             "text": null,
             "codings": []
@@ -3665,7 +3665,7 @@
           ]
         },
         "resultValue": {
-          "text": null,
+          "text": "98",
           "type": {
             "text": null,
             "codings": []
@@ -3726,7 +3726,7 @@
           ]
         },
         "resultValue": {
-          "text": null,
+          "text": "136",
           "type": {
             "text": null,
             "codings": []
@@ -3787,7 +3787,7 @@
           ]
         },
         "resultValue": {
-          "text": null,
+          "text": "78",
           "type": {
             "text": null,
             "codings": []
@@ -3848,7 +3848,7 @@
           ]
         },
         "resultValue": {
-          "text": null,
+          "text": "118",
           "type": {
             "text": null,
             "codings": []
@@ -3909,7 +3909,7 @@
           ]
         },
         "resultValue": {
-          "text": null,
+          "text": "78",
           "type": {
             "text": null,
             "codings": []
@@ -3970,7 +3970,7 @@
           ]
         },
         "resultValue": {
-          "text": null,
+          "text": "20.4",
           "type": {
             "text": null,
             "codings": []
