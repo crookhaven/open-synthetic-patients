@@ -193,7 +193,7 @@
       "variant_stats": {
         "clean": {
           "file": "bundle.json",
-          "bytes": 417233,
+          "bytes": 417629,
           "resource_count": 114,
           "resource_types": {
             "Observation": 40,
@@ -319,7 +319,7 @@
       "variant_stats": {
         "clean": {
           "file": "bundle.json",
-          "bytes": 1529307,
+          "bytes": 1530651,
           "resource_count": 408,
           "resource_types": {
             "Observation": 122,
