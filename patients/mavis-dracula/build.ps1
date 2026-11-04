@@ -31,7 +31,7 @@ Add ([ordered]@{
       [ordered]@{ url = 'text'; valueString = 'Not Hispanic or Latino' }) },
     [ordered]@{ url = "$UC/us-core-birthsex"; valueCode = 'F' }
   )
-  identifier = @([ordered]@{ use = 'usual'; type = (CC 'http://terminology.hl7.org/CodeSystem/v2-0203' 'MR' 'Medical record number'); system = 'https://example.org/open-synthetic-patients/mrn'; value = $PatId })
+  identifier = @([ordered]@{ use = 'usual'; type = (CC 'http://terminology.hl7.org/CodeSystem/v2-0203' 'MR' 'Medical record number'); system = 'https://crookhaven.github.io/open-synthetic-patients/id/mrn'; value = $PatId })
   active = $true
   name = @([ordered]@{ use = 'official'; family = 'Dracula'; given = @('Mavis') })
   telecom = @(
