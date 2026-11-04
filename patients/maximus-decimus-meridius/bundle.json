@@ -3377,8 +3377,7 @@
               "coding": [
                 {
                   "system": "http://terminology.hl7.org/CodeSystem/C4DICExtendedCopayTypeCS",
-                  "code": "IndOutDed",
-                  "display": "Individual Out of Network Deductible"
+                  "code": "IndOutDed"
                 }
               ]
             },

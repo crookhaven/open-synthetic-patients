@@ -63,7 +63,8 @@ COPAY_DISPLAY = {
     "gpvisit": "GP Office Visit", "spvisit": "Specialist Office Visit", "emergency": "Emergency",
     "urgentcare": "Urgent Care", "televisit": "Tele-visit", "copaypct": "Copay Percentage", "copay": "Copay Amount",
     "deductible": "Deductible", "maxoutofpocket": "Maximum out of pocket", "inpthosp": "Inpatient Hospital",
-    "IndInDed": "Individual In Network Deductible", "IndOutDed": "Individual Out of Network Deductible",
+    # IndOutDed is left without a display: the code system's own display has a typo ("Invidual").
+    "IndInDed": "Individual In Network Deductible", "IndOutDed": None,
     "IndInMax": "Individual In Network Out of Pocket Maximum", "IndOutMax": "Individual Out of Network Out of Pocket Maximum",
     "FamInDed": "Family In Network Deductible", "FamInMax": "Family In Network Out of Pocket Maximum",
     "rx": "Prescription",
@@ -227,7 +228,10 @@ def color(kind, hex_color):
 def copay(entry):
     code = entry["type"]
     system = COPAY_EXT_CS if code in EXTENDED_COPAYS else COPAY_CS
-    out = {"type": {"coding": [{"system": system, "code": code, "display": COPAY_DISPLAY.get(code, code)}]}}
+    coding = {"system": system, "code": code}
+    if COPAY_DISPLAY.get(code, code):
+        coding["display"] = COPAY_DISPLAY.get(code, code)
+    out = {"type": {"coding": [coding]}}
     if "text" in entry:
         out["type"]["text"] = entry["text"]
     if "amount" in entry:
