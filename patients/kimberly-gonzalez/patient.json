@@ -21,7 +21,8 @@
     "clinical-notes",
     "referrals",
     "smart-health-links",
-    "cgm-coverage"
+    "cgm-coverage",
+    "digital-insurance-card"
   ],
   "source": {
     "method": "derived",
@@ -34,7 +35,7 @@
     "fhir_server": "https://hapi.fhir.org/baseR4 (public test server, wiped from time to time)",
     "smart_health_link": "https://raw.githubusercontent.com/crookhaven/M5-WholeHealth/main/synthetic-patients/shl/kimberly-gonzalez.jwe"
   },
-  "notes": "No address on the Patient resource (inherited from the APEX source).",
+  "notes": "No address on the Patient resource (inherited from the APEX source). Insurance: Original Medicare since July 2018, before 65, as Medicare does for people entitled through disability (Part A and B, Medicare number in MBI format), a Medicare Part D drug plan and Medicaid managed care as a dual-eligible secondary payer, all on the CARIN Digital Insurance Card profiles with card images (the Medicare card is a sample layout, not the official design; plan names and numbers are synthetic).",
   "variants": {
     "clean": "bundle.json"
   },

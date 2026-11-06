@@ -42,7 +42,8 @@
     "smart-health-links",
     "cpap-coverage",
     "glp1-prior-auth",
-    "large-record"
+    "large-record",
+    "digital-insurance-card"
   ],
   "source": {
     "method": "hand-built",
@@ -54,7 +55,7 @@
     "fhir_server": "https://hapi.fhir.org/baseR4 (public test server, wiped from time to time)",
     "smart_health_link": "https://raw.githubusercontent.com/crookhaven/M5-WholeHealth/main/synthetic-patients/shl/maximus-decimus-meridius.jwe"
   },
-  "notes": "Codes were checked against RxNav (RxNorm, NDC), NLM Clinical Tables (LOINC, ICD-10-CM) and tx.fhir.org (SNOMED CT, CVX, ICD-10-PCS). Dental surface codes (ex-surface) could not be verified. The MRN identifier system reuses an APEX Atlas URL, although this patient is not derived from APEX Atlas.",
+  "notes": "Codes were checked against RxNav (RxNorm, NDC), NLM Clinical Tables (LOINC, ICD-10-CM) and tx.fhir.org (SNOMED CT, CVX, ICD-10-PCS). Dental surface codes (ex-surface) could not be verified. Insurance: medical (PPO with pharmacy), dental and vision cards on the CARIN Digital Insurance Card profiles, with logos, card images, barcode, QR code, RxBIN/PCN/group and payer contacts (all synthetic; see insurance-cards/).",
   "variants": {
     "clean": "bundle.json"
   },

@@ -31,7 +31,7 @@ Add ([ordered]@{
       [ordered]@{ url = 'text'; valueString = 'Not Hispanic or Latino' }) },
     [ordered]@{ url = "$UC/us-core-birthsex"; valueCode = 'M' }
   )
-  identifier = @([ordered]@{ use = 'usual'; type = (CC 'http://terminology.hl7.org/CodeSystem/v2-0203' 'MR' 'Medical record number'); system = 'https://parkerapex.com/atlas/mrn'; value = $PatId })
+  identifier = @([ordered]@{ use = 'usual'; type = (CC 'http://terminology.hl7.org/CodeSystem/v2-0203' 'MR' 'Medical record number'); system = 'https://crookhaven.github.io/open-synthetic-patients/id/mrn'; value = $PatId })
   active = $true
   name = @([ordered]@{ use = 'official'; family = 'Meridius'; given = @('Maximus', 'Decimus') })
   telecom = @(
@@ -969,3 +969,8 @@ Fill 'rx_chlorhex26' '2026-02-25' 'm_chlorhex' 'pr_perio' 14 473 'mL' 18 8 5 0
 Write-Bundle $Output
 "Wrote $Output"
 Test-Bundle $Output
+
+# Insurance cards: rewrite Coverage, the payer and the Patient on the CARIN
+# Digital Insurance Card profiles and draw the card images, from
+# insurance-cards.json (needs Python with Pillow and segno).
+python (Join-Path $PSScriptRoot '..\..\tools\insurance_cards.py') (Split-Path $PSScriptRoot -Leaf)

@@ -78,7 +78,8 @@
         "clinical-notes",
         "referrals",
         "smart-health-links",
-        "cgm-coverage"
+        "cgm-coverage",
+        "digital-insurance-card"
       ],
       "source": {
         "method": "derived",
@@ -91,7 +92,7 @@
         "fhir_server": "https://hapi.fhir.org/baseR4 (public test server, wiped from time to time)",
         "smart_health_link": "https://raw.githubusercontent.com/crookhaven/M5-WholeHealth/main/synthetic-patients/shl/kimberly-gonzalez.jwe"
       },
-      "notes": "No address on the Patient resource (inherited from the APEX source).",
+      "notes": "No address on the Patient resource (inherited from the APEX source). Insurance: Original Medicare since July 2018, before 65, as Medicare does for people entitled through disability (Part A and B, Medicare number in MBI format), a Medicare Part D drug plan and Medicaid managed care as a dual-eligible secondary payer, all on the CARIN Digital Insurance Card profiles with card images (the Medicare card is a sample layout, not the official design; plan names and numbers are synthetic).",
       "variants": {
         "clean": "bundle.json"
       },
@@ -101,28 +102,31 @@
       "variant_stats": {
         "clean": {
           "file": "bundle.json",
-          "bytes": 455538,
-          "resource_count": 130,
+          "bytes": 596058,
+          "resource_count": 134,
           "resource_types": {
             "Observation": 29,
             "Encounter": 13,
+            "Organization": 11,
             "Binary": 10,
             "DocumentReference": 10,
             "ExplanationOfBenefit": 10,
             "ServiceRequest": 10,
-            "Organization": 9,
             "DiagnosticReport": 7,
             "Condition": 6,
             "MedicationRequest": 6,
             "Practitioner": 6,
             "PractitionerRole": 6,
             "ImagingStudy": 5,
-            "Coverage": 1,
+            "Coverage": 3,
             "Immunization": 1,
             "Patient": 1
           },
           "profiles": [
             "C4BB-ExplanationOfBenefit-Professional-NonClinician",
+            "C4DIC-Coverage",
+            "C4DIC-Organization",
+            "C4DIC-Patient",
             "us-core-blood-pressure",
             "us-core-condition-problems-health-concerns",
             "us-core-coverage",
@@ -166,7 +170,8 @@
         "marketplace-plan-comparison",
         "carin-bb-claims",
         "clinical-notes",
-        "smart-health-links"
+        "smart-health-links",
+        "digital-insurance-card"
       ],
       "source": {
         "method": "hand-built",
@@ -178,7 +183,7 @@
         "fhir_server": "https://hapi.fhir.org/baseR4 (public test server, wiped from time to time)",
         "smart_health_link": "https://raw.githubusercontent.com/crookhaven/M5-WholeHealth/main/synthetic-patients/shl/mavis-dracula.jwe"
       },
-      "notes": "Current medicines' RxNorm codes for drug-coverage checks: 966253, 312941, 313161, 895994, 2123076, 1797907. No pharmacy claims, so each medicine appears once. The MRN identifier system reuses an APEX Atlas URL, although this patient is not derived from APEX Atlas.",
+      "notes": "Current medicines' RxNorm codes for drug-coverage checks: 966253, 312941, 313161, 895994, 2123076, 1797907. No pharmacy claims, so each medicine appears once. Insurance: an individual Marketplace HMO card on the CARIN Digital Insurance Card profiles, with pharmacy numbers, copays, card images, barcode and QR code (synthetic; see insurance-cards/).",
       "variants": {
         "clean": "bundle.json"
       },
@@ -188,7 +193,7 @@
       "variant_stats": {
         "clean": {
           "file": "bundle.json",
-          "bytes": 359812,
+          "bytes": 417629,
           "resource_count": 114,
           "resource_types": {
             "Observation": 40,
@@ -213,6 +218,9 @@
           },
           "profiles": [
             "C4BB-ExplanationOfBenefit-Professional-NonClinician",
+            "C4DIC-Coverage",
+            "C4DIC-Organization",
+            "C4DIC-Patient",
             "us-core-allergyintolerance",
             "us-core-blood-pressure",
             "us-core-bmi",
@@ -288,7 +296,8 @@
         "smart-health-links",
         "cpap-coverage",
         "glp1-prior-auth",
-        "large-record"
+        "large-record",
+        "digital-insurance-card"
       ],
       "source": {
         "method": "hand-built",
@@ -300,7 +309,7 @@
         "fhir_server": "https://hapi.fhir.org/baseR4 (public test server, wiped from time to time)",
         "smart_health_link": "https://raw.githubusercontent.com/crookhaven/M5-WholeHealth/main/synthetic-patients/shl/maximus-decimus-meridius.jwe"
       },
-      "notes": "Codes were checked against RxNav (RxNorm, NDC), NLM Clinical Tables (LOINC, ICD-10-CM) and tx.fhir.org (SNOMED CT, CVX, ICD-10-PCS). Dental surface codes (ex-surface) could not be verified. The MRN identifier system reuses an APEX Atlas URL, although this patient is not derived from APEX Atlas.",
+      "notes": "Codes were checked against RxNav (RxNorm, NDC), NLM Clinical Tables (LOINC, ICD-10-CM) and tx.fhir.org (SNOMED CT, CVX, ICD-10-PCS). Dental surface codes (ex-surface) could not be verified. Insurance: medical (PPO with pharmacy), dental and vision cards on the CARIN Digital Insurance Card profiles, with logos, card images, barcode, QR code, RxBIN/PCN/group and payer contacts (all synthetic; see insurance-cards/).",
       "variants": {
         "clean": "bundle.json"
       },
@@ -310,7 +319,7 @@
       "variant_stats": {
         "clean": {
           "file": "bundle.json",
-          "bytes": 1385622,
+          "bytes": 1530582,
           "resource_count": 408,
           "resource_types": {
             "Observation": 122,
@@ -340,6 +349,9 @@
             "C4BB-ExplanationOfBenefit-Oral",
             "C4BB-ExplanationOfBenefit-Pharmacy",
             "C4BB-ExplanationOfBenefit-Professional-NonClinician",
+            "C4DIC-Coverage",
+            "C4DIC-Organization",
+            "C4DIC-Patient",
             "us-core-allergyintolerance",
             "us-core-blood-pressure",
             "us-core-bmi",

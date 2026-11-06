@@ -19,7 +19,7 @@ from pathlib import Path
 
 ROOT = Path(__file__).resolve().parent.parent
 KNOWN = ROOT / "tools" / "validation_known_issues.json"
-IGS = ["hl7.fhir.us.core#6.1.0", "hl7.fhir.us.carin-bb#2.1.0"]
+IGS = ["hl7.fhir.us.core#6.1.0", "hl7.fhir.us.carin-bb#2.1.0", "hl7.fhir.us.insurance-card#2.0.0-ballot"]
 ERROR_LINE = re.compile(r"^\s*Error @ (?P<path>.*?)(?: \(line \d+, col\d+\))?: (?P<msg>.*)$")
 SUMMARY_LINE = re.compile(r"^(Success|\*FAILURE\*):.*$", re.M)
 

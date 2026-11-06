@@ -68,8 +68,13 @@
       {
         "subscriberId": "AMP-562-38-1988",
         "coverageType": {
-          "text": "health maintenance organization policy",
+          "text": "HMO",
           "codings": [
+            {
+              "code": "511",
+              "display": "Commercial Managed Care - HMO",
+              "system": "https://nahdo.org/sopt"
+            },
             {
               "code": "HMO",
               "display": "health maintenance organization policy",
@@ -89,8 +94,8 @@
         },
         "startDate": "2025-01-01",
         "endDate": null,
-        "groupId": "LEGION-VETS-01",
-        "groupName": "Individual Marketplace",
+        "groupId": null,
+        "groupName": null,
         "planIdentifier": "ATLAS-SILVER-4500-HMO",
         "planName": "Atlas Silver 4500 HMO",
         "payerIdentifier": null,
@@ -135,7 +140,7 @@
           "text": null,
           "codings": []
         },
-        "claimPayerIdentifier": "ORG-MVD-PAYER_MED",
+        "claimPayerIdentifier": "ATLMK",
         "medicalRecordNumber": null,
         "claimIdentifierType": "Unique Claim ID",
         "processingStatusCode": {
@@ -266,7 +271,7 @@
           "text": null,
           "codings": []
         },
-        "claimPayerIdentifier": "ORG-MVD-PAYER_MED",
+        "claimPayerIdentifier": "ATLMK",
         "medicalRecordNumber": null,
         "claimIdentifierType": "Unique Claim ID",
         "processingStatusCode": {
@@ -397,7 +402,7 @@
           "text": null,
           "codings": []
         },
-        "claimPayerIdentifier": "ORG-MVD-PAYER_MED",
+        "claimPayerIdentifier": "ATLMK",
         "medicalRecordNumber": null,
         "claimIdentifierType": "Unique Claim ID",
         "processingStatusCode": {
@@ -528,7 +533,7 @@
           "text": null,
           "codings": []
         },
-        "claimPayerIdentifier": "ORG-MVD-PAYER_MED",
+        "claimPayerIdentifier": "ATLMK",
         "medicalRecordNumber": null,
         "claimIdentifierType": "Unique Claim ID",
         "processingStatusCode": {
@@ -659,7 +664,7 @@
           "text": null,
           "codings": []
         },
-        "claimPayerIdentifier": "ORG-MVD-PAYER_MED",
+        "claimPayerIdentifier": "ATLMK",
         "medicalRecordNumber": null,
         "claimIdentifierType": "Unique Claim ID",
         "processingStatusCode": {
@@ -790,7 +795,7 @@
           "text": null,
           "codings": []
         },
-        "claimPayerIdentifier": "ORG-MVD-PAYER_MED",
+        "claimPayerIdentifier": "ATLMK",
         "medicalRecordNumber": null,
         "claimIdentifierType": "Unique Claim ID",
         "processingStatusCode": {
@@ -921,7 +926,7 @@
           "text": null,
           "codings": []
         },
-        "claimPayerIdentifier": "ORG-MVD-PAYER_MED",
+        "claimPayerIdentifier": "ATLMK",
         "medicalRecordNumber": null,
         "claimIdentifierType": "Unique Claim ID",
         "processingStatusCode": {
@@ -1052,7 +1057,7 @@
           "text": null,
           "codings": []
         },
-        "claimPayerIdentifier": "ORG-MVD-PAYER_MED",
+        "claimPayerIdentifier": "ATLMK",
         "medicalRecordNumber": null,
         "claimIdentifierType": "Unique Claim ID",
         "processingStatusCode": {

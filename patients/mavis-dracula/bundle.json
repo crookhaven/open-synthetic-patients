@@ -8,7 +8,9 @@
         "resourceType": "Patient",
         "id": "MVD-SYN-0000000038-2",
         "meta": {
+          "lastUpdated": "2026-11-03T12:00:00Z",
           "profile": [
+            "http://hl7.org/fhir/us/insurance-card/StructureDefinition/C4DIC-Patient",
             "http://hl7.org/fhir/us/core/StructureDefinition/us-core-patient|6.1.0"
           ],
           "tag": [
@@ -72,7 +74,7 @@
               ],
               "text": "Medical record number"
             },
-            "system": "https://parkerapex.com/atlas/mrn",
+            "system": "https://crookhaven.github.io/open-synthetic-patients/id/mrn",
             "value": "MVD-SYN-0000000038-2"
           }
         ],
@@ -228,7 +230,7 @@
         },
         "identifier": [
           {
-            "system": "https://parkerapex.com/atlas/organization",
+            "system": "https://crookhaven.github.io/open-synthetic-patients/id/organization",
             "value": "ORG-MVD-ORG_PCP"
           }
         ],
@@ -277,7 +279,7 @@
         },
         "identifier": [
           {
-            "system": "https://parkerapex.com/atlas/organization",
+            "system": "https://crookhaven.github.io/open-synthetic-patients/id/organization",
             "value": "ORG-MVD-ORG_UC"
           }
         ],
@@ -326,7 +328,7 @@
         },
         "identifier": [
           {
-            "system": "https://parkerapex.com/atlas/organization",
+            "system": "https://crookhaven.github.io/open-synthetic-patients/id/organization",
             "value": "ORG-MVD-ORG_NEURO"
           }
         ],
@@ -375,7 +377,7 @@
         },
         "identifier": [
           {
-            "system": "https://parkerapex.com/atlas/organization",
+            "system": "https://crookhaven.github.io/open-synthetic-patients/id/organization",
             "value": "ORG-MVD-ORG_BH"
           }
         ],
@@ -424,7 +426,7 @@
         },
         "identifier": [
           {
-            "system": "https://parkerapex.com/atlas/organization",
+            "system": "https://crookhaven.github.io/open-synthetic-patients/id/organization",
             "value": "ORG-MVD-ORG_WOMENS"
           }
         ],
@@ -473,7 +475,7 @@
         },
         "identifier": [
           {
-            "system": "https://parkerapex.com/atlas/organization",
+            "system": "https://crookhaven.github.io/open-synthetic-patients/id/organization",
             "value": "ORG-MVD-ORG_LAB"
           }
         ],
@@ -509,7 +511,9 @@
         "resourceType": "Organization",
         "id": "c7b2188e-7fe5-567a-8b9d-ac12f37cb585",
         "meta": {
+          "lastUpdated": "2026-11-03T12:00:00Z",
           "profile": [
+            "http://hl7.org/fhir/us/insurance-card/StructureDefinition/C4DIC-Organization",
             "http://hl7.org/fhir/us/core/StructureDefinition/us-core-organization|6.1.0"
           ],
           "tag": [
@@ -522,7 +526,19 @@
         },
         "identifier": [
           {
-            "system": "https://parkerapex.com/atlas/organization",
+            "type": {
+              "coding": [
+                {
+                  "system": "http://terminology.hl7.org/CodeSystem/C4DICIdentifierType",
+                  "code": "payerid",
+                  "display": "Payer ID"
+                }
+              ]
+            },
+            "value": "ATLMK"
+          },
+          {
+            "system": "https://crookhaven.github.io/open-synthetic-patients/id/organization",
             "value": "ORG-MVD-PAYER_MED"
           }
         ],
@@ -540,14 +556,122 @@
           }
         ],
         "name": "Atlas Marketplace Health Plan",
-        "address": [
+        "telecom": [
           {
-            "line": [
-              "1 Atlas Medical Plaza"
-            ],
-            "city": "Springfield",
-            "state": "IL",
-            "postalCode": "62702"
+            "system": "url",
+            "value": "https://atlas-health.example/marketplace"
+          }
+        ],
+        "contact": [
+          {
+            "purpose": {
+              "coding": [
+                {
+                  "system": "http://terminology.hl7.org/CodeSystem/contactentity-type",
+                  "code": "PATINF",
+                  "display": "Patient"
+                }
+              ]
+            },
+            "telecom": [
+              {
+                "system": "phone",
+                "value": "1-800-555-0140"
+              }
+            ]
+          },
+          {
+            "purpose": {
+              "coding": [
+                {
+                  "system": "http://terminology.hl7.org/CodeSystem/C4DICExtendedContactTypeCS",
+                  "code": "provider",
+                  "display": "Provider Service"
+                }
+              ]
+            },
+            "telecom": [
+              {
+                "system": "phone",
+                "value": "1-800-555-0141"
+              }
+            ]
+          },
+          {
+            "purpose": {
+              "coding": [
+                {
+                  "system": "http://terminology.hl7.org/CodeSystem/C4DICExtendedContactTypeCS",
+                  "code": "pharma",
+                  "display": "Pharmacists"
+                }
+              ]
+            },
+            "telecom": [
+              {
+                "system": "phone",
+                "value": "1-800-555-0142"
+              }
+            ]
+          },
+          {
+            "purpose": {
+              "coding": [
+                {
+                  "system": "http://terminology.hl7.org/CodeSystem/C4DICExtendedContactTypeCS",
+                  "code": "rxmailorder",
+                  "display": "Mail Order Pharmacy"
+                }
+              ]
+            },
+            "telecom": [
+              {
+                "system": "phone",
+                "value": "1-800-555-0143"
+              }
+            ]
+          },
+          {
+            "purpose": {
+              "coding": [
+                {
+                  "system": "http://terminology.hl7.org/CodeSystem/C4DICExtendedContactTypeCS",
+                  "code": "virtual",
+                  "display": "Virtual Care Services"
+                }
+              ]
+            },
+            "telecom": [
+              {
+                "system": "url",
+                "value": "https://atlas-health.example/virtual-care"
+              }
+            ]
+          },
+          {
+            "purpose": {
+              "coding": [
+                {
+                  "system": "http://terminology.hl7.org/CodeSystem/contactentity-type",
+                  "code": "PAYOR",
+                  "display": "Payor"
+                }
+              ]
+            },
+            "name": {
+              "text": "Claims"
+            },
+            "address": {
+              "type": "postal",
+              "text": "PO Box 1460, Springfield, IL 62706",
+              "line": [
+                "PO Box 1460"
+              ],
+              "city": "Springfield",
+              "state": "IL",
+              "postalCode": "62706",
+              "country": "US"
+            }
           }
         ]
       }
@@ -571,7 +695,7 @@
         },
         "identifier": [
           {
-            "system": "https://parkerapex.com/atlas/practitioner",
+            "system": "https://crookhaven.github.io/open-synthetic-patients/id/practitioner",
             "value": "PRAC-MVD-PR_PCP"
           }
         ],
@@ -655,7 +779,7 @@
         },
         "identifier": [
           {
-            "system": "https://parkerapex.com/atlas/practitioner",
+            "system": "https://crookhaven.github.io/open-synthetic-patients/id/practitioner",
             "value": "PRAC-MVD-PR_UC"
           }
         ],
@@ -739,7 +863,7 @@
         },
         "identifier": [
           {
-            "system": "https://parkerapex.com/atlas/practitioner",
+            "system": "https://crookhaven.github.io/open-synthetic-patients/id/practitioner",
             "value": "PRAC-MVD-PR_NEURO"
           }
         ],
@@ -823,7 +947,7 @@
         },
         "identifier": [
           {
-            "system": "https://parkerapex.com/atlas/practitioner",
+            "system": "https://crookhaven.github.io/open-synthetic-patients/id/practitioner",
             "value": "PRAC-MVD-PR_BH"
           }
         ],
@@ -907,7 +1031,7 @@
         },
         "identifier": [
           {
-            "system": "https://parkerapex.com/atlas/practitioner",
+            "system": "https://crookhaven.github.io/open-synthetic-patients/id/practitioner",
             "value": "PRAC-MVD-PR_GYN"
           }
         ],
@@ -991,7 +1115,7 @@
         },
         "identifier": [
           {
-            "system": "https://parkerapex.com/atlas/practitioner",
+            "system": "https://crookhaven.github.io/open-synthetic-patients/id/practitioner",
             "value": "PRAC-MVD-PR_PATH"
           }
         ],
@@ -1075,7 +1199,7 @@
         },
         "identifier": [
           {
-            "system": "https://parkerapex.com/atlas/practitioner",
+            "system": "https://crookhaven.github.io/open-synthetic-patients/id/practitioner",
             "value": "PRAC-MVD-PR_RN"
           }
         ],
@@ -1146,7 +1270,9 @@
         "resourceType": "Coverage",
         "id": "38955a15-dbe5-59b2-90d2-0710377bef4f",
         "meta": {
+          "lastUpdated": "2026-11-03T12:00:00Z",
           "profile": [
+            "http://hl7.org/fhir/us/insurance-card/StructureDefinition/C4DIC-Coverage",
             "http://hl7.org/fhir/us/core/StructureDefinition/us-core-coverage|6.1.0"
           ],
           "tag": [
@@ -1157,6 +1283,198 @@
             }
           ]
         },
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/us/insurance-card/StructureDefinition/C4DIC-PlanBeneficiaries-extension",
+            "extension": [
+              {
+                "url": "memberId",
+                "valueString": "AMP-562-38-1988"
+              },
+              {
+                "url": "name",
+                "valueHumanName": {
+                  "family": "Dracula",
+                  "given": [
+                    "Mavis"
+                  ]
+                }
+              }
+            ]
+          },
+          {
+            "url": "http://hl7.org/fhir/us/insurance-card/StructureDefinition/C4DIC-AdditionalCardInformation-extension",
+            "valueAnnotation": {
+              "text": "TTY users call 711."
+            }
+          },
+          {
+            "url": "http://hl7.org/fhir/us/insurance-card/StructureDefinition/C4DIC-AdditionalCardInformation-extension",
+            "valueAnnotation": {
+              "text": "This card does not guarantee coverage or payment. Misusing it may be fraud."
+            }
+          },
+          {
+            "url": "http://hl7.org/fhir/us/insurance-card/StructureDefinition/C4DIC-AdditionalCardInformation-extension",
+            "valueAnnotation": {
+              "text": "In an emergency, call 911 or go to the nearest emergency room."
+            }
+          },
+          {
+            "url": "http://hl7.org/fhir/us/insurance-card/StructureDefinition/C4DIC-AdditionalCardInformation-extension",
+            "valueAnnotation": {
+              "text": "HMO plan: specialist visits need a referral from your primary care doctor. Out-of-network care is not covered except in an emergency."
+            }
+          },
+          {
+            "url": "http://hl7.org/fhir/us/insurance-card/StructureDefinition/C4DIC-AdditionalCardInformation-extension",
+            "valueAnnotation": {
+              "text": "SAMPLE: synthetic test data from open-synthetic-patients. Not a real insurance card; the plan, numbers and member are made up."
+            }
+          },
+          {
+            "url": "http://hl7.org/fhir/us/insurance-card/StructureDefinition/C4DIC-CardIssueDate-extension",
+            "valueDate": "2024-12-12"
+          },
+          {
+            "url": "http://hl7.org/fhir/us/insurance-card/StructureDefinition/C4DIC-ColorPalette-extension",
+            "extension": [
+              {
+                "url": "http://hl7.org/fhir/us/insurance-card/StructureDefinition/C4DIC-ForegroundColor-extension",
+                "valueCodeableConcept": {
+                  "coding": [
+                    {
+                      "system": "http://terminology.hl7.org/CodeSystem/IECColourManagement",
+                      "code": "#FFFFFF"
+                    }
+                  ]
+                }
+              },
+              {
+                "url": "http://hl7.org/fhir/us/insurance-card/StructureDefinition/C4DIC-BackgroundColor-extension",
+                "valueCodeableConcept": {
+                  "coding": [
+                    {
+                      "system": "http://terminology.hl7.org/CodeSystem/IECColourManagement",
+                      "code": "#1F3A5F"
+                    }
+                  ]
+                }
+              },
+              {
+                "url": "http://hl7.org/fhir/us/insurance-card/StructureDefinition/C4DIC-HighlightColor-extension",
+                "valueCodeableConcept": {
+                  "coding": [
+                    {
+                      "system": "http://terminology.hl7.org/CodeSystem/IECColourManagement",
+                      "code": "#E8B33A"
+                    }
+                  ]
+                }
+              }
+            ]
+          },
+          {
+            "url": "http://hl7.org/fhir/us/insurance-card/StructureDefinition/C4DIC-Logo-extension",
+            "extension": [
+              {
+                "url": "description",
+                "valueString": "Atlas Health logo: a A monogram in a circle beside the plan name. Synthetic brand."
+              },
+              {
+                "url": "image",
+                "valueAttachment": {
+                  "contentType": "image/png",
+                  "data": "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"
+                }
+              },
+              {
+                "url": "label",
+                "valueString": "Atlas Health"
+              }
+            ]
+          },
+          {
+            "url": "http://hl7.org/fhir/us/insurance-card/StructureDefinition/C4DIC-QRCode-extension",
+            "extension": [
+              {
+                "url": "description",
+                "valueString": "QR code on the back of the card holding the plan name, member ID, group and pharmacy numbers as text. Synthetic."
+              },
+              {
+                "url": "image",
+                "valueAttachment": {
+                  "contentType": "image/png",
+                  "data": "iVBORw0KGgoAAAANSUhEUgAAAPQAAAD0AQMAAACW4Zm9AAAABlBMVEX///8AAABVwtN+AAACv0lEQVR42uWZPc4cORBDXxvO2Tf47n+svsHTCbhB9dgbrLHBriuxgsEAwoyg+mGRFPzpq61IadC2bdN2Nr79y6//6z4IVlJJU5sGE4Tff/43qNzIoV7eN96WI1Q2zgfOjdzn6nU497mum/v//P9fr++Tg9wcvjzl3OXc8rVz/uSfVkoVa6p1J/8XhfOPW4Fz//77A6QUa6UhicGt+KukYDPdbxsDZuX8QiuhQEgm9kmygj9NY0KsLdFGA3Hj/LbYYg2JDW1iIhvn05gmQG20wZhal+KPpdQkhTQCoVnCn9YQaBsIUhxQWsl/CE2S8InCAMHG/Lu4H/U+8FivF5GBPhvxT0ppQpy2JwMDWbk/4p0LgCd9gAf04Vm5P5aW0pL0rYQmS/jbVN/SK61pjUlcqX8Smhpj+oLxIMDK/YNCUpn2o0pTd/p/0NYX73yhwFKW5u/w/RRj1erQ/5X5k6n0NiWZ0d+8Gzv4Ow0Q36+k1Han/u2QXqURaUNaV/r/wq+HnBxyAHLucsglwAL/zZBeiSJaAkRc4r9t42jQVmWSsZT/Dv1vWm0/7LM7/P+iV7lyem6B+SgccrhX+k+aQp1L/5j/S/gXLSkjuYYOairdwV9T8VVcNoOIQ0lX+H8pNEmjjvkjdUf/WGh05B/N9H+W9G/5gG81KmpS9/A/ozUcHdCkaVqW9N9IMJBajVhnreivMR9VMgw4owpY0f9ppvTzGgCMHKns1D8JaDOZp5o1/QcSyxiwQz39lMHO/E2xg79JOgZY4lL+fel3Pib4RD5dqv+382f257WA8uoCVvzHpi/etJ8HANsN//unBnFIXz/+n9gl/j/yK0XnBQSLuvb+keAg0Dv/Iy7l374zD9NO63ek0Nb8M3FoMD/Zf1njXwov+a+mIMOFtvI/1H+msNTxQLf0r+Xv7HecX5f8jz97/QXzTRMj6XO37gAAAABJRU5ErkJggg=="
+                }
+              },
+              {
+                "url": "label",
+                "valueString": "Card details"
+              }
+            ]
+          },
+          {
+            "url": "http://hl7.org/fhir/us/insurance-card/StructureDefinition/C4DIC-Barcode-extension",
+            "extension": [
+              {
+                "url": "description",
+                "valueString": "Code 128 barcode of the member ID AMP-562-38-1988, for scanning at check-in. Synthetic."
+              },
+              {
+                "url": "image",
+                "valueAttachment": {
+                  "contentType": "image/png",
+                  "data": "iVBORw0KGgoAAAANSUhEUgAAAXYAAAA8AQMAAABIJAOYAAAABlBMVEX///8AAABVwtN+AAAATklEQVR42u3KsQnAMAwEwCduA1pFoFag1QVuDV7FoFaFZ0gb/uoDIJo2cu9RteP10NM2Q5Zre9sskeVWfcISePANPz8/Pz8/Pz8//5/+BfoKFacShdXxAAAAAElFTkSuQmCC"
+                }
+              },
+              {
+                "url": "label",
+                "valueString": "Member ID barcode"
+              }
+            ]
+          },
+          {
+            "url": "http://hl7.org/fhir/us/insurance-card/StructureDefinition/C4DIC-SupportingImage-extension",
+            "extension": [
+              {
+                "url": "description",
+                "valueString": "Front of the card: Atlas Health logo, member name Mavis Dracula, member ID AMP-562-38-1988, Silver 4500 HMO plan bought on the Marketplace, Atlas Connect HMO network, RxBIN 999102, RxPCN ATLRX, RxGrp MKTSLV and copays. Marked SAMPLE."
+              },
+              {
+                "url": "image",
+                "valueAttachment": {
+                  "contentType": "image/png",
+                  "data": "iVBORw0KGgoAAAANSUhEUgAAAoAAAAGUCAMAAACSvGMBAAABIFBMVEX////9/f37+/z5+vr29/jz9PXv8fLs7e/o6+/n6Ovh5eve4eXX3eTW2t7P1t7N0tnI0tzJ0NjIzNDDzNfAydTBxs66xNC3w9C2ws+4v8ezvMm3t7evusertsToszqxs67hrzvXqT2rsbi8pnGhrb2ap7iao7CTobO5m1ORna2Mmq2JmKyrkEyLkJaUg1WBkaZ7i6F7hpZyhJtugJhsfpZ7e3poe5R6c1lybVZidY9pa2pdcYxccItXbIhUaoZUaIVTaIRmZVlTZn5PZIJNYoBZXl9TVVRIX31GXXtEWnlBWHdBU2g5UXI9TFs0TG0xSmwuR2o3Q1AtRWMrRGYoQmUmQGMlP2EjPGAhPGAgO2AhOl0fOl8zMzMpKSkbGxsUFBSP6Kf5AAA9CUlEQVR42u2dCVPizBaGw45sRkGvo+BSBTKKCx8KM6gIFptQERhZreDw///F7SVLJwQIAuroeavGydIJCXk43aeTfsOJINAHioOvAAQAggBAEAgABAGAIBAACAIAQSAAEAQAgkAAIAgABIEAQBAACAIBgCAAEAQCAEEAIAgEAIIAQBAIAAQBgCDQ6gDclwVfHOi9AdzXC7480PsBuG8k+PpA7wPg/iTBFwhaPYD70wRfIWjFAO7vA4GgjwNwfx8IBH0cgPv7KyPQx3Fc8H1O0/ij3vEAQG8EcH9/IQJbNg6rviwAI3hvt3Q6jqdTAOCXBnB/fzECk4Q/Lq6Zr38ggIseAOhdAdzfX5DAAAVwbQAAguYHcH9/QQLrnKQ7ABD0AQBiRqxO9CcCAILmBnB/f0ECX9bQFd6Ooj/2Np7f5RT5mOvfvo1tuG1Why+Slbe8i3gdVqdv+7TYNwNg+3LLbbd7IwWp2NgepY8yPIDbHZfVtVsFFr4egHf4Sl/lFVAmABhWF4faKmdUWRMAZpxy6UiXrBrb42QAN6SytjuA4ZMBaEDZEY1HRyYJjJDYR+Jg0ByAXBiXy3JTAWSFAby2qPM7L6LRHicDqGitDzR8egAv6Jpf5gDs2NF13RXFGPrPIkxuA0Yjmcdmr5nbkMvhSjtU77brd/HA7UwAmw70vyPVbKghcWyPk9uAnDPTqZKJe6DhUwFoBFmFrnoyVwmn8GXNiGIJ/386OwkhOfOVhFl8chKiAzAhfQwNcF7RaI9TAMSrb/FEEmj47AAeyevOTAEYxJEJN8q8ChjGABZjAadNIupSlJBa24omiz0TWXAIh7GBQrxgtMfJADr6MqgJoOGzA/gLLe4/oz8PZgAULHILjKBSnATgS5QNaSdoRdMlzznj3ZkA+rQx8dZoj5MB9JNDVWM06BMD+IQWl3+jP71DEwAmtGBEJwGY4vS4iMKuTZNDTAXQq/2cK6M9zugHbACAnw5AA8LOSO37E/+9MBECdWA4uxOuP66pbclGn8ahEymBySVjIZzEWJpmqmBtq3B8jwDgVwDwgcY+HAcrswEs6vOFjNxKq2mvPwZ1XYHjhNlFSam6pwGII62zo0dfu0cFNaMDAAD/DQAPe7T192tSV6B2B7gdZmnQ6R7uKdmWe/hibc31X8e9hZlO49Iu45IMJnL1Vk+IsbRMBLCBdx7INnqtei6xhavs8T0qqBkdAAD4bwB4IeW/E+tgzfY9fHciIM/hDhIrorFpHU9NL8dabOwS38w2oHjFdEQTzC8ntwGNDgAA/DcArMjZx9OErkDN9hnNNU3J1zw6fv17UiPOkjAA0P04G0DmVhwFcHyPapdjFAD8RwE8Gsj9L6QO/jkDwG18TUvyXNMiBbNBct1h0V3//mXAbvNEHpsyLr1CYtvnstrXtpJt0QSAYju5vWa3unyh+C3ZYGyPKoBGBwAA/gsAXmjX/4bRSaB3BfBJu/75EAAEvSOAP/UFzgBA0AoB1BP4m+l8IR0yZeAP9H4AHuJbwBW2S7p/BACC3g1AchvulyYhuQAAQe8GYFnT9UK6ZJ4AQNAKAZxvSAjwBwIAQV8KQBH4A/3LAHYvg55AFD9NFd+h/2ZJ8LoFUbx2Y5F7bNUdj++0p51CSnjIf9EQmnTzeHLgd+N7a/1kyOPdyY7vWVtMq2h4xmGZOXTQCgBc0Bkh6st1mnc7PdMAvuwGCYAeFciTTi0Q10zpAfR68A3nnNeDyOqH/dlOK+UZv6urKTYTwNgOAPgFAPQk5ryKyY2MFsB4AGXbGXeDndID6ItiLKMxTFbSTfwNrtxjIyw1xQDAfwXAxdyxAjtt5gqifxkPfry+5ka1cjbk8eHxRtHdhN8tPSFf95SyWgCDMfSn4c6wU2MA3vl6YttTxGQFdsnyvj8yDiBT7NLt9gTxaEz66RjA1s52UzmqOG4CJPBa3rNdo4evbINKbXsCiZ56DqDVAbiQP2DO59k5LTIAdr146G2cx828ZKuOoYq6Y1JUE/vbJyIF0O3zBFO4p5GGK/xXnRoDsO/LileBF7Su5ZZibjgwDqBaDKtz583Kn44AFHjs6aEcFY2AUXe00Yj62nIEpNuIKU+y2bjMqaVBKwRwIYfUTi6x44701TZgHD9+6kuKLyRElRBtUb9iiHEZ6FAAb1ON1rUHXdkXmjF4E8yUlFJQEQDFk4i4c4nhFNzS2PKYV9rnlRxd2WJSVEaHQD89Gi76ThHv6lFJAHo76BzQj0apgvE2Ax9tiaqlQasEcFGP6AxOZ2UAq6iNll1rIFKucUrquUXVnJJweAoiBZDi6G6ajIDiowdjYBgBWQCVYmIjFvAQeumnR/0eAq56VBKA+OFqcSdGDl3ZRnDfitrSoJUCuKhLvi/KZMHBuBiO4Ivnlrpa1ATgXlomNd/ucD5hqg2IVga2KZyB8OQ2IFMsFK51xNOgnH5Et7eDTZE9KgMAlW1UAN1qdxFohQC++T0hJFx1PXEGwKSXXL+B79o4A9VFQFNZME5+ryhZShacMwJQLtZxYye2bRXAcGeXF9ijio9Vweo2chWslgatGMC3vinJE6526xFPlQGw6Qn5cLPr2pdttYuRhiGA0bsmbQOa6geUR81J/YC3uB/wRDQCUCkWiDabp24GQLEXCdSZo0r6GvokRNlGvPKkaBIilwatGsA3vivuMcZ7ApGqyHZER9y0k/h2x+PbvTWOgLWozxtKkeSkuq3cCdmecCeEJUvsJ4Mej+GdELbYI9pXNMYCKA5ivkf1qNoRr9IN80gPXdmGdL8EEl21NGj1AH7Lt2XOvEUHekcAv+H7ggHAzwWgBsLv8NUAgJ8PQBAIAAQBgCAQAAgCAEEgABAEAIJAACAIAASBAEAQAAgCAYAgABAEAgBBACAIBACCAEDQP6J8vggAgj4KPiwAEPRx9GEAiwAg6KPoe8cQCACCDOgDAEEfSh8ACPpQ+t6PQADwnxH3rwoABPw+L4IAIPD3oQQCgMDfhxIIAAJ/H0rgvwngNT4l4oZ6h6eoIWoeT9bQRIjjJOvpDTyFC3dFsXPqt1ud3p2kdjcWm8sfLSg75WyecFXODuUdYg2yu2t2u/dHqi/vUEyi0tJ2zNsaNFsBgF8YQGIEHVIBjOBJbKx6hcAgrygRLBx3KwHSDUjfREC3G6LdNjNnkzoglB0iNTbkta0ZALJbAX8zCZwO4A7P10WxyvNhMs3jWf2yULypWclv4wXvAKBVQIfBKQB2HHjS3RfFLpoi3uEJMk8BQbSs17qNfOyHdjfdXv3EynGhFzrXLzrl+KnuEE37Oc6RbHZqV6H2dADZrQDAJQCYwK+WobDdGi3rJ/gYu/K2G+dj7wCg04bDTAT/TwFEcS/g5TjszxvluA28yMdxcRmQXY5LGnGM0cmg/6/luYgcJJkdYpQtef1mhgCyWwGAiwP4v2C7wf9PC6B2WY7f1gAoZvnwOwDoiXCOtmDl4nYJQFQZJ09p9CogXKTwWJMBQVx5s21jAEUU30IMgFuibocY5S3RFIDsVgDg4gCm+Ksk+qMBULNsYBABk+8BYM3CXcY4W0MCELX3rE0BIdFCMygEoSgdo7FMqYIRlr5o3ghAFDKdTBWcEXU77HJkhyYA1BwGALg4gNXITihaUNqAQaNlJXYlUmzwHgCK29yaA2UiEoCokkSReJ1WtGjGK/bddIYC0peziLABgCeoRakkIdK7Z9gdNji2Ap8GoOYwAMAlAJjl+VxBGwE1y17uedQuZyJgY4e/ehcAczik1WQAUdC7IkwEpPS3dCfFIQmQXnLDRr6J6ykREMtF38fE7tB8BNQcBgC4BAC7oZ2+HkDtMp4vadqAGT7UfQ8AxQBpmFEAC+qZSl2B0bDUElMB6eZiKOGNGrYBt+hcC7FoLYn6HWragFm0rEmjnVMHoO4wVg5g5eDLA0i+Vh2A7DIUAYMtDYCdIJ99FwCvCXoUwKh6pnGaizrtUi6qiVA7RgCyWXAfsbYu6neIs+CCvFkNLbsXlXyZ3b/uMFYB4M3r67Cy+bngGjno/97X0WgN/YLPh3+HadvSAcS6H1sWihbZlQjEBB95FwCpCIC4648cVo72wbG9cRSQ2O7VY6uTc0ldhCqAfU0/IKXxTr9DqR+wW79G7Q0cDwP1dgZ9w5daAPWHsRIA/+Mc6aHr89C3djMcDdP4gFzDvwTA9OjGdTO6WQKAn/hOiBZAFPHcZK5nxzc/NPcjKCBKbAr0DO6EhNsKSC8+3Iuo3yF7J0QsST94Lthj92IZP4zVAMjZX/e4ynl5uIerYDxRWT/+M0xbcHj8c26hy/aOKyQoreGt7Mc3Nyd27rxcvjlA69MH6fIWXji8WVsUwMpob+Q/OUcN4srfYwyg6+9ok/OPRt5vBGBIujMnotyYtPyYO7IUrOppyOu0OAKXHf29YKc/WmQr5Ct8b2Vsh/hesM3u3SEvsRNiPrvVGUz2RS2AY1utEsDhppW0ASt/1lFITDu9wz18f8j/By/DKx1DVFOf00B0nvY69nDFbfHebCEAb/wIw5sbr+O8YlkQwL+jH6QKttyMDjYxgHv4j2M0Ovi6AH7nh2HkKrhyLiUhlWOO23xFv8P0OSlwfMPRlVw6zdkIlZyrrAa6vXMcAfFCHBwtQ/+CAJZHo1Hl3MkdjP7jCIAHo5GTs41GxwDglwQQJyFbUgJMAET/NoeYt/+4vcrw9bUsZ8f+ofNgaCVTZRrnNtPlcjmNiqIdcOuvRD8WBBAFUYTg0HI+ojonEdAJEfDrRkC1B0YHoOt1z2HBTT+pe6Z8XKZRca1CIqCzvGm37MkAuirOZWXBm39H5AM2v0kbEAA0BtD7umnb/KMCuDd8lSjAbcAfm2vldZv/RgaQ++/Ga1+/sS2ahOytjfyvr1YFwG+QBQOAE6rgk+Fr5T8VQOuwLNeTNAveuymnjxUA7ed/hpW9RcPfZvl19Cr1TG4uuR8Q9PkAnEdSCvJuHdFLvxMC+qcBtBz/sQKAoA8DcDj8wX0aAYDfsAr+5x9GAAGAACAIAAQBgAAgAAgAgt5f+XweAAR9mIoAIAgABAC/NYEA4GdsGmkfedZ6ZdGHlK3uHwV1g4b8TdARU93LdYfdFxdEsX2967HZfTF2KPngLuy12T3hEpkTol67xRlMvTAl6qd+ZV+dU5/d7r/sjRU22hAA/BoA6gZ9aL2y1KfkkxMAbPjozDYxUCDyNHR44+1vMUbyY3Os541N3VdbeqZ4o6srbLghADgHgAu6Y+ExcmhJcOekvmz+9MPetF5ZdHiHsMFx9iYDoDpY72Wd48KPnXoyigC0xYV2kmPHa4rF3btG59ZJABXj6INqHfTXyown8cVLLglAbAEiCIjoE11hww3fQOC3BjCxgDsWBfC2nQttFJYMIGtCNe6VJY0vKnGMD4IGwCyKV3K9mHzEf7c5zqf/kF06HD1GthToiDhGMoDUTSaFjqKnLTxpw/cC8FMNW38jgAu5Y0kAimKG/19vuQCyJlTjXlkSgC2OjtyVAXQ4bGuRulSB74acNr9aQ0c5zq/9iHbWyVmwTce9HMg2RCMAO+hTirT9WdIWnrThSgFkqJMfV/2XAVzIHUsBsMnzj0vlT2NCNe6VNSECEtlxMFZGgsnV7otf11IjLUMP9V7NkgajLdIyBHBgkyMgsdViC0/YcF4CNRdy7fzm5tz/hgi4QhTp84Dem9e/rzfeJTsjLOKOpQDY5/nl1sEaE6pxryy2Ddglp38iNkIZoZ11Y98sUfSgRcl2igYtrEuOczWoCxFty9HUxC+QlcSHwBISmPVMFbxN2oCYiStNYe30sgC8OXfZ188/EYCKM0JldOO4Gf1Z5piQBd2x2Ai4XNtujQnVuFcWmwVrmCFr6mR7PLLdJ5teJSycA6PIFm5lXNi3ksDpq7fR37WOIYA15XngW01hzfRkoVDdNw+gsywNMyKGCHgkhiP9h/gb4P/TdsyZ4o9Aq+DjP8PyOl74WlkFgIozwt/RAbc3+mtZ4qi4Bd2x2DbgUk2TC+p51Yy8suR+wJ17UQdgnSPGQiHaLgvRereHmoRu0pGoLYwAt/RIfZ2iUTNrCKBYDzttXtz8FDSFNdNGarS6xXojXxUK9c40CDWP2aP6l1RuN8NNxzn2iJH9DW7KfufBDxroJH8E8s/7umnfPF9dBJSdEbgbEgHLy3RGWNAdSwKws/QsWGtCNe6VpTOuZyRFwIQSAVEd3kJVtc+olsR9Myh2rVGO1lhfIw2AotQJHhC1hSdtSFSt1ZX3AhbyhUK+2BJeZgPIuY5vyulNXBXTanVN8jdYk0ZgSpwRfwQKoOR9sCoAZWcEzvUHTf1ZqjPCgu5YSj9gfLn9gDoTqjGnGEMAY9Fco4PbgDjZbTikNqC9IdbRhQvp3KN3E9V2O+uiTO3gmrRzKd9uGQOwuptvN1MuznKnKzxpQ1SrFktGL6isDQYzAcR51F7Zz90ckAYhtyn5G2y+WmTOWH8E9O/HTSXtXx2AsjOCbTg6t5+Phvav74ygM6EyB2BEbkQRGDJ0uJjligmndrWw/FIRJ24YPsptPNZ1zq22+0rsXRe2sOGGIol4E/T4WDcBIIfpSx/LEZDeb1EjoMYfgWBnORjaV5oFY2cE0urzjkbrX98ZQWdCZQ7AVmrLi2/5SrdGSrsuq+tHUTQGUDgNuKzOQLwx8V4wA+AgE3Lb1iJSlJt+Lzg/U8J0AF3n6w7HHkoq0uVNx4nUBiT+BkobUOOPUDnYOvfaDl4dKFquZoym7IxgeyUR8NUOzgif9gEKMyp0pkfAzfObG2xskD6Ws2DJ38CpZMGsP0LlwHZC129WVpMFK84I/vLr31f00wBnhH+XPqrmzCqYk901PodgYPoXog+pBACCPow+rNY/BiA8Ef2V6MOqv8wEEB5IBa2IPqRiGwAEfRR9Y50xACDoXekjlTAACHqrivnFVQUAQR8JYBEABH0kgPk8AAhaLYHCY14oTF7dBwBBqwOw18FvYhc7pcklAEDQigAURaWjuV/qFmcRCACClkjgWGFhQsEBAAia2d3XnA9Ao8KDwoyyAOCnFh2ffrrM96PO0dk8D4AT9yRM74kBAD+dOqd+u9Xp3Um+HcAsJ5lxaF2LsiGnzSM/Nq2ZwVIetbZxXCyfP+E4nS8XSiySIafV4Q1np3cumwCwCgB+VnXlMRuBNwPYcBoCGKeTbnInTDPDApjPW1UANb5cZIgTfcD/1DyAzel347TDQcjbt25mvYLmXS05yPOAXul1rVbuhr62dQkAUrMrQR2T+YKWCHTNbl+s86GPATDJceu1biMf+6GriE3rJcTZVACVQUM5jnMU21E6algzowKYw3AwAGp8uVoetNdCVwjhQUqmARRbU59I+NwAKs4IWH9GrxYE4MGSIiB2v0rxuz0FwCoiMimhmf04AHepJ8dYGzAmmb0gCu6wB2XAYfOSGhSvrW87VP+rS85xagDgNhmp3rYSyw7NzCQAHVpfrhMKpDhAgdC7aAhsTwcwfZAub7nSw8rxq0vxR8CGCX+2GB8EyTBBcUtA6/c4+/HNzblrSYOSZGcEjrwt85xbLoBiG9tqyAAm+Ai/80IB3Ol9GIARdHWz7XEA69QirYh+lgOxJTn4rAlkbdDNGLCVbNxVSgVQts16cVB/Fx921dLMSFnHyRiA7m2NLxfijkZlXH1nFmsEFl9mAHjjt3Dpc5e3ggCU/REqf9bt50OLGgGlwXKKW8Jw04rHE6/Zj9OWpQCoOCMgPeBBcQjAv3+HaecKAOyF+FKIDEzf4U/4zEdWwaiK80Xz+ix4nbTkosQ9A1G6UW+joBgka7ld9Rm7jhcVTunagPaC2ORI6BQ3cCTVzEg57wnzjUoAXrG+XNi6gxp3YOOjhGkAa7VpjcCJERD9usroOm+9umR/BK5yjH6EaEYGUB4ujEXcEs7JQhc2+fAuBUDFGQHt9y9p+Z0fuPzDUXkFVXCO3345xf6UaEFp53/VjwKwvyGdVVgHYAr/7bs4iyB2bMQ4pk8sW9BaV5eNoO6WCqBqmyVImUQI75md6UhIGACYDzG+XBhm2jjAW8fN18GFaUNDjADcoqNC/Pgye19dsj8CAc+OoJMBlA0TWLcEtLBSRtpcCoCyMwIepzL6K8e945FupNJSkpA4gu+eD/Ukj6yTjwJQ7CU36LDTay2AHQdnb98SU6uqeu5ZvHZL3bpOXDRSGk9UYhqDg94tGwHlmToDoK4KzuNwLPtyqRGwZBQBJwLYnzo4TnMhz7EjgrPspwCqEdCpJh8sgFIE1LglKG4KS8uCsTMC/tzRf5wKoGs5VTAz0Q4SCxg+RwDsh/kPAxB3xeRiVlI5arphUL2bihCnSAbAa12OzKzaVqHkuHvc7MM+Ql65DSjP9IuTAcz7GV8ur/xBKaM24EQAhanDgzUXcqu8aXedp63SuLj0uVNuAxJ/BBlAxQeBtgE1bgnYTWHN5j+3LScJkZwRMHR/CXSVH87lVcHsRJbHjaErPk5ti+4+FECRGAHpAUT5x4aDZCK4ChaMO2mMAKS2WZOyYGFKBMynGF+uuJQFY8dVb950X3R3jo7oH+kyzWAJgK7zh5uTV4fijyADqPggSIYJrFsCrjapxdYypDgjWIajtPQbef07PLcvF0CsMLGeFPiNNgHwJfJRAMZ2rx5bnZyLhChtRzQxxSVmu2GOWy91G4V40LiXUK6CWdss0vXXYfsB6UxpGoA0VFEAW6gm8hV7QtioH3AigD3Dh7I6Zu+E/Bh+8F2ObzcwXfETCvT0AGIzNI4YUjd9ck/pdAA1tlkT7oS0zALI3AlJ5M0C2Dbkr2DqYYStTbu3kgYA31fV05DXaXEELjtjt+KaNnqDTqQvQ7KtbSSE6QBqbbOyQYfNE5PeWaPMPJoGUOwkg06rwx8XikWzBE54LtoUgA7sWW6He8FfXI/zuQlNeSSmarIByA7MhIcRvr06qwNQmAD34wAABCmdNG8C0IjAqobAXrc14XnoWg0ABCn9xLMGebwxBL5MGTLH2BMBgF89vs0q0MivAkDT5jAA4FcW7vCY+SK70hIBrM6mL1/UOAQCgF8YPhpuhOmvlG7llxsCZ49Z7wOA34Y+ct+/ObVobZkAmjEq110kAPBL0zcZIJO9MEsGEL+4CwD8TvRp77wa3arIvyeBYy1SAPDL06dzhHwDR8sDcPxeCQD45enDFV/fbDdMYZUANgxesggAfg3NoqFkthemvjICi4ZxGAD8JgC2zAXOYmtVAHYnXCQA8HsQOOmt7i0tcUJ7JQDW6w3RBIA3r5VKGb+R7cOf/1MMEJR3w6kvifP+BQDfQkPHTD9gobt8AoulybYJOgD/++BQpjghKOPPlbdjyhPn6c2//vLetwNwlj1Hcc47ELK6+kC5bAALxannZQhg+jhdTvv3bm5OLJzidEDNEs4f0ntlp7JQMkuQPRLw2DjOi8cRv3EQkuyEIAOovB9YnUj/Hb3qxjx9NQDz+KRonVmSX/U70x8G03CfCLps9rWN+L1RIGqY6AZsEwCTHGdjFuJnpWXfrCQd40R8s4pkjMAlLpKLBRwWu4Fv1qxzNQbwxms/fzhxrN1scty55HQgmSU419IIQLyQNUuQPBIcQ7zBzZsjoOKEIBsgkDekO0ajA2XClX798gBGlMFH8wGY9cvfyK3pVFj3NBZa0jYFILGcCcgAXskxR+ubZeJcdW3A19cKwiu9h4el27EPAecqS04HilnCetnp0pklKB4J6TRnG+69GUDFCUE2QDgYjZycbTQ6ViaWVgWrHlh0WFw9RAcG85f8qShe8hF5qOZ9NBSMZF7koexNydUjwsd6q+GvQ36D7v68AN6hi2CPZe+uTgK3pt5UOd4NmG+YBVD1zUIA3ro5zpPMXWt8s8ydrHEElH0Rzo/R/2XqdKAsXBs3S5A9Ejj/0HkwfPvb0xknBGqAQAKfU46AeGJpSYjqgaUM0OxhqxixwKMrHeH5jniK3bKu+bDQjGHPDlSuG+djZGKF/IlXHBfwUks/OSGsSgBekSjji2Pzos6Jz273RW7lp4uLUc1wybuo1251bV2hSRRRg9mQ3Rm8F7tkR82ww7VLauRuDJVy72ZpNepz2Hynjbw85C41EUCn5JvlsBIA0QdY8Ej1e8U3y/TJzgTQVXaoCyeZJaguMeXj8vliWTB1QqAAusbbgEvrhlE9sHQAtnm+1eHDfFHcRf/aQfRHbMouRlk+jDfIrJA/bNiSlAKeIYD4h454kF305Iq16EHgKvxlPXStNUH4CLjxjDdPrGRC5Fv0I3Jlly0XwudW+m4TbSMAGxoAPRHqmxWxEQDRBdsgJalv1jwnOxNA3NwjTgdkrHrlxmVsliD7ZO0NXxfwJVKcEBQDhLEseIkAyh5YOgDFMJ8r8Vk+1eL5tnjP8z2yLCVFwCTeIMjHuqviT7Bw1qaAKsGWcRXcrfrwoPWehfPUu/WrUIlJXaIKgIhiTyq7izbPYgC53ewlqliSxQE204o1b1HoKpLWpv/6FpXy5/M4lzytCslk26gKliUBWKO+WbcEwBxuE5KSSQxw9e0A4nq18kMLIEp4idNB+oD2k1SMzBIkjwT0gxuWFwh/ihOCYoBg0A+4NABlDyzSBgyqACb4yxTfDsdytB2I14hR/pKWiw3oBvcrS0ESxFRjnVpRGbYBL3EOMLBz7ls2scXuVTGlAqZ1Y86JfawQZs5cPo9iYrzYiNPmJYEYW3ygOjqH/svgLeLkfoUZAMVt4ptVJABmlU/OoKn42wE0p6lmCYukIExH9DvcCVE9sPQR8JaPxsJiInSJG37aCNjYwQ4eO6iCDpZWBaCXeEcm6Rh0HYCd04CDtJBDUq7sCKbkB567bATE/kG4YYeq2F0M4Dqa9hFMotRMawOzxBjJJIjjEO37aRsAmGtqqmDs7YF9s4wiYL66OgD39hz+aWYJluM/1n8HQMkDSw+gwG+EEij0hfByXRsww4e6eCLBB6ur4a+gnleNcMgCKHsHYmPK3uU6+a4u5S09lDNDAIN0OkYahLsGAJ5Sy6uWWQBxF8yWKCptwCDTBlwhgM6b4Z/0FLOE4fAH9/56K4CSB5YeQHEbJ8gCTz3Lr9gsWOwE0So08XLKhx5XAmBUPa8wAcmmAoh91rJdbNYcpIWbqL5eZ+puJQtmquDYZABxFXzNbBGnYb2dMgHgNbHrsGmy4DzNgqurrYK/yMMIqgcW7Qe8VwGME/S2eepvlosG5X7AW+IkTSYGiMDaCvjrOqS3c6CGnvM+j/vcCi8ygCg1seS7mCoE4MZltdW5VNxiiDkv7gfMXZ8GbkkScqUmIRoAt2UAscuWL5XLJiNSEpJsoyREbFeZFFhxjWlqAaSy035AF+kHzMj9gFUA8J+9E3KFcgTyjFSOBJd74oroZHyiUT4WJgA61bRAEnsnROmGSeXHAAy9yAAqLlsuphtGFFvkUx2mAVTvhNhO8wDgPw0gCiJb9LKvE2xSfjsDYDPitgdylwTA+knAZXGGMuzdEHwv2OYm94Lvol6bxbWVqvUKegCDCCYKoNiI+uxWlz+aUTui27gOxp86B4D5u5if3AvO5AHAfxtAs7fQTD+eUjMyf6m2DR/Gkh/Zahs9EtNczCcLAPxX6cPPc/YXAbBdnTxMqVswfHZl0WeyAMB/D8CpD9cVGosQaPSyImmckmAcagHAbwfgy8uc4xnnAfClOMEhaFDMzxEBV0EgAPhZ1HzTA/XmADQafV56GX8aS727824hEAD8LJrl0SIsRGDPIBPBHenVsccBAcDvCWCvMGtoT2sRAA2J6owNyuy/AcDFCAQAP4tmGkUuBqBYrRqkwu36JAuP9wqBAOBnUXX2+LL+2wis1SYRXuwXJrU0AcBvBuBslzSmhfamEDgwSoXHW4VvAHARAgHAzyITNmmPYncBAEWhW5ijln+nEKh/InpYOTD5yF4aexfQIZSSiwHH/Umr68fNDbTrle2NHnomBb2veCSSstiSfn3Fn5Ie2r5iP6CpUd6zU+Hi5Dp4Zqatecb2QwD8j7Mfv/qn0qeYF3B40C4lTWbWO9qbZm6gXa9sbzDsAxfkXMO/BEB58cHox/HoB7f5d/MrRsBWfjkATguBMz9EEJdXB1erbwKQs7wiSIaInXTZ8NlmxbzAAMCTv/Yp5ga69fL2RgPfcEFb5e8xBlBZnB7ZvKNz2zD9NavguhkAS+32IgDOssTvv38INIiACICtof9g6DKMgIp5AQMgdTFAcJanmRvo1svbj5sfkIIWBPAmXqIsphEwPbR/SQD7BVMhMF9/Ux2sdvYUTfuHfwSAdLQ5Hg73Z7hlXAUr5gUKgLKLAef4ezzN3EC3Xt5+3PyAFDwY/ccRAJXFpA2IKuDz19e09csB2DDHX744WCgE9gXT9/sWBrD6lgjouqngi+t6nTS6kjEvkACUBpE7ECquaeYGY+uZCKg1P8AFz0dU54wnAh50l/4xOt5CkH41AKtVkwTOML2fVQdPen+lgZ/Bu4TAsTagE7f/LA83w4OZ5gVaAF3cTWWqucHY+oltQLngpqYNSKLt0H4+8ltH6X8BwGYP/TM9fl2+bGF5iGO+zjbY1vFws3yQ464fmV3ucpxcJ29znDAJhqBaDI8D8ZJPoR+zwwzm1I6y2lUHLE0FEB/DTAATnKdnDkBU+9q484p9c+ifbl6gACi7GFhJJ8lkcwPd+slZMC0oA8h6Iqz/3eK2/oEIKDQ7xSqq7Er1fHHejmgFwIKmulQBZHNVIwANCGQBrFu5BAXQhR/ct7OjiV9mAhhnx6DMAFATTR3q8NEZADqGBwQ+BOFU8wKpjvQrLgZbI/9UcwPdemX7sX5AWlABUO0etJLuwWW1Aaux0Mb/sMOLbH8V5VO4r4zfaEt+WaoflviyQwdpiuJjfJsPRTKKqZYu6rV7hRKb0BZNEiiMAVjT3B2hAE5xHDcLYJRzCxRADCIeyKsAWHozgOOfqT+8qGT3tYw7IRPGjqeHi60fL7jSOyG3/HaxU090VfsrYjwkXvJxZaSw4oclVhFrSWmz+04jk2SGE6s9KYLR/dY3VcEImXjQ5QzhweXxNZsnElAi4C4ZkCsGOHtbioApr90XDxIANziuXcTDj+7yu9gowBW61gLYsXOxfhF/ihMPY/ei/zCApLA7XJeAijm9FMCUnXOm8qmg0+IMpvKyb9YtXpkMOh3hpgwg82mp0JrNSwy8qrtuq2uXNEBz1O5rlQAqHXRvXD9ecJUAdkISP6r1AZqqiy//43MsgBKWCT7C77wwm40BWKoavx7cJICtMQCpA0I+H5NPUwIwRdwhBfKXXPykXEACUCwqAOIaLUs2k4/1Du1HrONPCXOWTIqzhBUA8fjPFtnnD46jAKYcnPMqf0krHFtSAyCRv8cASD/tziaPFr2lU3b8FXSsXBTuBTMqYANALMb8BVtflfhQTxcB0VfZC/GlEF9lNtMAWCgWJ/bwmgSwPgagV6g5OUsph/6c3sVUAHHUKjRPOe6eAth3cZZr7KahAxDrNkKGYjIAnpJg2EHLT71cZJsLxJUq+DZKsEH79Jb6tAp2cK5rPDZ5LZVL2jkfqYIvpXo3IAgB7HBEo3BR+rRkH7WaYo1m6kpEU95qr+ig3g0+dQQ9ACgqrlca+6scCnIJasJB/bIUP6wcv/1yiteQ0kl1Jfq/WChM7UQ2R6BilasAmGiKWxxXRAEPXXhsvyIDiGC8rPlQjKIAVjluQySeRloAM9tuErnCGgARZPiRAwxgjHPauVMKoFw4TvaZkRizc+4MdRwisuRYANEes2jvEoBZeQclFBalOkHZDuftG3jAPQA4NQIqcY6JgNQPK47gu8exkW4mUABRocdqcdZTBOYAbIxFwKuBuMNxtUuOC6HFahswj2q2rRRxMCAX/w5TQEa0ywBi77W7nFv6dnbpZjUNgAjiU5wBO3MEQKVwjOyzJjHGcesoU04oX3SWBbBGPHpDFMCusoMsPRyR4CmpCQAatQHvdG1A3NLbJS09tg2I/bBQGaKctJkEYLYpmLl3YQrAxzEA74gJaq06FgHRX/suZ2kYRcAQvtp9lFjcIXD92fypHkBaBYsIpFPcBxjOEwBp4ZQMYF1iLEjgT8r+pzQLjjUNIiDKMTYaYgat1UTAHfUEffJiAFCXBav2V0quywKI/bCoW/kVyo/xZoVukQJ4afLumRkAu2MAlloYwHp/rA2IcbEQ6Ggb0Mm0AVHVetnGVhp3aEHg9tqrB/CWVrAEwBT2tCIAksIZvx7AOuJ5B1tsWWK32WR4J4+B/iGRv862AfMI1XYd70BqAyZRG9DNWZLtVjEWhSRkQj8gv437ARX7K6W3T/bLkv2worgaxr6BbWmzyKUoBH1YySUBKIwBiI7ohybJVQAkjkWnHdEgC76Tp+/uXNoqWLod17aTF0Dg/ryOHNOieaWwDsCGDwfJhGRBj+Jghky2lSzY16XlO2vKDm6VLDgrddf+WHI3DDwRbfIR+nkALI0DKFIAxaTHthZm2oDEYMiRyxdfJFhQAa/UDygmvXZfYh0nIamA3R6I6gFEMdI9IABmOo8KgLRwYgxAUfDg1aQf0BelnZJWCcDkhtO+K/cDirWg3RGiO3gMr1k9Sj+ge+OyueSOaABQ7Aml/FIJNLADUu+x9OYeJzflgYS6VQlFzdkvlZn0QMIue3fZhMzdigMATQM435ty3/Y8qnJjrPc497OBUwiMqh1yL6VZL5VZFoDmHkYAAM2pWy8sHcDi1K0a8w7ULJp7Y6tQmPVSmbbxQwbzAmjyeawvxd/qAJwPP1MEDqbHt0m+CY0FAZw90rg958sHAcDVAziYxVu1kG/Ui8WOUO0K1bZQbJiwM69Nf5xpwni2amdBAucDcCVf55flb1UAdqY/u9wUUOh6ac8VZgyjqjZsThozIqwYQJXAlTWovyp/KwKwOe3WW7/Xedtee7PQ6tdMjOVdHYArfX73i/K3IgCn0Dd4eftuDbp1tCMwJ/kHtlorr4NX/wj5V8TvnQFsdRZ7e2ZpZmybVAlPMJBeWggEvflntYqdGnaIlOqNBXfbNtG6q8/lHw0AfkkA24XZwxnfpHG6Oh2Trc/HRyDw2wDYN+gwLgqL79fAm2g8vRhMsu/oAoDfBUADBOqDJey3aaqDpTmPZxEA+BUBXE39K4q1mhlf/IkebqU2EPgtAGyb7wmesx+wYM7Zoj6HZxEA+C0i4HIuacMU2fN5FgGAXw/Azqzu4reqOjuzmN+zCAj8cgAKpm+FLU52dQ76xpyFAMAvWgWXzFz4xci+i3psNm80R/qXO6c+ux3NsCtIqauol7q7YCUCDqs7SmJg+3rXY7P7Yi0WwDAenS4DmMe3kDCHrANpFb+aXY6519QIwRNGv4FHGx54JJKBnK4mQPX5quDlPJepBiv5xeV+XLe3JZsmf45ZQQik430ogBG6wlWnnBB5GsxePaqxUa0WkQYfzQIQM1gUxUuOc6DmaN4yYVQR6I0Ays5XOT7UFAfYGAEvCREvLDwaboff7Yt1PiQVb/GPJFfY8Pl8fARfz1Q44ON3c0FtuTdKtQ/HzhiZjIdYv4jqDLuCMBVOOSUAESL25N0ORywwYra4QMZoRlUAr7EjoFKzE2ceeYQQ4tWnQMcC2O0XneQl7YMNjtsYtKUDAi0RQMn5Ks7HxSt+t4uX9BPEC4sCyGcZsLLb5FGX+obv8j7uC+bylz4+eXcVzW34AtnFAVS7VxyybZojp53RrMCSAdwgI9/uUIhCDdIkaRJsU64kAKOy5SWprjku4FWi2WQAyRhjPHpEQB98iabX2oDUkgGkzletbT4VlA05cvy2CuBOTwUrnqDZKgIwf+vzXd0FfHRc+oZPUw5rgEJlR3wU2sV660XodB5bYscsgHhgb5JENS6lmdGs0ABo57g4qWe5qPw8WJTaE0i2IT55C8loMHlKYpsJALfwLIqnVmwMA0StIAJiH4Qcqnov6ZIBGwFP+IwCVjdILeSLMoBJn+9OAjDqu8blmgNRaKHauNEuVBFPmhT0MS9Mv2HXl0veWxXjyFPNjGYFCyC2YMG/BdRc3JayhBfqcSCFwKzFrR5JxsJZmwJq3rXMVMHEpQjHU2l/oOW2AYnzlThg/RCCJQXA0s7/qjKA90Hp6shVcMIXyEsAoviZ8gXq+cIjduWd+IqPTrFtpiMaRShfJoMTjhPtjGYFA2BGAjDAcaEafSgRhUlXQwEwjmto+b4hqoFRjF+XjU4nAkgaiimp+YFn6gDU0iMgdb5CDUBejnsv93yoLQNYzaIgKAGYiEuRiiQh4UyeiYCphC8i4zh9cFy7N7sj+kpxRr7UzmhWTIiAdJxcwsI5aP8kqYM35A3wEgTwFalVA7MBdNEA2CHpd/AFiFp6GxA7X4lCkM9tYxMY4gTD8yUFwH6YlwB82b6lW/U2pKYf0wZM3Qd9pgDMFyd1A3eY/p3rkMPqDtuoJzQ7o1lh3AbE3dc91HZzV9XunTsbyVrofEHtealNr4JbqB1pLUkNSredm+BsAFoEQOx89UKtKUMtKQIGWwqA4p0M4CMvj7z4n8QdzYKvcRacQtPmAJz8lg/9LRZUiXoNZ5Tpgi4LvrWQJCUvoFmfwPQvJriQ+sROVAUwPiMJ6ftoxw5Or29xVw9UwksHEDtfZfidDu2LIf2A0aKoAvgSkQBMKtZiCoByPyAGMB8yDWDpZcYdllQweZuNOznLpW6Gncab1Mb6AbGP4PUaNkpjO7i3pVSC5FIOjiPBMSd1BU7LgnHj8k5sr+E+xZcgqrT7wNRH3QkJX8tT5l6rOm8IZF5jKZmtWWL6GWWabOFmGoTSnRDntfTiGWoNLvcJuWwqj1ec5FPas1PXXg2AdP8KgC8+bH2Jdu5p097AU2DqowA0zhfeJkNDF7Uj+v404LS6tlJjM3Q6IrXuWADziYDd6t7N5o0ALNDOPKqQcj9jm3YFTgMQ48qdoiV5iV1rFaD6BADW88uPgX1zcdXkkWgQj429WQb0bwPYWBTAOQZ7TH/yvz2p05EdqOm1NACFLwXgPOaoEyyFxvf5ODd9Rrnzql1cQJ8CQLG0IIDjbm3dN9A34bcA1/3rAygUFiTwxWQom81TFej7hgCKPWFBArvmgqqJ3wLA9x0BNJu1TtTY01n5t452kvyj4Wp/LwDNpK3zANh+eyrRBPq+I4DiRNdcc9I9FlM3Yw0DAgBZvdTzU5ORqSt1d0MGc5jvggBAOQMQ2yWhqH32uVoo5IVasdOoDZq17kRGTdToHbiCAOBMDVBGXGxU80I132jUxV4TLWKzh1arZcbauWaqtxoEABqmxNNXG96x1T2ZavQeELiDBgAuRW0TABr0KxZ6cAUBwOWoNPORmBKYuACAq1N1Zj9M2/zD+yAAcBkAzqyCiwO4ggDgkjTrNYPsc/4nHPU+qNO3n+fUJ+TxMLVrjaOQ2Dn1261O7w5+5lR+jjmk2B5sKFOgbw1gb2YV3NQBGMrn2+2QBsBBBPGX0VpadQPSVEDUPEhPR4EIFjruA/QpARx3xxIf49t8KJJR18lTC96UmJ3j1nQAWjL5UpVjAeyHEVd6R6Ekx63Xuo187AcDIB75RiwNEqoJFugzAqh3x7rlt+87jUySWUccs1L87kJdIt3uTFfBggZAh5UL54UI57QpALZ3EX9yOFMA3OWYAR/KwMooHsyG5JPG/oI+K4Bad6xOiL/VryNTbZ5fqE+kb5CEFDqT6mgEoHubs98JVi5uVwDc4tAiUQ8gqpW92bYewAKKoChmV2X3A9AnjoCMO1aB5ztj65YAoOHQIWFinowBvLJwlzHO1lABRPyp9mhsFYxg80XzGgCx/0uClAoABJ+7Dahxx8ryQXRJefxXXbeEKtioj680mJgmIwA94ja35uAiIgugrzUOYH9DSkLCGgBR488r9t0cDMj85BFQ645FI6BAAZTXLZ6EtI2eG9TWwOzYIsyRBztncJYaAyBKaH3NMQDFXnLDRgi8ZgHE6W/pTvEABH3aNqDGHQu1Ae9UAOk66iCziIqmxqYX1d5pAqAYIO6kKoApK0OgCiBOcXIxK3GEZtxdQmhBGDoBPz+AWncslAUXukUZQLxuUQBbQt3U44CkI1rNJTzkb44FsJtBlHkbBgDiU9EDeMVxTju42n9+ALXuWGI1FuK3I5fqukUAfOn3Jo1gLxR0EbDFEEkBpGIAFLM2hUAFwNju1WOrk3ORjj8GwI7GCR/0KQFcqXr9wcuUgenT2maTAKQEChoAFbe/QE9rLxQBV+dvASC67Abvim40Wp35RgWbAlC8RQR6BBbA6mnI67Q4ApcdUQug8jYk0FcGsJkv1Av1drXRF1svYmsgCkI7X5o5Wg4etgcAlyPFJ6tAX8tgzrGjCM/aA4BLBnAuczZIDQDADyQQxpsDgB8IYK0Jb9sAAD8QQHjMHgD8OAKrAowzAgA/DsACXBEA8OMAbLah+gUAP4rAWh1ecwUAfhSAxSJ0vQCAHwVgAZp+AOCHEVgsAn0A4EcBWKtCzQsAfgSA1UI+3xAg6wC9D4ANoUgehanm8/VqoS3Uq2K3C18+6L2eiO4KYqsutgWx3xTFPjzqAnpnAEEgABAEAIJAACAIAASBAEAQAAgCAOErAAGAIAAQBAIAQQAgCAQAggBAEAgABAGAIBAACAIAQSAAEAQAgkAAIAgABIEAQBAACAIBgCAAEAQCAEEAIAgEAIIAQBAIAAQBgCAQAAgCAEEgABAEAIJAACAIAASBAEAQAAgCAEEgABAEAIJAACAIAASBAEAQAAgCAYAgABAEAgBBACAIBACCAEAQaHkA7oNAHygAEAQAggBAEAgABAGAIBAACAIAQSAAEAQAgkAAIAgABIEAQBAASHUkij8nrXsWz6Q/ytzH6OjhWazMKPOBh/fWQx7/7qddDXKGn+FqvA3AJ1HsPz/9OjQHYFn8bQ7AgbTDo2dRPJKWPZCHcy7Q1K+nPv1IZUKrnw/P/eeHn+OfrNMv8elwf24ADXc1TfRkjn6jg71gDrFH52adzNHz+CFPPwSzAEp7WS6A+DR7T7+lC/YgMfIL/fdbxD8dNCOiMz/EUw8yQqI45Vc1C8CHw6Oy+HQ0B4DaMx0/ZXQO4tMvvMejpx4LoFTwt/hw9BsfvTKh1Vm/d3Z41huczaLmYXzbpQOonExFvDiqiDKBlbPDn894bsbJ/Pr98/mofKY75KUCOONqzKmyeHF4dIEP8hBdu/4RJez5cP+oJwH4gMPKbxbAh4Ui4IP8F33V9Ed9VEH/41MeoLM5wgQd/XrqVc4o689yBPyFikmhUNmUXhzxbHB0gX40h5XexTiAR320a7xbZUJ7SIfP5Af3C5+1fATSJytM9HCsqeCFv6XvXToaZaV8zPjw0K6OlGNkdiVt9fv5+bdUGeACZ2LvCF2HB+3J/MTHeSE+a/ivzDyZo1/Pg2cUL6Sd00OWDkH51shx0K9P+e6nXA3p1OQToRGQuRq6yzGf+grB6GSfyA/uScQ/NfQlygCiH9vzcgH8JfYPD5/EX4cP6ILiiaMH9pTRkoejo1+6Kvjp6Kw/OMJzyqbKr5DWWgi5nyyAPVJHneFFh6J4pkxIq6Xtz+iSn/g/5Utnfu3k037jL0ONgMrRKCvlY0YH8xsHePUYy8yBPqGghSKbHDcQ6Gf4661cKHWCfDJnFEAWsCf0MbNORgZQ3jkTAdUjelY+Tfnup1wN5dQ0VbB6NfZ1l2M+PYu9h4sj+tP7jRoM5Dx/PT8fPT/9Xh2A+Is9QxCiq94/RF8lnmBO+Uz+3jUAXpBjxHPKpmpjr3KBSZMCh1QbnR2ha1BWrtmFMjEG4E9a7VzoAERr6PaHtFLCV5MuU45GWSkfM7o05PKqx8gCeIFPHcfSX0rrAAduFK5+7mtPBl1VXAUzVeFvXGjWybBVMN45A6B6RM9Kza5891Ouxr58ahoA1auxr7sc8+mijwPrAw0A5HMxgOgHKV78nlQFY/1aOAJeSI/wH12IPanVIZ8yWWIEIP460ZyyqfQzvsA1zdO+vJipDPDlnhA01CbgxAhIYSNHQzbTAYhnlZXyMT9LB6AeIwsgvlrP+xTAC9xgJY3pM7zLfe3JoKrwuVdhIuAvsXe2vz/rZOQkRN45A6B6RM9MtSd991Ouxr58anoApauxr7sc82YhF5UePg01yuEY3EMNot9qEvLrcPltQNT0OdT+Ckl74KepCNjT/doGP3t0k5/a7+GCbS2ZaAPKR8BWwdoIqMaySRHwoS/Slt2hvu2uAZA0/ch3jIJdjwVJORlU5knL38w2oHLM0s41EVA+IhVAJgJOvBomImDvcKFE5AixfvhMKe7h9usvdLoX+2oVrAFvcQBpFoy+9t+HR2cPTKsDL3lg24C/SWRg24A/pTYg3VTOEI8GR8+0uU4BJDUSShxJFTw7Cx4oWbB8BNInz2oD/jRsA55hAtVjVHelA/D56OhZ2i2e0Z3ML5T3PvXPpJO5EPtnplJ6GSxp5/SQySGoR6QCyLYBJ10N5dSkE2HagD/lNiB7OeZT5eLoEP9cJIox2U9S/boiAMWB1A+Ic6unhyMm7/r5RCZoFoxzrKOnPjoIgyxY3lTuIxOfKz/1AP4sP9MOJHP9gGW8A/UIyCezWfCRFkBtFiylik80Cz4boK9RPT1lV9oqGCXDDzixJQkI+rIPtSdzVH6mJ0VOhrSUSE4862SkBqO0c3rI9BCUI2L6TtQsePLVkE9NOhGDLFhzOebTw1Ovj8+zQr9blMBNBpB+BU8i20XxSW7FDbQX4ql3tNrPW+kNgPc+GbgVt+xrdiRe7H8ZAFd/MgDgv6dPeAsU9J0ABAGAIBAACAIAQSAAEAQAgkAAIAgABAGAIBAACAIAQSAAEAQAgkAAIOib6P/GmdKcNKxbQwAAAABJRU5ErkJggg=="
+                }
+              },
+              {
+                "url": "label",
+                "valueString": "Front of insurance card"
+              }
+            ]
+          },
+          {
+            "url": "http://hl7.org/fhir/us/insurance-card/StructureDefinition/C4DIC-SupportingImage-extension",
+            "extension": [
+              {
+                "url": "description",
+                "valueString": "Back of the card: member services, provider services, pharmacist help desk and mail-order pharmacy numbers, payer ID ATLMK, claims address, referral rules, a QR code and a barcode of the member ID. Marked SAMPLE."
+              },
+              {
+                "url": "image",
+                "valueAttachment": {
+                  "contentType": "image/png",
+                  "data": "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"
+                }
+              },
+              {
+                "url": "label",
+                "valueString": "Back of insurance card"
+              }
+            ]
+          }
+        ],
         "identifier": [
           {
             "type": {
@@ -1167,25 +1485,34 @@
                   "display": "Member Number"
                 }
               ],
-              "text": "Member Number"
+              "text": "Member ID"
             },
-            "system": "https://parkerapex.com/atlas/member",
-            "value": "AHP-COV_MED-38"
+            "system": "https://atlas-health.example/member-id",
+            "value": "AMP-562-38-1988",
+            "assigner": {
+              "display": "Atlas Marketplace Health Plan"
+            }
           }
         ],
         "status": "active",
         "type": {
           "coding": [
             {
+              "system": "https://nahdo.org/sopt",
+              "code": "511",
+              "display": "Commercial Managed Care - HMO"
+            },
+            {
               "system": "http://terminology.hl7.org/CodeSystem/v3-ActCode",
               "code": "HMO",
               "display": "health maintenance organization policy"
             }
           ],
-          "text": "health maintenance organization policy"
+          "text": "HMO"
         },
         "subscriber": {
-          "reference": "Patient/MVD-SYN-0000000038-2"
+          "reference": "Patient/MVD-SYN-0000000038-2",
+          "display": "Mavis Dracula"
         },
         "subscriberId": "AMP-562-38-1988",
         "beneficiary": {
@@ -1206,7 +1533,8 @@
         },
         "payor": [
           {
-            "reference": "Organization/c7b2188e-7fe5-567a-8b9d-ac12f37cb585"
+            "reference": "Organization/c7b2188e-7fe5-567a-8b9d-ac12f37cb585",
+            "display": "Atlas Marketplace Health Plan"
           }
         ],
         "class": [
@@ -1215,28 +1543,184 @@
               "coding": [
                 {
                   "system": "http://terminology.hl7.org/CodeSystem/coverage-class",
-                  "code": "group",
-                  "display": "Group"
+                  "code": "plan"
                 }
-              ],
-              "text": "Group"
+              ]
             },
-            "value": "LEGION-VETS-01",
-            "name": "Individual Marketplace"
+            "value": "ATLAS-SILVER-4500-HMO",
+            "name": "Atlas Silver 4500 HMO"
+          },
+          {
+            "type": {
+              "coding": [
+                {
+                  "system": "http://terminology.hl7.org/CodeSystem/C4DICExtendedCoverageClassCS",
+                  "code": "network"
+                }
+              ]
+            },
+            "value": "ATL-CONNECT-HMO",
+            "name": "Atlas Connect HMO"
           },
           {
             "type": {
               "coding": [
                 {
                   "system": "http://terminology.hl7.org/CodeSystem/coverage-class",
-                  "code": "plan",
-                  "display": "Plan"
+                  "code": "rxbin"
+                }
+              ]
+            },
+            "value": "999102"
+          },
+          {
+            "type": {
+              "coding": [
+                {
+                  "system": "http://terminology.hl7.org/CodeSystem/coverage-class",
+                  "code": "rxpcn"
+                }
+              ]
+            },
+            "value": "ATLRX"
+          },
+          {
+            "type": {
+              "coding": [
+                {
+                  "system": "http://terminology.hl7.org/CodeSystem/coverage-class",
+                  "code": "rxgroup"
+                }
+              ]
+            },
+            "value": "MKTSLV"
+          },
+          {
+            "type": {
+              "coding": [
+                {
+                  "system": "http://terminology.hl7.org/CodeSystem/coverage-class",
+                  "code": "rxid"
+                }
+              ]
+            },
+            "value": "AMP562381988"
+          }
+        ],
+        "costToBeneficiary": [
+          {
+            "type": {
+              "coding": [
+                {
+                  "system": "http://terminology.hl7.org/CodeSystem/coverage-copay-type",
+                  "code": "gpvisit",
+                  "display": "GP Office Visit"
+                }
+              ]
+            },
+            "valueMoney": {
+              "value": 40,
+              "currency": "USD"
+            }
+          },
+          {
+            "type": {
+              "coding": [
+                {
+                  "system": "http://terminology.hl7.org/CodeSystem/coverage-copay-type",
+                  "code": "spvisit",
+                  "display": "Specialist Office Visit"
+                }
+              ]
+            },
+            "valueMoney": {
+              "value": 80,
+              "currency": "USD"
+            }
+          },
+          {
+            "type": {
+              "coding": [
+                {
+                  "system": "http://terminology.hl7.org/CodeSystem/coverage-copay-type",
+                  "code": "urgentcare",
+                  "display": "Urgent Care"
+                }
+              ]
+            },
+            "valueMoney": {
+              "value": 75,
+              "currency": "USD"
+            }
+          },
+          {
+            "type": {
+              "coding": [
+                {
+                  "system": "http://terminology.hl7.org/CodeSystem/coverage-copay-type",
+                  "code": "emergency",
+                  "display": "Emergency"
+                }
+              ]
+            },
+            "valueMoney": {
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/us/insurance-card/StructureDefinition/C4DIC-BeneficiaryCostString-extension",
+                  "valueString": "$500 after deductible"
+                }
+              ]
+            }
+          },
+          {
+            "type": {
+              "coding": [
+                {
+                  "system": "http://terminology.hl7.org/CodeSystem/C4DICExtendedCopayTypeCS",
+                  "code": "IndInDed",
+                  "display": "Individual In Network Deductible"
+                }
+              ]
+            },
+            "valueMoney": {
+              "value": 4500,
+              "currency": "USD"
+            }
+          },
+          {
+            "type": {
+              "coding": [
+                {
+                  "system": "http://terminology.hl7.org/CodeSystem/C4DICExtendedCopayTypeCS",
+                  "code": "IndInMax",
+                  "display": "Individual In Network Out of Pocket Maximum"
+                }
+              ]
+            },
+            "valueMoney": {
+              "value": 9200,
+              "currency": "USD"
+            }
+          },
+          {
+            "type": {
+              "coding": [
+                {
+                  "system": "http://terminology.hl7.org/CodeSystem/C4DICExtendedCopayTypeCS",
+                  "code": "rx",
+                  "display": "Prescription"
                 }
               ],
-              "text": "Plan"
+              "text": "Prescription copays by tier: generic / preferred brand / non-preferred brand / specialty"
             },
-            "value": "ATLAS-SILVER-4500-HMO",
-            "name": "Atlas Silver 4500 HMO"
+            "valueMoney": {
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/us/insurance-card/StructureDefinition/C4DIC-BeneficiaryCostString-extension",
+                  "valueString": "$15 / $50 / $100 / 40%"
+                }
+              ]
+            }
           }
         ]
       }
@@ -1260,7 +1744,7 @@
         },
         "identifier": [
           {
-            "system": "https://parkerapex.com/atlas/encounter",
+            "system": "https://crookhaven.github.io/open-synthetic-patients/id/encounter",
             "value": "268a1bfe-5ffe-575b-8da5-92da0eb82234"
           }
         ],
@@ -1337,7 +1821,7 @@
         },
         "identifier": [
           {
-            "system": "https://parkerapex.com/atlas/encounter",
+            "system": "https://crookhaven.github.io/open-synthetic-patients/id/encounter",
             "value": "51982ed3-8595-5401-8da4-332d3381d528"
           }
         ],
@@ -1414,7 +1898,7 @@
         },
         "identifier": [
           {
-            "system": "https://parkerapex.com/atlas/encounter",
+            "system": "https://crookhaven.github.io/open-synthetic-patients/id/encounter",
             "value": "27ef4341-15fd-590a-b3f7-0b29ad19ebc2"
           }
         ],
@@ -1497,7 +1981,7 @@
         },
         "identifier": [
           {
-            "system": "https://parkerapex.com/atlas/encounter",
+            "system": "https://crookhaven.github.io/open-synthetic-patients/id/encounter",
             "value": "adfa5608-5071-559d-89fb-07db3d573820"
           }
         ],
@@ -1574,7 +2058,7 @@
         },
         "identifier": [
           {
-            "system": "https://parkerapex.com/atlas/encounter",
+            "system": "https://crookhaven.github.io/open-synthetic-patients/id/encounter",
             "value": "bbca9ee3-7dcc-57c2-8356-e6559e0fc12a"
           }
         ],
@@ -1646,7 +2130,7 @@
         },
         "identifier": [
           {
-            "system": "https://parkerapex.com/atlas/encounter",
+            "system": "https://crookhaven.github.io/open-synthetic-patients/id/encounter",
             "value": "ea1ea410-ddc4-503b-8d5d-c07b315a2618"
           }
         ],
@@ -1723,7 +2207,7 @@
         },
         "identifier": [
           {
-            "system": "https://parkerapex.com/atlas/encounter",
+            "system": "https://crookhaven.github.io/open-synthetic-patients/id/encounter",
             "value": "75ed3227-150a-5cb3-b6b2-4fbe1d8b31c7"
           }
         ],
@@ -6980,7 +7464,7 @@
         },
         "identifier": [
           {
-            "system": "https://parkerapex.com/atlas/order",
+            "system": "https://crookhaven.github.io/open-synthetic-patients/id/order",
             "value": "ORD-20251002-SR_NEURO25"
           }
         ],
@@ -7058,7 +7542,7 @@
         },
         "identifier": [
           {
-            "system": "https://parkerapex.com/atlas/order",
+            "system": "https://crookhaven.github.io/open-synthetic-patients/id/order",
             "value": "ORD-20260310-SR_BH26"
           }
         ],
@@ -7136,7 +7620,7 @@
         },
         "identifier": [
           {
-            "system": "https://parkerapex.com/atlas/order",
+            "system": "https://crookhaven.github.io/open-synthetic-patients/id/order",
             "value": "ORD-20260908-SR_ALLERGY26"
           }
         ],
@@ -7308,7 +7792,7 @@
               ],
               "text": "Unique Claim ID"
             },
-            "system": "https://parkerapex.com/atlas/claim",
+            "system": "https://crookhaven.github.io/open-synthetic-patients/id/claim",
             "value": "CLM-20251104-CLM_NEURO25"
           }
         ],
@@ -7696,7 +8180,7 @@
               ],
               "text": "Unique Claim ID"
             },
-            "system": "https://parkerapex.com/atlas/claim",
+            "system": "https://crookhaven.github.io/open-synthetic-patients/id/claim",
             "value": "CLM-20260118-CLM_UC26"
           }
         ],
@@ -8309,7 +8793,7 @@
               ],
               "text": "Unique Claim ID"
             },
-            "system": "https://parkerapex.com/atlas/claim",
+            "system": "https://crookhaven.github.io/open-synthetic-patients/id/claim",
             "value": "CLM-20260310-CLM_PCP26A"
           }
         ],
@@ -8872,7 +9356,7 @@
               ],
               "text": "Unique Claim ID"
             },
-            "system": "https://parkerapex.com/atlas/claim",
+            "system": "https://crookhaven.github.io/open-synthetic-patients/id/claim",
             "value": "CLM-20260310-CLM_LAB26A"
           }
         ],
@@ -9879,7 +10363,7 @@
               ],
               "text": "Unique Claim ID"
             },
-            "system": "https://parkerapex.com/atlas/claim",
+            "system": "https://crookhaven.github.io/open-synthetic-patients/id/claim",
             "value": "CLM-20260421-CLM_BH26A"
           }
         ],
@@ -10278,7 +10762,7 @@
               ],
               "text": "Unique Claim ID"
             },
-            "system": "https://parkerapex.com/atlas/claim",
+            "system": "https://crookhaven.github.io/open-synthetic-patients/id/claim",
             "value": "CLM-20260602-CLM_GYN26"
           }
         ],
@@ -10794,7 +11278,7 @@
               ],
               "text": "Unique Claim ID"
             },
-            "system": "https://parkerapex.com/atlas/claim",
+            "system": "https://crookhaven.github.io/open-synthetic-patients/id/claim",
             "value": "CLM-20260714-CLM_BH26B"
           }
         ],
@@ -11193,7 +11677,7 @@
               ],
               "text": "Unique Claim ID"
             },
-            "system": "https://parkerapex.com/atlas/claim",
+            "system": "https://crookhaven.github.io/open-synthetic-patients/id/claim",
             "value": "CLM-20260908-CLM_PCP26B"
           }
         ],

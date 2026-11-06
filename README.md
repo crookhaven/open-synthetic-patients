@@ -24,10 +24,13 @@ patients/<slug>/
   build.ps1       script that rebuilds the bundle (where one exists)
   NOTICE          attribution, for patients derived from another project
   piqi/           PIQI messages (clinical, IPS, claims) built from bundle.json, ready to score
+  insurance-cards.json   the patient's insurance cards (plan, member ID, pharmacy numbers, copays, contacts)
+  insurance-cards/       the card images drawn from it: front, back, logo, barcode and QR code
 marketplace/      real 2026 Marketplace plans for one ZIP code, for plan comparison testing
 tools/
   check_safety.py     checks that every patient is tagged, documented and synthetic
   build_catalog.py    builds catalog.json and CATALOG.md from the patient cards
+  insurance_cards.py  turns insurance-cards.json into CARIN Digital Insurance Card records and card images
   powershell/         shared builders and publishing scripts (HAPI, SMART Health Links)
 catalog.json      machine-readable index of every patient (generated)
 CATALOG.md        human-readable index (generated)
@@ -47,6 +50,28 @@ Each patient card lists **variants**. Today every patient has a `clean` variant;
   `carin-bb-claims`, `ips`, `piqi-data-quality` or `cpap-coverage`.
 - **Load into a FHIR server:** `tools/powershell/publish_to_hapi.ps1` uploads a bundle to the
   public HAPI test server in dependency order.
+
+## Insurance cards
+
+Patients with an `insurance-cards.json` carry their coverage on the
+[CARIN Digital Insurance Card](https://build.fhir.org/ig/HL7/carin-digital-insurance-card/) profiles
+(2.0.0-ballot): a C4DIC Coverage per card with the member ID, group, plan, network, pharmacy numbers
+(RxBIN, RxPCN, RxGroup, RxID), copays, deductibles and out-of-pocket maximums, card colors, logo,
+barcode, QR code, card front and back images and the card's notices; a C4DIC Organization for the
+payer with its member, provider, pharmacist, mail-order and claims contacts; and the Patient on the
+C4DIC Patient profile.
+
+| Patient | Cards |
+|---|---|
+| Maximus Decimus Meridius | Employer PPO with pharmacy benefits, dental PPO, vision |
+| Mavis Dracula | Individual Marketplace HMO with pharmacy benefits |
+| Kimberly Gonzalez | Original Medicare (Part A and B), Medicare Part D drug plan, Medicaid managed care (dual eligible, secondary) |
+
+Everything on the cards is made up: plan names, member IDs, phone numbers (555-01xx, reserved for
+fiction), RxBINs (999xxx) and payer IDs. Every card image is watermarked SAMPLE. The Medicare card
+uses Medicare's real public phone numbers, but its image is a sample layout, not the official card
+design. To change a card, edit `insurance-cards.json` and run
+`python tools/insurance_cards.py <slug>` (needs Pillow and segno).
 
 ## Safety rules
 

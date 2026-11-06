@@ -1032,3 +1032,8 @@ $dupes = @($check.entry | Group-Object { "$($_.resource.resourceType)/$($_.resou
 $check.entry | Group-Object { $_.resource.resourceType } | Sort-Object Name | ForEach-Object { '  {0,-22} {1}' -f $_.Name, $_.Count }
 "Unresolved references: $($broken.Count) $($broken -join ', ')"
 "Duplicate ids: $($dupes.Count)"
+
+# Insurance cards: rewrite Coverage, the payer and the Patient on the CARIN
+# Digital Insurance Card profiles and draw the card images, from
+# insurance-cards.json (needs Python with Pillow and segno).
+python (Join-Path $PSScriptRoot '..\..\tools\insurance_cards.py') (Split-Path $PSScriptRoot -Leaf)
