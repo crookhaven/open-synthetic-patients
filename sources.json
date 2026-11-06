@@ -142,6 +142,16 @@
       "license": "Apache 2.0"
     },
     {
+      "name": "cBioPortal for Cancer Genomics",
+      "url": "https://www.cbioportal.org/",
+      "section": "us-records",
+      "type": "other-format",
+      "what": "Open portal from Memorial Sloan Kettering and partners that hosts hundreds of published cancer genomics studies (TCGA, MSK-IMPACT and others): somatic mutations, copy number, fusions, expression and clinical data for real, de-identified tumor samples. Each study downloads as a zip from the Datasets page or the cBioPortal datahub (https://github.com/cBioPortal/datahub), and there is a REST API",
+      "best_for": "Realistic oncology and genomics test content: real variant, gene and tumor-type combinations to model genomic reports, cancer conditions and molecular results (for example, mapping to FHIR Genomics Reporting or mCODE)",
+      "format": "Tab-delimited study files (clinical, MAF mutations, copy number, expression) and a MySQL dump, not FHIR. Clinical data is often limited to a few attributes per patient",
+      "license": "ODbL 1.0 unless a study says otherwise (some studies restrict commercial use; TCGA follows its own terms); cite cBioPortal and the original study. Real de-identified data, so link to it rather than copying patients into this repository. Software: AGPL 3.0"
+    },
+    {
       "name": "CMS Blue Button 2.0 sandbox",
       "url": "https://bluebutton.cms.gov/api-documentation/explore-the-api/",
       "section": "us-claims",
